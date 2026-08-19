@@ -1,26 +1,31 @@
 import fs from "node:fs/promises";
 
-const VERSION = "V3-30Q";
-
+const VERSION = "V4-CATEGORIES-SAFE";
 const OUT = "news.json";
 const MAX_ITEMS = 300;
 const MIN_GOOD_ITEMS = 100;
 const REQUEST_DELAY_MS = 650;
 const MAX_RETRIES = 3;
 
+/*
+  ARCHITETTURA INVARIATA:
+  - Google News viene recuperato esclusivamente da GitHub Actions.
+  - Cloudflare continua a leggere news.json come prima.
+  - Restano esattamente 30 query.
+*/
 const QUERIES = [
   // POLITICA / GOVERNO
   [
     "Politica",
-    "politica italiana governo opposizione when:1d"
+    "politica italiana parlamento maggioranza opposizione when:1d"
   ],
   [
     "Politica",
-    "politica italiana when:1h"
+    "partiti italiani parlamento politica when:1d"
   ],
   [
     "Governo",
-    "governo Meloni Consiglio ministri decreto when:1d"
+    "governo Meloni consiglio ministri decreto ministeri when:1d"
   ],
 
   // CRONACA / SICUREZZA
@@ -30,11 +35,11 @@ const QUERIES = [
   ],
   [
     "Cronaca",
-    "cronaca Italia arrestato aggressione rapina when:1d"
+    "cronaca Italia arrestato aggressione incidente when:1d"
   ],
   [
     "Sicurezza",
-    "sicurezza Italia carabinieri polizia arrestato when:1d"
+    "polizia carabinieri arrestato sicurezza Italia when:1d"
   ],
 
   // SALVINI / LEGA
@@ -48,7 +53,7 @@ const QUERIES = [
   ],
   [
     "Lega",
-    "\"Salvini\" \"Lega\" politica when:1d"
+    "\"Lega\" politica when:2d -calcio -serie"
   ],
 
   // IMMIGRAZIONE
@@ -102,7 +107,7 @@ const QUERIES = [
   // STORIE UMANE POSITIVE
   [
     "Storie umane",
-    "salvato OR salvata OR soccorso OR ritrovato Italia when:2d"
+    "\"salvato\" OR \"salvata\" OR \"soccorso\" OR \"soccorsa\" OR \"ritrovato\" OR \"ritrovata\" Italia when:2d"
   ],
   [
     "Storie umane",
@@ -124,7 +129,7 @@ const QUERIES = [
   ],
   [
     "Esteri",
-    "esteri Europa USA guerra when:1d"
+    "esteri Europa USA guerra diplomazia when:1d"
   ],
 
   // JUVENTUS / CALCIOMERCATO
@@ -142,7 +147,7 @@ const QUERIES = [
   ],
   [
     "Calciomercato",
-    "Juventus acquisti cessioni mercato when:1d"
+    "Juventus acquisti cessioni prestito trattativa when:1d"
   ]
 ];
 
@@ -195,13 +200,13 @@ function decodeEntities(s = "") {
       )
       .replace(
         /&([A-Za-z]+);/g,
-        (m, n) =>
+        (match, name) =>
           Object.prototype.hasOwnProperty.call(
             named,
-            n
+            name
           )
-            ? named[n]
-            : m
+            ? named[name]
+            : match
       );
 
     if (out === prev) {
@@ -232,14 +237,12 @@ function cleanText(t = "") {
 }
 
 function tag(item, name) {
-  const regex =
+  const match = item.match(
     new RegExp(
       `<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`,
       "i"
-    );
-
-  const match =
-    item.match(regex);
+    )
+  );
 
   return match
     ? cleanText(match[1])
@@ -311,7 +314,10 @@ function parseGoogle(
     ) || [];
 
   return items
-    .slice(0, 25)
+    .slice(
+      0,
+      25
+    )
     .map(item => {
       const rawTitle =
         tag(
@@ -424,7 +430,7 @@ async function fetchOne(
           {
             headers: {
               "User-Agent":
-                "Mozilla/5.0 (compatible; AgostinoNewsFeed/3.0)",
+                "Mozilla/5.0 (compatible; AgostinoNewsFeed/4.0)",
 
               "Accept":
                 "application/rss+xml, application/xml, text/xml, */*",
@@ -488,7 +494,7 @@ async function fetchOne(
 
     await sleep(
       1200 *
-        attempt
+      attempt
     );
   }
 
@@ -507,7 +513,8 @@ function merge(items) {
     new Map();
 
   for (
-    const article of items
+    const article
+    of items
   ) {
     const key =
       normalize(
@@ -551,8 +558,8 @@ function merge(items) {
       map.get(key);
 
     for (
-      const category of
-      article.categories ||
+      const category
+      of article.categories ||
       [
         article.category
       ]
@@ -570,16 +577,16 @@ function merge(items) {
     }
 
     for (
-      const source of
-      article.sources ||
+      const source
+      of article.sources ||
       []
     ) {
       const alreadyExists =
         existing.sources.some(
-          item =>
-            item.source ===
+          current =>
+            current.source ===
               source.source &&
-            item.link ===
+            current.link ===
               source.link
         );
 
@@ -596,6 +603,39 @@ function merge(items) {
   return [
     ...map.values()
   ];
+}
+
+function removeCategory(
+  categories,
+  category
+) {
+  const index =
+    categories.indexOf(
+      category
+    );
+
+  if (
+    index !== -1
+  ) {
+    categories.splice(
+      index,
+      1
+    );
+  }
+}
+
+function moveCategoryFirst(
+  categories,
+  category
+) {
+  removeCategory(
+    categories,
+    category
+  );
+
+  categories.unshift(
+    category
+  );
 }
 
 function finalClassify(
@@ -637,14 +677,24 @@ function finalClassify(
 
   /*
    * SALVINI / LEGA
+   *
+   * "Lega" da sola non basta:
+   * evitiamo Lega Serie A, leghe sportive ecc.
    */
-  if (
+  const hasLega =
     /\bsalvini\b/.test(
       text
     )
-  ) {
-    add("Lega");
-  }
+    ||
+    (
+      /\blega\b/.test(
+        text
+      )
+      &&
+      /\b(partit|politic|fontana|zaia|fedriga|giorgetti|calderoli|molinar|romeo|borghi|rinaldi|vannacci)\w*/.test(
+        text
+      )
+    );
 
   /*
    * IMMIGRAZIONE
@@ -654,16 +704,8 @@ function finalClassify(
       text
     );
 
-  if (
-    immigration
-  ) {
-    add(
-      "Immigrazione"
-    );
-  }
-
   /*
-   * REATI / SICUREZZA
+   * CRIMINALITÀ / SICUREZZA
    */
   const crime =
     /\b(arrest|rapin|aggress|omicid|tentato omicidio|furto|violenz|stupro|stupr|molest|accoltell|coltell|pugni|picchi|rissa|spaccio|droga|evas|fuga|poliziott|carabinier|agente|denunciat|fermato|minacc|sequestr|scipp|borseggi)\w*/.test(
@@ -671,8 +713,120 @@ function finalClassify(
     );
 
   /*
+   * GOVERNO
+   */
+  const government =
+    /\b(governo|meloni|palazzo chigi|consiglio ministri|ministro|ministra|ministero|decreto legge|decreto legislativo)\b/.test(
+      text
+    );
+
+  /*
+   * POLITICA
+   */
+  const politics =
+    government
+    ||
+    /\b(parlament|senato|camera deputat|maggioranza|opposizione|partit|elezion|coalizion|segretari|presidente regione)\w*/.test(
+      text
+    )
+    ||
+    hasLega;
+
+  /*
+   * JUVENTUS
+   */
+  const juventus =
+    /\b(juventus|juve|bianconer)\w*/.test(
+      text
+    );
+
+  /*
+   * CALCIOMERCATO
+   */
+  const market =
+    /\b(calciomercato|mercato|acquist|cession|prestito|trattativa|offerta|accordo|firma|ingaggio)\w*/.test(
+      text
+    )
+    &&
+    /\b(calcio|juventus|juve|milan|inter|napoli|roma|lazio|atalanta|serie a)\b/.test(
+      text
+    );
+
+  /*
+   * STORIE UMANE:
+   * puntiamo alle storie positive / lieto fine.
+   */
+  const humanPositive =
+    /\b(salvat|soccors|ritrovat|messo in salvo|fuori pericolo|salva la vita|salvano la vita|gesto eroico|eroe|solidariet|abbraccio|lieto fine|adottat)\w*/.test(
+      text
+    )
+    &&
+    !/\b(morto|morta|morti|morte|cadavere|ucciso|uccisa|omicidio|strage)\b/.test(
+      text
+    );
+
+  /*
+   * TRASPORTI
+   */
+  const transport =
+    /\b(trasport|treno|ferrovi|autostrad|ponte sullo stretto|infrastruttur|aeroport|porto|metropolitana|metro|tav)\w*/.test(
+      text
+    );
+
+  /*
+   * EUROPA
+   */
+  const europe =
+    /\b(unione europea|commissione europea|parlamento europeo|bruxelles|consiglio europeo|ue)\b/.test(
+      text
+    );
+
+  /*
+   * LEGA:
+   * se Google ha restituito un risultato non politico
+   * sotto la query Lega, togliamo il falso positivo.
+   */
+  if (
+    hasLega
+  ) {
+    add(
+      "Lega"
+    );
+  } else if (
+    categories.includes(
+      "Lega"
+    )
+  ) {
+    removeCategory(
+      categories,
+      "Lega"
+    );
+  }
+
+  /*
+   * IMMIGRAZIONE:
+   * deve esserci almeno un segnale reale.
+   */
+  if (
+    immigration
+  ) {
+    add(
+      "Immigrazione"
+    );
+  } else if (
+    categories.includes(
+      "Immigrazione"
+    )
+  ) {
+    removeCategory(
+      categories,
+      "Immigrazione"
+    );
+  }
+
+  /*
    * CRIMINI & IMMIGRAZIONE:
-   * devono esserci entrambi
+   * servono ENTRAMBI i segnali.
    */
   if (
     immigration &&
@@ -681,10 +835,180 @@ function finalClassify(
     add(
       "Crimini & immigrazione"
     );
+  } else if (
+    categories.includes(
+      "Crimini & immigrazione"
+    )
+  ) {
+    removeCategory(
+      categories,
+      "Crimini & immigrazione"
+    );
+  }
+
+  if (
+    crime
+  ) {
+    add(
+      "Sicurezza"
+    );
+  }
+
+  if (
+    government
+  ) {
+    add(
+      "Governo"
+    );
+  }
+
+  if (
+    politics
+  ) {
+    add(
+      "Politica"
+    );
+  }
+
+  /*
+   * JUVENTUS:
+   * eliminiamo eventuali risultati sportivi
+   * non realmente riferiti alla Juve.
+   */
+  if (
+    juventus
+  ) {
+    add(
+      "Juventus"
+    );
+  } else if (
+    categories.includes(
+      "Juventus"
+    )
+  ) {
+    removeCategory(
+      categories,
+      "Juventus"
+    );
+  }
+
+  /*
+   * CALCIOMERCATO:
+   * deve esserci un vero segnale di mercato.
+   */
+  if (
+    market
+  ) {
+    add(
+      "Calciomercato"
+    );
+  } else if (
+    categories.includes(
+      "Calciomercato"
+    )
+  ) {
+    removeCategory(
+      categories,
+      "Calciomercato"
+    );
+  }
+
+  /*
+   * STORIE UMANE:
+   * evitiamo tragedie classificate come
+   * storie positive solo perché compare "soccorso".
+   */
+  if (
+    humanPositive
+  ) {
+    add(
+      "Storie umane"
+    );
+  } else if (
+    categories.includes(
+      "Storie umane"
+    )
+  ) {
+    removeCategory(
+      categories,
+      "Storie umane"
+    );
+  }
+
+  if (
+    transport
+  ) {
+    add(
+      "Trasporti"
+    );
+  }
+
+  if (
+    europe
+  ) {
+    add(
+      "Europa"
+    );
+  }
+
+  /*
+   * ORDINE DEL BADGE PRINCIPALE
+   *
+   * Quando sei su "Tutte", vogliamo mostrare
+   * la categoria più utile e specifica.
+   */
+  if (
+    immigration &&
+    crime
+  ) {
+    moveCategoryFirst(
+      categories,
+      "Crimini & immigrazione"
+    );
+  } else if (
+    hasLega
+  ) {
+    moveCategoryFirst(
+      categories,
+      "Lega"
+    );
+  } else if (
+    market
+  ) {
+    moveCategoryFirst(
+      categories,
+      "Calciomercato"
+    );
+  } else if (
+    juventus
+  ) {
+    moveCategoryFirst(
+      categories,
+      "Juventus"
+    );
+  } else if (
+    humanPositive
+  ) {
+    moveCategoryFirst(
+      categories,
+      "Storie umane"
+    );
+  }
+
+  if (
+    !categories.length
+  ) {
+    categories.push(
+      "Cronaca"
+    );
   }
 
   return {
     ...article,
+
+    category:
+      categories[0],
+
     categories
   };
 }
@@ -698,7 +1022,9 @@ async function readPrevious() {
       );
 
     const parsed =
-      JSON.parse(raw);
+      JSON.parse(
+        raw
+      );
 
     return Array.isArray(
       parsed.news
@@ -725,14 +1051,13 @@ async function main() {
   const results = [];
 
   /*
-   * IMPORTANTE:
-   * richieste una alla volta
-   * per non bombardare Google.
+   * Le richieste restano sequenziali:
+   * non cambiamo il comportamento che
+   * sta funzionando bene con Google.
    */
   for (
     let i = 0;
-    i <
-    QUERIES.length;
+    i < QUERIES.length;
     i++
   ) {
     const [
@@ -772,17 +1097,17 @@ async function main() {
 
   const successful =
     results.filter(
-      item =>
-        item.ok
+      result =>
+        result.ok
     );
 
   const errors = {};
 
   for (
-    const result of
-    results.filter(
-      item =>
-        !item.ok
+    const result
+    of results.filter(
+      result =>
+        !result.ok
     )
   ) {
     const key =
@@ -798,7 +1123,7 @@ async function main() {
       ) + 1;
   }
 
-  let news =
+  const news =
     merge(
       successful.flatMap(
         result =>
@@ -812,7 +1137,8 @@ async function main() {
         (a, b) =>
           new Date(
             b.pubDate
-          ) -
+          )
+          -
           new Date(
             a.pubDate
           )
@@ -848,9 +1174,9 @@ async function main() {
       );
 
   /*
-   * Se Google temporaneamente
-   * restituisce troppo poco,
-   * conserviamo il feed precedente.
+   * Protezione LAST GOOD invariata:
+   * se Google restituisce troppo poco,
+   * non distruggiamo un feed sano.
    */
   if (
     news.length <
@@ -859,11 +1185,8 @@ async function main() {
       MIN_GOOD_ITEMS
   ) {
     console.log(
-      `Feed nuovo troppo piccolo: ${news.length}.`
-    );
-
-    console.log(
-      `Mantengo il feed precedente: ${previous.news.length}.`
+      `New feed too small (${news.length}). ` +
+      `Keeping previous good feed (${previous.news.length}).`
     );
 
     const payload = {
@@ -913,7 +1236,7 @@ async function main() {
       VERSION,
 
     engine:
-      "github-actions-google-news-v3",
+      "github-actions-google-news-v4-categories-safe",
 
     updatedAt:
       new Date()
@@ -958,14 +1281,6 @@ async function main() {
 
   console.log(
     `Saved ${news.length} news to ${OUT}`
-  );
-
-  console.log(
-    `Version: ${VERSION}`
-  );
-
-  console.log(
-    `Queries: ${QUERIES.length}`
   );
 }
 
