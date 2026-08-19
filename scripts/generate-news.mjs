@@ -1,158 +1,61 @@
 import fs from "node:fs/promises";
 
-const VERSION = "V4-CATEGORIES-SAFE";
+const VERSION = "V5-DEDUP-SAFE";
 const OUT = "news.json";
 const MAX_ITEMS = 300;
 const MIN_GOOD_ITEMS = 100;
 const REQUEST_DELAY_MS = 650;
 const MAX_RETRIES = 3;
 
-/*
-  ARCHITETTURA INVARIATA:
-  - Google News viene recuperato esclusivamente da GitHub Actions.
-  - Cloudflare continua a leggere news.json come prima.
-  - Restano esattamente 30 query.
-*/
+// ARCHITETTURA INVARIATA: 30 query, richieste sequenziali, last-good-feed.
 const QUERIES = [
-  // POLITICA / GOVERNO
-  [
-    "Politica",
-    "politica italiana parlamento maggioranza opposizione when:1d"
-  ],
-  [
-    "Politica",
-    "partiti italiani parlamento politica when:1d"
-  ],
-  [
-    "Governo",
-    "governo Meloni consiglio ministri decreto ministeri when:1d"
-  ],
+  ["Politica", "politica italiana parlamento maggioranza opposizione when:1d"],
+  ["Politica", "partiti italiani parlamento politica when:1d"],
+  ["Governo", "governo Meloni consiglio ministri decreto ministeri when:1d"],
 
-  // CRONACA / SICUREZZA
-  [
-    "Cronaca",
-    "cronaca Italia when:1h"
-  ],
-  [
-    "Cronaca",
-    "cronaca Italia arrestato aggressione incidente when:1d"
-  ],
-  [
-    "Sicurezza",
-    "polizia carabinieri arrestato sicurezza Italia when:1d"
-  ],
+  ["Cronaca", "cronaca Italia when:1h"],
+  ["Cronaca", "cronaca Italia arrestato aggressione incidente when:1d"],
+  ["Sicurezza", "polizia carabinieri arrestato sicurezza Italia when:1d"],
 
-  // SALVINI / LEGA
-  [
-    "Lega",
-    "\"Matteo Salvini\" when:1h"
-  ],
-  [
-    "Lega",
-    "\"Matteo Salvini\" when:1d"
-  ],
-  [
-    "Lega",
-    "\"Lega\" politica when:2d -calcio -serie"
-  ],
+  ["Lega", '"Matteo Salvini" when:1h'],
+  ["Lega", '"Matteo Salvini" when:1d'],
+  ["Lega", '"Lega" politica when:2d -calcio -serie'],
 
-  // IMMIGRAZIONE
-  [
-    "Immigrazione",
-    "immigrazione migranti Italia when:1h"
-  ],
-  [
-    "Immigrazione",
-    "immigrazione migranti sbarchi ONG rimpatri Italia when:1d"
-  ],
-  [
-    "Immigrazione",
-    "Lampedusa migranti sbarchi Italia when:2d"
-  ],
-  [
-    "Immigrazione",
-    "migranti irregolari CPR rimpatri accoglienza Italia when:2d"
-  ],
+  ["Immigrazione", "immigrazione migranti Italia when:1h"],
+  ["Immigrazione", "immigrazione migranti sbarchi ONG rimpatri Italia when:1d"],
+  ["Immigrazione", "Lampedusa migranti sbarchi Italia when:2d"],
+  ["Immigrazione", "migranti irregolari CPR rimpatri accoglienza Italia when:2d"],
 
-  // CRIMINI & IMMIGRAZIONE
-  [
-    "Crimini & immigrazione",
-    "straniero arrestato Italia when:1d"
-  ],
-  [
-    "Crimini & immigrazione",
-    "immigrato arrestato Italia when:1d"
-  ],
-  [
-    "Crimini & immigrazione",
-    "irregolare arrestato Italia when:1d"
-  ],
-  [
-    "Crimini & immigrazione",
-    "straniero aggressione violenza Italia when:1d"
-  ],
-  [
-    "Crimini & immigrazione",
-    "straniero rapina furto Italia when:1d"
-  ],
-  [
-    "Crimini & immigrazione",
-    "immigrato rapina aggressione arrestato Italia when:1d"
-  ],
-  [
-    "Crimini & immigrazione",
-    "irregolare aggressione rapina Italia when:1d"
-  ],
+  ["Crimini & immigrazione", "straniero arrestato Italia when:1d"],
+  ["Crimini & immigrazione", "immigrato arrestato Italia when:1d"],
+  ["Crimini & immigrazione", "irregolare arrestato Italia when:1d"],
+  ["Crimini & immigrazione", "straniero aggressione violenza Italia when:1d"],
+  ["Crimini & immigrazione", "straniero rapina furto Italia when:1d"],
+  ["Crimini & immigrazione", "immigrato rapina aggressione arrestato Italia when:1d"],
+  ["Crimini & immigrazione", "irregolare aggressione rapina Italia when:1d"],
 
-  // STORIE UMANE POSITIVE
   [
     "Storie umane",
-    "\"salvato\" OR \"salvata\" OR \"soccorso\" OR \"soccorsa\" OR \"ritrovato\" OR \"ritrovata\" Italia when:2d"
+    '"salvato" OR "salvata" OR "soccorso" OR "soccorsa" OR "ritrovato" OR "ritrovata" Italia when:2d'
   ],
   [
     "Storie umane",
-    "\"fuori pericolo\" OR \"salva la vita\" OR \"gesto eroico\" Italia when:3d"
+    '"fuori pericolo" OR "salva la vita" OR "gesto eroico" Italia when:3d'
   ],
 
-  // TRASPORTI / EUROPA / ESTERI
-  [
-    "Trasporti",
-    "trasporti infrastrutture ferrovie autostrade Italia when:1d"
-  ],
-  [
-    "Trasporti",
-    "\"Ponte sullo Stretto\" Salvini MIT when:2d"
-  ],
-  [
-    "Europa",
-    "\"Unione Europea\" Italia Commissione Parlamento Europeo when:1d"
-  ],
-  [
-    "Esteri",
-    "esteri Europa USA guerra diplomazia when:1d"
-  ],
+  ["Trasporti", "trasporti infrastrutture ferrovie autostrade Italia when:1d"],
+  ["Trasporti", '"Ponte sullo Stretto" Salvini MIT when:2d'],
+  ["Europa", '"Unione Europea" Italia Commissione Parlamento Europeo when:1d'],
+  ["Esteri", "esteri Europa USA guerra diplomazia when:1d"],
 
-  // JUVENTUS / CALCIOMERCATO
-  [
-    "Juventus",
-    "Juventus when:1h"
-  ],
-  [
-    "Juventus",
-    "Juventus when:1d"
-  ],
-  [
-    "Calciomercato",
-    "calciomercato Juventus when:1h"
-  ],
-  [
-    "Calciomercato",
-    "Juventus acquisti cessioni prestito trattativa when:1d"
-  ]
+  ["Juventus", "Juventus when:1h"],
+  ["Juventus", "Juventus when:1d"],
+  ["Calciomercato", "calciomercato Juventus when:1h"],
+  ["Calciomercato", "Juventus acquisti cessioni prestito trattativa when:1d"]
 ];
 
-const sleep = ms =>
-  new Promise(resolve =>
+const sleep = (ms) =>
+  new Promise((resolve) =>
     setTimeout(resolve, ms)
   );
 
@@ -187,24 +90,17 @@ function decodeEntities(s = "") {
       .replace(
         /&#(\d+);/g,
         (_, n) =>
-          String.fromCodePoint(
-            Number(n)
-          )
+          String.fromCodePoint(Number(n))
       )
       .replace(
         /&#x([0-9a-f]+);/gi,
         (_, n) =>
-          String.fromCodePoint(
-            parseInt(n, 16)
-          )
+          String.fromCodePoint(parseInt(n, 16))
       )
       .replace(
         /&([A-Za-z]+);/g,
         (match, name) =>
-          Object.prototype.hasOwnProperty.call(
-            named,
-            name
-          )
+          Object.prototype.hasOwnProperty.call(named, name)
             ? named[name]
             : match
       );
@@ -268,9 +164,366 @@ function normalize(s = "") {
     .trim();
 }
 
-function sourceFromTitle(
-  title = ""
-) {
+const DEDUP_STOPWORDS = new Set([
+  "a",
+  "ad",
+  "al",
+  "alla",
+  "alle",
+  "allo",
+  "ai",
+  "agli",
+  "anche",
+  "che",
+  "chi",
+  "con",
+  "da",
+  "dal",
+  "dalla",
+  "dalle",
+  "dei",
+  "del",
+  "della",
+  "delle",
+  "di",
+  "e",
+  "ed",
+  "gli",
+  "ha",
+  "hanno",
+  "il",
+  "in",
+  "la",
+  "le",
+  "lo",
+  "ma",
+  "nel",
+  "nella",
+  "nelle",
+  "non",
+  "o",
+  "per",
+  "piu",
+  "su",
+  "sul",
+  "sulla",
+  "tra",
+  "un",
+  "una",
+  "uno"
+]);
+
+function titleTokens(title = "") {
+  return normalize(title)
+    .split(" ")
+    .filter(
+      (token) =>
+        token.length >= 3 &&
+        !DEDUP_STOPWORDS.has(token)
+    );
+}
+
+function tokenSet(title = "") {
+  return new Set(
+    titleTokens(title)
+  );
+}
+
+function intersectionSize(a, b) {
+  let count = 0;
+
+  for (const token of a) {
+    if (b.has(token)) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+function jaccardSimilarity(a, b) {
+  if (!a.size || !b.size) {
+    return 0;
+  }
+
+  const intersection =
+    intersectionSize(a, b);
+
+  const union =
+    a.size +
+    b.size -
+    intersection;
+
+  return union
+    ? intersection / union
+    : 0;
+}
+
+function containmentSimilarity(a, b) {
+  if (!a.size || !b.size) {
+    return 0;
+  }
+
+  return (
+    intersectionSize(a, b) /
+    Math.min(a.size, b.size)
+  );
+}
+
+function significantNumbers(title = "") {
+  return new Set(
+    (
+      normalize(title)
+        .match(/\b\d+\b/g)
+      ||
+      []
+    ).filter((number) => {
+      const n = Number(number);
+
+      return !(
+        n >= 1900 &&
+        n <= 2100
+      );
+    })
+  );
+}
+
+function conflictingNumbers(titleA, titleB) {
+  const a =
+    significantNumbers(titleA);
+
+  const b =
+    significantNumbers(titleB);
+
+  if (!a.size || !b.size) {
+    return false;
+  }
+
+  return (
+    intersectionSize(a, b) === 0
+  );
+}
+
+function eventClasses(text = "") {
+  const value =
+    normalize(text);
+
+  const classes =
+    new Set();
+
+  if (
+    /\b(morto|morta|morti|morte|decedut|scomparso|scomparsa|addio)\w*/.test(value)
+  ) {
+    classes.add("death");
+  }
+
+  if (
+    /\b(arrestat|fermato|fermata|carcere|custodia cautelare)\w*/.test(value)
+  ) {
+    classes.add("arrest");
+  }
+
+  if (
+    /\b(rapin|furto|scipp|borseggi)\w*/.test(value)
+  ) {
+    classes.add("robbery");
+  }
+
+  if (
+    /\b(aggress|accoltell|picchi|pugni|rissa)\w*/.test(value)
+  ) {
+    classes.add("assault");
+  }
+
+  if (
+    /\b(omicid|ucciso|uccisa|uccide|assassin)\w*/.test(value)
+  ) {
+    classes.add("homicide");
+  }
+
+  if (
+    /\b(salvat|soccor|ritrovat|fuori pericolo)\w*/.test(value)
+  ) {
+    classes.add("rescue");
+  }
+
+  if (
+    /\b(firma|accordo|prestito|cessione|acquisto|ingaggio|trattativa)\w*/.test(value)
+  ) {
+    classes.add("transfer");
+  }
+
+  return classes;
+}
+
+function shareEventClass(a, b) {
+  return (
+    intersectionSize(
+      eventClasses(
+        `${a.title || ""} ${a.summary || ""}`
+      ),
+      eventClasses(
+        `${b.title || ""} ${b.summary || ""}`
+      )
+    ) > 0
+  );
+}
+
+const ENTITY_EXCLUSIONS = new Set([
+  "Italia",
+  "Italiano",
+  "Italiana",
+  "Europa",
+  "Europea",
+  "Europeo",
+  "Usa",
+  "USA",
+  "Ue",
+  "UE",
+  "Serie",
+  "Google",
+  "News",
+  "Video",
+  "Diretta",
+  "Ultima"
+]);
+
+function entityTokens(title = "") {
+  const words =
+    title.match(
+      /\b[A-ZÀ-ÖØ-Ý][A-Za-zÀ-ÖØ-öø-ÿ'’-]{2,}\b/g
+    )
+    ||
+    [];
+
+  return new Set(
+    words.filter(
+      (word) =>
+        !ENTITY_EXCLUSIONS.has(word)
+    )
+  );
+}
+
+function shareNamedEntity(a, b) {
+  const ea =
+    entityTokens(a.title || "");
+
+  const eb =
+    entityTokens(b.title || "");
+
+  return (
+    ea.size > 0 &&
+    eb.size > 0 &&
+    intersectionSize(ea, eb) > 0
+  );
+}
+
+function hoursBetween(a, b) {
+  const ta =
+    new Date(a.pubDate)
+      .getTime();
+
+  const tb =
+    new Date(b.pubDate)
+      .getTime();
+
+  if (
+    !Number.isFinite(ta) ||
+    !Number.isFinite(tb)
+  ) {
+    return Infinity;
+  }
+
+  return (
+    Math.abs(ta - tb) /
+    3600000
+  );
+}
+
+function isDuplicateArticle(a, b) {
+  const titleA =
+    normalize(a.title || "");
+
+  const titleB =
+    normalize(b.title || "");
+
+  if (!titleA || !titleB) {
+    return false;
+  }
+
+  if (titleA === titleB) {
+    return true;
+  }
+
+  const ageDifference =
+    hoursBetween(a, b);
+
+  if (ageDifference > 36) {
+    return false;
+  }
+
+  if (
+    conflictingNumbers(
+      a.title,
+      b.title
+    )
+  ) {
+    return false;
+  }
+
+  const tokensA =
+    tokenSet(a.title);
+
+  const tokensB =
+    tokenSet(b.title);
+
+  const shared =
+    intersectionSize(
+      tokensA,
+      tokensB
+    );
+
+  const jaccard =
+    jaccardSimilarity(
+      tokensA,
+      tokensB
+    );
+
+  const containment =
+    containmentSimilarity(
+      tokensA,
+      tokensB
+    );
+
+  if (
+    shared >= 4 &&
+    jaccard >= 0.58 &&
+    containment >= 0.72
+  ) {
+    return true;
+  }
+
+  if (
+    shared >= 5 &&
+    containment >= 0.82
+  ) {
+    return true;
+  }
+
+  // Modalità prudente:
+  // stessa entità + stesso tipo di evento + massimo 18 ore.
+  if (
+    ageDifference <= 18 &&
+    shareNamedEntity(a, b) &&
+    shareEventClass(a, b)
+  ) {
+    return true;
+  }
+
+  return false;
+}
+
+function sourceFromTitle(title = "") {
   const parts =
     title.split(" - ");
 
@@ -279,10 +532,7 @@ function sourceFromTitle(
     : "Google News";
 }
 
-function stripSource(
-  title,
-  source
-) {
+function stripSource(title, source) {
   const suffix =
     ` - ${source}`;
 
@@ -304,41 +554,28 @@ function googleUrl(query) {
   );
 }
 
-function parseGoogle(
-  xml,
-  category
-) {
+function parseGoogle(xml, category) {
   const items =
     xml.match(
       /<item>[\s\S]*?<\/item>/gi
-    ) || [];
+    )
+    ||
+    [];
 
   return items
-    .slice(
-      0,
-      25
-    )
-    .map(item => {
+    .slice(0, 25)
+    .map((item) => {
       const rawTitle =
-        tag(
-          item,
-          "title"
-        );
+        tag(item, "title");
 
       const rssSource =
-        tag(
-          item,
-          "source"
-        );
+        tag(item, "source");
 
       const source =
         rssSource &&
-        rssSource !==
-          "Google News"
+        rssSource !== "Google News"
           ? rssSource
-          : sourceFromTitle(
-              rawTitle
-            );
+          : sourceFromTitle(rawTitle);
 
       const title =
         stripSource(
@@ -347,22 +584,13 @@ function parseGoogle(
         );
 
       const pubDate =
-        tag(
-          item,
-          "pubDate"
-        );
+        tag(item, "pubDate");
 
       const link =
-        tag(
-          item,
-          "link"
-        );
+        tag(item, "link");
 
       const summary =
-        tag(
-          item,
-          "description"
-        );
+        tag(item, "description");
 
       if (
         !title ||
@@ -412,10 +640,7 @@ function parseGoogle(
     .filter(Boolean);
 }
 
-async function fetchOne(
-  category,
-  query
-) {
+async function fetchOne(category, query) {
   let lastStatus = 0;
 
   for (
@@ -430,7 +655,7 @@ async function fetchOne(
           {
             headers: {
               "User-Agent":
-                "Mozilla/5.0 (compatible; AgostinoNewsFeed/4.0)",
+                "Mozilla/5.0 (compatible; AgostinoNewsFeed/5.0)",
 
               "Accept":
                 "application/rss+xml, application/xml, text/xml, */*",
@@ -449,9 +674,7 @@ async function fetchOne(
 
       if (
         response.ok &&
-        text.includes(
-          "<item>"
-        )
+        text.includes("<item>")
       ) {
         return {
           ok: true,
@@ -500,123 +723,139 @@ async function fetchOne(
 
   return {
     ok: false,
+
     status:
       lastStatus,
+
     category,
+
     query,
+
     news: []
   };
 }
 
+function mergeSourceLists(target, incoming) {
+  for (
+    const source
+    of incoming.sources || []
+  ) {
+    const exists =
+      target.sources.some(
+        (current) =>
+          current.source === source.source &&
+          current.link === source.link
+      );
+
+    if (!exists) {
+      target.sources.push(source);
+    }
+  }
+}
+
+function mergeCategoryLists(target, incoming) {
+  for (
+    const category
+    of incoming.categories ||
+    [
+      incoming.category
+    ]
+  ) {
+    if (
+      category &&
+      !target.categories.includes(category)
+    ) {
+      target.categories.push(category);
+    }
+  }
+}
+
 function merge(items) {
-  const map =
-    new Map();
+  const merged = [];
+
+  const ordered =
+    [...items].sort(
+      (a, b) =>
+        new Date(b.pubDate) -
+        new Date(a.pubDate)
+    );
 
   for (
     const article
-    of items
+    of ordered
   ) {
-    const key =
-      normalize(
-        article.title
+    const duplicate =
+      merged.find(
+        (existing) =>
+          isDuplicateArticle(
+            existing,
+            article
+          )
       );
 
-    if (!key) {
-      continue;
-    }
+    if (!duplicate) {
+      merged.push({
+        ...article,
 
-    if (
-      !map.has(key)
-    ) {
-      map.set(
-        key,
-        {
-          ...article,
+        categories: [
+          ...(
+            article.categories ||
+            [
+              article.category
+            ]
+          )
+        ],
 
-          categories: [
-            ...(
-              article.categories ||
-              [
-                article.category
-              ]
-            )
-          ],
-
-          sources: [
-            ...(
-              article.sources ||
-              []
-            )
-          ]
-        }
-      );
+        sources: [
+          ...(
+            article.sources ||
+            []
+          )
+        ]
+      });
 
       continue;
     }
 
-    const existing =
-      map.get(key);
-
-    for (
-      const category
-      of article.categories ||
-      [
-        article.category
-      ]
-    ) {
-      if (
-        category &&
-        !existing.categories.includes(
-          category
-        )
-      ) {
-        existing.categories.push(
-          category
-        );
-      }
-    }
-
-    for (
-      const source
-      of article.sources ||
-      []
-    ) {
-      const alreadyExists =
-        existing.sources.some(
-          current =>
-            current.source ===
-              source.source &&
-            current.link ===
-              source.link
-        );
-
-      if (
-        !alreadyExists
-      ) {
-        existing.sources.push(
-          source
-        );
-      }
-    }
-  }
-
-  return [
-    ...map.values()
-  ];
-}
-
-function removeCategory(
-  categories,
-  category
-) {
-  const index =
-    categories.indexOf(
-      category
+    mergeCategoryLists(
+      duplicate,
+      article
     );
 
-  if (
-    index !== -1
-  ) {
+    mergeSourceLists(
+      duplicate,
+      article
+    );
+
+    if (
+      (
+        article.summary ||
+        ""
+      ).length >
+      (
+        duplicate.summary ||
+        ""
+      ).length
+    ) {
+      duplicate.summary =
+        article.summary;
+    }
+
+    duplicate.isVideo =
+      Boolean(
+        duplicate.isVideo ||
+        article.isVideo
+      );
+  }
+
+  return merged;
+}
+
+function removeCategory(categories, category) {
+  const index =
+    categories.indexOf(category);
+
+  if (index !== -1) {
     categories.splice(
       index,
       1
@@ -624,32 +863,19 @@ function removeCategory(
   }
 }
 
-function moveCategoryFirst(
-  categories,
-  category
-) {
+function moveCategoryFirst(categories, category) {
   removeCategory(
     categories,
     category
   );
 
-  categories.unshift(
-    category
-  );
+  categories.unshift(category);
 }
 
-function finalClassify(
-  article
-) {
+function finalClassify(article) {
   const text =
     normalize(
-      `${
-        article.title ||
-        ""
-      } ${
-        article.summary ||
-        ""
-      }`
+      `${article.title || ""} ${article.summary || ""}`
     );
 
   const categories = [
@@ -662,172 +888,77 @@ function finalClassify(
   ];
 
   const add =
-    category => {
+    (category) => {
       if (
         category &&
-        !categories.includes(
-          category
-        )
+        !categories.includes(category)
       ) {
-        categories.push(
-          category
-        );
+        categories.push(category);
       }
     };
 
-  /*
-   * SALVINI / LEGA
-   *
-   * "Lega" da sola non basta:
-   * evitiamo Lega Serie A, leghe sportive ecc.
-   */
   const hasLega =
-    /\bsalvini\b/.test(
-      text
-    )
+    /\bsalvini\b/.test(text)
     ||
     (
-      /\blega\b/.test(
-        text
-      )
+      /\blega\b/.test(text)
       &&
-      /\b(partit|politic|fontana|zaia|fedriga|giorgetti|calderoli|molinar|romeo|borghi|rinaldi|vannacci)\w*/.test(
-        text
-      )
+      /\b(partit|politic|fontana|zaia|fedriga|giorgetti|calderoli|molinar|romeo|borghi|rinaldi|vannacci)\w*/.test(text)
     );
 
-  /*
-   * IMMIGRAZIONE
-   */
   const immigration =
-    /\b(immigrat|migrant|stranier|irregolar|clandestin|extracomunitar|richiedent asil|profugh|sbarch|sbarco|rimpatr|cpr|accoglienz|lampedusa|ong|hotspot|barcone)\w*/.test(
-      text
-    );
+    /\b(immigrat|migrant|stranier|irregolar|clandestin|extracomunitar|richiedent asil|profugh|sbarch|sbarco|rimpatr|cpr|accoglienz|lampedusa|ong|hotspot|barcone)\w*/.test(text);
 
-  /*
-   * CRIMINALITÀ / SICUREZZA
-   */
   const crime =
-    /\b(arrest|rapin|aggress|omicid|tentato omicidio|furto|violenz|stupro|stupr|molest|accoltell|coltell|pugni|picchi|rissa|spaccio|droga|evas|fuga|poliziott|carabinier|agente|denunciat|fermato|minacc|sequestr|scipp|borseggi)\w*/.test(
-      text
-    );
+    /\b(arrest|rapin|aggress|omicid|tentato omicidio|furto|violenz|stupro|stupr|molest|accoltell|coltell|pugni|picchi|rissa|spaccio|droga|evas|fuga|poliziott|carabinier|agente|denunciat|fermato|minacc|sequestr|scipp|borseggi)\w*/.test(text);
 
-  /*
-   * GOVERNO
-   */
   const government =
-    /\b(governo|meloni|palazzo chigi|consiglio ministri|ministro|ministra|ministero|decreto legge|decreto legislativo)\b/.test(
-      text
-    );
+    /\b(governo|meloni|palazzo chigi|consiglio ministri|ministro|ministra|ministero|decreto legge|decreto legislativo)\b/.test(text);
 
-  /*
-   * POLITICA
-   */
   const politics =
     government
     ||
-    /\b(parlament|senato|camera deputat|maggioranza|opposizione|partit|elezion|coalizion|segretari|presidente regione)\w*/.test(
-      text
-    )
+    /\b(parlament|senato|camera deputat|maggioranza|opposizione|partit|elezion|coalizion|segretari|presidente regione)\w*/.test(text)
     ||
     hasLega;
 
-  /*
-   * JUVENTUS
-   */
   const juventus =
-    /\b(juventus|juve|bianconer)\w*/.test(
-      text
-    );
+    /\b(juventus|juve|bianconer)\w*/.test(text);
 
-  /*
-   * CALCIOMERCATO
-   */
   const market =
-    /\b(calciomercato|mercato|acquist|cession|prestito|trattativa|offerta|accordo|firma|ingaggio)\w*/.test(
-      text
-    )
+    /\b(calciomercato|mercato|acquist|cession|prestito|trattativa|offerta|accordo|firma|ingaggio)\w*/.test(text)
     &&
-    /\b(calcio|juventus|juve|milan|inter|napoli|roma|lazio|atalanta|serie a)\b/.test(
-      text
-    );
+    /\b(calcio|juventus|juve|milan|inter|napoli|roma|lazio|atalanta|serie a)\b/.test(text);
 
-  /*
-   * STORIE UMANE:
-   * puntiamo alle storie positive / lieto fine.
-   */
   const humanPositive =
-    /\b(salvat|soccors|ritrovat|messo in salvo|fuori pericolo|salva la vita|salvano la vita|gesto eroico|eroe|solidariet|abbraccio|lieto fine|adottat)\w*/.test(
-      text
-    )
+    /\b(salvat|soccors|ritrovat|messo in salvo|fuori pericolo|salva la vita|salvano la vita|gesto eroico|eroe|solidariet|abbraccio|lieto fine|adottat)\w*/.test(text)
     &&
-    !/\b(morto|morta|morti|morte|cadavere|ucciso|uccisa|omicidio|strage)\b/.test(
-      text
-    );
+    !/\b(morto|morta|morti|morte|cadavere|ucciso|uccisa|omicidio|strage)\b/.test(text);
 
-  /*
-   * TRASPORTI
-   */
   const transport =
-    /\b(trasport|treno|ferrovi|autostrad|ponte sullo stretto|infrastruttur|aeroport|porto|metropolitana|metro|tav)\w*/.test(
-      text
-    );
+    /\b(trasport|treno|ferrovi|autostrad|ponte sullo stretto|infrastruttur|aeroport|porto|metropolitana|metro|tav)\w*/.test(text);
 
-  /*
-   * EUROPA
-   */
   const europe =
-    /\b(unione europea|commissione europea|parlamento europeo|bruxelles|consiglio europeo|ue)\b/.test(
-      text
-    );
+    /\b(unione europea|commissione europea|parlamento europeo|bruxelles|consiglio europeo|ue)\b/.test(text);
 
-  /*
-   * LEGA:
-   * se Google ha restituito un risultato non politico
-   * sotto la query Lega, togliamo il falso positivo.
-   */
-  if (
-    hasLega
-  ) {
-    add(
-      "Lega"
-    );
-  } else if (
-    categories.includes(
-      "Lega"
-    )
-  ) {
+  if (hasLega) {
+    add("Lega");
+  } else {
     removeCategory(
       categories,
       "Lega"
     );
   }
 
-  /*
-   * IMMIGRAZIONE:
-   * deve esserci almeno un segnale reale.
-   */
-  if (
-    immigration
-  ) {
-    add(
-      "Immigrazione"
-    );
-  } else if (
-    categories.includes(
-      "Immigrazione"
-    )
-  ) {
+  if (immigration) {
+    add("Immigrazione");
+  } else {
     removeCategory(
       categories,
       "Immigrazione"
     );
   }
 
-  /*
-   * CRIMINI & IMMIGRAZIONE:
-   * servono ENTRAMBI i segnali.
-   */
   if (
     immigration &&
     crime
@@ -835,128 +966,60 @@ function finalClassify(
     add(
       "Crimini & immigrazione"
     );
-  } else if (
-    categories.includes(
-      "Crimini & immigrazione"
-    )
-  ) {
+  } else {
     removeCategory(
       categories,
       "Crimini & immigrazione"
     );
   }
 
-  if (
-    crime
-  ) {
-    add(
-      "Sicurezza"
-    );
+  if (crime) {
+    add("Sicurezza");
   }
 
-  if (
-    government
-  ) {
-    add(
-      "Governo"
-    );
+  if (government) {
+    add("Governo");
   }
 
-  if (
-    politics
-  ) {
-    add(
-      "Politica"
-    );
+  if (politics) {
+    add("Politica");
   }
 
-  /*
-   * JUVENTUS:
-   * eliminiamo eventuali risultati sportivi
-   * non realmente riferiti alla Juve.
-   */
-  if (
-    juventus
-  ) {
-    add(
-      "Juventus"
-    );
-  } else if (
-    categories.includes(
-      "Juventus"
-    )
-  ) {
+  if (juventus) {
+    add("Juventus");
+  } else {
     removeCategory(
       categories,
       "Juventus"
     );
   }
 
-  /*
-   * CALCIOMERCATO:
-   * deve esserci un vero segnale di mercato.
-   */
-  if (
-    market
-  ) {
-    add(
-      "Calciomercato"
-    );
-  } else if (
-    categories.includes(
-      "Calciomercato"
-    )
-  ) {
+  if (market) {
+    add("Calciomercato");
+  } else {
     removeCategory(
       categories,
       "Calciomercato"
     );
   }
 
-  /*
-   * STORIE UMANE:
-   * evitiamo tragedie classificate come
-   * storie positive solo perché compare "soccorso".
-   */
-  if (
-    humanPositive
-  ) {
-    add(
-      "Storie umane"
-    );
-  } else if (
-    categories.includes(
-      "Storie umane"
-    )
-  ) {
+  if (humanPositive) {
+    add("Storie umane");
+  } else {
     removeCategory(
       categories,
       "Storie umane"
     );
   }
 
-  if (
-    transport
-  ) {
-    add(
-      "Trasporti"
-    );
+  if (transport) {
+    add("Trasporti");
   }
 
-  if (
-    europe
-  ) {
-    add(
-      "Europa"
-    );
+  if (europe) {
+    add("Europa");
   }
 
-  /*
-   * ORDINE DEL BADGE PRINCIPALE
-   *
-   * Quando sei su "Tutte", vogliamo mostrare
-   * la categoria più utile e specifica.
-   */
   if (
     immigration &&
     crime
@@ -965,42 +1028,30 @@ function finalClassify(
       categories,
       "Crimini & immigrazione"
     );
-  } else if (
-    hasLega
-  ) {
+  } else if (hasLega) {
     moveCategoryFirst(
       categories,
       "Lega"
     );
-  } else if (
-    market
-  ) {
+  } else if (market) {
     moveCategoryFirst(
       categories,
       "Calciomercato"
     );
-  } else if (
-    juventus
-  ) {
+  } else if (juventus) {
     moveCategoryFirst(
       categories,
       "Juventus"
     );
-  } else if (
-    humanPositive
-  ) {
+  } else if (humanPositive) {
     moveCategoryFirst(
       categories,
       "Storie umane"
     );
   }
 
-  if (
-    !categories.length
-  ) {
-    categories.push(
-      "Cronaca"
-    );
+  if (!categories.length) {
+    categories.push("Cronaca");
   }
 
   return {
@@ -1022,9 +1073,7 @@ async function readPrevious() {
       );
 
     const parsed =
-      JSON.parse(
-        raw
-      );
+      JSON.parse(raw);
 
     return Array.isArray(
       parsed.news
@@ -1050,11 +1099,6 @@ async function main() {
 
   const results = [];
 
-  /*
-   * Le richieste restano sequenziali:
-   * non cambiamo il comportamento che
-   * sta funzionando bene con Google.
-   */
   for (
     let i = 0;
     i < QUERIES.length;
@@ -1072,9 +1116,7 @@ async function main() {
         query
       );
 
-    results.push(
-      result
-    );
+    results.push(result);
 
     console.log(
       `[${i + 1}/${QUERIES.length}] ` +
@@ -1086,8 +1128,7 @@ async function main() {
 
     if (
       i <
-      QUERIES.length -
-        1
+      QUERIES.length - 1
     ) {
       await sleep(
         REQUEST_DELAY_MS
@@ -1097,7 +1138,7 @@ async function main() {
 
   const successful =
     results.filter(
-      result =>
+      (result) =>
         result.ok
     );
 
@@ -1106,7 +1147,7 @@ async function main() {
   for (
     const result
     of results.filter(
-      result =>
+      (result) =>
         !result.ok
     )
   ) {
@@ -1123,25 +1164,28 @@ async function main() {
       ) + 1;
   }
 
-  const news =
+  const rawGoogleItems =
+    successful.flatMap(
+      (result) =>
+        result.news
+    );
+
+  const mergedItems =
     merge(
-      successful.flatMap(
-        result =>
-          result.news
-      )
-    )
-      .map(
-        finalClassify
-      )
+      rawGoogleItems
+    );
+
+  console.log(
+    `Dedup: ${rawGoogleItems.length} raw -> ${mergedItems.length} unique`
+  );
+
+  const news =
+    mergedItems
+      .map(finalClassify)
       .sort(
         (a, b) =>
-          new Date(
-            b.pubDate
-          )
-          -
-          new Date(
-            a.pubDate
-          )
+          new Date(b.pubDate) -
+          new Date(a.pubDate)
       )
       .slice(
         0,
@@ -1155,29 +1199,16 @@ async function main() {
           ...article,
 
           id:
-            `${normalize(
-              article.title
-            ).slice(
-              0,
-              70
-            )}-` +
-            `${new Date(
-              article.pubDate
-            ).getTime()}-` +
+            `${normalize(article.title).slice(0, 70)}-` +
+            `${new Date(article.pubDate).getTime()}-` +
             `${index}`,
 
           sourceCount:
-            article.sources
-              ?.length ||
+            article.sources?.length ||
             1
         })
       );
 
-  /*
-   * Protezione LAST GOOD invariata:
-   * se Google restituisce troppo poco,
-   * non distruggiamo un feed sano.
-   */
   if (
     news.length <
       MIN_GOOD_ITEMS &&
@@ -1236,7 +1267,7 @@ async function main() {
       VERSION,
 
     engine:
-      "github-actions-google-news-v4-categories-safe",
+      "github-actions-google-news-v5-dedup-safe",
 
     updatedAt:
       new Date()
@@ -1260,6 +1291,12 @@ async function main() {
 
     servedPreviousGood:
       false,
+
+    rawTotal:
+      rawGoogleItems.length,
+
+    deduplicatedTotal:
+      mergedItems.length,
 
     total:
       news.length,
@@ -1285,10 +1322,7 @@ async function main() {
 }
 
 main()
-  .catch(error => {
-    console.error(
-      error
-    );
-
+  .catch((error) => {
+    console.error(error);
     process.exit(1);
   });
