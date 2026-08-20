@@ -32,6 +32,9 @@ jobs:
       - name: Enrich video news
         run: node scripts/add-video-news.mjs
 
+      - name: Enrich focus sections
+        run: node scripts/enrich-focus-news.mjs
+
       - name: Commit updated feed
         run: |
           if git diff --quiet -- news.json; then
