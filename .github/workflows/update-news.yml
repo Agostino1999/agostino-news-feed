@@ -29,6 +29,9 @@ jobs:
       - name: Generate news.json
         run: node scripts/generate-news.mjs
 
+      - name: Enrich video news
+        run: node scripts/add-video-news.mjs
+
       - name: Commit updated feed
         run: |
           if git diff --quiet -- news.json; then
