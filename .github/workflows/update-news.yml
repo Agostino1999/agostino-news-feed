@@ -35,6 +35,9 @@ jobs:
       - name: Enrich focus sections
         run: node scripts/enrich-focus-news.mjs
 
+      - name: Remove blocked sources
+        run: node scripts/remove-blocked-sources.mjs
+
       - name: Commit updated feed
         run: |
           if git diff --quiet -- news.json; then
