@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import { sanitizeFeedArticle } from "./source-policy.mjs";
 
 const VERSION = "V5-DEDUP-SAFE";
 const OUT = "news.json";
@@ -1689,6 +1690,10 @@ async function main() {
       .map(
         finalClassify
       )
+      .map(
+        sanitizeFeedArticle
+      )
+      .filter(Boolean)
       .sort(
         (a, b) =>
           new Date(
@@ -1743,6 +1748,11 @@ async function main() {
       `Keeping previous good feed (${previous.news.length}).`
     );
 
+    const previousNews = previous.news
+      .map(sanitizeFeedArticle)
+      .filter(Boolean)
+      .slice(0, MAX_ITEMS);
+
     const payload = {
       ...previous,
 
@@ -1765,7 +1775,13 @@ async function main() {
       errors,
 
       servedPreviousGood:
-        true
+        true,
+
+      total:
+        previousNews.length,
+
+      news:
+        previousNews
     };
 
     await fs.writeFile(
