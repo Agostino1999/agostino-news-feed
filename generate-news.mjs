@@ -1377,12 +1377,43 @@ function finalClassify(
       text
     );
 
-  const humanPositive =
-    /\b(salvat|soccors|ritrovat|messo in salvo|fuori pericolo|salva la vita|salvano la vita|gesto eroico|eroe|solidariet|abbraccio|lieto fine|adottat)\w*/.test(
+  const humanStrongPositive =
+    /\b(salvat|ritrovat|messo in salvo|fuori pericolo|salva la vita|salvano la vita|gesto eroico|lieto fine|riabbracci|sopravviss|adottat)\w*/.test(
+      text
+    );
+
+  const humanSolidarity =
+    /\bsolidariet\w*/.test(
       text
     )
     &&
-    !/\b(morto|morta|morti|morte|cadavere|ucciso|uccisa|omicidio|strage)\b/.test(
+    /\b(raccolta fondi|don(?:a|ano|are|ato|ata|ati|ate|azione|azioni|avano|eranno|iamo)|regal\w*|offr\w*|devolv\w*|benefic\w*|volontari\w*|aiut\w*|risparmi|comunita si mobilita|famiglia in difficolta)\b/.test(
+      text
+    );
+
+  const humanRescue =
+    /\bsoccors\w*/.test(
+      text
+    )
+    &&
+    /\b(malore|soffoc|anneg|precipitat|intrappolat|ferit|in difficolta|rischiava|persona|bambin|bimba|donna|uomo|anzian|escursionist|automobilist)\w*/.test(
+      text
+    )
+    &&
+    !/\b(tension|rissa|spray urticante|scontri?)\w*/.test(
+      text
+    );
+
+  const humanPositive =
+    (
+      humanStrongPositive
+      ||
+      humanSolidarity
+      ||
+      humanRescue
+    )
+    &&
+    !/\b(mort|muor|decedut|cadavere|uccis|omicid|strage|traged|disastr|alluvion|nubifrag|terremot|dispers|vittim|funeral|lutto|ultimo saluto|addio|sacrific)\w*/.test(
       text
     );
 
