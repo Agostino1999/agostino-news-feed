@@ -26,7 +26,20 @@ const FOCUS_QUERIES = [
   ["Esteri", 'Trump USA esteri politica when:1d'],
   ["Esteri", 'Ucraina Russia guerra when:1d'],
   ["Esteri", 'Israele Gaza Iran Medio Oriente when:1d'],
-  ["Esteri", 'Cina Taiwan geopolitica when:1d']
+  ["Esteri", 'Cina Taiwan geopolitica when:1d'],
+
+  // TESTATE PRIORITARIE — copertura generale, mantenendo anche Google News ampio.
+  ["Cronaca", "site:ansa.it when:1d"],
+  ["Cronaca", "site:repubblica.it when:1d"],
+  ["Cronaca", "site:corriere.it when:1d"],
+  ["Cronaca", "site:ilgiornale.it when:1d"],
+  ["Cronaca", "site:liberoquotidiano.it when:1d"],
+  ["Cronaca", "site:iltempo.it when:1d"],
+  ["Cronaca", "site:ilgiorno.it when:1d"],
+  ["Cronaca", "site:adnkronos.com when:1d"],
+  ["Cronaca", "site:agi.it when:1d"],
+  ["Cronaca", "site:quotidiano.net when:1d"],
+  ["Juventus", "site:sport.sky.it Juventus when:2d"]
 ];
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
@@ -294,10 +307,13 @@ function isCrimeImmigrationFocus(article) {
   const crime =
     /\b(arrest|rapin|aggress|omicid|furto|violenz|stupro|stupr|molest|accoltell|coltell|pugni|picchi|rissa|spaccio|droga|evas|fuga|poliziott|carabinier|agente|denunciat|fermato|minacc|sequestr|scipp|borseggi)\w*/.test(text);
 
-  const youthFocus =
-    /\b(baby gang|babygang|maranza|maranze|italiani di seconda generazione|italiano di seconda generazione|seconda generazione|seconde generazioni)\b/.test(text);
+  const secondGeneration =
+    /\b(italiani di seconda generazione|italiano di seconda generazione|seconda generazione|seconde generazioni)\b/.test(text);
 
-  return (immigration && crime) || youthFocus;
+  const youthCrime =
+    /\b(baby gang|babygang|maranza|maranze)\b/.test(text);
+
+  return (immigration && crime) || youthCrime || (secondGeneration && crime);
 }
 
 function isStrictMITTransport(article) {
