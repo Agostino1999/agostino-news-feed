@@ -640,6 +640,33 @@ function shareNamedEntity(
   );
 }
 
+const TRANSFER_ENTITY_EXCLUSIONS = new Set([
+  "Juventus",
+  "Juve",
+  "Palermo",
+  "Calcio",
+  "Bianconeri",
+  "Bianconero",
+  "Rosanero",
+  "Rosaneri"
+]);
+
+function shareSpecificTransferEntity(
+  a,
+  b
+) {
+  const ea = new Set(
+    [...entityTokens(a.title || "")]
+      .filter(entity => !TRANSFER_ENTITY_EXCLUSIONS.has(entity))
+  );
+  const eb = new Set(
+    [...entityTokens(b.title || "")]
+      .filter(entity => !TRANSFER_ENTITY_EXCLUSIONS.has(entity))
+  );
+
+  return intersectionSize(ea, eb) > 0;
+}
+
 function hoursBetween(
   a,
   b
@@ -811,7 +838,10 @@ function isDuplicateArticle(
       b
     )
   ) {
-    return true;
+    const aEvents = eventClasses(`${a.title || ""} ${a.summary || ""}`);
+    const bEvents = eventClasses(`${b.title || ""} ${b.summary || ""}`);
+    const transferPair = aEvents.has("transfer") && bEvents.has("transfer");
+    return !transferPair || shareSpecificTransferEntity(a, b);
   }
 
   return false;
