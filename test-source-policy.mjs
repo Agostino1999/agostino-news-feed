@@ -40,7 +40,7 @@ test("esclude tutte le fonti richieste", () => {
   }
 });
 
-test("elimina lo sport non Juventus prima di salvarlo nel feed", () => {
+test("mantiene lo sport attendibile e continua a eliminare le fonti bloccate", () => {
   const palermo = { ...article("Calcio Rosanero"), title: "Calciomercato: Blin verso il Cesena" };
   const como = { ...article("Sky Sport"), title: "Como-Ricci, prestito con diritto di riscatto" };
   const kean = { ...article("Calciomercato"), title: "Moise Kean al Como, affare vicino alla chiusura" };
@@ -56,9 +56,8 @@ test("elimina lo sport non Juventus prima di salvarlo nel feed", () => {
   const naplesCrime = { ...article("Corriere delle Alpi"), title: "Giovane turista straniero ferito a bottigliate a Napoli durante rapina" };
   const juve = { ...article("Sky Sport"), title: "Juve, accordo per Kessié" };
   assert.equal(isIrrelevantNonJuventusSport(palermo), true);
-  for (const irrelevant of [palermo, como, kean, mondiale, legends, volley, uefa, formulaOne, fiorentina, milanVenezia]) {
-    assert.equal(sanitizeFeedArticle(irrelevant), null, irrelevant.title);
-  }
+  assert.equal(sanitizeFeedArticle(palermo), null);
+  for (const kept of [como, kean, mondiale, legends, volley, uefa, formulaOne, fiorentina, milanVenezia]) assert.ok(sanitizeFeedArticle(kept), kept.title);
   assert.ok(sanitizeFeedArticle(crans));
   assert.ok(sanitizeFeedArticle(film));
   assert.ok(sanitizeFeedArticle(naplesCrime));
