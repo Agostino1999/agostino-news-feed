@@ -138,7 +138,7 @@ const QUERIES = [
     "esteri Europa USA guerra diplomazia when:1d"
   ],
 
-  // JUVENTUS / CALCIOMERCATO
+  // JUVENTUS / CALCIOMERCATO / SPORT
   [
     "Juventus",
     "Juventus when:1h"
@@ -149,11 +149,23 @@ const QUERIES = [
   ],
   [
     "Calciomercato",
-    "calciomercato Juventus when:1h"
+    "calciomercato when:1h"
   ],
   [
     "Calciomercato",
-    "Juventus acquisti cessioni prestito trattativa when:1d"
+    "calciomercato acquisti cessioni prestiti trattative when:1d"
+  ],
+  [
+    "Sport",
+    "calcio Serie A when:1h"
+  ],
+  [
+    "Sport",
+    "tennis Formula 1 MotoGP when:1d"
+  ],
+  [
+    "Sport",
+    "atletica nuoto basket volley ciclismo when:1d"
   ]
 ];
 
@@ -1384,13 +1396,15 @@ function finalClassify(
     );
 
   const market =
-    /\b(calciomercato|mercato|acquist|cession|prestito|trattativa|offerta|accordo|firma|ingaggio)\w*/.test(
-      text
-    )
-    &&
-    /\b(calcio|juventus|juve|milan|inter|napoli|roma|lazio|atalanta|serie a)\b/.test(
-      text
+    /\bcalciomercato\b/.test(text)
+    || (
+      /\b(acquist|cession|prestito|trattativ|offerta|accordo|firma|ingaggio|riscatto|parametro zero|trasferiment|entourage|procurator|obiettivo di mercato)\w*/.test(text)
+      && /\b(calcio|calciator|allenator|portier|difensor|centrocampist|attaccant|juventus|juve|milan|inter|napoli|roma|lazio|atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|lecce|palermo|parma|pisa|sassuolo|torino|udinese|venezia|verona|serie a)\b/.test(text)
     );
+
+  const sport =
+    /\b(calcio|serie [abc]|champions league|europa league|conference league|fifa|uefa|tennis|us open|wimbledon|roland garros|coppa davis|atp|wta|formula 1|formula uno|gran premio|motogp|moto gp|atletica|nuoto|basket|pallacanestro|volley|pallavolo|ciclismo|rugby|sci|mondiali|olimpiad|paralimpiad)\w*/.test(text)
+    || /\b(sinner|sabalenka|federer|alcaraz|djokovic|musetti|berrettini|leclerc|verstappen|hamilton|antonelli|spalletti)\b/.test(text);
 
   const humanStrongPositive =
     /\b(salvat|ritrovat|messo in salvo|fuori pericolo|salva la vita|salvano la vita|gesto eroico|lieto fine|riabbracci|sopravviss|adottat)\w*/.test(
@@ -1541,6 +1555,7 @@ function finalClassify(
     add(
       "Calciomercato"
     );
+    removeCategory(categories, "Sport");
   } else if (
     categories.includes(
       "Calciomercato"
@@ -1550,6 +1565,8 @@ function finalClassify(
       categories,
       "Calciomercato"
     );
+    if (sport) add("Sport");
+    else removeCategory(categories, "Sport");
   }
 
   if (
@@ -1614,6 +1631,8 @@ function finalClassify(
       categories,
       "Juventus"
     );
+  } else if (sport) {
+    moveCategoryFirst(categories, "Sport");
   } else if (
     humanPositive
   ) {
