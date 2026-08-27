@@ -1,7 +1,8 @@
 import fs from "node:fs/promises";
 import { sanitizeFeedArticle } from "../source-policy.mjs";
+import { extractFeedImage } from "../feed-images.mjs";
 
-const VERSION = "V5-DEDUP-SAFE";
+const VERSION = "V6-RSS-THUMBNAILS";
 const OUT = "news.json";
 const MAX_ITEMS = 300;
 const MIN_GOOD_ITEMS = 100;
@@ -593,6 +594,9 @@ function parseGoogle(xml, category) {
       const summary =
         tag(item, "description");
 
+      const image =
+        extractFeedImage(item);
+
       if (
         !title ||
         !link ||
@@ -605,6 +609,7 @@ function parseGoogle(xml, category) {
         title,
         summary,
         link,
+        image,
         source,
 
         category,
@@ -847,6 +852,14 @@ function merge(items) {
         duplicate.isVideo ||
         article.isVideo
       );
+
+    if (
+      !duplicate.image &&
+      article.image
+    ) {
+      duplicate.image =
+        article.image;
+    }
   }
 
   return merged;
