@@ -9,7 +9,7 @@ const MIN_GOOD_ITEMS = 100;
 const REQUEST_DELAY_MS = 650;
 const MAX_RETRIES = 3;
 
-// ARCHITETTURA INVARIATA: 30 query, richieste sequenziali, last-good-feed.
+// Query sequenziali con copertura dedicata a sport e mercato generale.
 const QUERIES = [
   ["Politica", "politica italiana parlamento maggioranza opposizione when:1d"],
   ["Politica", "partiti italiani parlamento politica when:1d"],
@@ -52,8 +52,11 @@ const QUERIES = [
 
   ["Juventus", "Juventus when:1h"],
   ["Juventus", "Juventus when:1d"],
-  ["Calciomercato", "calciomercato Juventus when:1h"],
-  ["Calciomercato", "Juventus acquisti cessioni prestito trattativa when:1d"]
+  ["Calciomercato", "calciomercato when:1h"],
+  ["Calciomercato", "calciomercato acquisti cessioni prestiti trattative when:1d"],
+  ["Sport", "calcio Serie A when:1h"],
+  ["Sport", "tennis Formula 1 MotoGP when:1d"],
+  ["Sport", "atletica nuoto basket volley ciclismo when:1d"]
 ];
 
 const sleep = (ms) =>
@@ -940,9 +943,15 @@ function finalClassify(article) {
     /\b(juventus|juve|bianconer)\w*/.test(text);
 
   const market =
-    /\b(calciomercato|mercato|acquist|cession|prestito|trattativa|offerta|accordo|firma|ingaggio)\w*/.test(text)
-    &&
-    /\b(calcio|juventus|juve|milan|inter|napoli|roma|lazio|atalanta|serie a)\b/.test(text);
+    /\bcalciomercato\b/.test(text)
+    || (
+      /\b(acquist|cession|prestito|trattativ|offerta|accordo|firma|ingaggio|riscatto|parametro zero|trasferiment|entourage|procurator|obiettivo di mercato)\w*/.test(text)
+      && /\b(calcio|calciator|allenator|portier|difensor|centrocampist|attaccant|juventus|juve|milan|inter|napoli|roma|lazio|atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|lecce|palermo|parma|pisa|sassuolo|torino|udinese|venezia|verona|serie a)\b/.test(text)
+    );
+
+  const sport =
+    /\b(calcio|serie [abc]|champions league|europa league|conference league|fifa|uefa|tennis|us open|wimbledon|roland garros|coppa davis|atp|wta|formula 1|formula uno|gran premio|motogp|moto gp|atletica|nuoto|basket|pallacanestro|volley|pallavolo|ciclismo|rugby|sci|mondiali|olimpiad|paralimpiad)\w*/.test(text)
+    || /\b(sinner|sabalenka|federer|alcaraz|djokovic|musetti|berrettini|leclerc|verstappen|hamilton|antonelli|spalletti)\b/.test(text);
 
   const humanPositive =
     /\b(salvat|soccors|ritrovat|messo in salvo|fuori pericolo|salva la vita|salvano la vita|gesto eroico|eroe|solidariet|abbraccio|lieto fine|adottat)\w*/.test(text)
@@ -1010,11 +1019,14 @@ function finalClassify(article) {
 
   if (market) {
     add("Calciomercato");
+    removeCategory(categories, "Sport");
   } else {
     removeCategory(
       categories,
       "Calciomercato"
     );
+    if (sport) add("Sport");
+    else removeCategory(categories, "Sport");
   }
 
   if (humanPositive) {
@@ -1057,6 +1069,8 @@ function finalClassify(article) {
       categories,
       "Juventus"
     );
+  } else if (sport) {
+    moveCategoryFirst(categories, "Sport");
   } else if (humanPositive) {
     moveCategoryFirst(
       categories,
