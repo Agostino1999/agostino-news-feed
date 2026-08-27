@@ -265,22 +265,23 @@ export function sourcePolicyRank(source) {
   return isLowPrioritySource(source) ? 25 : 55;
 }
 
-export function isIrrelevantNonJuventusFootball(article) {
+export function isIrrelevantNonJuventusSport(article) {
   const title = normalizeSourceName(article?.title || "");
   if ((article?.categories || [article?.category]).some(category => ["Juventus", "Calciomercato"].includes(category))) return false;
   if (/\b(juventus|juve|bianconer)\w*/.test(title)) return false;
 
   const source = normalizeSourceName(article?.source || "");
-  const footballSource = /\b(calcio|sport|football|romanews|rosaner|fantacalcio|william hill)\b/.test(source);
-  const strongFootball = /\b(calciomercato|serie [abc]|champions(?: league)?|europa league|conference league|calciator|allenator|centrocampist|attaccant|difensor|portier|prestito con|diritto di riscatto|obbligo di riscatto)\w*/.test(title);
-  const footballFromSportsSource = footballSource
-    && /\b(partit|campionat|coppe?|mercato|trattativ|prestito|riscatto|gol|squadra|operazione in chiusura)\w*/.test(title);
-  return strongFootball || footballFromSportsSource;
+  const sportsSource = /\b(calcio|calciomercato|sport|football|romanews|rosaner|fantacalcio|william hill|volley|pallavol|basket|tennis|formula 1|motorsport)\b/.test(source);
+  const strongSport = /\b(calciomercato|serie [abc]|champions(?: league)?|europa league|conference league|calciator|allenator|centrocampist|attaccant|difensor|portier|prestito con|diritto di riscatto|obbligo di riscatto|leggend\w* del calcio)\w*/.test(title)
+    || (/\bmondial\w*\b/.test(title) && /\b(sfida|gara|qualificaz)\w*/.test(title));
+  const sportFromSportsSource = sportsSource
+    && /\b(partita|partite|campionat\w*|coppa|coppe|mercato|trattativ\w*|prestito|riscatto|gol|squadra|affare|club|torneo|finale|scambio di documenti|operazione in chiusura)\b/.test(title);
+  return strongSport || sportFromSportsSource;
 }
 
 export function sanitizeFeedArticle(article) {
   if (!article || typeof article !== "object") return null;
-  if (isIrrelevantNonJuventusFootball(article)) return null;
+  if (isIrrelevantNonJuventusSport(article)) return null;
 
   const fallback = {
     source: article.source || "Fonte",

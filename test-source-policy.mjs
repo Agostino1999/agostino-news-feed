@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 
 import {
   isBlockedSource,
-  isIrrelevantNonJuventusFootball,
+  isIrrelevantNonJuventusSport,
   isLowPrioritySource,
   sanitizeFeedArticle
 } from "./source-policy.mjs";
@@ -40,13 +40,22 @@ test("esclude tutte le fonti richieste", () => {
   }
 });
 
-test("elimina il calcio non Juventus prima di salvarlo nel feed", () => {
+test("elimina lo sport non Juventus prima di salvarlo nel feed", () => {
   const palermo = { ...article("Calcio Rosanero"), title: "Calciomercato: Blin verso il Cesena" };
   const como = { ...article("Sky Sport"), title: "Como-Ricci, prestito con diritto di riscatto" };
+  const kean = { ...article("Calciomercato"), title: "Moise Kean al Como, affare vicino alla chiusura" };
+  const mondiale = { ...article("La Provincia Unica Tv"), title: "L'Italia punta al Mondiale: scatta la sfida decisiva!" };
+  const legends = { ...article("Open"), title: "Da Zanetti a Cannavaro: le leggende del calcio tornano in campo" };
+  const volley = { ...article("Volley News"), title: "Velasco dopo Italia-Francia: una partita straordinaria" };
+  const crans = { ...article("La Gazzetta del Mezzogiorno"), title: "Crans-Montana: Leo Bove, il calcio nel cuore e le partite con gli amici" };
+  const film = { ...article("Il Resto del Carlino"), title: "Italia-Germania, un film sulla partita del 1944" };
   const juve = { ...article("Sky Sport"), title: "Juve, accordo per Kessié" };
-  assert.equal(isIrrelevantNonJuventusFootball(palermo), true);
-  assert.equal(sanitizeFeedArticle(palermo), null);
-  assert.equal(sanitizeFeedArticle(como), null);
+  assert.equal(isIrrelevantNonJuventusSport(palermo), true);
+  for (const irrelevant of [palermo, como, kean, mondiale, legends, volley]) {
+    assert.equal(sanitizeFeedArticle(irrelevant), null, irrelevant.title);
+  }
+  assert.ok(sanitizeFeedArticle(crans));
+  assert.ok(sanitizeFeedArticle(film));
   assert.ok(sanitizeFeedArticle(juve));
 });
 
