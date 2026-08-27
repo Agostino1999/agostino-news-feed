@@ -2,19 +2,122 @@
   "success": true,
   "version": "V5-DEDUP-SAFE",
   "engine": "github-actions-google-news-v5-dedup-safe",
-  "updatedAt": "2026-08-27T04:51:18.438Z",
-  "lastAttempt": "2026-08-27T04:51:18.438Z",
+  "updatedAt": "2026-08-27T04:56:19.430Z",
+  "lastAttempt": "2026-08-27T04:56:19.431Z",
   "refreshOk": true,
-  "successfulQueries": 25,
+  "successfulQueries": 24,
   "totalQueries": 30,
   "errors": {
-    "200": 5
+    "200": 6
   },
   "servedPreviousGood": false,
-  "rawTotal": 229,
-  "deduplicatedTotal": 197,
+  "rawTotal": 231,
+  "deduplicatedTotal": 200,
   "total": 300,
   "news": [
+    {
+      "title": "Omicidio in pizzeria, l’ok del giudice alla perizia su Pellati",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNbDQ2VHFZZWI4X0dzbFZBNXlTcHVub3dZTG9FQmVMejFweEN6emZPYWtYaTRyUndvVWxWXzZNdjBueFpPLUU2eWxOa2VvU0pSbHVUbmprMGtsUDZydHMxcFZRNUdrb0hWZWtCdGJGM1BMTTkzNkQxX1EwUm1fclJEd1JtTFNtOHN1a0VCazlZZWJLaWdCaEJR?oc=5\" target=\"_blank\">Omicidio in pizzeria, l’ok del giudice alla perizia su Pellati</a> <font color=\"#6f6f6f\">Il Resto del Carlino</font>",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbDQ2VHFZZWI4X0dzbFZBNXlTcHVub3dZTG9FQmVMejFweEN6emZPYWtYaTRyUndvVWxWXzZNdjBueFpPLUU2eWxOa2VvU0pSbHVUbmprMGtsUDZydHMxcFZRNUdrb0hWZWtCdGJGM1BMTTkzNkQxX1EwUm1fclJEd1JtTFNtOHN1a0VCazlZZWJLaWdCaEJR?oc=5",
+      "source": "Il Resto del Carlino",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca",
+        "Sicurezza"
+      ],
+      "pubDate": "Thu, 27 Aug 2026 04:54:23 GMT",
+      "googlePubDate": "Thu, 27 Aug 2026 04:54:23 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Il Resto del Carlino",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbDQ2VHFZZWI4X0dzbFZBNXlTcHVub3dZTG9FQmVMejFweEN6emZPYWtYaTRyUndvVWxWXzZNdjBueFpPLUU2eWxOa2VvU0pSbHVUbmprMGtsUDZydHMxcFZRNUdrb0hWZWtCdGJGM1BMTTkzNkQxX1EwUm1fclJEd1JtTFNtOHN1a0VCazlZZWJLaWdCaEJR?oc=5",
+          "pubDate": "Thu, 27 Aug 2026 04:54:23 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbDQ2VHFZZWI4X0dzbFZBNXlTcHVub3dZTG9FQmVMejFweEN6emZPYWtYaTRyUndvVWxWXzZNdjBueFpPLUU2eWxOa2VvU0pSbHVUbmprMGtsUDZydHMxcFZRNUdrb0hWZWtCdGJGM1BMTTkzNkQxX1EwUm1fclJEd1JtTFNtOHN1a0VCazlZZWJLaWdCaEJR?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "omicidio in pizzeria l ok del giudice alla perizia su pellati-1787806463000-0"
+    },
+    {
+      "title": "\"Occupazione abusiva in via Aurelia. I residenti chiedono interventi rapidi\"",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxQNFp4UzBNX0ljVEZtXzJlendlc3BMWTk4QVJxbWVJcjN6NG5tZ3h1em0ya2xqWjRtQkkyWUJIMHItczFBSFZzR1NNTkN3UDJxMmN1NWdtYlE0ZXFwYTc0ZXBaYUxVbTZoRlQ1dmhaMFJXX0xLdU5xcjItMDA3YXl4NWktZmpIMHdmQmV6UVFlckcxN01l?oc=5\" target=\"_blank\">\"Occupazione abusiva in via Aurelia. I residenti chiedono interventi rapidi\"</a> <font color=\"#6f6f6f\">La Nazione</font>",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNFp4UzBNX0ljVEZtXzJlendlc3BMWTk4QVJxbWVJcjN6NG5tZ3h1em0ya2xqWjRtQkkyWUJIMHItczFBSFZzR1NNTkN3UDJxMmN1NWdtYlE0ZXFwYTc0ZXBaYUxVbTZoRlQ1dmhaMFJXX0xLdU5xcjItMDA3YXl4NWktZmpIMHdmQmV6UVFlckcxN01l?oc=5",
+      "source": "La Nazione",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Thu, 27 Aug 2026 04:54:20 GMT",
+      "googlePubDate": "Thu, 27 Aug 2026 04:54:20 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "La Nazione",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNFp4UzBNX0ljVEZtXzJlendlc3BMWTk4QVJxbWVJcjN6NG5tZ3h1em0ya2xqWjRtQkkyWUJIMHItczFBSFZzR1NNTkN3UDJxMmN1NWdtYlE0ZXFwYTc0ZXBaYUxVbTZoRlQ1dmhaMFJXX0xLdU5xcjItMDA3YXl4NWktZmpIMHdmQmV6UVFlckcxN01l?oc=5",
+          "pubDate": "Thu, 27 Aug 2026 04:54:20 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNFp4UzBNX0ljVEZtXzJlendlc3BMWTk4QVJxbWVJcjN6NG5tZ3h1em0ya2xqWjRtQkkyWUJIMHItczFBSFZzR1NNTkN3UDJxMmN1NWdtYlE0ZXFwYTc0ZXBaYUxVbTZoRlQ1dmhaMFJXX0xLdU5xcjItMDA3YXl4NWktZmpIMHdmQmV6UVFlckcxN01l?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "occupazione abusiva in via aurelia i residenti chiedono interventi rap-1787806460000-1"
+    },
+    {
+      "title": "La Juve a caccia di un altro attaccante: ritorno di fiamma con Sørloth, David può entrare nell’affare",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZmJkdEJIX19nUV9ZVUtqYXN4UDVXbWxNU0JkeVFwa0pWbXZCLTR5bmdRLUtVOC1LSFBOVU1jV182V3VBTEw1YzZlTjQxQVI4MlVhVHZobjNEakdsYWlrOXhUOTRIbmJUaFpZRmg1QnJFRDU0NUdCZXgyLW5KSnphal9wOTYzbkFkYkREQ1lZZVExdDQzQ2dCOWhPZFI3dVBlMzZCR2JhM1VOY0ZOa2xwc3kyZ2lTcnQtSHRmNnBjVDVra1VmNU45WGd5V254Tm96aVNIY2o2a2dTOUNpMW5NQVg4RQ?oc=5\" target=\"_blank\">La Juve a caccia di un altro attaccante: ritorno di fiamma con Sørloth, David può entrare nell’affare</a> <font color=\"#6f6f6f\">Goal.com</font>",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZmJkdEJIX19nUV9ZVUtqYXN4UDVXbWxNU0JkeVFwa0pWbXZCLTR5bmdRLUtVOC1LSFBOVU1jV182V3VBTEw1YzZlTjQxQVI4MlVhVHZobjNEakdsYWlrOXhUOTRIbmJUaFpZRmg1QnJFRDU0NUdCZXgyLW5KSnphal9wOTYzbkFkYkREQ1lZZVExdDQzQ2dCOWhPZFI3dVBlMzZCR2JhM1VOY0ZOa2xwc3kyZ2lTcnQtSHRmNnBjVDVra1VmNU45WGd5V254Tm96aVNIY2o2a2dTOUNpMW5NQVg4RQ?oc=5",
+      "source": "Goal.com",
+      "category": "Juventus",
+      "categories": [
+        "Juventus"
+      ],
+      "pubDate": "Thu, 27 Aug 2026 04:54:05 GMT",
+      "googlePubDate": "Thu, 27 Aug 2026 04:54:05 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Goal.com",
+          "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZmJkdEJIX19nUV9ZVUtqYXN4UDVXbWxNU0JkeVFwa0pWbXZCLTR5bmdRLUtVOC1LSFBOVU1jV182V3VBTEw1YzZlTjQxQVI4MlVhVHZobjNEakdsYWlrOXhUOTRIbmJUaFpZRmg1QnJFRDU0NUdCZXgyLW5KSnphal9wOTYzbkFkYkREQ1lZZVExdDQzQ2dCOWhPZFI3dVBlMzZCR2JhM1VOY0ZOa2xwc3kyZ2lTcnQtSHRmNnBjVDVra1VmNU45WGd5V254Tm96aVNIY2o2a2dTOUNpMW5NQVg4RQ?oc=5",
+          "pubDate": "Thu, 27 Aug 2026 04:54:05 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZmJkdEJIX19nUV9ZVUtqYXN4UDVXbWxNU0JkeVFwa0pWbXZCLTR5bmdRLUtVOC1LSFBOVU1jV182V3VBTEw1YzZlTjQxQVI4MlVhVHZobjNEakdsYWlrOXhUOTRIbmJUaFpZRmg1QnJFRDU0NUdCZXgyLW5KSnphal9wOTYzbkFkYkREQ1lZZVExdDQzQ2dCOWhPZFI3dVBlMzZCR2JhM1VOY0ZOa2xwc3kyZ2lTcnQtSHRmNnBjVDVra1VmNU45WGd5V254Tm96aVNIY2o2a2dTOUNpMW5NQVg4RQ?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "la juve a caccia di un altro attaccante ritorno di fiamma con s rloth -1787806445000-2"
+    },
+    {
+      "title": "Per i bimbi fragili tornano i campus al museo",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxQVmdtSm4zb3NzeHdOOTZkYnZqMVFoY19ZWjg5WkZ5S19hTTNLX1NJSmpzd1huVHJDTi1LQWlWdDhJUkVRcE5CQVZFaFFnY2NGNXh0UzhUSldRWnM5UzFka3lwNmhKam9VOG5IV1UtVUowbEJtT3ZwVV9pQ2JreGFnSDcxRDI2akdSbGFJbzhyZllvYnlsQkpR?oc=5\" target=\"_blank\">Per i bimbi fragili tornano i campus al museo</a> <font color=\"#6f6f6f\">il Giornale</font>",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVmdtSm4zb3NzeHdOOTZkYnZqMVFoY19ZWjg5WkZ5S19hTTNLX1NJSmpzd1huVHJDTi1LQWlWdDhJUkVRcE5CQVZFaFFnY2NGNXh0UzhUSldRWnM5UzFka3lwNmhKam9VOG5IV1UtVUowbEJtT3ZwVV9pQ2JreGFnSDcxRDI2akdSbGFJbzhyZllvYnlsQkpR?oc=5",
+      "source": "il Giornale",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Thu, 27 Aug 2026 04:53:21 GMT",
+      "googlePubDate": "Thu, 27 Aug 2026 04:53:21 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "il Giornale",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVmdtSm4zb3NzeHdOOTZkYnZqMVFoY19ZWjg5WkZ5S19hTTNLX1NJSmpzd1huVHJDTi1LQWlWdDhJUkVRcE5CQVZFaFFnY2NGNXh0UzhUSldRWnM5UzFka3lwNmhKam9VOG5IV1UtVUowbEJtT3ZwVV9pQ2JreGFnSDcxRDI2akdSbGFJbzhyZllvYnlsQkpR?oc=5",
+          "pubDate": "Thu, 27 Aug 2026 04:53:21 GMT"
+        }
+      ],
+      "id": "focus-per i bimbi fragili tornano i campus al museo-1787806401000",
+      "sourceCount": 1
+    },
     {
       "title": "Serve la legge speciale per Milano Parte del residuo fiscale resti qui",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxQakVlQWVmUG5jUVduUlF5am5LRkJlSm1TTjB2b3hQZVN1NkRhUlhkMGg0dkl4NnBWSzgwd2ljM1pmbFREc0tuQ1h0cDB4N1d0SGJkMi1IU29zeXd0NjJDWm9wM1BhM25XRzRNeWpXbmtORHh4ZnIxZEVKLXQ5ZExxaE11c3M5a2hhMEE1VUhLVnQ3dW14MzFEQVVndGQyQm5YbTZocWlvR0hlZnNaa2tweVpuRQ?oc=5\" target=\"_blank\">Serve la legge speciale per Milano Parte del residuo fiscale resti qui</a> <font color=\"#6f6f6f\">Zazoom Social News</font>",
@@ -39,7 +142,86 @@
       "originalURL": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQ2hLd3VSbjU1ck8xU2hjbnViZUUwRnpzVmNvTzd1QndWMkZ3QmpVU3Ryc0JDTHBNdWZlaWp3NjdrTWt4dXhjRG1zWUZjVXB0eFI1MzVTQTNLMDNzUHEyU1MzOGpFNFNrTDQ3dHdEcWNTdHlWX0paQlBtTzVEc2E3Wg?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "serve la legge speciale per milano parte del residuo fiscale resti qui-1787806082000-0"
+      "id": "serve la legge speciale per milano parte del residuo fiscale resti qui-1787806082000-3"
+    },
+    {
+      "title": "Juventus, David e Cabal fanno muro bloccando il mercato in uscita",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxOT3FNTnRpSzVFZEI3bXpOUkc0Mk1USld2MTd6ZG5RTFhhSXk3b0tXTXBuMzY1emlxM19PZ0pPQklZZEk5aTdmR1BQZjBCTnducGwzQWFEWHBHZHR0X1ZxaWVqZXpwWkhiWTdZTjZNT0pWUGFyREotaHFpbXFBQ1ZxSlFXZWJjM2FDdW9hY1g1U0c?oc=5\" target=\"_blank\">Juventus, David e Cabal fanno muro bloccando il mercato in uscita</a> <font color=\"#6f6f6f\">UltimeJuve.it</font>",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOT3FNTnRpSzVFZEI3bXpOUkc0Mk1USld2MTd6ZG5RTFhhSXk3b0tXTXBuMzY1emlxM19PZ0pPQklZZEk5aTdmR1BQZjBCTnducGwzQWFEWHBHZHR0X1ZxaWVqZXpwWkhiWTdZTjZNT0pWUGFyREotaHFpbXFBQ1ZxSlFXZWJjM2FDdW9hY1g1U0c?oc=5",
+      "source": "UltimeJuve.it",
+      "category": "Calciomercato",
+      "categories": [
+        "Calciomercato",
+        "Juventus"
+      ],
+      "pubDate": "Thu, 27 Aug 2026 04:46:29 GMT",
+      "googlePubDate": "Thu, 27 Aug 2026 04:46:29 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "UltimeJuve.it",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOT3FNTnRpSzVFZEI3bXpOUkc0Mk1USld2MTd6ZG5RTFhhSXk3b0tXTXBuMzY1emlxM19PZ0pPQklZZEk5aTdmR1BQZjBCTnducGwzQWFEWHBHZHR0X1ZxaWVqZXpwWkhiWTdZTjZNT0pWUGFyREotaHFpbXFBQ1ZxSlFXZWJjM2FDdW9hY1g1U0c?oc=5",
+          "pubDate": "Thu, 27 Aug 2026 04:46:29 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOT3FNTnRpSzVFZEI3bXpOUkc0Mk1USld2MTd6ZG5RTFhhSXk3b0tXTXBuMzY1emlxM19PZ0pPQklZZEk5aTdmR1BQZjBCTnducGwzQWFEWHBHZHR0X1ZxaWVqZXpwWkhiWTdZTjZNT0pWUGFyREotaHFpbXFBQ1ZxSlFXZWJjM2FDdW9hY1g1U0c?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "juventus david e cabal fanno muro bloccando il mercato in uscita-1787805989000-4"
+    },
+    {
+      "title": "La scomparsa di Vittorio Frescobaldi. L’Ornellaia con lui tornò ’italiana’",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxQel8zTnU1ZVRNWVB1TEhxQUtOOWxHSTZVZW85QTExUnJHNmhQQ0dqanA3R2RjaC0yWTcxX3dNMlViSG1LTWc4NEJSclJmMGNvbUI2XzNkZHEtd01IeHhNZzlGQk5Edm5vcjNLRUVlY1NyaUdxNEx0WHhtYmUxaGVrTEJ0cE1LZkJJWC11TWZUQmk?oc=5\" target=\"_blank\">La scomparsa di Vittorio Frescobaldi. L’Ornellaia con lui tornò ’italiana’</a> <font color=\"#6f6f6f\">Il Telegrafo di Livorno</font>",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQel8zTnU1ZVRNWVB1TEhxQUtOOWxHSTZVZW85QTExUnJHNmhQQ0dqanA3R2RjaC0yWTcxX3dNMlViSG1LTWc4NEJSclJmMGNvbUI2XzNkZHEtd01IeHhNZzlGQk5Edm5vcjNLRUVlY1NyaUdxNEx0WHhtYmUxaGVrTEJ0cE1LZkJJWC11TWZUQmk?oc=5",
+      "source": "Il Telegrafo di Livorno",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Thu, 27 Aug 2026 04:46:09 GMT",
+      "googlePubDate": "Thu, 27 Aug 2026 04:46:09 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Il Telegrafo di Livorno",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQel8zTnU1ZVRNWVB1TEhxQUtOOWxHSTZVZW85QTExUnJHNmhQQ0dqanA3R2RjaC0yWTcxX3dNMlViSG1LTWc4NEJSclJmMGNvbUI2XzNkZHEtd01IeHhNZzlGQk5Edm5vcjNLRUVlY1NyaUdxNEx0WHhtYmUxaGVrTEJ0cE1LZkJJWC11TWZUQmk?oc=5",
+          "pubDate": "Thu, 27 Aug 2026 04:46:09 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQel8zTnU1ZVRNWVB1TEhxQUtOOWxHSTZVZW85QTExUnJHNmhQQ0dqanA3R2RjaC0yWTcxX3dNMlViSG1LTWc4NEJSclJmMGNvbUI2XzNkZHEtd01IeHhNZzlGQk5Edm5vcjNLRUVlY1NyaUdxNEx0WHhtYmUxaGVrTEJ0cE1LZkJJWC11TWZUQmk?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "la scomparsa di vittorio frescobaldi l ornellaia con lui torno italian-1787805969000-5"
+    },
+    {
+      "title": "Kessié, duello Juventus-Roma: Friedkin prova il sorpasso, Spalletti aspetta",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxPYTdNUmNyd0dNM3ZJZkE0MW9TTWVCd3lSejZfRW52aHdvd0k4TzZubzhmQWlzWWFWeWJKR0JIZlFxS1F2TGloNzB6UTVwa3JlVjFfdlhGWW9hWXFxbHJndnZUOExZRHVTQnlEUWNGU0tndmFYdFFqQS1pZ0prRWl0YWUzcDdPd2VvWmZ5REJCbTZEMTVvOTY2N0paeVAxdlEzQ0Z5OGNTeE1peGFVWktRZnpVOFkyNDZzYkE?oc=5\" target=\"_blank\">Kessié, duello Juventus-Roma: Friedkin prova il sorpasso, Spalletti aspetta</a> <font color=\"#6f6f6f\">Tutto Juve</font>",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYTdNUmNyd0dNM3ZJZkE0MW9TTWVCd3lSejZfRW52aHdvd0k4TzZubzhmQWlzWWFWeWJKR0JIZlFxS1F2TGloNzB6UTVwa3JlVjFfdlhGWW9hWXFxbHJndnZUOExZRHVTQnlEUWNGU0tndmFYdFFqQS1pZ0prRWl0YWUzcDdPd2VvWmZ5REJCbTZEMTVvOTY2N0paeVAxdlEzQ0Z5OGNTeE1peGFVWktRZnpVOFkyNDZzYkE?oc=5",
+      "source": "Tutto Juve",
+      "category": "Juventus",
+      "categories": [
+        "Juventus"
+      ],
+      "pubDate": "Thu, 27 Aug 2026 04:45:56 GMT",
+      "googlePubDate": "Thu, 27 Aug 2026 04:45:56 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Tutto Juve",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYTdNUmNyd0dNM3ZJZkE0MW9TTWVCd3lSejZfRW52aHdvd0k4TzZubzhmQWlzWWFWeWJKR0JIZlFxS1F2TGloNzB6UTVwa3JlVjFfdlhGWW9hWXFxbHJndnZUOExZRHVTQnlEUWNGU0tndmFYdFFqQS1pZ0prRWl0YWUzcDdPd2VvWmZ5REJCbTZEMTVvOTY2N0paeVAxdlEzQ0Z5OGNTeE1peGFVWktRZnpVOFkyNDZzYkE?oc=5",
+          "pubDate": "Thu, 27 Aug 2026 04:45:56 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYTdNUmNyd0dNM3ZJZkE0MW9TTWVCd3lSejZfRW52aHdvd0k4TzZubzhmQWlzWWFWeWJKR0JIZlFxS1F2TGloNzB6UTVwa3JlVjFfdlhGWW9hWXFxbHJndnZUOExZRHVTQnlEUWNGU0tndmFYdFFqQS1pZ0prRWl0YWUzcDdPd2VvWmZ5REJCbTZEMTVvOTY2N0paeVAxdlEzQ0Z5OGNTeE1peGFVWktRZnpVOFkyNDZzYkE?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "kessie duello juventus roma friedkin prova il sorpasso spalletti aspet-1787805956000-6"
     },
     {
       "title": "Juve, prima le uscite: Koopmeiners e David tengono in scacco il mercato",
@@ -66,38 +248,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQT1Q4eGFBXzlkN1JQVXBLM0E3bl84WU1OYVBETXA0NW1ySGhWLVc4TWtMNC02Y091NTJIQ0VtZFNqODlTaVI0T2xseVQzUGhBa3BMMlQ4S18zQkhEbktTSGJfRm43RGZydUhWbUxnNmhxM1hZQlJmLVdLLXB3Z3dOZ2tNblEyOTdLSnFqVHZOUmp1UWFtX1ljSkZGZ2QyUWNROWc?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "juve prima le uscite koopmeiners e david tengono in scacco il mercato-1787805945000-1"
-    },
-    {
-      "title": "La scomparsa di Vittorio Frescobaldi. L’Ornellaia con lui tornò ’italiana’",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxQel8zTnU1ZVRNWVB1TEhxQUtOOWxHSTZVZW85QTExUnJHNmhQQ0dqanA3R2RjaC0yWTcxX3dNMlViSG1LTWc4NEJSclJmMGNvbUI2XzNkZHEtd01IeHhNZzlGQk5Edm5vcjNLRUVlY1NyaUdxNEx0WHhtYmUxaGVrTEJ0cE1LZkJJWC11TWZUQmk?oc=5\" target=\"_blank\">La scomparsa di Vittorio Frescobaldi. L’Ornellaia con lui tornò ’italiana’</a> <font color=\"#6f6f6f\">Il Telegrafo di Livorno</font>",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQel8zTnU1ZVRNWVB1TEhxQUtOOWxHSTZVZW85QTExUnJHNmhQQ0dqanA3R2RjaC0yWTcxX3dNMlViSG1LTWc4NEJSclJmMGNvbUI2XzNkZHEtd01IeHhNZzlGQk5Edm5vcjNLRUVlY1NyaUdxNEx0WHhtYmUxaGVrTEJ0cE1LZkJJWC11TWZUQmk?oc=5",
-      "source": "Il Telegrafo di Livorno",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Thu, 27 Aug 2026 04:45:29 GMT",
-      "googlePubDate": "Thu, 27 Aug 2026 04:45:29 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Il Telegrafo di Livorno",
-          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQel8zTnU1ZVRNWVB1TEhxQUtOOWxHSTZVZW85QTExUnJHNmhQQ0dqanA3R2RjaC0yWTcxX3dNMlViSG1LTWc4NEJSclJmMGNvbUI2XzNkZHEtd01IeHhNZzlGQk5Edm5vcjNLRUVlY1NyaUdxNEx0WHhtYmUxaGVrTEJ0cE1LZkJJWC11TWZUQmk?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 04:45:29 GMT"
-        },
-        {
-          "source": "La Nazione",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPOVlyZFJpd1JuZmYxWDZ5M001VC1kTDZUaE52dnNiSDV2Y1lSQkpMOVd2dVphMlhSUnBFSFJvcjdJajBGWjFLYlRqSl95MW1semR4ekY5dXdZUmlSeGx4bjNEODVCZ21pdjBlSFc4Y1RMdGdVZ2kxcV9IbXd1clItUkQ4blVnQQ?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 03:54:46 GMT"
-        }
-      ],
-      "originalURL": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQel8zTnU1ZVRNWVB1TEhxQUtOOWxHSTZVZW85QTExUnJHNmhQQ0dqanA3R2RjaC0yWTcxX3dNMlViSG1LTWc4NEJSclJmMGNvbUI2XzNkZHEtd01IeHhNZzlGQk5Edm5vcjNLRUVlY1NyaUdxNEx0WHhtYmUxaGVrTEJ0cE1LZkJJWC11TWZUQmk?oc=5",
-      "sourceCount": 2,
-      "sourcePriority": 55,
-      "id": "la scomparsa di vittorio frescobaldi l ornellaia con lui torno italian-1787805929000-2"
+      "id": "juve prima le uscite koopmeiners e david tengono in scacco il mercato-1787805945000-7"
     },
     {
       "title": "Chiama il 118 e aggredisce i sanitari. I carabinieri lo fermano con lo spray",
@@ -125,7 +276,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSUtRVlFVa1ZPQ25IVnZDMldrdlRxaVZoTWtMV3FCVTZpNWpFbHFRTmhQaEs5TzUxOTNjR2NKeU5jTkZzbVIxSllKYmdiTGJhbExCVE52SmVWQ1VZUGRFMGUzMUI4OUk2Q2ZId1FrOVpxcy1OQldiYVU1M3BiNGpwQy11WG4tNFk2NDVySA?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "chiama il 118 e aggredisce i sanitari i carabinieri lo fermano con lo -1787805887000-3"
+      "id": "chiama il 118 e aggredisce i sanitari i carabinieri lo fermano con lo -1787805887000-8"
     },
     {
       "title": "Dopo il sole tocca alla luna: in arrivo un'eclissi parziale",
@@ -151,7 +302,34 @@
       "originalURL": "https://news.google.com/rss/articles/CBMickFVX3lxTE1CZmRvVGFXOGpTMlVzY1BjM2lpX0VNLVdrUXJwR2V6UmZSbk5WR0tycWhCbjVhNTg1MjBEa0lPeTN5NXVOa2FjUk83cC14M2FkTFRkLV8zVVE3RDZCOXVkdUozVWdRM3Jidzg3N2lCWm55dw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "dopo il sole tocca alla luna in arrivo un eclissi parziale-1787805831000-4"
+      "id": "dopo il sole tocca alla luna in arrivo un eclissi parziale-1787805831000-9"
+    },
+    {
+      "title": "Meeting, cala il sipario. Un’edizione da record con 900mila presenze",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxPdjJQTUFZaDh4SHdxXzRLdnF3ZWY2VVVYT09USDBNVXNZQ3pXVTdmcDVJUmdSalY0TjhIbkRXd2pIbVBjR005am9QTXNOOVREVnRxLXJPb0dfZTZjSV90dUFMYTljVlhMVmtnM1phelJ3WXk4NXg2S1JqM09HQjh5SllVU2s1VjdCWWFVckI3a3ZoelhVZWc?oc=5\" target=\"_blank\">Meeting, cala il sipario. Un’edizione da record con 900mila presenze</a> <font color=\"#6f6f6f\">Il Resto del Carlino</font>",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdjJQTUFZaDh4SHdxXzRLdnF3ZWY2VVVYT09USDBNVXNZQ3pXVTdmcDVJUmdSalY0TjhIbkRXd2pIbVBjR005am9QTXNOOVREVnRxLXJPb0dfZTZjSV90dUFMYTljVlhMVmtnM1phelJ3WXk4NXg2S1JqM09HQjh5SllVU2s1VjdCWWFVckI3a3ZoelhVZWc?oc=5",
+      "source": "Il Resto del Carlino",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca",
+        "Europa"
+      ],
+      "pubDate": "Thu, 27 Aug 2026 04:43:26 GMT",
+      "googlePubDate": "Thu, 27 Aug 2026 04:43:26 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Il Resto del Carlino",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdjJQTUFZaDh4SHdxXzRLdnF3ZWY2VVVYT09USDBNVXNZQ3pXVTdmcDVJUmdSalY0TjhIbkRXd2pIbVBjR005am9QTXNOOVREVnRxLXJPb0dfZTZjSV90dUFMYTljVlhMVmtnM1phelJ3WXk4NXg2S1JqM09HQjh5SllVU2s1VjdCWWFVckI3a3ZoelhVZWc?oc=5",
+          "pubDate": "Thu, 27 Aug 2026 04:43:26 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdjJQTUFZaDh4SHdxXzRLdnF3ZWY2VVVYT09USDBNVXNZQ3pXVTdmcDVJUmdSalY0TjhIbkRXd2pIbVBjR005am9QTXNOOVREVnRxLXJPb0dfZTZjSV90dUFMYTljVlhMVmtnM1phelJ3WXk4NXg2S1JqM09HQjh5SllVU2s1VjdCWWFVckI3a3ZoelhVZWc?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "meeting cala il sipario un edizione da record con 900mila presenze-1787805806000-10"
     },
     {
       "title": "L’Antico Vinaio a Palazzo Strozzi: \"Sarà bistrot di qualità da vivere\". Brand nuovo, il caso in consiglio",
@@ -177,34 +355,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNLXYzYlNhLWVxYXJDUnlWbnlxOUhERHgyMU9WRlBJZEpQcFNnUFpnTGM1eENMN0lZSWJiWEhackxaa3RmQlJ5WjFQZFo0emJnYVZYaGdlVFlyRTI3eDhZSjFkN2Q5Y3otbTU4am91bW1MV2owa2ZZOEJuZE5MLS1RVkt4T2VlaFRkUHc?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "l antico vinaio a palazzo strozzi sara bistrot di qualita da vivere br-1787805789000-5"
-    },
-    {
-      "title": "Meeting, cala il sipario. Un’edizione da record con 900mila presenze",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxPdjJQTUFZaDh4SHdxXzRLdnF3ZWY2VVVYT09USDBNVXNZQ3pXVTdmcDVJUmdSalY0TjhIbkRXd2pIbVBjR005am9QTXNOOVREVnRxLXJPb0dfZTZjSV90dUFMYTljVlhMVmtnM1phelJ3WXk4NXg2S1JqM09HQjh5SllVU2s1VjdCWWFVckI3a3ZoelhVZWc?oc=5\" target=\"_blank\">Meeting, cala il sipario. Un’edizione da record con 900mila presenze</a> <font color=\"#6f6f6f\">Il Resto del Carlino</font>",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdjJQTUFZaDh4SHdxXzRLdnF3ZWY2VVVYT09USDBNVXNZQ3pXVTdmcDVJUmdSalY0TjhIbkRXd2pIbVBjR005am9QTXNOOVREVnRxLXJPb0dfZTZjSV90dUFMYTljVlhMVmtnM1phelJ3WXk4NXg2S1JqM09HQjh5SllVU2s1VjdCWWFVckI3a3ZoelhVZWc?oc=5",
-      "source": "Il Resto del Carlino",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca",
-        "Europa"
-      ],
-      "pubDate": "Thu, 27 Aug 2026 04:43:09 GMT",
-      "googlePubDate": "Thu, 27 Aug 2026 04:43:09 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Il Resto del Carlino",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdjJQTUFZaDh4SHdxXzRLdnF3ZWY2VVVYT09USDBNVXNZQ3pXVTdmcDVJUmdSalY0TjhIbkRXd2pIbVBjR005am9QTXNOOVREVnRxLXJPb0dfZTZjSV90dUFMYTljVlhMVmtnM1phelJ3WXk4NXg2S1JqM09HQjh5SllVU2s1VjdCWWFVckI3a3ZoelhVZWc?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 04:43:09 GMT"
-        }
-      ],
-      "originalURL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdjJQTUFZaDh4SHdxXzRLdnF3ZWY2VVVYT09USDBNVXNZQ3pXVTdmcDVJUmdSalY0TjhIbkRXd2pIbVBjR005am9QTXNOOVREVnRxLXJPb0dfZTZjSV90dUFMYTljVlhMVmtnM1phelJ3WXk4NXg2S1JqM09HQjh5SllVU2s1VjdCWWFVckI3a3ZoelhVZWc?oc=5",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "meeting cala il sipario un edizione da record con 900mila presenze-1787805789000-6"
+      "id": "l antico vinaio a palazzo strozzi sara bistrot di qualita da vivere br-1787805789000-11"
     },
     {
       "title": "Italiano per stranieri. A Scansano aperte le iscrizioni al primo dei due corsi",
@@ -231,7 +382,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZEs4eWRhNU1yVkNHbVkyMEdGS0F4MlhjSGdZT1dyOU45WmNWRVdVQ0Z1SGNpOEQxOVpzZGtYUmVaRVZmVzVBVFQtRnQ2SERIWFhWS3FDbTY2OEJGUl84bm55UTZvdm1keU04WHZoa1dmTWhRM0hDb0dFLTRpakhubHNMaE9sM1ZjaS00Nw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "italiano per stranieri a scansano aperte le iscrizioni al primo dei du-1787805742000-7"
+      "id": "italiano per stranieri a scansano aperte le iscrizioni al primo dei du-1787805742000-12"
     },
     {
       "title": "Lo scontro sul Fine Vita: \"Da Bertolaso linee guida contrarie al voto dell’Aula\"",
@@ -257,7 +408,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1UeWNqbVNRR2ZmaVV6SUZGalFxS2lEclh5THIyQk05cHd6ZC13RmZraE92UktlT0hJZUlNTVJMMEdyRzQzME41R3ZqTE5GZ3ExN2pTUEw3YlBXUHJfeExyZkdiS3hYQmFzNDVJN0dTOE9CYm9QY0pJTlA0eDQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "lo scontro sul fine vita da bertolaso linee guida contrarie al voto de-1787805701000-8"
+      "id": "lo scontro sul fine vita da bertolaso linee guida contrarie al voto de-1787805701000-13"
     },
     {
       "title": "Alajbegovic, la grande occasione: e quella sensazione che la Juventus temesse già uno stop di Yildiz",
@@ -283,7 +434,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZ1NwTmFxa2Z6Q1FjM2laSFdIeDU0VmUzYWhrWDZFUVEtMlhqcWxYWURpck95WWphWFRRWEZ0RXJSQ1ZWMm5Kb3NHX191YnRiX0FQWDVSV3NOeTRKV0FBU202RWFPQmFJc0VsdVZZcmZvZlhKcXdIYzBSRmt5OVJRY2E0V3VLMXlZVjJYYmhXT0NvenE0U3c4aktPUHhwLXlvaldXNUVTak9vUQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "alajbegovic la grande occasione e quella sensazione che la juventus te-1787805600000-9"
+      "id": "alajbegovic la grande occasione e quella sensazione che la juventus te-1787805600000-14"
     },
     {
       "title": "Costa in pressing sui Paesi Ue, risorse proprie cruciali per l’intesa sul budget",
@@ -333,7 +484,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SVGNyOU9SMnZkRWdmRkpRcXR2ZHM3V3VnSDZjQ05ZZnFhREQwSHFMaGhFUjVyUlpxMkc3VzMzcUNwRFFGbk56SkRTNlFWSU5yaFp5YnhHaVdhLVBWb1Zwc0FOS2JscmVGei1Gck9SemFvTnlXUFRmXzN1SDRCMnM?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "arriva in tv la fiction erica girata in citta-1787805426000-10"
+      "id": "arriva in tv la fiction erica girata in citta-1787805426000-15"
     },
     {
       "title": "Domenico, il primo caso in Lombardia interamente gestito dalla sanità pubblica",
@@ -383,7 +534,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNajhaZmdOcEZJelE1aUdaLVk0X0lucm8wZEhtY0E4bWd5Y29jVzNGSnU1bWNWY1BKelNUU2JvVEs5NDNPOGRodTA1Qk56Vmh5cDFpVXR2aFZtNldFNFdvOUJLajh0WE1rYURpVVl6c1FpRHpELUZId2UyaFpPMGZjdXdxbVpGMVh3MUdyZUtHSzV3M3FLTWVuLTRnUlVJNll5Tmk1YQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "calciomercato serie b il live con tutti i movimenti e le indiscrezioni-1787805374000-11"
+      "id": "calciomercato serie b il live con tutti i movimenti e le indiscrezioni-1787805374000-16"
     },
     {
       "title": "Coop Braccianti Ravenna: \"Cereali, raccolto in ripresa ma prezzi gravemente insufficienti\"",
@@ -409,7 +560,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZ1dQUGNtUkg2blVmeWFHWndodi1KZXJLXzhONkJTQ09nVk4yR3BHRTRJZS01UFZfMmk2NlFkV1UtSkJrYjZHQ05udldLUXBVd0JNaHJSdTNXbzJHV3VtQ3pQXzBvTXdUaVpDa0VRZm9VMnpjQkJ5ZzV0SkdoS1NSTnhxdUkxZVZQN0YyYUp4UnMzRWJ4VGZlTFJlVEF2Z0k?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "coop braccianti ravenna cereali raccolto in ripresa ma prezzi gravemen-1787805259000-12"
+      "id": "coop braccianti ravenna cereali raccolto in ripresa ma prezzi gravemen-1787805259000-17"
     },
     {
       "title": "Arriva Pontida e la Regione accelera sull'autonomia",
@@ -444,8 +595,8 @@
       "categories": [
         "Cronaca"
       ],
-      "pubDate": "Thu, 27 Aug 2026 04:33:31 GMT",
-      "googlePubDate": "Thu, 27 Aug 2026 04:33:31 GMT",
+      "pubDate": "Thu, 27 Aug 2026 04:34:01 GMT",
+      "googlePubDate": "Thu, 27 Aug 2026 04:34:01 GMT",
       "originalPubDate": null,
       "dateSource": "google",
       "isVideo": false,
@@ -453,16 +604,16 @@
         {
           "source": "Il Giorno",
           "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY08xUG5NaHZzRWw5T2lXNzk4ejNvVUNRZTJVY2swS1RVcXd3RG5UZUFiTll6X2FsQmhqUTJNSU12dFpYdTRmdGNzdDFoZkZhaGJCaDd3TXFQYllFM1o2WWY2TVpZMmpaZmJrSGxxWHJOQkRmazNNX2lHSTN5LUJUWVJraWc?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 04:33:31 GMT"
+          "pubDate": "Thu, 27 Aug 2026 04:34:01 GMT"
         }
       ],
-      "id": "focus-la mostra del giorno da settant anni sempre sulla notizia-1787805211000",
+      "id": "focus-la mostra del giorno da settant anni sempre sulla notizia-1787805241000",
       "sourceCount": 1
     },
     {
       "title": "Il puzzle di Luis Enrique",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSWVfRVVfM3dYZndZM0RSUHFVTlB6MW5Ec2MxbmZJTVNSdmlKdFU2elFfUURFWWtrYTQ2d01iNHh5cUZxdnpYVUhJQmlzb0ZoMjZFUzRhdFJiSC1fN3UtNGxtX3BHRDI4MW90Zkkya3JXMW1ORkw5X3NwTXJFelJVcEhybWpHMWZLM3VucWtuUUMzYWRZd2RVSU96eV9nc2lwVEY1Z2hQQVVpMW5UeVRwRzkxZ2ZZSmg5LUZKbE9CYnhkQVJNMGRsdg?oc=5\" target=\"_blank\">Il puzzle di Luis Enrique</a> <font color=\"#6f6f6f\">la Repubblica</font>",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSWVfRVVfM3dYZndZM0RSUHFVTlB6MW5Ec2MxbmZJTVNSdmlKdFU2elFfUURFWWtrYTQ2d01iNHh5cUZxdnpYVUhJQmlzb0ZoMjZFUzRhdFJiSC1fN3UtNGxtX3BHRDI4MW90Zkkya3JXMW1ORkw5X3NwTXJFelJVcEhybWpHMWZLM3VucWtuUUMzYWRZd2RVSU96eV9nc2lwVEY1Z2hQQVVpMW5UeVRwRzkxZ2ZZSmg5LUZKbE9CYnhkQVJNMGRsdg?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSWVfRVVfM3dYZndZM0RSUHFVTlB6MW5Ec2MxbmZJTVNSdmlKdFU2elFfUURFWWtrYTQ2d01iNHh5cUZxdnpYVUhJQmlzb0ZoMjZFUzRhdFJiSC1fN3UtNGxtX3BHRDI4MW90Zkkya3JXMW1ORkw5X3NwTXJFelJVcEhybWpHMWZLM3VucWtuUUMzYWRZd2RVSU96eV9nc2lwVEY1Z2hQQVVpMW5UeVRwRzkxZ2ZZSmg5LUZKbE9CYnhkQVJNMGRsdtIBzgFBVV95cUxNRk04d0xhRUZNVUVxUmUxcWdIZ0NnTGhPUWhVbWFNRmZ6MEx6cTNNT3dqRE9UOGRKaUlXblpJYldSak5GeGt4dU1RMGV5aEttZVU3ZGV1bG5iOVpibjVwaEc1Tm5mVlYtTDJqVVdqei1LWDJEc0F0eGIzcFk2Q1I2VklqVlR2RHF3a2NuS3VCUG1tY3hSWkVqNHQtNFVWd0w5TV9LQ3Y4WFduNmJ6cmZtbFpCMHJFeDlWNHFhNHh3eVd1RTNFd0YxNEQ5MUNBZw?oc=5\" target=\"_blank\">Il puzzle di Luis Enrique</a> <font color=\"#6f6f6f\">la Repubblica</font>",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSWVfRVVfM3dYZndZM0RSUHFVTlB6MW5Ec2MxbmZJTVNSdmlKdFU2elFfUURFWWtrYTQ2d01iNHh5cUZxdnpYVUhJQmlzb0ZoMjZFUzRhdFJiSC1fN3UtNGxtX3BHRDI4MW90Zkkya3JXMW1ORkw5X3NwTXJFelJVcEhybWpHMWZLM3VucWtuUUMzYWRZd2RVSU96eV9nc2lwVEY1Z2hQQVVpMW5UeVRwRzkxZ2ZZSmg5LUZKbE9CYnhkQVJNMGRsdtIBzgFBVV95cUxNRk04d0xhRUZNVUVxUmUxcWdIZ0NnTGhPUWhVbWFNRmZ6MEx6cTNNT3dqRE9UOGRKaUlXblpJYldSak5GeGt4dU1RMGV5aEttZVU3ZGV1bG5iOVpibjVwaEc1Tm5mVlYtTDJqVVdqei1LWDJEc0F0eGIzcFk2Q1I2VklqVlR2RHF3a2NuS3VCUG1tY3hSWkVqNHQtNFVWd0w5TV9LQ3Y4WFduNmJ6cmZtbFpCMHJFeDlWNHFhNHh3eVd1RTNFd0YxNEQ5MUNBZw?oc=5",
       "source": "la Repubblica",
       "category": "Cronaca",
       "categories": [
@@ -476,7 +627,7 @@
       "sources": [
         {
           "source": "la Repubblica",
-          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSWVfRVVfM3dYZndZM0RSUHFVTlB6MW5Ec2MxbmZJTVNSdmlKdFU2elFfUURFWWtrYTQ2d01iNHh5cUZxdnpYVUhJQmlzb0ZoMjZFUzRhdFJiSC1fN3UtNGxtX3BHRDI4MW90Zkkya3JXMW1ORkw5X3NwTXJFelJVcEhybWpHMWZLM3VucWtuUUMzYWRZd2RVSU96eV9nc2lwVEY1Z2hQQVVpMW5UeVRwRzkxZ2ZZSmg5LUZKbE9CYnhkQVJNMGRsdg?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSWVfRVVfM3dYZndZM0RSUHFVTlB6MW5Ec2MxbmZJTVNSdmlKdFU2elFfUURFWWtrYTQ2d01iNHh5cUZxdnpYVUhJQmlzb0ZoMjZFUzRhdFJiSC1fN3UtNGxtX3BHRDI4MW90Zkkya3JXMW1ORkw5X3NwTXJFelJVcEhybWpHMWZLM3VucWtuUUMzYWRZd2RVSU96eV9nc2lwVEY1Z2hQQVVpMW5UeVRwRzkxZ2ZZSmg5LUZKbE9CYnhkQVJNMGRsdtIBzgFBVV95cUxNRk04d0xhRUZNVUVxUmUxcWdIZ0NnTGhPUWhVbWFNRmZ6MEx6cTNNT3dqRE9UOGRKaUlXblpJYldSak5GeGt4dU1RMGV5aEttZVU3ZGV1bG5iOVpibjVwaEc1Tm5mVlYtTDJqVVdqei1LWDJEc0F0eGIzcFk2Q1I2VklqVlR2RHF3a2NuS3VCUG1tY3hSWkVqNHQtNFVWd0w5TV9LQ3Y4WFduNmJ6cmZtbFpCMHJFeDlWNHFhNHh3eVd1RTNFd0YxNEQ5MUNBZw?oc=5",
           "pubDate": "Thu, 27 Aug 2026 04:33:08 GMT"
         }
       ],
@@ -507,7 +658,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSVhRQnkwOFdkN2ZVR1hYbTFkYmVFMm8zZGo1WHNKQWp4UWxVcTlHRjJ4UUE0WDlTdHZ4Q1UyV3NyeFU2M3lrQlh2QWtWdXhUYndEaWF4dHFsbHRYT2lSZUJLZEtSXzFHdTZRNWQtTGxoUjZPLTljRmpLbjdJa2lLRHFpTlN6QQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "bolidi a guida autonoma cinque squadre in pista e la mobilita del futu-1787805121000-13"
+      "id": "bolidi a guida autonoma cinque squadre in pista e la mobilita del futu-1787805121000-18"
     },
     {
       "title": "Caserma, agenti e videosorveglianza: \"Che fine hanno fatto i progetti?\"",
@@ -533,7 +684,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMi1XNzRINHl3cTZLcldVMnlBdWN6a1IwenN6OGdHMi00UFltclM0R3RpRTM5Z2wyY0pYbmxRWndFS0Q2RlYxQjI4Tl9DNmU3TmxuVmZaWk5nTkpiaWhGUmJtdGhoeHp1bkd6LWgtTHZIdzVXLXl5QnBtTDJSMzM4NUU1dUJnMEhkUUhNWHRFUQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "caserma agenti e videosorveglianza che fine hanno fatto i progetti-1787805102000-14"
+      "id": "caserma agenti e videosorveglianza che fine hanno fatto i progetti-1787805102000-19"
     },
     {
       "title": "Napoli, il figlio architetto lascia l'Italia per Parigi e Bruxelles: progetta grandi appalti ma è senza tutele",
@@ -560,7 +711,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPT2pGVExxQTgxOTI0YmEzaEJ2RTl1LUEyN1gzczU1NlNMYjBheDYzYl9XTWZpLTZ2Mlh6R2lfZ2ozZUpXSUpBWkVKc2JLWnlBRjdkREx3VUlfbUFhUElzRkI4Qkk2YmtIYlgwSVFKWWRiS212TjU0NkdxWVBWOFk3Y0dKVlo0cWc1ZFB5TDZ2SjR3SnBYVmYwVWUxUmdoYkdWMUNRd2NaRTJCVEItR3ZzQ1JXSzRuWnRtRElySGdMd0x1YnA0ZHl6Zk1CTE9peFhkaE9tUg?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "napoli il figlio architetto lascia l italia per parigi e bruxelles pro-1787805009000-15"
+      "id": "napoli il figlio architetto lascia l italia per parigi e bruxelles pro-1787805009000-20"
     },
     {
       "title": "Salvini batte cassa per il dopo Pnrr: «Servono 20 miliardi». Ma la richiesta fa tremare i conti del governo Meloni",
@@ -588,7 +739,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVThMbEVGNUM5RnZESVJiQS1mYjJJN3c5S3V4Y3MtUmRPN0wwekdhX05kWUFTLWlwalVwN3NZbVR6dzhFQ01EU2pfLTJlOTc1Rm5OeThXSzdjTmhndG5SZTEwckNvLVQ5bVMwYlAyWF9TRzN4NHRqdzlIeVh1bkgzaGZTRnY5SmNWOUl1Vm90QjJual9xc0JNYjNMdHlJTWUyNDhiTzNKN2tjZXRJZXZWY29pN0RhMWQyQjVPb2NfSGQ5VkU0ZHNFaVlUekpZaGQxQTA2T2N4S2RWdDZVaWpocDFoUVQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "salvini batte cassa per il dopo pnrr servono 20 miliardi ma la richies-1787805000000-16"
+      "id": "salvini batte cassa per il dopo pnrr servono 20 miliardi ma la richies-1787805000000-21"
     },
     {
       "title": "Asta Fantacalcio, le probabili formazioni della Serie A Enilive 2026/27",
@@ -614,7 +765,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOOUp1dDBkeU01eEUyZDRjNHpOTkJFNGJaOTJPM1oxYm9rcGVCYkdBbUE0S1dmcUZCa2FfQVQzWFh4bW52Z0Rfb2lRUVozZG52WEhGUzVKYVkwamlHWTdrYWl6T1N4Umhua0FuMEE5UEVJWkx6YnVkWUdFc3NXVXFXbTVYcGRwYWNfTFEyUFRpMEhGTnNDX19FUFU3Y0N4dHpqeE5TRXpiOThPQldDTVVVYnRsYmdqWDRsTENYZy1nRGFxSUk2cnU1N2c5ZkpvcDjSAdQBQVVfeXFMTV9palI0dmluUG05MkxRRlU0QXVELXNCaWNxSUliSE1Ham5ZNFNXdFJvRDlNczhrZ2JSbEJwUVVXdHBja0RZb1V4WEtKU2gwSjRSQkIxZ3VoVGtaTjFvUFpmd00tUHlod2E3Q1ZHQzFtSE9DMkRJcmpDVDlXYTlqN0hxVUJQWGg4ODRhNTI5OF9WMk11MHFXYTFnc0pFeGRGZE9EaDg5UU5wZ1JBY0NSNHg0c1NOdjV2Mk9RLVU2ak9QVmczZ0dTeDRKSjdJYlpTeFdqcHQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "asta fantacalcio le probabili formazioni della serie a enilive 2026 27-1787804995000-17"
+      "id": "asta fantacalcio le probabili formazioni della serie a enilive 2026 27-1787804995000-22"
     },
     {
       "title": "Frank Kessié Roma: trattativa e aggiornamenti di mercato",
@@ -640,7 +791,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTnlBRWh3eGlDQ3hWLUg2aUZGZ3J4bW52OTRmbHp2Qk5pSWhZXzhPVnhUOUEwWlpVdl9kY3RzODM4LVdWYm9tbHRPbEE3Y2JCVV81ZXBESVJHMTZ5cjdOeERDNXdVR1hvTjlKLXF1Z1laenlfajQxdWxDXzY0NlZJbmdBbFY4S2xHeVF1MQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "frank kessie roma trattativa e aggiornamenti di mercato-1787804943000-18"
+      "id": "frank kessie roma trattativa e aggiornamenti di mercato-1787804943000-23"
     },
     {
       "title": "Perin dice addio alla Juventus: ufficiale il suo trasferimento al Palermo, in Serie B",
@@ -672,7 +823,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSFh1VkhPMkZ4NWcxT0F5WkFCbTR3eElPdk5ERFBWbG9wdTJpR0FPT3p5cGVaYXFpQ3FRTGpHZEVvS0FNZ0tmYnl5S0I1SmF5OUtGWUtMNWVkcUdvZFhqOXB5b1FIVFBTRVNkeUdwdHVueUxUWDViVFNTcEcxOWJiSjJldF9IY3o0eHVseXdRY0tVREFxTmNnTEhsY0VqWDdmaGNoTkgzaWhvR29xdzJvQ1lDTThGNkhoTXMxeFdNVk9FdUpfbmxmTUlsSEQyUQ?oc=5",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "perin dice addio alla juventus ufficiale il suo trasferimento al paler-1787804938000-19"
+      "id": "perin dice addio alla juventus ufficiale il suo trasferimento al paler-1787804938000-24"
     },
     {
       "title": "Autonomia patrimonio non solo della lega",
@@ -698,7 +849,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOa2RHY1BOQW1wTlBwRFFrVWRwOXJ1THdLaUYtak1kYnRCOVdpdU9NdmFOeWJXSE9rRGVRaXFsc3U0YjdsYkloM3p2Z0haNFNiazA0eUpmR0RTUklpTUFDVXg3Z1kwbF9qR1FnMnpnOXNpSHN3NVV0YXljWG4yMVJJTFZRaHBmN28?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "autonomia patrimonio non solo della lega-1787804861000-20"
+      "id": "autonomia patrimonio non solo della lega-1787804861000-25"
     },
     {
       "title": "Fuori Gp, quattro giorni stellari. Da Arisa ai Gemelli Diversi. Sport, talk e musica su 14 palchi",
@@ -772,7 +923,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPS2poMjJrM1FneE9ocEhkaFdTcVhxb3JfX1JvcEJSSzBCYm5Zem05N0w0UGRtanFGZ3RGeVZydDM5QU83cExoZnZqTHBkZzdwTzRva25lTTlnaEwzOXZVZ0JFQ01OYlQtbkR6VVlSbnkwc1RKX1hKRTFVRXNiTm5ESUJB?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "crosetto frena le polemiche sugli aiuti a kiev nessun nuovo pacchetto -1787804757000-21"
+      "id": "crosetto frena le polemiche sugli aiuti a kiev nessun nuovo pacchetto -1787804757000-26"
     },
     {
       "title": "Italia-Germania, un film sulla partita del ’44",
@@ -800,7 +951,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNajM5dW8wZl9RX29Jc0xMVUsxazV2X1JYdDZXcHlYUmFfYkpYbWN3aGJHYkx3MVJUMmNLb2ZvdUpaMzdKY2U2M0U5NmZwb2NfVGdUMDM5UndpWTB1aXJlek90Y2REQUFibU5oQkFTb0ROUy0wbEdQdFR4NUJMTVYxZFBaaXdyWC0xU2JUTk9XZFZDYVZaTHAycXV5M2Q?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "italia germania un film sulla partita del 44-1787804757000-22"
+      "id": "italia germania un film sulla partita del 44-1787804757000-27"
     },
     {
       "title": "Grand Tour Italia in ’rosso’. Canone, chiesto lo sconto. E Prelios ’chiama’ i soci",
@@ -826,7 +977,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUEd0N1ZELXpuSjdVVURlUzU4dUxnTFlmby1ENC1HaFA2T0R0UUNyRG9wb2JkR3N6NktPdE9XMUgwY0ZxYVJUMGNEWFc4NURtV3E2UXBVSWNiMGgtbGJwc2xPY1ZwR1pQejJnckZWRl9jUGtIY05nTXZfTU51YklpdGNWR0huSGRZYWVXUQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "grand tour italia in rosso canone chiesto lo sconto e prelios chiama i-1787804742000-23"
+      "id": "grand tour italia in rosso canone chiesto lo sconto e prelios chiama i-1787804742000-28"
     },
     {
       "title": "Carburanti, governo proroga sconto sulle accise fino al 5 settembre. Tensioni Fi-Lega su extraprofitti",
@@ -859,7 +1010,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPMXBYVklmaEJIVnRJbFVWalNIalJETmQ1SUU0NU5ORE1HUWU4bFZjM3pYNng1ZlNJY3ZQQ0hjMWQ4YnJWQWhibFF5eW93bFlVeWRSSTNxNXJYUDRVRFhRYmFYd2VuVHRRbmJvR1E5NUF0bWpkZkJwU0toUndVcVZJV1BHSl9LclRrVTZIVHZNaXlGekRRNDZiN3NtbnZLdEFZbzFFOW5rXzJobXRmRTBHVm9RemFCTXI3a1lKcDNZOFpxZkJSb0xkMUY1YW1IaUE?oc=5",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "carburanti governo proroga sconto sulle accise fino al 5 settembre ten-1787804556000-24"
+      "id": "carburanti governo proroga sconto sulle accise fino al 5 settembre ten-1787804556000-29"
     },
     {
       "title": "Preso in Spagna il mago della fuga. Era evaso da Opera a dicembre",
@@ -886,7 +1037,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMie0FVX3lxTE0zMkNQb3l4amFwY21YUG9zNXpSQTFBYW9fWHdHWGs4V0wwWV9zU1VzRWhjcUdvQ1pKZ1BxaXhPNDduX3A3TzlEbjdkZXBTdmxHTG1QOXNxSHpyNjNYQ1BZSVlIaGVKWTVwVGdXREhTU3gzQVczZlZocHZKcw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "preso in spagna il mago della fuga era evaso da opera a dicembre-1787804555000-25"
+      "id": "preso in spagna il mago della fuga era evaso da opera a dicembre-1787804555000-30"
     },
     {
       "title": "Ospedale e ascensori rotti: \"Guasti continui, così non va. Come si intende risolvere?\"",
@@ -912,33 +1063,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMmZDdnhlVUVpNU5QWmpMZU05bzlxX3owVjRvOUpFajVUZEtwVEVweVhnMnJfeVJ4WEYwYVJTZHhLNFRnNEtVbFkwaWx6TklreFpxcmRaNWJzMldGZV9IVlA4RFFmUmpaaVlRMDlPWHpmRXc1RGttazdLR01EcGdSeTA1Tmt6ZFEtejFPdFQ4aW5iTDNfNDBveElTMmtMdw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "ospedale e ascensori rotti guasti continui cosi non va come si intende-1787804156000-26"
-    },
-    {
-      "title": "Fantacalcio: formazioni titolari Serie A 2026/2027, tutte le squadre-tipo",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNcXlvZ05yQzQxSndtMUxZSGxBdktoQzdzd0Jzakw5cHVMMXdvcmVjZ1Y2OE1qd3dOb3pjY0VQRFhQUVRtWUIwbGY1akJtNTF6VDEwZGZRU0hWWl9GdDczdzBidVM0VFBRblZROVJtV2FNUE9rY1cxU3dtRmhvS01aWXpvdDdJWGVpOWt1bWJSWk1UMEFnUXVvbWt3NXZuRkRNZ2ZUek5YaW5QOWFfSVZGZVdPR2JqNDRsSzk2U21B?oc=5\" target=\"_blank\">Fantacalcio: formazioni titolari Serie A 2026/2027, tutte le squadre-tipo</a> <font color=\"#6f6f6f\">Goal.com</font>",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcXlvZ05yQzQxSndtMUxZSGxBdktoQzdzd0Jzakw5cHVMMXdvcmVjZ1Y2OE1qd3dOb3pjY0VQRFhQUVRtWUIwbGY1akJtNTF6VDEwZGZRU0hWWl9GdDczdzBidVM0VFBRblZROVJtV2FNUE9rY1cxU3dtRmhvS01aWXpvdDdJWGVpOWt1bWJSWk1UMEFnUXVvbWt3NXZuRkRNZ2ZUek5YaW5QOWFfSVZGZVdPR2JqNDRsSzk2U21B?oc=5",
-      "source": "Goal.com",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Thu, 27 Aug 2026 04:09:24 GMT",
-      "googlePubDate": "Thu, 27 Aug 2026 04:09:24 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Goal.com",
-          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcXlvZ05yQzQxSndtMUxZSGxBdktoQzdzd0Jzakw5cHVMMXdvcmVjZ1Y2OE1qd3dOb3pjY0VQRFhQUVRtWUIwbGY1akJtNTF6VDEwZGZRU0hWWl9GdDczdzBidVM0VFBRblZROVJtV2FNUE9rY1cxU3dtRmhvS01aWXpvdDdJWGVpOWt1bWJSWk1UMEFnUXVvbWt3NXZuRkRNZ2ZUek5YaW5QOWFfSVZGZVdPR2JqNDRsSzk2U21B?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 04:09:24 GMT"
-        }
-      ],
-      "originalURL": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcXlvZ05yQzQxSndtMUxZSGxBdktoQzdzd0Jzakw5cHVMMXdvcmVjZ1Y2OE1qd3dOb3pjY0VQRFhQUVRtWUIwbGY1akJtNTF6VDEwZGZRU0hWWl9GdDczdzBidVM0VFBRblZROVJtV2FNUE9rY1cxU3dtRmhvS01aWXpvdDdJWGVpOWt1bWJSWk1UMEFnUXVvbWt3NXZuRkRNZ2ZUek5YaW5QOWFfSVZGZVdPR2JqNDRsSzk2U21B?oc=5",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "fantacalcio formazioni titolari serie a 2026 2027 tutte le squadre tip-1787803764000-27"
+      "id": "ospedale e ascensori rotti guasti continui cosi non va come si intende-1787804156000-31"
     },
     {
       "title": "Fantacalcio 2026/27 portieri titolari, secondi e terzi delle venti squadre di Serie A",
@@ -964,7 +1089,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbFRvUXctSlc1UjRhaDRnR2JoVUpjMGtjaWQ5aC1Wc09xQUlZNmZpVmNTdWg1UHlJZ0pockVKSjJ0WFNIdDU5VDhKWF93T2M5NzFBZzVUZkFpOHZlZnZBRXhibDZ3LUs3Z3RPTHZnX0xoWGdmQm1PREk0TkZCWlhZWS1RbmdUTUtyVkhXOFNNOTRSaWlKTTVNaDdYai1oNE1VZk81U2lOTUxtbGZfQi1wN0JZSHgxVGNhLWVUVzVtQy0?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "fantacalcio 2026 27 portieri titolari secondi e terzi delle venti squa-1787803760000-28"
+      "id": "fantacalcio 2026 27 portieri titolari secondi e terzi delle venti squa-1787803760000-32"
     },
     {
       "title": "CAMPO LARGO, IL BIVIO SULLE PRIMARIE | Boschi: “Possiamo battere Meloni, ma non basta un’alleanza”",
@@ -991,7 +1116,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNaUg0aWJxTDVIUDlFQ2tuMEdxX2gzWXVFd0gyLVhHMnpCemRXaGJQSjdhcnNxN2xfUXlyWi1FTFVPVkdBdEFnVlNoZmNVNVhMOFl0M3F4MWJjb3U1and3b3hYRU56cHBhZ0VvTjJpalM2SVRYN0dTWHV6ME5oRTlKN3V0a0lmR1Q5RG5rNzdOQ0VPa1hBTk1aWFg5LVFZRTNlWGhJZGx4OXpMeVpsbldpelpRQngxb3d6MEhLR2IwbTFfTU1uUFdpYzA4VGw2MEXSAdQBQVVfeXFMTzZKWDJlcVRnSmRmUHZ5Vks5Smg2aEV6WkNmSTFEdTRzU0ZYandBbFFjZ2staW1KQjcwbUZ3akhXQUc0TEFYY3RMMnRFUk8tNXVwNkJ1cHB0UFJQODVYMUwyQUx2di1fMHdkSUQ5Umtnb0d6OE45VkVtT194VlhQbllqS3Zuakp5cnlpX1FkVk5xM1NMXzNuZGdNajc3aW5heWN2QVVWWXNRbmdQN1pDU21lZzdRTlFIRkRtcWYzVzgzS2FfSmpqeDFPcThlU2NTLTJtWjc?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "campo largo il bivio sulle primarie boschi possiamo battere meloni ma -1787803718000-29"
+      "id": "campo largo il bivio sulle primarie boschi possiamo battere meloni ma -1787803718000-33"
     },
     {
       "title": "Radiogiornale: notizie in breve del 27 agosto 2026",
@@ -1017,7 +1142,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPalFtZjF5ODJEWnFWaXpoemdvcldKd0lBc0hTRnpNbm04RWpOanNtc2txMERCbEJmb0ZwTEtrMGsyNGRyRFRURDNzNi1hRi1sbllXd2JKTnF6aElSN2xpUWlMc0xqdnNNREFielVsLUNIWGxEelRzZ1h1S2JBb2ViVnZLc1VjVnNSZG9BaldKQVhPUEZmODlkUk1fOTdlWEp4?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "radiogiornale notizie in breve del 27 agosto 2026-1787803684000-30"
+      "id": "radiogiornale notizie in breve del 27 agosto 2026-1787803684000-34"
     },
     {
       "title": "Ladri di rame al centro sportivo: secondo furto di fila alla Concorezzese",
@@ -1068,7 +1193,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPV1dhLVJudzk1QlM0dS1kQXdva183QTdkRU5BdV9uUHo2QkQwRW9ZLWU4TTVVdnhuQVJSbUQyTkJXNmRYTk95NWVMWWYtNl81cXMzMWFsdnlmR3pXakZaa2RweUZFZzBKNVJEeUl1VGk2cVhmbmp1UC1iRkdfNlhVM1hkVG43WXAzeHM2UlVOQkEzTV9tX3lQZ2J4X2kyeFpScDhtdWh1LUVfQ01XbHQtYktCd2JzZUVVVzFxX2VIRjNPalREV2xGUmlWbEV4Tnk2QlJ3b0R1VGlocTTSAeABQVVfeXFMTzlOYmh2dGgwQmYwdEg5OW83LVNkdWVSOFQtemtUcS1mSHdzOEZ3VEk0cDNYRVFxamQ0VVB2TGphMV9kSEdmRG9FRHhEMVp1ZDlJTzZsUmduWkJwVVVpWkFJbUpzQTgwck1oV09IemV0QVQzaUhjaVpBRTNvSXY4elcwQUtaVl9mY0VEc19CUDVxal9uUDlJdldhZEtfNWdyd04zWmYzWk56bmxvQjFaNTF4VFgxTl9oczV0RzREODBtSkNBX3JfRUZIWmJDcnJBWXduZTlmLU9JY0o1QUJ3UDA?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "il governo si indebita sul riarmo 8 mld di prestiti safe vince la dife-1787803586000-31"
+      "id": "il governo si indebita sul riarmo 8 mld di prestiti safe vince la dife-1787803586000-35"
     },
     {
       "title": "La Casa della Frutta di Neri Pozza nel locale dello storico ortolano",
@@ -1118,7 +1243,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9nSUtoYWYxSVhpN3FsQTZqUFRaSkRSSE13emVGUUdVQWxHMXh2Y1VwVGVtLTBfZHB2Tnl3aEpkYXEwaklua3ZaYkVkeEVtVFFkYVQ4OFdyMHp2OXpqYU1Ea1RhQllLTURmeFE?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "nuova ondata di caldo sull italia quali saranno le citta piu roventi-1787803484000-32"
+      "id": "nuova ondata di caldo sull italia quali saranno le citta piu roventi-1787803484000-36"
     },
     {
       "title": "«Così quell'uomo ha salvato mia figlia»",
@@ -1145,7 +1270,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYzIyejY0WWZyRjJDQnpCYnUxd3VZQXFZcktLZ0Rkc1pUWU5Wd2ZLOTFNSUxqZklJaEt6Q21LMkZjU3NxdlYxVHFDV19YYmtUNFNWYmZySjNMZEFoUUVJaG9ST0RwcjNQbU1nRk5xaTJGNjN2dEp3S0RVV25CVkxQZk9uaGVON1hMSTBsaVIxa3dWS3Y3LThLbkJwSjVZMXFRQzZZ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "cosi quell uomo ha salvato mia figlia-1787803320000-33"
+      "id": "cosi quell uomo ha salvato mia figlia-1787803320000-37"
     },
     {
       "title": "TAGLIO ACCISE | Extraprofitti e coperture, Meloni al bivio tra Salvini e Tajani",
@@ -1173,7 +1298,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRXk1dkdlNnhQVUZnZ3o0TzRvdXlpcXJXd09nVzJZT01LYjE3dW5XUkUyamZ0ZnhMNURGOFpCQmNDd2I0MVpqSGVxS090Vmt3N2dCVlB4Rm53aG9UMHp1b05sUVVXMlZDeUpueVR4M0lkY0RsTGg5MUVhQlZPWHk1ZE8wOXVSNWFvXzdURE5Ybl9RaFpBaDhueWVxMEhDeWNZZmxlNmQ2d0VBMFpXRlQtTXBRd2ZjYlhGUFFsUNIBwgFBVV95cUxQWDc1Q0t0QjN1a1JaWVg1aDcyOGUtSXBJSWJucWpqa0pVUkpXUXZpczNTQ0dSZGdXX2s1YWd6WkxVQkFoOXctRGtiS2dFNzJmaDI4MUtaWjhOOVdUYy1GczRLYXBSdWxzVUVwS2FKa3p6eXFnb2hIME9HUUJnZEJ3MVQ4T0tQS2E1NDlRc05qbThsWmE3THN0UHhYSjYteDEyUHFuaHFkaDU0RGMtMi1POGZmUHNTNTJvN0ZKSXVYQW5fUQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "taglio accise extraprofitti e coperture meloni al bivio tra salvini e -1787803241000-34"
+      "id": "taglio accise extraprofitti e coperture meloni al bivio tra salvini e -1787803241000-38"
     },
     {
       "title": "Ecco il menu della Cena dei Mille di Parma",
@@ -1224,30 +1349,6 @@
       "sourceCount": 1
     },
     {
-      "title": "“Non chiamateli attentati terroristici”: la folle direttiva della tv canadese sull’11 settembre",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxNbTUyeElpNFhYdUkzLVFUaEE0ZzNnU0VyWEtKZjZWaV9BQzNVREhoZGhiYnAza2FjMTVpdW9wSEpBNlR0cjNLdjVsYUtKVDZFNlJWSy1haktXQUJLV3hadlZsUG50ZURrRHNDWXZyM1V6QzlSc3I2NmduZUxaTjZiLUt5LUJIdElVUXE1TEpQb1RQRjRfWlZMYzEtUF9zMTA4S2dBMi1VZW9JWXBldWtfbC1mMVVlM0tXRkpGU09feDdiaWQ1OGtRWjlFRW5Eam8?oc=5\" target=\"_blank\">“Non chiamateli attentati terroristici”: la folle direttiva della tv canadese sull’11 settembre</a> <font color=\"#6f6f6f\">il Giornale</font>",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbTUyeElpNFhYdUkzLVFUaEE0ZzNnU0VyWEtKZjZWaV9BQzNVREhoZGhiYnAza2FjMTVpdW9wSEpBNlR0cjNLdjVsYUtKVDZFNlJWSy1haktXQUJLV3hadlZsUG50ZURrRHNDWXZyM1V6QzlSc3I2NmduZUxaTjZiLUt5LUJIdElVUXE1TEpQb1RQRjRfWlZMYzEtUF9zMTA4S2dBMi1VZW9JWXBldWtfbC1mMVVlM0tXRkpGU09feDdiaWQ1OGtRWjlFRW5Eam8?oc=5",
-      "source": "il Giornale",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Thu, 27 Aug 2026 04:00:01 GMT",
-      "googlePubDate": "Thu, 27 Aug 2026 04:00:01 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "il Giornale",
-          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbTUyeElpNFhYdUkzLVFUaEE0ZzNnU0VyWEtKZjZWaV9BQzNVREhoZGhiYnAza2FjMTVpdW9wSEpBNlR0cjNLdjVsYUtKVDZFNlJWSy1haktXQUJLV3hadlZsUG50ZURrRHNDWXZyM1V6QzlSc3I2NmduZUxaTjZiLUt5LUJIdElVUXE1TEpQb1RQRjRfWlZMYzEtUF9zMTA4S2dBMi1VZW9JWXBldWtfbC1mMVVlM0tXRkpGU09feDdiaWQ1OGtRWjlFRW5Eam8?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 04:00:01 GMT"
-        }
-      ],
-      "id": "focus-non chiamateli attentati terroristici la folle direttiva della tv cana-1787803201000",
-      "sourceCount": 1
-    },
-    {
       "title": "L'Italia torna al centro della gestione migranti in Europa",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdFpLazR2TFM0TzVld2NJX3JIdEQzNERJYnZkYUxZZlpGYTNhWmpoNmwyaXpEVlgyNjI0NHphc3JzaDVHM0lvUmJFLXNpVl9vT3VOcm8wejNPNXdOVGtyR0NFdENpUkVSemc4dXVQNmgwSURySkNBY2FTM0s0YnFvcFBUM1ZhTEZaZnlHdjd0M2plOGpyNlNRTm1SZ0dPYzN5MUdyQmx4YW5Mdw?oc=5\" target=\"_blank\">L'Italia torna al centro della gestione migranti in Europa</a> <font color=\"#6f6f6f\">La Provincia di Como</font>",
       "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdFpLazR2TFM0TzVld2NJX3JIdEQzNERJYnZkYUxZZlpGYTNhWmpoNmwyaXpEVlgyNjI0NHphc3JzaDVHM0lvUmJFLXNpVl9vT3VOcm8wejNPNXdOVGtyR0NFdENpUkVSemc4dXVQNmgwSURySkNBY2FTM0s0YnFvcFBUM1ZhTEZaZnlHdjd0M2plOGpyNlNRTm1SZ0dPYzN5MUdyQmx4YW5Mdw?oc=5",
@@ -1271,7 +1372,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdFpLazR2TFM0TzVld2NJX3JIdEQzNERJYnZkYUxZZlpGYTNhWmpoNmwyaXpEVlgyNjI0NHphc3JzaDVHM0lvUmJFLXNpVl9vT3VOcm8wejNPNXdOVGtyR0NFdENpUkVSemc4dXVQNmgwSURySkNBY2FTM0s0YnFvcFBUM1ZhTEZaZnlHdjd0M2plOGpyNlNRTm1SZ0dPYzN5MUdyQmx4YW5Mdw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "l italia torna al centro della gestione migranti in europa-1787803200000-35"
+      "id": "l italia torna al centro della gestione migranti in europa-1787803200000-39"
     },
     {
       "title": "Migranti, la sinistra europea si spacca: Frederiksen sfida Sánchez sulla linea dura e il Pd di Schlein resta alla finestra",
@@ -1297,7 +1398,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNRms4ZjQyMW5hTWdfTHlhSUEtUnpKYkYzOWpYYlNRZlBuY2lYNmNSWnhmem1McjRLTV9jVUtvYU5OOWhDSlJZbWZ6ZnhDOEFQMzN4bFY5X05HNlRfYkdidDdtZWZQWEoxQkNEekdCY1ppQkpkSDhvNXZJcGxrY1dERFdFQ0NTYkd3LWVvSHNzT3lHQ3plcHliMGd2bHVHTl9ab2M1b1NsVXViWjdFMUYydGJnVHFjZllfOG1VNXp4cHUxLV9nTndkVk13VmFlNWItd0hQMWdTUE5BYnAySHhvUG93RzZ5a3dLVFB2SXFRRUMzaDhG?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "migranti la sinistra europea si spacca frederiksen sfida sanchez sulla-1787803200000-36"
+      "id": "migranti la sinistra europea si spacca frederiksen sfida sanchez sulla-1787803200000-40"
     },
     {
       "title": "Voucher Scuola: in provincia sostegno a 7 mila famiglie. Raiteri (Fratelli d'Italia): \"Grande traguardo\"",
@@ -1323,7 +1424,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQY2tNWGhHbEg4UHBTT2dOV3RqQTRBaDdwM1VQaTl5ZS1NZFVQQzI4TlJ4Mkd6cXVxcWJpWkNIRmZUVWFjVmMtVlhCbmlGRjA2MHhqY3UtSDRkcEU4cWplOGhoZnd0a05ROF9odWF6T1J6UjIxOFRXS3lCNWJaTEpVUmJyRXNLSXF2QmRqSlpHdDBFUWNpelFKdk00NGlheU5RSjN0N1JaYWhqRlR6U3c?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "voucher scuola in provincia sostegno a 7 mila famiglie raiteri fratell-1787803140000-37"
+      "id": "voucher scuola in provincia sostegno a 7 mila famiglie raiteri fratell-1787803140000-41"
     },
     {
       "title": "In piazza contro i tagli: \"Sosteneteci\"",
@@ -1348,58 +1449,6 @@
       ],
       "id": "focus-in piazza contro i tagli sosteneteci-1787803024000",
       "sourceCount": 1
-    },
-    {
-      "title": "Il ‘brutto clima’ al centro del dibattito organizzato da Alleanza Verdi Sinistra",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc2RONlhBWE9BbFkwbjRiaE9QSS1qS3pDS1NDUzlvTk5lTXlpeDQ3SFBsMEZBSUF1TXQ1NjllYzRNclNXQ2RpNUVDZEFnQWVhaTJ4b3Q2cTVsRkwwRDdUVUt5Mk1DLXhqX0tKcFExcDNvX2JteUpBOHBFRHlnY1hWeFh6aEhXa1N4?oc=5\" target=\"_blank\">Il ‘brutto clima’ al centro del dibattito organizzato da Alleanza Verdi Sinistra</a> <font color=\"#6f6f6f\">La Nazione</font>",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc2RONlhBWE9BbFkwbjRiaE9QSS1qS3pDS1NDUzlvTk5lTXlpeDQ3SFBsMEZBSUF1TXQ1NjllYzRNclNXQ2RpNUVDZEFnQWVhaTJ4b3Q2cTVsRkwwRDdUVUt5Mk1DLXhqX0tKcFExcDNvX2JteUpBOHBFRHlnY1hWeFh6aEhXa1N4?oc=5",
-      "source": "La Nazione",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Thu, 27 Aug 2026 03:54:27 GMT",
-      "googlePubDate": "Thu, 27 Aug 2026 03:54:27 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "La Nazione",
-          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc2RONlhBWE9BbFkwbjRiaE9QSS1qS3pDS1NDUzlvTk5lTXlpeDQ3SFBsMEZBSUF1TXQ1NjllYzRNclNXQ2RpNUVDZEFnQWVhaTJ4b3Q2cTVsRkwwRDdUVUt5Mk1DLXhqX0tKcFExcDNvX2JteUpBOHBFRHlnY1hWeFh6aEhXa1N4?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 03:54:27 GMT"
-        }
-      ],
-      "originalURL": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc2RONlhBWE9BbFkwbjRiaE9QSS1qS3pDS1NDUzlvTk5lTXlpeDQ3SFBsMEZBSUF1TXQ1NjllYzRNclNXQ2RpNUVDZEFnQWVhaTJ4b3Q2cTVsRkwwRDdUVUt5Mk1DLXhqX0tKcFExcDNvX2JteUpBOHBFRHlnY1hWeFh6aEhXa1N4?oc=5",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "il brutto clima al centro del dibattito organizzato da alleanza verdi -1787802867000-38"
-    },
-    {
-      "title": "La Juve a caccia di un altro attaccante: ritorno di fiamma con Sørloth, David può entrare nell’affare",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZmJkdEJIX19nUV9ZVUtqYXN4UDVXbWxNU0JkeVFwa0pWbXZCLTR5bmdRLUtVOC1LSFBOVU1jV182V3VBTEw1YzZlTjQxQVI4MlVhVHZobjNEakdsYWlrOXhUOTRIbmJUaFpZRmg1QnJFRDU0NUdCZXgyLW5KSnphal9wOTYzbkFkYkREQ1lZZVExdDQzQ2dCOWhPZFI3dVBlMzZCR2JhM1VOY0ZOa2xwc3kyZ2lTcnQtSHRmNnBjVDVra1VmNU45WGd5V254Tm96aVNIY2o2a2dTOUNpMW5NQVg4RQ?oc=5\" target=\"_blank\">La Juve a caccia di un altro attaccante: ritorno di fiamma con Sørloth, David può entrare nell’affare</a> <font color=\"#6f6f6f\">Goal.com</font>",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZmJkdEJIX19nUV9ZVUtqYXN4UDVXbWxNU0JkeVFwa0pWbXZCLTR5bmdRLUtVOC1LSFBOVU1jV182V3VBTEw1YzZlTjQxQVI4MlVhVHZobjNEakdsYWlrOXhUOTRIbmJUaFpZRmg1QnJFRDU0NUdCZXgyLW5KSnphal9wOTYzbkFkYkREQ1lZZVExdDQzQ2dCOWhPZFI3dVBlMzZCR2JhM1VOY0ZOa2xwc3kyZ2lTcnQtSHRmNnBjVDVra1VmNU45WGd5V254Tm96aVNIY2o2a2dTOUNpMW5NQVg4RQ?oc=5",
-      "source": "Goal.com",
-      "category": "Juventus",
-      "categories": [
-        "Juventus"
-      ],
-      "pubDate": "Thu, 27 Aug 2026 03:48:19 GMT",
-      "googlePubDate": "Thu, 27 Aug 2026 03:48:19 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Goal.com",
-          "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZmJkdEJIX19nUV9ZVUtqYXN4UDVXbWxNU0JkeVFwa0pWbXZCLTR5bmdRLUtVOC1LSFBOVU1jV182V3VBTEw1YzZlTjQxQVI4MlVhVHZobjNEakdsYWlrOXhUOTRIbmJUaFpZRmg1QnJFRDU0NUdCZXgyLW5KSnphal9wOTYzbkFkYkREQ1lZZVExdDQzQ2dCOWhPZFI3dVBlMzZCR2JhM1VOY0ZOa2xwc3kyZ2lTcnQtSHRmNnBjVDVra1VmNU45WGd5V254Tm96aVNIY2o2a2dTOUNpMW5NQVg4RQ?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 03:48:19 GMT"
-        }
-      ],
-      "originalURL": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZmJkdEJIX19nUV9ZVUtqYXN4UDVXbWxNU0JkeVFwa0pWbXZCLTR5bmdRLUtVOC1LSFBOVU1jV182V3VBTEw1YzZlTjQxQVI4MlVhVHZobjNEakdsYWlrOXhUOTRIbmJUaFpZRmg1QnJFRDU0NUdCZXgyLW5KSnphal9wOTYzbkFkYkREQ1lZZVExdDQzQ2dCOWhPZFI3dVBlMzZCR2JhM1VOY0ZOa2xwc3kyZ2lTcnQtSHRmNnBjVDVra1VmNU45WGd5V254Tm96aVNIY2o2a2dTOUNpMW5NQVg4RQ?oc=5",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "la juve a caccia di un altro attaccante ritorno di fiamma con s rloth -1787802499000-39"
     },
     {
       "title": "Ultime Notizie Online",
@@ -1582,30 +1631,6 @@
       "sourceCount": 1
     },
     {
-      "title": "Torna il festival delle pari opportunità",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE04QmJzcXVpaldHR0Y1eGFKb1FRNU1HY2xKbzI2SVh4Y3lVODlXU0g4cjB2R0ZlVUxLVzZ6S1dOdmEzeEF4aHIzb3lVeUlQN3RCdFdLV0dnUV9YTWJZWUIzaFc4TmxCcko2NDE4OWloaVdEeFZKc09mUFhn?oc=5\" target=\"_blank\">Torna il festival delle pari opportunità</a> <font color=\"#6f6f6f\">Il Giorno</font>",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE04QmJzcXVpaldHR0Y1eGFKb1FRNU1HY2xKbzI2SVh4Y3lVODlXU0g4cjB2R0ZlVUxLVzZ6S1dOdmEzeEF4aHIzb3lVeUlQN3RCdFdLV0dnUV9YTWJZWUIzaFc4TmxCcko2NDE4OWloaVdEeFZKc09mUFhn?oc=5",
-      "source": "Il Giorno",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Thu, 27 Aug 2026 03:26:08 GMT",
-      "googlePubDate": "Thu, 27 Aug 2026 03:26:08 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Il Giorno",
-          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE04QmJzcXVpaldHR0Y1eGFKb1FRNU1HY2xKbzI2SVh4Y3lVODlXU0g4cjB2R0ZlVUxLVzZ6S1dOdmEzeEF4aHIzb3lVeUlQN3RCdFdLV0dnUV9YTWJZWUIzaFc4TmxCcko2NDE4OWloaVdEeFZKc09mUFhn?oc=5",
-          "pubDate": "Thu, 27 Aug 2026 03:26:08 GMT"
-        }
-      ],
-      "id": "focus-torna il festival delle pari opportunita-1787801168000",
-      "sourceCount": 1
-    },
-    {
       "title": "Social e minori, Meta si arrende. Patteggia e paga 17 miliardi di dollari",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE5yN2J1MmpYNWpHN0Y4XzFhd0xFZGJlM0ZQQVByOHFZclBieHJBbWd6cDFybGhnbjZuS081c1V2a0VEVmt5UTRxWG5yMzJldTJvR0RLMWNsc3Y5eWV3QW55ckJMdHQxRnd0ay1INktaTTFVcWt3Rndr?oc=5\" target=\"_blank\">Social e minori, Meta si arrende. Patteggia e paga 17 miliardi di dollari</a> <font color=\"#6f6f6f\">Quotidiano Nazionale</font>",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5yN2J1MmpYNWpHN0Y4XzFhd0xFZGJlM0ZQQVByOHFZclBieHJBbWd6cDFybGhnbjZuS081c1V2a0VEVmt5UTRxWG5yMzJldTJvR0RLMWNsc3Y5eWV3QW55ckJMdHQxRnd0ay1INktaTTFVcWt3Rndr?oc=5",
@@ -1633,6 +1658,30 @@
       ],
       "id": "focus-social e minori meta si arrende patteggia e paga 17 miliardi di dollar-1787801086000",
       "sourceCount": 2
+    },
+    {
+      "title": "Accampamenti, rifiuti, voli dai moli: oltre cento multe",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxNS05pRk5lVUpvNVI2RnhGNGhlWVVXOEVQMGVPaVB1T251cTlrb2VGRW5mUjJ5eUdqQW14aEk0d21fNjNiSFBHdXZSdTlVVHBiTUV0WGJsYUtwUXRaMXdHZ3o0TnNWU0FkSFlhU0hwYV9SbkhNRTUwa3doaURnQ0NkTTZMdVJaMkhB?oc=5\" target=\"_blank\">Accampamenti, rifiuti, voli dai moli: oltre cento multe</a> <font color=\"#6f6f6f\">Il Giorno</font>",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNS05pRk5lVUpvNVI2RnhGNGhlWVVXOEVQMGVPaVB1T251cTlrb2VGRW5mUjJ5eUdqQW14aEk0d21fNjNiSFBHdXZSdTlVVHBiTUV0WGJsYUtwUXRaMXdHZ3o0TnNWU0FkSFlhU0hwYV9SbkhNRTUwa3doaURnQ0NkTTZMdVJaMkhB?oc=5",
+      "source": "Il Giorno",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Thu, 27 Aug 2026 03:24:37 GMT",
+      "googlePubDate": "Thu, 27 Aug 2026 03:24:37 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Il Giorno",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNS05pRk5lVUpvNVI2RnhGNGhlWVVXOEVQMGVPaVB1T251cTlrb2VGRW5mUjJ5eUdqQW14aEk0d21fNjNiSFBHdXZSdTlVVHBiTUV0WGJsYUtwUXRaMXdHZ3o0TnNWU0FkSFlhU0hwYV9SbkhNRTUwa3doaURnQ0NkTTZMdVJaMkhB?oc=5",
+          "pubDate": "Thu, 27 Aug 2026 03:24:37 GMT"
+        }
+      ],
+      "id": "focus-accampamenti rifiuti voli dai moli oltre cento multe-1787801077000",
+      "sourceCount": 1
     },
     {
       "title": "Truffa del camper. Trovato il responsabile",
@@ -1682,7 +1731,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOaVB2M0ZiakJ4bmRoYmlEeTZiT25YNDVpVF9PLVVnNTFqbll2VFM5WWVnNHFfWm5LcmNoSS1HSktYRzdhNklGcFNXcmtLazBtNzNOV042TkZvWGM5czZjb1EwU3pRTFh4MlNCZWFpTFpCcGN1dFNmcGpzUVBrLTZTeWZmRDJySm8wNVVSNmxxNEpsb0x2R3Y3eUFKVE9qOFZPSjVYbHBPQXpyRDJPcWRBM3BFak5hanpQYnRLZVA4QmNLd0g3M1lPNEVVUDXSAdIBQVVfeXFMTlpqc2JPN1FPVjVmQ29jUnFCSjBjUVp5RGQ3SW9CRnppZjBsNlJzSUJqaUVuQkFhNXhqcm9sM3lydFFWSExKSTc5NUx0Q24ycnJ2UE9mRlBQMWVOa29rV1BDMlkxYmsxeTVmWlFTNVo2YVZvRndSZjNVVXZOc290bkt5dHVoeHdHVTZsa01VcWZxMDF6RkFIdi1zVU9ydW5rWF9abERUa3dpVmI3MXViN2s1aFUwcVlTUEtaaW02Um16WFkyME8xQ0F3c29PbnN2bU5B?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "juventus parma orario e dove vederla in tv e streaming-1787800740000-40"
+      "id": "juventus parma orario e dove vederla in tv e streaming-1787800740000-42"
     },
     {
       "title": "Accordo fra museo e parco agricolo. A Vimercate l’unione fa la forza",
@@ -1780,7 +1829,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVWNaSlkyWGFaWDA4TEQxRUpvazVtV1BCYkVhcGxKb2c4X0NWN1QwVnA2aU01QlJsNHhHOTNWWkJlVFN2cmpiUEcwWWh3VFZnc055aE5wcC1YRk1YWG9OaUxtNWFRcXQ5Y0dXYVdwakdtQmlrWjNKTFFvRmVLRFFRT1FR?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "giorgia anticipo elettorale e salvagente a matteo-1787799327000-41"
+      "id": "giorgia anticipo elettorale e salvagente a matteo-1787799327000-43"
     },
     {
       "title": "Programmi TV della notte di Domenica 30 Agosto",
@@ -1849,15 +1898,10 @@
           "source": "Quotidiano Nazionale",
           "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5pVkZTbXVEZ0l0Wkg3Z2haSjA0TWNiRzhWNURuZHVpWjgwNWtXWk9jMVhwZ3Rlcm12bnlCbEVvU0pYdHlIRkRxcGhiclI2RzBiZUtScmhCMkxMcHVKd01xNVlvV2dlQm83enQzUENKUQ?oc=5",
           "pubDate": "Thu, 27 Aug 2026 01:16:05 GMT"
-        },
-        {
-          "source": "ANSA",
-          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQS0FWOE91X21uU3JsdzZnVG9rYk1oenpOd2lDaUNOSVhLWlBWV216YzE3OFpaZFVQRWV3SXZEZVdUdHR0WkNjZTlCUklGdVNhdXlNeGhvbUp3UjBUa2tuN2hOLUFaQXpsM2szQ3hKVjhEc05jNU1RN1RPOXFKaUl2cHpVX1laVkdtQWc5VEtZY3lMTi1IUUF4Z1J2eUQzeWkxY2x2V0dXYi1Nckd6ZjVxTERHMWtubF84WjY4R2cwbXRrZXF6ajlfc1N0cHNLOGdPUThNYkJ2TS1aeFE?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 16:44:00 GMT"
         }
       ],
       "id": "focus-accise altri 10 giorni di taglio sconto esteso fino al 5 settembre i c-1787793365000",
-      "sourceCount": 2
+      "sourceCount": 1
     },
     {
       "title": "Palladio e il benessere nella casa ben costruita – Il blog di Carlo Franza",
@@ -1984,7 +2028,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTGpDYnJGc1hpN2ZmcWV3QklYVUd5QzVRYW45M0F2clFXeXJhSnVjSnBpSVEzMENKZGN0dXhRdENLdFRpbWMyRkNfWDBnNEEydjFqdENLSHVtYkNJc19uRHpxcFBpdE1WMWk2WWptb0hyZFFXR01KSVRLZ1hHeVZGTHpvTmFfakJ4c1BsYnpHd0NHWlJQU21aRU5UUmFMZWc4aTNEUlI4eEs3LTRoei1tTE4yNERHSUUyc25PdG5ZenFRQ01ha3dUMkQ5eFBCZXp2SDA5VW1oN1NYQUY3V2RBMzhScVo?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "comunali a milano centrodestra spaccato in tre e manca il nome del can-1787788956000-42"
+      "id": "comunali a milano centrodestra spaccato in tre e manca il nome del can-1787788956000-44"
     },
     {
       "title": "Ultimi sondaggi ed intenzioni di voto dei partiti politici",
@@ -2010,7 +2054,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1FLWJuRWVtcnRuVGdjZThyYmQ2RWVMQW5CNEI2WDNLYWFIekZyUjJOeFpZSzJSUm5pM1BBMGFFLVZJbEI5RWw5U1ItTG5rRHhydHg0NE5KSzJETEtSOXpSeWZUUEFmb19iZ3pWV2FQVFQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "ultimi sondaggi ed intenzioni di voto dei partiti politici-1787788401000-43"
+      "id": "ultimi sondaggi ed intenzioni di voto dei partiti politici-1787788401000-45"
     },
     {
       "title": "Il nuovo avvertimento di Bill Gates: \"Il mondo non è pronto per l'IA\"",
@@ -2060,7 +2104,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeTVoNzl6SERscUdOeUVHZmxzRWlVSDQwWlloQTRuSzFwS2w2RHZVSWtDaWZQeWNhVEd4bVh1NHQzR1lGdWhWTnRKSVdEaUp2T3p5cjBmcUlTcjczMk9yTXI3T2xodjd4cGFtZWJPcjhIODBwQVVlOUtybXJ0bTFuN3liQnVkTTNWRHRhM2NWeFBodC1CUks2ZHJfR1dDaUYxTlE?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "torino libero dal servizio soccorre una donna in stazione e le salva l-1787785316000-44"
+      "id": "torino libero dal servizio soccorre una donna in stazione e le salva l-1787785316000-46"
     },
     {
       "title": "Scuola, lezioni di italiano per i genitori stranieri. Le seconde generazioni: “Non accusate le famiglie”",
@@ -2110,7 +2154,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPa2lZRTc1SEtUZnYwNlNNblZGYjdaLXF6UHRlWWFQSkdzenViUGFQYXRmS3JBc2V0ei1pbGJnemNBd3dyUGcwcWNjZ3cwRXBESFN0V1g1SlY4S01BcEgzMGZROUgyd1hHWElHWk5xaGJSbVYwMHM0cGN1ZDdHZEgzcUxXVkRuUQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "uwcl st polten juventus le formazioni-1787785041000-45"
+      "id": "uwcl st polten juventus le formazioni-1787785041000-47"
     },
     {
       "title": "Terzo turno di qualificazione di Women's Champions League: Juventus, Chelsea, Wolfsburg e Real Madrid vincono l'andata",
@@ -2136,7 +2180,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQam0ydG9JWS1kWkZQdXg3bzJuUEFvMVBOM0FadlRBMmJid3JQOHJJUHZyajltRHhmN2F4dlR3Tk8wWGM3ZzZ5bXFyUEJURjhBOGM3OFZoWHpaY1JSOHlaMU9sVHVJOTJXODNSWERmQkdadmV2YWY4OGxQYk9ZVDN2MWJwTE5ubUQxZjRrUldfMXFHVmVSUVlJMW9KakNRS1FTWlZCZFItMHEyNGQtLVo0X3B0RlVlRERnX2E0TVVGd2pvTW9rdXZCZDVNTW9xYUw5VjRtN2FKWHFQaFJFWVE?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "terzo turno di qualificazione di women s champions league juventus che-1787784652000-46"
+      "id": "terzo turno di qualificazione di women s champions league juventus che-1787784652000-48"
     },
     {
       "title": "St Pölten Juventus Women 0-3 VIDEO | Rosucci e doppietta di Pinto League Stage di Champions a un passo",
@@ -2241,7 +2285,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSzZVTlFIdVVOSHJwc1hMckVka21zOE9mNmJnMm9uY3NZeTJZSHQ3QzVqOGdIUk1Ec1ZqQTdseHZpZ1NtU0h3Q2tVTmtBYy1UZ21oV3czY3NfVVQyZXRxbEFFMG54NzJsYm9oUHlKOWJvSVAta0RwSVRwOWtCcGsweTYxOGNfMXBZZUR0ZjFzSmw2RURpV19pTmpPQlVJUGc?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "carburanti dal governo misura tampone sulle accise extraprofitti scald-1787783040000-47"
+      "id": "carburanti dal governo misura tampone sulle accise extraprofitti scald-1787783040000-49"
     },
     {
       "title": "Perché l’America ha appena sospeso i visti per tutti? Trump è solo l’ultimo atto",
@@ -2315,7 +2359,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbDJTVXZ1WWlxejZaMFllZG5ldnpaOVFadUx2cFNYTkRYeGVtTU9RcG1VeHJKY0xNaU1DMW9YazR4UzFiRk9GbWdjU1ZhY19CYnhoMFYyenpncmoza1BkWFZ2elplQVg4Q3RsT2hUSkZWVHlPYVhnY3l5NGVUdkZCbTR1U3F0UGtScHI5YkR1UHZaSHVJWVBUc1M0ckxrMnlrQl9heHlwN3pVUHlQSUxHOWp1WlcwUHFFdEJWRDRTNG1OZzAtcWp6ZF96WQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "ucraina il direttore della cia a mosca il cremlino nessun contatto con-1787782052000-48"
+      "id": "ucraina il direttore della cia a mosca il cremlino nessun contatto con-1787782052000-50"
     },
     {
       "title": "Iran, il D-Day delle sanzioni Usa è un ultimatum a tutti i paesi",
@@ -2419,7 +2463,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOa2hTQXVKQTV2bEd0dlpIb01yNmxCZElXY1hDb3k0cDdiUVlaMFpkX1pvVEs5NFp6cXhXQ2RQRk9MZkV0WVItdzN3RFpVdnp1NWNXdVVlUEM4RVBhXzR4LTlNQVpiT3JuNzFybDJJUXpmVHp0Uk0ySjVlRkpaWlVGOXNlMERBQjdpTzU1TnlkQQ?oc=5",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "kessie juventus la cessione di david puo sbloccare la trattativa le ne-1787780661000-49"
+      "id": "kessie juventus la cessione di david puo sbloccare la trattativa le ne-1787780661000-51"
     },
     {
       "title": "St Pölten Juventus Women 0-2 LIVE VIDEO | raddoppio di Rosucci gran tiro da fuori",
@@ -2470,7 +2514,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNHVmQXJhazBSV3ZUS0FwMm5vRkZybTVQYWFTZTRrTnNFOG9aN0cwSWxrNTNIdnpJZFQzSHVwY1VwdXVrM25NRnljQWxvVG84WmN2eEFzWmtySHkyd3RvOW9OTnNrLUoyQUlNUWZoM2hnUUZjSDVuNDVKZk9BbzF2SF9QZnBZUWxIV0dLRE9wOW9BalpFYWswRUR4RjM1Y0tDcXRDYVNEOXEwM0YySmZCODBR?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "vannacci all 8 di battista al 3 5 tremano salvini e conte-1787780079000-50"
+      "id": "vannacci all 8 di battista al 3 5 tremano salvini e conte-1787780079000-52"
     },
     {
       "title": "Sky Sport Uno : Programmi TV e Palinsesto",
@@ -2616,7 +2660,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBOejlkVUFCSTlTTnRoNTJKcXM1U0ZFZmlfdmFFWWtNejc3Y1hMUlE3WnZlVThpUnd2Ui0yRUN0ZXJzTGMtdjQ1LTJnRkptRFNzYTBHRFhhZ0VGYjBQeHhnOGxHWjY1OTZtbi1KdmVPVDJqb2NzLVNKSVBxdFJEZw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "uwcl st polten juventus gallery-1787777538000-51"
+      "id": "uwcl st polten juventus gallery-1787777538000-53"
     },
     {
       "title": "Alba dei Campioni 2026: debutto ok per la Juventus, pari nelle altre due sfide del pomeriggio (FOTOGALLERY)",
@@ -2642,7 +2686,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQ0RpZEI5QUZsblNPMHFPMmtyMVFVUXNna252TjJ2cktvSWZsZ3RFSkpJbUVKeG1udi1VNDJCT3o1WkdJdDEwaUZ2Q0lzMXN3VnRIZ0JHdlhySDlvam1PNkJTUThhaFFTRWo2OUJMZjJrd0M3VlRCMDdMLUt1UEVyM3dVd2Rvd2plZ2ZkVzJ0dFc1UUtXWXFYTTNUajFKcjRwUWZHNlZuNVBrNjZEYWRrQno4V1JHZEVlblZoX0VEYmtINHEtX21fYXNyVURGbi1TQWh4dTVrSEV1cFRo0gHcAUFVX3lxTE1DRGlkQjlBRmxuU08wcU8ya3IxUVVRc2drbnZOMnZyS29JZmxndEVKSkltRUp4bW52LVU0MkJPejVaR0l0MTBpRnZDSXMxc3dWdEhnQkd2WHJIOW9qbU82QlNROGFoUVNFajY5QkxmMmt3QzdWVEIwN0wtS3VQRXIzd1V3ZG93amVnZmRXMnR0VzVRS1dZcVhNM1RqMUpyNHBRZkc2Vm41UGs2NkRhZGtCejhXUkdkRWVuVmhfRURia0g0cS1fbV9hc3JVREZuLVNBaHh1NWtIRXVwVGg?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "alba dei campioni 2026 debutto ok per la juventus pari nelle altre due-1787777403000-52"
+      "id": "alba dei campioni 2026 debutto ok per la juventus pari nelle altre due-1787777403000-54"
     },
     {
       "title": "Volley. Italia-Germania, 64-66 nel set fiume: nuovo primato mondiale",
@@ -2716,7 +2760,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaFF0M055R2YzVDhJVV9xQjhXNlUzcXJuQmFrbGtzc0FqM2ZvcS1Lb3Q1c29BX1VaN1otZVBMTVZFSHdUTE5jZnlXWjJqM0RuWDdJa1Y5MDRCbTR1ZHd0bUVacy1BZFhwM1NoaXJXZ2UtZHdWc3VSdUc4TjVkcDgtQ2tpQUNFNlVFNzR0aVJKWWNwZjJOQlpreG5sYjFTYmExWEo1b05fMA?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "la juventus women ne segna 3 al st polten e ipoteca la champions leagu-1787776765000-53"
+      "id": "la juventus women ne segna 3 al st polten e ipoteca la champions leagu-1787776765000-55"
     },
     {
       "title": "St Pölten Juventus Women 0-3 LIVE VIDEO | Pinto firma il tris",
@@ -2945,7 +2989,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMU5ZM0NadkJHM0U4Nl8yV19sNmdMOW1JTnFDWTFORHM5SzBJeU1sSTRmSWNJak1tZFFMWUdhMmxEZkdOYjhqZEZoT0VXdFBxWmJGa2dnTVBLTl9IWmxSS0pteHNQRTE3R21kLWc5SGJ5dTl3QzJIM3dCVzhkb01jcXJzVkZGRGlPTGlCcUhvX195cVNUWWFSeXROVDR6UDJIYVQ3bmpXS2RlYk5NT0o4dHcteGpGMmpFNmhPZHJR?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "turismo sindaci lega campania graduatoria politica serve chiarezza sui-1787774576000-54"
+      "id": "turismo sindaci lega campania graduatoria politica serve chiarezza sui-1787774576000-56"
     },
     {
       "title": "L'Europa e la patente a 17 anni",
@@ -2971,7 +3015,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOREd2UjBtS0s2MVhjT3ZiUlhlOHVHRFQ1cmFWaXFMOTF6VW1GM2pKd3JnMm5oNHJCdVM4QVkxT2NFZVRaa0dfNzBJWUFZS2hiVWVvNTc5RWM5YVdZYzNOSHJCTHFVcnBScFdLNWNZVjJlSHB6T2pZZVhQQkpDYm5ETHRpS21ZMGVINE1uZnFWcEp2OTTSAZsBQVVfeXFMTzB6UldrZHpFVW9LRUhnX19GbEJUZDctaU82ejYtazlPVHNISmxIXzBUYnJySWRpQ2pmSDVYMXlteHJBbzBfR3VxeGJiOERzX0JrR3dHSlJsVzc0c1VZTHJuMEc4Vkt3SjRzbUhGUVN5c2plb2ViWTdNOVNJSGtHOUxZVFJlQWZPZ2RaaTl0eXN0bUZJaG45ZW5EclU?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "l europa e la patente a 17 anni-1787774340000-55"
+      "id": "l europa e la patente a 17 anni-1787774340000-57"
     },
     {
       "title": "Alluvione tra Nepal e Tibet: 157 morti, 466 stranieri dispersi. Tajani: \"Due italiani coinvolti dalla frana in buone condizioni\"",
@@ -3233,7 +3277,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQclc1NnZpdkRVdERSaW9nekFQdkRTWjNNdUhvRWg2bFFBMDctX255RHVnWE03dE9ieU1EbE42RFJOOXlpUjM4TG9HUTEwcHBSeGdZV3FsYldFODg1RFVXT0lDOERobG8zU1czcDJTUWNxanRuSGhiSmVHNy1sZlNoc2pSOGU3Y2lrYUdXOWdBR25WWkhRV29rYVZCa0xBYmp6TnNKTDR6TGpLQ3NYOGpmanB0RGhnVENhQzl2WU43cHAzS045OXdOLW5sMzV1U2Vid0NkQmJldkxsNHFYSzJqdUJPbDc4YW1kNTExT1U3QXRlSVlTSzBlV3ZIdGlDQVNw0gGDAkFVX3lxTFBZbXlzR2ZFWFhCb19oSEVUWW9DamZDRTJ2VVQyRFdsZ3lWVnRrRUF5NWlrTXV6RS1LclZUQ0REQ3JrNm9ZQ0NrdzZIdHNnTE1wT3lPZE1rMWZRaVpGWnotWGZGUHBFWHlobUNuRTdYTlhSekQ4SlpsaUxCYS1vb0JobmpOdHdmOVVIenJMMFB1WVFucHp6cE1paFZJQnI5dWZFa0NxTVpLSllGTkZzd2NsRHJSc19IaUI1NEJXUldpVkhOLTVNYU8tb2h5b1V0RFZEM1RqU1Ixd2VhZTU3QmlNNXZaeTRfUzYyV2FDZHU4UW5yamM3T0pRbTM0elJHYXI5aWM?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "infortunio yildiz tra retroscena linea orsato e silenzio juve da altri-1787770200000-56"
+      "id": "infortunio yildiz tra retroscena linea orsato e silenzio juve da altri-1787770200000-58"
     },
     {
       "title": "Roma, via libera Cdm alla candidatura per ospitare i Mondiali di Atletica",
@@ -3331,7 +3375,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPMXFVZE9HVVV0bHBoNC1jYUtDQUhpVlpSdHFpVjZNRkc2RFFmYmw2bnJGV2xBZGx6VzZxQmJ0cjJhWGFlWVVOdmhmLXBkdVBobk96Y1FkQWZlSldXQnFPNXZGczYxVmROT1l1cE51a01kc1VScjVOZG9VLXZtSWdYcnRwWnRGWGxHTTg2eXV5aGRZSUg2c0t2bmRGaTZZclhTazNkMEtFdUJMUmxpaldqWXU2UUxGaGwzSUYxd0wzU0pqbUM0Zm5QWWRGRlhFbkowakR5d0p5WGU0bnVhU3lEaFVZZjhRMUR1blFVVTBTb3AwTDRXRk1mR0lpaGgxbTlqTEc2T0pR0gF4QVVfeXFMTVZlUHRZbkhIOWpSNDczUkpyUHQtZEFyb3ZQQ216T1ZGcWYtOTZfa1V3aVo2WURNbld0WDFnUEI1VWpjSi1qdy1vdFZDQWV6eXNuaF9QajNkSkdrcnR6SE82czU1c2lJSkhsZ21XTm5aNHR3ZkdLT1dK?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "juventus grabara si presenta non c e un club migliore di questo szczes-1787769583000-57"
+      "id": "juventus grabara si presenta non c e un club migliore di questo szczes-1787769583000-59"
     },
     {
       "title": "Devastante alluvione tra Nepal e Tibet, oltre 150 morti e decine di dispersi: 90 italiani sul posto, la Farnesina si mobilita (video)",
@@ -3482,7 +3526,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSWF3ZFlvbW85SHo0Q3k0ZEtEV00wMnVoS2J5SlQyT0V5bjktd2RkcXRxSUhQblgzQ3BfUGlOYW90MjVYSVlzM1FSVk1vc2xsR0JlNFVjUEJaOWJWOFRmc2tvMkl1VGFRbW1YbVh1VFJUUEpnQWNPbF94Zkc2dUVzSEVVQTVjWG9lcWc?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "avanti con le armi e zero diplomazia l aiuto dei volenterosi-1787769133000-58"
+      "id": "avanti con le armi e zero diplomazia l aiuto dei volenterosi-1787769133000-60"
     },
     {
       "title": "Sondaggi elettorali: Vannacci supera Forza Italia, FdI perde quasi un punto. Anche il Pd in calo",
@@ -3508,7 +3552,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUVB2eWlvVGhXLUN1QUNLQU4zT0xGWVdhSGpQMGxIbG1jWTRSazQ0ZXhDYzJpRUVNMFExcTEwMWRZYVhWbmplZktQVlM5eVFYX2o0eldJaUlsRmxmX2VLSndvd3lOYUtIdVFvQTNfRXZyb3FlOC1ISDRFUVplRVVtYzZHMGVOaTgyaWNvaDF2dERWZUk3VzNJUlc5Ukk?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "sondaggi elettorali vannacci supera forza italia fdi perde quasi un pu-1787768854000-59"
+      "id": "sondaggi elettorali vannacci supera forza italia fdi perde quasi un pu-1787768854000-61"
     },
     {
       "title": "Videonews Italpress – Banche, Salvini “Soldi non vanno estorti ma chiesti con il dialogo”",
@@ -3631,27 +3675,27 @@
       "sourceCount": 1
     },
     {
-      "title": "Tajani a San Patrignano \"Sostegno a comunità, recupero ragazzi opera meritoria\" | Libero Quotidiano.it",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxOYXJ5VTVjLUZNY2kwOVdpZ0FXeHFvX1pVYlFpLVJPaUFZV21HS1oxbFQwUnlPMlZMdFBxWEFpSkhFdWNWVzdaVkRBTkFmLTVMN296NW1MZHdNdkt1WXlHTERVR0xCWHRjS1pXRDJtYnZFdlh6LW9oRVVwRjU1SkxYTnVuRkdLSFF1UzYyRHR1cXlRUHJjQlVNQkVJV3RUSG5GNDU4X2U0OV9NVHRjRTlRTjNLNnFmdE4weXc4TFh3LU9CNGhfbkwwbC04UULSAdABQVVfeXFMTS15NVFYUVZXdS1tOEY3Qkd4dFNaUU1LUDd0dkdnczZnV3hfeTlaV2pjN2JabEtXbGJaSGxLVzlxV2N1Z1hBN0g4RWxFUm91LXdTUUI5Ny1oa0NGN2h6Z0sxOG5qQTYzZ3hNaElPQmtSa25HcW0tNllyVUM1WW9Sd3RXNkNzZGZ3WGRDSmZHYTFTcmZjMmtuT1ZodEQzWHp6alkzV09XX1ZVX1RVZEwxamlucWl5TGJrOTdKNkI0UVRhSFFnUHdzaEI5dlhEMUlLVQ?oc=5\" target=\"_blank\">Tajani a San Patrignano \"Sostegno a comunità, recupero ragazzi opera meritoria\" | Libero Quotidiano.it</a> <font color=\"#6f6f6f\">Libero Quotidiano</font>",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOYXJ5VTVjLUZNY2kwOVdpZ0FXeHFvX1pVYlFpLVJPaUFZV21HS1oxbFQwUnlPMlZMdFBxWEFpSkhFdWNWVzdaVkRBTkFmLTVMN296NW1MZHdNdkt1WXlHTERVR0xCWHRjS1pXRDJtYnZFdlh6LW9oRVVwRjU1SkxYTnVuRkdLSFF1UzYyRHR1cXlRUHJjQlVNQkVJV3RUSG5GNDU4X2U0OV9NVHRjRTlRTjNLNnFmdE4weXc4TFh3LU9CNGhfbkwwbC04UULSAdABQVVfeXFMTS15NVFYUVZXdS1tOEY3Qkd4dFNaUU1LUDd0dkdnczZnV3hfeTlaV2pjN2JabEtXbGJaSGxLVzlxV2N1Z1hBN0g4RWxFUm91LXdTUUI5Ny1oa0NGN2h6Z0sxOG5qQTYzZ3hNaElPQmtSa25HcW0tNllyVUM1WW9Sd3RXNkNzZGZ3WGRDSmZHYTFTcmZjMmtuT1ZodEQzWHp6alkzV09XX1ZVX1RVZEwxamlucWl5TGJrOTdKNkI0UVRhSFFnUHdzaEI5dlhEMUlLVQ?oc=5",
+      "title": "Perin accolto dai tifosi del Palermo al Barbera “Vinciamo tutti insieme” | Libero Quotidiano.it",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxPMk52NUgxMDkwdVg3SDBhN3hXdGRjWmg0Vm5HT3pCU2JReHVxSVJUdHZwMFZwRFhqN09JM1FBTGV2cllsc2licnFkbk1sdFhxMk9NRzdReXhhQ2paei1haXlZR0hpSldwRURtRXJWTXpyeU1xRnhFQUtPYndzeDV4ZmlCb3VJTEY2bXVzcTh1bm8tbUR4cENPMndkdFRPR2lXWVRzc0JTZk0tR2xsZzdnNzl2MFVNUzlYRVdwZkZvV215NzVk0gHIAUFVX3lxTE8yTFlIUkhscng0cDBTLWFzX0RSa0EwVmZHNzlfcmdwY3FNdXNJdlZmZWlRSk5VZnVCU3d0clVOaEFIQ216ZVBQNnRxdjRRMjg3dHNmRkh5d3NJOWZpYWlUaXpXZzQ5bUR1T280RFZIVjc1RHhkSENrTk04cVFremlwQl9NZm5Lbm51Smt2dTZXNGJSYW5tOWxlb0o2cHJJZG94eDAtZDM4QmlqSEZKNGNnWDFjU0VNaTBMYWdTVXVTUGJfNkF4U2hp?oc=5\" target=\"_blank\">Perin accolto dai tifosi del Palermo al Barbera “Vinciamo tutti insieme” | Libero Quotidiano.it</a> <font color=\"#6f6f6f\">Libero Quotidiano</font>",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPMk52NUgxMDkwdVg3SDBhN3hXdGRjWmg0Vm5HT3pCU2JReHVxSVJUdHZwMFZwRFhqN09JM1FBTGV2cllsc2licnFkbk1sdFhxMk9NRzdReXhhQ2paei1haXlZR0hpSldwRURtRXJWTXpyeU1xRnhFQUtPYndzeDV4ZmlCb3VJTEY2bXVzcTh1bm8tbUR4cENPMndkdFRPR2lXWVRzc0JTZk0tR2xsZzdnNzl2MFVNUzlYRVdwZkZvV215NzVk0gHIAUFVX3lxTE8yTFlIUkhscng0cDBTLWFzX0RSa0EwVmZHNzlfcmdwY3FNdXNJdlZmZWlRSk5VZnVCU3d0clVOaEFIQ216ZVBQNnRxdjRRMjg3dHNmRkh5d3NJOWZpYWlUaXpXZzQ5bUR1T280RFZIVjc1RHhkSENrTk04cVFremlwQl9NZm5Lbm51Smt2dTZXNGJSYW5tOWxlb0o2cHJJZG94eDAtZDM4QmlqSEZKNGNnWDFjU0VNaTBMYWdTVXVTUGJfNkF4U2hp?oc=5",
       "source": "Libero Quotidiano",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
       ],
-      "pubDate": "Wed, 26 Aug 2026 18:11:39 GMT",
-      "googlePubDate": "Wed, 26 Aug 2026 18:11:39 GMT",
+      "pubDate": "Wed, 26 Aug 2026 18:11:19 GMT",
+      "googlePubDate": "Wed, 26 Aug 2026 18:11:19 GMT",
       "originalPubDate": null,
       "dateSource": "google",
       "isVideo": false,
       "sources": [
         {
           "source": "Libero Quotidiano",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOYXJ5VTVjLUZNY2kwOVdpZ0FXeHFvX1pVYlFpLVJPaUFZV21HS1oxbFQwUnlPMlZMdFBxWEFpSkhFdWNWVzdaVkRBTkFmLTVMN296NW1MZHdNdkt1WXlHTERVR0xCWHRjS1pXRDJtYnZFdlh6LW9oRVVwRjU1SkxYTnVuRkdLSFF1UzYyRHR1cXlRUHJjQlVNQkVJV3RUSG5GNDU4X2U0OV9NVHRjRTlRTjNLNnFmdE4weXc4TFh3LU9CNGhfbkwwbC04UULSAdABQVVfeXFMTS15NVFYUVZXdS1tOEY3Qkd4dFNaUU1LUDd0dkdnczZnV3hfeTlaV2pjN2JabEtXbGJaSGxLVzlxV2N1Z1hBN0g4RWxFUm91LXdTUUI5Ny1oa0NGN2h6Z0sxOG5qQTYzZ3hNaElPQmtSa25HcW0tNllyVUM1WW9Sd3RXNkNzZGZ3WGRDSmZHYTFTcmZjMmtuT1ZodEQzWHp6alkzV09XX1ZVX1RVZEwxamlucWl5TGJrOTdKNkI0UVRhSFFnUHdzaEI5dlhEMUlLVQ?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 18:11:39 GMT"
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPMk52NUgxMDkwdVg3SDBhN3hXdGRjWmg0Vm5HT3pCU2JReHVxSVJUdHZwMFZwRFhqN09JM1FBTGV2cllsc2licnFkbk1sdFhxMk9NRzdReXhhQ2paei1haXlZR0hpSldwRURtRXJWTXpyeU1xRnhFQUtPYndzeDV4ZmlCb3VJTEY2bXVzcTh1bm8tbUR4cENPMndkdFRPR2lXWVRzc0JTZk0tR2xsZzdnNzl2MFVNUzlYRVdwZkZvV215NzVk0gHIAUFVX3lxTE8yTFlIUkhscng0cDBTLWFzX0RSa0EwVmZHNzlfcmdwY3FNdXNJdlZmZWlRSk5VZnVCU3d0clVOaEFIQ216ZVBQNnRxdjRRMjg3dHNmRkh5d3NJOWZpYWlUaXpXZzQ5bUR1T280RFZIVjc1RHhkSENrTk04cVFremlwQl9NZm5Lbm51Smt2dTZXNGJSYW5tOWxlb0o2cHJJZG94eDAtZDM4QmlqSEZKNGNnWDFjU0VNaTBMYWdTVXVTUGJfNkF4U2hp?oc=5",
+          "pubDate": "Wed, 26 Aug 2026 18:11:19 GMT"
         }
       ],
-      "id": "focus-tajani a san patrignano sostegno a comunita recupero ragazzi opera mer-1787767899000",
+      "id": "focus-perin accolto dai tifosi del palermo al barbera vinciamo tutti insieme-1787767879000",
       "sourceCount": 1
     },
     {
@@ -3750,7 +3794,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWVBZSldCREtTM2VXRk50dVR5Nzd3XzYwMURQME5sc2hKeEdRNnh2VTFxRDBiYnJSWUJXcUJkRzNlSDl0SXQwcER1Wmo1R2FRb002bW1SV3lrNllfZE5aTTFtdjBYOGlmQktaUC1Bb1VJZi1Ea0Q5THhYalFKY1JBeWVJaTdlNjd6UkVaX0VwS2ZfSm5qaHh1TTdkNnl1NzM1RF91ZG1Sc2lnMXpTdGfSAa4BQVVfeXFMTVlQWUpXQkRLUzNlV0ZOdHVUeTc3d182MDFEUDBObHNoSnhHUTZ4dlUxcUQwYmJyUllCV3FCZEczZUg5dEl0MHBEdVpqNUdhUW9NNm1tUld5azZZX2ROWk0xbXYwWDhpZkJLWlAtQW9VSWYtRGtEOUx4WGpRSmNSQXllSWk3ZTY3elJFWl9FcEtmX0puamh4dU03ZDZ5dTczNURfdWRtUnNpZzF6U3Rn?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "caltanissetta si oppongono al rimpatrio migranti danno fuoco al cpr li-1787767232000-60"
+      "id": "caltanissetta si oppongono al rimpatrio migranti danno fuoco al cpr li-1787767232000-62"
     },
     {
       "title": "Narcotraffico Spagna-Italia, stroncato il canale dei camper con doppio fondo VIDEO",
@@ -4184,7 +4228,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMjRLdUJjZ0oxRHBWTllfS0V3NVY4LVJUZjNpaEJlZFdSczlVeTZTeERiZVowZVBoS29yZEhsZVJhcmlLckItcnBBMDNKZFF2M0V5cFJySjcxMVRyOV9LRkQ5a1oyOFpycVVHMEJ0VXBNYjdOcXVWajdPR210dFJ0TWN5MURmeS1BbTkyMmh1dk1fNkZBSHc?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "incidente tra camion dei vigili del fuoco e auto 7 feriti tra cui una -1787764562000-61"
+      "id": "incidente tra camion dei vigili del fuoco e auto 7 feriti tra cui una -1787764562000-63"
     },
     {
       "title": "Cantieri a rischio interruzione: il governo scava il buco e Salvini chiede di riempirlo",
@@ -4212,7 +4256,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbjFwc2tRcE14NS1ENFpEQ1JiS05yNGFNQjkyWkxnWS1qRC16RHE3RmRJaV9aTzdxTjNJS2lFbGdSZHhPWGxPUWVGZ3NzQXI3Tmx5eUNLRDVGRU9WcWVrOE5sUnVmdEZwXy1jbWlyVUlkSW1yZU5ETnJYeHpUX0dsWTFDQnRqd1ZZZ1plTlpvWUhzenVnd3BDY0w3Ti1ocFJCM3Q2Sg?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "cantieri a rischio interruzione il governo scava il buco e salvini chi-1787764500000-62"
+      "id": "cantieri a rischio interruzione il governo scava il buco e salvini chi-1787764500000-64"
     },
     {
       "title": "Edizione del 26 agosto 2026",
@@ -4358,7 +4402,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPY2lHcUpFakRoM1hkcXM3RnE3RzNtdVNROXZ2WWpGTVhacHg5S3ZXYy1rRHlDVEo1aWZuNExtaWdpY3NuMjRBd0VqdzJ5WE5MeWdTaGdRWkxVWkV0MDJscDNYZFVLbTJqQ0Y1MHFWUnZ5NVd5a0tvQ2N5cG43LWFYZGVLelA4UTk3c2QtUzZxNXBsVlBtNXhsR3lHc2NJWDI0THc?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "incidente a zadina buone notizie il giovane ciclista e fuori pericolo-1787763647000-63"
+      "id": "incidente a zadina buone notizie il giovane ciclista e fuori pericolo-1787763647000-65"
     },
     {
       "title": "\"Se Ranucci...\", il tweet di Gaia Tortora divide X: gli utenti correggono (e sbagliano)",
@@ -4409,28 +4453,36 @@
       "sourceCount": 1
     },
     {
-      "title": "Cdm, via libera al dl Carburanti: taglio delle accise fino al 5 settembre | Libero Quotidiano.it",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxOUzFyV3psUFB2aVE1dHZlUkRmdHhzMHNraWRIZWxCbnQ4RjdEVUFsWWdDOWRacTc4NWJNczZtZHJqN0NkbUZyR1I5aFd2MDktcGJOQXQzb19XczBrMG1UdDBjY2g0bXoxSUNPSDZLLW0tQ0FKMzlnUXNmYlBzWjYwV0pkU3ZDZHVYeERwNDNEOWs4SUtaQlpuTVdxYUppbF9uODVQRXJZT2Q4cVJMSklEMkdmWGFTd9IBugFBVV95cUxQR0dQRTNqamw2QnZ0QUFOMHJnZ29GVVZjR3QzaHRGVTZQT0I0SEFCeWtHa0xUenQ4Mkdib0kwUVA5akpGTTl4TXFXVTdLQUhsQkZjUEJrREV5WHFJem9GZ3doWEdtVjRXa0FudXhscWM0clU3eUVkQ2huaUdueVZKVGZpbF9WQy05Y0RWcGJ1Yjd6dUtjUWRhTVRLSjVQbUFWRHdsNFhmRlZldTRMVTNQdDRWa0ozalRXNUE?oc=5\" target=\"_blank\">Cdm, via libera al dl Carburanti: taglio delle accise fino al 5 settembre | Libero Quotidiano.it</a> <font color=\"#6f6f6f\">Libero Quotidiano</font>",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUzFyV3psUFB2aVE1dHZlUkRmdHhzMHNraWRIZWxCbnQ4RjdEVUFsWWdDOWRacTc4NWJNczZtZHJqN0NkbUZyR1I5aFd2MDktcGJOQXQzb19XczBrMG1UdDBjY2g0bXoxSUNPSDZLLW0tQ0FKMzlnUXNmYlBzWjYwV0pkU3ZDZHVYeERwNDNEOWs4SUtaQlpuTVdxYUppbF9uODVQRXJZT2Q4cVJMSklEMkdmWGFTd9IBugFBVV95cUxQR0dQRTNqamw2QnZ0QUFOMHJnZ29GVVZjR3QzaHRGVTZQT0I0SEFCeWtHa0xUenQ4Mkdib0kwUVA5akpGTTl4TXFXVTdLQUhsQkZjUEJrREV5WHFJem9GZ3doWEdtVjRXa0FudXhscWM0clU3eUVkQ2huaUdueVZKVGZpbF9WQy05Y0RWcGJ1Yjd6dUtjUWRhTVRLSjVQbUFWRHdsNFhmRlZldTRMVTNQdDRWa0ozalRXNUE?oc=5",
-      "source": "Libero Quotidiano",
-      "category": "Cronaca",
+      "title": "Cdm approva decreto Ex Ilva e carburanti: taglio delle accise prorogato fino al 5 settembre",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZUVJY2V0VFNjREowMDEwWWJqZWl2WGM5bVpMNUhWYWNfeWNveFM5Q2xoSk5OelJNcDdaVjVvYmo1Yl9Fcl9ZNU1IcjVtdHRqNTI4TzdtMWFZdVZmT2Jvb1NmajYxdGVVT0hOcU9QU3VodGZCVnpGSnhnWE5QdTJOLVA3TEN5S0Rob0F4Wm53bEd4V25xNjJnbUpoaHVkZ09YdERjc3I1WnEzUm9VZTc5bkp1dFBsUlZGejRVNFBTR3pSZUU?oc=5\" target=\"_blank\">Cdm approva decreto Ex Ilva e carburanti: taglio delle accise prorogato fino al 5 settembre</a> <font color=\"#6f6f6f\">Euronews.com</font>",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZUVJY2V0VFNjREowMDEwWWJqZWl2WGM5bVpMNUhWYWNfeWNveFM5Q2xoSk5OelJNcDdaVjVvYmo1Yl9Fcl9ZNU1IcjVtdHRqNTI4TzdtMWFZdVZmT2Jvb1NmajYxdGVVT0hOcU9QU3VodGZCVnpGSnhnWE5QdTJOLVA3TEN5S0Rob0F4Wm53bEd4V25xNjJnbUpoaHVkZ09YdERjc3I1WnEzUm9VZTc5bkp1dFBsUlZGejRVNFBTR3pSZUU?oc=5",
+      "source": "Euronews.com",
+      "category": "Governo",
       "categories": [
+        "Governo",
         "Cronaca"
       ],
-      "pubDate": "Wed, 26 Aug 2026 16:57:27 GMT",
-      "googlePubDate": "Wed, 26 Aug 2026 16:57:27 GMT",
+      "pubDate": "Wed, 26 Aug 2026 16:52:49 GMT",
+      "googlePubDate": "Wed, 26 Aug 2026 16:52:49 GMT",
       "originalPubDate": null,
       "dateSource": "google",
       "isVideo": false,
       "sources": [
         {
-          "source": "Libero Quotidiano",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUzFyV3psUFB2aVE1dHZlUkRmdHhzMHNraWRIZWxCbnQ4RjdEVUFsWWdDOWRacTc4NWJNczZtZHJqN0NkbUZyR1I5aFd2MDktcGJOQXQzb19XczBrMG1UdDBjY2g0bXoxSUNPSDZLLW0tQ0FKMzlnUXNmYlBzWjYwV0pkU3ZDZHVYeERwNDNEOWs4SUtaQlpuTVdxYUppbF9uODVQRXJZT2Q4cVJMSklEMkdmWGFTd9IBugFBVV95cUxQR0dQRTNqamw2QnZ0QUFOMHJnZ29GVVZjR3QzaHRGVTZQT0I0SEFCeWtHa0xUenQ4Mkdib0kwUVA5akpGTTl4TXFXVTdLQUhsQkZjUEJrREV5WHFJem9GZ3doWEdtVjRXa0FudXhscWM0clU3eUVkQ2huaUdueVZKVGZpbF9WQy05Y0RWcGJ1Yjd6dUtjUWRhTVRLSjVQbUFWRHdsNFhmRlZldTRMVTNQdDRWa0ozalRXNUE?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 16:57:27 GMT"
+          "source": "Euronews.com",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZUVJY2V0VFNjREowMDEwWWJqZWl2WGM5bVpMNUhWYWNfeWNveFM5Q2xoSk5OelJNcDdaVjVvYmo1Yl9Fcl9ZNU1IcjVtdHRqNTI4TzdtMWFZdVZmT2Jvb1NmajYxdGVVT0hOcU9QU3VodGZCVnpGSnhnWE5QdTJOLVA3TEN5S0Rob0F4Wm53bEd4V25xNjJnbUpoaHVkZ09YdERjc3I1WnEzUm9VZTc5bkp1dFBsUlZGejRVNFBTR3pSZUU?oc=5",
+          "pubDate": "Wed, 26 Aug 2026 16:52:49 GMT"
+        },
+        {
+          "source": "ANSA",
+          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQS0FWOE91X21uU3JsdzZnVG9rYk1oenpOd2lDaUNOSVhLWlBWV216YzE3OFpaZFVQRWV3SXZEZVdUdHR0WkNjZTlCUklGdVNhdXlNeGhvbUp3UjBUa2tuN2hOLUFaQXpsM2szQ3hKVjhEc05jNU1RN1RPOXFKaUl2cHpVX1laVkdtQWc5VEtZY3lMTi1IUUF4Z1J2eUQzeWkxY2x2V0dXYi1Nckd6ZjVxTERHMWtubF84WjY4R2cwbXRrZXF6ajlfc1N0cHNLOGdPUThNYkJ2TS1aeFE?oc=5",
+          "pubDate": "Wed, 26 Aug 2026 16:44:00 GMT"
         }
       ],
-      "id": "focus-cdm via libera al dl carburanti taglio delle accise fino al 5 settembr-1787763447000",
-      "sourceCount": 1
+      "originalURL": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZUVJY2V0VFNjREowMDEwWWJqZWl2WGM5bVpMNUhWYWNfeWNveFM5Q2xoSk5OelJNcDdaVjVvYmo1Yl9Fcl9ZNU1IcjVtdHRqNTI4TzdtMWFZdVZmT2Jvb1NmajYxdGVVT0hOcU9QU3VodGZCVnpGSnhnWE5QdTJOLVA3TEN5S0Rob0F4Wm53bEd4V25xNjJnbUpoaHVkZ09YdERjc3I1WnEzUm9VZTc5bkp1dFBsUlZGejRVNFBTR3pSZUU?oc=5",
+      "sourceCount": 2,
+      "sourcePriority": 55,
+      "id": "cdm approva decreto ex ilva e carburanti taglio delle accise prorogato-1787763169000-66"
     },
     {
       "title": "D'Incecco (Lega) sulla legge per la fibromialgia: 'Ora entra nella fase operativa, presto risposte ai pazienti'",
@@ -4456,7 +4508,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5tVEc2VUNDYldoMExsMERuUDItOFVrVjBhckVkb3R1aWxLT1JaRms2R3NtNWE5dnRmUTVVSTdISEY2WXI5WnZ2ak11WG5tWTgyU0k2UEZjRUtjbkZfbU81WG81WlZaZzFXZUhXam83Z3lTYVd1dmRBWnNNQ1I?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "d incecco lega sulla legge per la fibromialgia ora entra nella fase op-1787763120000-64"
+      "id": "d incecco lega sulla legge per la fibromialgia ora entra nella fase op-1787763120000-67"
     },
     {
       "title": "Aggressione alla Pubblica assistenza: solidarietà da parte dell’assessora Madrid",
@@ -4483,7 +4535,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVzI5ZXNnY0Q5bl9ERkRrZlFwRmhvVmNuTi1ybWVITk1LY1paWHRtWnAtZktCSHJWYjdHRGdkbWViUThHNGRhTUVlZ3hkaEZlZHFpY2VfcnU0ck44UFRJM0pvdGd6cWxSbTZTVzZOTzl3OWdtdktYYS1TREhvdTNmVnUwVUQweGdUQ0wtbncwT0dSdnJRUDV0MGdBY1QwLVVPckIyV2J3?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "aggressione alla pubblica assistenza solidarieta da parte dell assesso-1787762889000-65"
+      "id": "aggressione alla pubblica assistenza solidarieta da parte dell assesso-1787762889000-68"
     },
     {
       "title": "Addio a Tim Curry, leggendaria star del Rocky Horror Show",
@@ -4536,6 +4588,30 @@
         }
       ],
       "id": "focus-nepal cercano di scappare dalla frana ma vengono travolti dal fiume le-1787762553000",
+      "sourceCount": 1
+    },
+    {
+      "title": "Assegno unico, 9,9 miliardi alle famiglie nei primi sei mesi | Libero Quotidiano.it",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVjltbVIwd20tMkRTZ2ppQjVjT05GdXlTOGJfejBUTEVQNTlDSzBERm5JZHQ0TUx1d3ItQ20tLW1oYzZQelZPTm83OWt6VmdlZEh4ekJOR1l3VnQzYW9YODNOWWw1R0lvY0wwRElPVG9CQ25id3l3a2lsTEF4TDB3VEpUdlZtbjFKbDl1NmVHVHdFa09ZemZwWjRqV3ZLYjIzWmlXNXRUTUVlZGpkdHR6RV9tVUdRcHY30gG4AUFVX3lxTFBWOW1tUjB3bS0yRFNnamlCNWNPTkZ1eVM4Yl96MFRMRVA1OUNLMERGbklkdDRNTHV3ci1DbS0tbWhjNlB6Vk9Obzc5a3pWZ2VkSHh6Qk5HWXdWdDNhb1g4M05ZbDVHSW9jTDBESU9Ub0JDbmJ3eXdraWxMQXhMMHdUSlR2Vm1uMUpsOXU2ZUdUd0VrT1l6ZnBaNGpXdktiMjNaaVc1dFRNRWVkamR0dHpFX21VR1Fwdjc?oc=5\" target=\"_blank\">Assegno unico, 9,9 miliardi alle famiglie nei primi sei mesi | Libero Quotidiano.it</a> <font color=\"#6f6f6f\">Libero Quotidiano</font>",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVjltbVIwd20tMkRTZ2ppQjVjT05GdXlTOGJfejBUTEVQNTlDSzBERm5JZHQ0TUx1d3ItQ20tLW1oYzZQelZPTm83OWt6VmdlZEh4ekJOR1l3VnQzYW9YODNOWWw1R0lvY0wwRElPVG9CQ25id3l3a2lsTEF4TDB3VEpUdlZtbjFKbDl1NmVHVHdFa09ZemZwWjRqV3ZLYjIzWmlXNXRUTUVlZGpkdHR6RV9tVUdRcHY30gG4AUFVX3lxTFBWOW1tUjB3bS0yRFNnamlCNWNPTkZ1eVM4Yl96MFRMRVA1OUNLMERGbklkdDRNTHV3ci1DbS0tbWhjNlB6Vk9Obzc5a3pWZ2VkSHh6Qk5HWXdWdDNhb1g4M05ZbDVHSW9jTDBESU9Ub0JDbmJ3eXdraWxMQXhMMHdUSlR2Vm1uMUpsOXU2ZUdUd0VrT1l6ZnBaNGpXdktiMjNaaVc1dFRNRWVkamR0dHpFX21VR1Fwdjc?oc=5",
+      "source": "Libero Quotidiano",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Wed, 26 Aug 2026 16:42:18 GMT",
+      "googlePubDate": "Wed, 26 Aug 2026 16:42:18 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Libero Quotidiano",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVjltbVIwd20tMkRTZ2ppQjVjT05GdXlTOGJfejBUTEVQNTlDSzBERm5JZHQ0TUx1d3ItQ20tLW1oYzZQelZPTm83OWt6VmdlZEh4ekJOR1l3VnQzYW9YODNOWWw1R0lvY0wwRElPVG9CQ25id3l3a2lsTEF4TDB3VEpUdlZtbjFKbDl1NmVHVHdFa09ZemZwWjRqV3ZLYjIzWmlXNXRUTUVlZGpkdHR6RV9tVUdRcHY30gG4AUFVX3lxTFBWOW1tUjB3bS0yRFNnamlCNWNPTkZ1eVM4Yl96MFRMRVA1OUNLMERGbklkdDRNTHV3ci1DbS0tbWhjNlB6Vk9Obzc5a3pWZ2VkSHh6Qk5HWXdWdDNhb1g4M05ZbDVHSW9jTDBESU9Ub0JDbmJ3eXdraWxMQXhMMHdUSlR2Vm1uMUpsOXU2ZUdUd0VrT1l6ZnBaNGpXdktiMjNaaVc1dFRNRWVkamR0dHpFX21VR1Fwdjc?oc=5",
+          "pubDate": "Wed, 26 Aug 2026 16:42:18 GMT"
+        }
+      ],
+      "id": "focus-assegno unico 9 9 miliardi alle famiglie nei primi sei mesi libero quo-1787762538000",
       "sourceCount": 1
     },
     {
@@ -4658,7 +4734,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMi05N0FvNDlqbVZaNVJoa1ZYYUt1ZlpSdzBvX1hlQ0hueUJsejZIVFMwb1NoZHVWYVAzWEVHZUNQajFFZGF5dmJ3a0psbmtaMXg2QjJ3UFhoR2ZoX196ZHdPTVZZZkdvcjBhbUhqTUZOaDV6WW9TVGZaUkw0akp0S21KNUprOWNIOHIwYzFKQXlsR3RPLXNfUHZlWDVjUjVGQnUxaFBsX2xtM1k30gGyAUFVX3lxTE9ya2ZjanBpd0M2bHhMNE5GUF9hOEZCSTR2MW9FdklkNlFCWFZhMDQ3dUxUY1dCb2pYSnYtbmVFMEJENWhGWEs2Mkh2SldBTDZ1MGtkaTRieUNWTjE0OS1qVXBqZFNJM1VFZkdZY3J4RWluTXdLTzJZdHlrdElJalM2LWRrWW1rbUVTUm9iT2o3RW01eHdpN01KWlJmZnkyRGFZYmtiVlZSNllOR2dMaHF4T3c?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "juventus e fatta per miretti al besiktas le cifre-1787762040000-66"
+      "id": "juventus e fatta per miretti al besiktas le cifre-1787762040000-69"
     },
     {
       "title": "Mourinho, la villa a Madrid è impressionante: affitto da 20mila euro, parco di 5mila metri quadrati con piscina e aree relax",
@@ -4708,7 +4784,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRmVhY0VYTkc3SkJwUVhpcXNmZUxocVg3ZWVYekVCU0VlZ2FuYUFVQ1ByUElWVDBTMWd5NTR5NmYtOEZmU1JINmp1c0NqMXNNOS1RMzlMNU5qWkNmelBUSzU2QXU1VXdWN2c4TkFUaDhyNGFEcWdlekZ3cHBqdldkMEtsQ0pKN1B0U2w5MV9KSFFydw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "kamil grabara la prima intervista del nuovo portiere bianconero video-1787761801000-67"
+      "id": "kamil grabara la prima intervista del nuovo portiere bianconero video-1787761801000-70"
     },
     {
       "title": "Tim Curry è morto a 80 anni: dal Rocky Horror Picture Show al terrificante Pennywise di It, un talento dalle mille facce",
@@ -4932,6 +5008,30 @@
       "sourceCount": 1
     },
     {
+      "title": "Simonelli \"Divieti di trasferta siano provvedimenti mirati, non a pioggia\" | Libero Quotidiano.it",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxOWVlOdF9QYlhraEVPVEQyYWxULXBiaDV5SmRvdFh4dmtjSFJtLXFtaEF1MnBHNUJha2xCTWh5ajgzaHAzc3lqb3VKaW9HNGRxelJJUTM4bnVRNnZURTc2QlFNS0t3LUg1SnI0bXRnSklza3puUzF3OC1CbmNlRVRQV0liVmhCYXgxaFh4LXE4bTVqSS1Wand2dHJYcGdiTU9oaTBrMUYyTlI1M1ZnMUwwSnZLcUtOcHZWSXRCYjhoU1FYejZmbXfSAcoBQVVfeXFMUFN0M09QZUUySVVBVEIyUTNubVVLcm55Tl90SWN1WjdzcU52UDFLc3VXQjNidWNXQXJFNG1UWHNjckthYmJ2bUZXM0tOMm5RdHFrR0tIVHp2Mlh2NC10YUd2blJJWG9DMm84OXU1VDd6aGpYNmFIRDJoVG9Ndm9IWXVqRFdVTWtRbW4xZncwUlZJdmR3TFVURkN0bnlTMm9oa3ktU1NBck91azFiTE04ak5YZTdJRHY4QnBtQVc1dVRPZ3M0bEhUaUhfQQ?oc=5\" target=\"_blank\">Simonelli \"Divieti di trasferta siano provvedimenti mirati, non a pioggia\" | Libero Quotidiano.it</a> <font color=\"#6f6f6f\">Libero Quotidiano</font>",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWVlOdF9QYlhraEVPVEQyYWxULXBiaDV5SmRvdFh4dmtjSFJtLXFtaEF1MnBHNUJha2xCTWh5ajgzaHAzc3lqb3VKaW9HNGRxelJJUTM4bnVRNnZURTc2QlFNS0t3LUg1SnI0bXRnSklza3puUzF3OC1CbmNlRVRQV0liVmhCYXgxaFh4LXE4bTVqSS1Wand2dHJYcGdiTU9oaTBrMUYyTlI1M1ZnMUwwSnZLcUtOcHZWSXRCYjhoU1FYejZmbXfSAcoBQVVfeXFMUFN0M09QZUUySVVBVEIyUTNubVVLcm55Tl90SWN1WjdzcU52UDFLc3VXQjNidWNXQXJFNG1UWHNjckthYmJ2bUZXM0tOMm5RdHFrR0tIVHp2Mlh2NC10YUd2blJJWG9DMm84OXU1VDd6aGpYNmFIRDJoVG9Ndm9IWXVqRFdVTWtRbW4xZncwUlZJdmR3TFVURkN0bnlTMm9oa3ktU1NBck91azFiTE04ak5YZTdJRHY4QnBtQVc1dVRPZ3M0bEhUaUhfQQ?oc=5",
+      "source": "Libero Quotidiano",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Wed, 26 Aug 2026 16:13:18 GMT",
+      "googlePubDate": "Wed, 26 Aug 2026 16:13:18 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Libero Quotidiano",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWVlOdF9QYlhraEVPVEQyYWxULXBiaDV5SmRvdFh4dmtjSFJtLXFtaEF1MnBHNUJha2xCTWh5ajgzaHAzc3lqb3VKaW9HNGRxelJJUTM4bnVRNnZURTc2QlFNS0t3LUg1SnI0bXRnSklza3puUzF3OC1CbmNlRVRQV0liVmhCYXgxaFh4LXE4bTVqSS1Wand2dHJYcGdiTU9oaTBrMUYyTlI1M1ZnMUwwSnZLcUtOcHZWSXRCYjhoU1FYejZmbXfSAcoBQVVfeXFMUFN0M09QZUUySVVBVEIyUTNubVVLcm55Tl90SWN1WjdzcU52UDFLc3VXQjNidWNXQXJFNG1UWHNjckthYmJ2bUZXM0tOMm5RdHFrR0tIVHp2Mlh2NC10YUd2blJJWG9DMm84OXU1VDd6aGpYNmFIRDJoVG9Ndm9IWXVqRFdVTWtRbW4xZncwUlZJdmR3TFVURkN0bnlTMm9oa3ktU1NBck91azFiTE04ak5YZTdJRHY4QnBtQVc1dVRPZ3M0bEhUaUhfQQ?oc=5",
+          "pubDate": "Wed, 26 Aug 2026 16:13:18 GMT"
+        }
+      ],
+      "id": "focus-simonelli divieti di trasferta siano provvedimenti mirati non a pioggi-1787760798000",
+      "sourceCount": 1
+    },
+    {
       "title": "Media, 'Putin prepara escalation, ritiene trattative per pace a punto morto'",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMi-gFBVV95cUxNRXFEa0paOWljdUI4ZGJCLWhlY201SHZqcEFkNjc5dDhjUlFoVU5sTmoxZ1lRT2hUeV95VVBhZ3Y4LUVFcUFIX2ctckxuR05TUDJXUGNrMWp5bkIxZXZrTmRmdjQ5TWp0TjFNN1pBNHVnVDBhVHU3U01WdENzMHpoV2E1b1ZsUXVnVmhwdnR1Q0RlUUEwV3hON2Qtb2NLZno2UEM5Vmh4TnBsbW5VQnJOdUhNekhIYUZUaF9rTUQ4cnZvX3I3SmNBd1dSb2dSYmlRS0g2MVBLMFp0bENubEFzR01KMHNic3NtcEs3WTFDbGxLdjU1OXp1NWlR?oc=5\" target=\"_blank\">Media, 'Putin prepara escalation, ritiene trattative per pace a punto morto'</a> <font color=\"#6f6f6f\">ANSA</font>",
       "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNRXFEa0paOWljdUI4ZGJCLWhlY201SHZqcEFkNjc5dDhjUlFoVU5sTmoxZ1lRT2hUeV95VVBhZ3Y4LUVFcUFIX2ctckxuR05TUDJXUGNrMWp5bkIxZXZrTmRmdjQ5TWp0TjFNN1pBNHVnVDBhVHU3U01WdENzMHpoV2E1b1ZsUXVnVmhwdnR1Q0RlUUEwV3hON2Qtb2NLZno2UEM5Vmh4TnBsbW5VQnJOdUhNekhIYUZUaF9rTUQ4cnZvX3I3SmNBd1dSb2dSYmlRS0g2MVBLMFp0bENubEFzR01KMHNic3NtcEs3WTFDbGxLdjU1OXp1NWlR?oc=5",
@@ -5100,7 +5200,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPbE9QRUZuRmstNzllcDRTZG4xQ0hYdVdIeVVpMTU4d1VMdmF0SEFSbWo2ZWNQdUpYTTRHY1NNaTg5enMzZzg2Vi1QNjhrWlVTcDlYaDg2bWNKVHhMOTlrZ2dFNjliWmNHcHNybS1qQ2hFT3E3WDg5TVkwNDJ2eXMxdmpCMG1TVFlCOXBxVEVDTkRkVjZnS1ZwZVdFdm9oSWlWLUJwSmpGaEpLRm5JeXV0X2R5RlFJbHhVN1h2dWVqcGRlYjVNM2tQV1plRHl4S0gtdnZz?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "salvini annuncia trasporti gratis per studenti ma senza soldi si risch-1787760148000-68"
+      "id": "salvini annuncia trasporti gratis per studenti ma senza soldi si risch-1787760148000-71"
     },
     {
       "title": "Callum Turner e Monica Barbaro al cinema con 'One Night Only': \"Ecco come nascono le vere storie d'amore\"",
@@ -5316,30 +5416,6 @@
         }
       ],
       "id": "video-madrid finanziera il prossimo film di woody allen ma impone al regista-1787758833000",
-      "sourceCount": 1
-    },
-    {
-      "title": "Extraprofitti, Tajani gela Schlein: \"Mi sa molto di Unione Sovietica\" | Libero Quotidiano.it",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxNQ0FaTDVyMC03N1p1dVBCZWVDTFQ5SkRYcDlfcGR3S3o2N1p3UDZLWlpocUpuU01tVk1YRTN1X3diWVFjbVBiSHNld0JFMnhmYURPQ25GLThnNkQ0dGVFeHprZThFVW5ZV05zNnBwdDZYS3dCeTMtbWdCMG9GSmQ1TVVtS3U5aUNIXzdXcEtOVXV5SnF2WUN0Q3UyWWp4WV9NaVVzZHhCWlRUemt6clI1akJWbGFwQ1dFTmfSAb4BQVVfeXFMT2ZuYXBFYXpHTzkyZVA3U3RqZVNXT1hwd0QzcTM0UVJ3TEowbE80T2g5emxWR3pRd2NsQ1ZyWU1TcENudnVTZjFzMXlnYkprYjRXY2JVWTBqZE1WYW52Vlpqem9lZnVXdHVTcmJEY3FKUDFEXzQxcHdXUzBEcmRyVzM4dGthbkpwTk5NU1FvQnEteUprQk1SaE00Q3c2MVdVeEpheGk2N3BPOWRHbEJvU2JyOFpYaE5ETTE0R1Z2dw?oc=5\" target=\"_blank\">Extraprofitti, Tajani gela Schlein: \"Mi sa molto di Unione Sovietica\" | Libero Quotidiano.it</a> <font color=\"#6f6f6f\">Libero Quotidiano</font>",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQ0FaTDVyMC03N1p1dVBCZWVDTFQ5SkRYcDlfcGR3S3o2N1p3UDZLWlpocUpuU01tVk1YRTN1X3diWVFjbVBiSHNld0JFMnhmYURPQ25GLThnNkQ0dGVFeHprZThFVW5ZV05zNnBwdDZYS3dCeTMtbWdCMG9GSmQ1TVVtS3U5aUNIXzdXcEtOVXV5SnF2WUN0Q3UyWWp4WV9NaVVzZHhCWlRUemt6clI1akJWbGFwQ1dFTmfSAb4BQVVfeXFMT2ZuYXBFYXpHTzkyZVA3U3RqZVNXT1hwd0QzcTM0UVJ3TEowbE80T2g5emxWR3pRd2NsQ1ZyWU1TcENudnVTZjFzMXlnYkprYjRXY2JVWTBqZE1WYW52Vlpqem9lZnVXdHVTcmJEY3FKUDFEXzQxcHdXUzBEcmRyVzM4dGthbkpwTk5NU1FvQnEteUprQk1SaE00Q3c2MVdVeEpheGk2N3BPOWRHbEJvU2JyOFpYaE5ETTE0R1Z2dw?oc=5",
-      "source": "Libero Quotidiano",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Wed, 26 Aug 2026 15:40:01 GMT",
-      "googlePubDate": "Wed, 26 Aug 2026 15:40:01 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Libero Quotidiano",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQ0FaTDVyMC03N1p1dVBCZWVDTFQ5SkRYcDlfcGR3S3o2N1p3UDZLWlpocUpuU01tVk1YRTN1X3diWVFjbVBiSHNld0JFMnhmYURPQ25GLThnNkQ0dGVFeHprZThFVW5ZV05zNnBwdDZYS3dCeTMtbWdCMG9GSmQ1TVVtS3U5aUNIXzdXcEtOVXV5SnF2WUN0Q3UyWWp4WV9NaVVzZHhCWlRUemt6clI1akJWbGFwQ1dFTmfSAb4BQVVfeXFMT2ZuYXBFYXpHTzkyZVA3U3RqZVNXT1hwd0QzcTM0UVJ3TEowbE80T2g5emxWR3pRd2NsQ1ZyWU1TcENudnVTZjFzMXlnYkprYjRXY2JVWTBqZE1WYW52Vlpqem9lZnVXdHVTcmJEY3FKUDFEXzQxcHdXUzBEcmRyVzM4dGthbkpwTk5NU1FvQnEteUprQk1SaE00Q3c2MVdVeEpheGk2N3BPOWRHbEJvU2JyOFpYaE5ETTE0R1Z2dw?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 15:40:01 GMT"
-        }
-      ],
-      "id": "focus-extraprofitti tajani gela schlein mi sa molto di unione sovietica libe-1787758801000",
       "sourceCount": 1
     },
     {
@@ -5563,7 +5639,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZk0zSUJ0U2tobi02ZGpESnUzT05EN2pqZ1hPSnlCdnVndWhDZkExQlZOM1ZSenRzUFMtbTFjRVpzX2MzMk5VX25IaWo3WEpvb3cxaE5LTGV1bXkwaVY2bmdWUXYtS0M4Q0RVUWkybG9iSDRiQWU3ZzNFWmJ1S0R3STVSdFlUZzFaaHpoejlPT0pzUTYtS0pSQm1Jc2MzWFphUVNhV2hqQ2dmRUNJeHNSSVp4VUJRaDliV3BN0gG7AUFVX3lxTE5mTTNJQnRTa2huLTZkakRKdTNPTkQ3ampnWE9KeUJ2dWd1aENmQTFCVk4zVlJ6dHNQUy1tMWNFWnNfYzMyTlVfbkhpajdYSm9vdzFoTktMZXVteTBpVjZuZ1ZRdi1LQzhDRFVRaTJsb2JINGJBZTdnM0VaYnVLRHdJNVJ0WVRnMVpoemh6OU9PSnNRNi1LSlJCbUlzYzNYWmFRU2FXaGpDZ2ZFQ0l4c1JJWnhVQlFoOWJXcE0?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "truffa dell incidente a paese 89enne consegna 12mila euro 23enne arres-1787757021000-69"
+      "id": "truffa dell incidente a paese 89enne consegna 12mila euro 23enne arres-1787757021000-72"
     },
     {
       "title": "Inondazioni in Nepal: almeno 95 morti e 400 dispersi",
@@ -5620,7 +5696,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPSEtQOExZWVpyenFjbTA5MEhLRnZuSFVUSmVNYlBpSHhwbVFWay1hTWhDTXBRSUVobDBNdmVkeWdKNGpnX2dwU1psQzN3cVFrNTdGMXhmLVRra2pfVElfS0NBWWhuVXJiRmc5SG4tS3U0M0FIdWxyTjlWcmVKeDFoeDBBRzg3eEFvWm8xVFJnTzBEVGYtaVY3V0tzdlJKYlk?oc=5",
       "sourceCount": 7,
       "sourcePriority": 55,
-      "id": "inondazioni in nepal almeno 95 morti e 400 dispersi-1787756978000-70"
+      "id": "inondazioni in nepal almeno 95 morti e 400 dispersi-1787756978000-73"
     },
     {
       "title": "4,8 miliardi di motivi per cui Trump ha bisogno della Russia per isolare l'Iran",
@@ -5748,7 +5824,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5aM0JvNkY2VGxOSl8wSjNTNERHbVZKX3hJT0lMNkI3b0F6cmZaR2RVVlI2Y1JnbEh1b1J5MllFX2ttUkxUeW9nSG5SN3BpelBMNXozak9wWGs3Z28?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "la lega sprofonda sotto il 5 vannacci vale quasi il doppio-1787756460000-71"
+      "id": "la lega sprofonda sotto il 5 vannacci vale quasi il doppio-1787756460000-74"
     },
     {
       "title": "RaiNews - Rai News Notte - Video",
@@ -5798,7 +5874,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOS2FvMjYtLXMybnZYbDdfYlVWbWVLV015ekU4b3ZsMHRWOS1MZ1RrbXFiaG9VMDRzeERILU1WOTZSZVY0Q2MtNm5CckdQbU03VHRCaWdEUldhQ1J0OWNzelFIaE1yaDA0THVqalpoT1RpYnNZVzlEMWpVR3Zsc2hXTEU4R2FRLS0zcWFCZ3BSRTdfVVd6Uk1MdGdxbjVxNHgxUno1R2RrUGplR3lZYThEbHFCdGlvZzJxUEh5cm5mVkU1QUdNNEpSMjNxYU9LWW1zeHZRS3loVzZuTnR6LWFzdV9XVl91ai1ld00tb1JMRdIBxAFBVV95cUxNd1A2Q09MM19na2FhTzlIWElQUzFjSlhCMEUtM3N5NVMtWTlFR25OVHZlVEEyYWpwM1JCSDlTZUh6UHRlNmV1bVJzY2J3V0JidWMydXpQMVJKZXU5S1ZNWUlTR21ydVFRRU1NZEI5VFA4dUhkUjl6YkI3TUN5Tk9kS1k0d1RBRUhSUGE4aUNmd3l4ekdvaVh0ajg5WFdpTHF2ZHhXb3FsRHNwci1WUWh4U2Zab0VzTmdSUEloaDM3c25NNXZv?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "juve sei affari piu uno per accontentare spalletti le trattative in co-1787756285000-72"
+      "id": "juve sei affari piu uno per accontentare spalletti le trattative in co-1787756285000-75"
     },
     {
       "title": "Media cinesi, tre morti e 265 dispersi per la frana in Tibet",
@@ -5848,7 +5924,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQLVUwa0tQX1JnRi1PSU9VM0tucms2eW0tMl82TkFEcTlFaThLRzVWNHFkaG51ZVBrZUItU1dlaEFTTkZUbmJnYmI2bUpDQ2dmalQ2emZLa0Ixb1N6eWZVQUdYS1R5ZW1kRE5vSmhfR3dXemlvdk5jbC1Oa09TUkRaMEZJYmczajAwbk50SkNjdDdjY190eWJtVk8wMjJ6VHByUXV0V0lYaXBPNHJVeUprMUVOM2NOLWRsUDJlejM3c9IBwwFBVV95cUxQX0VWSjlhdXZTME5XR0p3SHcxOGpUejdqanl4YzYxZXFsVWhSTWFkSmQ2cVhZb09uWjhDWVRycEhWUW80d1hDMnNoYWUwSjNITjZUdmFjNVlBU2l2WkowYk5BMkxST09fUHBlR2xfZ0xxWnYxNHJnV3dfY2hWN2NhNnpOUk5fYVBORWc2T1ZkdFNaR1h3Nm5YeVBmbmdJVGhXeWNQWDFsYVlpYkpCdkd0MzZWNWYzNW1Xd0RSZmNFRnUzRlU?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "torino l immigrato non ha un nome il giudice lo ribattezza sconosciuto-1787755893000-73"
+      "id": "torino l immigrato non ha un nome il giudice lo ribattezza sconosciuto-1787755893000-76"
     },
     {
       "title": "Migranti, l'America si blinda: Trump congela i visti per immigrare e prepara una nuova stretta per chi vuole entrare negli Usa",
@@ -5946,7 +6022,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOY0RnN1Y5V2dCcVRxelpCbm0tRGFoUl91cEtvYzYwNEpSVUxWXzcwcmUtazJUbC1PYVN1emhzMkNwOGpaNVRicHhGd3J6THI2UkdXS2pUcVNyRXpsYjdvNXF5U0NfcUEteTVWT3ZrRzhuUFp3NXp0N3U5RG12QXltdmkzSlBhREdOLUVCd0QtU0U4UkE5cHZVM0FtYUJIbFVkWUd3YzRtUERlYnB4SkJNdVRB?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "autonomia differenziata la lombardia corre per pontida-1787755198000-74"
+      "id": "autonomia differenziata la lombardia corre per pontida-1787755198000-77"
     },
     {
       "title": "adozione – Il blog di Viviana Persiani",
@@ -6194,7 +6270,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQY05hNVJIcDB5UGdUN0g4djJZcWlfSXJteWxGSUNaczVCWXlYYnVtVVdaemVSMlpjeE1hQXd6TU0yZXhYOVFMbEVMMVV3MUdQSUp1UmpqQmNuTzVHdEgxV1c3d1I3cWZxbVY2ZTBnTGRiSmttc0tWcmx4anVvV19Ub2N4S1k4QV83OVVJV2dBY3djdjRjdWV2ZGlZRUFVU3pCS1JoRjVKUVR0Qm5ZRTZsOUVtTFJDVnpPN1FjV1ROUFFKVHF6N1JzZDMzcHhhWDRJaEE?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "traffico internazionale catanese si sottrae al carcere e viene ritrova-1787754059000-75"
+      "id": "traffico internazionale catanese si sottrae al carcere e viene ritrova-1787754059000-78"
     },
     {
       "title": "Dua Lipa al Festival di Sanremo 2027? Stefano De Martino la vorrebbe come co-conduttrice",
@@ -6268,7 +6344,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQeVVqRHRkTVB0TUF6VGYzemRPR09jY0dWcGk3WmJLRjhWWGx4d0RTYUN0bFU3SGtNbk1Ham9SMlVyeGNFcHd2RGVLTnBKWllxbzVCcUMtNUdVZnhSaGZZb3NKNmFpc0VaamZudkxkT202WmRnMko0WnlRYm9kNTFXa1FpYWM1SURxcFZfSGpXYWI2bmpTNlAzMm4zMlBKUzhzU0l3Z0tzOWtpSGtHR3ZDTkhsXy1UczlKWHVuZ0RNZm9LU1NDbkdEMEJvUHJoQWxtMTVtLVQwSFBQWWVCWGkwVFFGYnFCUWNMd1VIaGZ1cEozdGVuVk1qeVFwTElnTjTSAf8BQVVfeXFMUHlVakR0ZE1QdE1BelRmM3pkT0dPY2NHVnBpN1piS0Y4VlhseHdEU2FDdGxVN0hrTW5NR2pvUjJVcnhjRXB3dkRlS05wSlpZcW81QnFDLTVHVWZ4UmhmWW9zSjZhaXNFWmpmbnZMZE9tNlpkZzJKNFp5UWJvZDUxV2tRaWFjNUlEcXBWX0hqV2FiNm5qUzZQMzJuMzJQSlM4c1NJd2dLczlraUhrR0d2Q05IbF8tVHM5Slh1bmdETWZvS1NTQ25HRDBCb1ByaEFsbTE1bS1UMEhQUFllQlhpMFRRRmJxQlFjTHdVSGhmdXBKM3RlblZNanlRcExJZ040?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "umberto bossi l uomo che invento la padania viaggio tra storia popolo -1787753641000-76"
+      "id": "umberto bossi l uomo che invento la padania viaggio tra storia popolo -1787753641000-79"
     },
     {
       "title": "Usa, Trump sospende domande di visto per immigrati in tutto il mondo: \"Serve formazione approfondita per valutare caso per caso\"",
@@ -6319,7 +6395,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPNENsRG9kYW5qaEZqUDJhLTFMNm53QlVqTEhaQjV0SC05RXJMbG1KWTZhUzI0OEQ4TVBhYXNwLVBEYnl4SDJLWXpNNnhnNVhjSGNLMF9RZDBXWlBVUzl5SE9kRHQwTlRnQldRTlFJdy1ZRXpSNmZ3TzlLa1BRaTZaOGl5ZXR4a0pZVmdLREVzTWttekk4WElMM3BRY1RjaDB5c1FvU3ZnejUyaWtVU1BxR1BMU25KbHdwUkk0ZHpEN2hZUjFEZ2x5Vm44Q1VMODhWaVZoOXh2UGJ4Y3ctbmtFU3k2TGU0VjNOZEpMWWljdk9TdnJ0Z2pfRkh5d0luY2kw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "carburanti botta e risposta nel governo lega contraria a nuove tasse f-1787753460000-77"
+      "id": "carburanti botta e risposta nel governo lega contraria a nuove tasse f-1787753460000-80"
     },
     {
       "title": "Von der Leyen offre supporto dell'UE al Nepal dopo le devastanti inondazioni",
@@ -6369,7 +6445,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNSE16RE5yX2gwc3NjVDBHSm1rb2FCb0ZndHZGWFd4azVZLVFYanVubHk5SEdLY3Y3QlVINDFmUTQ2MnRKUm04dldVZEZwSWZQNnF5NVZzTWotdXZnbThORmszU3NIU0ljWnB1cEdtQjEyb2dEWEtWeG9RU19sLXlEUG1Yb0tTY0xMMDBtcTJxc1I4NWtxdHlLTU9xNGRGZTlhRjA0ZGJLVWgxelFUS2NraG5ZM2pWaWdOS3hnRWFudHlLX0VzN1VvNk9BVl9OeU5tV0l4SUhnWV9yTk52Y3pDVlVKVnVuOTRXQXpEZdIB7wFBVV95cUxOb1NkZHREMTBJNEk3bWJFcWJTZHBWV2VxcXVVRl9OLXBqLVVTbTdWYUpmWXpJeUp0N2tVRnVQYlY3SGtpX0dlNzVSaTBnOE5aNmNnOUZnRGJldVNMc2hOemtudTU5U1UzWGhiTmlwdlFNSXVEb3gxbEEzaDFZb29jNFJKQlVtYmVpdmVXOUxpeUt2S0UtM1ZxdjFxSjNNU2JDS2pOdVcxNVE3dGFNNWJxRWRXMTVRQ1dGcS0wV0wtdWp2MUw0R0hMcVhiYWJoSmk5VEx3VUl3U0RxMHlwQWFTbm5fX3M3VGNRaGVWZGJVbw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "grabara che personalita prende la 1 di buffon e delle leggende juve de-1787753032000-78"
+      "id": "grabara che personalita prende la 1 di buffon e delle leggende juve de-1787753032000-81"
     },
     {
       "title": "Pizzaballa: Cisgiordania terra senza legge, tensione aumenta",
@@ -6660,7 +6736,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOdGdqdFhrcVNpaklKS1EwZGtWQjI0X2czSTZ1VEp2UmJ4QnRQeUlWT09JR20zR3NIQnZDZ1VaT0tPVGNYSXpDUE5YbzNsei1tSDNvSjdoaG40Rlk4dkt5eWcydkczWlpNTktNdVZLa2ZVS19kSEJUcnFiamRjb0x2Y2lmMWRvRXUwU0NNRmppVllzblc5eVpOWUI1aEVZTDRac09iR2lZcUZfSlNBYXhybFhzQUJIWGVmSjBlQllrMzdxZVl6STJqVDRkLWtzQWk3MjRjQVNQUG1Hc3ZMRExuVjljVmtNcmpEMXhuV2t5QWl4cEpmLUhVTtIB_gFBVV95cUxNRHpwZXMwVm9LR1c4MnRNTVdWU2tZc05DckFJVHIyVUowcW53OGZUbjV3Ry0zblVMUEc3b1lTN28yS2VpQjFlOTkzMFhxOE42clBZa2dfZUhLYkZweVhvTmJjcUI0ZXZGU2ZuOGRzbzhraDNad2FsWkRKZ3ZrcGxYeDVPZlZaMHFaMUNSaHJtc1dpZFNzVWR1ZVVWSXBvNHRiN0cwdllPY3RsbllQZjZ4LW9CQms2TmN4X3hGa21TejFKNkVOTVJHRDdMdVBjMUllVUFlSkJ2VFM2SFJEV2hEWjY1ZWxvaGFabzVSWFZUYm0wUE5RT24tZ0F5a3h1Zw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "carburanti in cdm proroga misure in vigore poi intervento mirato tajan-1787751600000-79"
+      "id": "carburanti in cdm proroga misure in vigore poi intervento mirato tajan-1787751600000-82"
     },
     {
       "title": "Malaria aeroportuale a Francoforte, cosa dicono Bassetti, Andreoni e Rezza",
@@ -6883,7 +6959,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSk4tNUtlRVpBX0RIaWRMYXpERGtZQ2JSenZVTTdLV1ZXWDZDaFd1MDB6LUltTkJTVnVWdlpGbi1oM3I5eDd2RXprZTE5VmlhVlJKV0xfN2VZRGZOUlB3MWtiOUdPRmdTQTl5T1N5QUF3djNnV2ZiSndlRTcwVzRHUW0tM1NyR3cxdWJUd3JVclR2bDkxUEVnWG1OSXlObTdDSEVsWjktcjhacmhwVWR0eTNhaUxNOWFzaWc?oc=5",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "comunali milano gabriele abbiati e il candidato sindaco di patto per i-1787750313000-80"
+      "id": "comunali milano gabriele abbiati e il candidato sindaco di patto per i-1787750313000-83"
     },
     {
       "title": "In Lombardia il primo suicidio assistito gestito interamente dal servizio sanitario: Domenico Zuccarella, malato di sclerosi multipla, muore a 59 anni",
@@ -6968,27 +7044,27 @@
       "sourceCount": 1
     },
     {
-      "title": "L’Europa può salvare industria e clima? La partita della riforma ETS",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxPU2s3cWN2THBIYkxJZF9iWDhBa3B3ZGFiaFlZZFN3Y1Nqc0pRandoTlctb3Z0TDJObmhZZDVhcG11RlAzXzJWTFNTV0tWdmpOck5WTVFCdWplY2ZuZUJQUE9nM3RTVDBIRVhVWjgzTjQ0OE5yTU9JNXhVaWNNd0xjUFRZa2kxRkd0X3R4ck4yUEs3cGJNd0xQUm9DS3NYczlTM2xKbUxJekV2OGZY?oc=5\" target=\"_blank\">L’Europa può salvare industria e clima? La partita della riforma ETS</a> <font color=\"#6f6f6f\">Agenda Digitale</font>",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU2s3cWN2THBIYkxJZF9iWDhBa3B3ZGFiaFlZZFN3Y1Nqc0pRandoTlctb3Z0TDJObmhZZDVhcG11RlAzXzJWTFNTV0tWdmpOck5WTVFCdWplY2ZuZUJQUE9nM3RTVDBIRVhVWjgzTjQ0OE5yTU9JNXhVaWNNd0xjUFRZa2kxRkd0X3R4ck4yUEs3cGJNd0xQUm9DS3NYczlTM2xKbUxJekV2OGZY?oc=5",
-      "source": "Agenda Digitale",
-      "category": "Europa",
+      "title": "Fisco, aliquote ridotte ma salari erosi dall’inflazione | Libero Quotidiano.it",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxOeUxreGVmNXBHZTBySUxjd3dZcV9VdldoUEFvNmt6ZnJWODFuR1h5LVRxR0dWYkNJYzNUTDhXUGNraVlDSHZkQ2VaOXE4ZlpRbFF1b2dPM01ka2ROLUFWeDlBZFRwczdhNnpkTmgyVGpZRVczcE5sYTdRN2ktN2FjeFdtZGY2Ykt6aEk4cTg4bWZQUjZ3UnotaktTdUFpQ2taN0xaUGQ0NERuQ0JBU3fSAbIBQVVfeXFMT2ZHaGFQdlZIYlVEdElzMFBSVXlhbGdFNmRzYS1KeUhqZTlkdTkwX3hLbzFRMlZBZ0oza21EbFFRTnFMb0lCTnI2ckZIbjRsellFUFdrWTI5SXlhdVdLMHd2cTZhejBfSFVvSzduUTN4WkM1RG50bUExd2ZMeVhtM1pQaDhaTTFpQ0dIQzFoVWJvZG5mRDN0WjNzQTBRR0RWOGM3d3g0ZTV3aGpnQzhGeDBxZw?oc=5\" target=\"_blank\">Fisco, aliquote ridotte ma salari erosi dall’inflazione | Libero Quotidiano.it</a> <font color=\"#6f6f6f\">Libero Quotidiano</font>",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeUxreGVmNXBHZTBySUxjd3dZcV9VdldoUEFvNmt6ZnJWODFuR1h5LVRxR0dWYkNJYzNUTDhXUGNraVlDSHZkQ2VaOXE4ZlpRbFF1b2dPM01ka2ROLUFWeDlBZFRwczdhNnpkTmgyVGpZRVczcE5sYTdRN2ktN2FjeFdtZGY2Ykt6aEk4cTg4bWZQUjZ3UnotaktTdUFpQ2taN0xaUGQ0NERuQ0JBU3fSAbIBQVVfeXFMT2ZHaGFQdlZIYlVEdElzMFBSVXlhbGdFNmRzYS1KeUhqZTlkdTkwX3hLbzFRMlZBZ0oza21EbFFRTnFMb0lCTnI2ckZIbjRsellFUFdrWTI5SXlhdVdLMHd2cTZhejBfSFVvSzduUTN4WkM1RG50bUExd2ZMeVhtM1pQaDhaTTFpQ0dIQzFoVWJvZG5mRDN0WjNzQTBRR0RWOGM3d3g0ZTV3aGpnQzhGeDBxZw?oc=5",
+      "source": "Libero Quotidiano",
+      "category": "Cronaca",
       "categories": [
-        "Europa"
+        "Cronaca"
       ],
-      "pubDate": "Wed, 26 Aug 2026 13:11:49 GMT",
-      "googlePubDate": "Wed, 26 Aug 2026 13:11:49 GMT",
+      "pubDate": "Wed, 26 Aug 2026 13:10:37 GMT",
+      "googlePubDate": "Wed, 26 Aug 2026 13:10:37 GMT",
       "originalPubDate": null,
       "dateSource": "google",
       "isVideo": false,
       "sources": [
         {
-          "source": "Agenda Digitale",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU2s3cWN2THBIYkxJZF9iWDhBa3B3ZGFiaFlZZFN3Y1Nqc0pRandoTlctb3Z0TDJObmhZZDVhcG11RlAzXzJWTFNTV0tWdmpOck5WTVFCdWplY2ZuZUJQUE9nM3RTVDBIRVhVWjgzTjQ0OE5yTU9JNXhVaWNNd0xjUFRZa2kxRkd0X3R4ck4yUEs3cGJNd0xQUm9DS3NYczlTM2xKbUxJekV2OGZY?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 13:11:49 GMT"
+          "source": "Libero Quotidiano",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeUxreGVmNXBHZTBySUxjd3dZcV9VdldoUEFvNmt6ZnJWODFuR1h5LVRxR0dWYkNJYzNUTDhXUGNraVlDSHZkQ2VaOXE4ZlpRbFF1b2dPM01ka2ROLUFWeDlBZFRwczdhNnpkTmgyVGpZRVczcE5sYTdRN2ktN2FjeFdtZGY2Ykt6aEk4cTg4bWZQUjZ3UnotaktTdUFpQ2taN0xaUGQ0NERuQ0JBU3fSAbIBQVVfeXFMT2ZHaGFQdlZIYlVEdElzMFBSVXlhbGdFNmRzYS1KeUhqZTlkdTkwX3hLbzFRMlZBZ0oza21EbFFRTnFMb0lCTnI2ckZIbjRsellFUFdrWTI5SXlhdVdLMHd2cTZhejBfSFVvSzduUTN4WkM1RG50bUExd2ZMeVhtM1pQaDhaTTFpQ0dIQzFoVWJvZG5mRDN0WjNzQTBRR0RWOGM3d3g0ZTV3aGpnQzhGeDBxZw?oc=5",
+          "pubDate": "Wed, 26 Aug 2026 13:10:37 GMT"
         }
       ],
-      "id": "focus-l europa puo salvare industria e clima la partita della riforma ets-1787749909000",
+      "id": "focus-fisco aliquote ridotte ma salari erosi dall inflazione libero quotidia-1787749837000",
       "sourceCount": 1
     },
     {
@@ -7015,7 +7091,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaWlqSFEtakF1U0tnRnE4ZjdWYlhKRnBONjRncVVoYTR1Rzd4ZkRqT2U4elVXbG5UT0c2dU9hcEhIeGFUOTNZazZLeUlCU1IyNlFpSTZadmFBT25fYVpWWUNHUENGcVJOQ0NkdVZLY3hPdzRBTXNSbC1MVHYtVW5PWFR1VXZHcjFUTUd1Ym5fdE1KX29zMGxiQXJROUlwQzZrZVpqTjFmNVZOT2Zyd2I4S040M3J2QVRpbXpRRHlZQW1LVXc?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "ucraina nunzio kiev bene gallagher a mosca ma per pace serve diplomazi-1787749740000-81"
+      "id": "ucraina nunzio kiev bene gallagher a mosca ma per pace serve diplomazi-1787749740000-84"
     },
     {
       "title": "Juventus nuova pretendente per Rugani e il Napoli spinge per Licina, Roma su Morato",
@@ -7090,30 +7166,6 @@
       "sourceCount": 1
     },
     {
-      "title": "Cisgiordania, Netanyahu promette nuovi insediamenti: È la nostra terra",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxOWmhJY0l0c1JzeHU5bHBvSUhmWTM4a29MNm9tQ18xWEtBMHhaQVJhZHVZSVVRYTJ0MEtCbUJidTFTZFRYaFlLb29xRHJ4NDlGeS1yYzBrZG4yUldhQnA2Xy1iMFI4M0xIVm5PbGpySzlGX2xzalprcnp6M0Z1WUN1V2EzSGgxelBhcU5xOXo3T1B0aXJKaDhaRTdOMUluT09QLUpSM2lXdXByc1dHWENiTE0xYkE0clBMQ0FJZ1lyeEhOcWox0gHKAUFVX3lxTFBPcnQxcjdROEdjQmpoTVlmM19jMllrbnhTV0lWYjI1UWJLMFNBSVhoZW94S1RBOThGajBIcjJ5T3kxQkxTa3VtdFkxaFIyNnBzd25WRU1ZQ01zR1lDeFVVRjdEYlNjeUV0SzlWQWk3LXE0SUZSSDF6YUJ0SmNoMkJieDdMSjdsR1lHbXpmSDczWnBKU3ZnNlRzQWs3MWtFTmgwdkFCcEFFUEp3bGd3UHczR1BlOWVGTFA2TTFodHJQdFJYckNEMnNEUWc?oc=5\" target=\"_blank\">Cisgiordania, Netanyahu promette nuovi insediamenti: È la nostra terra</a> <font color=\"#6f6f6f\">Il Tempo</font>",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWmhJY0l0c1JzeHU5bHBvSUhmWTM4a29MNm9tQ18xWEtBMHhaQVJhZHVZSVVRYTJ0MEtCbUJidTFTZFRYaFlLb29xRHJ4NDlGeS1yYzBrZG4yUldhQnA2Xy1iMFI4M0xIVm5PbGpySzlGX2xzalprcnp6M0Z1WUN1V2EzSGgxelBhcU5xOXo3T1B0aXJKaDhaRTdOMUluT09QLUpSM2lXdXByc1dHWENiTE0xYkE0clBMQ0FJZ1lyeEhOcWox0gHKAUFVX3lxTFBPcnQxcjdROEdjQmpoTVlmM19jMllrbnhTV0lWYjI1UWJLMFNBSVhoZW94S1RBOThGajBIcjJ5T3kxQkxTa3VtdFkxaFIyNnBzd25WRU1ZQ01zR1lDeFVVRjdEYlNjeUV0SzlWQWk3LXE0SUZSSDF6YUJ0SmNoMkJieDdMSjdsR1lHbXpmSDczWnBKU3ZnNlRzQWs3MWtFTmgwdkFCcEFFUEp3bGd3UHczR1BlOWVGTFA2TTFodHJQdFJYckNEMnNEUWc?oc=5",
-      "source": "Il Tempo",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Wed, 26 Aug 2026 12:53:00 GMT",
-      "googlePubDate": "Wed, 26 Aug 2026 12:53:00 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Il Tempo",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWmhJY0l0c1JzeHU5bHBvSUhmWTM4a29MNm9tQ18xWEtBMHhaQVJhZHVZSVVRYTJ0MEtCbUJidTFTZFRYaFlLb29xRHJ4NDlGeS1yYzBrZG4yUldhQnA2Xy1iMFI4M0xIVm5PbGpySzlGX2xzalprcnp6M0Z1WUN1V2EzSGgxelBhcU5xOXo3T1B0aXJKaDhaRTdOMUluT09QLUpSM2lXdXByc1dHWENiTE0xYkE0clBMQ0FJZ1lyeEhOcWox0gHKAUFVX3lxTFBPcnQxcjdROEdjQmpoTVlmM19jMllrbnhTV0lWYjI1UWJLMFNBSVhoZW94S1RBOThGajBIcjJ5T3kxQkxTa3VtdFkxaFIyNnBzd25WRU1ZQ01zR1lDeFVVRjdEYlNjeUV0SzlWQWk3LXE0SUZSSDF6YUJ0SmNoMkJieDdMSjdsR1lHbXpmSDczWnBKU3ZnNlRzQWs3MWtFTmgwdkFCcEFFUEp3bGd3UHczR1BlOWVGTFA2TTFodHJQdFJYckNEMnNEUWc?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 12:53:00 GMT"
-        }
-      ],
-      "id": "focus-cisgiordania netanyahu promette nuovi insediamenti e la nostra terra-1787748780000",
-      "sourceCount": 1
-    },
-    {
       "title": "La presidente Parlamento Europeo, Roberta Metsola, durante il Meeting di Rimini",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMihgJBVV95cUxONjVkVlhtZmdmT3VoTnBVc3NUdzZJdTRwMjd5aUtKUGpiWUZ1dkRQeFg2M2dmRHNfdmZnaTBNUFZscTNYdlZtTUl1ZEg5VWVkZ096VTZ2am50SDRoTEZ5b3FiSXVDUXZ1dkppcGVVOEh1WjFaSU43TzNyamNKMG4wVEg2QmU4dnVQTktib0VKS25WWFBHb1E0VUdLdmwzTVFrRUM2MjNyMmxURWN4STdzT0VuMUdRaDFvcnpLdEhMczVKbkVwVERKSHBKVUN5R2FJTjZSTUJtS3QxUkZudFVUY1FpeVEyV1ZxUnRRUXRTcURfTXBDalNpTTFKYXd4Z0UxOG5na0FR?oc=5\" target=\"_blank\">La presidente Parlamento Europeo, Roberta Metsola, durante il Meeting di Rimini</a> <font color=\"#6f6f6f\">ANSA</font>",
       "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxONjVkVlhtZmdmT3VoTnBVc3NUdzZJdTRwMjd5aUtKUGpiWUZ1dkRQeFg2M2dmRHNfdmZnaTBNUFZscTNYdlZtTUl1ZEg5VWVkZ096VTZ2am50SDRoTEZ5b3FiSXVDUXZ1dkppcGVVOEh1WjFaSU43TzNyamNKMG4wVEg2QmU4dnVQTktib0VKS25WWFBHb1E0VUdLdmwzTVFrRUM2MjNyMmxURWN4STdzT0VuMUdRaDFvcnpLdEhMczVKbkVwVERKSHBKVUN5R2FJTjZSTUJtS3QxUkZudFVUY1FpeVEyV1ZxUnRRUXRTcURfTXBDalNpTTFKYXd4Z0UxOG5na0FR?oc=5",
@@ -7167,7 +7219,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNQzZMQUttUGZpSm9KQ25kTlRnaFptUFZOd2VDdkRIaXlHNkNva3p6N3hQSVVzY0Q0RFJyV2NFUkVGUU1NSWN2WjJ4Q2F0aU5nai1wRnMzcmN4elQtZWNpYVRDc0RxV202ZkQwSXhjSVotUmR2RXVvTE9QSlZVTmJkbEVER19zMUVjNGpNZ2lkaFlkdlQ5OXlxVHd0cTlzWHNWa1VTZTJUV1FBdk5PSzdQcGpJRjNtRFRjYUpPd2pXY0pOWlJPbUdKcktfN0lRTl91Skw5N0dn0gHbAUFVX3lxTFBfV0xaTG9Yc2xnMnNDYTliUW42aWEtZ3VkNENIa0w5OWlmS1IxX05QSUl2Q3JvVXlKMjhwZTF5T1dFcHJCUTRkMnBPamMxcXIxdEdfVmluMzFRLXV5MjlQT2xBa0NiS2VfQXVEbTJhM0pqdC1xazVPQWU3RUVKQlZNM0FXZnE1M19rVTJha3gybUdVWm95RmpkVi1rV2FRYnhUdjk4U3VEYWxhZENSUm8xeUM1VXI3aXloUVd5UFZnS0c0czZOX05KcC1wMEhnMzFiTDNTa08zdWVZYw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "l incontro tra matteo salvini e attilio fontana cos e successo prima d-1787748290000-82"
+      "id": "l incontro tra matteo salvini e attilio fontana cos e successo prima d-1787748290000-85"
     },
     {
       "title": "Primo caso di suicidio assistito gestito interamente dal servizio sanitario in Lombardia. Bertolaso: “Non strumentalizzare la scelta di Domenico Zuccarella”",
@@ -7468,6 +7520,30 @@
       "sourceCount": 1
     },
     {
+      "title": "Ruba un condizionatore all'Istituto Tumori di Napoli: le immagini",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxQS3FSRlNMRnctNHBVb0lRV3ZLdjhaUnp5SmNTSktTMFQ5SHBuSVRXQUk3UWN3cXFVV3AxaHY2T3dyUFd2VW90eVlBaEhvdWZjbFU1b3diSVhyY295eTBEWEJ0ZUdxMUFxTTRVczNWdTJiV3oxUUttbUxPSm41aV9pQUxtWkstdmpEbE0yVlRlaWFjQkJVWkt0U0RyUVduNVd4dmpqdE41X2JUakh2MTcxZlVhZTllUWFIRlp5MWM2d9IBxAFBVV95cUxQbXE1VTRmYkxRR3V6cGk4NllxVnRVVWZ6OUZBcXlyYVFXejJqekMwdjU5em5xdjJITG1HSVBpamZXWXY1STFtbHYxekZ1WnlwUEx0NnhQbXV4bEpnNUZDdlVJMW5teFBIQnV3R01WRzNnX1lIRXVMSGpKXy12MFlDUG4wcTlvNEtJUVk2enltWmw5eUhNZGdOckRBWW5HVnNoSXpnaFE5OTRvRlZLbzJFMFctcXIxWmhLOVphbDVqWEJ1OGJf?oc=5\" target=\"_blank\">Ruba un condizionatore all'Istituto Tumori di Napoli: le immagini</a> <font color=\"#6f6f6f\">Il Tempo</font>",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQS3FSRlNMRnctNHBVb0lRV3ZLdjhaUnp5SmNTSktTMFQ5SHBuSVRXQUk3UWN3cXFVV3AxaHY2T3dyUFd2VW90eVlBaEhvdWZjbFU1b3diSVhyY295eTBEWEJ0ZUdxMUFxTTRVczNWdTJiV3oxUUttbUxPSm41aV9pQUxtWkstdmpEbE0yVlRlaWFjQkJVWkt0U0RyUVduNVd4dmpqdE41X2JUakh2MTcxZlVhZTllUWFIRlp5MWM2d9IBxAFBVV95cUxQbXE1VTRmYkxRR3V6cGk4NllxVnRVVWZ6OUZBcXlyYVFXejJqekMwdjU5em5xdjJITG1HSVBpamZXWXY1STFtbHYxekZ1WnlwUEx0NnhQbXV4bEpnNUZDdlVJMW5teFBIQnV3R01WRzNnX1lIRXVMSGpKXy12MFlDUG4wcTlvNEtJUVk2enltWmw5eUhNZGdOckRBWW5HVnNoSXpnaFE5OTRvRlZLbzJFMFctcXIxWmhLOVphbDVqWEJ1OGJf?oc=5",
+      "source": "Il Tempo",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Wed, 26 Aug 2026 12:19:50 GMT",
+      "googlePubDate": "Wed, 26 Aug 2026 12:19:50 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Il Tempo",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQS3FSRlNMRnctNHBVb0lRV3ZLdjhaUnp5SmNTSktTMFQ5SHBuSVRXQUk3UWN3cXFVV3AxaHY2T3dyUFd2VW90eVlBaEhvdWZjbFU1b3diSVhyY295eTBEWEJ0ZUdxMUFxTTRVczNWdTJiV3oxUUttbUxPSm41aV9pQUxtWkstdmpEbE0yVlRlaWFjQkJVWkt0U0RyUVduNVd4dmpqdE41X2JUakh2MTcxZlVhZTllUWFIRlp5MWM2d9IBxAFBVV95cUxQbXE1VTRmYkxRR3V6cGk4NllxVnRVVWZ6OUZBcXlyYVFXejJqekMwdjU5em5xdjJITG1HSVBpamZXWXY1STFtbHYxekZ1WnlwUEx0NnhQbXV4bEpnNUZDdlVJMW5teFBIQnV3R01WRzNnX1lIRXVMSGpKXy12MFlDUG4wcTlvNEtJUVk2enltWmw5eUhNZGdOckRBWW5HVnNoSXpnaFE5OTRvRlZLbzJFMFctcXIxWmhLOVphbDVqWEJ1OGJf?oc=5",
+          "pubDate": "Wed, 26 Aug 2026 12:19:50 GMT"
+        }
+      ],
+      "id": "focus-ruba un condizionatore all istituto tumori di napoli le immagini-1787746790000",
+      "sourceCount": 1
+    },
+    {
       "title": "Droga, rientra in Italia latitante condannato a 27 anni (VIDEO)",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUEZsREVBVGtPQUdvbmJiSjBkMk4yaTg1SVY4Rzg4RjlpN01GYjJ4YVVMYU5NSk4wOU5xWFIyNDlLWVRKUFVYX1Y3ZExSQ1MzQlFCeFBYMWNSWUU2dWRvZWc5dHU4SXphX09YUi1NU3ZuaGtVbzlKNlFLX1d5YXBBX2VwUWstb2pK?oc=5\" target=\"_blank\">Droga, rientra in Italia latitante condannato a 27 anni (VIDEO)</a> <font color=\"#6f6f6f\">LameziaTerme.it</font>",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUEZsREVBVGtPQUdvbmJiSjBkMk4yaTg1SVY4Rzg4RjlpN01GYjJ4YVVMYU5NSk4wOU5xWFIyNDlLWVRKUFVYX1Y3ZExSQ1MzQlFCeFBYMWNSWUU2dWRvZWc5dHU4SXphX09YUi1NU3ZuaGtVbzlKNlFLX1d5YXBBX2VwUWstb2pK?oc=5",
@@ -7540,7 +7616,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOWU1oODZ5TXQ1dHl4TlVNOUpzS1dLWnBrdXE3WmdhbThydXJQT1E4VEZHRldwbGhpcU1ZNkpXbXdhalJ0d0h6V2ZvLWlRNnFmTDFkZnRrQUh4VEZwdlM2UmtKVmZVLVJ1bDRWWFJEck50ZE5yXzFfX2E5eGVxNXZxYTJBRDg3SXFyYnFDWjl6ZTRQS0RHTGV6Vk1pTHVZMHM3VDRYaVJyUlE2X29ybnB5OGRjVERJVm03VW13OXB0MW5GQTQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "mormile contro furgiuele lascia la lega e ora attacca salvini per visi-1787746620000-83"
+      "id": "mormile contro furgiuele lascia la lega e ora attacca salvini per visi-1787746620000-86"
     },
     {
       "title": "Scatta l'allerta malaria all'aeroporto di Francoforte, due morti",
@@ -7565,116 +7641,26 @@
       ],
       "id": "focus-scatta l allerta malaria all aeroporto di francoforte due morti-1787746534000",
       "sourceCount": 1
-    },
-    {
-      "title": "Calciomercato Juventus News | David può portare Sorloth, a centrocampo si complica Kessié (26 agosto 2026)",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWHNFZ19YYU9EMWlzZXQzQVl5YXFLdWFZWks1TEUwczF1UXZGVnRRYUZCeE9QcDV6TTlNY3dzQjlMaTVGU1RqMnkyT1dJUm9EeGowNTFnX29Wd1ZidlppeXluaUQxaUZsOWlScnZnNHNiMWE3MllyUWZ6YjBCa0JNY0FVQk9yTFhwMi1JUENUb05lekF3azNnaVRKdTVZNklYYmtfVWladWs0RHhXUXNUek9qdDV1TTA5WjVaQnY4aDJaazlUN0Y5SWYxX0lUdlFjVVU0MmhKVzBFenk0Z0HSAeMBQVVfeXFMUFJzdDBOdzVEdnFRM2RydzNGUWt5TjNLTXE4TmVTLW01akl5Uks3NF9ucmdMOEliY3hneUo3MkZwY0ktZC10aU82RnJNWnVwaHdJYTJYWFRuMk50NGtieHk4eW5vaXI1X3NvWFdFZy1tT3dpYjAzVHVXUTJFSXJzdk5ETkJ4UzlnQVUtdFpTakJWczZYLXFqYXpQZ2gtcDUtTjNvWlFpdEhmUFc3ZUUxVDZTR3c4LXM2LU5QeEk5RE90R1FYMXNKZFJxVW9vV1FvUVpkbk5ZZm1XbU9tUlNUMEtadXM?oc=5\" target=\"_blank\">Calciomercato Juventus News | David può portare Sorloth, a centrocampo si complica Kessié (26 agosto 2026)</a> <font color=\"#6f6f6f\">IlSussidiario.net</font>",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWHNFZ19YYU9EMWlzZXQzQVl5YXFLdWFZWks1TEUwczF1UXZGVnRRYUZCeE9QcDV6TTlNY3dzQjlMaTVGU1RqMnkyT1dJUm9EeGowNTFnX29Wd1ZidlppeXluaUQxaUZsOWlScnZnNHNiMWE3MllyUWZ6YjBCa0JNY0FVQk9yTFhwMi1JUENUb05lekF3azNnaVRKdTVZNklYYmtfVWladWs0RHhXUXNUek9qdDV1TTA5WjVaQnY4aDJaazlUN0Y5SWYxX0lUdlFjVVU0MmhKVzBFenk0Z0HSAeMBQVVfeXFMUFJzdDBOdzVEdnFRM2RydzNGUWt5TjNLTXE4TmVTLW01akl5Uks3NF9ucmdMOEliY3hneUo3MkZwY0ktZC10aU82RnJNWnVwaHdJYTJYWFRuMk50NGtieHk4eW5vaXI1X3NvWFdFZy1tT3dpYjAzVHVXUTJFSXJzdk5ETkJ4UzlnQVUtdFpTakJWczZYLXFqYXpQZ2gtcDUtTjNvWlFpdEhmUFc3ZUUxVDZTR3c4LXM2LU5QeEk5RE90R1FYMXNKZFJxVW9vV1FvUVpkbk5ZZm1XbU9tUlNUMEtadXM?oc=5",
-      "source": "IlSussidiario.net",
-      "category": "Juventus",
-      "categories": [
-        "Juventus"
-      ],
-      "pubDate": "Wed, 26 Aug 2026 12:15:10 GMT",
-      "googlePubDate": "Wed, 26 Aug 2026 12:15:10 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": true,
-      "sources": [
-        {
-          "source": "IlSussidiario.net",
-          "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWHNFZ19YYU9EMWlzZXQzQVl5YXFLdWFZWks1TEUwczF1UXZGVnRRYUZCeE9QcDV6TTlNY3dzQjlMaTVGU1RqMnkyT1dJUm9EeGowNTFnX29Wd1ZidlppeXluaUQxaUZsOWlScnZnNHNiMWE3MllyUWZ6YjBCa0JNY0FVQk9yTFhwMi1JUENUb05lekF3azNnaVRKdTVZNklYYmtfVWladWs0RHhXUXNUek9qdDV1TTA5WjVaQnY4aDJaazlUN0Y5SWYxX0lUdlFjVVU0MmhKVzBFenk0Z0HSAeMBQVVfeXFMUFJzdDBOdzVEdnFRM2RydzNGUWt5TjNLTXE4TmVTLW01akl5Uks3NF9ucmdMOEliY3hneUo3MkZwY0ktZC10aU82RnJNWnVwaHdJYTJYWFRuMk50NGtieHk4eW5vaXI1X3NvWFdFZy1tT3dpYjAzVHVXUTJFSXJzdk5ETkJ4UzlnQVUtdFpTakJWczZYLXFqYXpQZ2gtcDUtTjNvWlFpdEhmUFc3ZUUxVDZTR3c4LXM2LU5QeEk5RE90R1FYMXNKZFJxVW9vV1FvUVpkbk5ZZm1XbU9tUlNUMEtadXM?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 12:15:10 GMT"
-        }
-      ],
-      "id": "video-calciomercato juventus news david puo portare sorloth a centrocampo si-1787746510000",
-      "sourceCount": 1
-    },
-    {
-      "title": "Frana e inondazione tra Nepal e Tibet, 157 morti. La Farnesina: \"Due italiani coinvolti, ma stanno bene\"",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUlFnNV9nMUZXVmNJVmFpNWZGTmNyQ3M5aDJENTliN3dTdEhfdlVTNjU3WkFRUzdkbmUxX1lpNUFyUUdwN3NkYzNPYVlHQWZqcWN2azk4VlBRZ3I4LXdjbUlWWUxya29ac0tSZkFmOGpySi0ycDBrRHZVODRNaWs1UnprUHg5cWU1MGp2TG1JczBoRjNhX2ZMdXBmakY2WVhnSmdaNmM5dDBjdFQwSGplU3BYOXBnQ1FJbTJzbnNNSWVaTmo5M3A1QjVmb1d3ZDRvSlE?oc=5\" target=\"_blank\">Frana e inondazione tra Nepal e Tibet, 157 morti. La Farnesina: \"Due italiani coinvolti, ma stanno bene\"</a> <font color=\"#6f6f6f\">Fanpage</font>",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUlFnNV9nMUZXVmNJVmFpNWZGTmNyQ3M5aDJENTliN3dTdEhfdlVTNjU3WkFRUzdkbmUxX1lpNUFyUUdwN3NkYzNPYVlHQWZqcWN2azk4VlBRZ3I4LXdjbUlWWUxya29ac0tSZkFmOGpySi0ycDBrRHZVODRNaWs1UnprUHg5cWU1MGp2TG1JczBoRjNhX2ZMdXBmakY2WVhnSmdaNmM5dDBjdFQwSGplU3BYOXBnQ1FJbTJzbnNNSWVaTmo5M3A1QjVmb1d3ZDRvSlE?oc=5",
-      "source": "Fanpage",
-      "category": "Esteri",
-      "categories": [
-        "Esteri"
-      ],
-      "pubDate": "Wed, 26 Aug 2026 12:05:56 GMT",
-      "googlePubDate": "Wed, 26 Aug 2026 12:05:56 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Fanpage",
-          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUlFnNV9nMUZXVmNJVmFpNWZGTmNyQ3M5aDJENTliN3dTdEhfdlVTNjU3WkFRUzdkbmUxX1lpNUFyUUdwN3NkYzNPYVlHQWZqcWN2azk4VlBRZ3I4LXdjbUlWWUxya29ac0tSZkFmOGpySi0ycDBrRHZVODRNaWs1UnprUHg5cWU1MGp2TG1JczBoRjNhX2ZMdXBmakY2WVhnSmdaNmM5dDBjdFQwSGplU3BYOXBnQ1FJbTJzbnNNSWVaTmo5M3A1QjVmb1d3ZDRvSlE?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 12:05:56 GMT"
-        }
-      ],
-      "originalURL": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUlFnNV9nMUZXVmNJVmFpNWZGTmNyQ3M5aDJENTliN3dTdEhfdlVTNjU3WkFRUzdkbmUxX1lpNUFyUUdwN3NkYzNPYVlHQWZqcWN2azk4VlBRZ3I4LXdjbUlWWUxya29ac0tSZkFmOGpySi0ycDBrRHZVODRNaWs1UnprUHg5cWU1MGp2TG1JczBoRjNhX2ZMdXBmakY2WVhnSmdaNmM5dDBjdFQwSGplU3BYOXBnQ1FJbTJzbnNNSWVaTmo5M3A1QjVmb1d3ZDRvSlE?oc=5",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "frana e inondazione tra nepal e tibet 157 morti la farnesina due itali-1787745956000-84"
-    },
-    {
-      "title": "Ministra canadese Joly risponde a Trump: Lago America? Noi lo chiameremo sempre Lago Ontario | Libero Quotidiano.it",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi7gFBVV95cUxQNGRhX2RhampRZDdSTHlHTFY3SzMyci1HMTVWc1V3NmFkT1Q1ZFBMbU1mUVNBSmNzaWRTNlA5bnlXNF9VQVNzdFRWTTN0T1c3TDZuNHRwQnJWWGRUamJqMXJuc2lfSUpnNlZ0MVhvMzRrTmhqOGR5OW1mUHBLTTFpV2FOWXRWckJXc1RDNE9tV0l3ZWRya0dBZGFhV21udVVia3pYakE5LXdGNGpRY0lMeWlLeV9wNENUTzIySzc5YUFOX2czVDRTTWZjdm91VVlWNUlabFk2LVRDWlN0VElOUFdtYkJVRGJGMktTSmRB0gHyAUFVX3lxTE5BYUFiV2NVOUp1dTFtU0l1cE82U0FjNkhfWlBtSmh4UzJSLWtXcGxJcERBR040U25GQWN0NlVad1hzZ0NqYUVuV1FFWk9Xb2RwNEhWWk5IQzl1cW1JdzZNZXJBZVljSU9ycS1tR2hkM1VoYzZNNWFBZmc2aFRnSkowNThwM2FvaWpFV3ZpRVhQRTFxQ2d5UWlYajBIOTJyeHBhZ3huSU1JNVIyaFN4M1U2Tl90M2MzTHYtSEJWOFpEQ3E2cWtuUE9WVnBOSDQ4TElteFFoMzdfR3JoM3NlV0RHQmN6UTY0ZnlWQ2tfMG5JdldB?oc=5\" target=\"_blank\">Ministra canadese Joly risponde a Trump: Lago America? Noi lo chiameremo sempre Lago Ontario | Libero Quotidiano.it</a> <font color=\"#6f6f6f\">Libero Quotidiano</font>",
-      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQNGRhX2RhampRZDdSTHlHTFY3SzMyci1HMTVWc1V3NmFkT1Q1ZFBMbU1mUVNBSmNzaWRTNlA5bnlXNF9VQVNzdFRWTTN0T1c3TDZuNHRwQnJWWGRUamJqMXJuc2lfSUpnNlZ0MVhvMzRrTmhqOGR5OW1mUHBLTTFpV2FOWXRWckJXc1RDNE9tV0l3ZWRya0dBZGFhV21udVVia3pYakE5LXdGNGpRY0lMeWlLeV9wNENUTzIySzc5YUFOX2czVDRTTWZjdm91VVlWNUlabFk2LVRDWlN0VElOUFdtYkJVRGJGMktTSmRB0gHyAUFVX3lxTE5BYUFiV2NVOUp1dTFtU0l1cE82U0FjNkhfWlBtSmh4UzJSLWtXcGxJcERBR040U25GQWN0NlVad1hzZ0NqYUVuV1FFWk9Xb2RwNEhWWk5IQzl1cW1JdzZNZXJBZVljSU9ycS1tR2hkM1VoYzZNNWFBZmc2aFRnSkowNThwM2FvaWpFV3ZpRVhQRTFxQ2d5UWlYajBIOTJyeHBhZ3huSU1JNVIyaFN4M1U2Tl90M2MzTHYtSEJWOFpEQ3E2cWtuUE9WVnBOSDQ4TElteFFoMzdfR3JoM3NlV0RHQmN6UTY0ZnlWQ2tfMG5JdldB?oc=5",
-      "source": "Libero Quotidiano",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca",
-        "Esteri"
-      ],
-      "pubDate": "Wed, 26 Aug 2026 12:05:26 GMT",
-      "googlePubDate": "Wed, 26 Aug 2026 12:05:26 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Libero Quotidiano",
-          "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQNGRhX2RhampRZDdSTHlHTFY3SzMyci1HMTVWc1V3NmFkT1Q1ZFBMbU1mUVNBSmNzaWRTNlA5bnlXNF9VQVNzdFRWTTN0T1c3TDZuNHRwQnJWWGRUamJqMXJuc2lfSUpnNlZ0MVhvMzRrTmhqOGR5OW1mUHBLTTFpV2FOWXRWckJXc1RDNE9tV0l3ZWRya0dBZGFhV21udVVia3pYakE5LXdGNGpRY0lMeWlLeV9wNENUTzIySzc5YUFOX2czVDRTTWZjdm91VVlWNUlabFk2LVRDWlN0VElOUFdtYkJVRGJGMktTSmRB0gHyAUFVX3lxTE5BYUFiV2NVOUp1dTFtU0l1cE82U0FjNkhfWlBtSmh4UzJSLWtXcGxJcERBR040U25GQWN0NlVad1hzZ0NqYUVuV1FFWk9Xb2RwNEhWWk5IQzl1cW1JdzZNZXJBZVljSU9ycS1tR2hkM1VoYzZNNWFBZmc2aFRnSkowNThwM2FvaWpFV3ZpRVhQRTFxQ2d5UWlYajBIOTJyeHBhZ3huSU1JNVIyaFN4M1U2Tl90M2MzTHYtSEJWOFpEQ3E2cWtuUE9WVnBOSDQ4TElteFFoMzdfR3JoM3NlV0RHQmN6UTY0ZnlWQ2tfMG5JdldB?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 12:05:26 GMT"
-        },
-        {
-          "source": "Quotidiano Nazionale",
-          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPNW8tVG1OZWZxN3d6Y3R3M0Y2OXktVUZtNC1jZFBkcDdoYTdBSXFuRkNPa2lOcGJXX3ZOY3RLOWlJWmZ3dkF0bC1ZSGQwdmdFckJqTVhIWExIcWdlT05OaHhUQzViX0tiUDFUQnFvajVOcTd0VkUzLTZzalVpa2pUQlVRTWVVaWRKZWV3SmtpUEktQTlidk9jMm5zTGYtaDdseThwQ0pMZ29mdUZyUDh4bWlfTVRlTDdjdU9mUXg4cE11cHowVnUwcmFpSXI4YVNOZHFYYUFxbTc?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 09:03:18 GMT"
-        },
-        {
-          "source": "L'Unione Sarda.it",
-          "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQVd6YWdGdkpCbEdmSUxsbHdJQVBrcHQ1Y0djRHVEQXN2SlZlWmJCM1h5SDJGZEtxenBCeFRBWXFwZUJVUTZ3M0tXekhFQ3p0UGZXRm5aMTI3OEN4cVBybDlmRWU5ekVKSm5JMGQxWWxHWHpzWGJCRjdMRVRCbWZxNEs5d2k5eGhQdUFhbUNFTUVkMHRnVEIzLWhzWDkyMk01ZFZvT0NFdHJXcS1zanhNeXJRTGtYRXNfb0d3NFBYLURNcnV5VXBrTGdDY2dlUkV3QXNuNzVHbUItdWdXOUNF?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 08:52:01 GMT"
-        },
-        {
-          "source": "Il Tempo",
-          "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPd0RtNGdWUndrM1FNLWtYbWRwZ0tvckIzNVQtQWdhclMwTC1Ob2tUelJhNnlnUkt0WllibS11TlYzNDYtQ3ptMGlLcXlWc0J2dE9ZOXpHZHFUUkRyaDd3cDA3T19ycGFnYU8yOVJ0NzMtMjF5OUVjaWhEdjVua1NVczQ0eUU0T1NRUldJSTFvRWtQaEp5SzVIVGZkWGtmc1FkMDhjaDZnOW14YmI3cHc1NUt3NjFIZ2JhWEY0OGV6YVdZM2M4dEY3WW1QS2l4bzE4Yk5fNksyZ1NtZk1icDZ6TlJQb0FyMHdXSm4xUHdWYndBd9IB9wFBVV95cUxOOTc4UVdxUUFFd1dFcEQxZzNlM3FTZml6VVRmRWdFMFB0QnJMREc3RzY0YzZPVC15aTljYmg1amY5bU11T0x5MEtBSnpZVmJpN0lhYVVVeHNNcGNtcFNRYURjU1FZU2pPWUdjV0lnLUtaYXI4cGJtcWxPNjZzeUFfQllhUzJ0X3VzR2RzZFl2T09SZ2hKWUlqazh6UHAtSDhGTm5GTTFiTld6Z3JzaXZlSjZsTWpvVDU0ZWNDbFpPN1VFUWhXQ3NkVUxUcmEwWFRfRUNGck01aWFWWmduX2NtZUsxd0dtelRFVkQ2Ykd3WEo5WWxhcjI4?oc=5",
-          "pubDate": "Wed, 26 Aug 2026 08:29:50 GMT"
-        }
-      ],
-      "id": "focus-ministra canadese joly risponde a trump lago america noi lo chiameremo-1787745926000",
-      "sourceCount": 4
     }
   ],
   "videoEnrichment": {
-    "updatedAt": "2026-08-27T04:51:21.377Z",
+    "updatedAt": "2026-08-27T04:56:22.617Z",
     "successfulQueries": 3,
     "totalQueries": 4,
     "added": 62,
     "markedExisting": 7,
-    "totalVideos": 47
+    "totalVideos": 46
   },
   "focusEnrichment": {
-    "updatedAt": "2026-08-27T04:51:40.822Z",
+    "updatedAt": "2026-08-27T04:56:42.539Z",
     "successfulQueries": 18,
     "totalQueries": 22,
-    "added": 344,
-    "mergedExisting": 62,
+    "added": 343,
+    "mergedExisting": 63,
     "counts": {
       "crimeImmigration": 8,
-      "europe": 27,
-      "foreign": 25,
+      "europe": 26,
+      "foreign": 23,
       "transport": 0
     }
   }
