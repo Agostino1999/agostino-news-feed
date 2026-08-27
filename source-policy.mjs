@@ -275,8 +275,9 @@ export function isIrrelevantNonJuventusSport(article) {
   const strongSport = /\b(calciomercato|fifa|uefa|serie [abc]|champions(?: league)?|europa league|conference league|formula 1|gran premio|motogp|mondiali|volley|pallavol|basket|tennis|calciator|allenator|centrocampist|attaccant|difensor|portier|prestito con|diritto di riscatto|obbligo di riscatto|leggend\w* del calcio)\w*/.test(title)
     || (/\bmondial\w*\b/.test(title) && /\b(sfida|gara|qualificaz)\w*/.test(title));
   const footballClub = /\b(atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|inter|lazio|lecce|milan|napoli|palermo|parma|pisa|roma|sassuolo|torino|udinese|venezia|verona)\b/.test(title);
+  const footballFixture = /\b(?:atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|inter|lazio|lecce|milan|napoli|palermo|parma|pisa|roma|sassuolo|torino|udinese|venezia|verona)\s+(?:atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|inter|lazio|lecce|milan|napoli|palermo|parma|pisa|roma|sassuolo|torino|udinese|venezia|verona)\b/.test(title);
   const footballContext = /\b(partita|match|campionat|mercato|trattativ|prestito|riscatto|acquist|cession|affare|formazion|convocat|allenator|calciator|giocator|attaccant|centrocampist|difensor|portier|gol|bonus|sostitut)\w*/.test(title);
-  return sportsSource || strongSport || (footballClub && footballContext);
+  return sportsSource || strongSport || footballFixture || (footballClub && footballContext);
 }
 
 export function sanitizeFeedArticle(article) {

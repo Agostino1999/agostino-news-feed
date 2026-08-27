@@ -50,12 +50,13 @@ test("elimina lo sport non Juventus prima di salvarlo nel feed", () => {
   const uefa = { ...article("Sky Sport"), title: "Uefa pronta ad azione legale con Infantino e Fifa: le news" };
   const formulaOne = { ...article("Il Giorno"), title: "Formula 1, effetto Kimi Antonelli sul Gran Premio di Monza" };
   const fiorentina = { ...article("chiamarsibomber.com"), title: "Fiorentina, scelto il sostituto di Kean: obiettivo Zirkzee in attacco" };
+  const milanVenezia = { ...article("Il Giorno"), title: "Milan-Venezia, Amorim: Leao? A volte meglio separarsi" };
   const crans = { ...article("La Gazzetta del Mezzogiorno"), title: "Crans-Montana: Leo Bove, il calcio nel cuore e le partite con gli amici" };
   const film = { ...article("Il Resto del Carlino"), title: "Italia-Germania, un film sulla partita del 1944" };
   const naplesCrime = { ...article("Corriere delle Alpi"), title: "Giovane turista straniero ferito a bottigliate a Napoli durante rapina" };
   const juve = { ...article("Sky Sport"), title: "Juve, accordo per Kessié" };
   assert.equal(isIrrelevantNonJuventusSport(palermo), true);
-  for (const irrelevant of [palermo, como, kean, mondiale, legends, volley, uefa, formulaOne, fiorentina]) {
+  for (const irrelevant of [palermo, como, kean, mondiale, legends, volley, uefa, formulaOne, fiorentina, milanVenezia]) {
     assert.equal(sanitizeFeedArticle(irrelevant), null, irrelevant.title);
   }
   assert.ok(sanitizeFeedArticle(crans));
