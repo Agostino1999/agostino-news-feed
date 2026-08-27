@@ -271,12 +271,12 @@ export function isIrrelevantNonJuventusSport(article) {
   if (/\b(juventus|juve|bianconer)\w*/.test(title)) return false;
 
   const source = normalizeSourceName(article?.source || "");
-  const sportsSource = /\b(calcio|calciomercato|sport|football|romanews|rosaner|fantacalcio|william hill|volley|pallavol|basket|tennis|formula 1|motorsport)\b/.test(source);
-  const strongSport = /\b(calciomercato|serie [abc]|champions(?: league)?|europa league|conference league|calciator|allenator|centrocampist|attaccant|difensor|portier|prestito con|diritto di riscatto|obbligo di riscatto|leggend\w* del calcio)\w*/.test(title)
+  const sportsSource = /\b(calcio|calciomercato|sport(?:ivo|iva|ivi|ive)?|football|romanews|rosaner|fantacalcio|william hill|volley|pallavol|basket|tennis|formula 1|motorsport|gianluca di marzio|fabrizio romano|alfredo pedull\w*|chiamarsibomber)\b|\btuttosport\b/.test(source);
+  const strongSport = /\b(calciomercato|fifa|uefa|serie [abc]|champions(?: league)?|europa league|conference league|formula 1|gran premio|motogp|mondiali|volley|pallavol|basket|tennis|calciator|allenator|centrocampist|attaccant|difensor|portier|prestito con|diritto di riscatto|obbligo di riscatto|leggend\w* del calcio)\w*/.test(title)
     || (/\bmondial\w*\b/.test(title) && /\b(sfida|gara|qualificaz)\w*/.test(title));
-  const sportFromSportsSource = sportsSource
-    && /\b(partita|partite|campionat\w*|coppa|coppe|mercato|trattativ\w*|prestito|riscatto|gol|squadra|affare|club|torneo|finale|scambio di documenti|operazione in chiusura)\b/.test(title);
-  return strongSport || sportFromSportsSource;
+  const footballClub = /\b(atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|inter|lazio|lecce|milan|napoli|palermo|parma|pisa|roma|sassuolo|torino|udinese|venezia|verona)\b/.test(title);
+  const footballContext = /\b(partita|match|campionat|mercato|trattativ|prestito|riscatto|acquist|cession|affare|formazion|convocat|allenator|calciator|giocator|attaccant|centrocampist|difensor|portier|gol|bonus|sostitut)\w*/.test(title);
+  return sportsSource || strongSport || (footballClub && footballContext);
 }
 
 export function sanitizeFeedArticle(article) {

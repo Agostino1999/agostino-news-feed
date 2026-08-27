@@ -47,15 +47,20 @@ test("elimina lo sport non Juventus prima di salvarlo nel feed", () => {
   const mondiale = { ...article("La Provincia Unica Tv"), title: "L'Italia punta al Mondiale: scatta la sfida decisiva!" };
   const legends = { ...article("Open"), title: "Da Zanetti a Cannavaro: le leggende del calcio tornano in campo" };
   const volley = { ...article("Volley News"), title: "Velasco dopo Italia-Francia: una partita straordinaria" };
+  const uefa = { ...article("Sky Sport"), title: "Uefa pronta ad azione legale con Infantino e Fifa: le news" };
+  const formulaOne = { ...article("Il Giorno"), title: "Formula 1, effetto Kimi Antonelli sul Gran Premio di Monza" };
+  const fiorentina = { ...article("chiamarsibomber.com"), title: "Fiorentina, scelto il sostituto di Kean: obiettivo Zirkzee in attacco" };
   const crans = { ...article("La Gazzetta del Mezzogiorno"), title: "Crans-Montana: Leo Bove, il calcio nel cuore e le partite con gli amici" };
   const film = { ...article("Il Resto del Carlino"), title: "Italia-Germania, un film sulla partita del 1944" };
+  const naplesCrime = { ...article("Corriere delle Alpi"), title: "Giovane turista straniero ferito a bottigliate a Napoli durante rapina" };
   const juve = { ...article("Sky Sport"), title: "Juve, accordo per Kessié" };
   assert.equal(isIrrelevantNonJuventusSport(palermo), true);
-  for (const irrelevant of [palermo, como, kean, mondiale, legends, volley]) {
+  for (const irrelevant of [palermo, como, kean, mondiale, legends, volley, uefa, formulaOne, fiorentina]) {
     assert.equal(sanitizeFeedArticle(irrelevant), null, irrelevant.title);
   }
   assert.ok(sanitizeFeedArticle(crans));
   assert.ok(sanitizeFeedArticle(film));
+  assert.ok(sanitizeFeedArticle(naplesCrime));
   assert.ok(sanitizeFeedArticle(juve));
 });
 
@@ -86,13 +91,18 @@ test("le fonti secondarie restano ma cedono la fonte primaria", () => {
 });
 
 test("mantiene le cinque fonti indicate e le tre eccezioni sportive", () => {
-  const kept = [
-    "Eunews", "Euronews", "Agenparl", "Italpress", "LaPresse",
-    "Corriere dello Sport", "Tuttosport", "Gianluca Di Marzio"
-  ];
+  const kept = ["Eunews", "Euronews", "Agenparl", "Italpress", "LaPresse"];
   for (const source of kept) {
     assert.equal(isBlockedSource(source), false, source);
     assert.ok(sanitizeFeedArticle(article(source)), source);
+  }
+  for (const source of ["Corriere dello Sport", "Tuttosport", "Gianluca Di Marzio"]) {
+    assert.equal(isBlockedSource(source), false, source);
+    assert.ok(sanitizeFeedArticle({
+      ...article(source),
+      title: "Juventus, incontro per Kessié",
+      categories: ["Juventus", "Calciomercato"]
+    }), source);
   }
   assert.equal(isLowPrioritySource("Agenparl"), true);
   for (const source of ["Eunews", "Euronews", "Italpress", "LaPresse"]) {
