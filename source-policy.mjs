@@ -35,6 +35,8 @@ export const BLOCKED_SOURCE_NAMES = new Set([
   "buonasera24",
   "musicletter",
   "ticino notizie",
+  "calcio rosanero",
+  "calciorosanero",
   "bigodino",
   "bigodino it",
   "abruzzonews24",
@@ -263,8 +265,22 @@ export function sourcePolicyRank(source) {
   return isLowPrioritySource(source) ? 25 : 55;
 }
 
+export function isIrrelevantNonJuventusFootball(article) {
+  const title = normalizeSourceName(article?.title || "");
+  if ((article?.categories || [article?.category]).some(category => ["Juventus", "Calciomercato"].includes(category))) return false;
+  if (/\b(juventus|juve|bianconer)\w*/.test(title)) return false;
+
+  const source = normalizeSourceName(article?.source || "");
+  const footballSource = /\b(calcio|sport|football|romanews|rosaner|fantacalcio|william hill)\b/.test(source);
+  const strongFootball = /\b(calciomercato|serie [abc]|champions(?: league)?|europa league|conference league|calciator|allenator|centrocampist|attaccant|difensor|portier|prestito con|diritto di riscatto|obbligo di riscatto)\w*/.test(title);
+  const footballFromSportsSource = footballSource
+    && /\b(partit|campionat|coppe?|mercato|trattativ|prestito|riscatto|gol|squadra|operazione in chiusura)\w*/.test(title);
+  return strongFootball || footballFromSportsSource;
+}
+
 export function sanitizeFeedArticle(article) {
   if (!article || typeof article !== "object") return null;
+  if (isIrrelevantNonJuventusFootball(article)) return null;
 
   const fallback = {
     source: article.source || "Fonte",

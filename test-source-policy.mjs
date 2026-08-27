@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 
 import {
   isBlockedSource,
+  isIrrelevantNonJuventusFootball,
   isLowPrioritySource,
   sanitizeFeedArticle
 } from "./source-policy.mjs";
@@ -23,7 +24,7 @@ test("esclude tutte le fonti richieste", () => {
     "Tribuna.com", "Juventus News 24", "SpazioJ", "Tifo Juventus", "Bianconera News",
     "Cronachedi", "TuttoFrosinone.com", "vetrina tv", "primanotizia24.it", "CanaleSicilia",
     "italianotizie.online", "Radio Senise Centrale", "GiornaleSM", "Buonasera24",
-    "musicletter", "Ticino Notizie",
+    "musicletter", "Ticino Notizie", "Calcio Rosanero",
     "Bigodino.it", "AbruzzoNews24", "ArtesTV | Giornale", "Concorsando.it",
     "corrierecomo.it", "Demócrata", "Eventi e News", "Giornalemio.it", "In Prima News",
     "Informat.ro", "lamilano.it", "La Tiburtina", "M Social Magazine", "Megamodo",
@@ -32,11 +33,21 @@ test("esclude tutte le fonti richieste", () => {
     "European Parliament", "federvolley.it", "PPN ADI – Agenzia delle Infrastrutture",
     "APRE – Agenzia per la Promozione della Ricerca Europea", "CORDIS | European Commission"
   ];
-  assert.equal(blocked.length, 50);
+  assert.equal(blocked.length, 51);
   for (const source of blocked) {
     assert.equal(isBlockedSource(source), true, source);
     assert.equal(sanitizeFeedArticle(article(source)), null, source);
   }
+});
+
+test("elimina il calcio non Juventus prima di salvarlo nel feed", () => {
+  const palermo = { ...article("Calcio Rosanero"), title: "Calciomercato: Blin verso il Cesena" };
+  const como = { ...article("Sky Sport"), title: "Como-Ricci, prestito con diritto di riscatto" };
+  const juve = { ...article("Sky Sport"), title: "Juve, accordo per Kessié" };
+  assert.equal(isIrrelevantNonJuventusFootball(palermo), true);
+  assert.equal(sanitizeFeedArticle(palermo), null);
+  assert.equal(sanitizeFeedArticle(como), null);
+  assert.ok(sanitizeFeedArticle(juve));
 });
 
 test("mantiene il Giornale ed esclude soltanto il relativo blog", () => {
