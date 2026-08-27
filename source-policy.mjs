@@ -282,7 +282,6 @@ export function isIrrelevantNonJuventusSport(article) {
 
 export function sanitizeFeedArticle(article) {
   if (!article || typeof article !== "object") return null;
-  if (isIrrelevantNonJuventusSport(article)) return null;
 
   const fallback = {
     source: article.source || "Fonte",
