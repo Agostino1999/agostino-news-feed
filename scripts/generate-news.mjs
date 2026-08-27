@@ -423,6 +423,23 @@ function shareNamedEntity(a, b) {
   );
 }
 
+const TRANSFER_ENTITY_EXCLUSIONS = new Set([
+  "Juventus", "Juve", "Palermo", "Calcio", "Bianconeri", "Bianconero", "Rosanero", "Rosaneri"
+]);
+
+function specificTransferEntities(title = "") {
+  return new Set([...entityTokens(title)].filter(entity => !TRANSFER_ENTITY_EXCLUSIONS.has(entity)));
+}
+
+function isMultiTopicTransferTitle(title = "") {
+  const parts = String(title).split(/(?:[.;]|\s[|–—]\s)\s*/).filter(Boolean);
+  if (parts.length < 2) return false;
+  const entities = parts.map(specificTransferEntities);
+  return entities.some((left, index) => entities.some((right, otherIndex) =>
+    otherIndex > index && left.size > 0 && right.size > 0 && intersectionSize(left, right) === 0
+  ));
+}
+
 function hoursBetween(a, b) {
   const ta =
     new Date(a.pubDate)
@@ -522,6 +539,10 @@ function isDuplicateArticle(a, b) {
     shareNamedEntity(a, b) &&
     shareEventClass(a, b)
   ) {
+    const aEvents = eventClasses(`${a.title || ""} ${a.summary || ""}`);
+    const bEvents = eventClasses(`${b.title || ""} ${b.summary || ""}`);
+    const transferPair = aEvents.has("transfer") && bEvents.has("transfer");
+    if (transferPair && (isMultiTopicTransferTitle(a.title) || isMultiTopicTransferTitle(b.title))) return false;
     return true;
   }
 
@@ -1196,7 +1217,9 @@ async function main() {
     successful.flatMap(
       (result) =>
         result.news
-    );
+    )
+      .map(sanitizeFeedArticle)
+      .filter(Boolean);
 
   const mergedItems =
     merge(
