@@ -37,6 +37,8 @@ export const BLOCKED_SOURCE_NAMES = new Set([
   "ticino notizie",
   "calcio rosanero",
   "calciorosanero",
+  "bottadiculo",
+  "bottadiculo it",
   "bigodino",
   "bigodino it",
   "abruzzonews24",
