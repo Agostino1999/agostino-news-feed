@@ -24,7 +24,7 @@ test("esclude tutte le fonti richieste", () => {
     "Tribuna.com", "Juventus News 24", "SpazioJ", "Tifo Juventus", "Bianconera News",
     "Cronachedi", "TuttoFrosinone.com", "vetrina tv", "primanotizia24.it", "CanaleSicilia",
     "italianotizie.online", "Radio Senise Centrale", "GiornaleSM", "Buonasera24",
-    "musicletter", "Ticino Notizie", "Calcio Rosanero",
+    "musicletter", "Ticino Notizie", "Calcio Rosanero", "Bottadiculo",
     "Bigodino.it", "AbruzzoNews24", "ArtesTV | Giornale", "Concorsando.it",
     "corrierecomo.it", "Demócrata", "Eventi e News", "Giornalemio.it", "In Prima News",
     "Informat.ro", "lamilano.it", "La Tiburtina", "M Social Magazine", "Megamodo",
@@ -33,7 +33,7 @@ test("esclude tutte le fonti richieste", () => {
     "European Parliament", "federvolley.it", "PPN ADI – Agenzia delle Infrastrutture",
     "APRE – Agenzia per la Promozione della Ricerca Europea", "CORDIS | European Commission"
   ];
-  assert.equal(blocked.length, 51);
+  assert.equal(blocked.length, 52);
   for (const source of blocked) {
     assert.equal(isBlockedSource(source), true, source);
     assert.equal(sanitizeFeedArticle(article(source)), null, source);
