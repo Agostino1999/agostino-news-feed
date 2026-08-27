@@ -680,6 +680,17 @@ function shareSpecificTransferEntity(
   return intersectionSize(ea, eb) > 0;
 }
 
+function isMultiTopicTransferTitle(title = "") {
+  const parts = String(title).split(/(?:[.;]|\s[|–—]\s)\s*/).filter(Boolean);
+  if (parts.length < 2) return false;
+  const entities = parts.map(part => new Set(
+    [...entityTokens(part)].filter(entity => !TRANSFER_ENTITY_EXCLUSIONS.has(entity))
+  ));
+  return entities.some((left, index) => entities.some((right, otherIndex) =>
+    otherIndex > index && left.size > 0 && right.size > 0 && intersectionSize(left, right) === 0
+  ));
+}
+
 function hoursBetween(
   a,
   b
@@ -854,6 +865,7 @@ function isDuplicateArticle(
     const aEvents = eventClasses(`${a.title || ""} ${a.summary || ""}`);
     const bEvents = eventClasses(`${b.title || ""} ${b.summary || ""}`);
     const transferPair = aEvents.has("transfer") && bEvents.has("transfer");
+    if (transferPair && (isMultiTopicTransferTitle(a.title) || isMultiTopicTransferTitle(b.title))) return false;
     return !transferPair || shareSpecificTransferEntity(a, b);
   }
 
@@ -1769,7 +1781,9 @@ async function main() {
     successful.flatMap(
       result =>
         result.news
-    );
+    )
+      .map(sanitizeFeedArticle)
+      .filter(Boolean);
 
   const mergedItems =
     merge(
