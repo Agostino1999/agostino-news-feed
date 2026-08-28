@@ -1416,7 +1416,8 @@ function finalClassify(
 
   const sport =
     /\b(calcio|serie [abc]|champions league|europa league|conference league|fifa|uefa|tennis|us open|wimbledon|roland garros|coppa davis|atp|wta|formula 1|formula uno|gran premio|motogp|moto gp|atletica|nuoto|basket|pallacanestro|volley|pallavolo|ciclismo|rugby|sci|mondiali|olimpiad|paralimpiad)\w*/.test(text)
-    || /\b(sinner|sabalenka|federer|alcaraz|djokovic|musetti|berrettini|leclerc|verstappen|hamilton|antonelli|spalletti)\b/.test(text);
+    || /\b(sinner|sabalenka|federer|alcaraz|djokovic|musetti|berrettini|leclerc|verstappen|hamilton|antonelli|spalletti)\b/.test(text)
+    || (/\b\d{1,2}\s*[-–]\s*\d{1,2}\b/.test(String(article.title || "")) && /\b(vince|vincono|batt|ko|sconfitt|gara|partita|match|campionat)\w*/.test(text));
 
   const humanStrongPositive =
     /\b(salvat|ritrovat|messo in salvo|fuori pericolo|salva la vita|salvano la vita|gesto eroico|lieto fine|riabbracci|sopravviss|adottat)\w*/.test(
