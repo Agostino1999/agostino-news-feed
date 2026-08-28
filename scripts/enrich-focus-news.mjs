@@ -16,6 +16,12 @@ const FOCUS_QUERIES = [
   ["Crimini & immigrazione", 'maranza OR maranze Italia arrestato aggressione rapina rissa when:2d'],
   ["Crimini & immigrazione", '"italiani di seconda generazione" OR "seconda generazione" OR "seconde generazioni" Italia when:3d'],
   ["Crimini & immigrazione", 'straniero immigrato irregolare arrestato aggressione rapina Italia when:1d'],
+  ["Crimini & immigrazione", '(immigrato OR irregolare OR clandestino OR extracomunitario) (arrestato OR rapina OR aggressione OR spaccio OR espulso) (site:ansa.it OR site:repubblica.it OR site:corriere.it OR site:adnkronos.com OR site:agi.it OR site:ilgiornale.it OR site:liberoquotidiano.it) when:4d'],
+  ["Crimini & immigrazione", '("baby gang" OR maranza OR borseggiatrice) (arrestato OR aggressione OR rapina OR rissa) (site:ansa.it OR site:repubblica.it OR site:corriere.it OR site:adnkronos.com OR site:agi.it OR site:ilgiornale.it OR site:liberoquotidiano.it) when:4d'],
+
+  // STORIE UMANE — solo esiti positivi da testate nazionali riconoscibili
+  ["Storie umane", '("salvato" OR "salvata" OR "fuori pericolo" OR "salva la vita") (site:ansa.it OR site:repubblica.it OR site:corriere.it OR site:adnkronos.com OR site:agi.it OR site:ilgiornale.it OR site:quotidiano.net) when:4d'],
+  ["Storie umane", '(cane OR gatto OR delfino OR bambino) (salvato OR adottato OR liberato OR guarito) (site:ansa.it OR site:repubblica.it OR site:corriere.it OR site:quotidiano.net) when:5d'],
 
   // EUROPA — soprattutto istituzioni e politica UE
   ["Europa", '"Commissione europea" OR "Parlamento europeo" OR "Consiglio europeo" when:1d'],
@@ -311,7 +317,9 @@ function isCrimeImmigrationFocus(article) {
     /\b(italiani di seconda generazione|italiano di seconda generazione|seconda generazione|seconde generazioni)\b/.test(text);
 
   const youthCrime =
-    /\b(baby gang|babygang|maranza|maranze)\b/.test(text);
+    /\b(baby gang|babygang|maranza|maranze)\b/.test(text)
+    &&
+    !/\b(rapper|trapper|cantante|musica|concerto|album)\w*/.test(text);
 
   return (immigration && crime) || youthCrime || (secondGeneration && crime);
 }
@@ -340,7 +348,11 @@ function applyFocusClassification(article) {
     sources: Array.isArray(article.sources) ? [...article.sources] : []
   };
 
-  if (isCrimeImmigrationFocus(copy)) addCategory(copy, "Crimini & immigrazione");
+  if (isCrimeImmigrationFocus(copy)) {
+    addCategory(copy, "Crimini & immigrazione");
+  } else if (copy.categories.includes("Crimini & immigrazione")) {
+    removeCategory(copy, "Crimini & immigrazione");
+  }
 
   // Trasporti deve contenere SOLO MIT e dossier direttamente affini.
   if (copy.categories.includes("Trasporti") && !isStrictMITTransport(copy)) {
@@ -348,6 +360,28 @@ function applyFocusClassification(article) {
   }
 
   return copy;
+}
+
+function selectFocusNews(items) {
+  const ordered = [...items].sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+  const selected = [];
+  const selectedKeys = new Set();
+  const keep = article => {
+    const key = `${normalize(article?.title || "")}|${article?.pubDate || ""}`;
+    if (selected.length >= MAX_ITEMS || selectedKeys.has(key)) return;
+    selected.push(article);
+    selectedKeys.add(key);
+  };
+
+  for (const [category, minimum] of [["Storie umane", 8], ["Crimini & immigrazione", 12]]) {
+    ordered
+      .filter(article => categoriesOf(article).includes(category))
+      .slice(0, minimum)
+      .forEach(keep);
+  }
+
+  ordered.forEach(keep);
+  return selected.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
 
 async function main() {
@@ -407,10 +441,9 @@ async function main() {
   }
 
   // Secondo passaggio: classifica anche le news nuove dopo il merge.
-  const finalNews = news
-    .map(applyFocusClassification)
-    .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
-    .slice(0, MAX_ITEMS)
+  const finalNews = selectFocusNews(
+    news.map(applyFocusClassification)
+  )
     .map(article => ({
       ...article,
       sourceCount: article.sources?.length || article.sourceCount || 1
