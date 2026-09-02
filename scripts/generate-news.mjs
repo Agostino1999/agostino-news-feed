@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import { sanitizeFeedArticle } from "../source-policy.mjs";
 import { extractFeedImage } from "../feed-images.mjs";
 
-const VERSION = "V6-RSS-THUMBNAILS";
+const VERSION = "V7-ANSA-DIRECT";
 const OUT = "news.json";
 const MAX_ITEMS = 300;
 const MIN_GOOD_ITEMS = 100;
@@ -57,6 +57,29 @@ const QUERIES = [
   ["Sport", "calcio Serie A when:1h"],
   ["Sport", "tennis Formula 1 MotoGP when:1d"],
   ["Sport", "atletica nuoto basket volley ciclismo when:1d"]
+];
+
+const DIRECT_FEEDS = [
+  {
+    source: "ANSA",
+    category: "Cronaca",
+    url: "https://www.ansa.it/sito/ansait_rss.xml"
+  },
+  {
+    source: "ANSA",
+    category: "Cronaca",
+    url: "https://www.ansa.it/veneto/notizie/veneto_rss.xml"
+  },
+  {
+    source: "ANSA",
+    category: "Cronaca",
+    url: "https://www.ansa.it/sito/notizie/topnews/topnews_rss.xml"
+  },
+  {
+    source: "ANSA",
+    category: "Politica",
+    url: "https://www.ansa.it/sito/notizie/politica/politica_rss.xml"
+  }
 ];
 
 const sleep = (ms) =>
@@ -670,6 +693,193 @@ function parseGoogle(xml, category) {
     .filter(Boolean);
 }
 
+
+function directLink(item) {
+  const normal =
+    tag(item, "link");
+
+  if (normal) {
+    return normal;
+  }
+
+  const match =
+    item.match(
+      /<link[^>]+href=["']([^"']+)["'][^>]*\/?>/i
+    );
+
+  return match
+    ? cleanText(match[1])
+    : "";
+}
+
+function directDate(item) {
+  return (
+    tag(item, "pubDate") ||
+    tag(item, "published") ||
+    tag(item, "updated") ||
+    tag(item, "dc:date")
+  );
+}
+
+function parseDirectRss(xml, feed) {
+  const items = [
+    ...(xml.match(/<item\b[\s\S]*?<\/item>/gi) || []),
+    ...(xml.match(/<entry\b[\s\S]*?<\/entry>/gi) || [])
+  ];
+
+  return items
+    .slice(0, 50)
+    .map((item) => {
+      const title =
+        tag(item, "title");
+
+      const link =
+        directLink(item);
+
+      const pubDate =
+        directDate(item);
+
+      const summary =
+        tag(item, "description") ||
+        tag(item, "summary") ||
+        tag(item, "content:encoded");
+
+      if (
+        !title ||
+        !link ||
+        !pubDate
+      ) {
+        return null;
+      }
+
+      return {
+        title,
+        summary,
+        link,
+        image:
+          extractFeedImage(item),
+        source:
+          feed.source,
+        category:
+          feed.category,
+        categories: [
+          feed.category
+        ],
+        pubDate,
+        googlePubDate:
+          null,
+        originalPubDate:
+          pubDate,
+        dateSource:
+          "original",
+        isVideo:
+          /\b(video|filmato|filmati|telecamere|ripreso|ripresa|riprese)\b/i.test(
+            `${title} ${summary}`
+          ),
+        sources: [
+          {
+            source:
+              feed.source,
+            link,
+            originalURL:
+              link,
+            pubDate,
+            originalPubDate:
+              pubDate,
+            dateSource:
+              "original"
+          }
+        ]
+      };
+    })
+    .filter(Boolean);
+}
+
+async function fetchDirectOne(feed) {
+  let lastStatus = 0;
+
+  for (
+    let attempt = 1;
+    attempt <= MAX_RETRIES;
+    attempt++
+  ) {
+    try {
+      const response =
+        await fetch(
+          feed.url,
+          {
+            headers: {
+              "User-Agent":
+                "Mozilla/5.0 (compatible; AgostinoNewsFeed/7.0)",
+
+              "Accept":
+                "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+
+              "Accept-Language":
+                "it-IT,it;q=0.9,en;q=0.7"
+            }
+          }
+        );
+
+      lastStatus =
+        response.status;
+
+      const text =
+        await response.text();
+
+      if (
+        response.ok &&
+        /<(?:item|entry)\b/i.test(text)
+      ) {
+        return {
+          ok: true,
+          status:
+            response.status,
+          feed,
+          news:
+            parseDirectRss(
+              text,
+              feed
+            )
+        };
+      }
+
+      if (
+        ![
+          429,
+          500,
+          502,
+          503,
+          504
+        ].includes(
+          response.status
+        )
+      ) {
+        break;
+      }
+    } catch (error) {
+      console.error(
+        "Direct feed error:",
+        feed.url,
+        error
+      );
+    }
+
+    await sleep(
+      1200 *
+      attempt
+    );
+  }
+
+  return {
+    ok: false,
+    status:
+      lastStatus,
+    feed,
+    news: []
+  };
+}
+
 async function fetchOne(category, query) {
   let lastStatus = 0;
 
@@ -1188,8 +1398,30 @@ async function main() {
     }
   }
 
+  const directResults =
+    await Promise.all(
+      DIRECT_FEEDS.map(
+        fetchDirectOne
+      )
+    );
+
+  for (const result of directResults) {
+    console.log(
+      `Direct ${result.feed.url}: ` +
+      `${result.ok ? "OK" : "FAIL"} ` +
+      `status=${result.status} ` +
+      `items=${result.news.length}`
+    );
+  }
+
   const successful =
     results.filter(
+      (result) =>
+        result.ok
+    );
+
+  const successfulDirect =
+    directResults.filter(
       (result) =>
         result.ok
     );
@@ -1224,13 +1456,27 @@ async function main() {
       .map(sanitizeFeedArticle)
       .filter(Boolean);
 
+  const rawDirectItems =
+    successfulDirect.flatMap(
+      (result) =>
+        result.news
+    )
+      .map(sanitizeFeedArticle)
+      .filter(Boolean);
+
+  const rawItems = [
+    ...rawDirectItems,
+    ...rawGoogleItems
+  ];
+
   const mergedItems =
     merge(
-      rawGoogleItems
+      rawItems
     );
 
   console.log(
-    `Dedup: ${rawGoogleItems.length} raw -> ${mergedItems.length} unique`
+    `Dedup: ${rawItems.length} raw -> ${mergedItems.length} unique ` +
+    `(${rawDirectItems.length} direct ANSA)`
   );
 
   const news =
@@ -1300,6 +1546,12 @@ async function main() {
       totalQueries:
         QUERIES.length,
 
+      successfulDirectFeeds:
+        successfulDirect.length,
+
+      totalDirectFeeds:
+        DIRECT_FEEDS.length,
+
       errors,
 
       servedPreviousGood:
@@ -1334,7 +1586,7 @@ async function main() {
       VERSION,
 
     engine:
-      "github-actions-google-news-v5-dedup-safe",
+      "github-actions-v7-google-plus-ansa-direct",
 
     updatedAt:
       new Date()
@@ -1354,13 +1606,22 @@ async function main() {
     totalQueries:
       QUERIES.length,
 
+    successfulDirectFeeds:
+      successfulDirect.length,
+
+    totalDirectFeeds:
+      DIRECT_FEEDS.length,
+
+    directTotal:
+      rawDirectItems.length,
+
     errors,
 
     servedPreviousGood:
       false,
 
     rawTotal:
-      rawGoogleItems.length,
+      rawItems.length,
 
     deduplicatedTotal:
       mergedItems.length,
