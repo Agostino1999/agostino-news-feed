@@ -2,6 +2,14 @@ name: Update Google News feed
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/generate-news.mjs"
+      - "source-policy.mjs"
+      - "feed-images.mjs"
+      - ".github/workflows/update-news.yml"
 
 permissions:
   contents: write
