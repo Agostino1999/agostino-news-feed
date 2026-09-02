@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import { sanitizeFeedArticle } from "../source-policy.mjs";
 import { extractFeedImage } from "../feed-images.mjs";
 
-const VERSION = "V7-ANSA-DIRECT";
+const VERSION = "V8-ANSA-FLASH";
 const OUT = "news.json";
 const MAX_ITEMS = 300;
 const MIN_GOOD_ITEMS = 100;
@@ -63,12 +63,13 @@ const DIRECT_FEEDS = [
   {
     source: "ANSA",
     category: "Cronaca",
-    url: "https://www.ansa.it/sito/ansait_rss.xml"
+    url: "https://www.ansa.it/",
+    format: "ansa-flash"
   },
   {
     source: "ANSA",
     category: "Cronaca",
-    url: "https://www.ansa.it/veneto/notizie/veneto_rss.xml"
+    url: "https://www.ansa.it/sito/ansait_rss.xml"
   },
   {
     source: "ANSA",
@@ -721,6 +722,152 @@ function directDate(item) {
   );
 }
 
+
+function parseAnsaFlash(html, feed) {
+  const markers = [
+    ...html.matchAll(
+      />\s*FLASH\s*</gi
+    )
+  ];
+
+  for (const marker of markers) {
+    const segment =
+      html.slice(
+        marker.index,
+        marker.index + 12000
+      );
+
+    const updateIndex =
+      segment.search(
+        /Aggiornamento a breve/i
+      );
+
+    if (updateIndex < 0) {
+      continue;
+    }
+
+    const area =
+      segment.slice(
+        0,
+        updateIndex
+      );
+
+    const headings = [
+      ...area.matchAll(
+        /<h[1-4]\b[^>]*>([\s\S]*?)<\/h[1-4]>/gi
+      )
+    ];
+
+    const selected =
+      headings
+        .map((match) => ({
+          html:
+            match[0],
+          title:
+            cleanText(
+              match[1]
+            )
+        }))
+        .find((item) =>
+          item.title.length >= 10 &&
+          !/^flash$/i.test(
+            item.title
+          )
+        );
+
+    if (!selected) {
+      continue;
+    }
+
+    const title =
+      selected.title
+        .replace(
+          /^\s*\+{2,}\s*/,
+          ""
+        )
+        .replace(
+          /\s*\+{2,}\s*$/,
+          ""
+        )
+        .trim();
+
+    if (!title) {
+      continue;
+    }
+
+    const rawLink =
+      selected.html.match(
+        /\bhref=["']([^"']+)["']/i
+      )?.[1] ||
+      feed.url;
+
+    let link =
+      feed.url;
+
+    try {
+      link =
+        new URL(
+          rawLink,
+          feed.url
+        ).toString();
+    } catch {
+      link =
+        feed.url;
+    }
+
+    const pubDate =
+      new Date()
+        .toISOString();
+
+    const summary =
+      "FLASH ANSA - aggiornamento a breve";
+
+    return [
+      {
+        title,
+        summary,
+        link,
+        image:
+          null,
+        source:
+          feed.source,
+        category:
+          feed.category,
+        categories: [
+          feed.category
+        ],
+        pubDate,
+        googlePubDate:
+          null,
+        originalPubDate:
+          pubDate,
+        dateSource:
+          "original",
+        isBreaking:
+          true,
+        isVideo:
+          false,
+        sources: [
+          {
+            source:
+              feed.source,
+            link,
+            originalURL:
+              link,
+            pubDate,
+            originalPubDate:
+              pubDate,
+            dateSource:
+              "original"
+          }
+        ]
+      }
+    ];
+  }
+
+  return [];
+}
+
 function parseDirectRss(xml, feed) {
   const items = [
     ...(xml.match(/<item\b[\s\S]*?<\/item>/gi) || []),
@@ -827,9 +974,16 @@ async function fetchDirectOne(feed) {
       const text =
         await response.text();
 
+      const isFlash =
+        feed.format ===
+          "ansa-flash";
+
       if (
         response.ok &&
-        /<(?:item|entry)\b/i.test(text)
+        (
+          isFlash ||
+          /<(?:item|entry)\b/i.test(text)
+        )
       ) {
         return {
           ok: true,
@@ -837,10 +991,15 @@ async function fetchDirectOne(feed) {
             response.status,
           feed,
           news:
-            parseDirectRss(
-              text,
-              feed
-            )
+            isFlash
+              ? parseAnsaFlash(
+                  text,
+                  feed
+                )
+              : parseDirectRss(
+                  text,
+                  feed
+                )
         };
       }
 
@@ -1586,7 +1745,7 @@ async function main() {
       VERSION,
 
     engine:
-      "github-actions-v7-google-plus-ansa-direct",
+      "github-actions-v8-google-plus-ansa-flash",
 
     updatedAt:
       new Date()
