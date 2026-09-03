@@ -22,6 +22,8 @@ const FOCUS_QUERIES = [
   // STORIE UMANE — solo esiti positivi da testate nazionali riconoscibili
   ["Storie umane", '("salvato" OR "salvata" OR "fuori pericolo" OR "salva la vita") (site:ansa.it OR site:repubblica.it OR site:corriere.it OR site:adnkronos.com OR site:agi.it OR site:ilgiornale.it OR site:quotidiano.net) when:4d'],
   ["Storie umane", '(cane OR gatto OR delfino OR bambino) (salvato OR adottato OR liberato OR guarito) (site:ansa.it OR site:repubblica.it OR site:corriere.it OR site:quotidiano.net) when:5d'],
+  ["Storie umane", '("salvato" OR "salvata" OR "soccorso" OR "ritrovato") (site:napolitoday.it OR site:romatoday.it OR site:milanotoday.it OR site:salernotoday.it OR site:trentotoday.it) when:5d'],
+  ["Storie umane", '("solidarietà" OR "raccolta fondi" OR "gesto eroico" OR "lieto fine") Italia when:5d'],
 
   // EUROPA — soprattutto istituzioni e politica UE
   ["Europa", '"Commissione europea" OR "Parlamento europeo" OR "Consiglio europeo" when:1d'],
@@ -115,6 +117,17 @@ function normalize(value = "") {
     .trim();
 }
 
+function isPositiveHumanStory(title = "", summary = "") {
+  const text = normalize(`${title} ${summary}`);
+  const humanSubject = /\b(person|bimb|bambin|ragazz|giovane|uomo|donna|anzian|figli|figlia|madre|padre|famiglia|escursionist|automobilist|pazient|clochard|senza dimora)\w*/.test(text);
+  const animalSubject = /\b(cane|cani|cucciol|gatto|gatti|animale|animali|bovino|cavallo|capriolo|delfin|tartarug)\w*/.test(text);
+  const positiveOutcome = /\b(salvat|soccors|ritrovat|rintracciat|recuperat|liberat|messo in salvo|fuori pericolo|riabbracci|sopravviss|adottat|gesto eroico|lieto fine|torna a casa|torna indietro|si risveglia)\w*/.test(text);
+  const solidarity = /\b(solidariet|raccolta fondi|benefic|volontari|comunita si mobilita)\w*/.test(text)
+    && /\b(aiut|don|regal|offr|famiglia|bambin|anzian|malat|difficolta)\w*/.test(text);
+  const fatal = /\b(mort|muor|decedut|cadavere|uccis|omicid|strage|si suicida|si toglie la vita)\w*/.test(text);
+  return (((humanSubject || animalSubject) && positiveOutcome) || solidarity) && !fatal;
+}
+
 const STOPWORDS = new Set(
   "della delle degli dello che con per una uno nel nella nelle alla alle dagli dalle sono come dopo prima tra fra sul sulla sulle dai dal del dei il lo la i gli le un di da a e o in su al ai si ha hanno essere contro piu non news italia italiano italiana italiani italiane".split(" ")
 );
@@ -197,6 +210,7 @@ function parseGoogle(xml, category) {
       const summary = tag(item, "description");
 
       if (!title || !pubDate || !link || isBlockedSource(source)) return null;
+      if (category === "Storie umane" && !isPositiveHumanStory(title, summary)) return null;
 
       return {
         title,
