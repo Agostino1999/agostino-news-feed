@@ -1,6 +1,7 @@
 export const BLOCKED_SOURCE_NAMES = new Set([
   "zazoom",
   "zazoom social news",
+  "mediaset infinity",
   "virgilio",
   "virgilio sport",
   "blasting news",
@@ -203,7 +204,7 @@ const ALLOWED_SPORTS_HOSTS = new Set([
   "gazzetta.it", "tuttojuve.com", "sportitalia.com", "sportitalia.it",
   "alfredopedulla.com"
 ]);
-const SPORTS_SOURCE_RE = /\b(?:calcio|calciomercato|sport|sports|football|futsal|volley|pallavolo|basket|tennis|motorsport|motogp|formula 1|fantacalcio|tuttosport|gianluca di marzio|onefootball|transfermarkt|diretta calcio|romanews|romaniste|rosaner)\b|\b(?:tutto|forza|solo)\s+(?:atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|inter|juventus|juve|lazio|lecce|milan|napoli|palermo|parma|pisa|roma|sassuolo|torino|udinese|venezia|verona)\b|\b(?:atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|inter|juventus|juve|lazio|lecce|milan|napoli|palermo|parma|pisa|roma|sassuolo|torino|udinese|venezia|verona)\s+(?:news|live|web|press|mania|24)\b|\b(?:fc|ac|ss)\s+(?:atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|inter|juventus|lazio|lecce|milan|napoli|palermo|parma|pisa|roma|sassuolo|torino|udinese|venezia|verona)(?:\s+news)?\b/;
+const SPORTS_SOURCE_RE = /\b(?:calcio|calciomercato|sport(?:ivo|iva|ivi|ive)?|sports|football|futsal|volley|pallavolo|basket|tennis|motorsport|motogp|formula 1|fantacalcio|tuttosport|gianluca di marzio|onefootball|transfermarkt|super ?tennis|hellas live|diretta calcio|romanews|romaniste|rosaner)\b|\b(?:tutto|forza|solo)\s+(?:atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|inter|juventus|juve|lazio|lecce|milan|napoli|palermo|parma|pisa|roma|sassuolo|torino|udinese|venezia|verona)\b|\b(?:atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|inter|juventus|juve|lazio|lecce|milan|napoli|palermo|parma|pisa|roma|sassuolo|torino|udinese|venezia|verona)\s+(?:news|live|web|press|mania|24)\b|\b(?:fc|ac|ss)\s+(?:atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|inter|juventus|lazio|lecce|milan|napoli|palermo|parma|pisa|roma|sassuolo|torino|udinese|venezia|verona)(?:\s+news)?\b/;
 const SPORTS_ARTICLE_RE = /\b(?:juventus|juve|bianconer|calcio|calciomercato|serie [a-d]|champions league|europa league|conference league|fifa|uefa|formula 1|motogp|tennis|basket|volley|pallavolo|atletica|nuoto|ciclismo|rugby|sinner|alcaraz|djokovic|musetti|berrettini|leclerc|verstappen|hamilton)\b/;
 
 const LOW_PRIORITY_HOSTS = new Set([
