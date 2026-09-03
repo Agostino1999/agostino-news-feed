@@ -7,6 +7,8 @@ on:
       - main
     paths:
       - "scripts/generate-news.mjs"
+      - "scripts/add-video-news.mjs"
+      - "scripts/enrich-focus-news.mjs"
       - "source-policy.mjs"
       - "feed-images.mjs"
       - ".github/workflows/update-news.yml"
