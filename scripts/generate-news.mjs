@@ -17,11 +17,11 @@ const QUERIES = [
 
   ["Cronaca", "cronaca Italia when:1h"],
   ["Cronaca", "cronaca Italia arrestato aggressione incidente when:1d"],
-  ["Cronaca", "site:tgcom24.mediaset.it when:1d"],
-  ["Cronaca", "site:tg24.sky.it when:1d"],
-  ["Cronaca", "site:liberoquotidiano.it when:1d"],
-  ["Cronaca", "site:ilgiornale.it when:1d"],
-  ["Cronaca", "site:iltempo.it when:1d"],
+  ["Cronaca", '"TGCOM24" when:1d', "tgcom24"],
+  ["Cronaca", '"Sky TG24" when:1d', "sky tg24"],
+  ["Cronaca", '"Libero Quotidiano" when:1d', "libero"],
+  ["Cronaca", '"Il Giornale" when:1d', "il giornale"],
+  ["Cronaca", '"Il Tempo" when:1d', "il tempo"],
   ["Sicurezza", "polizia carabinieri arrestato sicurezza Italia when:1d"],
 
   ["Lega", '"Matteo Salvini" when:1h'],
@@ -1049,7 +1049,7 @@ async function fetchDirectOne(feed) {
   };
 }
 
-async function fetchOne(category, query) {
+async function fetchOne(category, query, expectedSource = "") {
   let lastStatus = 0;
 
   for (
@@ -1095,11 +1095,17 @@ async function fetchOne(category, query) {
 
           query,
 
-          news:
-            parseGoogle(
+          news: (() => {
+            const parsed = parseGoogle(
               text,
               category
-            )
+            );
+            if (!expectedSource) return parsed;
+            const expected = normalize(expectedSource);
+            return parsed.filter(article =>
+              normalize(article.source || "").includes(expected)
+            );
+          })()
         };
       }
 
@@ -1542,14 +1548,16 @@ async function main() {
   ) {
     const [
       category,
-      query
+      query,
+      expectedSource = ""
     ] =
       QUERIES[i];
 
     const result =
       await fetchOne(
         category,
-        query
+        query,
+        expectedSource
       );
 
     results.push(result);
