@@ -197,6 +197,15 @@ const BLOCKED_HOSTS = new Set([
   "sprintesport.it"
 ]);
 
+const ALLOWED_SPORTS_SOURCE_RE = /\b(?:sky sport|sport sky it|sportmediaset|sport mediaset|gazzetta dello sport|gazzetta it|tuttojuve|tutto juve|fabrizio romano|sportitalia|alfredo pedull\w*|alfredopedulla)\b/;
+const ALLOWED_SPORTS_HOSTS = new Set([
+  "sport.sky.it", "sportmediaset.mediaset.it", "sportmediaset.it",
+  "gazzetta.it", "tuttojuve.com", "sportitalia.com", "sportitalia.it",
+  "alfredopedulla.com"
+]);
+const SPORTS_SOURCE_RE = /\b(?:calcio|calciomercato|sport|sports|football|futsal|volley|pallavolo|basket|tennis|motorsport|motogp|formula 1|fantacalcio|tuttosport|gianluca di marzio|onefootball|transfermarkt|diretta calcio|romanews|romaniste|rosaner)\b|\b(?:tutto|forza|solo)\s+(?:atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|inter|juventus|juve|lazio|lecce|milan|napoli|palermo|parma|pisa|roma|sassuolo|torino|udinese|venezia|verona)\b|\b(?:atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|inter|juventus|juve|lazio|lecce|milan|napoli|palermo|parma|pisa|roma|sassuolo|torino|udinese|venezia|verona)\s+(?:news|live|web|press|mania|24)\b|\b(?:fc|ac|ss)\s+(?:atalanta|bologna|cagliari|como|cremonese|fiorentina|genoa|inter|juventus|lazio|lecce|milan|napoli|palermo|parma|pisa|roma|sassuolo|torino|udinese|venezia|verona)(?:\s+news)?\b/;
+const SPORTS_ARTICLE_RE = /\b(?:juventus|juve|bianconer|calcio|calciomercato|serie [a-d]|champions league|europa league|conference league|fifa|uefa|formula 1|motogp|tennis|basket|volley|pallavolo|atletica|nuoto|ciclismo|rugby|sinner|alcaraz|djokovic|musetti|berrettini|leclerc|verstappen|hamilton)\b/;
+
 const LOW_PRIORITY_HOSTS = new Set([
   "ilsussidiario.net",
   "affaritaliani.it",
@@ -261,6 +270,21 @@ function hostMatches(host, rules) {
   return [...rules].some(rule => host === rule || host.endsWith(`.${rule}`));
 }
 
+export function isAllowedSportsSource(source) {
+  const value = normalizeSourceName(`${sourceName(source)} ${sourceUrl(source)}`);
+  return ALLOWED_SPORTS_SOURCE_RE.test(value) || hostMatches(sourceHost(source), ALLOWED_SPORTS_HOSTS);
+}
+
+function isKnownSportsSource(source) {
+  if (isAllowedSportsSource(source)) return true;
+  return SPORTS_SOURCE_RE.test(normalizeSourceName(`${sourceName(source)} ${sourceUrl(source)}`));
+}
+
+function isSportsFeedArticle(article) {
+  if ((article?.categories || [article?.category]).some(category => ["Sport", "Juventus", "Calciomercato"].includes(category))) return true;
+  return SPORTS_ARTICLE_RE.test(normalizeSourceName(`${article?.title || ""} ${article?.summary || ""}`));
+}
+
 export function isBlockedSource(source) {
   const name = normalizeSourceName(sourceName(source));
   const host = sourceHost(source);
@@ -309,9 +333,11 @@ export function sanitizeFeedArticle(article) {
   }
   if (!candidates.length) candidates.push(fallback);
 
+  const sportsOnly = isSportsFeedArticle(article) || candidates.some(isKnownSportsSource);
   const unique = new Map();
   for (const source of candidates) {
     if (!source || isBlockedSource(source)) continue;
+    if (sportsOnly && !isAllowedSportsSource(source)) continue;
     const key = `${normalizeSourceName(sourceName(source))}|${sourceUrl(source)}`;
     if (!key || unique.has(key)) continue;
     unique.set(key, { ...source, source: sourceName(source) || "Fonte" });
