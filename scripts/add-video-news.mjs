@@ -86,6 +86,14 @@ function normalize(value = "") {
     .trim();
 }
 
+function isPositiveHumanStory(title = "", summary = "") {
+  const text = normalize(`${title} ${summary}`);
+  const humanOrAnimal = /\b(person|bimb|bambin|ragazz|giovane|uomo|donna|anzian|famiglia|cane|cani|cucciol|gatto|gatti|animale|bovino|cavallo|delfin)\w*/.test(text);
+  const positiveOutcome = /\b(salvat|soccors|ritrovat|rintracciat|recuperat|liberat|messo in salvo|fuori pericolo|adottat|gesto eroico|lieto fine)\w*/.test(text);
+  const fatal = /\b(mort|muor|decedut|cadavere|uccis|omicid|strage|si suicida|si toglie la vita)\w*/.test(text);
+  return humanOrAnimal && positiveOutcome && !fatal;
+}
+
 const STOPWORDS = new Set(
   "della delle degli dello che con per una uno nel nella nelle alla alle dagli dalle sono come dopo prima tra fra sul sulla sulle dai dal del dei il lo la i gli le un di da a e o in su al ai si ha hanno essere contro piu non video news italia".split(" ")
 );
@@ -170,6 +178,7 @@ function parseGoogle(xml, category) {
       const summary = tag(item, "description");
 
       if (!title || !pubDate || !link || isBlockedSource(source)) return null;
+      if (category === "Storie umane" && !isPositiveHumanStory(title, summary)) return null;
 
       return {
         title,
