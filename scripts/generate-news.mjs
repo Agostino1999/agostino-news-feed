@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import { sanitizeFeedArticle } from "../source-policy.mjs";
 import { extractFeedImage } from "../feed-images.mjs";
 
-const VERSION = "V9-CORRIERE-DIRECT";
+const VERSION = "V10-PRIORITY-SOURCES";
 const OUT = "news.json";
 const MAX_ITEMS = 300;
 const MIN_GOOD_ITEMS = 100;
@@ -17,6 +17,11 @@ const QUERIES = [
 
   ["Cronaca", "cronaca Italia when:1h"],
   ["Cronaca", "cronaca Italia arrestato aggressione incidente when:1d"],
+  ["Cronaca", "site:tgcom24.mediaset.it when:1d"],
+  ["Cronaca", "site:tg24.sky.it when:1d"],
+  ["Cronaca", "site:liberoquotidiano.it when:1d"],
+  ["Cronaca", "site:ilgiornale.it when:1d"],
+  ["Cronaca", "site:iltempo.it when:1d"],
   ["Sicurezza", "polizia carabinieri arrestato sicurezza Italia when:1d"],
 
   ["Lega", '"Matteo Salvini" when:1h'],
@@ -1442,6 +1447,11 @@ function finalClassify(article) {
 
   if (europe) {
     add("Europa");
+  }
+
+  const hasSpecificCategory = categories.some(category => category !== "Cronaca");
+  if (hasSpecificCategory) {
+    removeCategory(categories, "Cronaca");
   }
 
   if (
