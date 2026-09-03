@@ -86,7 +86,16 @@ export const BLOCKED_SOURCE_NAMES = new Set([
   "apre",
   "apre agenzia per la promozione della ricerca europea",
   "cordis",
-  "cordis european commission"
+  "cordis european commission",
+  "larampa",
+  "la rampa",
+  "punto informatico",
+  "calcio a 5 live",
+  "calcioa5live",
+  "pagine romaniste",
+  "pagineromaniste",
+  "sprint e sport",
+  "sprintesport"
 ]);
 
 export const LOW_PRIORITY_SOURCE_NAMES = new Set([
@@ -119,8 +128,6 @@ export const LOW_PRIORITY_SOURCE_NAMES = new Set([
   "polesine 24",
   "il meridio",
   "il dolomiti",
-  "larampa",
-  "la rampa",
   "la voce di cesenatico",
   "teleromagna",
   "gazzetta d alba",
@@ -182,7 +189,12 @@ const BLOCKED_HOSTS = new Set([
   "europarl.europa.eu",
   "federvolley.it",
   "apre.it",
-  "cordis.europa.eu"
+  "cordis.europa.eu",
+  "larampa.it",
+  "punto-informatico.it",
+  "calcioa5live.com",
+  "pagineromaniste.com",
+  "sprintesport.it"
 ]);
 
 const LOW_PRIORITY_HOSTS = new Set([
@@ -208,7 +220,6 @@ const LOW_PRIORITY_HOSTS = new Set([
   "polesine24.it",
   "ilmeridio.it",
   "ildolomiti.it",
-  "larampa.it",
   "lavocedicesenatico.it",
   "teleromagna.it",
   "gazzettadalba.it",
