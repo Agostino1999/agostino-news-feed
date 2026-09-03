@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import { sanitizeFeedArticle } from "../source-policy.mjs";
 import { extractFeedImage } from "../feed-images.mjs";
 
-const VERSION = "V8-ANSA-FLASH";
+const VERSION = "V9-CORRIERE-DIRECT";
 const OUT = "news.json";
 const MAX_ITEMS = 300;
 const MIN_GOOD_ITEMS = 100;
@@ -80,6 +80,11 @@ const DIRECT_FEEDS = [
     source: "ANSA",
     category: "Politica",
     url: "https://www.ansa.it/sito/notizie/politica/politica_rss.xml"
+  },
+  {
+    source: "Corriere della Sera",
+    category: "Cronaca",
+    url: "https://www.corriere.it/feed-hp/homepage-restyle-2025.xml"
   }
 ];
 
@@ -1635,7 +1640,7 @@ async function main() {
 
   console.log(
     `Dedup: ${rawItems.length} raw -> ${mergedItems.length} unique ` +
-    `(${rawDirectItems.length} direct ANSA)`
+    `(${rawDirectItems.length} direct newsroom items)`
   );
 
   const news =
@@ -1745,7 +1750,7 @@ async function main() {
       VERSION,
 
     engine:
-      "github-actions-v8-google-plus-ansa-flash",
+      "github-actions-v9-google-plus-direct-newsrooms",
 
     updatedAt:
       new Date()
