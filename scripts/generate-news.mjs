@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import { sanitizeFeedArticle } from "../source-policy.mjs";
 import { extractFeedImage } from "../feed-images.mjs";
 
-const VERSION = "V10-PRIORITY-SOURCES";
+const VERSION = "V11-LIVE-SOURCE-MIX";
 const OUT = "news.json";
 const MAX_ITEMS = 300;
 const MIN_GOOD_ITEMS = 100;
@@ -22,6 +22,12 @@ const QUERIES = [
   ["Cronaca", '"Libero Quotidiano" when:1d', "libero"],
   ["Cronaca", '"Il Giornale" when:1d', "il giornale"],
   ["Cronaca", '"Il Tempo" when:1d', "il tempo"],
+  ["Cronaca", '"Il Messaggero" when:1d', "il messaggero"],
+  ["Cronaca", '"SalernoToday" when:1d', "salernotoday"],
+  ["Cronaca", '"NapoliToday" when:1d', "napolitoday"],
+  ["Cronaca", '"RomaToday" when:1d', "romatoday"],
+  ["Cronaca", '"MilanoToday" when:1d', "milanotoday"],
+  ["Cronaca", '"TrentoToday" when:1d', "trentotoday"],
   ["Sicurezza", "polizia carabinieri arrestato sicurezza Italia when:1d"],
 
   ["Lega", '"Matteo Salvini" when:1h'],
