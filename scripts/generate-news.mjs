@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import { sanitizeFeedArticle } from "../source-policy.mjs";
 import { extractFeedImage } from "../feed-images.mjs";
 
-const VERSION = "V11-LIVE-SOURCE-MIX";
+const VERSION = "V12-FRESH-HUMAN-BALANCE";
 const OUT = "news.json";
 const MAX_ITEMS = 300;
 const MIN_GOOD_ITEMS = 100;
@@ -1368,10 +1368,28 @@ function finalClassify(article) {
     || (/\b\d{1,2}\s*[-–]\s*\d{1,2}\b/.test(String(article.title || "")) && /\b(vince|vincono|batt|ko|sconfitt|gara|partita|match|campionat)\w*/.test(text))
     || /\b(tifos|tagliand|probabili formazion|dove vederl|grandi corse)\w*/.test(text);
 
+  const humanSubject =
+    /\b(person|bimb|bambin|ragazz|giovane|uomo|donna|anzian|figli|figlia|madre|padre|famiglia|escursionist|automobilist|pazient|clochard|senza dimora|italian[oa])\w*/.test(text);
+  const animalSubject =
+    /\b(cane|cani|cucciol|gatto|gatti|animale|animali|bovino|cavallo|capriolo|delfin|tartarug)\w*/.test(text);
+  const rescueAction =
+    /\b(salvat|soccors|ritrovat|rintracciat|recuperat|liberat|messo in salvo|fuori pericolo|riabbracci|sopravviss|adottat)\w*/.test(text);
+  const explicitPositive =
+    /\b(salva la vita|salvano la vita|vite salvate|gesto eroico|lieto fine|torna a camminare|riprende a camminare|si risveglia|torna a casa)\b/.test(text);
+  const solidarity =
+    /\b(solidariet|raccolta fondi|benefic|volontari|comunita si mobilita)\w*/.test(text)
+    && /\b(aiut|don|regal|offr|famiglia|bambin|anzian|malat|difficolta)\w*/.test(text);
+  const reunion =
+    /\b(riabbracci|ritrovat|rintracciat|torna a casa|torna indietro)\w*/.test(text)
+    && humanSubject;
+  const rescuedByResponders =
+    /\b(salvat|soccors|ritrovat)\w*/.test(text)
+    && /\b(polizi|carabinier|vigili del fuoco|medic|sanitari|passanti)\w*/.test(text);
+  const fatalNegative =
+    /\b(mort|muor|decedut|cadavere|uccis|omicid|strage|si suicida|si toglie la vita)\w*/.test(text);
   const humanPositive =
-    /\b(salvat|soccors|ritrovat|messo in salvo|fuori pericolo|salva la vita|salvano la vita|gesto eroico|eroe|solidariet|abbraccio|lieto fine|adottat)\w*/.test(text)
-    &&
-    !/\b(morto|morta|morti|morte|cadavere|ucciso|uccisa|omicidio|strage)\b/.test(text);
+    ((rescueAction && (humanSubject || animalSubject)) || explicitPositive || solidarity || reunion || rescuedByResponders)
+    && !fatalNegative;
 
   const transport =
     /\b(trasport|treno|ferrovi|autostrad|ponte sullo stretto|infrastruttur|aeroport|porto|metropolitana|metro|tav)\w*/.test(text);
@@ -1533,6 +1551,42 @@ async function readPrevious() {
   }
 }
 
+function selectBalancedNews(items) {
+  const ordered = [...items].sort(
+    (a, b) => new Date(b.pubDate) - new Date(a.pubDate)
+  );
+  const selected = [];
+  const selectedKeys = new Set();
+  const keep = (article) => {
+    const key = `${normalize(article.title || "")}|${article.pubDate || ""}`;
+    if (selected.length >= MAX_ITEMS || selectedKeys.has(key)) return;
+    selected.push(article);
+    selectedKeys.add(key);
+  };
+  const now = Date.now();
+
+  for (const [category, minimum, maxAge] of [
+    ["Storie umane", 8, 5 * 86400000],
+    ["Crimini & immigrazione", 10, 4 * 86400000]
+  ]) {
+    ordered
+      .filter((article) => {
+        const age = now - new Date(article.pubDate).getTime();
+        return (article.categories || []).includes(category)
+          && Number.isFinite(age)
+          && age >= 0
+          && age <= maxAge;
+      })
+      .slice(0, minimum)
+      .forEach(keep);
+  }
+
+  ordered.forEach(keep);
+  return selected.sort(
+    (a, b) => new Date(b.pubDate) - new Date(a.pubDate)
+  );
+}
+
 async function main() {
   console.log(
     `Starting ${VERSION}`
@@ -1667,7 +1721,7 @@ async function main() {
     `(${rawDirectItems.length} direct newsroom items)`
   );
 
-  const news =
+  const classifiedNews =
     mergedItems
       .map(finalClassify)
       .map(sanitizeFeedArticle)
@@ -1676,11 +1730,10 @@ async function main() {
         (a, b) =>
           new Date(b.pubDate) -
           new Date(a.pubDate)
-      )
-      .slice(
-        0,
-        MAX_ITEMS
-      )
+      );
+
+  const news =
+    selectBalancedNews(classifiedNews)
       .map(
         (
           article,
