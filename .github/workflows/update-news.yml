@@ -50,16 +50,26 @@ jobs:
             exit 0
           fi
 
+          GENERATED_NEWS="$(mktemp)"
+          cp news.json "$GENERATED_NEWS"
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add news.json
-          git commit -m "Update news feed"
 
           for attempt in 1 2 3; do
             echo "Push attempt $attempt"
 
-            git pull --rebase origin main
+            git fetch origin main
+            git reset --hard origin/main
+            cp "$GENERATED_NEWS" news.json
+
+            if git diff --quiet -- news.json; then
+              echo "news.json already current"
+              exit 0
+            fi
+
+            git add news.json
+            git commit -m "Update news feed"
 
             if git push origin HEAD:main; then
               echo "Push successful"
