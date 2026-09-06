@@ -2,20 +2,20 @@
   "success": true,
   "version": "V12-FRESH-HUMAN-BALANCE",
   "engine": "github-actions-v9-google-plus-direct-newsrooms",
-  "updatedAt": "2026-09-06T02:33:56.061Z",
-  "lastAttempt": "2026-09-06T02:33:56.061Z",
+  "updatedAt": "2026-09-06T02:43:29.438Z",
+  "lastAttempt": "2026-09-06T02:43:29.438Z",
   "refreshOk": true,
-  "successfulQueries": 36,
+  "successfulQueries": 37,
   "totalQueries": 44,
   "successfulDirectFeeds": 5,
   "totalDirectFeeds": 5,
   "directTotal": 99,
   "errors": {
-    "200": 8
+    "200": 7
   },
   "servedPreviousGood": false,
-  "rawTotal": 468,
-  "deduplicatedTotal": 425,
+  "rawTotal": 467,
+  "deduplicatedTotal": 423,
   "total": 300,
   "news": [
     {
@@ -28,9 +28,9 @@
       "categories": [
         "Cronaca"
       ],
-      "pubDate": "2026-09-06T02:33:53.586Z",
+      "pubDate": "2026-09-06T02:43:27.048Z",
       "googlePubDate": null,
-      "originalPubDate": "2026-09-06T02:33:53.586Z",
+      "originalPubDate": "2026-09-06T02:43:27.048Z",
       "dateSource": "original",
       "isBreaking": true,
       "isVideo": false,
@@ -39,8 +39,8 @@
           "source": "ANSA",
           "link": "https://www.ansa.it/",
           "originalURL": "https://www.ansa.it/",
-          "pubDate": "2026-09-06T02:33:53.586Z",
-          "originalPubDate": "2026-09-06T02:33:53.586Z",
+          "pubDate": "2026-09-06T02:43:27.048Z",
+          "originalPubDate": "2026-09-06T02:43:27.048Z",
           "dateSource": "original"
         },
         {
@@ -50,17 +50,94 @@
           "pubDate": "Sun, 6 Sep 2026 03:00:43 +0200",
           "originalPubDate": "Sun, 6 Sep 2026 03:00:43 +0200",
           "dateSource": "original"
-        },
-        {
-          "source": "Il Giorno",
-          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdlNnSHJfeFhUcUc3MG5IYjlnZWVJb3NyY0J2TXB5emV0Y2pfTWctT2lDbDMyc29NazNzTENEb3ZkbjNfZzZBYXpMTE8xUVpuNjR1V1pKRkVHSFU1bW1zWTlDVGRSU1gzUFBQRkpCZHhWYnlFQmpxN2FvUjZTN1ZpTkMzSXE?oc=5",
-          "pubDate": "Sun, 06 Sep 2026 01:12:26 GMT"
         }
       ],
       "originalURL": "https://www.ansa.it/",
-      "sourceCount": 3,
+      "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "casa bianca discussi piani concreti con putin per kiev-1788662033586-0"
+      "id": "casa bianca discussi piani concreti con putin per kiev-1788662607048-0"
+    },
+    {
+      "title": "Video tg4: guarda gli ultimi video e notizie",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiRkFVX3lxTE9kVndVZ1l1Q1o5bmZnT1dQVkI0V0JDbC1LMEpPTl9ISmZyY0VOTkpMdDFQRkVPQmprbkFLODBOLVE5Mmd3Vmc?oc=5\" target=\"_blank\">Video tg4: guarda gli ultimi video e notizie</a> <font color=\"#6f6f6f\">Libero</font>",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9kVndVZ1l1Q1o5bmZnT1dQVkI0V0JDbC1LMEpPTl9ISmZyY0VOTkpMdDFQRkVPQmprbkFLODBOLVE5Mmd3Vmc?oc=5",
+      "image": "",
+      "source": "Libero",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca",
+        "Sicurezza"
+      ],
+      "pubDate": "Sun, 06 Sep 2026 02:39:33 GMT",
+      "googlePubDate": "Sun, 06 Sep 2026 02:39:33 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": true,
+      "sources": [
+        {
+          "source": "Libero",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9kVndVZ1l1Q1o5bmZnT1dQVkI0V0JDbC1LMEpPTl9ISmZyY0VOTkpMdDFQRkVPQmprbkFLODBOLVE5Mmd3Vmc?oc=5",
+          "pubDate": "Sun, 06 Sep 2026 02:39:33 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9kVndVZ1l1Q1o5bmZnT1dQVkI0V0JDbC1LMEpPTl9ISmZyY0VOTkpMdDFQRkVPQmprbkFLODBOLVE5Mmd3Vmc?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "video tg4 guarda gli ultimi video e notizie-1788662373000-1"
+    },
+    {
+      "title": "Auto fuori strada a Medole, muore un 35enne",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxPb3psQjdiNldnSVNET1NZNjMwRVRTdl9YRmxtRnNCYlRidTk1MTFOQ2VBOC15LTVUSWRpOUVORVFmUlhLNGh1dWZKU25HSTNIM2NHZUtTUEZaN2lzUmpWNjZ5Tkt6UW5KWkUtaWJmYzZoYWJWMjIzY1NYRm1lLWtGZm9SNmh6RGxpdGc?oc=5\" target=\"_blank\">Auto fuori strada a Medole, muore un 35enne</a> <font color=\"#6f6f6f\">Mantovauno.it</font>",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPb3psQjdiNldnSVNET1NZNjMwRVRTdl9YRmxtRnNCYlRidTk1MTFOQ2VBOC15LTVUSWRpOUVORVFmUlhLNGh1dWZKU25HSTNIM2NHZUtTUEZaN2lzUmpWNjZ5Tkt6UW5KWkUtaWJmYzZoYWJWMjIzY1NYRm1lLWtGZm9SNmh6RGxpdGc?oc=5",
+      "image": "",
+      "source": "Mantovauno.it",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Sun, 06 Sep 2026 02:34:01 GMT",
+      "googlePubDate": "Sun, 06 Sep 2026 02:34:01 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Mantovauno.it",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPb3psQjdiNldnSVNET1NZNjMwRVRTdl9YRmxtRnNCYlRidTk1MTFOQ2VBOC15LTVUSWRpOUVORVFmUlhLNGh1dWZKU25HSTNIM2NHZUtTUEZaN2lzUmpWNjZ5Tkt6UW5KWkUtaWJmYzZoYWJWMjIzY1NYRm1lLWtGZm9SNmh6RGxpdGc?oc=5",
+          "pubDate": "Sun, 06 Sep 2026 02:34:01 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPb3psQjdiNldnSVNET1NZNjMwRVRTdl9YRmxtRnNCYlRidTk1MTFOQ2VBOC15LTVUSWRpOUVORVFmUlhLNGh1dWZKU25HSTNIM2NHZUtTUEZaN2lzUmpWNjZ5Tkt6UW5KWkUtaWJmYzZoYWJWMjIzY1NYRm1lLWtGZm9SNmh6RGxpdGc?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "auto fuori strada a medole muore un 35enne-1788662041000-2"
+    },
+    {
+      "title": "Roggero, dalla rapina ai 14 anni e 9 mesi di carcere: la Lega rilancia la grazia, Bergesio porta il caso sul Monviso",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi_wFBVV95cUxNM2NycDdpMmFsOGFidC14WHlmcVBzR0U4ZFZRaUJKOEJuWmtSZVNnbnJibS1Cb2l0dDlialRyaVlXMXhyZ1hqcDM3WFNOMjY2MnVza0FqU2NHc3FTSmdMalo5V1VDOXlOWmRIRHE4T0VmUDFlTFgxM3RGdGJ2NGk5S3BjV1I0MUpTNThnZEhNMGFXbm1IRXJFa1R6NHVrc25CekZoamhOSThpUVRWbjduYU11Ymo5elFDOExVeHR6LUhJeDdaMlFpYWZoY3RVWnVCM3NJNWxJZnNodjhRa0NXdS1WX3p3eE5pQWM5dFRkeGZzc0ZDQzBJNTJXZ3g5elU?oc=5\" target=\"_blank\">Roggero, dalla rapina ai 14 anni e 9 mesi di carcere: la Lega rilancia la grazia, Bergesio porta il caso sul Monviso</a> <font color=\"#6f6f6f\">Giornale La Voce</font>",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNM2NycDdpMmFsOGFidC14WHlmcVBzR0U4ZFZRaUJKOEJuWmtSZVNnbnJibS1Cb2l0dDlialRyaVlXMXhyZ1hqcDM3WFNOMjY2MnVza0FqU2NHc3FTSmdMalo5V1VDOXlOWmRIRHE4T0VmUDFlTFgxM3RGdGJ2NGk5S3BjV1I0MUpTNThnZEhNMGFXbm1IRXJFa1R6NHVrc25CekZoamhOSThpUVRWbjduYU11Ymo5elFDOExVeHR6LUhJeDdaMlFpYWZoY3RVWnVCM3NJNWxJZnNodjhRa0NXdS1WX3p3eE5pQWM5dFRkeGZzc0ZDQzBJNTJXZ3g5elU?oc=5",
+      "image": "",
+      "source": "Giornale La Voce",
+      "category": "Sicurezza",
+      "categories": [
+        "Sicurezza"
+      ],
+      "pubDate": "Sun, 06 Sep 2026 02:30:00 GMT",
+      "googlePubDate": "Sun, 06 Sep 2026 02:30:00 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Giornale La Voce",
+          "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNM2NycDdpMmFsOGFidC14WHlmcVBzR0U4ZFZRaUJKOEJuWmtSZVNnbnJibS1Cb2l0dDlialRyaVlXMXhyZ1hqcDM3WFNOMjY2MnVza0FqU2NHc3FTSmdMalo5V1VDOXlOWmRIRHE4T0VmUDFlTFgxM3RGdGJ2NGk5S3BjV1I0MUpTNThnZEhNMGFXbm1IRXJFa1R6NHVrc25CekZoamhOSThpUVRWbjduYU11Ymo5elFDOExVeHR6LUhJeDdaMlFpYWZoY3RVWnVCM3NJNWxJZnNodjhRa0NXdS1WX3p3eE5pQWM5dFRkeGZzc0ZDQzBJNTJXZ3g5elU?oc=5",
+          "pubDate": "Sun, 06 Sep 2026 02:30:00 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNM2NycDdpMmFsOGFidC14WHlmcVBzR0U4ZFZRaUJKOEJuWmtSZVNnbnJibS1Cb2l0dDlialRyaVlXMXhyZ1hqcDM3WFNOMjY2MnVza0FqU2NHc3FTSmdMalo5V1VDOXlOWmRIRHE4T0VmUDFlTFgxM3RGdGJ2NGk5S3BjV1I0MUpTNThnZEhNMGFXbm1IRXJFa1R6NHVrc25CekZoamhOSThpUVRWbjduYU11Ymo5elFDOExVeHR6LUhJeDdaMlFpYWZoY3RVWnVCM3NJNWxJZnNodjhRa0NXdS1WX3p3eE5pQWM5dFRkeGZzc0ZDQzBJNTJXZ3g5elU?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 25,
+      "id": "roggero dalla rapina ai 14 anni e 9 mesi di carcere la lega rilancia l-1788661800000-3"
     },
     {
       "title": "Sondaggio Ghisleri, doccia gelata per Elly Schlein: chi le passa davanti | Libero Quotidiano.it",
@@ -87,7 +164,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOGhrTVJVMUZEYWtQVjFTVFV1UGNZMmZLYjB6ZDYtajlsNG9fR1A1SVZUTmVZcWllZjNuU0RFZE92WWdSUEVzS1YwZ0Zwa3huX2VPLVVpMzFPMUpGWHN3OXJhRVM3c2Nkb2hPcXl4Q2pRNU9oWDhoSU9OWUdUanNpaFNNRXV6NzJ5dHJBb2tjUTltaGZJX3drUW1adGd2anBEcjlQa2kwOTZpXzFEMHY4a1g2OXrSAbgBQVVfeXFMTjVrekNNM3hYbDNldVNVelQtOV9pSnphVHl5TzFpTzg5LTRNT2lMSHF1cm0wUXdYUFloamlvYjBqU25HR0xlUnNWNDhZRWdtX0FRTW5IRVdMLUVmeEN3a0hXRTJNdmRRcEppclhlX0RBUmF2eElrX2RfOXVIbVFPd1JtOGd0dVllNy1lalAtdDVYOGtNb1RSeHZDdFB0SldnanpGSW5xZEZkR21VNllUMndyOXlQY2xBTw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "sondaggio ghisleri doccia gelata per elly schlein chi le passa davanti-1788660766000-1"
+      "id": "sondaggio ghisleri doccia gelata per elly schlein chi le passa davanti-1788660766000-4"
     },
     {
       "title": "Probabile Formazione - 3° Giornata",
@@ -119,41 +196,14 @@
       "originalURL": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1LQ2VPQ1htM0liTGRNNVk0a2VSNDBzYzdHMlRqRUJiYzJpYnczVnhIaVp2eEM5QUZSbHNnMHY2Vjh6SHNnQTRnWC1rekx2bFFZQkJtSTNYTS1ZcTJUUkpCaW5lc0ZWeDFfNFlEdQ?oc=5",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "probabile formazione 3 giornata-1788660483000-2"
-    },
-    {
-      "title": "Auto fuori strada a Medole, muore un uomo di 35 anni",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxPb3psQjdiNldnSVNET1NZNjMwRVRTdl9YRmxtRnNCYlRidTk1MTFOQ2VBOC15LTVUSWRpOUVORVFmUlhLNGh1dWZKU25HSTNIM2NHZUtTUEZaN2lzUmpWNjZ5Tkt6UW5KWkUtaWJmYzZoYWJWMjIzY1NYRm1lLWtGZm9SNmh6RGxpdGc?oc=5\" target=\"_blank\">Auto fuori strada a Medole, muore un uomo di 35 anni</a> <font color=\"#6f6f6f\">Mantovauno.it</font>",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPb3psQjdiNldnSVNET1NZNjMwRVRTdl9YRmxtRnNCYlRidTk1MTFOQ2VBOC15LTVUSWRpOUVORVFmUlhLNGh1dWZKU25HSTNIM2NHZUtTUEZaN2lzUmpWNjZ5Tkt6UW5KWkUtaWJmYzZoYWJWMjIzY1NYRm1lLWtGZm9SNmh6RGxpdGc?oc=5",
-      "image": "",
-      "source": "Mantovauno.it",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Sun, 06 Sep 2026 02:07:37 GMT",
-      "googlePubDate": "Sun, 06 Sep 2026 02:07:37 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Mantovauno.it",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPb3psQjdiNldnSVNET1NZNjMwRVRTdl9YRmxtRnNCYlRidTk1MTFOQ2VBOC15LTVUSWRpOUVORVFmUlhLNGh1dWZKU25HSTNIM2NHZUtTUEZaN2lzUmpWNjZ5Tkt6UW5KWkUtaWJmYzZoYWJWMjIzY1NYRm1lLWtGZm9SNmh6RGxpdGc?oc=5",
-          "pubDate": "Sun, 06 Sep 2026 02:07:37 GMT"
-        }
-      ],
-      "originalURL": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPb3psQjdiNldnSVNET1NZNjMwRVRTdl9YRmxtRnNCYlRidTk1MTFOQ2VBOC15LTVUSWRpOUVORVFmUlhLNGh1dWZKU25HSTNIM2NHZUtTUEZaN2lzUmpWNjZ5Tkt6UW5KWkUtaWJmYzZoYWJWMjIzY1NYRm1lLWtGZm9SNmh6RGxpdGc?oc=5",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "auto fuori strada a medole muore un uomo di 35 anni-1788660457000-3"
+      "id": "probabile formazione 3 giornata-1788660483000-5"
     },
     {
       "title": "Tutto pronto per la 38ª edizione del \"Premio Charlot\": la presentazione al Comune",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxQNk9CQWMzZVpfZDZBX2JDS2YtNDFNSno0NUxOcGctT3h5RVFsbXBBVXluMFdFVjhNQUpZMXdaQnU2T1NCaVFoMkVVVVN1UFh4QXg1Y0dZaFNYcWY0ei0tQUROdmJjZlVIMURQWDI0b1V3Wk5xMFdidTlVZlNzY196clhpOTREQ2Fva1lTSUJPTnZxYzdmclFJ?oc=5\" target=\"_blank\">Tutto pronto per la 38ª edizione del \"Premio Charlot\": la presentazione al Comune</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxQNk9CQWMzZVpfZDZBX2JDS2YtNDFNSno0NUxOcGctT3h5RVFsbXBBVXluMFdFVjhNQUpZMXdaQnU2T1NCaVFoMkVVVVN1UFh4QXg1Y0dZaFNYcWY0ei0tQUROdmJjZlVIMURQWDI0b1V3Wk5xMFdidTlVZlNzY196clhpOTREQ2Fva1lTSUJPTnZxYzdmclFJ?oc=5\" target=\"_blank\">Tutto pronto per la 38ª edizione del \"Premio Charlot\": la presentazione al Comune</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNk9CQWMzZVpfZDZBX2JDS2YtNDFNSno0NUxOcGctT3h5RVFsbXBBVXluMFdFVjhNQUpZMXdaQnU2T1NCaVFoMkVVVVN1UFh4QXg1Y0dZaFNYcWY0ei0tQUROdmJjZlVIMURQWDI0b1V3Wk5xMFdidTlVZlNzY196clhpOTREQ2Fva1lTSUJPTnZxYzdmclFJ?oc=5",
       "image": "",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -165,7 +215,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNk9CQWMzZVpfZDZBX2JDS2YtNDFNSno0NUxOcGctT3h5RVFsbXBBVXluMFdFVjhNQUpZMXdaQnU2T1NCaVFoMkVVVVN1UFh4QXg1Y0dZaFNYcWY0ei0tQUROdmJjZlVIMURQWDI0b1V3Wk5xMFdidTlVZlNzY196clhpOTREQ2Fva1lTSUJPTnZxYzdmclFJ?oc=5",
           "pubDate": "Sun, 06 Sep 2026 02:04:29 GMT"
         }
@@ -173,13 +223,13 @@
       "originalURL": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNk9CQWMzZVpfZDZBX2JDS2YtNDFNSno0NUxOcGctT3h5RVFsbXBBVXluMFdFVjhNQUpZMXdaQnU2T1NCaVFoMkVVVVN1UFh4QXg1Y0dZaFNYcWY0ei0tQUROdmJjZlVIMURQWDI0b1V3Wk5xMFdidTlVZlNzY196clhpOTREQ2Fva1lTSUJPTnZxYzdmclFJ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "tutto pronto per la 38 edizione del premio charlot la presentazione al-1788660269000-4"
+      "id": "tutto pronto per la 38 edizione del premio charlot la presentazione al-1788660269000-6"
     },
     {
       "title": "Germania, oggi le elezioni in Sassonia-Anhalt. Favorito l'AfD",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE0ya2w2b3NlVERycERFb1MxVWZFVTFsRE5lR3ZxcEthXzg1YkJXZnk3aVFLNDVzUlFnVE91b2JJWi1ZTFhTaG92UWhaQ25hMW5KRGtFamJEQ1hDbFI4OTNXbnQycHc2U1BpQWgwekNrcy1SQnZIRkNuQQ?oc=5\" target=\"_blank\">Germania, oggi le elezioni in Sassonia-Anhalt. Favorito l'AfD</a> <font color=\"#6f6f6f\">agi.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE0ya2w2b3NlVERycERFb1MxVWZFVTFsRE5lR3ZxcEthXzg1YkJXZnk3aVFLNDVzUlFnVE91b2JJWi1ZTFhTaG92UWhaQ25hMW5KRGtFamJEQ1hDbFI4OTNXbnQycHc2U1BpQWgwekNrcy1SQnZIRkNuQQ?oc=5\" target=\"_blank\">Germania, oggi le elezioni in Sassonia-Anhalt. Favorito l'AfD</a> <font color=\"#6f6f6f\">AGI</font>",
       "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0ya2w2b3NlVERycERFb1MxVWZFVTFsRE5lR3ZxcEthXzg1YkJXZnk3aVFLNDVzUlFnVE91b2JJWi1ZTFhTaG92UWhaQ25hMW5KRGtFamJEQ1hDbFI4OTNXbnQycHc2U1BpQWgwekNrcy1SQnZIRkNuQQ?oc=5",
-      "source": "agi.it",
+      "source": "AGI",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -191,7 +241,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0ya2w2b3NlVERycERFb1MxVWZFVTFsRE5lR3ZxcEthXzg1YkJXZnk3aVFLNDVzUlFnVE91b2JJWi1ZTFhTaG92UWhaQ25hMW5KRGtFamJEQ1hDbFI4OTNXbnQycHc2U1BpQWgwekNrcy1SQnZIRkNuQQ?oc=5",
           "pubDate": "Sun, 06 Sep 2026 02:03:00 GMT"
         }
@@ -229,7 +279,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcGdsb01OMk1lNXFRRWFEdHphWHJQODYxNlRmdk9VdS1mRU80bEE0LVpSWmhKNUc4Ri1Hb2xYUlN2Rm5Ba19ZNWFPc3JmR0ZoMnNuMDJDLV90elVZNGVHeU1NME1Oam0wa2xTMTFSYnlHc01pWkV0YnJzNXV2MHFsNjhFNENQZndLNjFIOU1yem1JSFlnbnkyRjJwVGdtQ0NDX1M1NUZvTUV6WmNOeU1R?oc=5",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "colpito dalla cesta di una mongolfiera turista tedesco muore in svizze-1788660151000-5"
+      "id": "colpito dalla cesta di una mongolfiera turista tedesco muore in svizze-1788660151000-7"
     },
     {
       "title": "Giorgia Meloni \"fa la storia\", il plauso di Rutte: \"Grazie Italia. Una grande alleata\" | Libero Quotidiano.it",
@@ -257,7 +307,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSV8xMGRFbkI5d2Z1QXh2V3hHVlh2eW1FaloxWXM4QXVWVTc0ZlFXZHhMWTJfNEJEdjRTSUxGQzlvbDNhbGhIUGNnOVVfcU1aZUxzajNSRDVXblZPaWU2YUhqa2hOVlBDNnJFemgyQTdHV2xucUo2MTM4S0lMNFlZTHZjOURKWkptRzR0aTcyalpTaUV1dk1HQ2NqQjBxU3I2OFBHcWZqVEg3aEs5bEZUemp0U1JFalB0UHI00gHAAUFVX3lxTE9qYnBCa3c4SnlSNzJRYWczNi0tLWdSWU5XaW5xTDdoSUc5dE52NlYyVTFtWE0tNTNMVms5UVRYTTJYMUd0OUloMXdoWlIweFVObmRiSzE1Qm56OElabHhSMHRhUnpOT3U2ckh3aGFkUGRQVl9USURiU0RGdjU2SHNhQldvTHhNY1hLZVBQNkdvcEFzTTk4ZXpYOS1xSlFhdmtITmJWZThFa2haTTdRS1N6dDkzME90emJRcExFaFlpMw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "giorgia meloni fa la storia il plauso di rutte grazie italia una grand-1788659800000-6"
+      "id": "giorgia meloni fa la storia il plauso di rutte grazie italia una grand-1788659800000-8"
     },
     {
       "title": "Piano da 200 miliardi per tagliare le bollette",
@@ -284,69 +334,14 @@
       "originalURL": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMjU4dW52bHZEZExyNmxNZm5la1p6TzVhUFl5cS1xTFZnZmk5Y2NXYXV0Z3ZOaUI0N1l3WTM5TV83dUN6QVVjWk1NSjZDZ2ZPd0otYVRfb1pVRFh5a3hJbWloMUcyR3MyZzNRYmRLWWRTMTQwQWh6UzFFS1ZqUy0tMzhyS05HUUVlY1dHTVBwY1pEOGF4QXBGMlUtZGXSAZsBQVVfeXFMTWd3OW9BV09aUVl6Y3dqNjdKUFJOY1lKR05RR1Vuam1NdFc2TkN5RzdLSXdobDFrVk1XLWRWVXBRV0FiWGFpNXZfeEhkNm5rdGpMYnZLM1RsVjhmWXVkdEJKOUItTkxHaGVWWlhWRDB6dWRleDlIa2daWkd1TzNuX1lXRWJKUGw1QmtSSjlRb180cjNPUlhFUTREV2s?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "piano da 200 miliardi per tagliare le bollette-1788659711000-7"
-    },
-    {
-      "title": "Almanacco del 5 settembre: accadde oggi, compleanni, santo e proverbio del giorno",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE9XRzJfS0dqSUQxM0RENUkxUzBPcGtuYTFtX1VHS2s4elo1UGdkQUpfMDBqU0t4MF9fajhRQ0lXZk0wNnpCRmFYTC1mV3lSLWlmQ001QXZTOHJrWXFpS0lVTjdSNXJGcHBabU9OYWlzTDZvNG5KNVE?oc=5\" target=\"_blank\">Almanacco del 5 settembre: accadde oggi, compleanni, santo e proverbio del giorno</a> <font color=\"#6f6f6f\">ArezzoNotizie</font>",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9XRzJfS0dqSUQxM0RENUkxUzBPcGtuYTFtX1VHS2s4elo1UGdkQUpfMDBqU0t4MF9fajhRQ0lXZk0wNnpCRmFYTC1mV3lSLWlmQ001QXZTOHJrWXFpS0lVTjdSNXJGcHBabU9OYWlzTDZvNG5KNVE?oc=5",
-      "image": "",
-      "source": "ArezzoNotizie",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Sun, 06 Sep 2026 01:41:46 GMT",
-      "googlePubDate": "Sun, 06 Sep 2026 01:41:46 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "ArezzoNotizie",
-          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9XRzJfS0dqSUQxM0RENUkxUzBPcGtuYTFtX1VHS2s4elo1UGdkQUpfMDBqU0t4MF9fajhRQ0lXZk0wNnpCRmFYTC1mV3lSLWlmQ001QXZTOHJrWXFpS0lVTjdSNXJGcHBabU9OYWlzTDZvNG5KNVE?oc=5",
-          "pubDate": "Sun, 06 Sep 2026 01:41:46 GMT"
-        }
-      ],
-      "originalURL": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9XRzJfS0dqSUQxM0RENUkxUzBPcGtuYTFtX1VHS2s4elo1UGdkQUpfMDBqU0t4MF9fajhRQ0lXZk0wNnpCRmFYTC1mV3lSLWlmQ001QXZTOHJrWXFpS0lVTjdSNXJGcHBabU9OYWlzTDZvNG5KNVE?oc=5",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "almanacco del 5 settembre accadde oggi compleanni santo e proverbio de-1788658906000-8"
-    },
-    {
-      "title": "Video tg4: guarda gli ultimi video e notizie",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiRkFVX3lxTE9kVndVZ1l1Q1o5bmZnT1dQVkI0V0JDbC1LMEpPTl9ISmZyY0VOTkpMdDFQRkVPQmprbkFLODBOLVE5Mmd3Vmc?oc=5\" target=\"_blank\">Video tg4: guarda gli ultimi video e notizie</a> <font color=\"#6f6f6f\">Libero</font>",
-      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9kVndVZ1l1Q1o5bmZnT1dQVkI0V0JDbC1LMEpPTl9ISmZyY0VOTkpMdDFQRkVPQmprbkFLODBOLVE5Mmd3Vmc?oc=5",
-      "image": "",
-      "source": "Libero",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca",
-        "Sicurezza"
-      ],
-      "pubDate": "Sun, 06 Sep 2026 01:40:11 GMT",
-      "googlePubDate": "Sun, 06 Sep 2026 01:40:11 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": true,
-      "sources": [
-        {
-          "source": "Libero",
-          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9kVndVZ1l1Q1o5bmZnT1dQVkI0V0JDbC1LMEpPTl9ISmZyY0VOTkpMdDFQRkVPQmprbkFLODBOLVE5Mmd3Vmc?oc=5",
-          "pubDate": "Sun, 06 Sep 2026 01:40:11 GMT"
-        }
-      ],
-      "originalURL": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9kVndVZ1l1Q1o5bmZnT1dQVkI0V0JDbC1LMEpPTl9ISmZyY0VOTkpMdDFQRkVPQmprbkFLODBOLVE5Mmd3Vmc?oc=5",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "video tg4 guarda gli ultimi video e notizie-1788658811000-9"
+      "id": "piano da 200 miliardi per tagliare le bollette-1788659711000-9"
     },
     {
       "title": "Le strade chiuse a Roma sabato 5 e domenica 6 settembre 2026",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxQRldULTY3aUVmUHVJWkFHQWxrVkYyT2lXRGJOelpYRXgybEVidGpZbFowdlBPTTE4OWxwZlFqWVZYcy0wY1FLQVBtMXRvTFJHWHBrWHZOaTZveVZGRnRQY1ZLUXpCSVdSYngzLXJqcWtGQVZVZnBxVFJyVmVtSEc3UnItZFVOWmlNbjkzcXVoS0NBT1pFTVJyQw?oc=5\" target=\"_blank\">Le strade chiuse a Roma sabato 5 e domenica 6 settembre 2026</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxQRldULTY3aUVmUHVJWkFHQWxrVkYyT2lXRGJOelpYRXgybEVidGpZbFowdlBPTTE4OWxwZlFqWVZYcy0wY1FLQVBtMXRvTFJHWHBrWHZOaTZveVZGRnRQY1ZLUXpCSVdSYngzLXJqcWtGQVZVZnBxVFJyVmVtSEc3UnItZFVOWmlNbjkzcXVoS0NBT1pFTVJyQw?oc=5\" target=\"_blank\">Le strade chiuse a Roma sabato 5 e domenica 6 settembre 2026</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRldULTY3aUVmUHVJWkFHQWxrVkYyT2lXRGJOelpYRXgybEVidGpZbFowdlBPTTE4OWxwZlFqWVZYcy0wY1FLQVBtMXRvTFJHWHBrWHZOaTZveVZGRnRQY1ZLUXpCSVdSYngzLXJqcWtGQVZVZnBxVFJyVmVtSEc3UnItZFVOWmlNbjkzcXVoS0NBT1pFTVJyQw?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -358,7 +353,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRldULTY3aUVmUHVJWkFHQWxrVkYyT2lXRGJOelpYRXgybEVidGpZbFowdlBPTTE4OWxwZlFqWVZYcy0wY1FLQVBtMXRvTFJHWHBrWHZOaTZveVZGRnRQY1ZLUXpCSVdSYngzLXJqcWtGQVZVZnBxVFJyVmVtSEc3UnItZFVOWmlNbjkzcXVoS0NBT1pFTVJyQw?oc=5",
           "pubDate": "Sun, 06 Sep 2026 01:35:24 GMT"
         }
@@ -370,10 +365,10 @@
     },
     {
       "title": "53esima Sagra della Lumaca",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxQRk9vYzNZaTd2R1RHcVd0SHRUejY4akJZSlM5ZHNEb09IM3o5YlVrSDRHSVVibVREZVpaeGNGSC1CenVkMVRPLWNGRHgzWDZEcnFSTlpieElDWWRTYVNBdkVFVVUzbXpVcS1oRlktQXdMUFZhOHUxMlMyREVsWlNHYWJEY1dVT0tPQnZNOVJxdmZYa0lhTVE?oc=5\" target=\"_blank\">53esima Sagra della Lumaca</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxQRk9vYzNZaTd2R1RHcVd0SHRUejY4akJZSlM5ZHNEb09IM3o5YlVrSDRHSVVibVREZVpaeGNGSC1CenVkMVRPLWNGRHgzWDZEcnFSTlpieElDWWRTYVNBdkVFVVUzbXpVcS1oRlktQXdMUFZhOHUxMlMyREVsWlNHYWJEY1dVT0tPQnZNOVJxdmZYa0lhTVE?oc=5\" target=\"_blank\">53esima Sagra della Lumaca</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRk9vYzNZaTd2R1RHcVd0SHRUejY4akJZSlM5ZHNEb09IM3o5YlVrSDRHSVVibVREZVpaeGNGSC1CenVkMVRPLWNGRHgzWDZEcnFSTlpieElDWWRTYVNBdkVFVVUzbXpVcS1oRlktQXdMUFZhOHUxMlMyREVsWlNHYWJEY1dVT0tPQnZNOVJxdmZYa0lhTVE?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -385,7 +380,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRk9vYzNZaTd2R1RHcVd0SHRUejY4akJZSlM5ZHNEb09IM3o5YlVrSDRHSVVibVREZVpaeGNGSC1CenVkMVRPLWNGRHgzWDZEcnFSTlpieElDWWRTYVNBdkVFVVUzbXpVcS1oRlktQXdMUFZhOHUxMlMyREVsWlNHYWJEY1dVT0tPQnZNOVJxdmZYa0lhTVE?oc=5",
           "pubDate": "Sun, 06 Sep 2026 01:31:28 GMT"
         }
@@ -397,10 +392,10 @@
     },
     {
       "title": "Judo, a Ostia il Seminario Nazionale Alti Gradi Fijlkam",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxQR05uMnNmNTVXbk05RXdELVJjR19MM3lJX0pNbmVBOGhRajF5ZXYyYS1leXMtRjUxRXJKeXlSTWtOcTRabDlnbEx4T29sREpUQi10cWJDclprVnozSDFJQWthTXY5N3Y2c21Ib3FsbU1DMGMtOTBFaDBOM0RpS0R6V3JWQS1KWkRlRVNNVDN2cm1WMkJTRE8tUWZuNnJBN0NfQzZDZzZkRTE5T1U2cnc?oc=5\" target=\"_blank\">Judo, a Ostia il Seminario Nazionale Alti Gradi Fijlkam</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxQR05uMnNmNTVXbk05RXdELVJjR19MM3lJX0pNbmVBOGhRajF5ZXYyYS1leXMtRjUxRXJKeXlSTWtOcTRabDlnbEx4T29sREpUQi10cWJDclprVnozSDFJQWthTXY5N3Y2c21Ib3FsbU1DMGMtOTBFaDBOM0RpS0R6V3JWQS1KWkRlRVNNVDN2cm1WMkJTRE8tUWZuNnJBN0NfQzZDZzZkRTE5T1U2cnc?oc=5\" target=\"_blank\">Judo, a Ostia il Seminario Nazionale Alti Gradi Fijlkam</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQR05uMnNmNTVXbk05RXdELVJjR19MM3lJX0pNbmVBOGhRajF5ZXYyYS1leXMtRjUxRXJKeXlSTWtOcTRabDlnbEx4T29sREpUQi10cWJDclprVnozSDFJQWthTXY5N3Y2c21Ib3FsbU1DMGMtOTBFaDBOM0RpS0R6V3JWQS1KWkRlRVNNVDN2cm1WMkJTRE8tUWZuNnJBN0NfQzZDZzZkRTE5T1U2cnc?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -412,7 +407,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQR05uMnNmNTVXbk05RXdELVJjR19MM3lJX0pNbmVBOGhRajF5ZXYyYS1leXMtRjUxRXJKeXlSTWtOcTRabDlnbEx4T29sREpUQi10cWJDclprVnozSDFJQWthTXY5N3Y2c21Ib3FsbU1DMGMtOTBFaDBOM0RpS0R6V3JWQS1KWkRlRVNNVDN2cm1WMkJTRE8tUWZuNnJBN0NfQzZDZzZkRTE5T1U2cnc?oc=5",
           "pubDate": "Sun, 06 Sep 2026 01:30:14 GMT"
         }
@@ -424,10 +419,10 @@
     },
     {
       "title": "Sagra della porchetta di Ariccia | 4-6 settembre 2026",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxPNWFKNUxpX1dCZVZhNUQyQ2toeWdaZTFQUnlTbXl3Nk0yQ2lYSjlGVGZYdjZ3cHFTMXpWX0dIZWNBZnk0SENZY1pYejR0MWNlSG1UcHVENWFlWXZBdzZHNlJHSzJnbVNNeDdUZFNCLWtEUURWTHlWQ0ZDQmx5VTZMdEhUVWJPUQ?oc=5\" target=\"_blank\">Sagra della porchetta di Ariccia | 4-6 settembre 2026</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxPNWFKNUxpX1dCZVZhNUQyQ2toeWdaZTFQUnlTbXl3Nk0yQ2lYSjlGVGZYdjZ3cHFTMXpWX0dIZWNBZnk0SENZY1pYejR0MWNlSG1UcHVENWFlWXZBdzZHNlJHSzJnbVNNeDdUZFNCLWtEUURWTHlWQ0ZDQmx5VTZMdEhUVWJPUQ?oc=5\" target=\"_blank\">Sagra della porchetta di Ariccia | 4-6 settembre 2026</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPNWFKNUxpX1dCZVZhNUQyQ2toeWdaZTFQUnlTbXl3Nk0yQ2lYSjlGVGZYdjZ3cHFTMXpWX0dIZWNBZnk0SENZY1pYejR0MWNlSG1UcHVENWFlWXZBdzZHNlJHSzJnbVNNeDdUZFNCLWtEUURWTHlWQ0ZDQmx5VTZMdEhUVWJPUQ?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -439,7 +434,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPNWFKNUxpX1dCZVZhNUQyQ2toeWdaZTFQUnlTbXl3Nk0yQ2lYSjlGVGZYdjZ3cHFTMXpWX0dIZWNBZnk0SENZY1pYejR0MWNlSG1UcHVENWFlWXZBdzZHNlJHSzJnbVNNeDdUZFNCLWtEUURWTHlWQ0ZDQmx5VTZMdEhUVWJPUQ?oc=5",
           "pubDate": "Sun, 06 Sep 2026 01:28:30 GMT"
         }
@@ -451,10 +446,10 @@
     },
     {
       "title": "Musei gratis domenica 6 settembre: tutte le mostre in programma e visitabili",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcTZwS1NhTmpKV2RxVVFLNXIwcUs2WlhFbVA4R2M2OXdTb0hydlR0ZEszRE0yU1hyb2tVczV6ajlyMzl4Sm9ubllHajVGZHUxTkRNRzFVaDN0ZGdrTkdONl9mYlM0V182bVJvSFNqZUIzRG10NDFiYWM1UEltaFFQNll6V0xBRy00R2hV?oc=5\" target=\"_blank\">Musei gratis domenica 6 settembre: tutte le mostre in programma e visitabili</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcTZwS1NhTmpKV2RxVVFLNXIwcUs2WlhFbVA4R2M2OXdTb0hydlR0ZEszRE0yU1hyb2tVczV6ajlyMzl4Sm9ubllHajVGZHUxTkRNRzFVaDN0ZGdrTkdONl9mYlM0V182bVJvSFNqZUIzRG10NDFiYWM1UEltaFFQNll6V0xBRy00R2hV?oc=5\" target=\"_blank\">Musei gratis domenica 6 settembre: tutte le mostre in programma e visitabili</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcTZwS1NhTmpKV2RxVVFLNXIwcUs2WlhFbVA4R2M2OXdTb0hydlR0ZEszRE0yU1hyb2tVczV6ajlyMzl4Sm9ubllHajVGZHUxTkRNRzFVaDN0ZGdrTkdONl9mYlM0V182bVJvSFNqZUIzRG10NDFiYWM1UEltaFFQNll6V0xBRy00R2hV?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -466,7 +461,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcTZwS1NhTmpKV2RxVVFLNXIwcUs2WlhFbVA4R2M2OXdTb0hydlR0ZEszRE0yU1hyb2tVczV6ajlyMzl4Sm9ubllHajVGZHUxTkRNRzFVaDN0ZGdrTkdONl9mYlM0V182bVJvSFNqZUIzRG10NDFiYWM1UEltaFFQNll6V0xBRy00R2hV?oc=5",
           "pubDate": "Sun, 06 Sep 2026 01:23:56 GMT"
         }
@@ -532,9 +527,9 @@
     },
     {
       "title": "AGI: LE NOTIZIE DEL GIORNO (ORE 24:00)",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNeUI3RjBFeERxcUJmRUM1SFNZMy1WZ3lMYTBtVzMtblFCcmpNS25PMzFzMkYxMkNORlZBaGdmLWI3R29HcVpoNEYyODQxNzBDSnlGVEp4ZU9BbmRScWtsd0stS05Bb1ZkbWVFYUZNbzRzQ3NSWVFyakNkWlgzdEs5TDBR?oc=5\" target=\"_blank\">AGI: LE NOTIZIE DEL GIORNO (ORE 24:00)</a> <font color=\"#6f6f6f\">agi.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNeUI3RjBFeERxcUJmRUM1SFNZMy1WZ3lMYTBtVzMtblFCcmpNS25PMzFzMkYxMkNORlZBaGdmLWI3R29HcVpoNEYyODQxNzBDSnlGVEp4ZU9BbmRScWtsd0stS05Bb1ZkbWVFYUZNbzRzQ3NSWVFyakNkWlgzdEs5TDBR?oc=5\" target=\"_blank\">AGI: LE NOTIZIE DEL GIORNO (ORE 24:00)</a> <font color=\"#6f6f6f\">AGI</font>",
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeUI3RjBFeERxcUJmRUM1SFNZMy1WZ3lMYTBtVzMtblFCcmpNS25PMzFzMkYxMkNORlZBaGdmLWI3R29HcVpoNEYyODQxNzBDSnlGVEp4ZU9BbmRScWtsd0stS05Bb1ZkbWVFYUZNbzRzQ3NSWVFyakNkWlgzdEs5TDBR?oc=5",
-      "source": "agi.it",
+      "source": "AGI",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -546,7 +541,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeUI3RjBFeERxcUJmRUM1SFNZMy1WZ3lMYTBtVzMtblFCcmpNS25PMzFzMkYxMkNORlZBaGdmLWI3R29HcVpoNEYyODQxNzBDSnlGVEp4ZU9BbmRScWtsd0stS05Bb1ZkbWVFYUZNbzRzQ3NSWVFyakNkWlgzdEs5TDBR?oc=5",
           "pubDate": "Sun, 06 Sep 2026 01:03:22 GMT"
         }
@@ -687,6 +682,40 @@
       "id": "lazio diogo leite corre da gattuso-1788654614000-20"
     },
     {
+      "title": "Prima Pagina di oggi, Edizione Cremona di domenica 06 settembre",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxOSVRnS0pzVDdEeXVtMHhYeGdEYncwcVZjT3pEdTBVXzVFTWFuWml5UGsyanFrbzUySnVYSGJuQ0pwNlJRdml1Q0JvQk13dVMzTENyRW5YaEpCMnJGUEF0ZDBKQXVMNVgwVV85R2F6Q2d2aE1LZXByU1FBaWZDa25CR2FIUkpxam9jaXZzMlZn?oc=5\" target=\"_blank\">Prima Pagina di oggi, Edizione Cremona di domenica 06 settembre</a> <font color=\"#6f6f6f\">Il Giorno</font>",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSVRnS0pzVDdEeXVtMHhYeGdEYncwcVZjT3pEdTBVXzVFTWFuWml5UGsyanFrbzUySnVYSGJuQ0pwNlJRdml1Q0JvQk13dVMzTENyRW5YaEpCMnJGUEF0ZDBKQXVMNVgwVV85R2F6Q2d2aE1LZXByU1FBaWZDa25CR2FIUkpxam9jaXZzMlZn?oc=5",
+      "source": "Il Giorno",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Sun, 06 Sep 2026 00:27:02 GMT",
+      "googlePubDate": "Sun, 06 Sep 2026 00:27:02 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Il Giorno",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSVRnS0pzVDdEeXVtMHhYeGdEYncwcVZjT3pEdTBVXzVFTWFuWml5UGsyanFrbzUySnVYSGJuQ0pwNlJRdml1Q0JvQk13dVMzTENyRW5YaEpCMnJGUEF0ZDBKQXVMNVgwVV85R2F6Q2d2aE1LZXByU1FBaWZDa25CR2FIUkpxam9jaXZzMlZn?oc=5",
+          "pubDate": "Sun, 06 Sep 2026 00:27:02 GMT"
+        },
+        {
+          "source": "Il Giorno",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVVdScUR6U1NDX0p1VGdCTEo0aC1MeWhXdlJwa2huSGFBc0hDZ1JjNnJwd3VaSzdjaEVCSU9IblJxRU0zZ3JDbktzRUFUWldkRUdQb042bThMWXNaOFVVWVQ0VkF6NWJVd2s1ckdSSmxsRFNIRnNFR3YxLXJDeFhaRC10ZlVxcFlIdXlvVnhJVGVRWk4wZ3hwWEJB?oc=5",
+          "pubDate": "Sun, 06 Sep 2026 00:19:07 GMT"
+        },
+        {
+          "source": "Il Giorno",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdzVRUjBIWnRfY2luMDc5cmlPbEkyYUd3Ti1mMFg1Q095V0I4NXROYUpDZG5PN1ZHSWdyMkJIUTlLNnBkdi12X1Y5SHFYdUxMRU9pUXZMZVRvWG1PZXAzVE5oWXgwYVF5RWoxRVZ5RUUxSE5FUFhmc1lVQjJfM2pUSW9HeFBvc3dsdWlF?oc=5",
+          "pubDate": "Sat, 05 Sep 2026 22:00:00 GMT"
+        }
+      ],
+      "id": "focus-prima pagina di oggi edizione cremona di domenica 06 settembre-1788654422000",
+      "sourceCount": 3
+    },
+    {
       "title": "Il gasolio sversato nel Naviglio ha provocato una chiazza oleosa di 28 chilometri, ora i test di laboratorio sui campioni d'acqua. L’appello: “Il responsabile si costituisca”",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxPWUEyMzRDT0RmZ3k3Y1B6N0VfS1BjWWJZR0dxU2VXY0E0QS1JbElIRXhWeWFyVVUwYUlEQi1sN1B4RGdhSHB4YldaNlhwMmxCRjdvT0I2WXg4UTBTYU1JRDR4SVJGRjNjQUdBWk1UZ1NrLXlFRWhNLXA4NzRWbjFmQ0pYVEI2SURFRXpMQUVCYjlqd1pIOF9jNkI0VFlpVUJMcVZ4MkNOU3owMk9N?oc=5\" target=\"_blank\">Il gasolio sversato nel Naviglio ha provocato una chiazza oleosa di 28 chilometri, ora i test di laboratorio sui campioni d'acqua. L’appello: “Il responsabile si costituisca”</a> <font color=\"#6f6f6f\">Il Giorno</font>",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWUEyMzRDT0RmZ3k3Y1B6N0VfS1BjWWJZR0dxU2VXY0E0QS1JbElIRXhWeWFyVVUwYUlEQi1sN1B4RGdhSHB4YldaNlhwMmxCRjdvT0I2WXg4UTBTYU1JRDR4SVJGRjNjQUdBWk1UZ1NrLXlFRWhNLXA4NzRWbjFmQ0pYVEI2SURFRXpMQUVCYjlqd1pIOF9jNkI0VFlpVUJMcVZ4MkNOU3owMk9N?oc=5",
@@ -736,30 +765,6 @@
       "sourceCount": 1,
       "sourcePriority": 55,
       "id": "sala verso il senato il centrodestra attacca il sindaco cerca una polt-1788653192000-21"
-    },
-    {
-      "title": "La sfida di Speranza Scappucci: “Portare la musica fuori dalle élite”",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTE9QLVd6R1Y4R1BSWExrM2ZISTJGak1fRVRQd1Ewc0prM2t5YzRJa3RlWEdVWml1SDF4dDhLS0hQcjBoR2pYS1pKaEpVdnUxM1RSOElmS3pOalA4WUxYV2hSVVFOczBsQ1FjbmZyMHVnVE5VN2hs?oc=5\" target=\"_blank\">La sfida di Speranza Scappucci: “Portare la musica fuori dalle élite”</a> <font color=\"#6f6f6f\">Il Giorno</font>",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9QLVd6R1Y4R1BSWExrM2ZISTJGak1fRVRQd1Ewc0prM2t5YzRJa3RlWEdVWml1SDF4dDhLS0hQcjBoR2pYS1pKaEpVdnUxM1RSOElmS3pOalA4WUxYV2hSVVFOczBsQ1FjbmZyMHVnVE5VN2hs?oc=5",
-      "source": "Il Giorno",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Sun, 06 Sep 2026 00:03:13 GMT",
-      "googlePubDate": "Sun, 06 Sep 2026 00:03:13 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Il Giorno",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9QLVd6R1Y4R1BSWExrM2ZISTJGak1fRVRQd1Ewc0prM2t5YzRJa3RlWEdVWml1SDF4dDhLS0hQcjBoR2pYS1pKaEpVdnUxM1RSOElmS3pOalA4WUxYV2hSVVFOczBsQ1FjbmZyMHVnVE5VN2hs?oc=5",
-          "pubDate": "Sun, 06 Sep 2026 00:03:13 GMT"
-        }
-      ],
-      "id": "focus-la sfida di speranza scappucci portare la musica fuori dalle elite-1788652993000",
-      "sourceCount": 1
     },
     {
       "title": "Video tg5: guarda gli ultimi video e notizie",
@@ -869,11 +874,35 @@
       "id": "europa allo sbando rissa incontenibile si finisce il tribunale libero -1788650572000-23"
     },
     {
+      "title": "Darderi centra gli ottavi agli Us Open, Sweeny ko in tre set - Il Tempo",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxNSEctVzZXaHkxMkJ5a0o1UWphRWhGeVM5ZklWVWZnOEV0ek5JUFZ6cTlvSkkxR1czYTduYVpRTlZLVnJmcU8wYXZmX201WFRxbktVdDJXTGthb3ZaMERENl9XaHkyOVRsSEJUX2dwWlpCVDNuR0xUbTk3OGhiOFBxd2pXWGxiRFNsUDRQWlhJOWFJbURhUDROdjJJX3BmaDYyUVFraWhKUm53anJkVTBpV1lTMl9mTDJtTWc?oc=5\" target=\"_blank\">Darderi centra gli ottavi agli Us Open, Sweeny ko in tre set - Il Tempo</a> <font color=\"#6f6f6f\">Il Tempo</font>",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSEctVzZXaHkxMkJ5a0o1UWphRWhGeVM5ZklWVWZnOEV0ek5JUFZ6cTlvSkkxR1czYTduYVpRTlZLVnJmcU8wYXZmX201WFRxbktVdDJXTGthb3ZaMERENl9XaHkyOVRsSEJUX2dwWlpCVDNuR0xUbTk3OGhiOFBxd2pXWGxiRFNsUDRQWlhJOWFJbURhUDROdjJJX3BmaDYyUVFraWhKUm53anJkVTBpV1lTMl9mTDJtTWc?oc=5",
+      "source": "Il Tempo",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Sat, 05 Sep 2026 23:20:38 GMT",
+      "googlePubDate": "Sat, 05 Sep 2026 23:20:38 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Il Tempo",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSEctVzZXaHkxMkJ5a0o1UWphRWhGeVM5ZklWVWZnOEV0ek5JUFZ6cTlvSkkxR1czYTduYVpRTlZLVnJmcU8wYXZmX201WFRxbktVdDJXTGthb3ZaMERENl9XaHkyOVRsSEJUX2dwWlpCVDNuR0xUbTk3OGhiOFBxd2pXWGxiRFNsUDRQWlhJOWFJbURhUDROdjJJX3BmaDYyUVFraWhKUm53anJkVTBpV1lTMl9mTDJtTWc?oc=5",
+          "pubDate": "Sat, 05 Sep 2026 23:20:38 GMT"
+        }
+      ],
+      "id": "focus-darderi centra gli ottavi agli us open sweeny ko in tre set il tempo-1788650438000",
+      "sourceCount": 1
+    },
+    {
       "title": "Circo contemporaneo a Tor Marancia: 20 spettacoli gratuiti a settembre",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxOZVV2X2dqekNobkdVR18wOVFRU09icFlWZkt0Q1BxUWlIOXUtVjJlX1Q0OUtVVjFCcndtbGMxWU1uWDhzZFdodjhOQ3BvRjlNNUNNOHRFMjZ5RTYtZTF5Zk5oQnp5Q0xmQWpqSkNDQ2dleEVJTHdORFlKWFBFbTIwS01fMmhjdnU4a3N3SGgxWkJjZw?oc=5\" target=\"_blank\">Circo contemporaneo a Tor Marancia: 20 spettacoli gratuiti a settembre</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxOZVV2X2dqekNobkdVR18wOVFRU09icFlWZkt0Q1BxUWlIOXUtVjJlX1Q0OUtVVjFCcndtbGMxWU1uWDhzZFdodjhOQ3BvRjlNNUNNOHRFMjZ5RTYtZTF5Zk5oQnp5Q0xmQWpqSkNDQ2dleEVJTHdORFlKWFBFbTIwS01fMmhjdnU4a3N3SGgxWkJjZw?oc=5\" target=\"_blank\">Circo contemporaneo a Tor Marancia: 20 spettacoli gratuiti a settembre</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZVV2X2dqekNobkdVR18wOVFRU09icFlWZkt0Q1BxUWlIOXUtVjJlX1Q0OUtVVjFCcndtbGMxWU1uWDhzZFdodjhOQ3BvRjlNNUNNOHRFMjZ5RTYtZTF5Zk5oQnp5Q0xmQWpqSkNDQ2dleEVJTHdORFlKWFBFbTIwS01fMmhjdnU4a3N3SGgxWkJjZw?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -885,7 +914,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZVV2X2dqekNobkdVR18wOVFRU09icFlWZkt0Q1BxUWlIOXUtVjJlX1Q0OUtVVjFCcndtbGMxWU1uWDhzZFdodjhOQ3BvRjlNNUNNOHRFMjZ5RTYtZTF5Zk5oQnp5Q0xmQWpqSkNDQ2dleEVJTHdORFlKWFBFbTIwS01fMmhjdnU4a3N3SGgxWkJjZw?oc=5",
           "pubDate": "Sat, 05 Sep 2026 23:19:34 GMT"
         }
@@ -897,9 +926,9 @@
     },
     {
       "title": "Scuola, Macrì (Genova Inclusiva): \"In Liguria edifici vecchi, pericoli di sicurezza per studenti\"",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi8AFBVV95cUxNeF9DZnFlZnM3MnpCWGxDMXRGejlPUlJGYnFzd1lCLXdFUkJPa05VUFNhT2lFUGpqZWZCWG5zRkU4b19LdVlka1FjZENIUjZKSl8xN285T3NpOWRqbWxLQV80Z08wVElWUGJINEhZNXdLU05hZU1KXzYxTnU1N3gyOUhsTjZQNkVxWDdUOExuVWxocUUtWTZCSGVHMWw5ejROb1RvWE9FOFpkZEJOc3pyVjFKMU0wSkRyNmpTV3AtUVhyb0ZaaUpuVDMyZTF5WlFsLXlrSFFyUTVTdmJ5S2RaV1hyM1JCb2tad1hWU2ZRUFTSAe8BQVVfeXFMTTJzWHhxRGQwUFd0Tk1QTXBEQkpab2JBbU9rSm5hRGt0ZWhKRGZSLWlqRW94SmRLTm11dHl6b20zWFZYeWNLOW0xUlVIMXUxXzJFa0sxNlpKcjIzSTlPVTFDSWM4V29TOEQ3empQbTFBSFlSeElrY0hYX0RHY0VJY09teWpNc2IyZDF4dTRwalJOTV8yWmN6eXN1Y1pqa0NsNmRjcEpVb3FWSm04LVV2RFJ0MnhnTzF3c0c0eFo0T0JjeFJ6SU13cmRjalZ5eHppa1o0MnIxOS1PZWtsZFBNT1gyQ284OXpycHZqNFplZnM?oc=5\" target=\"_blank\">Scuola, Macrì (Genova Inclusiva): \"In Liguria edifici vecchi, pericoli di sicurezza per studenti\"</a> <font color=\"#6f6f6f\">lagazzettadelmezzogiorno.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi8AFBVV95cUxNeF9DZnFlZnM3MnpCWGxDMXRGejlPUlJGYnFzd1lCLXdFUkJPa05VUFNhT2lFUGpqZWZCWG5zRkU4b19LdVlka1FjZENIUjZKSl8xN285T3NpOWRqbWxLQV80Z08wVElWUGJINEhZNXdLU05hZU1KXzYxTnU1N3gyOUhsTjZQNkVxWDdUOExuVWxocUUtWTZCSGVHMWw5ejROb1RvWE9FOFpkZEJOc3pyVjFKMU0wSkRyNmpTV3AtUVhyb0ZaaUpuVDMyZTF5WlFsLXlrSFFyUTVTdmJ5S2RaV1hyM1JCb2tad1hWU2ZRUFTSAe8BQVVfeXFMTTJzWHhxRGQwUFd0Tk1QTXBEQkpab2JBbU9rSm5hRGt0ZWhKRGZSLWlqRW94SmRLTm11dHl6b20zWFZYeWNLOW0xUlVIMXUxXzJFa0sxNlpKcjIzSTlPVTFDSWM4V29TOEQ3empQbTFBSFlSeElrY0hYX0RHY0VJY09teWpNc2IyZDF4dTRwalJOTV8yWmN6eXN1Y1pqa0NsNmRjcEpVb3FWSm04LVV2RFJ0MnhnTzF3c0c0eFo0T0JjeFJ6SU13cmRjalZ5eHppa1o0MnIxOS1PZWtsZFBNT1gyQ284OXpycHZqNFplZnM?oc=5\" target=\"_blank\">Scuola, Macrì (Genova Inclusiva): \"In Liguria edifici vecchi, pericoli di sicurezza per studenti\"</a> <font color=\"#6f6f6f\">La Gazzetta del Mezzogiorno</font>",
       "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNeF9DZnFlZnM3MnpCWGxDMXRGejlPUlJGYnFzd1lCLXdFUkJPa05VUFNhT2lFUGpqZWZCWG5zRkU4b19LdVlka1FjZENIUjZKSl8xN285T3NpOWRqbWxLQV80Z08wVElWUGJINEhZNXdLU05hZU1KXzYxTnU1N3gyOUhsTjZQNkVxWDdUOExuVWxocUUtWTZCSGVHMWw5ejROb1RvWE9FOFpkZEJOc3pyVjFKMU0wSkRyNmpTV3AtUVhyb0ZaaUpuVDMyZTF5WlFsLXlrSFFyUTVTdmJ5S2RaV1hyM1JCb2tad1hWU2ZRUFTSAe8BQVVfeXFMTTJzWHhxRGQwUFd0Tk1QTXBEQkpab2JBbU9rSm5hRGt0ZWhKRGZSLWlqRW94SmRLTm11dHl6b20zWFZYeWNLOW0xUlVIMXUxXzJFa0sxNlpKcjIzSTlPVTFDSWM4V29TOEQ3empQbTFBSFlSeElrY0hYX0RHY0VJY09teWpNc2IyZDF4dTRwalJOTV8yWmN6eXN1Y1pqa0NsNmRjcEpVb3FWSm04LVV2RFJ0MnhnTzF3c0c0eFo0T0JjeFJ6SU13cmRjalZ5eHppa1o0MnIxOS1PZWtsZFBNT1gyQ284OXpycHZqNFplZnM?oc=5",
-      "source": "lagazzettadelmezzogiorno.it",
+      "source": "La Gazzetta del Mezzogiorno",
       "category": "Sicurezza",
       "categories": [
         "Sicurezza"
@@ -911,7 +940,7 @@
       "isVideo": true,
       "sources": [
         {
-          "source": "lagazzettadelmezzogiorno.it",
+          "source": "La Gazzetta del Mezzogiorno",
           "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNeF9DZnFlZnM3MnpCWGxDMXRGejlPUlJGYnFzd1lCLXdFUkJPa05VUFNhT2lFUGpqZWZCWG5zRkU4b19LdVlka1FjZENIUjZKSl8xN285T3NpOWRqbWxLQV80Z08wVElWUGJINEhZNXdLU05hZU1KXzYxTnU1N3gyOUhsTjZQNkVxWDdUOExuVWxocUUtWTZCSGVHMWw5ejROb1RvWE9FOFpkZEJOc3pyVjFKMU0wSkRyNmpTV3AtUVhyb0ZaaUpuVDMyZTF5WlFsLXlrSFFyUTVTdmJ5S2RaV1hyM1JCb2tad1hWU2ZRUFTSAe8BQVVfeXFMTTJzWHhxRGQwUFd0Tk1QTXBEQkpab2JBbU9rSm5hRGt0ZWhKRGZSLWlqRW94SmRLTm11dHl6b20zWFZYeWNLOW0xUlVIMXUxXzJFa0sxNlpKcjIzSTlPVTFDSWM4V29TOEQ3empQbTFBSFlSeElrY0hYX0RHY0VJY09teWpNc2IyZDF4dTRwalJOTV8yWmN6eXN1Y1pqa0NsNmRjcEpVb3FWSm04LVV2RFJ0MnhnTzF3c0c0eFo0T0JjeFJ6SU13cmRjalZ5eHppa1o0MnIxOS1PZWtsZFBNT1gyQ284OXpycHZqNFplZnM?oc=5",
           "pubDate": "Sat, 05 Sep 2026 23:17:24 GMT"
         }
@@ -945,9 +974,9 @@
     },
     {
       "title": "Allarme acciaio, Donazzan: «A rischio l'intera filiera industriale UE»",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQVzE5Y25FRnFkWUVScUVyTlN5VGRTd1VqSEh4b1dYeXBaQlpfM2xSbjhkOWRlbDRySUlEVEpCZUpVMGNMRVlOLTJEVFNOTktTRktKMkxaVVJQdXh1d0l5X05GS2ZCZFZmbkRzZ3d5WkM5TnUzaVVLVXhzM0lMNTVndU92b1l1TWpKcHZua0JVdXFQSG80dS1SVndsZUFwLUNEZEdhLUYxLWZEU0tjYzRvSmpB?oc=5\" target=\"_blank\">Allarme acciaio, Donazzan: «A rischio l'intera filiera industriale UE»</a> <font color=\"#6f6f6f\">bassanonet.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQVzE5Y25FRnFkWUVScUVyTlN5VGRTd1VqSEh4b1dYeXBaQlpfM2xSbjhkOWRlbDRySUlEVEpCZUpVMGNMRVlOLTJEVFNOTktTRktKMkxaVVJQdXh1d0l5X05GS2ZCZFZmbkRzZ3d5WkM5TnUzaVVLVXhzM0lMNTVndU92b1l1TWpKcHZua0JVdXFQSG80dS1SVndsZUFwLUNEZEdhLUYxLWZEU0tjYzRvSmpB?oc=5\" target=\"_blank\">Allarme acciaio, Donazzan: «A rischio l'intera filiera industriale UE»</a> <font color=\"#6f6f6f\">Bassanonet.it</font>",
       "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVzE5Y25FRnFkWUVScUVyTlN5VGRTd1VqSEh4b1dYeXBaQlpfM2xSbjhkOWRlbDRySUlEVEpCZUpVMGNMRVlOLTJEVFNOTktTRktKMkxaVVJQdXh1d0l5X05GS2ZCZFZmbkRzZ3d5WkM5TnUzaVVLVXhzM0lMNTVndU92b1l1TWpKcHZua0JVdXFQSG80dS1SVndsZUFwLUNEZEdhLUYxLWZEU0tjYzRvSmpB?oc=5",
-      "source": "bassanonet.it",
+      "source": "Bassanonet.it",
       "category": "Europa",
       "categories": [
         "Europa"
@@ -959,7 +988,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "bassanonet.it",
+          "source": "Bassanonet.it",
           "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVzE5Y25FRnFkWUVScUVyTlN5VGRTd1VqSEh4b1dYeXBaQlpfM2xSbjhkOWRlbDRySUlEVEpCZUpVMGNMRVlOLTJEVFNOTktTRktKMkxaVVJQdXh1d0l5X05GS2ZCZFZmbkRzZ3d5WkM5TnUzaVVLVXhzM0lMNTVndU92b1l1TWpKcHZua0JVdXFQSG80dS1SVndsZUFwLUNEZEdhLUYxLWZEU0tjYzRvSmpB?oc=5",
           "pubDate": "Sat, 05 Sep 2026 23:12:31 GMT"
         }
@@ -1096,9 +1125,9 @@
     },
     {
       "title": "Droga, lotta fra bande per il controllo nel Bergamasco: 4 fermi e armi sequestrate",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxONDZ0SE5IODVhZDRSOENOd2U1Mmx5dWFObXBsTmdVdHBERW9ZX3JJNl9EODgyYWE2eTQyR0xzaFZ6TlFydW1RLVF4U3ZGMl9qU3VTTktLdTE4bDZfd3BVSTc5X1pZWkFUV1Naa19RVFNkNC1XU2VGUy1pd243dkR3eUliZ00yeGJDU1pnVHJmU2tZcy1MU3FZMTBucUhZZkpIYU9nUmltNF9nTFdVeXFfOWI2aFpSSXgwZE5feHAwTGpNTExrREI2Y3RsckEzOFkzUjFnVFcyb3BaQXJJbFNZM3hLTdIB4gFBVV95cUxPbXFrU0RobUZGaFB0Qi12YURRMTI0WnlTSEV2MmlqRDRMNlUtTlZaMHlfaUt3bmJ5a002WXVqeDRWVE5WRjlHUVBhSGhBRXl6V2E5cFpVWjFFbEhMb20zZlFMQ0VxamhFRkdETWpHdExNUWY4dVFvemxTSkNPaXZiWEVjcDk3ejNET1pleTIteHB0WnNvVDlKbUhNdTJrWEx4WWZZTzZSa0pXZ2phSm44Um5YSXV3dTRJSy1uODFWeVp6QlRSNHRmV2tzdkVoSzBtZkZVOF9YZFowUXdPXzZ3Sk13?oc=5\" target=\"_blank\">Droga, lotta fra bande per il controllo nel Bergamasco: 4 fermi e armi sequestrate</a> <font color=\"#6f6f6f\">lagazzettadelmezzogiorno.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxONDZ0SE5IODVhZDRSOENOd2U1Mmx5dWFObXBsTmdVdHBERW9ZX3JJNl9EODgyYWE2eTQyR0xzaFZ6TlFydW1RLVF4U3ZGMl9qU3VTTktLdTE4bDZfd3BVSTc5X1pZWkFUV1Naa19RVFNkNC1XU2VGUy1pd243dkR3eUliZ00yeGJDU1pnVHJmU2tZcy1MU3FZMTBucUhZZkpIYU9nUmltNF9nTFdVeXFfOWI2aFpSSXgwZE5feHAwTGpNTExrREI2Y3RsckEzOFkzUjFnVFcyb3BaQXJJbFNZM3hLTdIB4gFBVV95cUxPbXFrU0RobUZGaFB0Qi12YURRMTI0WnlTSEV2MmlqRDRMNlUtTlZaMHlfaUt3bmJ5a002WXVqeDRWVE5WRjlHUVBhSGhBRXl6V2E5cFpVWjFFbEhMb20zZlFMQ0VxamhFRkdETWpHdExNUWY4dVFvemxTSkNPaXZiWEVjcDk3ejNET1pleTIteHB0WnNvVDlKbUhNdTJrWEx4WWZZTzZSa0pXZ2phSm44Um5YSXV3dTRJSy1uODFWeVp6QlRSNHRmV2tzdkVoSzBtZkZVOF9YZFowUXdPXzZ3Sk13?oc=5\" target=\"_blank\">Droga, lotta fra bande per il controllo nel Bergamasco: 4 fermi e armi sequestrate</a> <font color=\"#6f6f6f\">La Gazzetta del Mezzogiorno</font>",
       "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxONDZ0SE5IODVhZDRSOENOd2U1Mmx5dWFObXBsTmdVdHBERW9ZX3JJNl9EODgyYWE2eTQyR0xzaFZ6TlFydW1RLVF4U3ZGMl9qU3VTTktLdTE4bDZfd3BVSTc5X1pZWkFUV1Naa19RVFNkNC1XU2VGUy1pd243dkR3eUliZ00yeGJDU1pnVHJmU2tZcy1MU3FZMTBucUhZZkpIYU9nUmltNF9nTFdVeXFfOWI2aFpSSXgwZE5feHAwTGpNTExrREI2Y3RsckEzOFkzUjFnVFcyb3BaQXJJbFNZM3hLTdIB4gFBVV95cUxPbXFrU0RobUZGaFB0Qi12YURRMTI0WnlTSEV2MmlqRDRMNlUtTlZaMHlfaUt3bmJ5a002WXVqeDRWVE5WRjlHUVBhSGhBRXl6V2E5cFpVWjFFbEhMb20zZlFMQ0VxamhFRkdETWpHdExNUWY4dVFvemxTSkNPaXZiWEVjcDk3ejNET1pleTIteHB0WnNvVDlKbUhNdTJrWEx4WWZZTzZSa0pXZ2phSm44Um5YSXV3dTRJSy1uODFWeVp6QlRSNHRmV2tzdkVoSzBtZkZVOF9YZFowUXdPXzZ3Sk13?oc=5",
-      "source": "lagazzettadelmezzogiorno.it",
+      "source": "La Gazzetta del Mezzogiorno",
       "category": "Sicurezza",
       "categories": [
         "Sicurezza"
@@ -1110,7 +1139,7 @@
       "isVideo": true,
       "sources": [
         {
-          "source": "lagazzettadelmezzogiorno.it",
+          "source": "La Gazzetta del Mezzogiorno",
           "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxONDZ0SE5IODVhZDRSOENOd2U1Mmx5dWFObXBsTmdVdHBERW9ZX3JJNl9EODgyYWE2eTQyR0xzaFZ6TlFydW1RLVF4U3ZGMl9qU3VTTktLdTE4bDZfd3BVSTc5X1pZWkFUV1Naa19RVFNkNC1XU2VGUy1pd243dkR3eUliZ00yeGJDU1pnVHJmU2tZcy1MU3FZMTBucUhZZkpIYU9nUmltNF9nTFdVeXFfOWI2aFpSSXgwZE5feHAwTGpNTExrREI2Y3RsckEzOFkzUjFnVFcyb3BaQXJJbFNZM3hLTdIB4gFBVV95cUxPbXFrU0RobUZGaFB0Qi12YURRMTI0WnlTSEV2MmlqRDRMNlUtTlZaMHlfaUt3bmJ5a002WXVqeDRWVE5WRjlHUVBhSGhBRXl6V2E5cFpVWjFFbEhMb20zZlFMQ0VxamhFRkdETWpHdExNUWY4dVFvemxTSkNPaXZiWEVjcDk3ejNET1pleTIteHB0WnNvVDlKbUhNdTJrWEx4WWZZTzZSa0pXZ2phSm44Um5YSXV3dTRJSy1uODFWeVp6QlRSNHRmV2tzdkVoSzBtZkZVOF9YZFowUXdPXzZ3Sk13?oc=5",
           "pubDate": "Sat, 05 Sep 2026 22:41:38 GMT"
         }
@@ -1120,10 +1149,10 @@
     },
     {
       "title": "Ikea Roma celebra il ritorno alla routine: 3 giorni di eventi per \"riorganizzare la casa\"",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNN0tCckhrTC0tbW9RSzU5cjZnZmV0WjA2WF9sZ0VrRHA2SlpaVnI4Tkc3UGZYRTVtSk5IUk5XSHdIaU1mLWkwQTFpa2RlRWlKR2JFX0ZBMkRSS1FUeHpfZ2R1bkJ2VkhWUzhSdTExZGpKQ2Nndkk0dk9LVkVfWXRXYUlfcEVLZXJNWVM1cw?oc=5\" target=\"_blank\">Ikea Roma celebra il ritorno alla routine: 3 giorni di eventi per \"riorganizzare la casa\"</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNN0tCckhrTC0tbW9RSzU5cjZnZmV0WjA2WF9sZ0VrRHA2SlpaVnI4Tkc3UGZYRTVtSk5IUk5XSHdIaU1mLWkwQTFpa2RlRWlKR2JFX0ZBMkRSS1FUeHpfZ2R1bkJ2VkhWUzhSdTExZGpKQ2Nndkk0dk9LVkVfWXRXYUlfcEVLZXJNWVM1cw?oc=5\" target=\"_blank\">Ikea Roma celebra il ritorno alla routine: 3 giorni di eventi per \"riorganizzare la casa\"</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNN0tCckhrTC0tbW9RSzU5cjZnZmV0WjA2WF9sZ0VrRHA2SlpaVnI4Tkc3UGZYRTVtSk5IUk5XSHdIaU1mLWkwQTFpa2RlRWlKR2JFX0ZBMkRSS1FUeHpfZ2R1bkJ2VkhWUzhSdTExZGpKQ2Nndkk0dk9LVkVfWXRXYUlfcEVLZXJNWVM1cw?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -1135,7 +1164,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNN0tCckhrTC0tbW9RSzU5cjZnZmV0WjA2WF9sZ0VrRHA2SlpaVnI4Tkc3UGZYRTVtSk5IUk5XSHdIaU1mLWkwQTFpa2RlRWlKR2JFX0ZBMkRSS1FUeHpfZ2R1bkJ2VkhWUzhSdTExZGpKQ2Nndkk0dk9LVkVfWXRXYUlfcEVLZXJNWVM1cw?oc=5",
           "pubDate": "Sat, 05 Sep 2026 22:41:28 GMT"
         }
@@ -1203,7 +1232,7 @@
           "pubDate": "Sat, 05 Sep 2026 09:48:15 GMT"
         },
         {
-          "source": "adnkronos.com",
+          "source": "Adnkronos",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQUFpcVhFTmVGTW81OXAtSl8tUjZxckdScGZ6clk4TENCSWlJNktLdEJidjgwaEhGWHRBTGt5VUlmQTJSOFBxNm5mTDhmbHBwWERZN2lQbHJWcHkxRkxkODZFNlZvTWVMSHdkaXdXeFo2RXZVU245YnZpVEdqYUplSkFVWG9VS1B0QXRTb3pNOUhWY212ZHlqbDk5ZnFyXzBVXzFXanp5LTFVaWNVeWIwVF9YTmE?oc=5",
           "pubDate": "Sat, 05 Sep 2026 09:24:00 GMT"
         }
@@ -1556,9 +1585,9 @@
     },
     {
       "title": "Domenica di sole e gran caldo sull’Italia, ancora bollini arancioni: le città più ‘bollenti’",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYURkbTJJYVpNZzQ5UUIzTTRPb19lbFMtc1JYejU2S1lnMnJMcXFIbnMtY1pyVnBmWHNPRTNBRWNmeTV6ME52SGlKaXRUTTlnWDdPR0lBTzIxdDhfLXJhX3d2RG0wdXZjalZZT0VjVHFGc2htMHd6MDFmTGVLbGtMUnlVNFVnMWNnejBpZ0FETWdKVm9yMVZDYlFLall1NkN2SEJQbFN3Q2EtTVdmSHdkUFhzcHlXNHhnSnBTMS1HeGJJR2dmNHhraUoxRUpla2FId3M3bXZR?oc=5\" target=\"_blank\">Domenica di sole e gran caldo sull’Italia, ancora bollini arancioni: le città più ‘bollenti’</a> <font color=\"#6f6f6f\">Corriere Toscano</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYURkbTJJYVpNZzQ5UUIzTTRPb19lbFMtc1JYejU2S1lnMnJMcXFIbnMtY1pyVnBmWHNPRTNBRWNmeTV6ME52SGlKaXRUTTlnWDdPR0lBTzIxdDhfLXJhX3d2RG0wdXZjalZZT0VjVHFGc2htMHd6MDFmTGVLbGtMUnlVNFVnMWNnejBpZ0FETWdKVm9yMVZDYlFLall1NkN2SEJQbFN3Q2EtTVdmSHdkUFhzcHlXNHhnSnBTMS1HeGJJR2dmNHhraUoxRUpla2FId3M3bXZR?oc=5\" target=\"_blank\">Domenica di sole e gran caldo sull’Italia, ancora bollini arancioni: le città più ‘bollenti’</a> <font color=\"#6f6f6f\">corrieretoscano.it</font>",
       "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYURkbTJJYVpNZzQ5UUIzTTRPb19lbFMtc1JYejU2S1lnMnJMcXFIbnMtY1pyVnBmWHNPRTNBRWNmeTV6ME52SGlKaXRUTTlnWDdPR0lBTzIxdDhfLXJhX3d2RG0wdXZjalZZT0VjVHFGc2htMHd6MDFmTGVLbGtMUnlVNFVnMWNnejBpZ0FETWdKVm9yMVZDYlFLall1NkN2SEJQbFN3Q2EtTVdmSHdkUFhzcHlXNHhnSnBTMS1HeGJJR2dmNHhraUoxRUpla2FId3M3bXZR?oc=5",
-      "source": "Corriere Toscano",
+      "source": "corrieretoscano.it",
       "category": "Sicurezza",
       "categories": [
         "Sicurezza"
@@ -1570,7 +1599,7 @@
       "isVideo": true,
       "sources": [
         {
-          "source": "Corriere Toscano",
+          "source": "corrieretoscano.it",
           "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQYURkbTJJYVpNZzQ5UUIzTTRPb19lbFMtc1JYejU2S1lnMnJMcXFIbnMtY1pyVnBmWHNPRTNBRWNmeTV6ME52SGlKaXRUTTlnWDdPR0lBTzIxdDhfLXJhX3d2RG0wdXZjalZZT0VjVHFGc2htMHd6MDFmTGVLbGtMUnlVNFVnMWNnejBpZ0FETWdKVm9yMVZDYlFLall1NkN2SEJQbFN3Q2EtTVdmSHdkUFhzcHlXNHhnSnBTMS1HeGJJR2dmNHhraUoxRUpla2FId3M3bXZR?oc=5",
           "pubDate": "Sat, 05 Sep 2026 22:06:05 GMT"
         }
@@ -1716,10 +1745,10 @@
     },
     {
       "title": "\"Magic Nights\", i sabati estivi di MagicLand | 25 luglio - 5 settembre 2026",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxNbFhIYzMtT2luZ2Z4LUprVHFnZ3AwTDVqY1dUTGw3UFBXUUhQcTVKdmhTRmFrVm9WU3BvLTlaZ1d4SDBaUjFXbVVuZXlnZWlYbkhmTUtRNUZjUUs1c1JuOG5IMV9yc0lhU3B0ck5nSEY2LWtaMlJwNThjZEZFZkVVVk1jdzJDcHptb2xpckpVOE1IdTR5NjhVV1YwbHNnTHBoZHc?oc=5\" target=\"_blank\">\"Magic Nights\", i sabati estivi di MagicLand | 25 luglio - 5 settembre 2026</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxNbFhIYzMtT2luZ2Z4LUprVHFnZ3AwTDVqY1dUTGw3UFBXUUhQcTVKdmhTRmFrVm9WU3BvLTlaZ1d4SDBaUjFXbVVuZXlnZWlYbkhmTUtRNUZjUUs1c1JuOG5IMV9yc0lhU3B0ck5nSEY2LWtaMlJwNThjZEZFZkVVVk1jdzJDcHptb2xpckpVOE1IdTR5NjhVV1YwbHNnTHBoZHc?oc=5\" target=\"_blank\">\"Magic Nights\", i sabati estivi di MagicLand | 25 luglio - 5 settembre 2026</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNbFhIYzMtT2luZ2Z4LUprVHFnZ3AwTDVqY1dUTGw3UFBXUUhQcTVKdmhTRmFrVm9WU3BvLTlaZ1d4SDBaUjFXbVVuZXlnZWlYbkhmTUtRNUZjUUs1c1JuOG5IMV9yc0lhU3B0ck5nSEY2LWtaMlJwNThjZEZFZkVVVk1jdzJDcHptb2xpckpVOE1IdTR5NjhVV1YwbHNnTHBoZHc?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -1731,7 +1760,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNbFhIYzMtT2luZ2Z4LUprVHFnZ3AwTDVqY1dUTGw3UFBXUUhQcTVKdmhTRmFrVm9WU3BvLTlaZ1d4SDBaUjFXbVVuZXlnZWlYbkhmTUtRNUZjUUs1c1JuOG5IMV9yc0lhU3B0ck5nSEY2LWtaMlJwNThjZEZFZkVVVk1jdzJDcHptb2xpckpVOE1IdTR5NjhVV1YwbHNnTHBoZHc?oc=5",
           "pubDate": "Sat, 05 Sep 2026 22:01:05 GMT"
         }
@@ -1740,30 +1769,6 @@
       "sourceCount": 1,
       "sourcePriority": 55,
       "id": "magic nights i sabati estivi di magicland 25 luglio 5 settembre 2026-1788645665000-45"
-    },
-    {
-      "title": "Prima Pagina di oggi, Edizione Sport di domenica 06 settembre",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdzVRUjBIWnRfY2luMDc5cmlPbEkyYUd3Ti1mMFg1Q095V0I4NXROYUpDZG5PN1ZHSWdyMkJIUTlLNnBkdi12X1Y5SHFYdUxMRU9pUXZMZVRvWG1PZXAzVE5oWXgwYVF5RWoxRVZ5RUUxSE5FUFhmc1lVQjJfM2pUSW9HeFBvc3dsdWlF?oc=5\" target=\"_blank\">Prima Pagina di oggi, Edizione Sport di domenica 06 settembre</a> <font color=\"#6f6f6f\">Il Giorno</font>",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdzVRUjBIWnRfY2luMDc5cmlPbEkyYUd3Ti1mMFg1Q095V0I4NXROYUpDZG5PN1ZHSWdyMkJIUTlLNnBkdi12X1Y5SHFYdUxMRU9pUXZMZVRvWG1PZXAzVE5oWXgwYVF5RWoxRVZ5RUUxSE5FUFhmc1lVQjJfM2pUSW9HeFBvc3dsdWlF?oc=5",
-      "source": "Il Giorno",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Sat, 05 Sep 2026 22:00:00 GMT",
-      "googlePubDate": "Sat, 05 Sep 2026 22:00:00 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Il Giorno",
-          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdzVRUjBIWnRfY2luMDc5cmlPbEkyYUd3Ti1mMFg1Q095V0I4NXROYUpDZG5PN1ZHSWdyMkJIUTlLNnBkdi12X1Y5SHFYdUxMRU9pUXZMZVRvWG1PZXAzVE5oWXgwYVF5RWoxRVZ5RUUxSE5FUFhmc1lVQjJfM2pUSW9HeFBvc3dsdWlF?oc=5",
-          "pubDate": "Sat, 05 Sep 2026 22:00:00 GMT"
-        }
-      ],
-      "id": "focus-prima pagina di oggi edizione sport di domenica 06 settembre-1788645600000",
-      "sourceCount": 1
     },
     {
       "title": "Guerra Ucraina, il vero nodo resta il Donbass. Ma l'avanzata russa è in stallo. Ecco la situazione sul campo",
@@ -1849,10 +1854,10 @@
     },
     {
       "title": "Viva l’Italia a Cinecittà World",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWnFkRE5UREJacE9OTFJWUE5ZTEVXcUluMEoxdlF0RjQ5cW1kYklCUXpBWno1MEFrX3dzME9jaDNTeDBQWUhQOENDMzdtRUxmaXFCa0NsSmRuZzZtYXFQVi02OExNdldmdmpxbHBVM2hoaU16czFtVEdYYlFHeUJUdVdOVWEydFhWTFZR?oc=5\" target=\"_blank\">Viva l’Italia a Cinecittà World</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWnFkRE5UREJacE9OTFJWUE5ZTEVXcUluMEoxdlF0RjQ5cW1kYklCUXpBWno1MEFrX3dzME9jaDNTeDBQWUhQOENDMzdtRUxmaXFCa0NsSmRuZzZtYXFQVi02OExNdldmdmpxbHBVM2hoaU16czFtVEdYYlFHeUJUdVdOVWEydFhWTFZR?oc=5\" target=\"_blank\">Viva l’Italia a Cinecittà World</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWnFkRE5UREJacE9OTFJWUE5ZTEVXcUluMEoxdlF0RjQ5cW1kYklCUXpBWno1MEFrX3dzME9jaDNTeDBQWUhQOENDMzdtRUxmaXFCa0NsSmRuZzZtYXFQVi02OExNdldmdmpxbHBVM2hoaU16czFtVEdYYlFHeUJUdVdOVWEydFhWTFZR?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -1864,7 +1869,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWnFkRE5UREJacE9OTFJWUE5ZTEVXcUluMEoxdlF0RjQ5cW1kYklCUXpBWno1MEFrX3dzME9jaDNTeDBQWUhQOENDMzdtRUxmaXFCa0NsSmRuZzZtYXFQVi02OExNdldmdmpxbHBVM2hoaU16czFtVEdYYlFHeUJUdVdOVWEydFhWTFZR?oc=5",
           "pubDate": "Sat, 05 Sep 2026 21:33:58 GMT"
         }
@@ -1991,10 +1996,10 @@
     },
     {
       "title": "Corse al galoppo, riparte la stagione autunnale all'ippodromo Snai San Siro",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxPYjBEaGJQZzBkSExHNXpESWgzNW54TTcyMVV4d01NVFBSWmpBS1ZEaXlQYnUtblJ2OEJ2VndOajFVbEdyRXRIaDJkMEVHSmJ5WGhtR3FwUWcwX3BxS1Fxdi1xMzdNZ3RvOHgtVVdoVVJFTE1wdWlTZWRCbzIxTUxnWG56NkV3aDRqaXJvellpVlcyWnJ2?oc=5\" target=\"_blank\">Corse al galoppo, riparte la stagione autunnale all'ippodromo Snai San Siro</a> <font color=\"#6f6f6f\">milanotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxPYjBEaGJQZzBkSExHNXpESWgzNW54TTcyMVV4d01NVFBSWmpBS1ZEaXlQYnUtblJ2OEJ2VndOajFVbEdyRXRIaDJkMEVHSmJ5WGhtR3FwUWcwX3BxS1Fxdi1xMzdNZ3RvOHgtVVdoVVJFTE1wdWlTZWRCbzIxTUxnWG56NkV3aDRqaXJvellpVlcyWnJ2?oc=5\" target=\"_blank\">Corse al galoppo, riparte la stagione autunnale all'ippodromo Snai San Siro</a> <font color=\"#6f6f6f\">MilanoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYjBEaGJQZzBkSExHNXpESWgzNW54TTcyMVV4d01NVFBSWmpBS1ZEaXlQYnUtblJ2OEJ2VndOajFVbEdyRXRIaDJkMEVHSmJ5WGhtR3FwUWcwX3BxS1Fxdi1xMzdNZ3RvOHgtVVdoVVJFTE1wdWlTZWRCbzIxTUxnWG56NkV3aDRqaXJvellpVlcyWnJ2?oc=5",
       "image": "",
-      "source": "milanotoday.it",
+      "source": "MilanoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -2006,7 +2011,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "milanotoday.it",
+          "source": "MilanoToday",
           "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYjBEaGJQZzBkSExHNXpESWgzNW54TTcyMVV4d01NVFBSWmpBS1ZEaXlQYnUtblJ2OEJ2VndOajFVbEdyRXRIaDJkMEVHSmJ5WGhtR3FwUWcwX3BxS1Fxdi1xMzdNZ3RvOHgtVVdoVVJFTE1wdWlTZWRCbzIxTUxnWG56NkV3aDRqaXJvellpVlcyWnJ2?oc=5",
           "pubDate": "Sat, 05 Sep 2026 21:26:04 GMT"
         }
@@ -2108,10 +2113,10 @@
     },
     {
       "title": "Mostra fotografica \"Quattro\" di Gaia Credentino",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxQVnhQRy1vYXFnR1lUb0lWLVphdUIwS3lTUjgtNS1nUFc5aFowUWtqUXdXX1RJcTltVGRaMjZjT3RuenhFcnVaU2Fla0tjV3YzOW5TbWRpeW94dmJ1d1YtMXNoRlRJN3lBZmxjMTFMa2pDcDdTRGFwRHpHSVhvX0MwMzF4R2wxNDRDYjkzNGwweWY0RHU2aWxBajkxa1dKS0E?oc=5\" target=\"_blank\">Mostra fotografica \"Quattro\" di Gaia Credentino</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxQVnhQRy1vYXFnR1lUb0lWLVphdUIwS3lTUjgtNS1nUFc5aFowUWtqUXdXX1RJcTltVGRaMjZjT3RuenhFcnVaU2Fla0tjV3YzOW5TbWRpeW94dmJ1d1YtMXNoRlRJN3lBZmxjMTFMa2pDcDdTRGFwRHpHSVhvX0MwMzF4R2wxNDRDYjkzNGwweWY0RHU2aWxBajkxa1dKS0E?oc=5\" target=\"_blank\">Mostra fotografica \"Quattro\" di Gaia Credentino</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVnhQRy1vYXFnR1lUb0lWLVphdUIwS3lTUjgtNS1nUFc5aFowUWtqUXdXX1RJcTltVGRaMjZjT3RuenhFcnVaU2Fla0tjV3YzOW5TbWRpeW94dmJ1d1YtMXNoRlRJN3lBZmxjMTFMa2pDcDdTRGFwRHpHSVhvX0MwMzF4R2wxNDRDYjkzNGwweWY0RHU2aWxBajkxa1dKS0E?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -2123,7 +2128,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVnhQRy1vYXFnR1lUb0lWLVphdUIwS3lTUjgtNS1nUFc5aFowUWtqUXdXX1RJcTltVGRaMjZjT3RuenhFcnVaU2Fla0tjV3YzOW5TbWRpeW94dmJ1d1YtMXNoRlRJN3lBZmxjMTFMa2pDcDdTRGFwRHpHSVhvX0MwMzF4R2wxNDRDYjkzNGwweWY0RHU2aWxBajkxa1dKS0E?oc=5",
           "pubDate": "Sat, 05 Sep 2026 21:21:34 GMT"
         }
@@ -2162,9 +2167,9 @@
     },
     {
       "title": "\"Lautaro Martinez andava espulso due volte\", gomitata ed esultanza: era rosso in Inter-Napoli?",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxNaTBFTVBVNXY4MGFhbVdBS3VHa2dvTWtxU1A2aDhWRzl3QjM5WmVVMURoa0hpa0ZVdE50VDlIR0ZIdm5pVFd5ZnBfc3F0d1NYc01Rb3h5RDlpcW4xOGdXZDF4T3ZXR1Bjejd6UUV1a25MOEVHSm0yZ2k0Yk9ibURQM2cwYkpFMzRhY1dCak1Cb3VNTzhmUWRjR01EV3dLTnZjQTZlUWZ3NXlsQUs1b3UxMg?oc=5\" target=\"_blank\">\"Lautaro Martinez andava espulso due volte\", gomitata ed esultanza: era rosso in Inter-Napoli?</a> <font color=\"#6f6f6f\">adnkronos.com</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxNaTBFTVBVNXY4MGFhbVdBS3VHa2dvTWtxU1A2aDhWRzl3QjM5WmVVMURoa0hpa0ZVdE50VDlIR0ZIdm5pVFd5ZnBfc3F0d1NYc01Rb3h5RDlpcW4xOGdXZDF4T3ZXR1Bjejd6UUV1a25MOEVHSm0yZ2k0Yk9ibURQM2cwYkpFMzRhY1dCak1Cb3VNTzhmUWRjR01EV3dLTnZjQTZlUWZ3NXlsQUs1b3UxMg?oc=5\" target=\"_blank\">\"Lautaro Martinez andava espulso due volte\", gomitata ed esultanza: era rosso in Inter-Napoli?</a> <font color=\"#6f6f6f\">Adnkronos</font>",
       "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaTBFTVBVNXY4MGFhbVdBS3VHa2dvTWtxU1A2aDhWRzl3QjM5WmVVMURoa0hpa0ZVdE50VDlIR0ZIdm5pVFd5ZnBfc3F0d1NYc01Rb3h5RDlpcW4xOGdXZDF4T3ZXR1Bjejd6UUV1a25MOEVHSm0yZ2k0Yk9ibURQM2cwYkpFMzRhY1dCak1Cb3VNTzhmUWRjR01EV3dLTnZjQTZlUWZ3NXlsQUs1b3UxMg?oc=5",
-      "source": "adnkronos.com",
+      "source": "Adnkronos",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -2176,7 +2181,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "adnkronos.com",
+          "source": "Adnkronos",
           "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaTBFTVBVNXY4MGFhbVdBS3VHa2dvTWtxU1A2aDhWRzl3QjM5WmVVMURoa0hpa0ZVdE50VDlIR0ZIdm5pVFd5ZnBfc3F0d1NYc01Rb3h5RDlpcW4xOGdXZDF4T3ZXR1Bjejd6UUV1a25MOEVHSm0yZ2k0Yk9ibURQM2cwYkpFMzRhY1dCak1Cb3VNTzhmUWRjR01EV3dLTnZjQTZlUWZ3NXlsQUs1b3UxMg?oc=5",
           "pubDate": "Sat, 05 Sep 2026 21:17:00 GMT"
         }
@@ -2243,9 +2248,9 @@
     },
     {
       "title": "Manovra, Calderone: \"Misure lavoro per oltre due miliardi, al lavoro salvadanaio previdenza neonati\" - Video",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxQbXNCUUpXZm5zT0hzeFo5SXgzVm83aXg5MDBNNzdyQlpzeDdYQWhQZTM3NzY5RXZWcm5hampBVkxsbHZUemRpeTFFV1JLNWRuRkMzaTl3QUpKdTVaTDRCQ25pWEN0Y0h3bGJDOHo5WEo4TmMzajFRa1g2ZkxXSzRucGdCQWJqR0dBcjZpb2xZWFYtN2w4SmRZ?oc=5\" target=\"_blank\">Manovra, Calderone: \"Misure lavoro per oltre due miliardi, al lavoro salvadanaio previdenza neonati\" - Video</a> <font color=\"#6f6f6f\">adnkronos.com</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxQbXNCUUpXZm5zT0hzeFo5SXgzVm83aXg5MDBNNzdyQlpzeDdYQWhQZTM3NzY5RXZWcm5hampBVkxsbHZUemRpeTFFV1JLNWRuRkMzaTl3QUpKdTVaTDRCQ25pWEN0Y0h3bGJDOHo5WEo4TmMzajFRa1g2ZkxXSzRucGdCQWJqR0dBcjZpb2xZWFYtN2w4SmRZ?oc=5\" target=\"_blank\">Manovra, Calderone: \"Misure lavoro per oltre due miliardi, al lavoro salvadanaio previdenza neonati\" - Video</a> <font color=\"#6f6f6f\">Adnkronos</font>",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbXNCUUpXZm5zT0hzeFo5SXgzVm83aXg5MDBNNzdyQlpzeDdYQWhQZTM3NzY5RXZWcm5hampBVkxsbHZUemRpeTFFV1JLNWRuRkMzaTl3QUpKdTVaTDRCQ25pWEN0Y0h3bGJDOHo5WEo4TmMzajFRa1g2ZkxXSzRucGdCQWJqR0dBcjZpb2xZWFYtN2w4SmRZ?oc=5",
-      "source": "adnkronos.com",
+      "source": "Adnkronos",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -2257,7 +2262,7 @@
       "isVideo": true,
       "sources": [
         {
-          "source": "adnkronos.com",
+          "source": "Adnkronos",
           "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbXNCUUpXZm5zT0hzeFo5SXgzVm83aXg5MDBNNzdyQlpzeDdYQWhQZTM3NzY5RXZWcm5hampBVkxsbHZUemRpeTFFV1JLNWRuRkMzaTl3QUpKdTVaTDRCQ25pWEN0Y0h3bGJDOHo5WEo4TmMzajFRa1g2ZkxXSzRucGdCQWJqR0dBcjZpb2xZWFYtN2w4SmRZ?oc=5",
           "pubDate": "Sat, 05 Sep 2026 21:13:00 GMT"
         }
@@ -2486,35 +2491,6 @@
       "id": "meloni prepara un tour per l italia commossa per la folla di bari e pa-1788640945000-66"
     },
     {
-      "title": "Putin vede Witkoff e Kushner a Mosca: tregua di tre giorni su Kiev. Zelensky: “Ci asterremo dai raid contro Mosca”",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxQQWFPVVJZRXNnWHk3Qk9mVE11TGN1SUhXVFlnTU9BTFgtQm1mVEJQVXZPMVI5RWNUYUZuQmZOVGtXX1NXRzFPMmtHb0ZTQUZVaWRxRVdtM2hPbVlzYmg0WWxDd0lpS3FPYmRlQVJaWVVvcGJxdXpXU3U3Wmc4QnpOaTVNMjVvZnU5bTVIYUNfZG5CbGNtZ3FBZWN0VDJyckR5dTFqdHh6YmF5RTc1RVhuUXNZUkRMSWcyTHBCSF9Eb1VqMlhPVzBmazhObEFhY3ZJdmF3RWtmQjJWX2NqTHA4?oc=5\" target=\"_blank\">Putin vede Witkoff e Kushner a Mosca: tregua di tre giorni su Kiev. Zelensky: “Ci asterremo dai raid contro Mosca”</a> <font color=\"#6f6f6f\">il Giornale</font>",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQQWFPVVJZRXNnWHk3Qk9mVE11TGN1SUhXVFlnTU9BTFgtQm1mVEJQVXZPMVI5RWNUYUZuQmZOVGtXX1NXRzFPMmtHb0ZTQUZVaWRxRVdtM2hPbVlzYmg0WWxDd0lpS3FPYmRlQVJaWVVvcGJxdXpXU3U3Wmc4QnpOaTVNMjVvZnU5bTVIYUNfZG5CbGNtZ3FBZWN0VDJyckR5dTFqdHh6YmF5RTc1RVhuUXNZUkRMSWcyTHBCSF9Eb1VqMlhPVzBmazhObEFhY3ZJdmF3RWtmQjJWX2NqTHA4?oc=5",
-      "source": "il Giornale",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Sat, 05 Sep 2026 20:42:00 GMT",
-      "googlePubDate": "Sat, 05 Sep 2026 20:42:00 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "il Giornale",
-          "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQQWFPVVJZRXNnWHk3Qk9mVE11TGN1SUhXVFlnTU9BTFgtQm1mVEJQVXZPMVI5RWNUYUZuQmZOVGtXX1NXRzFPMmtHb0ZTQUZVaWRxRVdtM2hPbVlzYmg0WWxDd0lpS3FPYmRlQVJaWVVvcGJxdXpXU3U3Wmc4QnpOaTVNMjVvZnU5bTVIYUNfZG5CbGNtZ3FBZWN0VDJyckR5dTFqdHh6YmF5RTc1RVhuUXNZUkRMSWcyTHBCSF9Eb1VqMlhPVzBmazhObEFhY3ZJdmF3RWtmQjJWX2NqTHA4?oc=5",
-          "pubDate": "Sat, 05 Sep 2026 20:42:00 GMT"
-        },
-        {
-          "source": "ANSA",
-          "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNcWxGX1daWTZuNTdRSWJpNWlJV1p1ZEV2WHBaaU1GSjBKdVRVclJYdUxIZE1wT1oxaTlqcjdWMDkwWFk4aFRsWlpnWnJ2TlQ0OUZrRXZycDE0MnhvXzhidF83ZF9jS3ZCaG15OFJ1Z2E0aXlfQzduTDdPbi1seFZ2eFRsNlRMZk90THlfZHJxQzlmaHZ2ZnhhTV9PVDJ2eFhid0VnQk9qazZGZEpUNHlfQ0lVV19WNUx2dF9ZazVPQXpPX1hETGZXSGstM3JKTUxhMXdOUVVzWHUzblNfYnpiakE2dHdJYXZXUngySlpZOXB1OE0?oc=5",
-          "pubDate": "Sat, 05 Sep 2026 14:56:00 GMT"
-        }
-      ],
-      "id": "focus-putin vede witkoff e kushner a mosca tregua di tre giorni su kiev zele-1788640920000",
-      "sourceCount": 2
-    },
-    {
       "title": "Ritrovato a Sesto Fiorentino l’anziano scomparso: è in buone condizioni",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxOMUFOeEZER3ZYQUJaUDY2U1JZUVZ0bE8tMFhYd1ZKOE5DVEU4ejRNRXZMWDNFbk9CSUROUWVmRTZJdTljaVdKTnpfQ3J3SWExNXZNdjVISEJrRENzWlIxclpPWGVNUG1qZkw4MERCeFlVN2RfWmZfOWtkMUhtNlNVUUMwSFdPSzZFYzlCd0VaWnNLbzQ1RUF4UjJ0SF81TWlIT3RSX2RMNWJ6enM4?oc=5\" target=\"_blank\">Ritrovato a Sesto Fiorentino l’anziano scomparso: è in buone condizioni</a> <font color=\"#6f6f6f\">inItaly</font>",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMUFOeEZER3ZYQUJaUDY2U1JZUVZ0bE8tMFhYd1ZKOE5DVEU4ejRNRXZMWDNFbk9CSUROUWVmRTZJdTljaVdKTnpfQ3J3SWExNXZNdjVISEJrRENzWlIxclpPWGVNUG1qZkw4MERCeFlVN2RfWmZfOWtkMUhtNlNVUUMwSFdPSzZFYzlCd0VaWnNLbzQ1RUF4UjJ0SF81TWlIT3RSX2RMNWJ6enM4?oc=5",
@@ -2548,10 +2524,10 @@
     },
     {
       "title": "Ancora incendi nel Salernitano, fiamme sul Monte Mai e nella Valle dell'Irno: in azione i canadair",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxOZWFTY0stT3RLN1hPNkgxaUlpdjNMbTNyb1RYWFgzUnNydnl2bWZGMVdKb1lmWlp1X181bEsyeTN5SkNkN0tuRUQ2SU05NEFiWi04a2ZWN3ROcnh3V1pOdVVHXzQzR1UzZWpNdXV0Y203QUtDUnBOS19tNmoxOXRwdXRJaWRvem5LLUlXMVI3LWVoWFZRbjRWY2JNc2s?oc=5\" target=\"_blank\">Ancora incendi nel Salernitano, fiamme sul Monte Mai e nella Valle dell'Irno: in azione i canadair</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxOZWFTY0stT3RLN1hPNkgxaUlpdjNMbTNyb1RYWFgzUnNydnl2bWZGMVdKb1lmWlp1X181bEsyeTN5SkNkN0tuRUQ2SU05NEFiWi04a2ZWN3ROcnh3V1pOdVVHXzQzR1UzZWpNdXV0Y203QUtDUnBOS19tNmoxOXRwdXRJaWRvem5LLUlXMVI3LWVoWFZRbjRWY2JNc2s?oc=5\" target=\"_blank\">Ancora incendi nel Salernitano, fiamme sul Monte Mai e nella Valle dell'Irno: in azione i canadair</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZWFTY0stT3RLN1hPNkgxaUlpdjNMbTNyb1RYWFgzUnNydnl2bWZGMVdKb1lmWlp1X181bEsyeTN5SkNkN0tuRUQ2SU05NEFiWi04a2ZWN3ROcnh3V1pOdVVHXzQzR1UzZWpNdXV0Y203QUtDUnBOS19tNmoxOXRwdXRJaWRvem5LLUlXMVI3LWVoWFZRbjRWY2JNc2s?oc=5",
       "image": "",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -2563,7 +2539,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZWFTY0stT3RLN1hPNkgxaUlpdjNMbTNyb1RYWFgzUnNydnl2bWZGMVdKb1lmWlp1X181bEsyeTN5SkNkN0tuRUQ2SU05NEFiWi04a2ZWN3ROcnh3V1pOdVVHXzQzR1UzZWpNdXV0Y203QUtDUnBOS19tNmoxOXRwdXRJaWRvem5LLUlXMVI3LWVoWFZRbjRWY2JNc2s?oc=5",
           "pubDate": "Sat, 05 Sep 2026 20:40:01 GMT"
         }
@@ -2729,10 +2705,10 @@
     },
     {
       "title": "Cani tra catene e balconi pericolanti: scattano i controlli",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxPdEU2WUM2T1lwekpWeHZ2LWEzUGF4LTRRNDJfSWRNVzV2UmFrVEw2dmF3R3UwVWl5ZEx3ZGFKRUVMb1d2TU81TWVWcDVDMU1wQjYyR3BVTzZrVGxQd0QtbldjbEpRdlF1MzNTamFFMllrYlZOQkJqNEhra056Q0Iyc0R5UzE0Ulk2bGdWVXF2bUJxMkdjUTg4?oc=5\" target=\"_blank\">Cani tra catene e balconi pericolanti: scattano i controlli</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxPdEU2WUM2T1lwekpWeHZ2LWEzUGF4LTRRNDJfSWRNVzV2UmFrVEw2dmF3R3UwVWl5ZEx3ZGFKRUVMb1d2TU81TWVWcDVDMU1wQjYyR3BVTzZrVGxQd0QtbldjbEpRdlF1MzNTamFFMllrYlZOQkJqNEhra056Q0Iyc0R5UzE0Ulk2bGdWVXF2bUJxMkdjUTg4?oc=5\" target=\"_blank\">Cani tra catene e balconi pericolanti: scattano i controlli</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdEU2WUM2T1lwekpWeHZ2LWEzUGF4LTRRNDJfSWRNVzV2UmFrVEw2dmF3R3UwVWl5ZEx3ZGFKRUVMb1d2TU81TWVWcDVDMU1wQjYyR3BVTzZrVGxQd0QtbldjbEpRdlF1MzNTamFFMllrYlZOQkJqNEhra056Q0Iyc0R5UzE0Ulk2bGdWVXF2bUJxMkdjUTg4?oc=5",
       "image": "",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -2744,7 +2720,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdEU2WUM2T1lwekpWeHZ2LWEzUGF4LTRRNDJfSWRNVzV2UmFrVEw2dmF3R3UwVWl5ZEx3ZGFKRUVMb1d2TU81TWVWcDVDMU1wQjYyR3BVTzZrVGxQd0QtbldjbEpRdlF1MzNTamFFMllrYlZOQkJqNEhra056Q0Iyc0R5UzE0Ulk2bGdWVXF2bUJxMkdjUTg4?oc=5",
           "pubDate": "Sat, 05 Sep 2026 20:19:59 GMT"
         }
@@ -2789,9 +2765,9 @@
     },
     {
       "title": "La notte degli Oasis a Venezia, fan in delirio",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxONkNMd2kxcXIzdWF1dHlRa00yWHVnVEdSZ1Aya3cwcHViWkRvS1BvY0xVRndvMnZRaWxJamh6N2JMemNwdG5oX1pnNERtRGM2OTJOQmhJdGQ4bGNkTF9WUHBGVmplMG5yTDZGMzJtemFkVG9UN3FDY1hlQnQ0bW1Fd0R1M2o3Wm9H?oc=5\" target=\"_blank\">La notte degli Oasis a Venezia, fan in delirio</a> <font color=\"#6f6f6f\">agi.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxONkNMd2kxcXIzdWF1dHlRa00yWHVnVEdSZ1Aya3cwcHViWkRvS1BvY0xVRndvMnZRaWxJamh6N2JMemNwdG5oX1pnNERtRGM2OTJOQmhJdGQ4bGNkTF9WUHBGVmplMG5yTDZGMzJtemFkVG9UN3FDY1hlQnQ0bW1Fd0R1M2o3Wm9H?oc=5\" target=\"_blank\">La notte degli Oasis a Venezia, fan in delirio</a> <font color=\"#6f6f6f\">AGI</font>",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONkNMd2kxcXIzdWF1dHlRa00yWHVnVEdSZ1Aya3cwcHViWkRvS1BvY0xVRndvMnZRaWxJamh6N2JMemNwdG5oX1pnNERtRGM2OTJOQmhJdGQ4bGNkTF9WUHBGVmplMG5yTDZGMzJtemFkVG9UN3FDY1hlQnQ0bW1Fd0R1M2o3Wm9H?oc=5",
-      "source": "agi.it",
+      "source": "AGI",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -2803,7 +2779,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONkNMd2kxcXIzdWF1dHlRa00yWHVnVEdSZ1Aya3cwcHViWkRvS1BvY0xVRndvMnZRaWxJamh6N2JMemNwdG5oX1pnNERtRGM2OTJOQmhJdGQ4bGNkTF9WUHBGVmplMG5yTDZGMzJtemFkVG9UN3FDY1hlQnQ0bW1Fd0R1M2o3Wm9H?oc=5",
           "pubDate": "Sat, 05 Sep 2026 20:15:40 GMT"
         }
@@ -2995,9 +2971,9 @@
     },
     {
       "title": "Ultime Notizie Online",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiRkFVX3lxTE9uOEdhVHNzVWU0OFRlazhHT0QyR0hhSElCemFxbEdWelAyOVQtM2wtZWVZWnRGWWEydFljNFhGX2VSTnV2eHc?oc=5\" target=\"_blank\">Ultime Notizie Online</a> <font color=\"#6f6f6f\">agi.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiRkFVX3lxTE9uOEdhVHNzVWU0OFRlazhHT0QyR0hhSElCemFxbEdWelAyOVQtM2wtZWVZWnRGWWEydFljNFhGX2VSTnV2eHc?oc=5\" target=\"_blank\">Ultime Notizie Online</a> <font color=\"#6f6f6f\">AGI</font>",
       "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9uOEdhVHNzVWU0OFRlazhHT0QyR0hhSElCemFxbEdWelAyOVQtM2wtZWVZWnRGWWEydFljNFhGX2VSTnV2eHc?oc=5",
-      "source": "agi.it",
+      "source": "AGI",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -3009,57 +2985,57 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9uOEdhVHNzVWU0OFRlazhHT0QyR0hhSElCemFxbEdWelAyOVQtM2wtZWVZWnRGWWEydFljNFhGX2VSTnV2eHc?oc=5",
           "pubDate": "Sat, 05 Sep 2026 19:59:47 GMT"
         },
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQay1VRlM1emNMRnE3RXRPaDlROGsxaUlDTGhocDM2Rlc2WmdDQW5IX0pDeDkzLTN3LW8wRS1aTHE5dGY1YTNNM1R0cklvSThwVVVQV3U5YTBjNEtkY052OElXc1JMeGhrd2puMmtHakUzVWQ5aTZkYWdsZzZlS1dvNlgtcTdjbFZZbFBIS0hqcVR6R0FvcmVyRnBiR04?oc=5",
           "pubDate": "Sat, 05 Sep 2026 18:54:00 GMT"
         },
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSUFUQ190ZXQ4MnpOalVjaEo4WUF2Wkx6V25wRzdkSkppNF9EVjFCWXVMTk1BVmItUFZTSEtUYlY5SU5QTk80MXlWaGNFZklCYXk0bnRZeERTNGVmMEU0aWE4YW96THFOOWlfbXBFdEZDSVNUS3hveUozSkN6R2ZGVDVGb1Q4WlJENjhqX2FabEJKbDBZd0doU1Zn?oc=5",
           "pubDate": "Sat, 05 Sep 2026 16:56:00 GMT"
         },
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOYlFmY1RMY0RUSGhkOURGMzhyQTRldFJ5TlhrT0R0QTJmcXBUR1dJQVptb0o2eG5SMUVMZ2JPUVV4RGF5b2h0YjZBQ0VYSGFGNXN4eUxMYWh4eDMzaEw2M01QLTBlcG9PMjhkYXNablA1cFZycXByNm5WZHFwWXNlSGttazJpRUUzanpyLVN0TkkyaVhvOWhpZWhvYzJ1eExMSnh0UQ?oc=5",
           "pubDate": "Sat, 05 Sep 2026 16:27:00 GMT"
         },
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaElnT0pKdndkdHZZVU16ZGRmOG1vLXNpTl9HcFRwS0MzR0xsMS12S3Q3bk0zcmtaaDdtUXB3dTV3SXBCT3hCWVpNcDEtMHZnV3lWeFBibXJVTWpDdGcyTm9EMWtTMzNIaXRzRGNaSy1sRE9kT2pULUJNZXVWQW1ERkRMYy1Zblc4YTR5cUJhN3BMTmdkazZaZ1FQTEdORlFHbDFEdGV3?oc=5",
           "pubDate": "Sat, 05 Sep 2026 15:09:00 GMT"
         },
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOT21HTnZRaEl3U0tMX0VMcUFQa2FlT3BVdTJuUUMtU052a2VtZzBQT2VjTGlUakNIOW0yUHlVNTg0TDh6YTVaREgwQjdydmVsY2FCSjhrQTlNSmNieUJDTnhDY3gzYWItQm10S2tBcDg3Q3BoSDlfUkZTaFJPc05jMzg5ZWE4Z002TkhxVHlPOHFhbVNneV8yX1JFc05CYl9FQzl0OUl1U08?oc=5",
           "pubDate": "Sat, 05 Sep 2026 13:32:00 GMT"
         },
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOU2g0cEdVMGJVa080Mzh6akpHNnAwRTNQYkFObmZzTGw1czh6VS1MRHZsakQ1dFg0VWJRaWxHLVZOTC1EWVNFaXR0ZHM2bVdxNmw3cVAxTmRsWlNvVDVHcm9mYmRtZXlmdzJEc0lLd2JyLXd3Y1d4Yy0zYWFINVhRbzVEdmRSTzBKNnNscUJHLWcta3R4RGx5eG5OMi15SG5pNlYyVQ?oc=5",
           "pubDate": "Sat, 05 Sep 2026 10:28:00 GMT"
         },
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQY25maTdCSW1XLUUtUV9SaUJTZmIzN3FLQUJsLWFTUUFsUXlpb014VVd3SkpSRUh1VHlGOWZ6LVRoNlIwQXlLSGtlNmVQV0VreG1fbnRzaEkxWVNyUzZPR2kwQzdTa3ZvUjd0VUx6LXV1YkpJdUcwd0xUTlJUQXowRklNQThBU2VrTXVpNkFidVdyOEtLZHh2dTFIYjhtaUtm?oc=5",
           "pubDate": "Sat, 05 Sep 2026 10:00:00 GMT"
         },
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTmg2OW9LNm9PQW1YbEZTdmRnTERvbUNyS2R6NmFuOXhEcWlHX0JCak1jLU81QllfUV9jN1hnQU5BakxNR0lwZ2R6QmlVam1MT19vc2N2UWpxSk5wNGNFQ0VGdFNQdEVFbjQ2RnRVR0JqQ1haWDFSdFhpazM0a2dCbkZDLTlvdHNtUDZYQVpKc2tWUlJweTRJ?oc=5",
           "pubDate": "Sat, 05 Sep 2026 10:00:00 GMT"
         },
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORmJDOUo3bUxEZkZVNDB2OE00SDZRbU1kZThUTENRckZBU0oxWE8zSnlYalI5SmtCR1hEN0VEZGNxMm9WY3NESDREWkZJd0xaU0RicGo2aVYwN3E2bzB1cEtRMEFLeTZaZlAxVHQxOXdtOTBXZXRzY1VTb05xRW9ibnU5SlF0aXJSNWhIeEl1MW5sYVpoMzdWMTM4SDlPWmdBTWRnRmJZQQ?oc=5",
           "pubDate": "Sat, 05 Sep 2026 09:37:00 GMT"
         },
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNeXU4TTVEVXc2aDkzdXpmdU9CRVNOVEljRmt1WVlONE1yWUdkUEQ1ajZqa2Y1ZG9nWlpHTlVHel92Z2l5ckg5Mk9iZzZXakNTZnJDbmkyVUVMMi1pcW14eWZZWUN6cVpkU2FETV9oelp3TWcwZzFXLTRsQXlQcEZ0VlZsWDR1ZU8xdFNQTWNreUozVHV3dC1pcXRNU3lBcUVj?oc=5",
           "pubDate": "Sat, 05 Sep 2026 06:54:00 GMT"
         }
@@ -3069,9 +3045,9 @@
     },
     {
       "title": "Caso Bibbiano, Selvaggia Lucarelli dovrà risarcire Claudio Foti con 25mila euro",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPMjRIUTNrTV8zUl9XeG9hRnZiVEFjYzJobmcxUm80bGR4b1NuZ2h0Z0pFM0U5VkQzQ2dxSWktNWVmYUJrZVBWTFRjU25FUTVOeGpXc0VTbnZaclgyWWJCdC1WNWd1S1RhOGxYZ1ZVNFhRMmpzMU1NYUVSNWdwRnBFZmNTbjNvTzc3QUp0czNqb05LZ3E4NDFZejhtNHBWUzZD?oc=5\" target=\"_blank\">Caso Bibbiano, Selvaggia Lucarelli dovrà risarcire Claudio Foti con 25mila euro</a> <font color=\"#6f6f6f\">agi.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPMjRIUTNrTV8zUl9XeG9hRnZiVEFjYzJobmcxUm80bGR4b1NuZ2h0Z0pFM0U5VkQzQ2dxSWktNWVmYUJrZVBWTFRjU25FUTVOeGpXc0VTbnZaclgyWWJCdC1WNWd1S1RhOGxYZ1ZVNFhRMmpzMU1NYUVSNWdwRnBFZmNTbjNvTzc3QUp0czNqb05LZ3E4NDFZejhtNHBWUzZD?oc=5\" target=\"_blank\">Caso Bibbiano, Selvaggia Lucarelli dovrà risarcire Claudio Foti con 25mila euro</a> <font color=\"#6f6f6f\">AGI</font>",
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMjRIUTNrTV8zUl9XeG9hRnZiVEFjYzJobmcxUm80bGR4b1NuZ2h0Z0pFM0U5VkQzQ2dxSWktNWVmYUJrZVBWTFRjU25FUTVOeGpXc0VTbnZaclgyWWJCdC1WNWd1S1RhOGxYZ1ZVNFhRMmpzMU1NYUVSNWdwRnBFZmNTbjNvTzc3QUp0czNqb05LZ3E4NDFZejhtNHBWUzZD?oc=5",
-      "source": "agi.it",
+      "source": "AGI",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -3083,7 +3059,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMjRIUTNrTV8zUl9XeG9hRnZiVEFjYzJobmcxUm80bGR4b1NuZ2h0Z0pFM0U5VkQzQ2dxSWktNWVmYUJrZVBWTFRjU25FUTVOeGpXc0VTbnZaclgyWWJCdC1WNWd1S1RhOGxYZ1ZVNFhRMmpzMU1NYUVSNWdwRnBFZmNTbjNvTzc3QUp0czNqb05LZ3E4NDFZejhtNHBWUzZD?oc=5",
           "pubDate": "Sat, 05 Sep 2026 19:56:01 GMT"
         }
@@ -3093,10 +3069,10 @@
     },
     {
       "title": "Tenta di strappare una collanina d’oro, poi la colluttazione: arrestato 28enne",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxNVTV5bS05aFIzbENRdUJfUXNsZHI5Y2drNlJGYzZIMEhRV1E1SXJ4c2gwTjQwVkdXQ0V0Sk9qTWxYeHFtZ2x3d0pvZjdDbVZSeDNjWV9ETzY3OTBSZ0VQNXBUdUZnWVA5SjVMQzNrT2x2SXp2MU1VLTVIVnlFdkQxaVZGek9LUVpkYUVLekRRbXdIUkhPdFJHQmFtWWc?oc=5\" target=\"_blank\">Tenta di strappare una collanina d’oro, poi la colluttazione: arrestato 28enne</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxNVTV5bS05aFIzbENRdUJfUXNsZHI5Y2drNlJGYzZIMEhRV1E1SXJ4c2gwTjQwVkdXQ0V0Sk9qTWxYeHFtZ2x3d0pvZjdDbVZSeDNjWV9ETzY3OTBSZ0VQNXBUdUZnWVA5SjVMQzNrT2x2SXp2MU1VLTVIVnlFdkQxaVZGek9LUVpkYUVLekRRbXdIUkhPdFJHQmFtWWc?oc=5\" target=\"_blank\">Tenta di strappare una collanina d’oro, poi la colluttazione: arrestato 28enne</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVTV5bS05aFIzbENRdUJfUXNsZHI5Y2drNlJGYzZIMEhRV1E1SXJ4c2gwTjQwVkdXQ0V0Sk9qTWxYeHFtZ2x3d0pvZjdDbVZSeDNjWV9ETzY3OTBSZ0VQNXBUdUZnWVA5SjVMQzNrT2x2SXp2MU1VLTVIVnlFdkQxaVZGek9LUVpkYUVLekRRbXdIUkhPdFJHQmFtWWc?oc=5",
       "image": "",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Sicurezza",
       "categories": [
         "Sicurezza"
@@ -3108,7 +3084,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVTV5bS05aFIzbENRdUJfUXNsZHI5Y2drNlJGYzZIMEhRV1E1SXJ4c2gwTjQwVkdXQ0V0Sk9qTWxYeHFtZ2x3d0pvZjdDbVZSeDNjWV9ETzY3OTBSZ0VQNXBUdUZnWVA5SjVMQzNrT2x2SXp2MU1VLTVIVnlFdkQxaVZGek9LUVpkYUVLekRRbXdIUkhPdFJHQmFtWWc?oc=5",
           "pubDate": "Sat, 05 Sep 2026 19:55:04 GMT"
         }
@@ -3147,10 +3123,10 @@
     },
     {
       "title": "La raccolta dei rifiuti ingombranti a Roma sabato 5 e domenica 6 settembre 2026",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxOWEE0cXllVnBjRUQ5U3FUdnF4dW5pTVB5cThqSDRIN01TV1Zkd2FZaXIxbUVJMFh4LTg4dVM4a0F2TnZTaHhZZndJY2lxLTRYZGdQdnI2WVdqSTcxZUp6M3JoU1dZQWNMY1dLLUxSZWdnM1gzZDR5dTQtYkVPdXZDVVlMY2ZzVElxLVJxa0FsY0RBMWZiak1v?oc=5\" target=\"_blank\">La raccolta dei rifiuti ingombranti a Roma sabato 5 e domenica 6 settembre 2026</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxOWEE0cXllVnBjRUQ5U3FUdnF4dW5pTVB5cThqSDRIN01TV1Zkd2FZaXIxbUVJMFh4LTg4dVM4a0F2TnZTaHhZZndJY2lxLTRYZGdQdnI2WVdqSTcxZUp6M3JoU1dZQWNMY1dLLUxSZWdnM1gzZDR5dTQtYkVPdXZDVVlMY2ZzVElxLVJxa0FsY0RBMWZiak1v?oc=5\" target=\"_blank\">La raccolta dei rifiuti ingombranti a Roma sabato 5 e domenica 6 settembre 2026</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWEE0cXllVnBjRUQ5U3FUdnF4dW5pTVB5cThqSDRIN01TV1Zkd2FZaXIxbUVJMFh4LTg4dVM4a0F2TnZTaHhZZndJY2lxLTRYZGdQdnI2WVdqSTcxZUp6M3JoU1dZQWNMY1dLLUxSZWdnM1gzZDR5dTQtYkVPdXZDVVlMY2ZzVElxLVJxa0FsY0RBMWZiak1v?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -3162,7 +3138,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWEE0cXllVnBjRUQ5U3FUdnF4dW5pTVB5cThqSDRIN01TV1Zkd2FZaXIxbUVJMFh4LTg4dVM4a0F2TnZTaHhZZndJY2lxLTRYZGdQdnI2WVdqSTcxZUp6M3JoU1dZQWNMY1dLLUxSZWdnM1gzZDR5dTQtYkVPdXZDVVlMY2ZzVElxLVJxa0FsY0RBMWZiak1v?oc=5",
           "pubDate": "Sat, 05 Sep 2026 19:54:08 GMT"
         }
@@ -3440,9 +3416,9 @@
     },
     {
       "title": "Incontro al Cremlino tra Putin e gli emissari Usa: i cinque pilastri del piano segreto di Trump per l'Ucraina",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxObDl4UzZjRk9mSU9IU29salBDUGNVTzVEcTVBb25IWlhpY0VzWjFIcFFZUjBRcExWdjdKbm9yTDYzaW9Xd29iZ1NlQzU3bUtRQ2U0eUg5VjlENjlTSWg0X2V2bFhFSXJsUDUwa1JLUFpXSVZ6M3gxY0N3YTVTN2pUWVVnR3BtNFljQVFLRm9nMml4ZVpkbTJ6ZTh0UDdJS0pzNld0SkhXTHRxYUh6ZDJLNDEzVE9MOVRBeWQtajROV2lxTllGY0NuREtjRHJtLWRVajRhWk85amxKQjIxcWtGSjNzWTlhNHdoeDdUMlhEQmhXQnZaT3A4?oc=5\" target=\"_blank\">Incontro al Cremlino tra Putin e gli emissari Usa: i cinque pilastri del piano segreto di Trump per l'Ucraina</a> <font color=\"#6f6f6f\">lasicilia.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxObDl4UzZjRk9mSU9IU29salBDUGNVTzVEcTVBb25IWlhpY0VzWjFIcFFZUjBRcExWdjdKbm9yTDYzaW9Xd29iZ1NlQzU3bUtRQ2U0eUg5VjlENjlTSWg0X2V2bFhFSXJsUDUwa1JLUFpXSVZ6M3gxY0N3YTVTN2pUWVVnR3BtNFljQVFLRm9nMml4ZVpkbTJ6ZTh0UDdJS0pzNld0SkhXTHRxYUh6ZDJLNDEzVE9MOVRBeWQtajROV2lxTllGY0NuREtjRHJtLWRVajRhWk85amxKQjIxcWtGSjNzWTlhNHdoeDdUMlhEQmhXQnZaT3A4?oc=5\" target=\"_blank\">Incontro al Cremlino tra Putin e gli emissari Usa: i cinque pilastri del piano segreto di Trump per l'Ucraina</a> <font color=\"#6f6f6f\">La Sicilia</font>",
       "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxObDl4UzZjRk9mSU9IU29salBDUGNVTzVEcTVBb25IWlhpY0VzWjFIcFFZUjBRcExWdjdKbm9yTDYzaW9Xd29iZ1NlQzU3bUtRQ2U0eUg5VjlENjlTSWg0X2V2bFhFSXJsUDUwa1JLUFpXSVZ6M3gxY0N3YTVTN2pUWVVnR3BtNFljQVFLRm9nMml4ZVpkbTJ6ZTh0UDdJS0pzNld0SkhXTHRxYUh6ZDJLNDEzVE9MOVRBeWQtajROV2lxTllGY0NuREtjRHJtLWRVajRhWk85amxKQjIxcWtGSjNzWTlhNHdoeDdUMlhEQmhXQnZaT3A4?oc=5",
-      "source": "lasicilia.it",
+      "source": "La Sicilia",
       "category": "Esteri",
       "categories": [
         "Esteri"
@@ -3454,7 +3430,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "lasicilia.it",
+          "source": "La Sicilia",
           "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxObDl4UzZjRk9mSU9IU29salBDUGNVTzVEcTVBb25IWlhpY0VzWjFIcFFZUjBRcExWdjdKbm9yTDYzaW9Xd29iZ1NlQzU3bUtRQ2U0eUg5VjlENjlTSWg0X2V2bFhFSXJsUDUwa1JLUFpXSVZ6M3gxY0N3YTVTN2pUWVVnR3BtNFljQVFLRm9nMml4ZVpkbTJ6ZTh0UDdJS0pzNld0SkhXTHRxYUh6ZDJLNDEzVE9MOVRBeWQtajROV2lxTllGY0NuREtjRHJtLWRVajRhWk85amxKQjIxcWtGSjNzWTlhNHdoeDdUMlhEQmhXQnZaT3A4?oc=5",
           "pubDate": "Sat, 05 Sep 2026 19:31:38 GMT"
         }
@@ -3734,10 +3710,10 @@
     },
     {
       "title": "Generazione 90, serata di comicità ai Parchi della Colombo",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcHhWQmlrVkNHY2hRWktOWm1LY0cxMm1uS3FreGIxalZ6REFIU0k1MW9hRnJFa0NPaENlR1RGTU5WWDk1LUlNWEFpLWtNN0JLQVFUczVLMThYcWl2SjhOa3pSbk9YTnA0Q2hNX2pCN1dtSlZNVmdkLUx2bm96WnZQelZ6UjBVOEJwZnV3?oc=5\" target=\"_blank\">Generazione 90, serata di comicità ai Parchi della Colombo</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcHhWQmlrVkNHY2hRWktOWm1LY0cxMm1uS3FreGIxalZ6REFIU0k1MW9hRnJFa0NPaENlR1RGTU5WWDk1LUlNWEFpLWtNN0JLQVFUczVLMThYcWl2SjhOa3pSbk9YTnA0Q2hNX2pCN1dtSlZNVmdkLUx2bm96WnZQelZ6UjBVOEJwZnV3?oc=5\" target=\"_blank\">Generazione 90, serata di comicità ai Parchi della Colombo</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcHhWQmlrVkNHY2hRWktOWm1LY0cxMm1uS3FreGIxalZ6REFIU0k1MW9hRnJFa0NPaENlR1RGTU5WWDk1LUlNWEFpLWtNN0JLQVFUczVLMThYcWl2SjhOa3pSbk9YTnA0Q2hNX2pCN1dtSlZNVmdkLUx2bm96WnZQelZ6UjBVOEJwZnV3?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -3749,7 +3725,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcHhWQmlrVkNHY2hRWktOWm1LY0cxMm1uS3FreGIxalZ6REFIU0k1MW9hRnJFa0NPaENlR1RGTU5WWDk1LUlNWEFpLWtNN0JLQVFUczVLMThYcWl2SjhOa3pSbk9YTnA0Q2hNX2pCN1dtSlZNVmdkLUx2bm96WnZQelZ6UjBVOEJwZnV3?oc=5",
           "pubDate": "Sat, 05 Sep 2026 19:08:46 GMT"
         }
@@ -3761,7 +3737,7 @@
     },
     {
       "title": "Incidente al Rally 1000 Miglia di Brescia, auto in gara esce di strada: travolto e ucciso uno spettatore",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdHVVX3hXU0xmUHk3ZXREX3FzcWJXdGNOZkI5cUxvLTNLRTRjU0tkckZHRjJnUjhldndlOHZJUWRGdk1PTXZIVHNncUF4MGFnUFNvREpuU1V2V1BqNlMycVNsNDZFNjkwVloyVDJPcXZKMzB3Q296NnFZaHgzSzVlUlU2QzZGSFZqNjBXbVZnWHdIX3djcVZCSEdvN1F3UmdZOE1QSllNMmd0UQ?oc=5\" target=\"_blank\">Mille Miglia, incidente al rally: travolta e uccisa una persona</a> <font color=\"#6f6f6f\">il Giornale</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxPNmNROUdoVWxxSXBHQ0Ezb3JCTC1VdXRHX0dGbTBIOUJQTEZhMDI0MFd3NVNWdTlXdVExVFF0LU9nWjdMdGtNVy1FdUtpYVVMYTlTRnJjVFRrSk9TRDhRdE9IaVRoNGFFSHBFZDFTbkgxQWJlMGN4M19qRWhfNzJLY00zVFhSY1FaWW50eXFDbG16WlBkSlN3NVNoTFE0RndBTFNRVTl3?oc=5\" target=\"_blank\">Incidente a Roma: pedone travolto e ucciso da tassista sul Lungotevere</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://brescia.corriere.it/notizie/cronaca/26_settembre_05/rally-1000-miglia-interrotto-spettatrice-investita-da-un-auto-in-gara-e-gravissima-23b9d464-9263-42a7-85dd-6c6aa492bxlk.shtml",
       "image": "https://dimages2.corriereobjects.it/files/image_1200_675/files/fp/uploads/2026/09/05/6a9c52f17402a.r_d.248-210-0.jpeg",
       "source": "Corriere della Sera",
@@ -3789,7 +3765,7 @@
           "pubDate": "Sat, 05 Sep 2026 14:51:44 GMT"
         },
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNmNROUdoVWxxSXBHQ0Ezb3JCTC1VdXRHX0dGbTBIOUJQTEZhMDI0MFd3NVNWdTlXdVExVFF0LU9nWjdMdGtNVy1FdUtpYVVMYTlTRnJjVFRrSk9TRDhRdE9IaVRoNGFFSHBFZDFTbkgxQWJlMGN4M19qRWhfNzJLY00zVFhSY1FaWW50eXFDbG16WlBkSlN3NVNoTFE0RndBTFNRVTl3?oc=5",
           "pubDate": "Sat, 05 Sep 2026 07:57:10 GMT"
         },
@@ -3804,7 +3780,7 @@
           "pubDate": "Sat, 05 Sep 2026 17:00:00 GMT"
         },
         {
-          "source": "adnkronos.com",
+          "source": "Adnkronos",
           "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSjdmd0gtbUhjWkdGLURiZDdMWS1CcUktakNHMTdLcHJRLWdRN2RTUUoyTW5xbnptREZVLWZCOGluTjk3Wm9nYnpKNlFFYlVweEZWS1FscnFjTFhtRk53SzZNZk1VeEVCYUk3X3ozMFRPcGl0a0V4RkxBc0JES05PbXNxbE11VUxJSGZHLU9kMy1pYlJDSXQ0c25yaTU0S1NlUDhIYXc3RUFNdw?oc=5",
           "pubDate": "Sat, 05 Sep 2026 15:02:00 GMT"
         }
@@ -3816,9 +3792,9 @@
     },
     {
       "title": "TG5: Tre giorni di tregua e una speranza di pace Video",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPckFTeGpxXzdyUDFUR1ZVMXJsMnRhZ2pwbXdaN245TTRmM01pTVpNUlF6SXd5TXlzenNrdUxtNEk4RnNpS0pUZ2NUTk41RjlYbW5VODVGVHFKdDMwdVBEY2pQbEUtUndwTmdjbW1LcU5wd0FON0ZMT0dXcVRPSzQ0SjJsQVlzZXg0SUQ2cDBkc3drMTFxdXFMWGY3VFY5UnZFRFFKZnRlN01NeFk?oc=5\" target=\"_blank\">TG5: Tre giorni di tregua e una speranza di pace Video</a> <font color=\"#6f6f6f\">mediasetinfinity.mediaset.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPckFTeGpxXzdyUDFUR1ZVMXJsMnRhZ2pwbXdaN245TTRmM01pTVpNUlF6SXd5TXlzenNrdUxtNEk4RnNpS0pUZ2NUTk41RjlYbW5VODVGVHFKdDMwdVBEY2pQbEUtUndwTmdjbW1LcU5wd0FON0ZMT0dXcVRPSzQ0SjJsQVlzZXg0SUQ2cDBkc3drMTFxdXFMWGY3VFY5UnZFRFFKZnRlN01NeFk?oc=5\" target=\"_blank\">TG5: Tre giorni di tregua e una speranza di pace Video</a> <font color=\"#6f6f6f\">Mediaset Infinity</font>",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPckFTeGpxXzdyUDFUR1ZVMXJsMnRhZ2pwbXdaN245TTRmM01pTVpNUlF6SXd5TXlzenNrdUxtNEk4RnNpS0pUZ2NUTk41RjlYbW5VODVGVHFKdDMwdVBEY2pQbEUtUndwTmdjbW1LcU5wd0FON0ZMT0dXcVRPSzQ0SjJsQVlzZXg0SUQ2cDBkc3drMTFxdXFMWGY3VFY5UnZFRFFKZnRlN01NeFk?oc=5",
-      "source": "mediasetinfinity.mediaset.it",
+      "source": "Mediaset Infinity",
       "category": "Lega",
       "categories": [
         "Lega"
@@ -3830,7 +3806,7 @@
       "isVideo": true,
       "sources": [
         {
-          "source": "mediasetinfinity.mediaset.it",
+          "source": "Mediaset Infinity",
           "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPckFTeGpxXzdyUDFUR1ZVMXJsMnRhZ2pwbXdaN245TTRmM01pTVpNUlF6SXd5TXlzenNrdUxtNEk4RnNpS0pUZ2NUTk41RjlYbW5VODVGVHFKdDMwdVBEY2pQbEUtUndwTmdjbW1LcU5wd0FON0ZMT0dXcVRPSzQ0SjJsQVlzZXg0SUQ2cDBkc3drMTFxdXFMWGY3VFY5UnZFRFFKZnRlN01NeFk?oc=5",
           "pubDate": "Sat, 05 Sep 2026 19:06:25 GMT"
         }
@@ -3894,10 +3870,10 @@
     },
     {
       "title": "Manifestazione pro Palestina a Milano: il corteo da Centrale al Consolato Usa, data e orari",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9qMmc4b0NfdGZ1TU9vZjhQUEVqcE4tX2ZPdnJjbWozdHhIaV9OSUhIeXkyOUV1WlQyTUdkSUxxRFlBUDVxTlBNVW01NUY0c2ZZRWpuS0YwUWo2bEdSMHZSZ2JDbHVSbkhRQjBNd2ZkQl9vd3hrN2NvYi1pNEs0dzA?oc=5\" target=\"_blank\">Manifestazione pro Palestina a Milano: il corteo da Centrale al Consolato Usa, data e orari</a> <font color=\"#6f6f6f\">milanotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9qMmc4b0NfdGZ1TU9vZjhQUEVqcE4tX2ZPdnJjbWozdHhIaV9OSUhIeXkyOUV1WlQyTUdkSUxxRFlBUDVxTlBNVW01NUY0c2ZZRWpuS0YwUWo2bEdSMHZSZ2JDbHVSbkhRQjBNd2ZkQl9vd3hrN2NvYi1pNEs0dzA?oc=5\" target=\"_blank\">Manifestazione pro Palestina a Milano: il corteo da Centrale al Consolato Usa, data e orari</a> <font color=\"#6f6f6f\">MilanoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9qMmc4b0NfdGZ1TU9vZjhQUEVqcE4tX2ZPdnJjbWozdHhIaV9OSUhIeXkyOUV1WlQyTUdkSUxxRFlBUDVxTlBNVW01NUY0c2ZZRWpuS0YwUWo2bEdSMHZSZ2JDbHVSbkhRQjBNd2ZkQl9vd3hrN2NvYi1pNEs0dzA?oc=5",
       "image": "",
-      "source": "milanotoday.it",
+      "source": "MilanoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -3909,7 +3885,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "milanotoday.it",
+          "source": "MilanoToday",
           "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9qMmc4b0NfdGZ1TU9vZjhQUEVqcE4tX2ZPdnJjbWozdHhIaV9OSUhIeXkyOUV1WlQyTUdkSUxxRFlBUDVxTlBNVW01NUY0c2ZZRWpuS0YwUWo2bEdSMHZSZ2JDbHVSbkhRQjBNd2ZkQl9vd3hrN2NvYi1pNEs0dzA?oc=5",
           "pubDate": "Sat, 05 Sep 2026 18:59:11 GMT"
         }
@@ -3921,10 +3897,10 @@
     },
     {
       "title": "Topi morti sul Lungomare Marconi: la segnalazione dei cittadini",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxNajVQX3hFbVVVT01PcDhXQVRGRXc4dkxtWFB2MU5JVjNPWlhCNUFPN1U0bVJCSFczM1prR3N6cF9zU2hmcjRZTVhTaEJVcGpReVYwTE1QNDA1bTRvdmU3N1hFZHhHQ1BhOHJPUm9lYkVpZ2ROU0kyVmlLMjhpVzMyem8zX0I2T01NTUxUOE9JTEw4aU9kbWdIY3l0ekhGdEk?oc=5\" target=\"_blank\">Topi morti sul Lungomare Marconi: la segnalazione dei cittadini</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxNajVQX3hFbVVVT01PcDhXQVRGRXc4dkxtWFB2MU5JVjNPWlhCNUFPN1U0bVJCSFczM1prR3N6cF9zU2hmcjRZTVhTaEJVcGpReVYwTE1QNDA1bTRvdmU3N1hFZHhHQ1BhOHJPUm9lYkVpZ2ROU0kyVmlLMjhpVzMyem8zX0I2T01NTUxUOE9JTEw4aU9kbWdIY3l0ekhGdEk?oc=5\" target=\"_blank\">Topi morti sul Lungomare Marconi: la segnalazione dei cittadini</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNajVQX3hFbVVVT01PcDhXQVRGRXc4dkxtWFB2MU5JVjNPWlhCNUFPN1U0bVJCSFczM1prR3N6cF9zU2hmcjRZTVhTaEJVcGpReVYwTE1QNDA1bTRvdmU3N1hFZHhHQ1BhOHJPUm9lYkVpZ2ROU0kyVmlLMjhpVzMyem8zX0I2T01NTUxUOE9JTEw4aU9kbWdIY3l0ekhGdEk?oc=5",
       "image": "",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -3936,7 +3912,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNajVQX3hFbVVVT01PcDhXQVRGRXc4dkxtWFB2MU5JVjNPWlhCNUFPN1U0bVJCSFczM1prR3N6cF9zU2hmcjRZTVhTaEJVcGpReVYwTE1QNDA1bTRvdmU3N1hFZHhHQ1BhOHJPUm9lYkVpZ2ROU0kyVmlLMjhpVzMyem8zX0I2T01NTUxUOE9JTEw4aU9kbWdIY3l0ekhGdEk?oc=5",
           "pubDate": "Sat, 05 Sep 2026 18:58:56 GMT"
         }
@@ -4161,10 +4137,10 @@
     },
     {
       "title": "Matrimonio dei Me contro Te a Milano: \"Arrivo da Palermo, ho speso più di 1.000 euro\"",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTFBxME9wR2xKaDctNzFhVXRMc0VIY2dzRUlfVzVPcDZvWFFybEVra3UyMmdqc2YxaFhQdG9VN1A2TmFnNFlTcVdZQXdlMjctcXhwNGZVdEZIMWVKaXE4V3RTa2xyeVRwM0dkUmhDa1RB?oc=5\" target=\"_blank\">Matrimonio dei Me contro Te a Milano: \"Arrivo da Palermo, ho speso più di 1.000 euro\"</a> <font color=\"#6f6f6f\">milanotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTFBxME9wR2xKaDctNzFhVXRMc0VIY2dzRUlfVzVPcDZvWFFybEVra3UyMmdqc2YxaFhQdG9VN1A2TmFnNFlTcVdZQXdlMjctcXhwNGZVdEZIMWVKaXE4V3RTa2xyeVRwM0dkUmhDa1RB?oc=5\" target=\"_blank\">Matrimonio dei Me contro Te a Milano: \"Arrivo da Palermo, ho speso più di 1.000 euro\"</a> <font color=\"#6f6f6f\">MilanoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBxME9wR2xKaDctNzFhVXRMc0VIY2dzRUlfVzVPcDZvWFFybEVra3UyMmdqc2YxaFhQdG9VN1A2TmFnNFlTcVdZQXdlMjctcXhwNGZVdEZIMWVKaXE4V3RTa2xyeVRwM0dkUmhDa1RB?oc=5",
       "image": "",
-      "source": "milanotoday.it",
+      "source": "MilanoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -4176,7 +4152,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "milanotoday.it",
+          "source": "MilanoToday",
           "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBxME9wR2xKaDctNzFhVXRMc0VIY2dzRUlfVzVPcDZvWFFybEVra3UyMmdqc2YxaFhQdG9VN1A2TmFnNFlTcVdZQXdlMjctcXhwNGZVdEZIMWVKaXE4V3RTa2xyeVRwM0dkUmhDa1RB?oc=5",
           "pubDate": "Sat, 05 Sep 2026 18:47:59 GMT"
         }
@@ -4278,10 +4254,10 @@
     },
     {
       "title": "Ricavi da milioni, utili in calo e srl in famiglia: quanto fatturano e quanto guadagnano i rapper di Milano (con diverse sorprese)",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxORjRaQjBxT3R4UnFXNWhjamd4dDR2dnhLSFRFOG5MUm5ULTlKWnRPSUlsRjRLTk5rZUM0QzBVZU9qZ0w2VjhDanlsMWJWSnRPZGRJOEc0Ml9oakZzdGljbHZMZGtSdE1FcXVaMGdickF0amxQRDBGYzJaMjZ1NGhxZ1JkN2h0eXPSAYcBQVVfeXFMTkY0WkIwcU90eFJxVzVoY2pneHQ0dnZ4S0hURThuTFJuVC05Slp0T0lJbEY0S05Oa2VDNEMwVWVPamdMNlY4Q2p5bDFiVkp0T2RkSThHNDJfaGpGc3RpY2x2TGRrUnRNRXF1WjBnYnJBdGpsUEQwRmMyWjI2dTRocWdSZDdodHlz?oc=5\" target=\"_blank\">Ricavi da milioni, utili in calo e srl in famiglia: quanto fatturano e quanto guadagnano i rapper di Milano (con diverse sorprese)</a> <font color=\"#6f6f6f\">milanotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxORjRaQjBxT3R4UnFXNWhjamd4dDR2dnhLSFRFOG5MUm5ULTlKWnRPSUlsRjRLTk5rZUM0QzBVZU9qZ0w2VjhDanlsMWJWSnRPZGRJOEc0Ml9oakZzdGljbHZMZGtSdE1FcXVaMGdickF0amxQRDBGYzJaMjZ1NGhxZ1JkN2h0eXPSAYcBQVVfeXFMTkY0WkIwcU90eFJxVzVoY2pneHQ0dnZ4S0hURThuTFJuVC05Slp0T0lJbEY0S05Oa2VDNEMwVWVPamdMNlY4Q2p5bDFiVkp0T2RkSThHNDJfaGpGc3RpY2x2TGRrUnRNRXF1WjBnYnJBdGpsUEQwRmMyWjI2dTRocWdSZDdodHlz?oc=5\" target=\"_blank\">Ricavi da milioni, utili in calo e srl in famiglia: quanto fatturano e quanto guadagnano i rapper di Milano (con diverse sorprese)</a> <font color=\"#6f6f6f\">MilanoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORjRaQjBxT3R4UnFXNWhjamd4dDR2dnhLSFRFOG5MUm5ULTlKWnRPSUlsRjRLTk5rZUM0QzBVZU9qZ0w2VjhDanlsMWJWSnRPZGRJOEc0Ml9oakZzdGljbHZMZGtSdE1FcXVaMGdickF0amxQRDBGYzJaMjZ1NGhxZ1JkN2h0eXPSAYcBQVVfeXFMTkY0WkIwcU90eFJxVzVoY2pneHQ0dnZ4S0hURThuTFJuVC05Slp0T0lJbEY0S05Oa2VDNEMwVWVPamdMNlY4Q2p5bDFiVkp0T2RkSThHNDJfaGpGc3RpY2x2TGRrUnRNRXF1WjBnYnJBdGpsUEQwRmMyWjI2dTRocWdSZDdodHlz?oc=5",
       "image": "",
-      "source": "milanotoday.it",
+      "source": "MilanoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -4293,12 +4269,12 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "milanotoday.it",
+          "source": "MilanoToday",
           "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORjRaQjBxT3R4UnFXNWhjamd4dDR2dnhLSFRFOG5MUm5ULTlKWnRPSUlsRjRLTk5rZUM0QzBVZU9qZ0w2VjhDanlsMWJWSnRPZGRJOEc0Ml9oakZzdGljbHZMZGtSdE1FcXVaMGdickF0amxQRDBGYzJaMjZ1NGhxZ1JkN2h0eXPSAYcBQVVfeXFMTkY0WkIwcU90eFJxVzVoY2pneHQ0dnZ4S0hURThuTFJuVC05Slp0T0lJbEY0S05Oa2VDNEMwVWVPamdMNlY4Q2p5bDFiVkp0T2RkSThHNDJfaGpGc3RpY2x2TGRrUnRNRXF1WjBnYnJBdGpsUEQwRmMyWjI2dTRocWdSZDdodHlz?oc=5",
           "pubDate": "Sat, 05 Sep 2026 18:41:44 GMT"
         },
         {
-          "source": "milanotoday.it",
+          "source": "MilanoToday",
           "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSFQwbEx0OWt4akM4c3dpUk1lRjBtOVJkcUhpZG55RXFzbUZWejJGVWdEd2VsaTFhVERJSzM0azhmd3FZZW5pTm5US21MWXFlYkE4akNEakVNLUNkR0VMUm1zS3VsVks3QUJadVpnMzFfVEhPWHVHQVlmZ0NQUU4xN1lLOUJreXk3aFE?oc=5",
           "pubDate": "Sat, 05 Sep 2026 18:39:43 GMT"
         }
@@ -4310,9 +4286,9 @@
     },
     {
       "title": "Super rimonta dell'Inter a San Siro, da 0-2 a 3-2 al Napoli",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxNbDNaTVQ5N21HSkZmZWdqbHFtRzZTMUNNNTRhSWNsTjFMN3Fha0pjTmFmMG9ra1UxNl9xd3NDSjByalZ0Z1V1bW1kLVJBVUdLc002ZEhoNFlMaGxhWlpDSlNkZmFwS0w3dVNDNVAxZFRPYnpWVWduTmZoMWhjc2k3T25HTnAzeGx6ZGc?oc=5\" target=\"_blank\">Super rimonta dell'Inter a San Siro, da 0-2 a 3-2 al Napoli</a> <font color=\"#6f6f6f\">agi.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxNbDNaTVQ5N21HSkZmZWdqbHFtRzZTMUNNNTRhSWNsTjFMN3Fha0pjTmFmMG9ra1UxNl9xd3NDSjByalZ0Z1V1bW1kLVJBVUdLc002ZEhoNFlMaGxhWlpDSlNkZmFwS0w3dVNDNVAxZFRPYnpWVWduTmZoMWhjc2k3T25HTnAzeGx6ZGc?oc=5\" target=\"_blank\">Super rimonta dell'Inter a San Siro, da 0-2 a 3-2 al Napoli</a> <font color=\"#6f6f6f\">AGI</font>",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbDNaTVQ5N21HSkZmZWdqbHFtRzZTMUNNNTRhSWNsTjFMN3Fha0pjTmFmMG9ra1UxNl9xd3NDSjByalZ0Z1V1bW1kLVJBVUdLc002ZEhoNFlMaGxhWlpDSlNkZmFwS0w3dVNDNVAxZFRPYnpWVWduTmZoMWhjc2k3T25HTnAzeGx6ZGc?oc=5",
-      "source": "agi.it",
+      "source": "AGI",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -4324,7 +4300,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbDNaTVQ5N21HSkZmZWdqbHFtRzZTMUNNNTRhSWNsTjFMN3Fha0pjTmFmMG9ra1UxNl9xd3NDSjByalZ0Z1V1bW1kLVJBVUdLc002ZEhoNFlMaGxhWlpDSlNkZmFwS0w3dVNDNVAxZFRPYnpWVWduTmZoMWhjc2k3T25HTnAzeGx6ZGc?oc=5",
           "pubDate": "Sat, 05 Sep 2026 18:41:13 GMT"
         }
@@ -4377,7 +4353,7 @@
           "pubDate": "Sat, 05 Sep 2026 11:07:13 GMT"
         },
         {
-          "source": "lasicilia.it",
+          "source": "La Sicilia",
           "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOUlJTdlNhbkpvM1phU3RLdUo0aGl0TmcyT3hpLWY0S2dYby1GcFgtdy0zOWdIdHlvbVpCTFhfRlpiNTE1ZVVzNEt2TUJjTExmcXlYM1VWdHhKdFV5V01LeEl2OF9SMmV1M0FqQW1wWWFPeFdmdmFrWlF3UloxY3gzY2dqVk14OWR6Y05EZXJOc0lNTlZWTmpfZzM3T3dTQTBLWV9UQ0tScVp3LUFHaDY4eGYyWWU4dmw4YkJIcUpLbnd3QnNpYkVPeUZkcnR6QWlsWVZTck5ZdXhOdW84WWZicTk4YTFBaFlaR0tyZXVIM0lyZk5wb0ZCd2NxMGstLUJlcGZjQTBXLWlmYk5HN3YzdHdMRG1GbWxCTm5IZFE2RURFUQ?oc=5",
           "pubDate": "Sat, 05 Sep 2026 10:40:11 GMT"
         },
@@ -4399,10 +4375,10 @@
     },
     {
       "title": "Caso Fariello a Cava, Rifondazione Comunista scrive al Prefetto",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPQ3hVeVJNbDd5eTJvQ2V2YTN6aE11N01qcXNXQWpYYXMtM2M3aklFX0w2RmE5Wmx2eTFMU2ZBN3dodXo2azE5cDBwUHZRR0RRVnF6RlQ1bUF0bWRvMElHTmVIejY5QUJISXFvT0ZTSVBGLTNMeGRYMW90eWhQTWgwVnJndzJGaWsxclJSdHhR?oc=5\" target=\"_blank\">Caso Fariello a Cava, Rifondazione Comunista scrive al Prefetto</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPQ3hVeVJNbDd5eTJvQ2V2YTN6aE11N01qcXNXQWpYYXMtM2M3aklFX0w2RmE5Wmx2eTFMU2ZBN3dodXo2azE5cDBwUHZRR0RRVnF6RlQ1bUF0bWRvMElHTmVIejY5QUJISXFvT0ZTSVBGLTNMeGRYMW90eWhQTWgwVnJndzJGaWsxclJSdHhR?oc=5\" target=\"_blank\">Caso Fariello a Cava, Rifondazione Comunista scrive al Prefetto</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQ3hVeVJNbDd5eTJvQ2V2YTN6aE11N01qcXNXQWpYYXMtM2M3aklFX0w2RmE5Wmx2eTFMU2ZBN3dodXo2azE5cDBwUHZRR0RRVnF6RlQ1bUF0bWRvMElHTmVIejY5QUJISXFvT0ZTSVBGLTNMeGRYMW90eWhQTWgwVnJndzJGaWsxclJSdHhR?oc=5",
       "image": "",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -4414,7 +4390,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQ3hVeVJNbDd5eTJvQ2V2YTN6aE11N01qcXNXQWpYYXMtM2M3aklFX0w2RmE5Wmx2eTFMU2ZBN3dodXo2azE5cDBwUHZRR0RRVnF6RlQ1bUF0bWRvMElHTmVIejY5QUJISXFvT0ZTSVBGLTNMeGRYMW90eWhQTWgwVnJndzJGaWsxclJSdHhR?oc=5",
           "pubDate": "Sat, 05 Sep 2026 18:40:15 GMT"
         }
@@ -4446,30 +4422,6 @@
         }
       ],
       "id": "video-juve milan i rossoneri sono arrivati a torino l accoglienza per l ex r-1788633473000",
-      "sourceCount": 1
-    },
-    {
-      "title": "DIRETTA BARI CASARANO | Risultato 0-0, video streaming tv: inizia il derby! (Serie C, 5 settembre 2026)",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQjgtVHhWOWlMTWV6N2VVOVlYaVFQWkRMa0pDRHM0RThqREZ2a1ZBLTMxaVZQcXhWLUh3ZnRvcWZLYUhlM2RFdTZQeTZkS1hDaVZjWlc0LThnVU56TmlDUEVRRG9YVmd4SjBzaUVDNGtPVEdZVlUtbFZPUE9zZFRaQ09pbzdDaGR1Q3FMdVhfLUNFUmEyOU9QN1YxeEJab0YzdnRlMGY3MTFuekdycnZKMkx6U2tFb2Z1eHdQN1V5SEUtc081cXl5TElXREIzdVBhME85bGZn0gHbAUFVX3lxTE9QbXVtaURaeGJPRlFSRHd1WnhKOXk5QlpDUTNKWUFkb29nNkRvcFJTY2ktdnZjYUt2ak1DU1lKalN1Nm5Iakx0eldSdFFXMVdpYWZJMEZfclh3ZkZ0dmlGd1VVTmQ1R1ZfOHVOUGVDRVUybFhHcnBTVVR6WXNpajRVQWpiSVRUUjIwTmRtN0NXODZOclZuTHFUUkQ0dWQzTlgtaWoyelVYTUZpQVZrUV9xdkVxeEVfenB4a2NDVlJsMElsSkplMVVnRnJjSjlzalY2dF9IUV9Temdvbw?oc=5\" target=\"_blank\">DIRETTA BARI CASARANO | Risultato 0-0, video streaming tv: inizia il derby! (Serie C, 5 settembre 2026)</a> <font color=\"#6f6f6f\">IlSussidiario.net</font>",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQjgtVHhWOWlMTWV6N2VVOVlYaVFQWkRMa0pDRHM0RThqREZ2a1ZBLTMxaVZQcXhWLUh3ZnRvcWZLYUhlM2RFdTZQeTZkS1hDaVZjWlc0LThnVU56TmlDUEVRRG9YVmd4SjBzaUVDNGtPVEdZVlUtbFZPUE9zZFRaQ09pbzdDaGR1Q3FMdVhfLUNFUmEyOU9QN1YxeEJab0YzdnRlMGY3MTFuekdycnZKMkx6U2tFb2Z1eHdQN1V5SEUtc081cXl5TElXREIzdVBhME85bGZn0gHbAUFVX3lxTE9QbXVtaURaeGJPRlFSRHd1WnhKOXk5QlpDUTNKWUFkb29nNkRvcFJTY2ktdnZjYUt2ak1DU1lKalN1Nm5Iakx0eldSdFFXMVdpYWZJMEZfclh3ZkZ0dmlGd1VVTmQ1R1ZfOHVOUGVDRVUybFhHcnBTVVR6WXNpajRVQWpiSVRUUjIwTmRtN0NXODZOclZuTHFUUkQ0dWQzTlgtaWoyelVYTUZpQVZrUV9xdkVxeEVfenB4a2NDVlJsMElsSkplMVVnRnJjSjlzalY2dF9IUV9Temdvbw?oc=5",
-      "source": "IlSussidiario.net",
-      "category": "Sicurezza",
-      "categories": [
-        "Sicurezza"
-      ],
-      "pubDate": "Sat, 05 Sep 2026 18:32:15 GMT",
-      "googlePubDate": "Sat, 05 Sep 2026 18:32:15 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": true,
-      "sources": [
-        {
-          "source": "IlSussidiario.net",
-          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQjgtVHhWOWlMTWV6N2VVOVlYaVFQWkRMa0pDRHM0RThqREZ2a1ZBLTMxaVZQcXhWLUh3ZnRvcWZLYUhlM2RFdTZQeTZkS1hDaVZjWlc0LThnVU56TmlDUEVRRG9YVmd4SjBzaUVDNGtPVEdZVlUtbFZPUE9zZFRaQ09pbzdDaGR1Q3FMdVhfLUNFUmEyOU9QN1YxeEJab0YzdnRlMGY3MTFuekdycnZKMkx6U2tFb2Z1eHdQN1V5SEUtc081cXl5TElXREIzdVBhME85bGZn0gHbAUFVX3lxTE9QbXVtaURaeGJPRlFSRHd1WnhKOXk5QlpDUTNKWUFkb29nNkRvcFJTY2ktdnZjYUt2ak1DU1lKalN1Nm5Iakx0eldSdFFXMVdpYWZJMEZfclh3ZkZ0dmlGd1VVTmQ1R1ZfOHVOUGVDRVUybFhHcnBTVVR6WXNpajRVQWpiSVRUUjIwTmRtN0NXODZOclZuTHFUUkQ0dWQzTlgtaWoyelVYTUZpQVZrUV9xdkVxeEVfenB4a2NDVlJsMElsSkplMVVnRnJjSjlzalY2dF9IUV9Temdvbw?oc=5",
-          "pubDate": "Sat, 05 Sep 2026 18:32:15 GMT"
-        }
-      ],
-      "id": "video-diretta bari casarano risultato 0 0 video streaming tv inizia il derby-1788633135000",
       "sourceCount": 1
     },
     {
@@ -4519,10 +4471,10 @@
     },
     {
       "title": "Capaccio Paestum, torna la Festa nel Bosco del Getsemani",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNOG5hQ3VWcnVyLTctcUhPUF9GYjdaMlhFWlRsOFFOWTBaaW9VRi1TN2R3cFl1WUVMNGcxdGhMY28xVWVzOG52TnpjMFNjdDdwekp2aEFMc2d6M2hSQmF4V1lLUm1ZZWNzX2N2M202by1ZeW00VUFDdEVVQzBYT244eWh6VlI1ZGdUYnVJN29pLWJld0U?oc=5\" target=\"_blank\">Capaccio Paestum, torna la Festa nel Bosco del Getsemani</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNOG5hQ3VWcnVyLTctcUhPUF9GYjdaMlhFWlRsOFFOWTBaaW9VRi1TN2R3cFl1WUVMNGcxdGhMY28xVWVzOG52TnpjMFNjdDdwekp2aEFMc2d6M2hSQmF4V1lLUm1ZZWNzX2N2M202by1ZeW00VUFDdEVVQzBYT244eWh6VlI1ZGdUYnVJN29pLWJld0U?oc=5\" target=\"_blank\">Capaccio Paestum, torna la Festa nel Bosco del Getsemani</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNOG5hQ3VWcnVyLTctcUhPUF9GYjdaMlhFWlRsOFFOWTBaaW9VRi1TN2R3cFl1WUVMNGcxdGhMY28xVWVzOG52TnpjMFNjdDdwekp2aEFMc2d6M2hSQmF4V1lLUm1ZZWNzX2N2M202by1ZeW00VUFDdEVVQzBYT244eWh6VlI1ZGdUYnVJN29pLWJld0U?oc=5",
       "image": "",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -4534,7 +4486,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNOG5hQ3VWcnVyLTctcUhPUF9GYjdaMlhFWlRsOFFOWTBaaW9VRi1TN2R3cFl1WUVMNGcxdGhMY28xVWVzOG52TnpjMFNjdDdwekp2aEFMc2d6M2hSQmF4V1lLUm1ZZWNzX2N2M202by1ZeW00VUFDdEVVQzBYT244eWh6VlI1ZGdUYnVJN29pLWJld0U?oc=5",
           "pubDate": "Sat, 05 Sep 2026 18:31:18 GMT"
         }
@@ -4570,12 +4522,12 @@
           "dateSource": "original"
         },
         {
-          "source": "lecce.corriere.it",
+          "source": "Corriere Lecce",
           "link": "https://news.google.com/rss/articles/CBMiygJBVV95cUxOcGhqSkdBLUJsb0cyN24tQXFKanBpUFNJTkxsM1lFZHJVQWdkTnVOclNoaWNGZVhQNzk2Skd6dkxUM1BTcllkR2NHTnFhRTI1QVkxaGhkT0t1d0I0bUJydmhEZ3BQZHAxM3RCbGczajlpZi1mbnI1UzJWcE4tMC1YaXNpa3VEYUlDakVfR2ZyWDdtY3ZaelBXLVRmczdFd2JKYm9pNWdZVnB0NnpfNDlwV0IyRTNmclhGUC13TElEN3ZtdlBJZ3d2S2k5aTRGSWkwTWN1VnFFbjJRUEI3YkFuVGhOM3lTTDc0NnlUUTdWRXRBVzdRSnMxV3lMMUx1WjFlcC11RVFDSXk1T1BKa1Y5S1BzM1NzRmhua1hGMXdQWVlOR0w1ckdpQmlWQ3MxLU9IZVdQaG5XSDNyNnAwSng3azhhTW1JeWJ3bUHSAc8CQVVfeXFMUG56c3dMMUItUWhzNnIzYzBiY3ZWajlJRlFqQ2phSTJlSm12aFBtaERkLW14Y0lzOHIxeGljRmFiYXRFSENiM2VLWHRvU3MwaDBTVlhRZkRjVWtla3JsLXRUSWJYZUN6R19PQUQwSGw5aUJJejdpNGpBWS1URXI1dVNsbnZTYkhjekhNcDN5M05lemoxMzJ6RXViTS1KcEJtamRGMXByNFVCbkJMV2tadkZWdFkwbHZCa2ZwYkZLOG1aWDlEU3lLUkluTkRKQ21qOFhxaUUtdFFvZW90bDNsRTZZR3JWQjlmbmJ1eXBYbktCemYzTTBuM3RFWm9Cb3I4RGpMWmdmSV9ZcXJzLXE2emdwVVBVX011WU55X0xFT0h6N2gxdmdyOC1lOVJNT0t3OFpDRjRZTUFaOW13Wk4tZnNsNUtURTZnb3haQmM3dVk?oc=5",
           "pubDate": "Sat, 05 Sep 2026 21:26:24 GMT"
         },
         {
-          "source": "firenze.repubblica.it",
+          "source": "la Repubblica",
           "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNR3hva0FERkZwakFTYkIxY1U5TU8wdW83Z25hdTl5eG5JZ3ExRm15MUwxdGh5LVVaRFVoMnpsNk53QjRncENjN0JiYXEzbkZQQWs0OG1RNXhhRVZ3cVkzMEZURXB6TndVQ2hwa0ZCSDZzd0pSR2hCWGRuS1FMOUtzUkNsN0prVFVmelpqQjhjQWtiOFdlZlpiZ1hLVEdqSGgwTXZGS0Vvd2Z1Rlo0MkZVNGd1RUpMdzdLaWVSb9IBwgFBVV95cUxPRGJTSXRfUXM3bzlzdG1FVVp0bVo3OUxPYi0zdWZNY3JNczNwbjdhMWZabVBkalFHMnpuTk1uZk5vVzI2U2NWOWo2cVdhNWNVZXpieXktRGkycVQ4ZU13UEhwT0lmVFUwbEFJVkd0aDZWTWZ6aTJvd2VLcnhPcTJIYkhRSXdsVFpEWkJzZTNaZDByLU9GMW51Zzk0cXhCMDNyR0tnVkVULV81QkpTbDh3M2FOVnVtMUc2MlloS05jWkpQUQ?oc=5",
           "pubDate": "Sat, 05 Sep 2026 13:15:18 GMT"
         }
@@ -4647,9 +4599,9 @@
     },
     {
       "title": "Ucraina: incontro tra Putin e inviati di Trump a Mosca",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdHNZLUlwYWVqellMRUxlQnI4MEQwWUlxRHduSXNCaVBYMkJzaDFiSjRIbWo0ZFZiY2xOdGZwa19vYTVSUWJRQ0FWOXFTNEZqMzRxa3hmbGU5bDdrX3RLYjF4eGJjU0g0UzFpX2REMjAyaC1WangwMzk3LS1DbnFrT2hFMzl5b3U4aGV3?oc=5\" target=\"_blank\">Ucraina: incontro tra Putin e inviati di Trump a Mosca</a> <font color=\"#6f6f6f\">agi.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdHNZLUlwYWVqellMRUxlQnI4MEQwWUlxRHduSXNCaVBYMkJzaDFiSjRIbWo0ZFZiY2xOdGZwa19vYTVSUWJRQ0FWOXFTNEZqMzRxa3hmbGU5bDdrX3RLYjF4eGJjU0g0UzFpX2REMjAyaC1WangwMzk3LS1DbnFrT2hFMzl5b3U4aGV3?oc=5\" target=\"_blank\">Ucraina: incontro tra Putin e inviati di Trump a Mosca</a> <font color=\"#6f6f6f\">AGI</font>",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdHNZLUlwYWVqellMRUxlQnI4MEQwWUlxRHduSXNCaVBYMkJzaDFiSjRIbWo0ZFZiY2xOdGZwa19vYTVSUWJRQ0FWOXFTNEZqMzRxa3hmbGU5bDdrX3RLYjF4eGJjU0g0UzFpX2REMjAyaC1WangwMzk3LS1DbnFrT2hFMzl5b3U4aGV3?oc=5",
-      "source": "agi.it",
+      "source": "AGI",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -4661,7 +4613,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdHNZLUlwYWVqellMRUxlQnI4MEQwWUlxRHduSXNCaVBYMkJzaDFiSjRIbWo0ZFZiY2xOdGZwa19vYTVSUWJRQ0FWOXFTNEZqMzRxa3hmbGU5bDdrX3RLYjF4eGJjU0g0UzFpX2REMjAyaC1WangwMzk3LS1DbnFrT2hFMzl5b3U4aGV3?oc=5",
           "pubDate": "Sat, 05 Sep 2026 18:22:10 GMT"
         }
@@ -4691,17 +4643,12 @@
         },
         {
           "source": "Il Tempo",
-          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTTh6NXRRRjkzV0FrajN3SEhMZWRNSVJQT29YcDBDRjV3d0tFeDl2UXNTbGozZ3MxblRVOFpmZG1laGE0N0dnSGpOYnR4OUJhUDNheDNtUUxqYy1nYWgxdDVlSTRjSERmalpPNFc3bzRpMzIzMEM1UUc3LWd0anRmZm9IVGlvTDY2MUx6cUdJT1NTRWkyai1GZmxNMUZxM3lZd0xFY2QwaUFGUnI1SktxQTg1M2xlUjdUWncyOGpWVXBTRms?oc=5",
-          "pubDate": "Sat, 05 Sep 2026 05:32:05 GMT"
-        },
-        {
-          "source": "Il Tempo",
           "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNREJZdGVSQmRmaDhGTmtpYU5WZjFEQUV4TEtJMHRIOHFwV1EybWx6ZlNRRl85aXlXSEpLR2RqeC1uT3BtcGhzNFFHNmgyR2Mtb3J2cktCSG9jTFlfNUpHZ3ZXZW5jYWl3cmp2ZGQ3TlVxckZFSEQ3bUFnQ0ExcjVwSG1pajdOWWdSOEg0WTk0RW13WDhqMWR3M1N4bXV0NHc0MTAxQTVURDRpd1hwYW5hNnpPNU9TN0Rrc3JRRWxzZ2VEVVU?oc=5",
           "pubDate": "Sat, 05 Sep 2026 04:39:56 GMT"
         }
       ],
       "id": "focus-il tempo-1788632421000",
-      "sourceCount": 3
+      "sourceCount": 2
     },
     {
       "title": "L’enorme chiazza di gasolio nelle fogne di Magenta, poi lo sversamento nel Naviglio grande: indagini sulle cause",
@@ -4942,10 +4889,10 @@
     },
     {
       "title": "Spari contro i cartelli stradali: la denuncia del sindaco sui social",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOMGhWNzhkWlBELWhGTVNxQWlPV2lwSXREUFEzNG5qUlpwWF93ZVBZcWtxY01rS3M3UzBobmx2WVBMaldiNTltZjJTWnJtcFlrd0NmOUR3VjFnVjRNUkFjWVpvM1I4NUdLdEdRS0sxRlBkSEFUNHhJOUYyNXFONC1uTWU2MTJzZVZsZXFjZUQzVkd4S2tKRTdoSmRTSDE2Qi1J?oc=5\" target=\"_blank\">Spari contro i cartelli stradali: la denuncia del sindaco sui social</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOMGhWNzhkWlBELWhGTVNxQWlPV2lwSXREUFEzNG5qUlpwWF93ZVBZcWtxY01rS3M3UzBobmx2WVBMaldiNTltZjJTWnJtcFlrd0NmOUR3VjFnVjRNUkFjWVpvM1I4NUdLdEdRS0sxRlBkSEFUNHhJOUYyNXFONC1uTWU2MTJzZVZsZXFjZUQzVkd4S2tKRTdoSmRTSDE2Qi1J?oc=5\" target=\"_blank\">Spari contro i cartelli stradali: la denuncia del sindaco sui social</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMGhWNzhkWlBELWhGTVNxQWlPV2lwSXREUFEzNG5qUlpwWF93ZVBZcWtxY01rS3M3UzBobmx2WVBMaldiNTltZjJTWnJtcFlrd0NmOUR3VjFnVjRNUkFjWVpvM1I4NUdLdEdRS0sxRlBkSEFUNHhJOUYyNXFONC1uTWU2MTJzZVZsZXFjZUQzVkd4S2tKRTdoSmRTSDE2Qi1J?oc=5",
       "image": "",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -4957,7 +4904,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMGhWNzhkWlBELWhGTVNxQWlPV2lwSXREUFEzNG5qUlpwWF93ZVBZcWtxY01rS3M3UzBobmx2WVBMaldiNTltZjJTWnJtcFlrd0NmOUR3VjFnVjRNUkFjWVpvM1I4NUdLdEdRS0sxRlBkSEFUNHhJOUYyNXFONC1uTWU2MTJzZVZsZXFjZUQzVkd4S2tKRTdoSmRTSDE2Qi1J?oc=5",
           "pubDate": "Sat, 05 Sep 2026 18:09:40 GMT"
         }
@@ -5005,10 +4952,10 @@
     },
     {
       "title": "Giornata FAI del Panorama a Villa Gregoriana | 6 settembre 2026",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ2Y1eTdlZmY4T1l4aC1kLVh6cGtZSnFESm9LQ2k2SW5XSjg0bWItNjQ4aEctUDVoTlkyeHNOMHNCc1A4dzg4SGFmZHc0UXBjXzBoQ2N0eXRHc216d2gtU3F1Um1aS1lydUVsbE5BWUdBdUh0ZUFJcXg2N2FjM05IQlRtWTg3ZWpYZS00dUZQM24yb1JiS3ZjaWo1aVo?oc=5\" target=\"_blank\">Giornata FAI del Panorama a Villa Gregoriana | 6 settembre 2026</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ2Y1eTdlZmY4T1l4aC1kLVh6cGtZSnFESm9LQ2k2SW5XSjg0bWItNjQ4aEctUDVoTlkyeHNOMHNCc1A4dzg4SGFmZHc0UXBjXzBoQ2N0eXRHc216d2gtU3F1Um1aS1lydUVsbE5BWUdBdUh0ZUFJcXg2N2FjM05IQlRtWTg3ZWpYZS00dUZQM24yb1JiS3ZjaWo1aVo?oc=5\" target=\"_blank\">Giornata FAI del Panorama a Villa Gregoriana | 6 settembre 2026</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ2Y1eTdlZmY4T1l4aC1kLVh6cGtZSnFESm9LQ2k2SW5XSjg0bWItNjQ4aEctUDVoTlkyeHNOMHNCc1A4dzg4SGFmZHc0UXBjXzBoQ2N0eXRHc216d2gtU3F1Um1aS1lydUVsbE5BWUdBdUh0ZUFJcXg2N2FjM05IQlRtWTg3ZWpYZS00dUZQM24yb1JiS3ZjaWo1aVo?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -5020,7 +4967,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ2Y1eTdlZmY4T1l4aC1kLVh6cGtZSnFESm9LQ2k2SW5XSjg0bWItNjQ4aEctUDVoTlkyeHNOMHNCc1A4dzg4SGFmZHc0UXBjXzBoQ2N0eXRHc216d2gtU3F1Um1aS1lydUVsbE5BWUdBdUh0ZUFJcXg2N2FjM05IQlRtWTg3ZWpYZS00dUZQM24yb1JiS3ZjaWo1aVo?oc=5",
           "pubDate": "Sat, 05 Sep 2026 18:03:16 GMT"
         }
@@ -5259,11 +5206,35 @@
       "sourceCount": 1
     },
     {
+      "title": "Conceicao: nella testa solo la Juve, Roma e Milan, la sfida per Endrick è ancora aperta",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxQckRid3U5b1FKemJUZjNIdGtUY3R3Mjc4bkoxOWU1cDExM2RXN0RIYVBuWk04VnRPakxKZWQ4ZVBoLWF0QlRpbWp2ZVBnakVScVdPRndwbFNRV3hZVUR0SzdDaDZlZkQ0ZGtmRThfU2dkclRqM1I2dVNReDdkYWJWMVJ0MjVpbXJHREFnSkdCSFhZNDUzNW5HcDRWdjdEWV81VThXdVdlZGNXMTVibjktX19fVkJ0WmduQ1dSYVlDc0ViRGoxSlZNUFJtUDd1R2k2UGV4eDF3UElpaUdmTDd30gHfAUFVX3lxTFByRGJ3dTlvUUp6YlRmM0h0a1RjdHcyNzhuSjE5ZTVwMTEzZFc3REhhUG5aTThWdE9qTEplZDhlUGgtYXRCVGltanZlUGdqRVJxV09Gd3BsU1FXeFlVRHRLN0NoNmVmRDRka2ZFOF9TZ2RyVGozUjZ1U1F4N2RhYlYxUnQyNWltckdEQWdKR0JIWFk0NTM1bkdwNFZ2N0RZXzVVOFd1V2VkY1cxNWJuOS1fX19WQnRaZ25DV1JhWUNzRWJEajFKVk1QUm1QN3VHaTZQZXh4MXdQSWlpR2ZMN3c?oc=5\" target=\"_blank\">Conceicao: nella testa solo la Juve, Roma e Milan, la sfida per Endrick è ancora aperta</a> <font color=\"#6f6f6f\">Blasting News</font>",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQckRid3U5b1FKemJUZjNIdGtUY3R3Mjc4bkoxOWU1cDExM2RXN0RIYVBuWk04VnRPakxKZWQ4ZVBoLWF0QlRpbWp2ZVBnakVScVdPRndwbFNRV3hZVUR0SzdDaDZlZkQ0ZGtmRThfU2dkclRqM1I2dVNReDdkYWJWMVJ0MjVpbXJHREFnSkdCSFhZNDUzNW5HcDRWdjdEWV81VThXdVdlZGNXMTVibjktX19fVkJ0WmduQ1dSYVlDc0ViRGoxSlZNUFJtUDd1R2k2UGV4eDF3UElpaUdmTDd30gHfAUFVX3lxTFByRGJ3dTlvUUp6YlRmM0h0a1RjdHcyNzhuSjE5ZTVwMTEzZFc3REhhUG5aTThWdE9qTEplZDhlUGgtYXRCVGltanZlUGdqRVJxV09Gd3BsU1FXeFlVRHRLN0NoNmVmRDRka2ZFOF9TZ2RyVGozUjZ1U1F4N2RhYlYxUnQyNWltckdEQWdKR0JIWFk0NTM1bkdwNFZ2N0RZXzVVOFd1V2VkY1cxNWJuOS1fX19WQnRaZ25DV1JhWUNzRWJEajFKVk1QUm1QN3VHaTZQZXh4MXdQSWlpR2ZMN3c?oc=5",
+      "source": "Blasting News",
+      "category": "Juventus",
+      "categories": [
+        "Juventus"
+      ],
+      "pubDate": "Sat, 05 Sep 2026 17:49:50 GMT",
+      "googlePubDate": "Sat, 05 Sep 2026 17:49:50 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": true,
+      "sources": [
+        {
+          "source": "Blasting News",
+          "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQckRid3U5b1FKemJUZjNIdGtUY3R3Mjc4bkoxOWU1cDExM2RXN0RIYVBuWk04VnRPakxKZWQ4ZVBoLWF0QlRpbWp2ZVBnakVScVdPRndwbFNRV3hZVUR0SzdDaDZlZkQ0ZGtmRThfU2dkclRqM1I2dVNReDdkYWJWMVJ0MjVpbXJHREFnSkdCSFhZNDUzNW5HcDRWdjdEWV81VThXdVdlZGNXMTVibjktX19fVkJ0WmduQ1dSYVlDc0ViRGoxSlZNUFJtUDd1R2k2UGV4eDF3UElpaUdmTDd30gHfAUFVX3lxTFByRGJ3dTlvUUp6YlRmM0h0a1RjdHcyNzhuSjE5ZTVwMTEzZFc3REhhUG5aTThWdE9qTEplZDhlUGgtYXRCVGltanZlUGdqRVJxV09Gd3BsU1FXeFlVRHRLN0NoNmVmRDRka2ZFOF9TZ2RyVGozUjZ1U1F4N2RhYlYxUnQyNWltckdEQWdKR0JIWFk0NTM1bkdwNFZ2N0RZXzVVOFd1V2VkY1cxNWJuOS1fX19WQnRaZ25DV1JhWUNzRWJEajFKVk1QUm1QN3VHaTZQZXh4MXdQSWlpR2ZMN3c?oc=5",
+          "pubDate": "Sat, 05 Sep 2026 17:49:50 GMT"
+        }
+      ],
+      "id": "video-conceicao nella testa solo la juve roma e milan la sfida per endrick e-1788630590000",
+      "sourceCount": 1
+    },
+    {
       "title": "Carenza di sangue negli ospedali, il Comune di Salerno organizza una raccolta",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxQYmFxV2YyR3NzSkRXUk1EUElNZ0pjSGlGUWxSMTh3ODdYTk1ldWNkU1BpbmNzRml2SkJJcTM2bDdjWkNYNzJFMW84M3RxQ2t4ZGRYUU4ydmMxVnBoZVVJZlhtU3JRYTVJUnJDSWhXbzJlaHpLSHhVQ0VLdnBFM2lqWXQ5b2ZEc2FXcmdpS2VjUlkwQUU?oc=5\" target=\"_blank\">Carenza di sangue negli ospedali, il Comune di Salerno organizza una raccolta</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxQYmFxV2YyR3NzSkRXUk1EUElNZ0pjSGlGUWxSMTh3ODdYTk1ldWNkU1BpbmNzRml2SkJJcTM2bDdjWkNYNzJFMW84M3RxQ2t4ZGRYUU4ydmMxVnBoZVVJZlhtU3JRYTVJUnJDSWhXbzJlaHpLSHhVQ0VLdnBFM2lqWXQ5b2ZEc2FXcmdpS2VjUlkwQUU?oc=5\" target=\"_blank\">Carenza di sangue negli ospedali, il Comune di Salerno organizza una raccolta</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQYmFxV2YyR3NzSkRXUk1EUElNZ0pjSGlGUWxSMTh3ODdYTk1ldWNkU1BpbmNzRml2SkJJcTM2bDdjWkNYNzJFMW84M3RxQ2t4ZGRYUU4ydmMxVnBoZVVJZlhtU3JRYTVJUnJDSWhXbzJlaHpLSHhVQ0VLdnBFM2lqWXQ5b2ZEc2FXcmdpS2VjUlkwQUU?oc=5",
       "image": "",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -5275,7 +5246,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQYmFxV2YyR3NzSkRXUk1EUElNZ0pjSGlGUWxSMTh3ODdYTk1ldWNkU1BpbmNzRml2SkJJcTM2bDdjWkNYNzJFMW84M3RxQ2t4ZGRYUU4ydmMxVnBoZVVJZlhtU3JRYTVJUnJDSWhXbzJlaHpLSHhVQ0VLdnBFM2lqWXQ5b2ZEc2FXcmdpS2VjUlkwQUU?oc=5",
           "pubDate": "Sat, 05 Sep 2026 17:49:31 GMT"
         }
@@ -5620,10 +5591,10 @@
     },
     {
       "title": "La Lega torna alle sorgenti del Monviso e trova una corrente contro Salvini",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVHJ6OFo3aHpmZlVTZnpNcDRGQTR4UXZjZU5TYjFPeVZYdTFMYzFBUGpBMmw5c0laczdxdURueUtOdmxvS0VhWTFneHU3TGdKMDFaSjAwRnJYTTJfYjZYV3VibXRLNk8xSUEtU1lzbmZDbU1Ja2VrREJIY05TVVlaX1BMdjM3amJPQWY2M1NqU3RNQkpxeVhDNk0xT1ByVlhCM212eUwzY2lhV09wejM2S2tjNzhyUVdaX29RRHIxUzhOR0tORU9vTkdUOWFTc2Vm?oc=5\" target=\"_blank\">La Lega torna alle sorgenti del Monviso e trova una corrente contro Salvini</a> <font color=\"#6f6f6f\">giornalelavoce.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVHJ6OFo3aHpmZlVTZnpNcDRGQTR4UXZjZU5TYjFPeVZYdTFMYzFBUGpBMmw5c0laczdxdURueUtOdmxvS0VhWTFneHU3TGdKMDFaSjAwRnJYTTJfYjZYV3VibXRLNk8xSUEtU1lzbmZDbU1Ja2VrREJIY05TVVlaX1BMdjM3amJPQWY2M1NqU3RNQkpxeVhDNk0xT1ByVlhCM212eUwzY2lhV09wejM2S2tjNzhyUVdaX29RRHIxUzhOR0tORU9vTkdUOWFTc2Vm?oc=5\" target=\"_blank\">La Lega torna alle sorgenti del Monviso e trova una corrente contro Salvini</a> <font color=\"#6f6f6f\">Giornale La Voce</font>",
       "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVHJ6OFo3aHpmZlVTZnpNcDRGQTR4UXZjZU5TYjFPeVZYdTFMYzFBUGpBMmw5c0laczdxdURueUtOdmxvS0VhWTFneHU3TGdKMDFaSjAwRnJYTTJfYjZYV3VibXRLNk8xSUEtU1lzbmZDbU1Ja2VrREJIY05TVVlaX1BMdjM3amJPQWY2M1NqU3RNQkpxeVhDNk0xT1ByVlhCM212eUwzY2lhV09wejM2S2tjNzhyUVdaX29RRHIxUzhOR0tORU9vTkdUOWFTc2Vm?oc=5",
       "image": "",
-      "source": "giornalelavoce.it",
+      "source": "Giornale La Voce",
       "category": "Lega",
       "categories": [
         "Lega",
@@ -5636,21 +5607,21 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "giornalelavoce.it",
+          "source": "Giornale La Voce",
           "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVHJ6OFo3aHpmZlVTZnpNcDRGQTR4UXZjZU5TYjFPeVZYdTFMYzFBUGpBMmw5c0laczdxdURueUtOdmxvS0VhWTFneHU3TGdKMDFaSjAwRnJYTTJfYjZYV3VibXRLNk8xSUEtU1lzbmZDbU1Ja2VrREJIY05TVVlaX1BMdjM3amJPQWY2M1NqU3RNQkpxeVhDNk0xT1ByVlhCM212eUwzY2lhV09wejM2S2tjNzhyUVdaX29RRHIxUzhOR0tORU9vTkdUOWFTc2Vm?oc=5",
           "pubDate": "Sat, 05 Sep 2026 17:29:41 GMT"
         }
       ],
       "originalURL": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVHJ6OFo3aHpmZlVTZnpNcDRGQTR4UXZjZU5TYjFPeVZYdTFMYzFBUGpBMmw5c0laczdxdURueUtOdmxvS0VhWTFneHU3TGdKMDFaSjAwRnJYTTJfYjZYV3VibXRLNk8xSUEtU1lzbmZDbU1Ja2VrREJIY05TVVlaX1BMdjM3amJPQWY2M1NqU3RNQkpxeVhDNk0xT1ByVlhCM212eUwzY2lhV09wejM2S2tjNzhyUVdaX29RRHIxUzhOR0tORU9vTkdUOWFTc2Vm?oc=5",
       "sourceCount": 1,
-      "sourcePriority": 55,
+      "sourcePriority": 25,
       "id": "la lega torna alle sorgenti del monviso e trova una corrente contro sa-1788629381000-142"
     },
     {
       "title": "Ucraina-Russia, Putin al tavolo con Witkoff e Kushner, 10 parole per gelare Trump. Il video",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZVc1RXg4Wk8tZ1FUQ2w0Y2M1UE5rTGpEN0kxYUFHeFk4Uk9aUUdWVElybkR5ZGdjYW5EQWp6dFdiSGdwaTJqeTFGYjRSVmUyWE13WU1JWF9Uc3pudmRrYnZzdGUxTjNURXRHWkRVWEp6VFFWVlFzMGtISDNEWE9uMWpnbVV3Z1h1c1JNbTdYeVhURzVFNjRCOHRwZVp3a0Y1WEJUQTBsRENNSzg?oc=5\" target=\"_blank\">Ucraina-Russia, Putin al tavolo con Witkoff e Kushner, 10 parole per gelare Trump. Il video</a> <font color=\"#6f6f6f\">adnkronos.com</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZVc1RXg4Wk8tZ1FUQ2w0Y2M1UE5rTGpEN0kxYUFHeFk4Uk9aUUdWVElybkR5ZGdjYW5EQWp6dFdiSGdwaTJqeTFGYjRSVmUyWE13WU1JWF9Uc3pudmRrYnZzdGUxTjNURXRHWkRVWEp6VFFWVlFzMGtISDNEWE9uMWpnbVV3Z1h1c1JNbTdYeVhURzVFNjRCOHRwZVp3a0Y1WEJUQTBsRENNSzg?oc=5\" target=\"_blank\">Ucraina-Russia, Putin al tavolo con Witkoff e Kushner, 10 parole per gelare Trump. Il video</a> <font color=\"#6f6f6f\">Adnkronos</font>",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZVc1RXg4Wk8tZ1FUQ2w0Y2M1UE5rTGpEN0kxYUFHeFk4Uk9aUUdWVElybkR5ZGdjYW5EQWp6dFdiSGdwaTJqeTFGYjRSVmUyWE13WU1JWF9Uc3pudmRrYnZzdGUxTjNURXRHWkRVWEp6VFFWVlFzMGtISDNEWE9uMWpnbVV3Z1h1c1JNbTdYeVhURzVFNjRCOHRwZVp3a0Y1WEJUQTBsRENNSzg?oc=5",
-      "source": "adnkronos.com",
+      "source": "Adnkronos",
       "category": "Esteri",
       "categories": [
         "Esteri"
@@ -5662,7 +5633,7 @@
       "isVideo": true,
       "sources": [
         {
-          "source": "adnkronos.com",
+          "source": "Adnkronos",
           "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZVc1RXg4Wk8tZ1FUQ2w0Y2M1UE5rTGpEN0kxYUFHeFk4Uk9aUUdWVElybkR5ZGdjYW5EQWp6dFdiSGdwaTJqeTFGYjRSVmUyWE13WU1JWF9Uc3pudmRrYnZzdGUxTjNURXRHWkRVWEp6VFFWVlFzMGtISDNEWE9uMWpnbVV3Z1h1c1JNbTdYeVhURzVFNjRCOHRwZVp3a0Y1WEJUQTBsRENNSzg?oc=5",
           "pubDate": "Sat, 05 Sep 2026 17:24:00 GMT"
         }
@@ -5699,10 +5670,10 @@
     },
     {
       "title": "\"Vive la Cura”, mercoledì 9 settembre a Salerno il primo memorial Donata de Falco-Matteo Marzano",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxPcl9KQy1fRUM2eF81dVBpSlV4bm9sNmZ2cFFINnRSdDF5d3JJV2VZLWRxUDBqOHF6bzRLMFhxdW4yWVNMQmh5a055cmt1VXJWYjhnek1LSFF0LTAweHFMQXJfaTFhTG05cWhxLXZtUHQwQWZWRnFReW53TnBBQ2dqd3hB?oc=5\" target=\"_blank\">\"Vive la Cura”, mercoledì 9 settembre a Salerno il primo memorial Donata de Falco-Matteo Marzano</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxPcl9KQy1fRUM2eF81dVBpSlV4bm9sNmZ2cFFINnRSdDF5d3JJV2VZLWRxUDBqOHF6bzRLMFhxdW4yWVNMQmh5a055cmt1VXJWYjhnek1LSFF0LTAweHFMQXJfaTFhTG05cWhxLXZtUHQwQWZWRnFReW53TnBBQ2dqd3hB?oc=5\" target=\"_blank\">\"Vive la Cura”, mercoledì 9 settembre a Salerno il primo memorial Donata de Falco-Matteo Marzano</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcl9KQy1fRUM2eF81dVBpSlV4bm9sNmZ2cFFINnRSdDF5d3JJV2VZLWRxUDBqOHF6bzRLMFhxdW4yWVNMQmh5a055cmt1VXJWYjhnek1LSFF0LTAweHFMQXJfaTFhTG05cWhxLXZtUHQwQWZWRnFReW53TnBBQ2dqd3hB?oc=5",
       "image": "",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -5714,7 +5685,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcl9KQy1fRUM2eF81dVBpSlV4bm9sNmZ2cFFINnRSdDF5d3JJV2VZLWRxUDBqOHF6bzRLMFhxdW4yWVNMQmh5a055cmt1VXJWYjhnek1LSFF0LTAweHFMQXJfaTFhTG05cWhxLXZtUHQwQWZWRnFReW53TnBBQ2dqd3hB?oc=5",
           "pubDate": "Sat, 05 Sep 2026 17:19:35 GMT"
         }
@@ -5754,10 +5725,10 @@
     },
     {
       "title": "Investito mentre attraversa la strada e sbalzato a terra in via Ugoni: 73enne in codice rosso al Niguarda",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxPWjJRdGM3dUFXRkFfUWVkRmdIX2t3dWpOaHFpbDlnRFdrai1XZjNYMjZrT1Y5WG0tMWlpemoySWE3SEpnMnBXUzk0Ykt5WW9HUFFSa25jZzgyeWxlNFNNemRldHBuM3FzNGpNeGR3RXFwc0h3UmgyYjdJdjNUeVlQU2t0cWVJWGVNMUlySkQ1QTFnU05nYWlOVWRReE9wc01zNDRMVk9MaTdPS09B?oc=5\" target=\"_blank\">Investito mentre attraversa la strada e sbalzato a terra in via Ugoni: 73enne in codice rosso al Niguarda</a> <font color=\"#6f6f6f\">milanotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxPWjJRdGM3dUFXRkFfUWVkRmdIX2t3dWpOaHFpbDlnRFdrai1XZjNYMjZrT1Y5WG0tMWlpemoySWE3SEpnMnBXUzk0Ykt5WW9HUFFSa25jZzgyeWxlNFNNemRldHBuM3FzNGpNeGR3RXFwc0h3UmgyYjdJdjNUeVlQU2t0cWVJWGVNMUlySkQ1QTFnU05nYWlOVWRReE9wc01zNDRMVk9MaTdPS09B?oc=5\" target=\"_blank\">Investito mentre attraversa la strada e sbalzato a terra in via Ugoni: 73enne in codice rosso al Niguarda</a> <font color=\"#6f6f6f\">MilanoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWjJRdGM3dUFXRkFfUWVkRmdIX2t3dWpOaHFpbDlnRFdrai1XZjNYMjZrT1Y5WG0tMWlpemoySWE3SEpnMnBXUzk0Ykt5WW9HUFFSa25jZzgyeWxlNFNNemRldHBuM3FzNGpNeGR3RXFwc0h3UmgyYjdJdjNUeVlQU2t0cWVJWGVNMUlySkQ1QTFnU05nYWlOVWRReE9wc01zNDRMVk9MaTdPS09B?oc=5",
       "image": "",
-      "source": "milanotoday.it",
+      "source": "MilanoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -5769,7 +5740,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "milanotoday.it",
+          "source": "MilanoToday",
           "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWjJRdGM3dUFXRkFfUWVkRmdIX2t3dWpOaHFpbDlnRFdrai1XZjNYMjZrT1Y5WG0tMWlpemoySWE3SEpnMnBXUzk0Ykt5WW9HUFFSa25jZzgyeWxlNFNNemRldHBuM3FzNGpNeGR3RXFwc0h3UmgyYjdJdjNUeVlQU2t0cWVJWGVNMUlySkQ1QTFnU05nYWlOVWRReE9wc01zNDRMVk9MaTdPS09B?oc=5",
           "pubDate": "Sat, 05 Sep 2026 17:17:25 GMT"
         }
@@ -6003,9 +5974,9 @@
     },
     {
       "title": "Mattarella cita Papa, persone vengono prima dei confini(AGI)",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxNUXlTS0tST0NaSTczcHh1QTBtSFJ3dmNQODhlazJxbXZXTVJTa0xqdVhnb1B3ZHNtZHJqeDhEM3pqVk5veUlWNlU0b2VjbFBNbWNLdVhRaHRmb2NySWhKdlVlNEotT2RNQTZOQkRRMjRxeWd5a1BybWp0U3VIMGFqamExZVR2bUg4SDEtWnBCLXJwWGxXV01NdEV3MHFxSFFEdmtZXw?oc=5\" target=\"_blank\">Mattarella cita Papa, persone vengono prima dei confini(AGI)</a> <font color=\"#6f6f6f\">agi.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxNUXlTS0tST0NaSTczcHh1QTBtSFJ3dmNQODhlazJxbXZXTVJTa0xqdVhnb1B3ZHNtZHJqeDhEM3pqVk5veUlWNlU0b2VjbFBNbWNLdVhRaHRmb2NySWhKdlVlNEotT2RNQTZOQkRRMjRxeWd5a1BybWp0U3VIMGFqamExZVR2bUg4SDEtWnBCLXJwWGxXV01NdEV3MHFxSFFEdmtZXw?oc=5\" target=\"_blank\">Mattarella cita Papa, persone vengono prima dei confini(AGI)</a> <font color=\"#6f6f6f\">AGI</font>",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUXlTS0tST0NaSTczcHh1QTBtSFJ3dmNQODhlazJxbXZXTVJTa0xqdVhnb1B3ZHNtZHJqeDhEM3pqVk5veUlWNlU0b2VjbFBNbWNLdVhRaHRmb2NySWhKdlVlNEotT2RNQTZOQkRRMjRxeWd5a1BybWp0U3VIMGFqamExZVR2bUg4SDEtWnBCLXJwWGxXV01NdEV3MHFxSFFEdmtZXw?oc=5",
-      "source": "agi.it",
+      "source": "AGI",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -6017,7 +5988,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUXlTS0tST0NaSTczcHh1QTBtSFJ3dmNQODhlazJxbXZXTVJTa0xqdVhnb1B3ZHNtZHJqeDhEM3pqVk5veUlWNlU0b2VjbFBNbWNLdVhRaHRmb2NySWhKdlVlNEotT2RNQTZOQkRRMjRxeWd5a1BybWp0U3VIMGFqamExZVR2bUg4SDEtWnBCLXJwWGxXV01NdEV3MHFxSFFEdmtZXw?oc=5",
           "pubDate": "Sat, 05 Sep 2026 17:04:00 GMT"
         }
@@ -6152,10 +6123,10 @@
     },
     {
       "title": "F1 a Monza, il \"milanese\" Pierre Gasly conquista la pole position: \"Stasera a casa dormirò bene\"",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZ1BIcEUwNHB6TUxySXpCLXBpc2JSeVVDeWN1MUttalNIM3Y3SXp5VzBLMHZadUd5RDQ4UzdjaTJ2Y2ZCTk0wWWx2Y0hfUFFQejI3dktuamdIaXBtd0dqQk5DSVQzcnVpeGFUWmdKSG5aejVvU0gwWHkxVWJLLUI3bXdkbFFlODZQdFNB?oc=5\" target=\"_blank\">F1 a Monza, il \"milanese\" Pierre Gasly conquista la pole position: \"Stasera a casa dormirò bene\"</a> <font color=\"#6f6f6f\">milanotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZ1BIcEUwNHB6TUxySXpCLXBpc2JSeVVDeWN1MUttalNIM3Y3SXp5VzBLMHZadUd5RDQ4UzdjaTJ2Y2ZCTk0wWWx2Y0hfUFFQejI3dktuamdIaXBtd0dqQk5DSVQzcnVpeGFUWmdKSG5aejVvU0gwWHkxVWJLLUI3bXdkbFFlODZQdFNB?oc=5\" target=\"_blank\">F1 a Monza, il \"milanese\" Pierre Gasly conquista la pole position: \"Stasera a casa dormirò bene\"</a> <font color=\"#6f6f6f\">MilanoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZ1BIcEUwNHB6TUxySXpCLXBpc2JSeVVDeWN1MUttalNIM3Y3SXp5VzBLMHZadUd5RDQ4UzdjaTJ2Y2ZCTk0wWWx2Y0hfUFFQejI3dktuamdIaXBtd0dqQk5DSVQzcnVpeGFUWmdKSG5aejVvU0gwWHkxVWJLLUI3bXdkbFFlODZQdFNB?oc=5",
       "image": "",
-      "source": "milanotoday.it",
+      "source": "MilanoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -6167,7 +6138,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "milanotoday.it",
+          "source": "MilanoToday",
           "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZ1BIcEUwNHB6TUxySXpCLXBpc2JSeVVDeWN1MUttalNIM3Y3SXp5VzBLMHZadUd5RDQ4UzdjaTJ2Y2ZCTk0wWWx2Y0hfUFFQejI3dktuamdIaXBtd0dqQk5DSVQzcnVpeGFUWmdKSG5aejVvU0gwWHkxVWJLLUI3bXdkbFFlODZQdFNB?oc=5",
           "pubDate": "Sat, 05 Sep 2026 16:55:22 GMT"
         }
@@ -6217,9 +6188,9 @@
     },
     {
       "title": "Speciale Adnkronos dal Forum Teha di Cernobbio - Diretta 4",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPOVZhVXBUWE5KbHE4U3YyRk9YNFIwZnJhUlNmSjFUWWlmX1UyWWFlZTJZY3N3ZkxXZ2RpSTFrUS1Ua2ptNW5YRG1LVll5amRpTlJqWnhkWGRMS2I0dDRrN2FIMVM1bVJjYk8zNy04d21LbFlJSUh3UlFzdHBxcy01TUl0NzZFeWl0Yzd2QTN0OUhCZm1TWmdma1BKc250ZEMzNVFENklvbDNYTXZyQ2NNQmZTeGQ?oc=5\" target=\"_blank\">Speciale Adnkronos dal Forum Teha di Cernobbio - Diretta 4</a> <font color=\"#6f6f6f\">adnkronos.com</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPOVZhVXBUWE5KbHE4U3YyRk9YNFIwZnJhUlNmSjFUWWlmX1UyWWFlZTJZY3N3ZkxXZ2RpSTFrUS1Ua2ptNW5YRG1LVll5amRpTlJqWnhkWGRMS2I0dDRrN2FIMVM1bVJjYk8zNy04d21LbFlJSUh3UlFzdHBxcy01TUl0NzZFeWl0Yzd2QTN0OUhCZm1TWmdma1BKc250ZEMzNVFENklvbDNYTXZyQ2NNQmZTeGQ?oc=5\" target=\"_blank\">Speciale Adnkronos dal Forum Teha di Cernobbio - Diretta 4</a> <font color=\"#6f6f6f\">Adnkronos</font>",
       "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPOVZhVXBUWE5KbHE4U3YyRk9YNFIwZnJhUlNmSjFUWWlmX1UyWWFlZTJZY3N3ZkxXZ2RpSTFrUS1Ua2ptNW5YRG1LVll5amRpTlJqWnhkWGRMS2I0dDRrN2FIMVM1bVJjYk8zNy04d21LbFlJSUh3UlFzdHBxcy01TUl0NzZFeWl0Yzd2QTN0OUhCZm1TWmdma1BKc250ZEMzNVFENklvbDNYTXZyQ2NNQmZTeGQ?oc=5",
-      "source": "adnkronos.com",
+      "source": "Adnkronos",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -6231,12 +6202,12 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "adnkronos.com",
+          "source": "Adnkronos",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPOVZhVXBUWE5KbHE4U3YyRk9YNFIwZnJhUlNmSjFUWWlmX1UyWWFlZTJZY3N3ZkxXZ2RpSTFrUS1Ua2ptNW5YRG1LVll5amRpTlJqWnhkWGRMS2I0dDRrN2FIMVM1bVJjYk8zNy04d21LbFlJSUh3UlFzdHBxcy01TUl0NzZFeWl0Yzd2QTN0OUhCZm1TWmdma1BKc250ZEMzNVFENklvbDNYTXZyQ2NNQmZTeGQ?oc=5",
           "pubDate": "Sat, 05 Sep 2026 16:52:00 GMT"
         },
         {
-          "source": "adnkronos.com",
+          "source": "Adnkronos",
           "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOakJaSnJRaEl6MHU4UjhFSEFPSkZkOUdrX2g0R1JPUEZwSWwwRXZuY2lya2lyeVg5aUs1dlg1WHkzbVNaQk5WcUlyRVAxVDRiUE51dGp4V3llV2J2UWhWRTkzTDZsMG9ZWExJWEpudEhmd1RZMWtSNWdlSG5mVWZVV3dNNjZfS2NUaURnWGQyTFFWOU1LQ2hIY295QURxMDBLX0hicU80NjFqUFBvTXQyX2daRQ?oc=5",
           "pubDate": "Sat, 05 Sep 2026 10:48:00 GMT"
         }
@@ -6283,9 +6254,9 @@
     },
     {
       "title": "Il Torino batte la Fiorentina 2-1, a rischio la panchina viola di Fabio Grosso",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBtOFM0SlNYSzhUT0ozcXpyLXFaVGtuVG91QlZZV1owQngxQktZZWpEeHl0N1JYUUN3ZmVyakxSQl9ka08zR1FrUEt0U01DQmNZeGRGUGNVbzhtcUVYU2pWTXVXelNKdWdKa3k1ejM0cE56eTJJc0p3?oc=5\" target=\"_blank\">Il Torino batte la Fiorentina 2-1, a rischio la panchina viola di Fabio Grosso</a> <font color=\"#6f6f6f\">agi.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBtOFM0SlNYSzhUT0ozcXpyLXFaVGtuVG91QlZZV1owQngxQktZZWpEeHl0N1JYUUN3ZmVyakxSQl9ka08zR1FrUEt0U01DQmNZeGRGUGNVbzhtcUVYU2pWTXVXelNKdWdKa3k1ejM0cE56eTJJc0p3?oc=5\" target=\"_blank\">Il Torino batte la Fiorentina 2-1, a rischio la panchina viola di Fabio Grosso</a> <font color=\"#6f6f6f\">AGI</font>",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBtOFM0SlNYSzhUT0ozcXpyLXFaVGtuVG91QlZZV1owQngxQktZZWpEeHl0N1JYUUN3ZmVyakxSQl9ka08zR1FrUEt0U01DQmNZeGRGUGNVbzhtcUVYU2pWTXVXelNKdWdKa3k1ejM0cE56eTJJc0p3?oc=5",
-      "source": "agi.it",
+      "source": "AGI",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -6297,7 +6268,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBtOFM0SlNYSzhUT0ozcXpyLXFaVGtuVG91QlZZV1owQngxQktZZWpEeHl0N1JYUUN3ZmVyakxSQl9ka08zR1FrUEt0U01DQmNZeGRGUGNVbzhtcUVYU2pWTXVXelNKdWdKa3k1ejM0cE56eTJJc0p3?oc=5",
           "pubDate": "Sat, 05 Sep 2026 16:50:13 GMT"
         }
@@ -6425,10 +6396,10 @@
     },
     {
       "title": "Salerno, il colonnello Melchiorre lascia il comando dei Carabinieri: il bilancio del suo mandato",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxPUW80cXhZMTNoWkJxbDZ4ZjNOU0tRMFhjd0s4N3kzay16UjB6eGFxZkZfUVFYY2FKOEs5Qm83RVdCQkc2SHlNSmxOSkFQQWV1MldRZWJUSnRZVVRFNW0wdUI4ZEZuY1BGcUNwX19HbmlIaWdTTHNlT2twVG5mSy1SSXZnSTJaSWZlZGJEeUxCQlVTU0Q0OVk1UEdxVQ?oc=5\" target=\"_blank\">Salerno, il colonnello Melchiorre lascia il comando dei Carabinieri: il bilancio del suo mandato</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxPUW80cXhZMTNoWkJxbDZ4ZjNOU0tRMFhjd0s4N3kzay16UjB6eGFxZkZfUVFYY2FKOEs5Qm83RVdCQkc2SHlNSmxOSkFQQWV1MldRZWJUSnRZVVRFNW0wdUI4ZEZuY1BGcUNwX19HbmlIaWdTTHNlT2twVG5mSy1SSXZnSTJaSWZlZGJEeUxCQlVTU0Q0OVk1UEdxVQ?oc=5\" target=\"_blank\">Salerno, il colonnello Melchiorre lascia il comando dei Carabinieri: il bilancio del suo mandato</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUW80cXhZMTNoWkJxbDZ4ZjNOU0tRMFhjd0s4N3kzay16UjB6eGFxZkZfUVFYY2FKOEs5Qm83RVdCQkc2SHlNSmxOSkFQQWV1MldRZWJUSnRZVVRFNW0wdUI4ZEZuY1BGcUNwX19HbmlIaWdTTHNlT2twVG5mSy1SSXZnSTJaSWZlZGJEeUxCQlVTU0Q0OVk1UEdxVQ?oc=5",
       "image": "",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Sicurezza",
       "categories": [
         "Sicurezza"
@@ -6440,7 +6411,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUW80cXhZMTNoWkJxbDZ4ZjNOU0tRMFhjd0s4N3kzay16UjB6eGFxZkZfUVFYY2FKOEs5Qm83RVdCQkc2SHlNSmxOSkFQQWV1MldRZWJUSnRZVVRFNW0wdUI4ZEZuY1BGcUNwX19HbmlIaWdTTHNlT2twVG5mSy1SSXZnSTJaSWZlZGJEeUxCQlVTU0Q0OVk1UEdxVQ?oc=5",
           "pubDate": "Sat, 05 Sep 2026 16:36:42 GMT"
         }
@@ -6632,7 +6603,7 @@
     },
     {
       "title": "Monviso, Bergesio: \"Celebriamo 30 anni di storia nel segno di Bossi e Salvini, avanti per l'autonomi\"",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxNekVfd1ZRdDh1UHFlaVVvUDdIb2Vxd0JaMERhYUZkQ3B4anJJLUxCdWhjekM3SGNLd3dSckVpZjB4RE4xaHViVl9IWUtiOFp3VWVQNFVCZWxOZ0lYSTJlOHE2b2dKNm10VVYzM3kyWTlzczRQMUNtQ25YUGZPVEJueWlTS1J5T2ZXUURyc1M1V2VWT3hRUDlGRURyQWlVWEp6eGttejRtMTZGQURIekJQdEpIdzF2SEt3R3FKRDRKWUowZHdfSVRiNURqWU9pa0swdEJjSGF5ajZqSktRa0VIVC12WQ?oc=5\" target=\"_blank\">Monviso: Bergesio (Lega), celebriamo 30 anni di storia nel segno di Bossi e Salvini, avanti per l'autonomia e i territori</a> <font color=\"#6f6f6f\">La Guida</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxNekVfd1ZRdDh1UHFlaVVvUDdIb2Vxd0JaMERhYUZkQ3B4anJJLUxCdWhjekM3SGNLd3dSckVpZjB4RE4xaHViVl9IWUtiOFp3VWVQNFVCZWxOZ0lYSTJlOHE2b2dKNm10VVYzM3kyWTlzczRQMUNtQ25YUGZPVEJueWlTS1J5T2ZXUURyc1M1V2VWT3hRUDlGRURyQWlVWEp6eGttejRtMTZGQURIekJQdEpIdzF2SEt3R3FKRDRKWUowZHdfSVRiNURqWU9pa0swdEJjSGF5ajZqSktRa0VIVC12WQ?oc=5\" target=\"_blank\">Monviso: Bergesio (Lega), celebriamo 30 anni di storia nel segno di Bossi e Salvini, avanti per l'autonomia e i territori</a> <font color=\"#6f6f6f\">laguida.it</font>",
       "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQRU8tM3BhUHRnVmx0dmc1SVgxUHNEV1RvZlhtT2JKdTFfZ1hReGJ5bzJ1cjVTZDhqdE1TekdXYkdEcTduUDBiV1VoNXRCamxzZ1kzWGtFMlZYbC1MRm44cVg3UlNDRzgtNEF4QkU4WWdOZF9wT3JhUUZ4Y2FhR1hrVWdPVEJxc3RuNmNpQlFUS0g2MG1qZXctbmtFUjA1Rzlacm9jWVhpOHBSeFZuUnVRbEk3c29Nc2V0OTRITkM0QjdXbkdGWl9CR3I5SFp6WFRkWVNWNTQ4VzJ4cE1fUXgydVltNA?oc=5",
       "image": "",
       "source": "Cuneodice.it",
@@ -6653,7 +6624,7 @@
           "pubDate": "Sat, 05 Sep 2026 16:27:00 GMT"
         },
         {
-          "source": "La Guida",
+          "source": "laguida.it",
           "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNekVfd1ZRdDh1UHFlaVVvUDdIb2Vxd0JaMERhYUZkQ3B4anJJLUxCdWhjekM3SGNLd3dSckVpZjB4RE4xaHViVl9IWUtiOFp3VWVQNFVCZWxOZ0lYSTJlOHE2b2dKNm10VVYzM3kyWTlzczRQMUNtQ25YUGZPVEJueWlTS1J5T2ZXUURyc1M1V2VWT3hRUDlGRURyQWlVWEp6eGttejRtMTZGQURIekJQdEpIdzF2SEt3R3FKRDRKWUowZHdfSVRiNURqWU9pa0swdEJjSGF5ajZqSktRa0VIVC12WQ?oc=5",
           "pubDate": "Sat, 05 Sep 2026 15:25:00 GMT"
         }
@@ -6742,34 +6713,10 @@
       "sourceCount": 1
     },
     {
-      "title": "Modena Nerd, pollo fritto gratis a vita in cambio del tatuaggio con il logo di Fkc, la fila davanti allo stand: «Lo faccio, idea divertente»",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1wJBVV95cUxONTdPR2VUSmtXMUNFWXJyRUs3Rm0xel9HM0l0aU9ldDR3QmZ1X0VmRWotTjBqaDRVWTEwX1YwLWpyU1FxdmpPbm1IQlEtOUE5WTA5NTBVVm5zVW00SVVVWV9keW9GX1I0Y04xWldYdENjZ3luQm9SV2hoRUhYTGFDX0diZ2ItcXIzdHZSWldGYUZacVNWdUFMdi1DTWtlTHFXZXVNVUdweGJJSDR3Vno3UjRiVzQ3TVJYWF80R1dMM1JJV1RrYUhPWGlZRzVMYVRHYzRmdjlJRnBleVlkVzVueFhwSC00aUtoODVvM0p2MmVseHhnMmUyYnB2ajlxYVdYWmNVM2lzbTgzWDdZM3U4WG9FanF5REJLS1BoRlRBSXdSb1A4UTB5dnhSNkxOUXgxVnJmQWlUaWJzNUN3ZDNHY1IyQUdOckJSVlViMk5uM0xfMFRSRDZJ0gHcAkFVX3lxTFBQazEwdEZHRHkxYlRSd2ZtT1Z5NDFhQlpKQWNVaFBaTUFoeXNzaFIxQTdhUFlMUjRJcHh1YVNLRXFxWGNCM2Jpa0xXZzlZTUZMTzJQRkRreVc4ZkVRcmxWd3FmVlZ0QXBncURxRlJrSW5CNnU2MGVfUFFBTDEwb0lURGNUWUJqNUhSY1ZObGVFMmVUV1dqWFBUZzNxWWJEWXZRQ2EwYlJSeVYtSHgtNzdFZEsxZ243ZHFoU1VrVnpTMFFPTDFHeHJBa3JnTWxvUkd5UFR3MXM4Mk1fR2VJTThmZzhmbTc3UHJoZC1SMzJDTHRwNDI4WTg0aFNpeXhkTDdhc1lCQ1pYU1RxbS02b0NWLVQzZG00Zm4ycmNPRXRqcEtGOS1JWVpyT1o5QmU4ZnFPejZJVEEzU3dxREZjWkZyVURlYUNxd2dPLVlUVVFtUTFTREZfWUhfVlZmTg?oc=5\" target=\"_blank\">Modena Nerd, pollo fritto gratis a vita in cambio del tatuaggio con il logo di Fkc, la fila davanti allo stand: «Lo faccio, idea divertente»</a> <font color=\"#6f6f6f\">Corriere di Bologna</font>",
-      "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxONTdPR2VUSmtXMUNFWXJyRUs3Rm0xel9HM0l0aU9ldDR3QmZ1X0VmRWotTjBqaDRVWTEwX1YwLWpyU1FxdmpPbm1IQlEtOUE5WTA5NTBVVm5zVW00SVVVWV9keW9GX1I0Y04xWldYdENjZ3luQm9SV2hoRUhYTGFDX0diZ2ItcXIzdHZSWldGYUZacVNWdUFMdi1DTWtlTHFXZXVNVUdweGJJSDR3Vno3UjRiVzQ3TVJYWF80R1dMM1JJV1RrYUhPWGlZRzVMYVRHYzRmdjlJRnBleVlkVzVueFhwSC00aUtoODVvM0p2MmVseHhnMmUyYnB2ajlxYVdYWmNVM2lzbTgzWDdZM3U4WG9FanF5REJLS1BoRlRBSXdSb1A4UTB5dnhSNkxOUXgxVnJmQWlUaWJzNUN3ZDNHY1IyQUdOckJSVlViMk5uM0xfMFRSRDZJ0gHcAkFVX3lxTFBQazEwdEZHRHkxYlRSd2ZtT1Z5NDFhQlpKQWNVaFBaTUFoeXNzaFIxQTdhUFlMUjRJcHh1YVNLRXFxWGNCM2Jpa0xXZzlZTUZMTzJQRkRreVc4ZkVRcmxWd3FmVlZ0QXBncURxRlJrSW5CNnU2MGVfUFFBTDEwb0lURGNUWUJqNUhSY1ZObGVFMmVUV1dqWFBUZzNxWWJEWXZRQ2EwYlJSeVYtSHgtNzdFZEsxZ243ZHFoU1VrVnpTMFFPTDFHeHJBa3JnTWxvUkd5UFR3MXM4Mk1fR2VJTThmZzhmbTc3UHJoZC1SMzJDTHRwNDI4WTg0aFNpeXhkTDdhc1lCQ1pYU1RxbS02b0NWLVQzZG00Zm4ycmNPRXRqcEtGOS1JWVpyT1o5QmU4ZnFPejZJVEEzU3dxREZjWkZyVURlYUNxd2dPLVlUVVFtUTFTREZfWUhfVlZmTg?oc=5",
-      "source": "Corriere di Bologna",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Sat, 05 Sep 2026 16:22:04 GMT",
-      "googlePubDate": "Sat, 05 Sep 2026 16:22:04 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Corriere di Bologna",
-          "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxONTdPR2VUSmtXMUNFWXJyRUs3Rm0xel9HM0l0aU9ldDR3QmZ1X0VmRWotTjBqaDRVWTEwX1YwLWpyU1FxdmpPbm1IQlEtOUE5WTA5NTBVVm5zVW00SVVVWV9keW9GX1I0Y04xWldYdENjZ3luQm9SV2hoRUhYTGFDX0diZ2ItcXIzdHZSWldGYUZacVNWdUFMdi1DTWtlTHFXZXVNVUdweGJJSDR3Vno3UjRiVzQ3TVJYWF80R1dMM1JJV1RrYUhPWGlZRzVMYVRHYzRmdjlJRnBleVlkVzVueFhwSC00aUtoODVvM0p2MmVseHhnMmUyYnB2ajlxYVdYWmNVM2lzbTgzWDdZM3U4WG9FanF5REJLS1BoRlRBSXdSb1A4UTB5dnhSNkxOUXgxVnJmQWlUaWJzNUN3ZDNHY1IyQUdOckJSVlViMk5uM0xfMFRSRDZJ0gHcAkFVX3lxTFBQazEwdEZHRHkxYlRSd2ZtT1Z5NDFhQlpKQWNVaFBaTUFoeXNzaFIxQTdhUFlMUjRJcHh1YVNLRXFxWGNCM2Jpa0xXZzlZTUZMTzJQRkRreVc4ZkVRcmxWd3FmVlZ0QXBncURxRlJrSW5CNnU2MGVfUFFBTDEwb0lURGNUWUJqNUhSY1ZObGVFMmVUV1dqWFBUZzNxWWJEWXZRQ2EwYlJSeVYtSHgtNzdFZEsxZ243ZHFoU1VrVnpTMFFPTDFHeHJBa3JnTWxvUkd5UFR3MXM4Mk1fR2VJTThmZzhmbTc3UHJoZC1SMzJDTHRwNDI4WTg0aFNpeXhkTDdhc1lCQ1pYU1RxbS02b0NWLVQzZG00Zm4ycmNPRXRqcEtGOS1JWVpyT1o5QmU4ZnFPejZJVEEzU3dxREZjWkZyVURlYUNxd2dPLVlUVVFtUTFTREZfWUhfVlZmTg?oc=5",
-          "pubDate": "Sat, 05 Sep 2026 16:22:04 GMT"
-        }
-      ],
-      "id": "focus-modena nerd pollo fritto gratis a vita in cambio del tatuaggio con il -1788625324000",
-      "sourceCount": 1
-    },
-    {
       "title": "Economia",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTE8xMTRkNWV2bWdoSHNyd2IwS2xwaHRxZmdiaC12MEtfWGFXRHd4ajRQWk5GSFJwZHJuVnZHTjZNZmYzeXYyUVNZSU9pR0t0dzhVdlZvX0hZRUVIaXFRcHRGWExodFZLYV8x?oc=5\" target=\"_blank\">Economia</a> <font color=\"#6f6f6f\">adnkronos.com</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTE8xMTRkNWV2bWdoSHNyd2IwS2xwaHRxZmdiaC12MEtfWGFXRHd4ajRQWk5GSFJwZHJuVnZHTjZNZmYzeXYyUVNZSU9pR0t0dzhVdlZvX0hZRUVIaXFRcHRGWExodFZLYV8x?oc=5\" target=\"_blank\">Economia</a> <font color=\"#6f6f6f\">Adnkronos</font>",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8xMTRkNWV2bWdoSHNyd2IwS2xwaHRxZmdiaC12MEtfWGFXRHd4ajRQWk5GSFJwZHJuVnZHTjZNZmYzeXYyUVNZSU9pR0t0dzhVdlZvX0hZRUVIaXFRcHRGWExodFZLYV8x?oc=5",
-      "source": "adnkronos.com",
+      "source": "Adnkronos",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -6781,7 +6728,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "adnkronos.com",
+          "source": "Adnkronos",
           "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8xMTRkNWV2bWdoSHNyd2IwS2xwaHRxZmdiaC12MEtfWGFXRHd4ajRQWk5GSFJwZHJuVnZHTjZNZmYzeXYyUVNZSU9pR0t0dzhVdlZvX0hZRUVIaXFRcHRGWExodFZLYV8x?oc=5",
           "pubDate": "Sat, 05 Sep 2026 16:21:12 GMT"
         }
@@ -6965,10 +6912,10 @@
     },
     {
       "title": "Salerno, l'attacco di Valiante: \"Il caldo asfissiante non si combatte con il cemento ma con più aree verdi\"",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxQUWk4clRhaGFmekZ0Ulh6U3RxWEV6Ym9USDhXbG9yU0M1WTk4V3c5V09EZlpOZENKUFNrRjNnYVlRTHdIZ195VzRNaktwcDdzRTZLcEVmUU1ZSExaMXg4X2ZkVjNHYWRPNWh2ZmhzN2hFSWR1Wm9BM3F4akpqZ2JZSmpJT3pvT1YwX0t2d3JYSUM?oc=5\" target=\"_blank\">Salerno, l'attacco di Valiante: \"Il caldo asfissiante non si combatte con il cemento ma con più aree verdi\"</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxQUWk4clRhaGFmekZ0Ulh6U3RxWEV6Ym9USDhXbG9yU0M1WTk4V3c5V09EZlpOZENKUFNrRjNnYVlRTHdIZ195VzRNaktwcDdzRTZLcEVmUU1ZSExaMXg4X2ZkVjNHYWRPNWh2ZmhzN2hFSWR1Wm9BM3F4akpqZ2JZSmpJT3pvT1YwX0t2d3JYSUM?oc=5\" target=\"_blank\">Salerno, l'attacco di Valiante: \"Il caldo asfissiante non si combatte con il cemento ma con più aree verdi\"</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUWk4clRhaGFmekZ0Ulh6U3RxWEV6Ym9USDhXbG9yU0M1WTk4V3c5V09EZlpOZENKUFNrRjNnYVlRTHdIZ195VzRNaktwcDdzRTZLcEVmUU1ZSExaMXg4X2ZkVjNHYWRPNWh2ZmhzN2hFSWR1Wm9BM3F4akpqZ2JZSmpJT3pvT1YwX0t2d3JYSUM?oc=5",
       "image": "",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -6980,7 +6927,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUWk4clRhaGFmekZ0Ulh6U3RxWEV6Ym9USDhXbG9yU0M1WTk4V3c5V09EZlpOZENKUFNrRjNnYVlRTHdIZ195VzRNaktwcDdzRTZLcEVmUU1ZSExaMXg4X2ZkVjNHYWRPNWh2ZmhzN2hFSWR1Wm9BM3F4akpqZ2JZSmpJT3pvT1YwX0t2d3JYSUM?oc=5",
           "pubDate": "Sat, 05 Sep 2026 16:09:08 GMT"
         }
@@ -6992,10 +6939,10 @@
     },
     {
       "title": "Guasti, ritardi, svenimenti. L'estate terribile della metro C",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTFBkYkx2ZG12ZEI1NjJRWVBiT0M0Z3A2cXJWc3RRMW5OUldBUVA1SzU4QjMyQVlwQ044enE4RjRvd1FHeFZiQ0tZc1JhcjhGdmxBSFp5dk9XYk5TMHlNYTZNbXp0ckVzb0MxR3pCMlJMV1M1dVRrLWRpaVZIbFlkZw?oc=5\" target=\"_blank\">Guasti, ritardi, svenimenti. L'estate terribile della metro C</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTFBkYkx2ZG12ZEI1NjJRWVBiT0M0Z3A2cXJWc3RRMW5OUldBUVA1SzU4QjMyQVlwQ044enE4RjRvd1FHeFZiQ0tZc1JhcjhGdmxBSFp5dk9XYk5TMHlNYTZNbXp0ckVzb0MxR3pCMlJMV1M1dVRrLWRpaVZIbFlkZw?oc=5\" target=\"_blank\">Guasti, ritardi, svenimenti. L'estate terribile della metro C</a> <font color=\"#6f6f6f\">romatoday.it</font>",
       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBkYkx2ZG12ZEI1NjJRWVBiT0M0Z3A2cXJWc3RRMW5OUldBUVA1SzU4QjMyQVlwQ044enE4RjRvd1FHeFZiQ0tZc1JhcjhGdmxBSFp5dk9XYk5TMHlNYTZNbXp0ckVzb0MxR3pCMlJMV1M1dVRrLWRpaVZIbFlkZw?oc=5",
       "image": "",
-      "source": "RomaToday",
+      "source": "romatoday.it",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -7007,7 +6954,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBkYkx2ZG12ZEI1NjJRWVBiT0M0Z3A2cXJWc3RRMW5OUldBUVA1SzU4QjMyQVlwQ044enE4RjRvd1FHeFZiQ0tZc1JhcjhGdmxBSFp5dk9XYk5TMHlNYTZNbXp0ckVzb0MxR3pCMlJMV1M1dVRrLWRpaVZIbFlkZw?oc=5",
           "pubDate": "Sat, 05 Sep 2026 16:07:04 GMT"
         }
@@ -7019,9 +6966,9 @@
     },
     {
       "title": "Le pagelle dei look: Robert Pattinson in bianco, la cravatta sexy di Kasia Smutniak",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi7gFBVV95cUxPaGVxOF8xWEZCNnZDeFJneERST1dGdnEyUmxWcWRtMlBlNV9PSkd3UDJFV01OUDJxLWlXSmo4OWVnZnRsdktKaC1nbUZwUlpfTGxhbWhvb1hMUjZ0YUtWaFZsdkNZTmw3cUp6SnNqa2hXRDlERS1yZE4wT1g5dkR2M0ROd1Z1bFFWcTZGVGFVYjdubGZuamFKRW9TNG9sdWdWTWl2NlczV0NCRzVOMF8xM1pLeXVRRWN3amh0NW1HdGdDMDVYMFhBSWNDYkxWaHlEV2hiT1VSOTFabmFyTE9fRWNnN216b0MxemZkaUFn?oc=5\" target=\"_blank\">Le pagelle dei look: Robert Pattinson in bianco, la cravatta sexy di Kasia Smutniak</a> <font color=\"#6f6f6f\">d.repubblica.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi7gFBVV95cUxPaGVxOF8xWEZCNnZDeFJneERST1dGdnEyUmxWcWRtMlBlNV9PSkd3UDJFV01OUDJxLWlXSmo4OWVnZnRsdktKaC1nbUZwUlpfTGxhbWhvb1hMUjZ0YUtWaFZsdkNZTmw3cUp6SnNqa2hXRDlERS1yZE4wT1g5dkR2M0ROd1Z1bFFWcTZGVGFVYjdubGZuamFKRW9TNG9sdWdWTWl2NlczV0NCRzVOMF8xM1pLeXVRRWN3amh0NW1HdGdDMDVYMFhBSWNDYkxWaHlEV2hiT1VSOTFabmFyTE9fRWNnN216b0MxemZkaUFn?oc=5\" target=\"_blank\">Le pagelle dei look: Robert Pattinson in bianco, la cravatta sexy di Kasia Smutniak</a> <font color=\"#6f6f6f\">d la Repubblica</font>",
       "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPaGVxOF8xWEZCNnZDeFJneERST1dGdnEyUmxWcWRtMlBlNV9PSkd3UDJFV01OUDJxLWlXSmo4OWVnZnRsdktKaC1nbUZwUlpfTGxhbWhvb1hMUjZ0YUtWaFZsdkNZTmw3cUp6SnNqa2hXRDlERS1yZE4wT1g5dkR2M0ROd1Z1bFFWcTZGVGFVYjdubGZuamFKRW9TNG9sdWdWTWl2NlczV0NCRzVOMF8xM1pLeXVRRWN3amh0NW1HdGdDMDVYMFhBSWNDYkxWaHlEV2hiT1VSOTFabmFyTE9fRWNnN216b0MxemZkaUFn?oc=5",
-      "source": "d.repubblica.it",
+      "source": "d la Repubblica",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -7033,7 +6980,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "d.repubblica.it",
+          "source": "d la Repubblica",
           "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPaGVxOF8xWEZCNnZDeFJneERST1dGdnEyUmxWcWRtMlBlNV9PSkd3UDJFV01OUDJxLWlXSmo4OWVnZnRsdktKaC1nbUZwUlpfTGxhbWhvb1hMUjZ0YUtWaFZsdkNZTmw3cUp6SnNqa2hXRDlERS1yZE4wT1g5dkR2M0ROd1Z1bFFWcTZGVGFVYjdubGZuamFKRW9TNG9sdWdWTWl2NlczV0NCRzVOMF8xM1pLeXVRRWN3amh0NW1HdGdDMDVYMFhBSWNDYkxWaHlEV2hiT1VSOTFabmFyTE9fRWNnN216b0MxemZkaUFn?oc=5",
           "pubDate": "Sat, 05 Sep 2026 16:07:00 GMT"
         }
@@ -7269,8 +7216,7 @@
       "source": "Libero Quotidiano",
       "category": "Lega",
       "categories": [
-        "Lega",
-        "Cronaca"
+        "Lega"
       ],
       "pubDate": "Sat, 05 Sep 2026 15:53:17 GMT",
       "googlePubDate": "Sat, 05 Sep 2026 15:53:17 GMT",
@@ -7282,15 +7228,10 @@
           "source": "Libero Quotidiano",
           "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOek9MYU10b2RqUHR5NDB5S0FrQ0l3ZE5YUHhlNDZqUU9EM3pKbkZNRmJkYXFYSkN5d3l3bFI5TFBfWFV5bFIwbG5EY19KRmFOQVo1LXo0VlhCb0tPV1ppbjUxUlJJV1Vrb2xCRkpBZjFmQUxteHlEZWdvSXcwWlFiajBSYkIyR001NGhUckFFQ2txVFJCSU1DU2RSX1lnXzJmU04xaHlPdFNKZURKY24zWGVfakJyRjAxWEhQUGFPTnFiNHRISUdmaEFnQ2HSAcwBQVVfeXFMTnpPTGFNdG9kalB0eTQweUtBa0NJd2ROWFB4ZTQ2alFPRDN6Sm5GTUZiZGFxWEpDeXd5d2xSOUxQX1hVeWxSMGxuRGNfSkZhTkFaNS16NFZYQm9LT1daaW41MVJSSVdVa29sQkZKQWYxZkFMbXh5RGVnb0l3MFpRYmowUmJCMkdNNTRoVHJBRUNrcVRSQklNQ1NkUl9ZZ18yZlNOMWh5T3RTSmVESmNuM1hlX2pCckYwMVhIUFBhT05xYjR0SElHZmhBZ0Nh?oc=5",
           "pubDate": "Sat, 05 Sep 2026 15:53:17 GMT"
-        },
-        {
-          "source": "Libero Quotidiano",
-          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNV2M0cW5qSTQ4R211R0hPcnpfTGVsemI2MWo0a2JEX1VjeVhPQWlja1JETHhTRktvVWdoM1ozS3hNWjVXUHVjX2drZFo4bkVPcklydGJpSG1HNjZtT2xQc1RfbVUtbnN3dTNVU1FIbk1ISDJhQ2Zwc2luWUVBQTdFNzE3UDJUSUlkUzF5TTM0U1V3Y05WVHczTUlFWTRCM3RqTUY3UW94QnVsVkZ5eEp4dmlvb1dvYlFmbV9MOUptTnJXRTFfR1Z3cNIBzAFBVV95cUxOek9MYU10b2RqUHR5NDB5S0FrQ0l3ZE5YUHhlNDZqUU9EM3pKbkZNRmJkYXFYSkN5d3l3bFI5TFBfWFV5bFIwbG5EY19KRmFOQVo1LXo0VlhCb0tPV1ppbjUxUlJJV1Vrb2xCRkpBZjFmQUxteHlEZWdvSXcwWlFiajBSYkIyR001NGhUckFFQ2txVFJCSU1DU2RSX1lnXzJmU04xaHlPdFNKZURKY24zWGVfakJyRjAxWEhQUGFPTnFiNHRISUdmaEFnQ2E?oc=5",
-          "pubDate": "Sat, 05 Sep 2026 15:36:47 GMT"
         }
       ],
       "id": "video-iran usa diffondono video in cui colpiscono tre petroliere di teheran -1788623597000",
-      "sourceCount": 2
+      "sourceCount": 1
     },
     {
       "title": "Mario Balotelli sfida Roberto Vannacci: \"Per lei sono italiano?\" | Libero Quotidiano.it",
@@ -7476,30 +7417,6 @@
       "sourceCount": 2
     },
     {
-      "title": "Pagamenti digitali in Italia continuano a crescere in Italia, i dati di Bankitalia",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxQeFhKTkVuVmVsd1lSRDQ4OUF5SmhvVkJsSVBtblIxXzNUaEFqR1lRMHRaQXN4bUMxbVQzdW1MMWdjOWttOWhHaTNHamRSNkZiZFE1YUc4T2FjQmc5eVI1OU5RZXZNYVBXQTJNRG5vWnZZVzRTMDVNQVBjWkpmRy1BZGQzeWszZm4taW5HcC1RN1p5ZVZBUFpHbnpzOXZsQzk3WnRoM09xazUwMmtYUjBGRVdsNmVHVXJ2ZUpwNHZINGhpSl9MVnppUnVhbTFRdw?oc=5\" target=\"_blank\">Pagamenti digitali in Italia continuano a crescere in Italia, i dati di Bankitalia</a> <font color=\"#6f6f6f\">Corriere Toscano</font>",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeFhKTkVuVmVsd1lSRDQ4OUF5SmhvVkJsSVBtblIxXzNUaEFqR1lRMHRaQXN4bUMxbVQzdW1MMWdjOWttOWhHaTNHamRSNkZiZFE1YUc4T2FjQmc5eVI1OU5RZXZNYVBXQTJNRG5vWnZZVzRTMDVNQVBjWkpmRy1BZGQzeWszZm4taW5HcC1RN1p5ZVZBUFpHbnpzOXZsQzk3WnRoM09xazUwMmtYUjBGRVdsNmVHVXJ2ZUpwNHZINGhpSl9MVnppUnVhbTFRdw?oc=5",
-      "source": "Corriere Toscano",
-      "category": "Sicurezza",
-      "categories": [
-        "Sicurezza"
-      ],
-      "pubDate": "Sat, 05 Sep 2026 15:46:26 GMT",
-      "googlePubDate": "Sat, 05 Sep 2026 15:46:26 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": true,
-      "sources": [
-        {
-          "source": "Corriere Toscano",
-          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeFhKTkVuVmVsd1lSRDQ4OUF5SmhvVkJsSVBtblIxXzNUaEFqR1lRMHRaQXN4bUMxbVQzdW1MMWdjOWttOWhHaTNHamRSNkZiZFE1YUc4T2FjQmc5eVI1OU5RZXZNYVBXQTJNRG5vWnZZVzRTMDVNQVBjWkpmRy1BZGQzeWszZm4taW5HcC1RN1p5ZVZBUFpHbnpzOXZsQzk3WnRoM09xazUwMmtYUjBGRVdsNmVHVXJ2ZUpwNHZINGhpSl9MVnppUnVhbTFRdw?oc=5",
-          "pubDate": "Sat, 05 Sep 2026 15:46:26 GMT"
-        }
-      ],
-      "id": "video-pagamenti digitali in italia continuano a crescere in italia i dati di-1788623186000",
-      "sourceCount": 1
-    },
-    {
       "title": "Video: il messaggio sibillino di giletti sul caso ranucci: “ci sono inchieste parallele oltre a...",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiO0FVX3lxTE04OW5MTkVkeVRrbThQMlNZWkxPLVZyUjNQcWhYajdfeW5oZlpCbVd1UWxJMHZJMlkxcC1z?oc=5\" target=\"_blank\">Video: il messaggio sibillino di giletti sul caso ranucci: “ci sono inchieste parallele oltre a...</a> <font color=\"#6f6f6f\">t.co</font>",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE04OW5MTkVkeVRrbThQMlNZWkxPLVZyUjNQcWhYajdfeW5oZlpCbVd1UWxJMHZJMlkxcC1z?oc=5",
@@ -7633,6 +7550,30 @@
       "id": "cagliari barchino di migranti a tutta velocita verso la spiaggia insor-1788622607000-184"
     },
     {
+      "title": "Sull’Oktoberfest cala la mannaia della censura progressista: sciopero dei giostrai, che boicottano l’evento",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi7wFBVV95cUxPQVF2aW1XQU9GX0NEQUtNNFQ5UEVfOXVFMkR6YjNUUHFNX1R3SGViRkhUamRmNkdnYlMxSnJpNXBOdVR5UlBNYzM0QWpQLXlxTTZuVlJzNDI0aVFKMmh0eVpMeU5Sa0F3NXJEWGlPbUxCYWNlVWlMbHQ0UFVsUnNhVmpjd0lqZmJpX3hqSU1PLU55Q05tcElGMEpJRWZvRUFqcWx1ZHpjc20tejVHY3p0Y1pMZEZYUHdEbXFqWS1TZ3RGYzVTSTd2TU9NclFNeWthM1NsejgzSGJkMVRoandPTFI1ZXJia1BHanJvak5SMA?oc=5\" target=\"_blank\">Sull’Oktoberfest cala la mannaia della censura progressista: sciopero dei giostrai, che boicottano l’evento</a> <font color=\"#6f6f6f\">il Giornale</font>",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPQVF2aW1XQU9GX0NEQUtNNFQ5UEVfOXVFMkR6YjNUUHFNX1R3SGViRkhUamRmNkdnYlMxSnJpNXBOdVR5UlBNYzM0QWpQLXlxTTZuVlJzNDI0aVFKMmh0eVpMeU5Sa0F3NXJEWGlPbUxCYWNlVWlMbHQ0UFVsUnNhVmpjd0lqZmJpX3hqSU1PLU55Q05tcElGMEpJRWZvRUFqcWx1ZHpjc20tejVHY3p0Y1pMZEZYUHdEbXFqWS1TZ3RGYzVTSTd2TU9NclFNeWthM1NsejgzSGJkMVRoandPTFI1ZXJia1BHanJvak5SMA?oc=5",
+      "source": "il Giornale",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Sat, 05 Sep 2026 15:34:51 GMT",
+      "googlePubDate": "Sat, 05 Sep 2026 15:34:51 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "il Giornale",
+          "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPQVF2aW1XQU9GX0NEQUtNNFQ5UEVfOXVFMkR6YjNUUHFNX1R3SGViRkhUamRmNkdnYlMxSnJpNXBOdVR5UlBNYzM0QWpQLXlxTTZuVlJzNDI0aVFKMmh0eVpMeU5Sa0F3NXJEWGlPbUxCYWNlVWlMbHQ0UFVsUnNhVmpjd0lqZmJpX3hqSU1PLU55Q05tcElGMEpJRWZvRUFqcWx1ZHpjc20tejVHY3p0Y1pMZEZYUHdEbXFqWS1TZ3RGYzVTSTd2TU9NclFNeWthM1NsejgzSGJkMVRoandPTFI1ZXJia1BHanJvak5SMA?oc=5",
+          "pubDate": "Sat, 05 Sep 2026 15:34:51 GMT"
+        }
+      ],
+      "id": "focus-sull oktoberfest cala la mannaia della censura progressista sciopero d-1788622491000",
+      "sourceCount": 1
+    },
+    {
       "title": "Riaperte le indagini sui delitti del 'mostro di Modena'",
       "summary": "Almeno otto donne uccise dal 1985, accertamenti sui reperti e sugli atti dell'epoca",
       "link": "https://www.ansa.it/sito/notizie/cronaca/2026/09/05/i-delitti-del-mostro-di-modena-verso-la-riapertura-delle-indagini_18cc18a7-e7d7-4e85-a720-7da685c02c63.html",
@@ -7664,9 +7605,9 @@
     },
     {
       "title": "Migranti cercano di sbarcare sulla spiaggia di Santa Margherita di Pula, la reazione dei bagnanti - Video",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZ3JqQTNXQk5XRFFQcERDMDh1TGVfUGUyb1U0NFJvRXBRVjRIY3lWNDJ1ZkdCTk80NU51ZTlSNmQ4LUJ4TkM1V3ZRcEtZMlBNUlBzTzhiUWJUM2FqdFRBcmJBYVhiQm5qMU1ZbDNNd3hCU2VxRW56RC1iOFppbWRkczhST19aZVJXTjZUTWgtVWxISWNyVkRRdXhrLW9ISEVxSmlfc29NNThlNlhycW1ENVc5THp6U1RXUFctLTY1Qy1SXzc0Z3pIa2N0bW45VTRk?oc=5\" target=\"_blank\">Migranti cercano di sbarcare sulla spiaggia di Santa Margherita di Pula, la reazione dei bagnanti - Video</a> <font color=\"#6f6f6f\">adnkronos.com</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZ3JqQTNXQk5XRFFQcERDMDh1TGVfUGUyb1U0NFJvRXBRVjRIY3lWNDJ1ZkdCTk80NU51ZTlSNmQ4LUJ4TkM1V3ZRcEtZMlBNUlBzTzhiUWJUM2FqdFRBcmJBYVhiQm5qMU1ZbDNNd3hCU2VxRW56RC1iOFppbWRkczhST19aZVJXTjZUTWgtVWxISWNyVkRRdXhrLW9ISEVxSmlfc29NNThlNlhycW1ENVc5THp6U1RXUFctLTY1Qy1SXzc0Z3pIa2N0bW45VTRk?oc=5\" target=\"_blank\">Migranti cercano di sbarcare sulla spiaggia di Santa Margherita di Pula, la reazione dei bagnanti - Video</a> <font color=\"#6f6f6f\">Adnkronos</font>",
       "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZ3JqQTNXQk5XRFFQcERDMDh1TGVfUGUyb1U0NFJvRXBRVjRIY3lWNDJ1ZkdCTk80NU51ZTlSNmQ4LUJ4TkM1V3ZRcEtZMlBNUlBzTzhiUWJUM2FqdFRBcmJBYVhiQm5qMU1ZbDNNd3hCU2VxRW56RC1iOFppbWRkczhST19aZVJXTjZUTWgtVWxISWNyVkRRdXhrLW9ISEVxSmlfc29NNThlNlhycW1ENVc5THp6U1RXUFctLTY1Qy1SXzc0Z3pIa2N0bW45VTRk?oc=5",
-      "source": "adnkronos.com",
+      "source": "Adnkronos",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -7678,7 +7619,7 @@
       "isVideo": true,
       "sources": [
         {
-          "source": "adnkronos.com",
+          "source": "Adnkronos",
           "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZ3JqQTNXQk5XRFFQcERDMDh1TGVfUGUyb1U0NFJvRXBRVjRIY3lWNDJ1ZkdCTk80NU51ZTlSNmQ4LUJ4TkM1V3ZRcEtZMlBNUlBzTzhiUWJUM2FqdFRBcmJBYVhiQm5qMU1ZbDNNd3hCU2VxRW56RC1iOFppbWRkczhST19aZVJXTjZUTWgtVWxISWNyVkRRdXhrLW9ISEVxSmlfc29NNThlNlhycW1ENVc5THp6U1RXUFctLTY1Qy1SXzc0Z3pIa2N0bW45VTRk?oc=5",
           "pubDate": "Sat, 05 Sep 2026 15:33:00 GMT"
         }
@@ -7770,10 +7711,10 @@
     },
     {
       "title": "Nocera Superiore, conferita la Benemerenza Civica al Colonnello Gianfranco Albanese",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxPSkJaS3dUYllNS0xFVW5IVVl2bTJmZTU5N3lTYUszZGpjSTRIVzZDdThzS2ZJZE1pYTA1QlBTTGtoejBNbkVhZW1DdEZfWGMzX0lQckx1UzVDNVVBMW9yN0s2WmRZOXVxUU90ei0yMXdNUG1Cc09OTXVlcTdCSmJHcDFqWTlxazFsV0pZelJFN1lIMV9XR1R1VEI0cw?oc=5\" target=\"_blank\">Nocera Superiore, conferita la Benemerenza Civica al Colonnello Gianfranco Albanese</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxPSkJaS3dUYllNS0xFVW5IVVl2bTJmZTU5N3lTYUszZGpjSTRIVzZDdThzS2ZJZE1pYTA1QlBTTGtoejBNbkVhZW1DdEZfWGMzX0lQckx1UzVDNVVBMW9yN0s2WmRZOXVxUU90ei0yMXdNUG1Cc09OTXVlcTdCSmJHcDFqWTlxazFsV0pZelJFN1lIMV9XR1R1VEI0cw?oc=5\" target=\"_blank\">Nocera Superiore, conferita la Benemerenza Civica al Colonnello Gianfranco Albanese</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSkJaS3dUYllNS0xFVW5IVVl2bTJmZTU5N3lTYUszZGpjSTRIVzZDdThzS2ZJZE1pYTA1QlBTTGtoejBNbkVhZW1DdEZfWGMzX0lQckx1UzVDNVVBMW9yN0s2WmRZOXVxUU90ei0yMXdNUG1Cc09OTXVlcTdCSmJHcDFqWTlxazFsV0pZelJFN1lIMV9XR1R1VEI0cw?oc=5",
       "image": "",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -7785,7 +7726,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSkJaS3dUYllNS0xFVW5IVVl2bTJmZTU5N3lTYUszZGpjSTRIVzZDdThzS2ZJZE1pYTA1QlBTTGtoejBNbkVhZW1DdEZfWGMzX0lQckx1UzVDNVVBMW9yN0s2WmRZOXVxUU90ei0yMXdNUG1Cc09OTXVlcTdCSmJHcDFqWTlxazFsV0pZelJFN1lIMV9XR1R1VEI0cw?oc=5",
           "pubDate": "Sat, 05 Sep 2026 15:26:24 GMT"
         }
@@ -7820,7 +7761,7 @@
           "dateSource": "original"
         },
         {
-          "source": "adnkronos.com",
+          "source": "Adnkronos",
           "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQaFRBN085RTF5dmRuMWtKZExTT2JhWFp4X1loX2gwczhMX2RsTGtYVExnQzVWcjd5WWEySGxtVFNCWkhaWkJnSnM1SGwxbTNhN1Jhc2hxQU1QdjlfZVFYNEJRaDgxNHpqMUVUWExXMjE0ZENQZmdGQ0U1N21vV1JaZzZTQVlic3ZUM2ZZTW51dG5BaHh6UklEeExDbUdoZ2EwQ2FSLVV0U1dCVVdqdXF6aHctN2huWWJZUm5nNHdNTzFxUFVZbXd5ZjduUQ?oc=5",
           "pubDate": "Sat, 05 Sep 2026 14:58:00 GMT"
         }
@@ -7832,9 +7773,9 @@
     },
     {
       "title": "\"Grosso dimettiti\", tifosi Fiorentina furiosi dopo sconfitta con il Torino",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxNUE1xQnBGS3FDNThneUd5b253ZVFBNEtLaEpudjVXeE1lQU1iLXRCbmtWcHZ0RkhoZFM4NGZuekVEUTBwR2IwNEpwcFRWbEpMbXVneHJyUDRyaFpYeXJvMW43ZUZjdmNCcXNtVGU4NG1sa2psS3lHcEc2bTdxd3NaY1lyeDFuS2FSUVlMV3JHYlFnVGp1Qk1fdlU3SUo?oc=5\" target=\"_blank\">\"Grosso dimettiti\", tifosi Fiorentina furiosi dopo sconfitta con il Torino</a> <font color=\"#6f6f6f\">adnkronos.com</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxNUE1xQnBGS3FDNThneUd5b253ZVFBNEtLaEpudjVXeE1lQU1iLXRCbmtWcHZ0RkhoZFM4NGZuekVEUTBwR2IwNEpwcFRWbEpMbXVneHJyUDRyaFpYeXJvMW43ZUZjdmNCcXNtVGU4NG1sa2psS3lHcEc2bTdxd3NaY1lyeDFuS2FSUVlMV3JHYlFnVGp1Qk1fdlU3SUo?oc=5\" target=\"_blank\">\"Grosso dimettiti\", tifosi Fiorentina furiosi dopo sconfitta con il Torino</a> <font color=\"#6f6f6f\">Adnkronos</font>",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUE1xQnBGS3FDNThneUd5b253ZVFBNEtLaEpudjVXeE1lQU1iLXRCbmtWcHZ0RkhoZFM4NGZuekVEUTBwR2IwNEpwcFRWbEpMbXVneHJyUDRyaFpYeXJvMW43ZUZjdmNCcXNtVGU4NG1sa2psS3lHcEc2bTdxd3NaY1lyeDFuS2FSUVlMV3JHYlFnVGp1Qk1fdlU3SUo?oc=5",
-      "source": "adnkronos.com",
+      "source": "Adnkronos",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
@@ -7846,7 +7787,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "adnkronos.com",
+          "source": "Adnkronos",
           "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUE1xQnBGS3FDNThneUd5b253ZVFBNEtLaEpudjVXeE1lQU1iLXRCbmtWcHZ0RkhoZFM4NGZuekVEUTBwR2IwNEpwcFRWbEpMbXVneHJyUDRyaFpYeXJvMW43ZUZjdmNCcXNtVGU4NG1sa2psS3lHcEc2bTdxd3NaY1lyeDFuS2FSUVlMV3JHYlFnVGp1Qk1fdlU3SUo?oc=5",
           "pubDate": "Sat, 05 Sep 2026 15:25:00 GMT"
         }
@@ -7907,9 +7848,9 @@
     },
     {
       "title": "Diario del sabato e della domenica: Sabato 5 settembre Video",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxQYTVhWW5MLUJORXNwY0hxYTlWZzl5NUpKQXVzZ1YxY2tCSzBnblFRYXM0TUV2TXB2WldYLTVuWk04cklFSU9oWG1CazQ0aDhKRnNwY2RxWHJ3bHhKR2hvN0FpZV9mVUdPMG1wcjdQUDRpRU1IbmI4d3VTeWpfcW9tLXlsajAzWE1oLUNndjB6eXRyc2g5cWNIeGJDV0haY2RoWW9NZDdjX1pHLWtaUnZtXw?oc=5\" target=\"_blank\">Diario del sabato e della domenica: Sabato 5 settembre Video</a> <font color=\"#6f6f6f\">mediasetinfinity.mediaset.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxQYTVhWW5MLUJORXNwY0hxYTlWZzl5NUpKQXVzZ1YxY2tCSzBnblFRYXM0TUV2TXB2WldYLTVuWk04cklFSU9oWG1CazQ0aDhKRnNwY2RxWHJ3bHhKR2hvN0FpZV9mVUdPMG1wcjdQUDRpRU1IbmI4d3VTeWpfcW9tLXlsajAzWE1oLUNndjB6eXRyc2g5cWNIeGJDV0haY2RoWW9NZDdjX1pHLWtaUnZtXw?oc=5\" target=\"_blank\">Diario del sabato e della domenica: Sabato 5 settembre Video</a> <font color=\"#6f6f6f\">Mediaset Infinity</font>",
       "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYTVhWW5MLUJORXNwY0hxYTlWZzl5NUpKQXVzZ1YxY2tCSzBnblFRYXM0TUV2TXB2WldYLTVuWk04cklFSU9oWG1CazQ0aDhKRnNwY2RxWHJ3bHhKR2hvN0FpZV9mVUdPMG1wcjdQUDRpRU1IbmI4d3VTeWpfcW9tLXlsajAzWE1oLUNndjB6eXRyc2g5cWNIeGJDV0haY2RoWW9NZDdjX1pHLWtaUnZtXw?oc=5",
-      "source": "mediasetinfinity.mediaset.it",
+      "source": "Mediaset Infinity",
       "category": "Lega",
       "categories": [
         "Lega"
@@ -7921,7 +7862,7 @@
       "isVideo": true,
       "sources": [
         {
-          "source": "mediasetinfinity.mediaset.it",
+          "source": "Mediaset Infinity",
           "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYTVhWW5MLUJORXNwY0hxYTlWZzl5NUpKQXVzZ1YxY2tCSzBnblFRYXM0TUV2TXB2WldYLTVuWk04cklFSU9oWG1CazQ0aDhKRnNwY2RxWHJ3bHhKR2hvN0FpZV9mVUdPMG1wcjdQUDRpRU1IbmI4d3VTeWpfcW9tLXlsajAzWE1oLUNndjB6eXRyc2g5cWNIeGJDV0haY2RoWW9NZDdjX1pHLWtaUnZtXw?oc=5",
           "pubDate": "Sat, 05 Sep 2026 15:21:37 GMT"
         }
@@ -8010,6 +7951,61 @@
       "id": "bardella rn elogia il governo di meloni e salvini italia ha ritrovato -1788621600000-193"
     },
     {
+      "title": "Estrazioni del Lotto di sabato 5 settembre 2026: la ruota di Napoli",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxObGRrc1g5WTROem9KU2pXQVJzaEVDU1dfRU8xY3c5YWRRRHFTZndiYW1DRjdpbDRnODlpMlNhWEVEMXFVWUJoRkVNemNMTWw0dmdSSHVVQlFIX0I0Y3ZUY29BR1Z6bUh1ZkZnZ09acHN1N05DZ2lXUGJSQzZzcGZ0Vkh0dzZrX1k?oc=5\" target=\"_blank\">Estrazioni del Lotto di sabato 5 settembre 2026: la ruota di Napoli</a> <font color=\"#6f6f6f\">NapoliToday</font>",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObGRrc1g5WTROem9KU2pXQVJzaEVDU1dfRU8xY3c5YWRRRHFTZndiYW1DRjdpbDRnODlpMlNhWEVEMXFVWUJoRkVNemNMTWw0dmdSSHVVQlFIX0I0Y3ZUY29BR1Z6bUh1ZkZnZ09acHN1N05DZ2lXUGJSQzZzcGZ0Vkh0dzZrX1k?oc=5",
+      "image": "",
+      "source": "NapoliToday",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Sat, 05 Sep 2026 15:18:17 GMT",
+      "googlePubDate": "Sat, 05 Sep 2026 15:18:17 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "NapoliToday",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObGRrc1g5WTROem9KU2pXQVJzaEVDU1dfRU8xY3c5YWRRRHFTZndiYW1DRjdpbDRnODlpMlNhWEVEMXFVWUJoRkVNemNMTWw0dmdSSHVVQlFIX0I0Y3ZUY29BR1Z6bUh1ZkZnZ09acHN1N05DZ2lXUGJSQzZzcGZ0Vkh0dzZrX1k?oc=5",
+          "pubDate": "Sat, 05 Sep 2026 15:18:17 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObGRrc1g5WTROem9KU2pXQVJzaEVDU1dfRU8xY3c5YWRRRHFTZndiYW1DRjdpbDRnODlpMlNhWEVEMXFVWUJoRkVNemNMTWw0dmdSSHVVQlFIX0I0Y3ZUY29BR1Z6bUh1ZkZnZ09acHN1N05DZ2lXUGJSQzZzcGZ0Vkh0dzZrX1k?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "estrazioni del lotto di sabato 5 settembre 2026 la ruota di napoli-1788621497000-194"
+    },
+    {
+      "title": "Molinari fa da sponda a Salvini, ma sul Monviso c'è mal di Nord",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTFBzdFVkRVc2QjFpY1ExZVFTUFgtb2s4ZS1ENHJJTnhiNDFvSTJWXzRoT1FONzNBdlZkZ3RVUUgwSHBOZ3F1OFd1dnNhLVFkUWl3MkhLc1gxazdiY1E?oc=5\" target=\"_blank\">Molinari fa da sponda a Salvini, ma sul Monviso c'è mal di Nord</a> <font color=\"#6f6f6f\">Lo Spiffero</font>",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBzdFVkRVc2QjFpY1ExZVFTUFgtb2s4ZS1ENHJJTnhiNDFvSTJWXzRoT1FONzNBdlZkZ3RVUUgwSHBOZ3F1OFd1dnNhLVFkUWl3MkhLc1gxazdiY1E?oc=5",
+      "image": "",
+      "source": "Lo Spiffero",
+      "category": "Lega",
+      "categories": [
+        "Lega",
+        "Politica"
+      ],
+      "pubDate": "Sat, 05 Sep 2026 15:17:00 GMT",
+      "googlePubDate": "Sat, 05 Sep 2026 15:17:00 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Lo Spiffero",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBzdFVkRVc2QjFpY1ExZVFTUFgtb2s4ZS1ENHJJTnhiNDFvSTJWXzRoT1FONzNBdlZkZ3RVUUgwSHBOZ3F1OFd1dnNhLVFkUWl3MkhLc1gxazdiY1E?oc=5",
+          "pubDate": "Sat, 05 Sep 2026 15:17:00 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBzdFVkRVc2QjFpY1ExZVFTUFgtb2s4ZS1ENHJJTnhiNDFvSTJWXzRoT1FONzNBdlZkZ3RVUUgwSHBOZ3F1OFd1dnNhLVFkUWl3MkhLc1gxazdiY1E?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 25,
+      "id": "molinari fa da sponda a salvini ma sul monviso c e mal di nord-1788621420000-195"
+    },
+    {
       "title": "Algeria, continuano le operazioni di soccorso del bimbo di 10 anni caduto in un pozzo",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxPQWFGUTl1Ynd4dEhQTWZTNzJmRG10cXp5OWp3NHczTmstMHVKelBQN0kzaHRmemtfTHBrU2ZmQmhTNUFTdlJsLXVpNEF6Wm81SjF2cklVSG5tbWxVWTdGMWJieGxEYU5fN045V0ZJLTk1SkVYcFdITUYzUmd4QzVQVnp4UlEyY09HMFBFbnF0NmNtb0t4RVBKMzYzMDlaOUR6Z3NKZ1JTQTRiT2ItTG5PR3VrbVp4RUZ0aVViejJB?oc=5\" target=\"_blank\">Algeria, continuano le operazioni di soccorso del bimbo di 10 anni caduto in un pozzo</a> <font color=\"#6f6f6f\">Il Sole 24 ORE</font>",
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQWFGUTl1Ynd4dEhQTWZTNzJmRG10cXp5OWp3NHczTmstMHVKelBQN0kzaHRmemtfTHBrU2ZmQmhTNUFTdlJsLXVpNEF6Wm81SjF2cklVSG5tbWxVWTdGMWJieGxEYU5fN045V0ZJLTk1SkVYcFdITUYzUmd4QzVQVnp4UlEyY09HMFBFbnF0NmNtb0t4RVBKMzYzMDlaOUR6Z3NKZ1JTQTRiT2ItTG5PR3VrbVp4RUZ0aVViejJB?oc=5",
@@ -8039,9 +8035,9 @@
     {
       "title": "Roma, 75enne cubano irregolare violenta ripetutamente bambina figlia della coinquilina: sorpreso dalla donna e arrestato",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUkpPSEFkTXlmOFg2TERDT3VUaHp3cXd2N1FyM1NlR1lzbGYtcWIzekdGOWtwU1Z6THhPM19ZQkJwSVFIS0VwY3d0ZDY2QmtUaFg5OWtFZ1RlcV9ITlZSZVA1ZTVyNTlpT1ZHUjdjc0RFQXpaaTJQVzlvdlBGS0xkRzNLRXFRR0JUNVlJS3RRUVhqOEpOSUtPMC1VQWR1Y0pqRWVaUmN0bDRPU3RMRW9JTW1lTHpqcXhXek9rMW1ndDcwMzR6cXZxdtIBzgFBVV95cUxQVXBjTnVlUklGVGhTdndocU05RWtqRHJ5ZF96VmJ3SVRzZjdENlg1blFyTWdTU2J4RVNJT2ZnMEdWb0FNOFZrT0VjMTI1cTNRblV6cVFLUjY1QnBjbGxCdFJEQnRyNWQybGtnQW9kck13bklNSDdtZ05kenIxWmR5a0VzTGhmTmRpbDE4NkNDMG1JdmJSMVgzSndkeVdqd19DY1lTZmtFTU9KRDBCVHZ4RTF4SHVQbldMVm1pcGhPVDV5SWlVRGxWUDVBdG9Ydw?oc=5\" target=\"_blank\">Roma, 75enne arrestato per abusi su una minore: la madre lo sorprende e dà l’allarme</a> <font color=\"#6f6f6f\">blitzquotidiano.it</font>",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUkpPSEFkTXlmOFg2TERDT3VUaHp3cXd2N1FyM1NlR1lzbGYtcWIzekdGOWtwU1Z6THhPM19ZQkJwSVFIS0VwY3d0ZDY2QmtUaFg5OWtFZ1RlcV9ITlZSZVA1ZTVyNTlpT1ZHUjdjc0RFQXpaaTJQVzlvdlBGS0xkRzNLRXFRR0JUNVlJS3RRUVhqOEpOSUtPMC1VQWR1Y0pqRWVaUmN0bDRPU3RMRW9JTW1lTHpqcXhXek9rMW1ndDcwMzR6cXZxdtIBzgFBVV95cUxQVXBjTnVlUklGVGhTdndocU05RWtqRHJ5ZF96VmJ3SVRzZjdENlg1blFyTWdTU2J4RVNJT2ZnMEdWb0FNOFZrT0VjMTI1cTNRblV6cVFLUjY1QnBjbGxCdFJEQnRyNWQybGtnQW9kck13bklNSDdtZ05kenIxWmR5a0VzTGhmTmRpbDE4NkNDMG1JdmJSMVgzSndkeVdqd19DY1lTZmtFTU9KRDBCVHZ4RTF4SHVQbldMVm1pcGhPVDV5SWlVRGxWUDVBdG9Ydw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQM21xYjNEYk0wQmlFLWhrNGR2ODJSNC1PTHVyLXBUQVdsbmtka3VwTnVmLVRPamFqNUpzck9HX0JrT2V0RUN1MUFGZ2FPTDNFSjhzMTZHVFpOUjc2MlRBb0R4LU0xOTNwRW9TeTFZc2pWUENNYlJ6a1pfS01nWWN1NUFKSlFaT0tENjNZ?oc=5",
       "image": "",
-      "source": "blitzquotidiano.it",
+      "source": "romatoday.it",
       "category": "Crimini & immigrazione",
       "categories": [
         "Crimini & immigrazione",
@@ -8055,6 +8051,11 @@
       "isVideo": false,
       "sources": [
         {
+          "source": "romatoday.it",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQM21xYjNEYk0wQmlFLWhrNGR2ODJSNC1PTHVyLXBUQVdsbmtka3VwTnVmLVRPamFqNUpzck9HX0JrT2V0RUN1MUFGZ2FPTDNFSjhzMTZHVFpOUjc2MlRBb0R4LU0xOTNwRW9TeTFZc2pWUENNYlJ6a1pfS01nWWN1NUFKSlFaT0tENjNZ?oc=5",
+          "pubDate": "Sat, 05 Sep 2026 13:07:01 GMT"
+        },
+        {
           "source": "blitzquotidiano.it",
           "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUkpPSEFkTXlmOFg2TERDT3VUaHp3cXd2N1FyM1NlR1lzbGYtcWIzekdGOWtwU1Z6THhPM19ZQkJwSVFIS0VwY3d0ZDY2QmtUaFg5OWtFZ1RlcV9ITlZSZVA1ZTVyNTlpT1ZHUjdjc0RFQXpaaTJQVzlvdlBGS0xkRzNLRXFRR0JUNVlJS3RRUVhqOEpOSUtPMC1VQWR1Y0pqRWVaUmN0bDRPU3RMRW9JTW1lTHpqcXhXek9rMW1ndDcwMzR6cXZxdtIBzgFBVV95cUxQVXBjTnVlUklGVGhTdndocU05RWtqRHJ5ZF96VmJ3SVRzZjdENlg1blFyTWdTU2J4RVNJT2ZnMEdWb0FNOFZrT0VjMTI1cTNRblV6cVFLUjY1QnBjbGxCdFJEQnRyNWQybGtnQW9kck13bklNSDdtZ05kenIxWmR5a0VzTGhmTmRpbDE4NkNDMG1JdmJSMVgzSndkeVdqd19DY1lTZmtFTU9KRDBCVHZ4RTF4SHVQbldMVm1pcGhPVDV5SWlVRGxWUDVBdG9Ydw?oc=5",
           "pubDate": "Sat, 05 Sep 2026 13:02:05 GMT"
@@ -8065,7 +8066,7 @@
           "pubDate": "Sat, 05 Sep 2026 06:58:34 GMT"
         },
         {
-          "source": "RomaToday",
+          "source": "romatoday.it",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBONjhJclA5ZXN2NlNmNjI5cHY4T1JITmF2ZDFvX3BXVDhoMk5qdWdOVGRYNk1RN1NWcTZELWhjelRyWmJ6LTkyUVFRUWJUQ2tsMFRYZkNQRXYtQzZXVkFBM195UXcxbkxxbzRURDhGTUQtdTA?oc=5",
           "pubDate": "Sat, 05 Sep 2026 06:15:39 GMT"
         },
@@ -8075,8 +8076,8 @@
           "pubDate": "Sat, 05 Sep 2026 14:10:55 GMT"
         }
       ],
-      "originalURL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUkpPSEFkTXlmOFg2TERDT3VUaHp3cXd2N1FyM1NlR1lzbGYtcWIzekdGOWtwU1Z6THhPM19ZQkJwSVFIS0VwY3d0ZDY2QmtUaFg5OWtFZ1RlcV9ITlZSZVA1ZTVyNTlpT1ZHUjdjc0RFQXpaaTJQVzlvdlBGS0xkRzNLRXFRR0JUNVlJS3RRUVhqOEpOSUtPMC1VQWR1Y0pqRWVaUmN0bDRPU3RMRW9JTW1lTHpqcXhXek9rMW1ndDcwMzR6cXZxdtIBzgFBVV95cUxQVXBjTnVlUklGVGhTdndocU05RWtqRHJ5ZF96VmJ3SVRzZjdENlg1blFyTWdTU2J4RVNJT2ZnMEdWb0FNOFZrT0VjMTI1cTNRblV6cVFLUjY1QnBjbGxCdFJEQnRyNWQybGtnQW9kck13bklNSDdtZ05kenIxWmR5a0VzTGhmTmRpbDE4NkNDMG1JdmJSMVgzSndkeVdqd19DY1lTZmtFTU9KRDBCVHZ4RTF4SHVQbldMVm1pcGhPVDV5SWlVRGxWUDVBdG9Ydw?oc=5",
-      "sourceCount": 4,
+      "originalURL": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQM21xYjNEYk0wQmlFLWhrNGR2ODJSNC1PTHVyLXBUQVdsbmtka3VwTnVmLVRPamFqNUpzck9HX0JrT2V0RUN1MUFGZ2FPTDNFSjhzMTZHVFpOUjc2MlRBb0R4LU0xOTNwRW9TeTFZc2pWUENNYlJ6a1pfS01nWWN1NUFKSlFaT0tENjNZ?oc=5",
+      "sourceCount": 5,
       "sourcePriority": 55,
       "id": "roma 75enne cubano irregolare violenta ripetutamente bambina figlia de-1788617455000-221"
     },
@@ -8130,10 +8131,10 @@
     },
     {
       "title": "Scontro tra una Bmw e un tram a Porta Venezia: soccorsa una donna",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNdDh6aGRzR0c3VVFSLXp2ZzBmQlRMRmRzc29UQ2FiMTI1eWx1NkFYeTdJVlNUQjBMUTQwTWdsa3ZoV2NKM09wZjRDODM0VVVNVTM1N09oYWRfV1ZBNk05aDZSSkZGRG9KZDZ3VXRTeEVkWld0dElrS1lrLWxNRk05alFpQ19WRFBYTFdJOFBsUUo3S0phMDNN?oc=5\" target=\"_blank\">Scontro tra una Bmw e un tram a Porta Venezia: soccorsa una donna</a> <font color=\"#6f6f6f\">milanotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNdDh6aGRzR0c3VVFSLXp2ZzBmQlRMRmRzc29UQ2FiMTI1eWx1NkFYeTdJVlNUQjBMUTQwTWdsa3ZoV2NKM09wZjRDODM0VVVNVTM1N09oYWRfV1ZBNk05aDZSSkZGRG9KZDZ3VXRTeEVkWld0dElrS1lrLWxNRk05alFpQ19WRFBYTFdJOFBsUUo3S0phMDNN?oc=5\" target=\"_blank\">Scontro tra una Bmw e un tram a Porta Venezia: soccorsa una donna</a> <font color=\"#6f6f6f\">MilanoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdDh6aGRzR0c3VVFSLXp2ZzBmQlRMRmRzc29UQ2FiMTI1eWx1NkFYeTdJVlNUQjBMUTQwTWdsa3ZoV2NKM09wZjRDODM0VVVNVTM1N09oYWRfV1ZBNk05aDZSSkZGRG9KZDZ3VXRTeEVkWld0dElrS1lrLWxNRk05alFpQ19WRFBYTFdJOFBsUUo3S0phMDNN?oc=5",
       "image": "",
-      "source": "milanotoday.it",
+      "source": "MilanoToday",
       "category": "Storie umane",
       "categories": [
         "Storie umane"
@@ -8145,7 +8146,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "milanotoday.it",
+          "source": "MilanoToday",
           "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdDh6aGRzR0c3VVFSLXp2ZzBmQlRMRmRzc29UQ2FiMTI1eWx1NkFYeTdJVlNUQjBMUTQwTWdsa3ZoV2NKM09wZjRDODM0VVVNVTM1N09oYWRfV1ZBNk05aDZSSkZGRG9KZDZ3VXRTeEVkWld0dElrS1lrLWxNRk05alFpQ19WRFBYTFdJOFBsUUo3S0phMDNN?oc=5",
           "pubDate": "Sat, 05 Sep 2026 12:07:47 GMT"
         }
@@ -8182,9 +8183,9 @@
     },
     {
       "title": "Alluvione in Nepal, a 10 giorni dal disastro salvato uomo bloccato in un tunnel: le news",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaDhDdlVFNUNPMHA1UUotWDNmY1Ewd1NuZzRSSWlEV2ZGZkFWLVhycW1LYjdlMTMtX3p6SnJ5eUxfMzg0b0g2bDl2NGtoNHhmVGJLSDNSWmJ2NDNrN21jeFdqTFk3QkVRd0tMc2RjVEJLcndxWHV5NnlsM0gyUllxaU5iVzJkSFdnMVJJcXlyZUNuRHd3M3JqYUJHdmVYdTc0VHRDRG50N28wZ0l0WTA1M0UtVFRXcW9OUTlxT1ptaDg?oc=5\" target=\"_blank\">Alluvione in Nepal, a 10 giorni dal disastro salvato uomo bloccato in un tunnel: le news</a> <font color=\"#6f6f6f\">adnkronos.com</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaDhDdlVFNUNPMHA1UUotWDNmY1Ewd1NuZzRSSWlEV2ZGZkFWLVhycW1LYjdlMTMtX3p6SnJ5eUxfMzg0b0g2bDl2NGtoNHhmVGJLSDNSWmJ2NDNrN21jeFdqTFk3QkVRd0tMc2RjVEJLcndxWHV5NnlsM0gyUllxaU5iVzJkSFdnMVJJcXlyZUNuRHd3M3JqYUJHdmVYdTc0VHRDRG50N28wZ0l0WTA1M0UtVFRXcW9OUTlxT1ptaDg?oc=5\" target=\"_blank\">Alluvione in Nepal, a 10 giorni dal disastro salvato uomo bloccato in un tunnel: le news</a> <font color=\"#6f6f6f\">Adnkronos</font>",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaDhDdlVFNUNPMHA1UUotWDNmY1Ewd1NuZzRSSWlEV2ZGZkFWLVhycW1LYjdlMTMtX3p6SnJ5eUxfMzg0b0g2bDl2NGtoNHhmVGJLSDNSWmJ2NDNrN21jeFdqTFk3QkVRd0tMc2RjVEJLcndxWHV5NnlsM0gyUllxaU5iVzJkSFdnMVJJcXlyZUNuRHd3M3JqYUJHdmVYdTc0VHRDRG50N28wZ0l0WTA1M0UtVFRXcW9OUTlxT1ptaDg?oc=5",
-      "source": "adnkronos.com",
+      "source": "Adnkronos",
       "category": "Storie umane",
       "categories": [
         "Storie umane"
@@ -8196,7 +8197,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "adnkronos.com",
+          "source": "Adnkronos",
           "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaDhDdlVFNUNPMHA1UUotWDNmY1Ewd1NuZzRSSWlEV2ZGZkFWLVhycW1LYjdlMTMtX3p6SnJ5eUxfMzg0b0g2bDl2NGtoNHhmVGJLSDNSWmJ2NDNrN21jeFdqTFk3QkVRd0tMc2RjVEJLcndxWHV5NnlsM0gyUllxaU5iVzJkSFdnMVJJcXlyZUNuRHd3M3JqYUJHdmVYdTc0VHRDRG50N28wZ0l0WTA1M0UtVFRXcW9OUTlxT1ptaDg?oc=5",
           "pubDate": "Sat, 05 Sep 2026 08:45:00 GMT"
         }
@@ -8230,12 +8231,12 @@
           "pubDate": "Fri, 04 Sep 2026 21:37:09 GMT"
         },
         {
-          "source": "La Nuova Sardegna",
+          "source": "lanuovasardegna.it",
           "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9PMXB2U2p2M1Z2cUFKSHFmSlJlSkd3NEQzSnpodDNJZEtoS1AyNEUzY2JDQXRTcnJmQ3MycENWdGhNVm03V3R1emgxekJmcGtrVkxlYU44YlBWTzJyLVJaYVZRV0lRWTVaSDFNVzl6d0VXZEhm?oc=5",
           "pubDate": "Fri, 04 Sep 2026 20:19:04 GMT"
         },
         {
-          "source": "agi.it",
+          "source": "AGI",
           "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPR2hjVVNiMFhBaXR0d1htazNITDg1X056eTJiRmM2RnJkUUJsWmFTY2NRSEZReks0X1NPbWRISTJGOC12VFhHN0N4b3dWYVZ4S0kySTlFRF92YnBBWlM4U1ZQYlZzRU5yYVpjdkpiQy1ES2lwTlRMNlNON18xSVM0MzQ0OFZhVjNHN1dFY3h3UHpsOHktNlh4eWM5SE9UVEk5WEt5bHYyOHF5djBHN1hvM1o1ampXT0F5Q2VhRjIzLWoxVEgwLXBCb3FOYlFBS3hma3FjbjVKd0JMOGM4M3fSAd4BQVVfeXFMT0doY1VTYjBYQWl0dHdYbWszSEw4NV9OenkyYkZjNkZyZFFCbFphU2NjUUhGUXpLNF9TT21kSEkyRjgtdlRYRzdDeG93VmFWeEtJMkk5RURfdmJwQVpTOFNWUGJWc0VOcmFaY3ZKYkMtREtpcE5UTDZTTjdfMUlTNDM0NDhWYVYzRzdXRWN4d1B6bDh5LTZYeHljOUhPVFRJOVhLeWx2MjhxeXYwRzdYbzNaNWpqV09BeUNlYUYyMy1qMVRIMC1wQm9xTmJRQUt4ZmtxY241SndCTDhjODN3?oc=5",
           "pubDate": "Fri, 04 Sep 2026 19:50:00 GMT"
         }
@@ -8245,9 +8246,9 @@
     },
     {
       "title": "Incidente tra auto e ambulanza, a Pontecagnano: paziente a bordo trasferito al Ruggi su un altro mezzo di soccorso",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxNbjd6ckpKemEyQ3pVN0dMdG9idWJiV3l5SkM3LVFHZ3hlaDdsaWlhYThpWHZqcVRCcHktQlZlcS11T0lWZVdGTlNGS2pqT19ZSXFka1RXd3hnU3FWRUpuZlNKN1RoZ3NlS3BQcUlKc3FpWnoydndIZUpPenJnVzRXZWFGdnZqYWZGNTRLcUdMWExNemVidmEtci16TWw1bmtVUG40YXN3SQ?oc=5\" target=\"_blank\">Incidente tra auto e ambulanza, a Pontecagnano: paziente a bordo trasferito al Ruggi su un altro mezzo di soccorso</a> <font color=\"#6f6f6f\">salernotoday.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxNbjd6ckpKemEyQ3pVN0dMdG9idWJiV3l5SkM3LVFHZ3hlaDdsaWlhYThpWHZqcVRCcHktQlZlcS11T0lWZVdGTlNGS2pqT19ZSXFka1RXd3hnU3FWRUpuZlNKN1RoZ3NlS3BQcUlKc3FpWnoydndIZUpPenJnVzRXZWFGdnZqYWZGNTRLcUdMWExNemVidmEtci16TWw1bmtVUG40YXN3SQ?oc=5\" target=\"_blank\">Incidente tra auto e ambulanza, a Pontecagnano: paziente a bordo trasferito al Ruggi su un altro mezzo di soccorso</a> <font color=\"#6f6f6f\">SalernoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbjd6ckpKemEyQ3pVN0dMdG9idWJiV3l5SkM3LVFHZ3hlaDdsaWlhYThpWHZqcVRCcHktQlZlcS11T0lWZVdGTlNGS2pqT19ZSXFka1RXd3hnU3FWRUpuZlNKN1RoZ3NlS3BQcUlKc3FpWnoydndIZUpPenJnVzRXZWFGdnZqYWZGNTRLcUdMWExNemVidmEtci16TWw1bmtVUG40YXN3SQ?oc=5",
-      "source": "salernotoday.it",
+      "source": "SalernoToday",
       "category": "Storie umane",
       "categories": [
         "Storie umane"
@@ -8259,7 +8260,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "salernotoday.it",
+          "source": "SalernoToday",
           "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbjd6ckpKemEyQ3pVN0dMdG9idWJiV3l5SkM3LVFHZ3hlaDdsaWlhYThpWHZqcVRCcHktQlZlcS11T0lWZVdGTlNGS2pqT19ZSXFka1RXd3hnU3FWRUpuZlNKN1RoZ3NlS3BQcUlKc3FpWnoydndIZUpPenJnVzRXZWFGdnZqYWZGNTRLcUdMWExNemVidmEtci16TWw1bmtVUG40YXN3SQ?oc=5",
           "pubDate": "Fri, 04 Sep 2026 17:04:14 GMT"
         }
@@ -8317,9 +8318,9 @@
     },
     {
       "title": "Tre aggressioni nel giro di dieci minuti nel centro di Torino, arrestato uno straniero",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgJBVV95cUxOSURsQWdwdUxseHl5T3gwX0VwN2NQQTJJOVVCRGVoV1dmcTBmYmpISkpFel9tQWQ0c1hDM280Szl5dk5OeUpqWDNCaUdTV1FPd2hDRVFzZUNYWnZJR0YtcUdqcl9fQmlzQ1hvS09kRjlaV3ZWYjFqLVpvT25zQ09DNWNtTVhtMndnRm5qalNRWUNyM0hTZGdrNjB5bGQ1YXp1ak94OHZHR2d2bmhwWTFhRU00aGZpWXFxY1JLRFo4MVYxMmR4Nnh3MnQ5NmRQaThUczVBRWtqWVd0b0NRcDdsc0VtdE9RRm1kTUw0WjFuQm0yQTVwdW5jQWRGUEhENjJaZVpNek5lLS1IMi1aUXkwWl9R0gGXAkFVX3lxTE53MTV0SS1XVU9tSTZJbHFNRzVuc0xpYnpmNnRHWkhLb1Zid1hTNi0yakRfRk84T3paSEdxaGJEWXJ6UHpBUGdicTNTOUMtaXpFRlNTd21ET1VHWDR3UkZpcHB0SHpRSlU4ZGctNjhCU3MzTDh4ZWNiQnQtSXB5aVV3MHN0MERic3M4LTN3RzNpQTVwMkthUUIyOHJuRWppVm83M2c2NDdEdzNBWks0bWRtV1UwX2ZLckx4V0JwQ0s3cFFhRnR5MV9nWlRsU1R2X1ZySnVaNk9zMDNfbU9DYVh2Skc2b214TWFET3lvb2VLbkVlcEtteEhheE1ORzZ0VnE3QjRNaGFuN0oyOFo0V2gzOVhwOGYybw?oc=5\" target=\"_blank\">Tre aggressioni nel giro di dieci minuti nel centro di Torino, arrestato uno straniero</a> <font color=\"#6f6f6f\">torino.corriere.it</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgJBVV95cUxOSURsQWdwdUxseHl5T3gwX0VwN2NQQTJJOVVCRGVoV1dmcTBmYmpISkpFel9tQWQ0c1hDM280Szl5dk5OeUpqWDNCaUdTV1FPd2hDRVFzZUNYWnZJR0YtcUdqcl9fQmlzQ1hvS09kRjlaV3ZWYjFqLVpvT25zQ09DNWNtTVhtMndnRm5qalNRWUNyM0hTZGdrNjB5bGQ1YXp1ak94OHZHR2d2bmhwWTFhRU00aGZpWXFxY1JLRFo4MVYxMmR4Nnh3MnQ5NmRQaThUczVBRWtqWVd0b0NRcDdsc0VtdE9RRm1kTUw0WjFuQm0yQTVwdW5jQWRGUEhENjJaZVpNek5lLS1IMi1aUXkwWl9R0gGXAkFVX3lxTE53MTV0SS1XVU9tSTZJbHFNRzVuc0xpYnpmNnRHWkhLb1Zid1hTNi0yakRfRk84T3paSEdxaGJEWXJ6UHpBUGdicTNTOUMtaXpFRlNTd21ET1VHWDR3UkZpcHB0SHpRSlU4ZGctNjhCU3MzTDh4ZWNiQnQtSXB5aVV3MHN0MERic3M4LTN3RzNpQTVwMkthUUIyOHJuRWppVm83M2c2NDdEdzNBWks0bWRtV1UwX2ZLckx4V0JwQ0s3cFFhRnR5MV9nWlRsU1R2X1ZySnVaNk9zMDNfbU9DYVh2Skc2b214TWFET3lvb2VLbkVlcEtteEhheE1ORzZ0VnE3QjRNaGFuN0oyOFo0V2gzOVhwOGYybw?oc=5\" target=\"_blank\">Tre aggressioni nel giro di dieci minuti nel centro di Torino, arrestato uno straniero</a> <font color=\"#6f6f6f\">Corriere Torino</font>",
       "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOSURsQWdwdUxseHl5T3gwX0VwN2NQQTJJOVVCRGVoV1dmcTBmYmpISkpFel9tQWQ0c1hDM280Szl5dk5OeUpqWDNCaUdTV1FPd2hDRVFzZUNYWnZJR0YtcUdqcl9fQmlzQ1hvS09kRjlaV3ZWYjFqLVpvT25zQ09DNWNtTVhtMndnRm5qalNRWUNyM0hTZGdrNjB5bGQ1YXp1ak94OHZHR2d2bmhwWTFhRU00aGZpWXFxY1JLRFo4MVYxMmR4Nnh3MnQ5NmRQaThUczVBRWtqWVd0b0NRcDdsc0VtdE9RRm1kTUw0WjFuQm0yQTVwdW5jQWRGUEhENjJaZVpNek5lLS1IMi1aUXkwWl9R0gGXAkFVX3lxTE53MTV0SS1XVU9tSTZJbHFNRzVuc0xpYnpmNnRHWkhLb1Zid1hTNi0yakRfRk84T3paSEdxaGJEWXJ6UHpBUGdicTNTOUMtaXpFRlNTd21ET1VHWDR3UkZpcHB0SHpRSlU4ZGctNjhCU3MzTDh4ZWNiQnQtSXB5aVV3MHN0MERic3M4LTN3RzNpQTVwMkthUUIyOHJuRWppVm83M2c2NDdEdzNBWks0bWRtV1UwX2ZLckx4V0JwQ0s3cFFhRnR5MV9nWlRsU1R2X1ZySnVaNk9zMDNfbU9DYVh2Skc2b214TWFET3lvb2VLbkVlcEtteEhheE1ORzZ0VnE3QjRNaGFuN0oyOFo0V2gzOVhwOGYybw?oc=5",
-      "source": "torino.corriere.it",
+      "source": "Corriere Torino",
       "category": "Crimini & immigrazione",
       "categories": [
         "Crimini & immigrazione"
@@ -8331,7 +8332,7 @@
       "isVideo": false,
       "sources": [
         {
-          "source": "torino.corriere.it",
+          "source": "Corriere Torino",
           "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOSURsQWdwdUxseHl5T3gwX0VwN2NQQTJJOVVCRGVoV1dmcTBmYmpISkpFel9tQWQ0c1hDM280Szl5dk5OeUpqWDNCaUdTV1FPd2hDRVFzZUNYWnZJR0YtcUdqcl9fQmlzQ1hvS09kRjlaV3ZWYjFqLVpvT25zQ09DNWNtTVhtMndnRm5qalNRWUNyM0hTZGdrNjB5bGQ1YXp1ak94OHZHR2d2bmhwWTFhRU00aGZpWXFxY1JLRFo4MVYxMmR4Nnh3MnQ5NmRQaThUczVBRWtqWVd0b0NRcDdsc0VtdE9RRm1kTUw0WjFuQm0yQTVwdW5jQWRGUEhENjJaZVpNek5lLS1IMi1aUXkwWl9R0gGXAkFVX3lxTE53MTV0SS1XVU9tSTZJbHFNRzVuc0xpYnpmNnRHWkhLb1Zid1hTNi0yakRfRk84T3paSEdxaGJEWXJ6UHpBUGdicTNTOUMtaXpFRlNTd21ET1VHWDR3UkZpcHB0SHpRSlU4ZGctNjhCU3MzTDh4ZWNiQnQtSXB5aVV3MHN0MERic3M4LTN3RzNpQTVwMkthUUIyOHJuRWppVm83M2c2NDdEdzNBWks0bWRtV1UwX2ZLckx4V0JwQ0s3cFFhRnR5MV9nWlRsU1R2X1ZySnVaNk9zMDNfbU9DYVh2Skc2b214TWFET3lvb2VLbkVlcEtteEhheE1ORzZ0VnE3QjRNaGFuN0oyOFo0V2gzOVhwOGYybw?oc=5",
           "pubDate": "Mon, 31 Aug 2026 15:16:06 GMT"
         }
@@ -8485,19 +8486,19 @@
     }
   ],
   "videoEnrichment": {
-    "updatedAt": "2026-09-06T02:33:59.037Z",
+    "updatedAt": "2026-09-06T02:43:32.388Z",
     "successfulQueries": 3,
     "totalQueries": 4,
     "added": 55,
     "markedExisting": 5,
-    "totalVideos": 36
+    "totalVideos": 35
   },
   "focusEnrichment": {
-    "updatedAt": "2026-09-06T02:34:24.201Z",
+    "updatedAt": "2026-09-06T02:43:57.133Z",
     "successfulQueries": 24,
     "totalQueries": 28,
-    "added": 365,
-    "mergedExisting": 112,
+    "added": 363,
+    "mergedExisting": 113,
     "counts": {
       "crimeImmigration": 12,
       "europe": 5,
