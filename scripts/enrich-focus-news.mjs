@@ -133,7 +133,10 @@ function isUsableLiveArticle(article, now = Date.now()) {
   const age = now - publishedAt;
   if (age < -MAX_FUTURE_CLOCK_SKEW_MS || age > MAX_NEWS_AGE_MS) return false;
 
-  return !GENERIC_NEWS_TITLES.has(normalize(article?.title || ""));
+  const title = normalize(article?.title || "");
+  const isGenericDailyDigest = /^(?:agi )?le notizie del giorno(?: ore \d{1,2} \d{2})?$/.test(title);
+
+  return !GENERIC_NEWS_TITLES.has(title) && !isGenericDailyDigest;
 }
 
 function isPositiveHumanStory(title = "", summary = "") {
