@@ -4,6 +4,15 @@ const OUT = "news.json";
 const MAX_ITEMS = 300;
 const REQUEST_DELAY_MS = 500;
 const MAX_RETRIES = 2;
+const MAX_NEWS_AGE_MS = 4 * 24 * 60 * 60 * 1000;
+const MAX_FUTURE_CLOCK_SKEW_MS = 10 * 60 * 1000;
+const GENERIC_NEWS_TITLES = new Set([
+  "ultime notizie online",
+  "ultime notizie",
+  "ultim ora",
+  "breaking news",
+  "news live"
+]);
 
 /*
   Arricchimento mirato per le sezioni che nel feed base possono risultare
@@ -115,6 +124,16 @@ function normalize(value = "") {
     .replace(/[^a-z0-9 ]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function isUsableLiveArticle(article, now = Date.now()) {
+  const publishedAt = new Date(article?.pubDate).getTime();
+  if (!Number.isFinite(publishedAt)) return false;
+
+  const age = now - publishedAt;
+  if (age < -MAX_FUTURE_CLOCK_SKEW_MS || age > MAX_NEWS_AGE_MS) return false;
+
+  return !GENERIC_NEWS_TITLES.has(normalize(article?.title || ""));
 }
 
 function isPositiveHumanStory(title = "", summary = "") {
@@ -377,7 +396,10 @@ function applyFocusClassification(article) {
 }
 
 function selectFocusNews(items) {
-  const ordered = [...items].sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+  const now = Date.now();
+  const ordered = [...items]
+    .filter(article => isUsableLiveArticle(article, now))
+    .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
   const selected = [];
   const selectedKeys = new Set();
   const keep = article => {
