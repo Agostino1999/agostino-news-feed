@@ -2,52 +2,67 @@
   "success": true,
   "version": "V12-FRESH-HUMAN-BALANCE",
   "engine": "github-actions-v9-google-plus-direct-newsrooms",
-  "updatedAt": "2026-09-27T15:22:14.017Z",
-  "lastAttempt": "2026-09-27T15:22:14.017Z",
+  "updatedAt": "2026-09-27T15:24:14.295Z",
+  "lastAttempt": "2026-09-27T15:24:14.295Z",
   "refreshOk": true,
   "successfulQueries": 34,
   "totalQueries": 44,
   "successfulDirectFeeds": 5,
   "totalDirectFeeds": 5,
-  "directTotal": 106,
+  "directTotal": 105,
   "errors": {
     "200": 10
   },
   "servedPreviousGood": false,
   "rawTotal": 515,
-  "deduplicatedTotal": 462,
+  "deduplicatedTotal": 463,
   "total": 300,
   "news": [
     {
-      "title": "America's Cup: Luna Rossa batte New Zealand e vince la regata preliminare di Napoli",
-      "summary": "FLASH ANSA - aggiornamento a breve",
-      "link": "https://www.ansa.it/",
-      "image": null,
-      "source": "ANSA",
-      "category": "Cronaca",
+      "title": "Gran Bretagna, allarme esplosivi vicino a una base RAF usata dagli Usa: «Cinque arrestati, l'accusa è di terrorismo». Trump: «Volevano fare grossi danni»",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxQazRtSWJFVWxaZWVmRXhvb01rY3MwVEVHWG9fcnIxTnpqdUlqVVEyNlZDNDJ0Mmh2VjFuMWUwOUpXNHhITjhsNXFyZUxEcU9VQnBmYy1WMkd4ZHNuVjlZcWFDTlUxaUkxbGFJM2VXdEZaUjZjWVZlbGxfVmZQUzZvVWRHa1d6MU83MGRDZ09NRU5sLVNDeDNDajAtVUkwMktscU9DQTJ3TUgwOWZOWllQR9IBtgFBVV95cUxPeG11Qk5HLU1uNS1uNTc4Si12UGZ1d1laT0w0QkVKZW1IdXZsS2NqM3pXTjZPY0NKemVYRnBuTjBmbmxxSWMtUlQyQlEweGVYazN4c2VrMGo3U1BrT29TNWZZLXVJc0dISEMyVTZNYjJ4bVlGZ2ExMFE5QWxPTDRpRVFpa3EwekpyNzdrc0lCWTlTbXp6NmtWMEU2ZnVQNi1oOTRFLVZscUZlTUVwMFhlaGNEc01zUQ?oc=5\" target=\"_blank\">Gran Bretagna, allarme esplosivi vicino a base Raf usata dagli Usa: cinque arresti ed evacuazioni</a> <font color=\"#6f6f6f\">Il Messaggero</font>",
+      "link": "https://www.corriere.it/esteri/26_settembre_27/gran-bretagna-allarme-esplosivi-vicino-a-una-base-raf-usa-7262b174-1271-4398-a8d5-ad5be3f46xlk.shtml",
+      "image": "https://dimages2.corriereobjects.it/files/image_1200_675/uploads/2026/09/27/6ab90c12c13e8.webp",
+      "source": "Corriere della Sera",
+      "category": "Sicurezza",
       "categories": [
+        "Sicurezza",
         "Cronaca"
       ],
-      "pubDate": "2026-09-27T15:22:11.880Z",
+      "pubDate": "Sun, 27 Sep 2026 17:21:31 +0200",
       "googlePubDate": null,
-      "originalPubDate": "2026-09-27T15:22:11.880Z",
+      "originalPubDate": "Sun, 27 Sep 2026 17:21:31 +0200",
       "dateSource": "original",
-      "isBreaking": true,
       "isVideo": false,
       "sources": [
         {
-          "source": "ANSA",
-          "link": "https://www.ansa.it/",
-          "originalURL": "https://www.ansa.it/",
-          "pubDate": "2026-09-27T15:22:11.880Z",
-          "originalPubDate": "2026-09-27T15:22:11.880Z",
+          "source": "Corriere della Sera",
+          "link": "https://www.corriere.it/esteri/26_settembre_27/gran-bretagna-allarme-esplosivi-vicino-a-una-base-raf-usa-7262b174-1271-4398-a8d5-ad5be3f46xlk.shtml",
+          "originalURL": "https://www.corriere.it/esteri/26_settembre_27/gran-bretagna-allarme-esplosivi-vicino-a-una-base-raf-usa-7262b174-1271-4398-a8d5-ad5be3f46xlk.shtml",
+          "pubDate": "Sun, 27 Sep 2026 17:21:31 +0200",
+          "originalPubDate": "Sun, 27 Sep 2026 17:21:31 +0200",
           "dateSource": "original"
+        },
+        {
+          "source": "Il Messaggero",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQazRtSWJFVWxaZWVmRXhvb01rY3MwVEVHWG9fcnIxTnpqdUlqVVEyNlZDNDJ0Mmh2VjFuMWUwOUpXNHhITjhsNXFyZUxEcU9VQnBmYy1WMkd4ZHNuVjlZcWFDTlUxaUkxbGFJM2VXdEZaUjZjWVZlbGxfVmZQUzZvVWRHa1d6MU83MGRDZ09NRU5sLVNDeDNDajAtVUkwMktscU9DQTJ3TUgwOWZOWllQR9IBtgFBVV95cUxPeG11Qk5HLU1uNS1uNTc4Si12UGZ1d1laT0w0QkVKZW1IdXZsS2NqM3pXTjZPY0NKemVYRnBuTjBmbmxxSWMtUlQyQlEweGVYazN4c2VrMGo3U1BrT29TNWZZLXVJc0dISEMyVTZNYjJ4bVlGZ2ExMFE5QWxPTDRpRVFpa3EwekpyNzdrc0lCWTlTbXp6NmtWMEU2ZnVQNi1oOTRFLVZscUZlTUVwMFhlaGNEc01zUQ?oc=5",
+          "pubDate": "Sun, 27 Sep 2026 14:28:08 GMT"
+        },
+        {
+          "source": "Corriere della Sera",
+          "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWjZ3eE9hWkU5Z2lmaHA1WmljRGpKOHNOR1dQRnBJODNOZHUycXlHRmFNQW1ueHRscjhabWY0Q1ZtaFJtdGVvbFU3RzV2ZVNJMXVCTjFsQUVNQ2ZQWDllMnhIYl8zYy1aSE5ULVFFT2hkeWtMUnpYN21ZLUdjbUQ1WEZnYzNjSGxXQjh5ejlsMEdiUG1na01yZVc3R09jQk9GOVhfOGFKRllobWNKTkdFdmFVSVV0QkpuYnpIQUl5NGYwSWIzSVRjRXRRcUlaR0hPOVdJcmhWdEdHallKMEpGc9IB5gFBVV95cUxPeHZrbnZqa2lsSFNMT0FIXzFwNkY0YTExVDV6TFctRDJiV212alpsUklSUnZhdkhObF9QYnhWU2NhWklvWm1NaTAzY3ZxRVpGTkdadlgzNEducjdTcmtJcW9LVGs1NzFjQXlwTEdOaUNSamJQcldTQmtfSVlWaVVqUW9mZEpiQmx2U2FRWkFkNDZvSWdnbDhTV3dyWEZnX1UwXzk5SnFzNUxnb2RtTC1BSEJvTTNKcURCNThmdXk0c3FsY0phVDNfY1R5Ykw0aDVMWk9TUkRtVldrVkxUSWQtZUNOWTNqdw?oc=5",
+          "pubDate": "Sun, 27 Sep 2026 14:04:00 GMT"
+        },
+        {
+          "source": "ANSA",
+          "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPcXlOODZhUHVqeVB3elNTYzZ3RXE4RUdycXdneU9jUllVdVllQ1BSbktUU3M0N2ZfZGIzSElmRUJ0aWxIWXBGMmlSU2dSNUhUOWdsV0I3Y2NQd3EwS3ZRSmFIRC1BS28xYVpySjhIT3h3Yy1Tb3lsXzdGSk1lc2VMMXA3aURseWFsVjNvTGw4NHUtTU81clY4bXpMUWRENUV4ODl0OGlIQzBfYWdFVndEWlgzZ21Hc1NnWEQ4cWNSOUIxMVlqS0tJNkxXOE91V1BvXy05cG1SVi1QeFdNRUliVDAxNGxzX0s0MGp2TldDRk1Gem5peEY00gH8AUFVX3lxTFAya3V1bkd6ZElWY3p0aXRnZjRSUFlYVjJ1NXpkRlZrSDEyUWpTMzBEeG1ZdUlnNFNBcUtKOUJoa2ZKNERhcEEyNnJObjFEcTRxOUlRMmk3Yk9XdDJmRmNLSGFnVXVUUTJ1bGNsVDlXU0E1ZUdnZ2RDNEM4ZkxlTGloR19kV0RYR3JWTThGRGdhSDZEMjBHRTdzYVRkU3RhZk5pQ0JXenBzTVkyU0x2aHoxU3BzX2JzaGZ2dXV0NU1QQU5fc2xGeDl2NnlMX3EtbGJORkJ0eTgtUVdZTU9URmxZMDA0d0diVWduVGQya0UyQUtEVnRuZzZPdUppWQ?oc=5",
+          "pubDate": "Sun, 27 Sep 2026 14:02:00 GMT"
         }
       ],
-      "originalURL": "https://www.ansa.it/",
-      "sourceCount": 1,
+      "originalURL": "https://www.corriere.it/esteri/26_settembre_27/gran-bretagna-allarme-esplosivi-vicino-a-una-base-raf-usa-7262b174-1271-4398-a8d5-ad5be3f46xlk.shtml",
+      "sourceCount": 4,
       "sourcePriority": 55,
-      "id": "america s cup luna rossa batte new zealand e vince la regata prelimina-1790522531880-0"
+      "id": "gran bretagna allarme esplosivi vicino a una base raf usata dagli usa -1790522491000-0"
     },
     {
       "title": "Grande squalo mako catturato davanti al porto di Livorno, poi si libera",
@@ -811,7 +826,7 @@
     },
     {
       "title": "Benzina e diesel, tetto prezzi Eni da lunedì 28 settembre: quanto costerà il pieno e dove trovare i distributori con gli sconti",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi9gFBVV95cUxNaFNjUE1Pa3dTR1dsNDRuUm43MldQb01LMjl1RnhnMGZ0eTJLbWtUQ3hYLWR2UWxQSFZLSVlLcFJtd252LVZuSDdZM05tYnJNN3pFVVp2anlXOVJ2T202Wm9IS3VvdEZDdHV1MXRHOHRtTlhKYUdCTVhOb2Mzcm5adzY5TXZ2R0JnVWkyT1RLYUk5RTd6TnNKeVhENE5sZ0VPRjlCSG53U1EtN3c5OEFFUmg4RjJHWDZOV3RZSE02b3JRUVBTMi1NTTZTQnJhT2xwZ2pUN1JpZUludVk0M2d1NTJMZ1JKVHZrbVdjYlIxRER1bkVNOXfSAfsBQVVfeXFMTTlzY1llM3lzRjEyXzJOYXJmak9TVEJSMWVTeFlPN3VDVFZEdm5hS0JwZTlnMFR3eks4M011ZjhsaTZsNV9IYkl4emtGaWxubXk3YXVOOV9SYWlINGJSV3N0UHVZZFdoSEdfdHQyRjFRZ2wzcUVGS0w2M0NNa0FDTXFQeGhPaEY0WFc4clQ5SmJBSmZOUmlodXdvZjJPMmhXR1MzaVVPX2hfek5WVFNQcXdEZ1lNbmVQQW1lZWNKRU56aHJtM0MwRVZiNTdhNTRjYUdtZzB5ZFRtY3MyRFQ0R2dJU3Y3bXdiWHlHeE1DX296ZTVHUHJFcEtrMXc?oc=5\" target=\"_blank\">Benzina e diesel, tetto prezzi Eni da lunedì 28 settembre: quanto costerà il pieno dove trovare i distributori con gli sconti</a> <font color=\"#6f6f6f\">Il Messaggero</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxPSVdDZnFKT2pQTnNvdE9ISEpDemlwTTBFWFNmaDdwUWdveHhzQjRlTWl0YWNDMEg1UXkxTkJnTHJOMEYyUHp2anJZZEEtRzNUTGl6c3lrSURpWFNwTDBibmpXNG9GczlKQ3dpbFRWa21yeHF5WnZZR3hQY1UxRHJYczNRM1dPMnJ4ekNITkczUFpDX2NsZHEwUkJpQ0ZZOEtTODIwNG16bUxkWmcyeEY4NEJzZUc3d1gwZFVQeHljNWM2a1NSd2tfMVEtZEJDb21sakxHdkZJWndJZUVIMjVsQkhZRU4wUdIB6wFBVV95cUxQUG1MZVgwMXVaRFVKU2VqYTUyaFMyNlN0T2hGLXhXN1dPSlVXblZjY0tGUVp5Z2YxaE1NeTZwSXFaNnpjWklqS2o0RmRsNlBZMjBlWWs0TG9MWFZ5b3RFYTZqWkQ1c1Awbjh6cHRuNlR1Sk10OXl4SjdJcG56bTlibGVnaEV6WUQ0R0VUc0FWXzNTR085VkczaDgwWlhtb3hqSE8zVmFsQ3hsWmVGNEppbFpBNzBWMEUwOFBaa29qRjV5N1B1WE5VdTlfWk9PaEtaS2pEVDRVdDNIb0w1alJNbk54RXpLdjZQRlZn?oc=5\" target=\"_blank\">Benzina e diesel, tetto prezzi Eni da lunedì 28 settembre: quanto costerà il pieno dove trovare i distributori con gli sconti</a> <font color=\"#6f6f6f\">Il Messaggero</font>",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMEw4OFVOaWp0NEtXUVA3OW5LSmFhVnplN2Q1bF84djRUcmt4YXZJZ1o2cGlMcDd4RXFUN3pXbG9UM0pSQkk2UzhFcTRZV2NPR0lLOW5LVF9YOFBiOHh0LWh6QjVjWmZleXNVbm4wOHAtbzR1N3JCdUZRT3lSa1FuNjlEUXppWnJrOTNJLVFxWVRLMkdjbjIteXFmcDRhWUxjWnRMOU5MM1k3MGRDQVpNVEZDcTVEWWh1cGxzdDNkUnfSAcYBQVVfeXFMTjdJbFJGOGVvcTYwRWxDcWtTclMxc0pQa0Fpa1NMcEtEdEp6SGpybDVnbEZORG9hNmYwTFFYWEJ5M1BhQUJjclRPV0x1aFRfbEFKMWJoaHBKVUFKcjBPNWdFZkUxLUhuNmQtbnZfczQyMWZsODIyQjQ4ZllHckV6czhkdjhGS2MxZC1TUnVqZzRIM0xTR2N4Vk40OVRIQm04NlNhLTdhLUIyQmV6eFhFRjQ2MFNkZEg3TE1OSmVrZUxWWVFOVHZR?oc=5",
       "image": "",
       "source": "Il Messaggero",
@@ -832,17 +847,12 @@
         },
         {
           "source": "Il Messaggero",
-          "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNaFNjUE1Pa3dTR1dsNDRuUm43MldQb01LMjl1RnhnMGZ0eTJLbWtUQ3hYLWR2UWxQSFZLSVlLcFJtd252LVZuSDdZM05tYnJNN3pFVVp2anlXOVJ2T202Wm9IS3VvdEZDdHV1MXRHOHRtTlhKYUdCTVhOb2Mzcm5adzY5TXZ2R0JnVWkyT1RLYUk5RTd6TnNKeVhENE5sZ0VPRjlCSG53U1EtN3c5OEFFUmg4RjJHWDZOV3RZSE02b3JRUVBTMi1NTTZTQnJhT2xwZ2pUN1JpZUludVk0M2d1NTJMZ1JKVHZrbVdjYlIxRER1bkVNOXfSAfsBQVVfeXFMTTlzY1llM3lzRjEyXzJOYXJmak9TVEJSMWVTeFlPN3VDVFZEdm5hS0JwZTlnMFR3eks4M011ZjhsaTZsNV9IYkl4emtGaWxubXk3YXVOOV9SYWlINGJSV3N0UHVZZFdoSEdfdHQyRjFRZ2wzcUVGS0w2M0NNa0FDTXFQeGhPaEY0WFc4clQ5SmJBSmZOUmlodXdvZjJPMmhXR1MzaVVPX2hfek5WVFNQcXdEZ1lNbmVQQW1lZWNKRU56aHJtM0MwRVZiNTdhNTRjYUdtZzB5ZFRtY3MyRFQ0R2dJU3Y3bXdiWHlHeE1DX296ZTVHUHJFcEtrMXc?oc=5",
-          "pubDate": "Sun, 27 Sep 2026 12:45:45 GMT"
-        },
-        {
-          "source": "Il Messaggero",
           "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPSVdDZnFKT2pQTnNvdE9ISEpDemlwTTBFWFNmaDdwUWdveHhzQjRlTWl0YWNDMEg1UXkxTkJnTHJOMEYyUHp2anJZZEEtRzNUTGl6c3lrSURpWFNwTDBibmpXNG9GczlKQ3dpbFRWa21yeHF5WnZZR3hQY1UxRHJYczNRM1dPMnJ4ekNITkczUFpDX2NsZHEwUkJpQ0ZZOEtTODIwNG16bUxkWmcyeEY4NEJzZUc3d1gwZFVQeHljNWM2a1NSd2tfMVEtZEJDb21sakxHdkZJWndJZUVIMjVsQkhZRU4wUdIB6wFBVV95cUxQUG1MZVgwMXVaRFVKU2VqYTUyaFMyNlN0T2hGLXhXN1dPSlVXblZjY0tGUVp5Z2YxaE1NeTZwSXFaNnpjWklqS2o0RmRsNlBZMjBlWWs0TG9MWFZ5b3RFYTZqWkQ1c1Awbjh6cHRuNlR1Sk10OXl4SjdJcG56bTlibGVnaEV6WUQ0R0VUc0FWXzNTR085VkczaDgwWlhtb3hqSE8zVmFsQ3hsWmVGNEppbFpBNzBWMEUwOFBaa29qRjV5N1B1WE5VdTlfWk9PaEtaS2pEVDRVdDNIb0w1alJNbk54RXpLdjZQRlZn?oc=5",
           "pubDate": "Sun, 27 Sep 2026 12:16:46 GMT"
         }
       ],
       "originalURL": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMEw4OFVOaWp0NEtXUVA3OW5LSmFhVnplN2Q1bF84djRUcmt4YXZJZ1o2cGlMcDd4RXFUN3pXbG9UM0pSQkk2UzhFcTRZV2NPR0lLOW5LVF9YOFBiOHh0LWh6QjVjWmZleXNVbm4wOHAtbzR1N3JCdUZRT3lSa1FuNjlEUXppWnJrOTNJLVFxWVRLMkdjbjIteXFmcDRhWUxjWnRMOU5MM1k3MGRDQVpNVEZDcTVEWWh1cGxzdDNkUnfSAcYBQVVfeXFMTjdJbFJGOGVvcTYwRWxDcWtTclMxc0pQa0Fpa1NMcEtEdEp6SGpybDVnbEZORG9hNmYwTFFYWEJ5M1BhQUJjclRPV0x1aFRfbEFKMWJoaHBKVUFKcjBPNWdFZkUxLUhuNmQtbnZfczQyMWZsODIyQjQ4ZllHckV6czhkdjhGS2MxZC1TUnVqZzRIM0xTR2N4Vk40OVRIQm04NlNhLTdhLUIyQmV6eFhFRjQ2MFNkZEg3TE1OSmVrZUxWWVFOVHZR?oc=5",
-      "sourceCount": 3,
+      "sourceCount": 2,
       "sourcePriority": 55,
       "id": "benzina e diesel tetto prezzi eni da lunedi 28 settembre quanto coster-1790521167000-25"
     },
@@ -1415,52 +1425,6 @@
       "id": "reclutava prostitute per un centro massaggi e truffava aspiranti canta-1790520467000-44"
     },
     {
-      "title": "Gran Bretagna, allarme esplosivi vicino a una base RAF usata dagli Usa: «Cinque arrestati, l'accusa è di terrorismo». Trump: «Volevano fare grossi danni»",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxQazRtSWJFVWxaZWVmRXhvb01rY3MwVEVHWG9fcnIxTnpqdUlqVVEyNlZDNDJ0Mmh2VjFuMWUwOUpXNHhITjhsNXFyZUxEcU9VQnBmYy1WMkd4ZHNuVjlZcWFDTlUxaUkxbGFJM2VXdEZaUjZjWVZlbGxfVmZQUzZvVWRHa1d6MU83MGRDZ09NRU5sLVNDeDNDajAtVUkwMktscU9DQTJ3TUgwOWZOWllQR9IBtgFBVV95cUxPeG11Qk5HLU1uNS1uNTc4Si12UGZ1d1laT0w0QkVKZW1IdXZsS2NqM3pXTjZPY0NKemVYRnBuTjBmbmxxSWMtUlQyQlEweGVYazN4c2VrMGo3U1BrT29TNWZZLXVJc0dISEMyVTZNYjJ4bVlGZ2ExMFE5QWxPTDRpRVFpa3EwekpyNzdrc0lCWTlTbXp6NmtWMEU2ZnVQNi1oOTRFLVZscUZlTUVwMFhlaGNEc01zUQ?oc=5\" target=\"_blank\">Gran Bretagna, allarme esplosivi vicino a base Raf usata dagli Usa: cinque arresti ed evacuazioni</a> <font color=\"#6f6f6f\">Il Messaggero</font>",
-      "link": "https://www.corriere.it/esteri/26_settembre_27/gran-bretagna-allarme-esplosivi-vicino-a-una-base-raf-usa-7262b174-1271-4398-a8d5-ad5be3f46xlk.shtml",
-      "image": "https://dimages2.corriereobjects.it/files/image_1200_675/uploads/2026/09/27/6ab90c12c13e8.webp",
-      "source": "Corriere della Sera",
-      "category": "Sicurezza",
-      "categories": [
-        "Sicurezza",
-        "Cronaca"
-      ],
-      "pubDate": "Sun, 27 Sep 2026 16:46:47 +0200",
-      "googlePubDate": null,
-      "originalPubDate": "Sun, 27 Sep 2026 16:46:47 +0200",
-      "dateSource": "original",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Corriere della Sera",
-          "link": "https://www.corriere.it/esteri/26_settembre_27/gran-bretagna-allarme-esplosivi-vicino-a-una-base-raf-usa-7262b174-1271-4398-a8d5-ad5be3f46xlk.shtml",
-          "originalURL": "https://www.corriere.it/esteri/26_settembre_27/gran-bretagna-allarme-esplosivi-vicino-a-una-base-raf-usa-7262b174-1271-4398-a8d5-ad5be3f46xlk.shtml",
-          "pubDate": "Sun, 27 Sep 2026 16:46:47 +0200",
-          "originalPubDate": "Sun, 27 Sep 2026 16:46:47 +0200",
-          "dateSource": "original"
-        },
-        {
-          "source": "Il Messaggero",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQazRtSWJFVWxaZWVmRXhvb01rY3MwVEVHWG9fcnIxTnpqdUlqVVEyNlZDNDJ0Mmh2VjFuMWUwOUpXNHhITjhsNXFyZUxEcU9VQnBmYy1WMkd4ZHNuVjlZcWFDTlUxaUkxbGFJM2VXdEZaUjZjWVZlbGxfVmZQUzZvVWRHa1d6MU83MGRDZ09NRU5sLVNDeDNDajAtVUkwMktscU9DQTJ3TUgwOWZOWllQR9IBtgFBVV95cUxPeG11Qk5HLU1uNS1uNTc4Si12UGZ1d1laT0w0QkVKZW1IdXZsS2NqM3pXTjZPY0NKemVYRnBuTjBmbmxxSWMtUlQyQlEweGVYazN4c2VrMGo3U1BrT29TNWZZLXVJc0dISEMyVTZNYjJ4bVlGZ2ExMFE5QWxPTDRpRVFpa3EwekpyNzdrc0lCWTlTbXp6NmtWMEU2ZnVQNi1oOTRFLVZscUZlTUVwMFhlaGNEc01zUQ?oc=5",
-          "pubDate": "Sun, 27 Sep 2026 14:28:08 GMT"
-        },
-        {
-          "source": "Corriere della Sera",
-          "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWjZ3eE9hWkU5Z2lmaHA1WmljRGpKOHNOR1dQRnBJODNOZHUycXlHRmFNQW1ueHRscjhabWY0Q1ZtaFJtdGVvbFU3RzV2ZVNJMXVCTjFsQUVNQ2ZQWDllMnhIYl8zYy1aSE5ULVFFT2hkeWtMUnpYN21ZLUdjbUQ1WEZnYzNjSGxXQjh5ejlsMEdiUG1na01yZVc3R09jQk9GOVhfOGFKRllobWNKTkdFdmFVSVV0QkpuYnpIQUl5NGYwSWIzSVRjRXRRcUlaR0hPOVdJcmhWdEdHallKMEpGc9IB5gFBVV95cUxPeHZrbnZqa2lsSFNMT0FIXzFwNkY0YTExVDV6TFctRDJiV212alpsUklSUnZhdkhObF9QYnhWU2NhWklvWm1NaTAzY3ZxRVpGTkdadlgzNEducjdTcmtJcW9LVGs1NzFjQXlwTEdOaUNSamJQcldTQmtfSVlWaVVqUW9mZEpiQmx2U2FRWkFkNDZvSWdnbDhTV3dyWEZnX1UwXzk5SnFzNUxnb2RtTC1BSEJvTTNKcURCNThmdXk0c3FsY0phVDNfY1R5Ykw0aDVMWk9TUkRtVldrVkxUSWQtZUNOWTNqdw?oc=5",
-          "pubDate": "Sun, 27 Sep 2026 14:04:00 GMT"
-        },
-        {
-          "source": "ANSA",
-          "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPcXlOODZhUHVqeVB3elNTYzZ3RXE4RUdycXdneU9jUllVdVllQ1BSbktUU3M0N2ZfZGIzSElmRUJ0aWxIWXBGMmlSU2dSNUhUOWdsV0I3Y2NQd3EwS3ZRSmFIRC1BS28xYVpySjhIT3h3Yy1Tb3lsXzdGSk1lc2VMMXA3aURseWFsVjNvTGw4NHUtTU81clY4bXpMUWRENUV4ODl0OGlIQzBfYWdFVndEWlgzZ21Hc1NnWEQ4cWNSOUIxMVlqS0tJNkxXOE91V1BvXy05cG1SVi1QeFdNRUliVDAxNGxzX0s0MGp2TldDRk1Gem5peEY00gH8AUFVX3lxTFAya3V1bkd6ZElWY3p0aXRnZjRSUFlYVjJ1NXpkRlZrSDEyUWpTMzBEeG1ZdUlnNFNBcUtKOUJoa2ZKNERhcEEyNnJObjFEcTRxOUlRMmk3Yk9XdDJmRmNLSGFnVXVUUTJ1bGNsVDlXU0E1ZUdnZ2RDNEM4ZkxlTGloR19kV0RYR3JWTThGRGdhSDZEMjBHRTdzYVRkU3RhZk5pQ0JXenBzTVkyU0x2aHoxU3BzX2JzaGZ2dXV0NU1QQU5fc2xGeDl2NnlMX3EtbGJORkJ0eTgtUVdZTU9URmxZMDA0d0diVWduVGQya0UyQUtEVnRuZzZPdUppWQ?oc=5",
-          "pubDate": "Sun, 27 Sep 2026 14:02:00 GMT"
-        }
-      ],
-      "originalURL": "https://www.corriere.it/esteri/26_settembre_27/gran-bretagna-allarme-esplosivi-vicino-a-una-base-raf-usa-7262b174-1271-4398-a8d5-ad5be3f46xlk.shtml",
-      "sourceCount": 4,
-      "sourcePriority": 55,
-      "id": "gran bretagna allarme esplosivi vicino a una base raf usata dagli usa -1790520407000-45"
-    },
-    {
       "title": "Corsi assistente bagnanti Fisa in Abruzzo: brevetto, crediti e lavoro con Angeli del Mare [FOTO]",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxPTmxHTk9HXzlNLURaNmZOb19Hdnl2MnphR2pxVjVGRVItRlJHeUVTMzdHRzJ2ME5lTHRGOUtRLWhpN2h5NWkza2I5TzZRRHQtd3RBOVRxMFBVU0ZERVZDSTBBVUFtcjExb1M1ZzZiUUpRNS1EMzB4aVpab2JhbWZJUmVSUDhuTE5FYms1TUJDQkJ1LTFpSEE?oc=5\" target=\"_blank\">Corsi assistente bagnanti Fisa in Abruzzo: brevetto, crediti e lavoro con Angeli del Mare [FOTO]</a> <font color=\"#6f6f6f\">IlPescara</font>",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTmxHTk9HXzlNLURaNmZOb19Hdnl2MnphR2pxVjVGRVItRlJHeUVTMzdHRzJ2ME5lTHRGOUtRLWhpN2h5NWkza2I5TzZRRHQtd3RBOVRxMFBVU0ZERVZDSTBBVUFtcjExb1M1ZzZiUUpRNS1EMzB4aVpab2JhbWZJUmVSUDhuTE5FYms1TUJDQkJ1LTFpSEE?oc=5",
@@ -1485,7 +1449,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTmxHTk9HXzlNLURaNmZOb19Hdnl2MnphR2pxVjVGRVItRlJHeUVTMzdHRzJ2ME5lTHRGOUtRLWhpN2h5NWkza2I5TzZRRHQtd3RBOVRxMFBVU0ZERVZDSTBBVUFtcjExb1M1ZzZiUUpRNS1EMzB4aVpab2JhbWZJUmVSUDhuTE5FYms1TUJDQkJ1LTFpSEE?oc=5",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "corsi assistente bagnanti fisa in abruzzo brevetto crediti e lavoro co-1790520403000-46"
+      "id": "corsi assistente bagnanti fisa in abruzzo brevetto crediti e lavoro co-1790520403000-45"
     },
     {
       "title": "Delitto di Garlasco e la chiusura indagini, attesa per la scadenza di domani 28 settembre. Ecco cosa può succedere",
@@ -1536,7 +1500,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQejFxUUZZSXF3YmJ4a29QckNuRWNKY3N1ZkpDYWd3ZElIYlJLMWF0V1dkRG1BVkRDVTczMm44QWk5QUFfc2tfaVRpU1J6djQ5VmxUbUlCbmtxc3IwWEZPVVF4Z1RiU1FoeDBGRy1YeHlEQWNOaXpKMUNWYUkxM3RONk5YZ1VtaWZNbVJXVVFVUGtabEptTFRNVkdkZDZLSUs2M3RYbA?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "possibile testa a testa juve inter per romano l estate prossima-1790520345000-47"
+      "id": "possibile testa a testa juve inter per romano l estate prossima-1790520345000-46"
     },
     {
       "title": "Fratelli d'Italia attacca Vannacci: \"Chi fa queste cose è un rifiuto inerte, fa bene la Siracusano a querelarlo\"",
@@ -1563,7 +1527,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1sZTMzeEF4SVJ3Tl9zUEg1enluR280YlRVR1libUE0YVoyYk9JZmVOUXlpZ1RrNWN1VjdvVndBeGFpT2ozbmRGQlpPUTg1XzZ0MDJDYmVJZENHanBkTEoxcktwOTBKeXlIV1VVUGNfd1ExVy0xclNRb1BmU3E?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "fratelli d italia attacca vannacci chi fa queste cose e un rifiuto ine-1790520303000-48"
+      "id": "fratelli d italia attacca vannacci chi fa queste cose e un rifiuto ine-1790520303000-47"
     },
     {
       "title": "I bar sotto casa, ne scompaiono 11 al giorno. L'allarme di Confesercenti",
@@ -1598,7 +1562,7 @@
       "originalURL": "https://www.ansa.it/sito/notizie/economia/2026/09/27/bar-sotto-casa-la-desertificazione-ne-cancella-24mila-in-6-anni-11-al-giorno_41129101-66b3-4b57-b8ee-ea35f41e224d.html",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "i bar sotto casa ne scompaiono 11 al giorno l allarme di confesercenti-1790520277000-49"
+      "id": "i bar sotto casa ne scompaiono 11 al giorno l allarme di confesercenti-1790520277000-48"
     },
     {
       "title": "Il Tricolore colora il cielo di Salerno: 3 giorni di eventi per il Raduno dell'Aeronautica e lo spettacolo delle Frecce",
@@ -1625,7 +1589,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQWROQTBBRXppNmRSbzhtX2F5WXkxLU9RbXdJcS1PY0hxTkREWU81UDdfRUxwbzM1RnlLZ3pzc195WHc1T3Fpd3FCNGhYZEsyYmx1MjlOcGhHNEt5NHN3clQyYVo0MWtKa3JXMHVoaGYweFNDM0tyVk9iQjYwT0lSNDNmbURmVjQ2YmZfUTl1LWo?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "il tricolore colora il cielo di salerno 3 giorni di eventi per il radu-1790520258000-50"
+      "id": "il tricolore colora il cielo di salerno 3 giorni di eventi per il radu-1790520258000-49"
     },
     {
       "title": "Avs, Emanuele Filiberto al centro di compravendita titoli senza valore, interrogazione. Il principe: \"Nessuna onorificenza viene venduta\"",
@@ -1655,7 +1619,7 @@
       "originalURL": "https://www.ansa.it/sito/notizie/politica/2026/09/27/avs-emanuele-filiberto-al-centro-di-compravendita-titoli-senza-valore-interrogazione_9666e3a2-6c18-487d-b39e-677aaf995499.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "avs emanuele filiberto al centro di compravendita titoli senza valore -1790520170000-51"
+      "id": "avs emanuele filiberto al centro di compravendita titoli senza valore -1790520170000-50"
     },
     {
       "title": "Condominio, scatta l’obbligo della lettura dei consumi per il riscaldamento: ecco da quando e quali multe si rischiano",
@@ -1682,7 +1646,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQdklMZ3VjdWVtOERVR2d2X3dlZW5JMzl5UUtHMjBQdnFvUlBVSmgzSUVKUFFHc3FJTk91dU5pamRDSmRlc05jWU1laWhNcEpnMmpRUU80VGNoZjlfTHJSMTJUM0tibjVvdHRWTFdyR05fVTFyQm5hOXlzcDA3TVl5enJKN3Y3aVdtN3p3SDAzNTlsQy03VkcyNjJjX1FvWER1UTVmeVRiYnNfYzlfZHJNME1EMG1uUG1wd3UyaU00ckpFMlp3d010RHB0RThwd2Y2MVBUNV9WNlhkaTJTX0ZnLVBFSFVVR0lIcEV6S0tR?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "condominio scatta l obbligo della lettura dei consumi per il riscaldam-1790520166000-52"
+      "id": "condominio scatta l obbligo della lettura dei consumi per il riscaldam-1790520166000-51"
     },
     {
       "title": "\"Le voci di Roma\", visita guidata teatralizzata a Trastevere",
@@ -1709,7 +1673,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQOFRXNy1GWHdTWUFhZTdNZ1huT19JOUtCSTU5THBRbGpaaWxkbVN4UzdJZ19oY29zLWJXNFJyQ3o5X1VpSng3N0FsQmhjcGxrbGlRVWk5TWVzVWd5RnlJSXJzbTVFRlVpNnVWaHlic1g4bTF4WW52UnlBT25nX0NaYzM5RlZ2cUpIbmEwWnVMcFFwV3E0d3NUUW5fRkY?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "le voci di roma visita guidata teatralizzata a trastevere-1790520103000-53"
+      "id": "le voci di roma visita guidata teatralizzata a trastevere-1790520103000-52"
     },
     {
       "title": "«Durante la pandemia volevo smettere di cantare, mi sentivo in colpa e ho avuto un down. Pippo Baudo? Diceva alla figlia di chiamarmi sua sorellina»: così Laura Pausini",
@@ -1736,7 +1700,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPNW41dzk4OUZQTjN6VFZMVU1DX0V5dlZNcmM2cmJReXdGclh1YmM0UDBMYW1sUE9ETW9XdVFKV3VaYTdidHY2RVd0ejFKMDhYYml4TnRldThkWXFVMUFCaFlIcjY4Vkk0SXdHeURwRnRGdldjdEExaWp1Y1dldk9fYmhJYjFSb1pSTnA1SUtSZVNjQnl4QmQ5WkswbnJnS3ZsTWN4OGIyWGJ3SFZBTUQzdFdVUWZRbDNrcG5GczU2SkRtd0RlOUl0UERqTDN2UzR2M2c5Um5MUWRkV3RybU9ldjlDQndJZ19WeEd1Slc2RzFIeHM5M1hn?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "durante la pandemia volevo smettere di cantare mi sentivo in colpa e h-1790519864000-54"
+      "id": "durante la pandemia volevo smettere di cantare mi sentivo in colpa e h-1790519864000-53"
     },
     {
       "title": "Samira Lui a Verissimo: origini familiari, carriera, il legame con Gerry Scotti e la relazione con Luigi Punzo",
@@ -1763,7 +1727,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWGJLTmtXb0FkT0M1VmhEOTR1eVBxWWVUZUYxWXhpdENtU3JxeFBIZ1FSRllhazYzR29Ib0MyWGhWTGY0bDh0bDVfWlBad2p4aWY4MUpTektNS3FwQURES1BYb2hqLU9nczRJR3Z5N01TS0RyQ2NxZy1ycmFsd1FxQkNLSHJQZVJ0bWtodzlxSnNHMFBHN0Nva29GcEt5cUZVQ2xNQnBzR3dfdVRET3hsU0swb2VjeVXSAbwBQVVfeXFMTmc0Qm80ME9Pd1BoZ2VqYmh3d1FBZWVzT3ZHd1FZdjhwTmJqYUpKTzMxR0dvNk84TzdTN1hPTFlzN0lyaTA2Q25fSDVtVzJzQ2pUbjhvNmhucV9fQmZqaWp6Q1FuQjNNRzFfdmNLSkhVeC1tMEI5NzA1UC01SmF0Qm55d2ROUE9MSjFLR3FSejBNNWk3Sm9PX0xNQUg4LXVFOHZfQVZ3UzQ0c2RPeGdSWThub2pMVjd6R3p0S0w?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "samira lui a verissimo origini familiari carriera il legame con gerry -1790519853000-55"
+      "id": "samira lui a verissimo origini familiari carriera il legame con gerry -1790519853000-54"
     },
     {
       "title": "Benzina, dopo Eni anche Ip mette il tetto ai prezzi. La società Socar: «Il via da domani, sarà progressivo»",
@@ -1790,7 +1754,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONkJJb0VZdTV3V3pjd2FQa1NJcTJiWF9LMUhiRnNpUU92TE0wZ1VNazdmNm04bzFIcnd6T2t3YkNFTExLWTM3R1QwVDZzdTB5VUpnWXc2b2ZEWWlvdW8ya0xmRDFGYmZIYzZEeFRVNUNqc3BzX2NoM0ZBVThSX1BmaDdBWGcxZzZWT2pTcG93dnhHUXoydDFEZHYyYzhDcGpl0gGfAUFVX3lxTE4yUDU5TGM3UmFVekZmVmV1enU5Wm1sWXk1UXNjNDNOZF9OSml5NGpaMjhyRHFlRTUwaG9rR05qdXJPdVd4UWpwM01QS2NIcnZJZ0h5QVItaG5KUURiUFJUZ1RTRS1iV2NMN3d2ek1jVzdwdkNWWkg5TWUzOHdUdnhGTWRRb0wtY2JtN2JJVXdGa040MktmRng2TGxHVkI5MA?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "benzina dopo eni anche ip mette il tetto ai prezzi la societa socar il-1790519764000-56"
+      "id": "benzina dopo eni anche ip mette il tetto ai prezzi la societa socar il-1790519764000-55"
     },
     {
       "title": "Prima pioggia e fresco, poi il ritorno del caldo sull'Italia: le previsioni e il quadro meteo",
@@ -1817,7 +1781,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQODQtU1NDR0tRanFzcWtXQl90VnlibnY0Z1dwaEFRQVB5TTVzbTNvU1g4RkFCcDNtUHpoSy1yOGNWQ2tic1pDNVN6VHd0MFJzZjUxYmdnM1V3Q2ljakcweDBPczdiRVhRSFdQOFg3VTdRUzFyNDdjWlV6bW5zY0tnblgtZnY3RlpfTlowQjI3WWd0RFdGbEZGeTdUaVhFVng1aTI0a2R3a0hqQQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "prima pioggia e fresco poi il ritorno del caldo sull italia le previsi-1790519738000-57"
+      "id": "prima pioggia e fresco poi il ritorno del caldo sull italia le previsi-1790519738000-56"
     },
     {
       "title": "Bimbo di 5 anni investito a Torino, arrestata l'ex compagna del padre",
@@ -1881,7 +1845,7 @@
       "originalURL": "https://www.ansa.it/sito/notizie/cronaca/2026/09/27/bimbo-di-5-anni-investito-a-torino-e-stata-lex-compagna-del-padre_cf769303-383d-40d2-8cf8-32a267410ba0.html",
       "sourceCount": 7,
       "sourcePriority": 55,
-      "id": "bimbo di 5 anni investito a torino arrestata l ex compagna del padre-1790519678000-58"
+      "id": "bimbo di 5 anni investito a torino arrestata l ex compagna del padre-1790519678000-57"
     },
     {
       "title": "I bombardieri strategici impegnati in Iran, a portata di curiosi: perché la base inglese di Fairford è decisiva per gli Usa (ma troppo esposta)",
@@ -1911,7 +1875,7 @@
       "originalURL": "https://www.corriere.it/esteri/26_settembre_27/fairford-base-usa-62ff9efa-9e9a-4841-836e-923dddb28xlk.shtml",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "i bombardieri strategici impegnati in iran a portata di curiosi perche-1790519678000-59"
+      "id": "i bombardieri strategici impegnati in iran a portata di curiosi perche-1790519678000-58"
     },
     {
       "title": "Flash, il Vogue World Milano 2026",
@@ -1938,7 +1902,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPd2RLV3cwT19BOExRMFNSeV9BNzZoMnY2RmRtMXMweXRVRHBwNVdDcS0yMW45Y3V4N0Jyc2pKeHJWLWxaVUJGc2NqMVNwZDAtUEU4aGVETzRhMGhuWDhNYmdhWVNhbzdmdHBUU0VtZTNtdzlYMlZkMDNZZzN3c1dRdnFNR2d2UVJFSGUybkl3?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "flash il vogue world milano 2026-1790519667000-60"
+      "id": "flash il vogue world milano 2026-1790519667000-59"
     },
     {
       "title": "Fiorentina: basta Viola Park in estate. Il motivo",
@@ -1965,7 +1929,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQWVlRSU1GLUkxMGVsYnVsdV9WVkpHVzBxc3o5NUxSVjZqUWw0cVY1eklhS2oxcHY3MlVFU3A4X3FhWUlHaW1rZExQaWZxR3FUVHluZUp5TGp0bnFZZ213YldIVkJ3SDI2UWZ1RW80Wi1OTmtoaGZKcHI2NXh3Mkpjb1NtblBabXFsclJHNThKakFMMFBvOXkzWmlMT2dzWmQ4aTVPWnhhQldsR2ZxdFhKOXlSSXYyVFhvVXFWdXBMT21UemhqcWfSAXhBVV95cUxNQmVnR2UzUjBkbDc3Ul9vZi1IbHFnVlRNOUcwSEdtVnpIWGJocHJHTTNYVl9KODdMMC01cjRRNjFTM1dtcGJpRWFPOVMxM1VUQmtyS1VMVzY1N0JseEdXTzRVZ1lyUlktUWZoQUw0Y0Y0NXJqM0hhUzk?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "fiorentina basta viola park in estate il motivo-1790519622000-61"
+      "id": "fiorentina basta viola park in estate il motivo-1790519622000-60"
     },
     {
       "title": "Slitta il blocco per i Diesel Euro 5 anche per gli automobilisti lombardi",
@@ -1992,7 +1956,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRktJdFdHSlZYNldVODNmUm9sOW5YdmhHZktNRzV4ZTJxbV80bU9QWk5QSVlYZjcxOFg2V1h0V2c3LUZlUERMWVFZVHQyVDBISTlzYmV3c3JBcnd6S1FDV0xjWkF5N3VNbHJvcU1feklvTkNnVFVMbkE5c2tIdVdFUGJ1aVpmMHY3T3JnelZ0QmJxVUlYQnVjVTZrbGRZMGdVOFB2MlJyeng0RmxscDVHMmR6T19jUzJpVmZJ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "slitta il blocco per i diesel euro 5 anche per gli automobilisti lomba-1790519617000-62"
+      "id": "slitta il blocco per i diesel euro 5 anche per gli automobilisti lomba-1790519617000-61"
     },
     {
       "title": "“Coinvolti in migliaia di incidenti di sicurezza”: cosa è successo agli agenti IA di OpenAI e Anthropic",
@@ -2019,7 +1983,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOd3hUX3NnYktubXpRVWlpV1l0RnVFOW54Q054WHp4NVVhN28wU3l6T1EwV05YcU4yVGYyNXJvYlFzTnl0eWxDam9BbUVhMEU5RktpazBLTU8tV0xwVWtjVmdqT3k0eUQ2ZE9aVTF1SjdUSHhKdHM2ZkY0eUlidDZYeUJHYUhrZjRSdVNHQmR1am93aWpkUUJSMHl4OVVGNzRKOVh4UGtqZTUwdHMyYkV3ZllpU0JGeGpPb2VTR0F0NmF2cjdNalpTQlhXcG53RzhuQkpfM3VwMmxhUlpTU01oLTRRRzJFZmNBSnhN?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "coinvolti in migliaia di incidenti di sicurezza cosa e successo agli a-1790519524000-63"
+      "id": "coinvolti in migliaia di incidenti di sicurezza cosa e successo agli a-1790519524000-62"
     },
     {
       "title": "Il Papa su fine vita e aborto: 'Nessuna legge può dare la morte. Gli abusi sono una piaga'",
@@ -2073,7 +2037,7 @@
       "originalURL": "https://www.ansa.it/vaticano/notizie/2026/09/27/il-papa-a-lourdes-oggi-lincontro-con-le-vittime-degli-abusi_5764dd52-00c0-41b4-9e1f-d03516069f0c.html",
       "sourceCount": 4,
       "sourcePriority": 55,
-      "id": "il papa su fine vita e aborto nessuna legge puo dare la morte gli abus-1790519513000-64"
+      "id": "il papa su fine vita e aborto nessuna legge puo dare la morte gli abus-1790519513000-63"
     },
     {
       "title": "Il Pd fuori controllo: attacca Meloni per la foto \"svestita\" della Siracusano | Libero Quotidiano.it",
@@ -2101,7 +2065,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQy1OdzJGVmRsdnQ5cHBtTy1ES2tsX0MyNFJ4LUttMUVKak5vakNjaU5KbUN2TUczNW9iZnd3eGhkcDNnaEFTcnNyQzJlTkg2VGZUeldsRnk2d3NFTGtkTGFVdEJnRngzcVhEU0drSDA4MU5QcVJMRTh3X0hmeHJVdHdKX2c4N3Y4dDZLN0pPUENVdUtzdlJ3MGpZOFhiNkpUdlB0a2ZfUjJyU1MtbkN2M09PTm5PdU5jQ3Q5UUh2NTNlMTlKRW5tUjZB0gHOAUFVX3lxTE5EOEgzbW1TbXhQT1UwVURYYWZObGtmdXBob0pJTDk2TTFjNWh5empYWGMybnBjZWNVRFROLTFtTFpTWjFNYkt4UjlTX2xsUGhTckdXcUFGSjFBSmlFa0VNUHE1blphT09yTGF5c3VhTnMwRDVuZUhlN25hWUxFQkpUZDl0MzZzajVmTXBBZ3BWSFdfbVNyczNuQmdWNXZYNUowcnlBRF9pbUxZbk9uakI4cnB6TXNEMldleDBIdjdwdktUUE5XS1ZxQlJTRjFn?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "il pd fuori controllo attacca meloni per la foto svestita della siracu-1790519501000-65"
+      "id": "il pd fuori controllo attacca meloni per la foto svestita della siracu-1790519501000-64"
     },
     {
       "title": "Parla la mamma di Jacopo, precipitato da un traliccio: «Nessuna sfida social. Amava il parkour, era pieno di vita»| L'ultimo selfie",
@@ -2131,7 +2095,7 @@
       "originalURL": "https://milano.corriere.it/notizie/cronaca/26_settembre_27/lodi-la-mamma-di-jacopo-precipitato-da-un-traliccio-nessuna-sfida-social-sulla-morte-di-mio-figlio-tanto-sciacallaggio-era-un-b9e68e86-1e29-41a9-ac82-2667667ecxlk.shtml",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "parla la mamma di jacopo precipitato da un traliccio nessuna sfida soc-1790519479000-66"
+      "id": "parla la mamma di jacopo precipitato da un traliccio nessuna sfida soc-1790519479000-65"
     },
     {
       "title": "Avventura Siciliana, la docu-serie originale di Only Speed si gira in Sicilia dall'1 al 7 ottobre",
@@ -2158,7 +2122,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSTZZWnF1X1JCS2VMTm9zU2tlNEd5bEtOVi1mSDFuajJCZkY5MjVHRlQ2TjlEOEs5Uy1UOTZLMEdLbmMteGlQeUQwcGRiclBzTDNxMGVxbjJoczJCYWpzcHRLTXo4MEZFM0JnMmdTeHpuWVZQMDlFV3ZNTldPX3lrVWhDSDhQZ2NJRlNHeHhwSXpaUHR6bGZneHNLVkVfX3JRdlRRZ2dONVpNWVVZU2RmYS1tQmtwc2g0WnJF?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "avventura siciliana la docu serie originale di only speed si gira in s-1790519435000-67"
+      "id": "avventura siciliana la docu serie originale di only speed si gira in s-1790519435000-66"
     },
     {
       "title": "Le strade chiuse a Roma sabato 26 e domenica 27 settembre 2026",
@@ -2185,7 +2149,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZTVxSnNZMHpUcHp2WGMzV19jM3NxZGRWRWRheFJPWk5xSXcyQnY5RElRSXpCd21NZm1Zb0hwTWQyWUx0OGx1bU1Zb2E2NlltYVNXQnFXXy1tMW1IWF9iQmtBd1g2R1pXMWNRdmxLN2JOS0Jsc1NzS1dBYzFLUzhOZC1GVFJmVHRscjNSX0dzT0poTnk4Mzc2MWZuaw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "le strade chiuse a roma sabato 26 e domenica 27 settembre 2026-1790519432000-68"
+      "id": "le strade chiuse a roma sabato 26 e domenica 27 settembre 2026-1790519432000-67"
     },
     {
       "title": "Fiuggi, il (finto) concorso “Superbelli d’Italia”: 150 candidate truffate per 600mila euro",
@@ -2212,7 +2176,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNE5UbFo2ODBvWThrWXBvVWFURjhkYWdBRFlwOHgyMndfU1lJQUJic3hncXpfVlhVUnFlT2hoUnBxVmlRdkZqZnZ6MzhkX1o5RlRZbkVQc1Fsd3FPV1YtV2VfQ2lLY1BuSFJlZEtTMlliSUxQNUE3Uzg3OUJOMDVuc3IySFg1TldRZF9iQXNOWWtXVE9YT21RQVROeFZYVElpbGY5UlJJckw3Vkl5N29ycFBpb0t2ZzNZbGp30gHAAUFVX3lxTE5YUlBaeFBpZ1U1TEtMTnFVTWsyd3BQUHctM1VsLURMT05VQkFqTkd2Wm50WTRRejU2ODVfbUQ5OThSSHlmZ0tGRXVCMVNWNHJNb3l1M1pEeVQxLXJVVnRvazFXU3FNVFFWVXdQX1ZmQmtBdkpsVlBkWkREV21KVDlpQ0dKeGhpUENjVU9pQ2dZSXc2c3dlQllNa1hTWDhoOHVhVjRfbVBhT1RaSVNHRXo2Yzl6TzZ1bnFTRjdTWUNXVw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "fiuggi il finto concorso superbelli d italia 150 candidate truffate pe-1790519398000-69"
+      "id": "fiuggi il finto concorso superbelli d italia 150 candidate truffate pe-1790519398000-68"
     },
     {
       "title": "Idf uccide comandante di Hamas che rapì Noa Argamani il 7 ottobre 2023",
@@ -2263,7 +2227,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORGpINTJtV0MtbkFDazFBY2VSUnhnRjVmenBYM1VyUm5wYkQ4dWY1eHR0SXFxandPSDNtZVprY0JCZEM1Smw3azZybkxQY1VsV3ZaM0dPNFpwcW5OMjJkWkZiQURHLTN0UUVhLXdaUE9oSzFPemh4Q2lTQ0RhMnZJeXVLYWFOX3lmTFpzZzk1MHduN1RFck14Vy1Xcw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "frecce tricolori migliaia sul lungomare di salerno il grande ritorno d-1790519293000-70"
+      "id": "frecce tricolori migliaia sul lungomare di salerno il grande ritorno d-1790519293000-69"
     },
     {
       "title": "Blocca la Milano-Meda per un videoclip, il trapper '351 Bratan' espulso dall’Italia",
@@ -2311,7 +2275,31 @@
       "originalURL": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOTFqVWVSZnVFRnVFcDdtN1RrSlllOEphcjBYMXRQRVBVRzNMeWp5OEdEWW9pQUdid0NTWnRKS0E3V0N5UVpnQXJPMzhraTJBVXpBSTRGVXFZWkYwM3Z1bnY0bWhIVl9QWHUtZUphRjBDUXRPdHI4cFJRNmQ2bmFCSTlieExDTy1GNzhYTG5lZUx1dkc0cnVxR2hHY3R4aWZmSGpFRkc2TEExbnQtWWo40gG0AUFVX3lxTE5ZR2ZZcnVkUjdDSjNEMnRwLXZ0b0RQalA1Y3hIRlE3Rm1pNFVkV3R4b3hIQ0hyWW1tWVBYYWlENzJYelRGRVM4bWJKSG1KZHZsNlhzVm5nV1BvdklyU3hrWXpCclotNEZFOGRTQmZFSnBVdEowd0I3NUNaNnNwVDBnNWtqSF9HNk9Mdnc5QXVKeURXdGxPMExxUjd0SzV0emh1bE9PcFg1LUhKUFhpWUw5VVIxSA?oc=5",
       "sourceCount": 5,
       "sourcePriority": 55,
-      "id": "blocca la milano meda per un videoclip il trapper 351 bratan espulso d-1790519191000-71"
+      "id": "blocca la milano meda per un videoclip il trapper 351 bratan espulso d-1790519191000-70"
+    },
+    {
+      "title": "Minaccia un passante con un coltello, auto lo travolge per bloccarlo: indagato il conducente",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTE4yWXlQQUhmckhUQ1E1N2R3WjNkY2xETTNwdkRub3JxeFBEak5ySU1UT1o5cVlGcEc0TnRVa0xYTzZ5a0N3bnRPTjc3alJMRjBNU1BVUVB2Tjg5RWJTdUpxSHZYWHdMVWVER2prR2FrQTgyamxQ?oc=5\" target=\"_blank\">Minaccia un passante con un coltello, auto lo travolge per bloccarlo: indagato il conducente</a> <font color=\"#6f6f6f\">Il Giorno</font>",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4yWXlQQUhmckhUQ1E1N2R3WjNkY2xETTNwdkRub3JxeFBEak5ySU1UT1o5cVlGcEc0TnRVa0xYTzZ5a0N3bnRPTjc3alJMRjBNU1BVUVB2Tjg5RWJTdUpxSHZYWHdMVWVER2prR2FrQTgyamxQ?oc=5",
+      "source": "Il Giorno",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Sun, 27 Sep 2026 14:25:10 GMT",
+      "googlePubDate": "Sun, 27 Sep 2026 14:25:10 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Il Giorno",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4yWXlQQUhmckhUQ1E1N2R3WjNkY2xETTNwdkRub3JxeFBEak5ySU1UT1o5cVlGcEc0TnRVa0xYTzZ5a0N3bnRPTjc3alJMRjBNU1BVUVB2Tjg5RWJTdUpxSHZYWHdMVWVER2prR2FrQTgyamxQ?oc=5",
+          "pubDate": "Sun, 27 Sep 2026 14:25:10 GMT"
+        }
+      ],
+      "id": "focus-minaccia un passante con un coltello auto lo travolge per bloccarlo in-1790519110000",
+      "sourceCount": 1
     },
     {
       "title": "Camilla D'Alessandra, chi è la 24enne che ha investito il figlio di 5 anni dell'ex compagno. Il legale: «Non escludiamo un incidente»",
@@ -2338,7 +2326,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOeU5CZzhzcVQtQVpGTkpYNGdkQm9CMWd0SDBWTEdfSk1Vcll2cUtUSjBqa3JqWVlwMzR3b09CZFZzTjFxeDlCT25GekNXQnhXS2lRTlNEQl9EbTl6T2hIYWtSWHBGTnJfQVdXMlRuRmtvU0FsS21QbHhEQ2pGWDN3U20xU214UHg1eDh0Ty11RG9qLTBVQkszYWp4Q3JxaTBjdWpJV2J6cGk1NkhmN2Iyd1ItTVR2ektyeG9WeWRqNFg0ZE5sVnBYeVFR0gHPAUFVX3lxTE5CbGN6bnhnVnhhTW9vVDhERGxNalJYT1hLV2lTVi1kR00zNVI4ZTZiUjVGM25RdTlhOWJfMHdWVERweHIxSkJXNUZ0cTN2QUhGMnc4c1BLSUZ3STVlWG1pUDZBWld0eHR6M0kwVUpJbVdlbG1EX21nVmp1MHBGMUJiZmh3Ykk4RTVteUNKMXFIaHlnM1V3YUkwSnVCUmk0amRUbUpySm9nUlBPcHVwd3VOZnI1Q0czbmFCUm5KS3FxQlhGb2tybzctaGpTQzFPVQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "camilla d alessandra chi e la 24enne che ha investito il figlio di 5 a-1790519076000-72"
+      "id": "camilla d alessandra chi e la 24enne che ha investito il figlio di 5 a-1790519076000-71"
     },
     {
       "title": "Vaccini antinfluenzali, a Roma e nel Lazio parte la campagna: pronte un milione e 380mila dosi",
@@ -2365,7 +2353,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdWJ1Mk9WNnJGVlA1NUNXY2JsRnJaaVY0WnJ2Z3pOVXpOX25EUlJiWlF2VUkyS3BWc3BfZUVtczczRi1yTFpxanNVaDdZbEw0RWNBNHpxUVFkZVh0ek9zUU9VQko0cWFPbXRoVC1SY2FjMFBVUERhNUZ6N3Nqc3NxNWZlZGNIZXZa?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "vaccini antinfluenzali a roma e nel lazio parte la campagna pronte un -1790518860000-73"
+      "id": "vaccini antinfluenzali a roma e nel lazio parte la campagna pronte un -1790518860000-72"
     },
     {
       "title": "Centinaia di manifestanti accampati a Madrid per il diritto alla casa",
@@ -2405,7 +2393,7 @@
       "originalURL": "https://www.ansa.it/sito/notizie/mondo/europa/2026/09/27/centinaia-di-manifestanti-accampati-in-puerta-del-sol-a-madrid-per-diritto-alla_91293b9c-2dae-4b6c-a653-859e5c91dbbf.html",
       "sourceCount": 3,
       "sourcePriority": 55,
-      "id": "centinaia di manifestanti accampati a madrid per il diritto alla casa-1790518841000-74"
+      "id": "centinaia di manifestanti accampati a madrid per il diritto alla casa-1790518841000-73"
     },
     {
       "title": "Otis Paterlini, chi è il figlio di Orietta Berti lontano dai riflettori e ospite a Verissimo con la mamma",
@@ -2432,7 +2420,34 @@
       "originalURL": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTV9NeDNhaDRjU0EwNFdUWXdXWWVnaTVvNlAtcGN4bnBmVkNGVkpvamlTaC1CbXJxbHktRkZTMGtoblZ4MWZsQm41NVBpeDkyaTVfMDBKQjAtWTVUZEt2aVU0T1ZEQWFsNV82QjlFU2FFb0pIWDZRTFBnbWpyaGFtZVdXQzlNdGJCVENDcTdRbEZxaC11aXVKZkRIWE5hY0FveFJHTjV4WGJKN2ZtNGt30gG0AUFVX3lxTFBMYTZKN2U1dEhJcU9XbEdPakVWRzlzM0Vib29WajltQ2tYbmpMRlAtczlMZGlQTXk4N0Q0TGlacWFmT0tTMjlfSjkyLWhyOENmV1dfZEVKU0E0VXVidldEN0lPbDNMVExRSlN5bkQtRGxaOEg4bG1IOGszYjR6Wm1RRVVDd2VBM0w5c1RNd3lMR3lRT0JIc2RRRmlPeUdtZlJwakg1bnRQbkJSandyX0NvMjhtbQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "otis paterlini chi e il figlio di orietta berti lontano dai riflettori-1790518838000-75"
+      "id": "otis paterlini chi e il figlio di orietta berti lontano dai riflettori-1790518838000-74"
+    },
+    {
+      "title": "Susanna Buffa e Alessandro Garramone a Centrale Preneste Teatro",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxQeEZTMjBON1B2N0xaZTVBcF9QeXFXZ1hvZC1nSXIteGx1MDZJQndKcWlFZzBCRGRrakh4dWVTSmc3WXBqUXJpRlVUQk1URVR6R3MteHA4MFMwTDJFMVJibUFjeDJqNDJyck16eHNia19LT0dzUk9qaHJsYVlVTXBiTE1jY1R1aUVGeXU1NTBVUkx3NjNVbE8tZU92Zw?oc=5\" target=\"_blank\">Susanna Buffa e Alessandro Garramone a Centrale Preneste Teatro</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeEZTMjBON1B2N0xaZTVBcF9QeXFXZ1hvZC1nSXIteGx1MDZJQndKcWlFZzBCRGRrakh4dWVTSmc3WXBqUXJpRlVUQk1URVR6R3MteHA4MFMwTDJFMVJibUFjeDJqNDJyck16eHNia19LT0dzUk9qaHJsYVlVTXBiTE1jY1R1aUVGeXU1NTBVUkx3NjNVbE8tZU92Zw?oc=5",
+      "image": "",
+      "source": "RomaToday",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Sun, 27 Sep 2026 14:20:10 GMT",
+      "googlePubDate": "Sun, 27 Sep 2026 14:20:10 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "RomaToday",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeEZTMjBON1B2N0xaZTVBcF9QeXFXZ1hvZC1nSXIteGx1MDZJQndKcWlFZzBCRGRrakh4dWVTSmc3WXBqUXJpRlVUQk1URVR6R3MteHA4MFMwTDJFMVJibUFjeDJqNDJyck16eHNia19LT0dzUk9qaHJsYVlVTXBiTE1jY1R1aUVGeXU1NTBVUkx3NjNVbE8tZU92Zw?oc=5",
+          "pubDate": "Sun, 27 Sep 2026 14:20:10 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeEZTMjBON1B2N0xaZTVBcF9QeXFXZ1hvZC1nSXIteGx1MDZJQndKcWlFZzBCRGRrakh4dWVTSmc3WXBqUXJpRlVUQk1URVR6R3MteHA4MFMwTDJFMVJibUFjeDJqNDJyck16eHNia19LT0dzUk9qaHJsYVlVTXBiTE1jY1R1aUVGeXU1NTBVUkx3NjNVbE8tZU92Zw?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "susanna buffa e alessandro garramone a centrale preneste teatro-1790518810000-75"
     },
     {
       "title": "Armani, per il 15% della maison ipotesi spezzatino",
@@ -2838,6 +2853,33 @@
       "sourceCount": 1
     },
     {
+      "title": "Sanatoria edilizia, il condono torna tra le ipotesi per la manovra: dagli abusi minori alla riapertura della finestra del 2003",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUUtyRmZfczJVMC0tbmlOTGtOTFJfUGFLTzVwbTVCS1VEZ1hKeXZIOGhYZF9rZi1fNkpjZWUyR1FMWk9TSS1SWmE4SGl0V3NLUlRRVlg4VjM5YTNENVBINElRaGFXRHp6aUNrX1Jfb0FXUnRIeDhlSGtUc21WaDlzYWcxZVdobU5nRVlKQnlsQjNDUGI5c0ZRRF9QMHBCbHd6ZTE0dU1XVUQ1YUxyY2JubWRFZzZZemczMkszRkQ5X2VKT0MwRWYzN9IBzgFBVV95cUxNeWp4cldGVXVpVU1YbFlmRVBwS2JSU0N4WkVCQW8yeXM4dlN0SWtLeE1DRE9ObHNjSmZGZ0VUcFhfM25Ud1llTEtzNHl6TXhUQjEwM0s1dDlXdG1ZM3hiMDNXczdyZjNGLVBfVDJiN1M4bjlTaWpTdjdsTmRGNFFIcUFCOGt4VVM4UlhjTWtuR2FqN2duSDZkZjAyaUxmam9mVmtrOWNxZTliS3NReXFGRGhVWE91dnEwSmpKdWVMZjlUNjVhT0FKZlJtdG94dw?oc=5\" target=\"_blank\">Sanatoria edilizia, il condono torna tra le ipotesi per la manovra: dagli abusi minori alla riapertura della finestra del 2003</a> <font color=\"#6f6f6f\">Il Messaggero</font>",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUUtyRmZfczJVMC0tbmlOTGtOTFJfUGFLTzVwbTVCS1VEZ1hKeXZIOGhYZF9rZi1fNkpjZWUyR1FMWk9TSS1SWmE4SGl0V3NLUlRRVlg4VjM5YTNENVBINElRaGFXRHp6aUNrX1Jfb0FXUnRIeDhlSGtUc21WaDlzYWcxZVdobU5nRVlKQnlsQjNDUGI5c0ZRRF9QMHBCbHd6ZTE0dU1XVUQ1YUxyY2JubWRFZzZZemczMkszRkQ5X2VKT0MwRWYzN9IBzgFBVV95cUxNeWp4cldGVXVpVU1YbFlmRVBwS2JSU0N4WkVCQW8yeXM4dlN0SWtLeE1DRE9ObHNjSmZGZ0VUcFhfM25Ud1llTEtzNHl6TXhUQjEwM0s1dDlXdG1ZM3hiMDNXczdyZjNGLVBfVDJiN1M4bjlTaWpTdjdsTmRGNFFIcUFCOGt4VVM4UlhjTWtuR2FqN2duSDZkZjAyaUxmam9mVmtrOWNxZTliS3NReXFGRGhVWE91dnEwSmpKdWVMZjlUNjVhT0FKZlJtdG94dw?oc=5",
+      "image": "",
+      "source": "Il Messaggero",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Sun, 27 Sep 2026 13:57:23 GMT",
+      "googlePubDate": "Sun, 27 Sep 2026 13:57:23 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Il Messaggero",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUUtyRmZfczJVMC0tbmlOTGtOTFJfUGFLTzVwbTVCS1VEZ1hKeXZIOGhYZF9rZi1fNkpjZWUyR1FMWk9TSS1SWmE4SGl0V3NLUlRRVlg4VjM5YTNENVBINElRaGFXRHp6aUNrX1Jfb0FXUnRIeDhlSGtUc21WaDlzYWcxZVdobU5nRVlKQnlsQjNDUGI5c0ZRRF9QMHBCbHd6ZTE0dU1XVUQ1YUxyY2JubWRFZzZZemczMkszRkQ5X2VKT0MwRWYzN9IBzgFBVV95cUxNeWp4cldGVXVpVU1YbFlmRVBwS2JSU0N4WkVCQW8yeXM4dlN0SWtLeE1DRE9ObHNjSmZGZ0VUcFhfM25Ud1llTEtzNHl6TXhUQjEwM0s1dDlXdG1ZM3hiMDNXczdyZjNGLVBfVDJiN1M4bjlTaWpTdjdsTmRGNFFIcUFCOGt4VVM4UlhjTWtuR2FqN2duSDZkZjAyaUxmam9mVmtrOWNxZTliS3NReXFGRGhVWE91dnEwSmpKdWVMZjlUNjVhT0FKZlJtdG94dw?oc=5",
+          "pubDate": "Sun, 27 Sep 2026 13:57:23 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUUtyRmZfczJVMC0tbmlOTGtOTFJfUGFLTzVwbTVCS1VEZ1hKeXZIOGhYZF9rZi1fNkpjZWUyR1FMWk9TSS1SWmE4SGl0V3NLUlRRVlg4VjM5YTNENVBINElRaGFXRHp6aUNrX1Jfb0FXUnRIeDhlSGtUc21WaDlzYWcxZVdobU5nRVlKQnlsQjNDUGI5c0ZRRF9QMHBCbHd6ZTE0dU1XVUQ1YUxyY2JubWRFZzZZemczMkszRkQ5X2VKT0MwRWYzN9IBzgFBVV95cUxNeWp4cldGVXVpVU1YbFlmRVBwS2JSU0N4WkVCQW8yeXM4dlN0SWtLeE1DRE9ObHNjSmZGZ0VUcFhfM25Ud1llTEtzNHl6TXhUQjEwM0s1dDlXdG1ZM3hiMDNXczdyZjNGLVBfVDJiN1M4bjlTaWpTdjdsTmRGNFFIcUFCOGt4VVM4UlhjTWtuR2FqN2duSDZkZjAyaUxmam9mVmtrOWNxZTliS3NReXFGRGhVWE91dnEwSmpKdWVMZjlUNjVhT0FKZlJtdG94dw?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "sanatoria edilizia il condono torna tra le ipotesi per la manovra dagl-1790517443000-85"
+    },
+    {
       "title": "Nuova vita ai chioschi di Milano, arrivano le concessioni fino a 18 anni: quali riaprono tra piazze e parchi",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxPNzFkdlVRWE5JaGhiWklqanVQc1kxeEJlcXZvdldNZFUxS3praWRjdWd3Y0RqZFhIM0RyOXdyOUY4Y0c4SWFqZ1FQc0x2YndKYzdjTjRPSkJybUlBbmtZSmJwbFRmZGEyY2cxSi0tZkFLLWptcVpRYXdzZ2hTTHZ5M3Awczg?oc=5\" target=\"_blank\">Nuova vita ai chioschi di Milano, arrivano le concessioni fino a 18 anni: quali riaprono tra piazze e parchi</a> <font color=\"#6f6f6f\">MilanoToday</font>",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNzFkdlVRWE5JaGhiWklqanVQc1kxeEJlcXZvdldNZFUxS3praWRjdWd3Y0RqZFhIM0RyOXdyOUY4Y0c4SWFqZ1FQc0x2YndKYzdjTjRPSkJybUlBbmtZSmJwbFRmZGEyY2cxSi0tZkFLLWptcVpRYXdzZ2hTTHZ5M3Awczg?oc=5",
@@ -2862,7 +2904,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNzFkdlVRWE5JaGhiWklqanVQc1kxeEJlcXZvdldNZFUxS3praWRjdWd3Y0RqZFhIM0RyOXdyOUY4Y0c4SWFqZ1FQc0x2YndKYzdjTjRPSkJybUlBbmtZSmJwbFRmZGEyY2cxSi0tZkFLLWptcVpRYXdzZ2hTTHZ5M3Awczg?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "nuova vita ai chioschi di milano arrivano le concessioni fino a 18 ann-1790517428000-85"
+      "id": "nuova vita ai chioschi di milano arrivano le concessioni fino a 18 ann-1790517428000-86"
     },
     {
       "title": "I calciatori italiani con gli stipendi più alti al mondo. CLASSIFICA",
@@ -2887,33 +2929,6 @@
       ],
       "id": "focus-i calciatori italiani con gli stipendi piu alti al mondo classifica-1790517397000",
       "sourceCount": 1
-    },
-    {
-      "title": "Totti compie 50 anni, la festa a Las Vegas in compagnia di Noemi: la mezzanotte, i figli, la tappa al Motor Speedway",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPSWYtWl9SWkRfQU5aMWxUZ2J4LVVrcHpzYXlLUlB1S3pWU0NjajA0R052dHFrdWZqZllFeEwtRWZaMnFBUWN1WG5ici10MFhpcGxuRHpPamNxejFKa0J5NGNhUzNxNTFzUTVTdVBGbjFvWmpTOWhrQXdEb21YMTcyWUVvNDdKR0JQanJxcjZhbGpsbE9mR2dtVXRhNlJzcW8xMm5iZjNBN09Vak1jcmk0cm5lMV9ZZnp1d1hqZlVYRGhaRHl2WVNFemZKWkvSAccBQVVfeXFMTTdXSzJwTHlQWmNzZmtWS3ZCREdrUGM4aVllWmxkM1FnbmpoeVNxX0psaDhpYTBXU3JZSTA2Q0R2WWJUVVY3dVpJTmIzbUdyZ3MtWGNxbUNPNjBES01iNUVRa1BkY2VzNjBQanNmOHBHcHJXYWR1OXNrYmJHZzFKVG9EZmhIU1A2aGlRQmpIOUxYclBsanFwSjQ2OTVMcmZhWkRCQmRZLU5QZ1R4NzdvMU96NVkwNkN5YmFmTmc0VVMyRmhOQlBWNA?oc=5\" target=\"_blank\">Totti compie 50 anni, la festa a Las Vegas in compagnia di Noemi: la mezzanotte, i figli, la tappa al Motor Speedway</a> <font color=\"#6f6f6f\">Il Messaggero</font>",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSWYtWl9SWkRfQU5aMWxUZ2J4LVVrcHpzYXlLUlB1S3pWU0NjajA0R052dHFrdWZqZllFeEwtRWZaMnFBUWN1WG5ici10MFhpcGxuRHpPamNxejFKa0J5NGNhUzNxNTFzUTVTdVBGbjFvWmpTOWhrQXdEb21YMTcyWUVvNDdKR0JQanJxcjZhbGpsbE9mR2dtVXRhNlJzcW8xMm5iZjNBN09Vak1jcmk0cm5lMV9ZZnp1d1hqZlVYRGhaRHl2WVNFemZKWkvSAccBQVVfeXFMTTdXSzJwTHlQWmNzZmtWS3ZCREdrUGM4aVllWmxkM1FnbmpoeVNxX0psaDhpYTBXU3JZSTA2Q0R2WWJUVVY3dVpJTmIzbUdyZ3MtWGNxbUNPNjBES01iNUVRa1BkY2VzNjBQanNmOHBHcHJXYWR1OXNrYmJHZzFKVG9EZmhIU1A2aGlRQmpIOUxYclBsanFwSjQ2OTVMcmZhWkRCQmRZLU5QZ1R4NzdvMU96NVkwNkN5YmFmTmc0VVMyRmhOQlBWNA?oc=5",
-      "image": "",
-      "source": "Il Messaggero",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Sun, 27 Sep 2026 13:56:25 GMT",
-      "googlePubDate": "Sun, 27 Sep 2026 13:56:25 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Il Messaggero",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSWYtWl9SWkRfQU5aMWxUZ2J4LVVrcHpzYXlLUlB1S3pWU0NjajA0R052dHFrdWZqZllFeEwtRWZaMnFBUWN1WG5ici10MFhpcGxuRHpPamNxejFKa0J5NGNhUzNxNTFzUTVTdVBGbjFvWmpTOWhrQXdEb21YMTcyWUVvNDdKR0JQanJxcjZhbGpsbE9mR2dtVXRhNlJzcW8xMm5iZjNBN09Vak1jcmk0cm5lMV9ZZnp1d1hqZlVYRGhaRHl2WVNFemZKWkvSAccBQVVfeXFMTTdXSzJwTHlQWmNzZmtWS3ZCREdrUGM4aVllWmxkM1FnbmpoeVNxX0psaDhpYTBXU3JZSTA2Q0R2WWJUVVY3dVpJTmIzbUdyZ3MtWGNxbUNPNjBES01iNUVRa1BkY2VzNjBQanNmOHBHcHJXYWR1OXNrYmJHZzFKVG9EZmhIU1A2aGlRQmpIOUxYclBsanFwSjQ2OTVMcmZhWkRCQmRZLU5QZ1R4NzdvMU96NVkwNkN5YmFmTmc0VVMyRmhOQlBWNA?oc=5",
-          "pubDate": "Sun, 27 Sep 2026 13:56:25 GMT"
-        }
-      ],
-      "originalURL": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSWYtWl9SWkRfQU5aMWxUZ2J4LVVrcHpzYXlLUlB1S3pWU0NjajA0R052dHFrdWZqZllFeEwtRWZaMnFBUWN1WG5ici10MFhpcGxuRHpPamNxejFKa0J5NGNhUzNxNTFzUTVTdVBGbjFvWmpTOWhrQXdEb21YMTcyWUVvNDdKR0JQanJxcjZhbGpsbE9mR2dtVXRhNlJzcW8xMm5iZjNBN09Vak1jcmk0cm5lMV9ZZnp1d1hqZlVYRGhaRHl2WVNFemZKWkvSAccBQVVfeXFMTTdXSzJwTHlQWmNzZmtWS3ZCREdrUGM4aVllWmxkM1FnbmpoeVNxX0psaDhpYTBXU3JZSTA2Q0R2WWJUVVY3dVpJTmIzbUdyZ3MtWGNxbUNPNjBES01iNUVRa1BkY2VzNjBQanNmOHBHcHJXYWR1OXNrYmJHZzFKVG9EZmhIU1A2aGlRQmpIOUxYclBsanFwSjQ2OTVMcmZhWkRCQmRZLU5QZ1R4NzdvMU96NVkwNkN5YmFmTmc0VVMyRmhOQlBWNA?oc=5",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "totti compie 50 anni la festa a las vegas in compagnia di noemi la mez-1790517385000-86"
     },
     {
       "title": "Papa: dignità umana non si misura né si discute (AGI)",
@@ -2962,33 +2977,6 @@
       ],
       "id": "focus-ambiente baffigo piublu lavoriamo affinche ognuno possa salvare mondo-1790517300000",
       "sourceCount": 1
-    },
-    {
-      "title": "Timothy Cavicchini, chi è il nuovo cantante di Domenica In: età, carriera, The Voice, figli e vita privata",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxQTjVjWjFoeHFoTjMwMEJGRm54dkt1NzJneTBpZFlJa3NZVDcwZ0Z2bTFGYU9Nb2p5dVltdDJma0JiTS00SUdzSklnNE9uVjNISm9JZ0VxanZKYTlmeUd0aU9GN01GVEs0cldlSmxXNG82cGluWExQNEJTSnhHVzE2ZllEZWR5RHFDeHRhckRMdHhiOVlvTWJXNWQyRlJDMHZHcUJRN0JRc2FWZWQweEE0YkpmMEQ5S2tKMUVNaHRNTHVwQzZJVTB6LUtXenhYZnJtaXF5bWZJY1ZxT1pPaHhRdTg2R3JUbVFuNmfSAe8BQVVfeXFMTjByT09va05SdmdvUVBFT1dXMW9WRUc3d1ZnRHBCc05INkFNV251OXJrOEwxT1hFUU9mNUFuWVNKUW5Qbll4aU5WazVSd0hTTUVnQ1gtMkxkSDJrc3NtbjZqelE3ZWo1d3ZEX2lHYTJwNEszUTVkUmFmVFl6RWs0WFNmNHN6X2g2OEdvbGR3dVNXYlJIRW1EUXhsa0Nkd3YwRzB6VGZ5NmhmQ211ZWZkVnhITXJYRkFrQWluM0ZNUk5QWHdMX3lveWk3TF8wSEJNUi1nNHpFUFBPQlphNFlFczZBbW5VNzNmSm96Um1tUGM?oc=5\" target=\"_blank\">Timothy Cavicchini, chi è il nuovo cantante di Domenica In: età, carriera, The Voice, figli e vita privata</a> <font color=\"#6f6f6f\">Il Messaggero</font>",
-      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQTjVjWjFoeHFoTjMwMEJGRm54dkt1NzJneTBpZFlJa3NZVDcwZ0Z2bTFGYU9Nb2p5dVltdDJma0JiTS00SUdzSklnNE9uVjNISm9JZ0VxanZKYTlmeUd0aU9GN01GVEs0cldlSmxXNG82cGluWExQNEJTSnhHVzE2ZllEZWR5RHFDeHRhckRMdHhiOVlvTWJXNWQyRlJDMHZHcUJRN0JRc2FWZWQweEE0YkpmMEQ5S2tKMUVNaHRNTHVwQzZJVTB6LUtXenhYZnJtaXF5bWZJY1ZxT1pPaHhRdTg2R3JUbVFuNmfSAe8BQVVfeXFMTjByT09va05SdmdvUVBFT1dXMW9WRUc3d1ZnRHBCc05INkFNV251OXJrOEwxT1hFUU9mNUFuWVNKUW5Qbll4aU5WazVSd0hTTUVnQ1gtMkxkSDJrc3NtbjZqelE3ZWo1d3ZEX2lHYTJwNEszUTVkUmFmVFl6RWs0WFNmNHN6X2g2OEdvbGR3dVNXYlJIRW1EUXhsa0Nkd3YwRzB6VGZ5NmhmQ211ZWZkVnhITXJYRkFrQWluM0ZNUk5QWHdMX3lveWk3TF8wSEJNUi1nNHpFUFBPQlphNFlFczZBbW5VNzNmSm96Um1tUGM?oc=5",
-      "image": "",
-      "source": "Il Messaggero",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Sun, 27 Sep 2026 13:49:52 GMT",
-      "googlePubDate": "Sun, 27 Sep 2026 13:49:52 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Il Messaggero",
-          "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQTjVjWjFoeHFoTjMwMEJGRm54dkt1NzJneTBpZFlJa3NZVDcwZ0Z2bTFGYU9Nb2p5dVltdDJma0JiTS00SUdzSklnNE9uVjNISm9JZ0VxanZKYTlmeUd0aU9GN01GVEs0cldlSmxXNG82cGluWExQNEJTSnhHVzE2ZllEZWR5RHFDeHRhckRMdHhiOVlvTWJXNWQyRlJDMHZHcUJRN0JRc2FWZWQweEE0YkpmMEQ5S2tKMUVNaHRNTHVwQzZJVTB6LUtXenhYZnJtaXF5bWZJY1ZxT1pPaHhRdTg2R3JUbVFuNmfSAe8BQVVfeXFMTjByT09va05SdmdvUVBFT1dXMW9WRUc3d1ZnRHBCc05INkFNV251OXJrOEwxT1hFUU9mNUFuWVNKUW5Qbll4aU5WazVSd0hTTUVnQ1gtMkxkSDJrc3NtbjZqelE3ZWo1d3ZEX2lHYTJwNEszUTVkUmFmVFl6RWs0WFNmNHN6X2g2OEdvbGR3dVNXYlJIRW1EUXhsa0Nkd3YwRzB6VGZ5NmhmQ211ZWZkVnhITXJYRkFrQWluM0ZNUk5QWHdMX3lveWk3TF8wSEJNUi1nNHpFUFBPQlphNFlFczZBbW5VNzNmSm96Um1tUGM?oc=5",
-          "pubDate": "Sun, 27 Sep 2026 13:49:52 GMT"
-        }
-      ],
-      "originalURL": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQTjVjWjFoeHFoTjMwMEJGRm54dkt1NzJneTBpZFlJa3NZVDcwZ0Z2bTFGYU9Nb2p5dVltdDJma0JiTS00SUdzSklnNE9uVjNISm9JZ0VxanZKYTlmeUd0aU9GN01GVEs0cldlSmxXNG82cGluWExQNEJTSnhHVzE2ZllEZWR5RHFDeHRhckRMdHhiOVlvTWJXNWQyRlJDMHZHcUJRN0JRc2FWZWQweEE0YkpmMEQ5S2tKMUVNaHRNTHVwQzZJVTB6LUtXenhYZnJtaXF5bWZJY1ZxT1pPaHhRdTg2R3JUbVFuNmfSAe8BQVVfeXFMTjByT09va05SdmdvUVBFT1dXMW9WRUc3d1ZnRHBCc05INkFNV251OXJrOEwxT1hFUU9mNUFuWVNKUW5Qbll4aU5WazVSd0hTTUVnQ1gtMkxkSDJrc3NtbjZqelE3ZWo1d3ZEX2lHYTJwNEszUTVkUmFmVFl6RWs0WFNmNHN6X2g2OEdvbGR3dVNXYlJIRW1EUXhsa0Nkd3YwRzB6VGZ5NmhmQ211ZWZkVnhITXJYRkFrQWluM0ZNUk5QWHdMX3lveWk3TF8wSEJNUi1nNHpFUFBPQlphNFlFczZBbW5VNzNmSm96Um1tUGM?oc=5",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "timothy cavicchini chi e il nuovo cantante di domenica in eta carriera-1790516992000-87"
     },
     {
       "title": "Torino, investe un bambino di 5 anni e fugge: arrestata una donna di 24 anni, è l'ex compagna del papà del piccolo",
@@ -3063,31 +3051,34 @@
       "originalURL": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbkVYZHdtbFN1d3V6aExvWEs4MlRsdkZ6MGFGNVoxV1VscVNCV3loLVdVQmVpelJOUzVEX2NoVnBoWTFfNE9xdTNhUG1NY0JCNnpxQnZWZHM1Mk51ZmxyQWkxMHZsMWoteF96R1RGa21YYXY4dElIZ0FXUVBrWG1XZXB5SWhseTg?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "weekend a roma 20 eventi da non perdere sabato 26 e domenica 27 settem-1790516805000-88"
+      "id": "weekend a roma 20 eventi da non perdere sabato 26 e domenica 27 settem-1790516805000-87"
     },
     {
-      "title": "Dengue in Lombardia, il professor Pregliasco: sono contagi autoctoni, un segnale da non sottovalutare",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxOaE10LWY5OVp3S0YtZWVteFpqMzU0emxPWFZ1UHJCNk1pUkJTOHViWHJLbm5relVIRC1fYzQtUHlQcENuVF9NLUhSa2R5bUZHMDlwWDFRWk1sVFV4QmlWZ25GUDhaODAyekhCNXFKRUZqUWhkUnE1Rmo0SlRUd3AwY0JLblo?oc=5\" target=\"_blank\">Dengue in Lombardia, il professor Pregliasco: sono contagi autoctoni, un segnale da non sottovalutare</a> <font color=\"#6f6f6f\">Il Giorno</font>",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaE10LWY5OVp3S0YtZWVteFpqMzU0emxPWFZ1UHJCNk1pUkJTOHViWHJLbm5relVIRC1fYzQtUHlQcENuVF9NLUhSa2R5bUZHMDlwWDFRWk1sVFV4QmlWZ25GUDhaODAyekhCNXFKRUZqUWhkUnE1Rmo0SlRUd3AwY0JLblo?oc=5",
-      "source": "Il Giorno",
+      "title": "Timothy Cavicchini, chi è il nuovo cantante di Domenica In: età, carriera, The Voice, figli e vita privata",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihgJBVV95cUxNX1dqU3RBalQxLTUweXdJM0VieWszUGtwNmRhOGxkdklQU3Y0R2VLQ0V5RG14OTgxSFU4dTBhd0I5VzhnbERuMURmYVlBZnZTcEFva3U4b19YTWplMFlaRTJFTERTX2ZLOWRsaDJLVjFnblpkYmtnZDk2ZjVSdWtCTmNkOUVWc3ZZM0dmRno3VHZyajBfOWxPSENNc1l4d3pzYzVwSDBoeXBGM2ZYbV9JaFNQbHYyMUFZalRCZk5ENS12YnEyN2MyZmxtN0FrYWQ4UWJKZGd1dEFaeXFDbzNwNnpyZ0xsaENTaGRueGpFdm9fNkZzVldHMWdjRXE0UnRUS0FmQVZB0gGLAkFVX3lxTFBuWFpoaktmck1RRWVrQldGckp2SUpmZGFZNlNXMUJoYnExRlhqUmJtUW1mN3RseTc0X0Vybkp2b3FPT05mZ3htVmk2VUpEYWZYZVRKZ2ZheFFOWDZMdUJ6RDlpY1hxU2c0VzhOUXBRTjZtMW1ES3lac0s0aERhZndHTGczNW5BaXZPVjc2cmFKR1VnWmRfQ3hJa3UyTEpFREIxdHhXNkFFVElReHl0LW9vcU40ejkwM21IdWFTeG9tQkxZTDFhWHFhanZqV1FUUGdjMThhQUdMenFSY1hLdjZITUJ4VEQ3Z185WnBreWVrWGpOb1lYdm0xdkJidVBKQ25nZ016R2hlNDRHMA?oc=5\" target=\"_blank\">Timothy Cavicchini, chi è il nuovo cantante di Domenica In: età, carriera, The Voice, figli e vita privata</a> <font color=\"#6f6f6f\">Il Messaggero</font>",
+      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNX1dqU3RBalQxLTUweXdJM0VieWszUGtwNmRhOGxkdklQU3Y0R2VLQ0V5RG14OTgxSFU4dTBhd0I5VzhnbERuMURmYVlBZnZTcEFva3U4b19YTWplMFlaRTJFTERTX2ZLOWRsaDJLVjFnblpkYmtnZDk2ZjVSdWtCTmNkOUVWc3ZZM0dmRno3VHZyajBfOWxPSENNc1l4d3pzYzVwSDBoeXBGM2ZYbV9JaFNQbHYyMUFZalRCZk5ENS12YnEyN2MyZmxtN0FrYWQ4UWJKZGd1dEFaeXFDbzNwNnpyZ0xsaENTaGRueGpFdm9fNkZzVldHMWdjRXE0UnRUS0FmQVZB0gGLAkFVX3lxTFBuWFpoaktmck1RRWVrQldGckp2SUpmZGFZNlNXMUJoYnExRlhqUmJtUW1mN3RseTc0X0Vybkp2b3FPT05mZ3htVmk2VUpEYWZYZVRKZ2ZheFFOWDZMdUJ6RDlpY1hxU2c0VzhOUXBRTjZtMW1ES3lac0s0aERhZndHTGczNW5BaXZPVjc2cmFKR1VnWmRfQ3hJa3UyTEpFREIxdHhXNkFFVElReHl0LW9vcU40ejkwM21IdWFTeG9tQkxZTDFhWHFhanZqV1FUUGdjMThhQUdMenFSY1hLdjZITUJ4VEQ3Z185WnBreWVrWGpOb1lYdm0xdkJidVBKQ25nZ016R2hlNDRHMA?oc=5",
+      "image": "",
+      "source": "Il Messaggero",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
       ],
-      "pubDate": "Sun, 27 Sep 2026 13:45:41 GMT",
-      "googlePubDate": "Sun, 27 Sep 2026 13:45:41 GMT",
+      "pubDate": "Sun, 27 Sep 2026 13:46:08 GMT",
+      "googlePubDate": "Sun, 27 Sep 2026 13:46:08 GMT",
       "originalPubDate": null,
       "dateSource": "google",
       "isVideo": false,
       "sources": [
         {
-          "source": "Il Giorno",
-          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaE10LWY5OVp3S0YtZWVteFpqMzU0emxPWFZ1UHJCNk1pUkJTOHViWHJLbm5relVIRC1fYzQtUHlQcENuVF9NLUhSa2R5bUZHMDlwWDFRWk1sVFV4QmlWZ25GUDhaODAyekhCNXFKRUZqUWhkUnE1Rmo0SlRUd3AwY0JLblo?oc=5",
-          "pubDate": "Sun, 27 Sep 2026 13:45:41 GMT"
+          "source": "Il Messaggero",
+          "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNX1dqU3RBalQxLTUweXdJM0VieWszUGtwNmRhOGxkdklQU3Y0R2VLQ0V5RG14OTgxSFU4dTBhd0I5VzhnbERuMURmYVlBZnZTcEFva3U4b19YTWplMFlaRTJFTERTX2ZLOWRsaDJLVjFnblpkYmtnZDk2ZjVSdWtCTmNkOUVWc3ZZM0dmRno3VHZyajBfOWxPSENNc1l4d3pzYzVwSDBoeXBGM2ZYbV9JaFNQbHYyMUFZalRCZk5ENS12YnEyN2MyZmxtN0FrYWQ4UWJKZGd1dEFaeXFDbzNwNnpyZ0xsaENTaGRueGpFdm9fNkZzVldHMWdjRXE0UnRUS0FmQVZB0gGLAkFVX3lxTFBuWFpoaktmck1RRWVrQldGckp2SUpmZGFZNlNXMUJoYnExRlhqUmJtUW1mN3RseTc0X0Vybkp2b3FPT05mZ3htVmk2VUpEYWZYZVRKZ2ZheFFOWDZMdUJ6RDlpY1hxU2c0VzhOUXBRTjZtMW1ES3lac0s0aERhZndHTGczNW5BaXZPVjc2cmFKR1VnWmRfQ3hJa3UyTEpFREIxdHhXNkFFVElReHl0LW9vcU40ejkwM21IdWFTeG9tQkxZTDFhWHFhanZqV1FUUGdjMThhQUdMenFSY1hLdjZITUJ4VEQ3Z185WnBreWVrWGpOb1lYdm0xdkJidVBKQ25nZ016R2hlNDRHMA?oc=5",
+          "pubDate": "Sun, 27 Sep 2026 13:46:08 GMT"
         }
       ],
-      "id": "focus-dengue in lombardia il professor pregliasco sono contagi autoctoni un -1790516741000",
-      "sourceCount": 1
+      "originalURL": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNX1dqU3RBalQxLTUweXdJM0VieWszUGtwNmRhOGxkdklQU3Y0R2VLQ0V5RG14OTgxSFU4dTBhd0I5VzhnbERuMURmYVlBZnZTcEFva3U4b19YTWplMFlaRTJFTERTX2ZLOWRsaDJLVjFnblpkYmtnZDk2ZjVSdWtCTmNkOUVWc3ZZM0dmRno3VHZyajBfOWxPSENNc1l4d3pzYzVwSDBoeXBGM2ZYbV9JaFNQbHYyMUFZalRCZk5ENS12YnEyN2MyZmxtN0FrYWQ4UWJKZGd1dEFaeXFDbzNwNnpyZ0xsaENTaGRueGpFdm9fNkZzVldHMWdjRXE0UnRUS0FmQVZB0gGLAkFVX3lxTFBuWFpoaktmck1RRWVrQldGckp2SUpmZGFZNlNXMUJoYnExRlhqUmJtUW1mN3RseTc0X0Vybkp2b3FPT05mZ3htVmk2VUpEYWZYZVRKZ2ZheFFOWDZMdUJ6RDlpY1hxU2c0VzhOUXBRTjZtMW1ES3lac0s0aERhZndHTGczNW5BaXZPVjc2cmFKR1VnWmRfQ3hJa3UyTEpFREIxdHhXNkFFVElReHl0LW9vcU40ejkwM21IdWFTeG9tQkxZTDFhWHFhanZqV1FUUGdjMThhQUdMenFSY1hLdjZITUJ4VEQ3Z185WnBreWVrWGpOb1lYdm0xdkJidVBKQ25nZ016R2hlNDRHMA?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "timothy cavicchini chi e il nuovo cantante di domenica in eta carriera-1790516768000-88"
     },
     {
       "title": "Abbattimento ex Doro a Fuorni, Trotta (FdI) attacca De Luca: \"Due buchi nel muro e niente più\"",
@@ -7601,10 +7592,15 @@
           "source": "il Giornale",
           "link": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPOW1wem5ZLVFwVndEWkc0cFFleHpLcG1IejBrMEctcHV6dE13UEZqd2NwaGczWW9ianllYTFoeUJyY1JjMlJ3czdPV2pwSEpkN0MwNW1EV3A3MXE3RzY0akFRSndpQ01vYXB3T21saUxnb01CZFBZRE1PYURTMnlKVzZUMWRjdmxVLUxQSXZkQm4tR3dQYnZfYmdWMGJXWkVxV3oxbGRfQ2NmTUhXNTFtdnE1cEp5VDR2b05EYTZYQ2hNdGRIQk5HTmFod2ZxZU1vR2xOcU5sUmxwSzdKS2JRU1g2VkZ0bjlOTE1hb20zM1dGREZxNXpBR1FvZGZyNWxfQmQ3Y2lqVmh5bVZzNjZpUDlZS0pUQ2pEa3NTbDFlY05VVFRFcFQ5a0VyXzZCMFNrNmdyVUN2NEhWS1hpdHFrNlN2c2JnWGhBbGo1SEh3djlPQUlvT2loMVEzVjhFQ1E?oc=5",
           "pubDate": "Sun, 27 Sep 2026 10:20:49 GMT"
+        },
+        {
+          "source": "ilgiornale.it",
+          "link": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPOW1wem5ZLVFwVndEWkc0cFFleHpLcG1IejBrMEctcHV6dE13UEZqd2NwaGczWW9ianllYTFoeUJyY1JjMlJ3czdPV2pwSEpkN0MwNW1EV3A3MXE3RzY0akFRSndpQ01vYXB3T21saUxnb01CZFBZRE1PYURTMnlKVzZUMWRjdmxVLUxQSXZkQm4tR3dQYnZfYmdWMGJXWkVxV3oxbGRfQ2NmTUhXNTFtdnE1cEp5VDR2b05EYTZYQ2hNdGRIQk5HTmFod2ZxZU1vR2xOcU5sUmxwSzdKS2JRU1g2VkZ0bjlOTE1hb20zM1dGREZxNXpBR1FvZGZyNWxfQmQ3Y2lqVmh5bVZzNjZpUDlZS0pUQ2pEa3NTbDFlY05VVFRFcFQ5a0VyXzZCMFNrNmdyVUN2NEhWS1hpdHFrNlN2c2JnWGhBbGo1SEh3djlPQUlvT2loMVEzVjhFQ1E?oc=5",
+          "pubDate": "Sun, 27 Sep 2026 10:20:49 GMT"
         }
       ],
       "originalURL": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNakk2aC03REpVdTgtaElXZnh3Y2tzckZpRGI2VjFBNF9oNGNlRWxsNTd1NVFBZ2ZHekJnZWY3N3ZFa3hvLTJmcUg5NDIzY2l6RmhhSnE4X1lVRUktclVQd2JNNEd1dlFvNldnMnVNZ3M2elhUWmhmMFJuZ1pxUEdRZ2ZicXl3cjNSd0F6NnI0aF85aGRZTElDaFlmbUhpclRabVVLMVNCOGRFSUVRRDdVVkhMV2FCQUdORXlHUTl6X3VYeUMtQUhLOEFrZWc2VGw5dk5ad2NNUkREcXNOWTZfVjc4eDBSa3dGR0tCNE9vNmMtX09oanlFM1VfelowZ2lNZnlHbFVR0gGKAkFVX3lxTE9XWmZLcHgtMTdlUElWZDdFR3ltSHlaU1YyMDloUmg3Qjc2SlQtT1FTMlR1dEdXaDg0THNmWlNvLUxJZllGWTd5bjRMSUc1alp2dzVGdUM5Zm5XQW0xbUFaRDBpdmtaQlFCeDlsSnRHcmg2X2V4WDdqX2FRRW5QSnByb2NDVGdvbzRkWnZydmdNbHQ4bjNPN0dQQS1hY2pDNXh1S3ZmTko1WWZIZUptc19hN0VwUTZjTDBaVlYxWENpaWdFR0ZDLUw2NVJSSnR5aGhuWnNka2FfUkFwaTQyVnNGOVk5SlBpbUNfQmNQYm00ZzlRbFFDN2x0eGF3WHlfZWFGam1ldHVVQW9R?oc=5",
-      "sourceCount": 2,
+      "sourceCount": 3,
       "sourcePriority": 55,
       "id": "confimprese italia chiude i 30 anni a fiuggi fitto competitivita e int-1790504850000-212"
     },
@@ -8490,7 +8486,7 @@
     }
   ],
   "videoEnrichment": {
-    "updatedAt": "2026-09-27T15:22:16.876Z",
+    "updatedAt": "2026-09-27T15:24:17.283Z",
     "successfulQueries": 3,
     "totalQueries": 4,
     "added": 40,
@@ -8498,10 +8494,10 @@
     "totalVideos": 21
   },
   "focusEnrichment": {
-    "updatedAt": "2026-09-27T15:22:41.723Z",
+    "updatedAt": "2026-09-27T15:24:42.951Z",
     "successfulQueries": 25,
     "totalQueries": 28,
-    "added": 361,
+    "added": 362,
     "mergedExisting": 87,
     "counts": {
       "crimeImmigration": 6,
