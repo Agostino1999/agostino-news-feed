@@ -19,19 +19,19 @@ permissions:
   contents: write
 
 concurrency:
-  group: update-news-feed
+  group: update-news-feed-slim
   cancel-in-progress: false
 
 jobs:
   update-feed:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     timeout-minutes: 5
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -65,6 +65,26 @@ jobs:
 
             git fetch origin main
             git reset --hard origin/main
+            # A delayed run must not overwrite a feed published more recently.
+            if ! node --input-type=module -e '
+              import fs from "node:fs";
+              const timestamp = (path) => {
+                const feed = JSON.parse(fs.readFileSync(path, "utf8"));
+                return Math.max(...[
+                  feed.updatedAt,
+                  feed.videoEnrichment?.updatedAt,
+                  feed.focusEnrichment?.updatedAt
+                ].map(value => Date.parse(value) || 0));
+              };
+              const generated = timestamp(process.argv[1]);
+              const current = timestamp(process.argv[2]);
+              if (!generated) throw new Error("Generated feed has no valid timestamp");
+              process.exit(generated > current ? 0 : 1);
+            ' "$GENERATED_NEWS" news.json; then
+              echo "A newer or equal feed is already published; skipping this run"
+              exit 0
+            fi
+
             cp "$GENERATED_NEWS" news.json
 
             if git diff --quiet -- news.json; then
