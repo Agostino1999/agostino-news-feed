@@ -6,6 +6,21 @@ const REQUEST_DELAY_MS = 500;
 const MAX_RETRIES = 2;
 const MAX_NEWS_AGE_MS = 4 * 24 * 60 * 60 * 1000;
 const MAX_FUTURE_CLOCK_SKEW_MS = 10 * 60 * 1000;
+// Notizia segnalata dall'utente: resta disponibile solo entro la normale finestra del feed.
+const EDITORIAL_HUMAN_STORIES = [{
+  title: "Bergamo, poliziotto in pensione dopo 35 anni: l'ultimo turno è con il figlio appena entrato in servizio",
+  summary: "Luca Sparagna si prepara a lasciare il servizio, prima del congedo ha fatto una sorta di passaggio di testimone a Valerio",
+  source: "TGCOM24",
+  link: "https://www.tgcom24.mediaset.it/cronaca/bergamo-poliziotto-pensione-turno-figlio_118577526-202602k.shtml",
+  originalURL: "https://www.tgcom24.mediaset.it/cronaca/bergamo-poliziotto-pensione-turno-figlio_118577526-202602k.shtml",
+  pubDate: "2026-11-04T11:01:00.000Z",
+  originalPubDate: "2026-11-04T11:01:00.000Z",
+  dateSource: "original",
+  category: "Storie umane",
+  categories: ["Storie umane"],
+  isVideo: false,
+  sources: [{ source: "TGCOM24", link: "https://www.tgcom24.mediaset.it/cronaca/bergamo-poliziotto-pensione-turno-figlio_118577526-202602k.shtml", pubDate: "2026-11-04T11:01:00.000Z" }]
+}];
 const GENERIC_NEWS_TITLES = new Set([
   "ultime notizie online",
   "ultime notizie",
@@ -454,6 +469,7 @@ async function main() {
   const incoming = results
     .filter(result => result.ok)
     .flatMap(result => result.news)
+    .concat(EDITORIAL_HUMAN_STORIES.filter(article => isUsableLiveArticle(article, Date.now())))
     .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
   const news = payload.news.map(applyFocusClassification);
