@@ -1385,10 +1385,13 @@ function finalClassify(article) {
   const rescuedByResponders =
     /\b(salvat|soccors|ritrovat)\w*/.test(text)
     && /\b(polizi|carabinier|vigili del fuoco|medic|sanitari|passanti)\w*/.test(text);
+  const familyPair = /\b(padre|papa|madre|mamma|poliziott|carabinier)\w*/.test(text) && /\b(figli[oa]|figli)\w*/.test(text);
+  const sharedService = /\b(poliziott|polizi|carabinier|vigili del fuoco|infermier|medic|sanitari)\w*/.test(text)
+    && /\b(insieme|fianco a fianco|stesso turno|ultimo turno|passaggio di testimone|cambio della guardia)\b/.test(text);
   const fatalNegative =
     /\b(mort|muor|decedut|cadavere|uccis|omicid|strage|si suicida|si toglie la vita)\w*/.test(text);
   const humanPositive =
-    ((rescueAction && (humanSubject || animalSubject)) || explicitPositive || solidarity || reunion || rescuedByResponders)
+    ((rescueAction && (humanSubject || animalSubject)) || explicitPositive || solidarity || reunion || rescuedByResponders || (familyPair && sharedService))
     && !fatalNegative;
 
   const transport =

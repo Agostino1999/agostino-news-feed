@@ -33,6 +33,8 @@ const FOCUS_QUERIES = [
   ["Storie umane", '(cane OR gatto OR delfino OR bambino) (salvato OR adottato OR liberato OR guarito) (site:ansa.it OR site:repubblica.it OR site:corriere.it OR site:quotidiano.net) when:5d'],
   ["Storie umane", '("salvato" OR "salvata" OR "soccorso" OR "ritrovato") (site:napolitoday.it OR site:romatoday.it OR site:milanotoday.it OR site:salernotoday.it OR site:trentotoday.it) when:5d'],
   ["Storie umane", '("solidarietà" OR "raccolta fondi" OR "gesto eroico" OR "lieto fine") Italia when:5d'],
+  ["Storie umane", '("padre" OR "papà" OR "madre" OR "mamma") ("figlio" OR "figlia") ("poliziotto" OR "polizia" OR "carabinieri" OR "vigili del fuoco") ("insieme" OR "ultimo turno" OR "passaggio di testimone") when:4d'],
+  ["Storie umane", '("poliziotto" OR "polizia" OR "carabiniere") "figlio" "pensione" when:4d'],
 
   // EUROPA — soprattutto istituzioni e politica UE
   ["Europa", '"Commissione europea" OR "Parlamento europeo" OR "Consiglio europeo" when:1d'],
@@ -146,8 +148,11 @@ function isPositiveHumanStory(title = "", summary = "") {
   const positiveOutcome = /\b(salvat|soccors|ritrovat|rintracciat|recuperat|liberat|messo in salvo|fuori pericolo|riabbracci|sopravviss|adottat|gesto eroico|lieto fine|torna a casa|torna indietro|si risveglia)\w*/.test(text);
   const solidarity = /\b(solidariet|raccolta fondi|benefic|volontari|comunita si mobilita)\w*/.test(text)
     && /\b(aiut|don|regal|offr|famiglia|bambin|anzian|malat|difficolta)\w*/.test(text);
+  const familyPair = /\b(padre|papa|madre|mamma|poliziott|carabinier)\w*/.test(text) && /\b(figli[oa]|figli)\w*/.test(text);
+  const sharedService = /\b(poliziott|polizi|carabinier|vigili del fuoco|infermier|medic|sanitari)\w*/.test(text)
+    && /\b(insieme|fianco a fianco|stesso turno|ultimo turno|passaggio di testimone|cambio della guardia)\b/.test(text);
   const fatal = /\b(mort|muor|decedut|cadavere|uccis|omicid|strage|si suicida|si toglie la vita)\w*/.test(text);
-  return (((humanSubject || animalSubject) && positiveOutcome) || solidarity) && !fatal;
+  return (((humanSubject || animalSubject) && positiveOutcome) || solidarity || (familyPair && sharedService)) && !fatal;
 }
 
 const STOPWORDS = new Set(
