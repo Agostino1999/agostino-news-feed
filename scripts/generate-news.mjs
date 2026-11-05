@@ -96,6 +96,16 @@ const DIRECT_FEEDS = [
     source: "Corriere della Sera",
     category: "Cronaca",
     url: "https://www.corriere.it/feed-hp/homepage-restyle-2025.xml"
+  },
+  {
+    source: "il manifesto",
+    category: "Politica",
+    url: "https://ilmanifesto.it/feed/"
+  },
+  {
+    source: "il manifesto",
+    category: "Politica",
+    url: "https://ilmanifesto.it/feed/?paged=2"
   }
 ];
 
@@ -1581,6 +1591,19 @@ function selectBalancedNews(items) {
           && age <= maxAge;
       })
       .slice(0, minimum)
+      .forEach(keep);
+  }
+
+  // Keep a small daily sample from the second page of the manifesto RSS.
+  // Otherwise yesterday's political stories disappear behind today's 300-item cap.
+  for (const day of [...new Set(ordered
+    .filter(article => article.source === "il manifesto")
+    .map(article => new Date(article.pubDate).toISOString().slice(0, 10)))]) {
+    ordered
+      .filter(article => article.source === "il manifesto"
+        && new Date(article.pubDate).toISOString().startsWith(day)
+        && now - new Date(article.pubDate).getTime() <= 72 * 3600000)
+      .slice(0, 25)
       .forEach(keep);
   }
 
