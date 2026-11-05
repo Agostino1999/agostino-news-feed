@@ -368,6 +368,18 @@ function removeCategory(article, category) {
 
 function addSource(article, source) {
   const sources = Array.isArray(article.sources) ? [...article.sources] : [];
+  // Google News e il link diretto di Open indicano la stessa testata nella stessa storia.
+  if (normalize(source?.source || "") === "open") {
+    const existingIndex = sources.findIndex(current => normalize(current?.source || "") === "open");
+    if (existingIndex >= 0) {
+      const currentUrl = sources[existingIndex]?.originalURL || sources[existingIndex]?.link || "";
+      const newUrl = source?.originalURL || source?.link || "";
+      if (currentUrl.includes("news.google.com") && newUrl.includes("open.online")) sources[existingIndex] = source;
+      article.sources = sources;
+      article.sourceCount = sources.length || 1;
+      return;
+    }
+  }
   const exists = sources.some(current =>
     current?.source === source?.source &&
     current?.link === source?.link
