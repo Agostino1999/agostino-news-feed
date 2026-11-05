@@ -8,6 +8,19 @@ const MAX_NEWS_AGE_MS = 4 * 24 * 60 * 60 * 1000;
 const MAX_FUTURE_CLOCK_SKEW_MS = 10 * 60 * 1000;
 // Notizia segnalata dall'utente: resta disponibile solo entro la normale finestra del feed.
 const EDITORIAL_HUMAN_STORIES = [{
+  title: "Il gatto miagola senza sosta e dà l’allarme: coppia di Treviso salvata dal monossido di carbonio",
+  summary: "Il miagolio del gatto ha contribuito a far scoprire una fuga di monossido.",
+  source: "Open",
+  link: "https://www.open.online/2026/11/05/gatto-allarme-coppia-treviso-intossicaizone-monossido-carbonio/",
+  originalURL: "https://www.open.online/2026/11/05/gatto-allarme-coppia-treviso-intossicaizone-monossido-carbonio/",
+  pubDate: "2026-11-05T17:15:00.000Z",
+  originalPubDate: "2026-11-05T17:15:00.000Z",
+  dateSource: "original",
+  category: "Storie umane",
+  categories: ["Storie umane"],
+  isVideo: false,
+  sources: [{ source: "Open", link: "https://www.open.online/2026/11/05/gatto-allarme-coppia-treviso-intossicaizone-monossido-carbonio/", originalURL: "https://www.open.online/2026/11/05/gatto-allarme-coppia-treviso-intossicaizone-monossido-carbonio/", pubDate: "2026-11-05T17:15:00.000Z" }]
+}, {
   title: "Bergamo, poliziotto in pensione dopo 35 anni: l'ultimo turno è con il figlio appena entrato in servizio",
   summary: "Luca Sparagna si prepara a lasciare il servizio, prima del congedo ha fatto una sorta di passaggio di testimone a Valerio",
   source: "TGCOM24",
@@ -50,6 +63,8 @@ const FOCUS_QUERIES = [
   ["Storie umane", '("solidarietà" OR "raccolta fondi" OR "gesto eroico" OR "lieto fine") Italia when:5d'],
   ["Storie umane", '("padre" OR "papà" OR "madre" OR "mamma") ("figlio" OR "figlia") ("poliziotto" OR "polizia" OR "carabinieri" OR "vigili del fuoco") ("insieme" OR "ultimo turno" OR "passaggio di testimone") when:4d'],
   ["Storie umane", '("poliziotto" OR "polizia" OR "carabiniere") "figlio" "pensione" when:4d'],
+
+  ["Storie umane", 'site:open.online (salvato OR salvata OR "salva la vita" OR "salvi grazie") when:4d'],
 
   // EUROPA — soprattutto istituzioni e politica UE
   ["Europa", '"Commissione europea" OR "Parlamento europeo" OR "Consiglio europeo" when:1d'],
@@ -199,6 +214,12 @@ function sameStory(a, b) {
   if (Number.isFinite(ta) && Number.isFinite(tb) && Math.abs(ta - tb) > 36 * 3600000) {
     return false;
   }
+
+  const catRescueTitles = new Set([
+    "intossicati dal monossido nel trevigiano salvi grazie al gatto",
+    "il gatto miagola senza sosta e da l allarme coppia di treviso salvata dal monossido di carbonio"
+  ]);
+  if (catRescueTitles.has(na) && catRescueTitles.has(nb)) return true;
 
   const A = titleTokens(a?.title || "");
   const B = titleTokens(b?.title || "");
