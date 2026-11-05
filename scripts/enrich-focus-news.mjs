@@ -167,7 +167,7 @@ function isPositiveHumanStory(title = "", summary = "") {
   const sharedService = /\b(poliziott|polizi|carabinier|vigili del fuoco|infermier|medic|sanitari)\w*/.test(text)
     && /\b(insieme|fianco a fianco|stesso turno|ultimo turno|passaggio di testimone|cambio della guardia)\b/.test(text);
   const fatal = /\b(mort|muor|decedut|cadavere|uccis|omicid|strage|si suicida|si toglie la vita)\w*/.test(text);
-  return (((humanSubject || animalSubject) && positiveOutcome) || solidarity || (familyPair && sharedService)) && !fatal;
+  return (((humanSubject || animalSubject) && positiveOutcome) || solidarity || (familyPair && sharedService) || isAnimalAssistedRescue(title)) && !fatal;
 }
 
 const STOPWORDS = new Set(
@@ -397,12 +397,25 @@ function isStrictMITTransport(article) {
   return explicitMIT || nationalBodiesOrWorks || policyContext;
 }
 
+function isAnimalAssistedRescue(title = "") {
+  const text = normalize(title);
+  return /\b(cane|cani|gatto|gatti|animale|animali)\w*/.test(text)
+    && /\b(salv[ioe]|salv[ao]|salvano)\b/.test(text)
+    && /\b(grazie|allarme|miagol|abbaia|avvert)\w*/.test(text)
+    && /\b(monossido|fuga di gas|incendio|pericolo|vita|intossicat|anneg)\w*/.test(text)
+    && !/\b(mort|muor|decedut|uccis|omicid|strage)\w*/.test(text);
+}
+
 function applyFocusClassification(article) {
   const copy = {
     ...article,
     categories: categoriesOf(article),
     sources: Array.isArray(article.sources) ? [...article.sources] : []
   };
+
+  if (isAnimalAssistedRescue(copy.title) && isPositiveHumanStory(copy.title, copy.summary)) {
+    addCategory(copy, "Storie umane");
+  }
 
   if (isCrimeImmigrationFocus(copy)) {
     addCategory(copy, "Crimini & immigrazione");
