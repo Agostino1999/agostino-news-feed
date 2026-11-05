@@ -439,6 +439,16 @@ function selectFocusNews(items) {
       .forEach(keep);
   }
 
+  for (const day of [...new Set(ordered
+    .filter(article => article.source === "il manifesto")
+    .map(article => new Date(article.pubDate).toISOString().slice(0, 10)))]) {
+    ordered
+      .filter(article => article.source === "il manifesto"
+        && new Date(article.pubDate).toISOString().startsWith(day))
+      .slice(0, 25)
+      .forEach(keep);
+  }
+
   ordered.forEach(keep);
   return selected.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
