@@ -93,6 +93,11 @@ const DIRECT_FEEDS = [
     url: "https://www.ansa.it/sito/notizie/politica/politica_rss.xml"
   },
   {
+    source: "ANSA",
+    category: "Cronaca",
+    url: "https://www.ansa.it/sito/notizie/cronaca/cronaca_rss.xml"
+  },
+  {
     source: "Corriere della Sera",
     category: "Cronaca",
     url: "https://www.corriere.it/feed-hp/homepage-restyle-2025.xml"
