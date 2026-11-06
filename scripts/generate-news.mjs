@@ -1288,7 +1288,8 @@ function merge(items) {
 
     if (
       !duplicate.image &&
-      article.image
+      article.image &&
+      (duplicate.originalURL || duplicate.link) === (article.originalURL || article.link)
     ) {
       duplicate.image =
         article.image;
