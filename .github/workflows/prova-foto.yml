@@ -1,0 +1,21 @@
+name: Prova recupero foto (sola lettura)
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/prova-foto.yml'
+      - 'scripts/preview-images.mjs'
+permissions:
+  contents: read
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verifica le fonti del feed
+        run: node scripts/preview-images.mjs
