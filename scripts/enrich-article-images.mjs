@@ -107,7 +107,7 @@ function favicon(value) {
 
 export async function enrichArticle(article) {
   const sources=Array.isArray(article.sources)?article.sources:[];
-  const candidates=[...new Set([article.originalURL||article.link,...sources.map(s=>s.originalURL||s.link)].filter(Boolean))];
+  const candidates=[article.originalURL||article.link].filter(Boolean);
   const homepage=sources.find(s=>s.source===article.source)?.sourceHomepage || article.sourceHomepage || '';
   let logo=article.logoUrl||favicon(homepage)||favicon(candidates[0]);
   if(article.image) return {...article,logoUrl:logo};
@@ -120,7 +120,7 @@ export async function enrichArticle(article) {
         page=await fetchPage(original);
       }
       const image=extractArticlePhoto(page.html,page.url);
-      if(image)return {...article,image,logoUrl:logo||favicon(page.url)};
+      if(image)return {...article,image,imageVerifiedKey:article.originalURL||article.link,logoUrl:logo||favicon(page.url)};
     }catch{}
   }
   return {...article,logoUrl:logo};
@@ -132,7 +132,9 @@ export async function enrichFeed(feed,previous,{deadlineMs=45000,concurrency=6}=
   const output=feed.news.map(a=>{
     const old=cache.get(a.originalURL||a.link);
     const homepage=a.sources?.find(s=>s.source===a.source)?.sourceHomepage||a.sourceHomepage||'';
-    return {...a,image:a.image||old?.image||'',logoUrl:a.logoUrl||old?.logoUrl||favicon(homepage)||favicon(a.originalURL||a.link)||''};
+    const key=a.originalURL||a.link;
+    const cachedImage=old?.imageVerifiedKey===key?old.image:'';
+    return {...a,image:a.image||cachedImage||'',imageVerifiedKey:a.image?undefined:(cachedImage?key:undefined),logoUrl:a.logoUrl||old?.logoUrl||favicon(homepage)||favicon(a.originalURL||a.link)||''};
   });
   let index=0;
   async function run(){while(index<output.length && Date.now()<deadline){const i=index++;output[i]=await enrichArticle(output[i]);}}
