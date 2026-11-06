@@ -1,0 +1,34 @@
+name: Prova isolata foto e loghi
+on:
+  pull_request:
+    paths:
+      - 'scripts/enrich-article-images.mjs'
+      - 'scripts/generate-news.mjs'
+      - '.github/workflows/prova-foto-isolata.yml'
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prova feed senza pubblicarlo
+        run: |
+          cp news.json .previous-news.json
+          node scripts/generate-news.mjs
+          node scripts/add-video-news.mjs
+          node scripts/enrich-focus-news.mjs
+          node scripts/enrich-article-images.mjs
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const j=JSON.parse(fs.readFileSync('news.json','utf8'));
+          const withHomepage=j.news.filter(a=>a.sources?.some(s=>s.sourceHomepage)).length;
+          const missing=j.news.filter(a=>!a.image&&!a.logoUrl);
+          console.log('RISULTATI',JSON.stringify({total:j.news.length,homepage:withHomepage,...j.imageEnrichment,missing:missing.slice(0,20).map(a=>({source:a.source,title:a.title}))}));
+          JS
