@@ -32,6 +32,9 @@ jobs:
               const tag = tags.find(t=>/\b(?:property|name)\s*=\s*["'](?:og:image|twitter:image)["']/i.test(t));
               const content = tag?.match(/\bcontent\s*=\s*(?:"([^"]+)"|'([^']+)')/i);
               result.image = !!(content?.[1] || content?.[2]);
+              result.imageUrl = content?.[1] || content?.[2] || '';
+              result.signature = html.includes('data-n-a-sg');
+              result.timestamp = html.includes('data-n-a-ts');
               result.googleResolveRequired = result.finalHost.endsWith('google.com');
             } catch (e) { result.error = String(e.message || e).slice(0,100); }
             console.log(JSON.stringify(result));
