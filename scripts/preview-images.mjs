@@ -112,8 +112,39 @@ async function inspect(article) {
   return result;
 }
 
+function terms(s) {
+  const stop = new Set(['della','delle','dello','degli','dalla','nella','nello','alle','con','per','dopo','dalla','della','delle','sono','italia','notizie','oggi','cronaca','lombardia','regione','opinione','agenzia','giornalistica']);
+  return [...new Set(s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').match(/[a-z0-9]{4,}/g) || [])].filter(x => !stop.has(x));
+}
+
+async function findAlternate(article) {
+  const input = terms(article.title);
+  if (input.length < 4) return null;
+  const query = new URL('https://news.google.com/rss/search');
+  query.search = new URLSearchParams({q: input.slice(0, 12).join(' '), hl:'it', gl:'IT', ceid:'IT:it'});
+  const resp = await fetch(query, { headers, signal: AbortSignal.timeout(10000) });
+  if (!resp.ok) throw new Error(`search HTTP ${resp.status}`);
+  const xml = (await resp.text()).slice(0, 500000);
+  const decode = s => (s || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;|&apos;/g,"'").replace(/&lt;/g,'<').replace(/&gt;/g,'>');
+  const candidates = [];
+  for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)) {
+    const title = decode(m[1].match(/<title>([\s\S]*?)<\/title>/i)?.[1]);
+    const link = decode(m[1].match(/<link>([\s\S]*?)<\/link>/i)?.[1]);
+    const t = terms(title);
+    const common = input.filter(x => t.includes(x)).length;
+    const score = (2 * common) / (input.length + t.length);
+    if (score >= .65 && common >= 4) candidates.push({title,link,score});
+  }
+  candidates.sort((a,b) => b.score - a.score);
+  for (const c of candidates.slice(0, 3)) {
+    const r = await inspect({title:article.title,source:article.source,link:c.link});
+    if (r.image) return { ...c, image: r.image };
+  }
+  return null;
+}
+
 const feed = JSON.parse(await fs.readFile('news.json', 'utf8'));
-const items = feed.news.filter(a => !a.image);
+const items = feed.news.filter(a => !a.image && ['AGI', 'Opinione Agenzia Giornalistica', 'Demócrata', 'Council, European Union'].includes(a.source)).slice(0, 25);
 const results = new Array(items.length);
 let position = 0;
 async function worker() {
@@ -123,6 +154,12 @@ async function worker() {
   }
 }
 await Promise.all(Array.from({ length: 4 }, worker));
+for (let i = 0; i < results.length; i++) {
+  if (!results[i].image) {
+    try { results[i].searchAlternative = await findAlternate(items[i]); }
+    catch (e) { results[i].searchError = String(e.message || e); }
+  }
+}
 for (const r of results) console.log(JSON.stringify(r));
 const success = results.filter(r => r.image).length;
 const statuses = {};
