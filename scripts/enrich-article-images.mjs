@@ -121,7 +121,7 @@ export async function enrichArticle(article) {
       }
       const image=extractArticlePhoto(page.html,page.url);
       if(image)return {...article,image,logoUrl:logo||favicon(page.url)};
-    }catch{}
+    }catch(error){if(process.env.IMAGE_DEBUG)console.log('IMAGE_DEBUG',JSON.stringify({source:article.source,error:String(error.message||error)}))}
   }
   return {...article,logoUrl:logo};
 }
