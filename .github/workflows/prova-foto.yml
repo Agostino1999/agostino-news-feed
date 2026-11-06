@@ -1,0 +1,40 @@
+name: Prova recupero foto (sola lettura)
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/prova-foto.yml'
+permissions:
+  contents: read
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prova fonti e immagini
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const feed = JSON.parse(fs.readFileSync('news.json', 'utf8'));
+          const targets = ['ANSA', 'il manifesto', 'Corriere della Sera', 'Sky TG24', 'RomaToday', 'Il Messaggero', 'Tgcom24', 'Libero Quotidiano', 'NapoliToday', '3BMeteo'];
+          const chosen = targets.flatMap(s => feed.news.filter(a => a.source === s && !a.image).slice(0, 2));
+          for (const a of chosen) {
+            let result = {source:a.source,title:a.title,kind:a.link.includes('news.google.com')?'google':'diretta'};
+            try {
+              const r = await fetch(a.originalURL || a.link, {signal: AbortSignal.timeout(10000),headers:{'user-agent':'Mozilla/5.0 (compatible; NewsPreview/1.0)'}});
+              result.status = r.status;
+              result.finalHost = new URL(r.url).hostname;
+              const html = (await r.text()).slice(0,600000);
+              const tags = [...html.matchAll(/<meta\b[^>]*>/gi)].map(m=>m[0]);
+              const tag = tags.find(t=>/\b(?:property|name)\s*=\s*["'](?:og:image|twitter:image)["']/i.test(t));
+              const content = tag?.match(/\bcontent\s*=\s*(?:"([^"]+)"|'([^']+)')/i);
+              result.image = !!(content?.[1] || content?.[2]);
+              result.googleResolveRequired = result.finalHost.endsWith('google.com');
+            } catch (e) { result.error = String(e.message || e).slice(0,100); }
+            console.log(JSON.stringify(result));
+          }
+          console.log(JSON.stringify({sample:chosen.length,feedTotal:feed.news.length,feedImage:feed.news.filter(a=>a.image).length}));
+          JS
