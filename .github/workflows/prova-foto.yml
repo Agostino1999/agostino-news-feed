@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - '.github/workflows/prova-foto.yml'
+      - 'scripts/preview-images.mjs'
 permissions:
   contents: read
 jobs:
@@ -11,58 +12,10 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Prova fonti e immagini
-        run: |
-          node --input-type=module <<'JS'
-          import fs from 'node:fs';
-          const feed = JSON.parse(fs.readFileSync('news.json', 'utf8'));
-          const targets = ['ANSA', 'il manifesto', 'Corriere della Sera', 'Sky TG24', 'RomaToday', 'Il Messaggero', 'Tgcom24', 'Libero Quotidiano', 'NapoliToday', '3BMeteo'];
-          const chosen = targets.flatMap(s => feed.news.filter(a => a.source === s && !a.image).slice(0, 2));
-          for (const a of chosen.slice(0, 12)) {
-            let result = {source:a.source,title:a.title,kind:a.link.includes('news.google.com')?'google':'diretta'};
-            try {
-              const r = await fetch(a.originalURL || a.link, {signal: AbortSignal.timeout(10000),headers:{'user-agent':'Mozilla/5.0 (compatible; NewsPreview/1.0)'}});
-              result.status = r.status;
-              result.finalHost = new URL(r.url).hostname;
-              const html = (await r.text()).slice(0,600000);
-              const tags = [...html.matchAll(/<meta\b[^>]*>/gi)].map(m=>m[0]);
-              const tag = tags.find(t=>/\b(?:property|name)\s*=\s*["'](?:og:image|twitter:image)["']/i.test(t));
-              const content = tag?.match(/\bcontent\s*=\s*(?:"([^"]+)"|'([^']+)')/i);
-              result.image = !!(content?.[1] || content?.[2]);
-              result.imageUrl = content?.[1] || content?.[2] || '';
-              result.signature = html.includes('data-n-a-sg');
-              result.timestamp = html.includes('data-n-a-ts');
-              result.googleResolveRequired = result.finalHost.endsWith('google.com');
-              if (result.googleResolveRequired && r.ok) {
-                const sig = html.match(/data-n-a-sg="([^"]+)"/)?.[1];
-                const ts = html.match(/data-n-a-ts="(\d+)"/)?.[1];
-                const id = html.match(/data-n-a-id="([^"]+)"/)?.[1];
-                if (sig && ts && id) {
-                  const conf = [["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],"X","X",1,[1,1,1],1,1,null,0,0,null,0];
-                  const inner = JSON.stringify(["garturlreq",conf,id,Number(ts),sig]);
-                  const form = new URLSearchParams({"f.req":JSON.stringify([[["Fbv4je",inner]]])});
-                  const rpc = await fetch("https://news.google.com/_/DotsSplashUi/data/batchexecute", {method:"POST",headers:{"content-type":"application/x-www-form-urlencoded;charset=UTF-8"},body:form,signal:AbortSignal.timeout(10000)});
-                  result.rpcStatus = rpc.status;
-                  const body = await rpc.text();
-                  const row = body.split("\n").find(x=>x.startsWith('[["wrb.fr"'));
-                  const data = row ? JSON.parse(row)?.[0]?.[2] : null;
-                  const url = data ? JSON.parse(data)?.[1] : null;
-                  result.resolved = !!url;
-                  if (url) {
-                    const original = await fetch(url,{signal:AbortSignal.timeout(10000)});
-                    result.publisherHost = new URL(original.url).hostname;
-                    result.publisherStatus = original.status;
-                    const originalHtml = (await original.text()).slice(0,600000);
-                    const publisherTag = [...originalHtml.matchAll(/<meta\b[^>]*>/gi)].map(m=>m[0]).find(t=>/\b(?:property|name)\s*=\s*["'](?:og:image|twitter:image)["']/i.test(t));
-                    result.publisherImage = !!publisherTag?.match(/\bcontent\s*=\s*(?:"([^"]+)"|'([^']+)')/i);
-                  }
-                }
-              }
-            } catch (e) { result.error = String(e.message || e).slice(0,100); }
-            console.log(JSON.stringify(result));
-          }
-          console.log(JSON.stringify({sample:chosen.length,feedTotal:feed.news.length,feedImage:feed.news.filter(a=>a.image).length}));
-          JS
+      - name: Verifica le fonti del feed
+        run: node scripts/preview-images.mjs
