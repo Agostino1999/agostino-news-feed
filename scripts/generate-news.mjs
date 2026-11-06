@@ -103,6 +103,16 @@ const DIRECT_FEEDS = [
     url: "https://www.corriere.it/feed-hp/homepage-restyle-2025.xml"
   },
   {
+    source: "Il Giorno",
+    category: "Cronaca",
+    url: "https://www.ilgiorno.it/rss"
+  },
+  {
+    source: "Il Giorno",
+    category: "Cronaca",
+    url: "https://www.ilgiorno.it/rss/lecco"
+  },
+  {
     source: "il manifesto",
     category: "Politica",
     url: "https://ilmanifesto.it/feed/"
