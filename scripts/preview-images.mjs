@@ -75,7 +75,19 @@ function extractMetaImage(html, pageUrl) {
   const tags = [...html.matchAll(/<meta\b[^>]*>/gi)].map(m => m[0]);
   const tag = tags.find(t => /\b(?:property|name)\s*=\s*["'](?:og:image|twitter:image)["']/i.test(t));
   const match = tag?.match(/\bcontent\s*=\s*(?:"([^"]+)"|'([^']+)')/i);
-  try { return safeUrl(new URL(match?.[1] || match?.[2] || '', pageUrl).href); } catch { return ''; }
+  const candidate = match?.[1] || match?.[2] || '';
+  if (candidate) {
+    try { return safeUrl(new URL(candidate, pageUrl).href); } catch {}
+  }
+  if (new URL(pageUrl).hostname === 'www.agenziagiornalisticaopinione.it') {
+    for (const tag of html.match(/<img\b[^>]*>/gi) || []) {
+      if (!/thumbnail-single-image/.test(tag)) continue;
+      const src = tag.match(/\bdata-src\s*=\s*["']([^"']+)["']/i)?.[1] || tag.match(/\bsrc\s*=\s*["']([^"']+)["']/i)?.[1];
+      if (!src || /(?:logo|banner|avatar|icon)/i.test(src)) continue;
+      try { const value = safeUrl(new URL(src, pageUrl).href); if (value) return value; } catch {}
+    }
+  }
+  return '';
 }
 
 async function inspect(article) {
@@ -91,11 +103,7 @@ async function inspect(article) {
         page = await getHtml(url);
       }
       const image = extractMetaImage(page.html, page.response.url);
-      if (!image || image === page.response.url) {
-        result.pageHost = new URL(page.response.url).hostname;
-        result.imageTags = [...page.html.matchAll(/<img\b[^>]*>/gi)].slice(0, 8).map(m => m[0].slice(0, 450));
-        throw new Error('no article image metadata');
-      }
+      if (!image || image === page.response.url) throw new Error('no article image metadata');
       result.image = image;
       result.status = candidate === candidates[0] ? 'image metadata' : 'alternate source metadata';
       break;
@@ -105,7 +113,7 @@ async function inspect(article) {
 }
 
 const feed = JSON.parse(await fs.readFile('news.json', 'utf8'));
-const items = feed.news.filter(a => !a.image && ['Opinione Agenzia Giornalistica', 'AGI'].includes(a.source)).slice(0, 12);
+const items = feed.news.filter(a => !a.image);
 const results = new Array(items.length);
 let position = 0;
 async function worker() {
