@@ -652,6 +652,8 @@ function parseGoogle(xml, category) {
       const rssSource =
         tag(item, "source");
 
+      const sourceHomepage = decodeEntities(item.match(/<source\b[^>]*\burl=["']([^"']+)["']/i)?.[1] || "");
+
       const source =
         rssSource &&
         rssSource !== "Google News"
@@ -717,6 +719,7 @@ function parseGoogle(xml, category) {
           {
             source,
             link,
+            sourceHomepage,
             pubDate
           }
         ]

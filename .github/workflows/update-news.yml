@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - "scripts/generate-news.mjs"
+      - "scripts/enrich-article-images.mjs"
       - "scripts/add-video-news.mjs"
       - "scripts/enrich-focus-news.mjs"
       - "source-policy.mjs"
@@ -38,6 +39,9 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Preserve previous image cache
+        run: cp news.json .previous-news.json
+
       - name: Generate news.json
         run: node scripts/generate-news.mjs
 
@@ -46,6 +50,9 @@ jobs:
 
       - name: Enrich focus sections
         run: node scripts/enrich-focus-news.mjs
+
+      - name: Recover article photos and logos
+        run: node scripts/enrich-article-images.mjs || echo "Image enrichment failed; publishing the normal feed"
 
       - name: Commit updated feed
         run: |
