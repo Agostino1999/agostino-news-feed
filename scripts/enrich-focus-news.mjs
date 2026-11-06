@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import { extractArticlePhoto } from "./enrich-article-images.mjs";
 
 const OUT = "news.json";
 const MAX_ITEMS = 300;
@@ -34,6 +35,22 @@ const EDITORIAL_HUMAN_STORIES = [{
   isVideo: false,
   sources: [{ source: "TGCOM24", link: "https://www.tgcom24.mediaset.it/cronaca/bergamo-poliziotto-pensione-turno-figlio_118577526-202602k.shtml", pubDate: "2026-11-04T11:01:00.000Z" }]
 }];
+// Link segnalati: si usano titolo e data della testata, entro la finestra del feed.
+const REPORTED_ARTICLES = [
+  {
+    link: "https://corrieredellaltoadige.corriere.it/notizie/cronaca/26_novembre_06/la-famiglia-di-migranti-rifiuta-la-casa-da-90-metri-quadri-con-giardino-offerta-dal-comune-e-troppo-piccola-abbiamo-altri-tre-fe745287-e409-419b-88c3-41533276axlk.shtml",
+    source: "Corriere dell’Alto Adige",
+    category: "Immigrazione",
+    expiresAt: "2026-11-11T00:00:00+01:00"
+  },
+  {
+    link: "https://www.ilgiorno.it/lecco/cronaca/mamma-jessica-farmaco-cancro-pancreas-gecern8d",
+    source: "Il Giorno",
+    category: "Storie umane",
+    expiresAt: "2026-11-11T00:00:00+01:00"
+  }
+];
+
 const GENERIC_NEWS_TITLES = new Set([
   "ultime notizie online",
   "ultime notizie",
@@ -56,7 +73,11 @@ const FOCUS_QUERIES = [
   ["Crimini & immigrazione", '(immigrato OR irregolare OR clandestino OR extracomunitario) (arrestato OR rapina OR aggressione OR spaccio OR espulso) (site:ansa.it OR site:repubblica.it OR site:corriere.it OR site:adnkronos.com OR site:agi.it OR site:ilgiornale.it OR site:liberoquotidiano.it) when:4d'],
   ["Crimini & immigrazione", '("baby gang" OR maranza OR borseggiatrice) (arrestato OR aggressione OR rapina OR rissa) (site:ansa.it OR site:repubblica.it OR site:corriere.it OR site:adnkronos.com OR site:agi.it OR site:ilgiornale.it OR site:liberoquotidiano.it) when:4d'],
 
-  // STORIE UMANE — solo esiti positivi da testate nazionali riconoscibili
+  // ACCOGLIENZA LOCALE / ALLOGGI PUBBLICI
+  ["Immigrazione", '(migranti OR profughi OR "richiedenti asilo") (casa OR alloggio OR alloggi OR accoglienza) (comune OR sindaco OR provincia) when:3d'],
+
+  // STORIE UMANE — esiti positivi e accesso alle cure
+  ["Storie umane", '("curarsi gratuitamente" OR "cure gratuite" OR "raccolta fondi" OR "accesso alle cure") (mamma OR padre OR bambino OR paziente) when:4d'],
   ["Storie umane", '("salvato" OR "salvata" OR "fuori pericolo" OR "salva la vita") (site:ansa.it OR site:repubblica.it OR site:corriere.it OR site:adnkronos.com OR site:agi.it OR site:ilgiornale.it OR site:quotidiano.net) when:4d'],
   ["Storie umane", '(cane OR gatto OR delfino OR bambino) (salvato OR adottato OR liberato OR guarito) (site:ansa.it OR site:repubblica.it OR site:corriere.it OR site:quotidiano.net) when:5d'],
   ["Storie umane", '("salvato" OR "salvata" OR "soccorso" OR "ritrovato") (site:napolitoday.it OR site:romatoday.it OR site:milanotoday.it OR site:salernotoday.it OR site:trentotoday.it) when:5d'],
@@ -81,6 +102,7 @@ const FOCUS_QUERIES = [
   ["Cronaca", "site:ansa.it when:1d"],
   ["Cronaca", "site:repubblica.it when:1d"],
   ["Cronaca", "site:corriere.it when:1d"],
+  ["Cronaca", "site:corrieredellaltoadige.corriere.it when:2d"],
   ["Cronaca", "site:ilgiornale.it when:1d"],
   ["Cronaca", "site:liberoquotidiano.it when:1d"],
   ["Cronaca", "site:iltempo.it when:1d"],
@@ -171,6 +193,14 @@ function isUsableLiveArticle(article, now = Date.now()) {
   return !GENERIC_NEWS_TITLES.has(title) && !isGenericDailyDigest;
 }
 
+function isMedicalAccessStory(title = "", summary = "") {
+  const text = normalize(`${title} ${summary}`);
+  return /\b(mamma|madre|papa|padre|pazient|bambin|figli|malat)\w*/.test(text)
+    && /\b(tumor|cancro|farmac|terapi|cure|malatti)\w*/.test(text)
+    && (/\b(curarsi gratuitamente|cure gratuite|avra il farmaco|ottiene le cure|potra curarsi)\b/.test(text)
+      || /\braccolta fondi\b.*\b(dona|doner|donat|raggiunt|superat)\w*/.test(text));
+}
+
 function isPositiveHumanStory(title = "", summary = "") {
   const text = normalize(`${title} ${summary}`);
   const humanSubject = /\b(person|bimb|bambin|ragazz|giovane|uomo|donna|anzian|figli|figlia|madre|padre|famiglia|escursionist|automobilist|pazient|clochard|senza dimora)\w*/.test(text);
@@ -182,7 +212,7 @@ function isPositiveHumanStory(title = "", summary = "") {
   const sharedService = /\b(poliziott|polizi|carabinier|vigili del fuoco|infermier|medic|sanitari)\w*/.test(text)
     && /\b(insieme|fianco a fianco|stesso turno|ultimo turno|passaggio di testimone|cambio della guardia)\b/.test(text);
   const fatal = /\b(mort|muor|decedut|cadavere|uccis|omicid|strage|si suicida|si toglie la vita)\w*/.test(text);
-  return (((humanSubject || animalSubject) && positiveOutcome) || solidarity || (familyPair && sharedService) || isAnimalAssistedRescue(title)) && !fatal;
+  return (((humanSubject || animalSubject) && positiveOutcome) || solidarity || (familyPair && sharedService) || isAnimalAssistedRescue(title) || isMedicalAccessStory(title, summary)) && !fatal;
 }
 
 const STOPWORDS = new Set(
@@ -274,6 +304,7 @@ function parseGoogle(xml, category) {
 
       if (!title || !pubDate || !link || isBlockedSource(source)) return null;
       if (category === "Storie umane" && !isPositiveHumanStory(title, summary)) return null;
+      if (category === "Immigrazione" && !isLocalReceptionStory({ title, summary })) return null;
 
       return {
         title,
@@ -393,6 +424,13 @@ function articleText(article) {
   return normalize(`${article?.title || ""} ${article?.summary || ""}`);
 }
 
+function isLocalReceptionStory(article) {
+  const text = articleText(article);
+  return /\b(migrant|profugh|richiedent asil)\w*/.test(text)
+    && /\b(casa|abitazion|alloggi|appartament|accoglienz)\w*/.test(text)
+    && /\b(comun[ei]|sindac|provinc|region)\w*/.test(text);
+}
+
 function isCrimeImmigrationFocus(article) {
   const text = articleText(article);
 
@@ -446,8 +484,13 @@ function applyFocusClassification(article) {
     sources: Array.isArray(article.sources) ? [...article.sources] : []
   };
 
-  if (isAnimalAssistedRescue(copy.title) && isPositiveHumanStory(copy.title, copy.summary)) {
+  if ((isAnimalAssistedRescue(copy.title) || isMedicalAccessStory(copy.title, copy.summary))
+    && isPositiveHumanStory(copy.title, copy.summary)) {
     addCategory(copy, "Storie umane");
+  }
+
+  if (isLocalReceptionStory(copy)) {
+    addCategory(copy, "Immigrazione");
   }
 
   if (isCrimeImmigrationFocus(copy)) {
@@ -464,7 +507,7 @@ function applyFocusClassification(article) {
   return copy;
 }
 
-function selectFocusNews(items) {
+function selectFocusNews(items, reportedLinks = new Set()) {
   const now = Date.now();
   const ordered = [...items]
     .filter(article => isUsableLiveArticle(article, now))
@@ -477,6 +520,9 @@ function selectFocusNews(items) {
     selected.push(article);
     selectedKeys.add(key);
   };
+
+  ordered.filter(article => reportedLinks.has(article.originalURL || article.link)).forEach(keep);
+  ordered.filter(isLocalReceptionStory).slice(0, 6).forEach(keep);
 
   for (const [category, minimum] of [["Storie umane", 8], ["Crimini & immigrazione", 12]]) {
     ordered
@@ -499,6 +545,75 @@ function selectFocusNews(items) {
   return selected.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
 
+function articleMetadata(html) {
+  const metadata = new Map();
+  for (const [tag] of html.matchAll(/<meta\b[^>]*>/gi)) {
+    const attributes = Object.fromEntries([...tag.matchAll(/([\w:-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g)]
+      .map(([, key, double, single]) => [key.toLowerCase(), double ?? single]));
+    const key = attributes.property || attributes.name || attributes.itemprop;
+    if (key && attributes.content && !metadata.has(key)) metadata.set(key, attributes.content);
+  }
+  return metadata;
+}
+
+async function fetchReportedArticle(report) {
+  try {
+    const response = await fetch(report.link, {
+      headers: { "User-Agent": "AgostinoDashboard/1.0", Accept: "text/html" },
+      signal: AbortSignal.timeout(9000)
+    });
+    if (!response.ok || new URL(response.url).hostname !== new URL(report.link).hostname) {
+      throw new Error("Pagina non disponibile: " + response.status);
+    }
+    const html = await response.text();
+    const meta = articleMetadata(html);
+    const title = cleanText(meta.get("og:title") || meta.get("twitter:title") || html.match(/<title>([^<]+)<\/title>/i)?.[1]);
+    const published = meta.get("article:published_time") || meta.get("datePublished")
+      || html.match(/"datePublished"\s*:\s*"([^"]+)"/i)?.[1];
+    const pubDate = new Date(published);
+    if (!title || !Number.isFinite(pubDate.getTime())) throw new Error("Titolo o data di pubblicazione mancanti");
+    const publishedAt = pubDate.toISOString();
+    return {
+      title,
+      summary: cleanText(meta.get("og:description") || meta.get("description") || ""),
+      source: report.source,
+      link: report.link,
+      originalURL: report.link,
+      pubDate: publishedAt,
+      originalPubDate: publishedAt,
+      dateSource: "original",
+      category: report.category,
+      categories: [report.category],
+      image: extractArticlePhoto(html, response.url) || "",
+      isVideo: false,
+      sources: [{ source: report.source, link: report.link, originalURL: report.link, pubDate: publishedAt }]
+    };
+  } catch (error) {
+    console.warn("Articolo segnalato non recuperato:", report.link, error.message);
+    return null;
+  }
+}
+
+function includeReportedArticle(news, report) {
+  const index = news.findIndex(article =>
+    article.link === report.link || article.originalURL === report.link
+    || article.sources?.some(source => (source.originalURL || source.link) === report.link)
+    || normalize(article.title) === normalize(report.title)
+  );
+  const previous = index >= 0 ? news[index] : null;
+  const article = {
+    ...report,
+    id: previous?.id || report.link,
+    categories: [...new Set([report.category, ...categoriesOf(previous || {})])],
+    sources: [...report.sources]
+  };
+  for (const source of previous?.sources || []) {
+    if (normalize(source.source) !== normalize(report.source)) addSource(article, source);
+  }
+  if (index >= 0) news[index] = article;
+  else news.push(article);
+}
+
 async function main() {
   const raw = await fs.readFile(OUT, "utf8");
   const payload = JSON.parse(raw);
@@ -507,6 +622,9 @@ async function main() {
     throw new Error("news.json non valido");
   }
 
+  const reportedPromise = Promise.all(REPORTED_ARTICLES
+    .filter(article => Date.now() < Date.parse(article.expiresAt))
+    .map(fetchReportedArticle));
   const results = [];
 
   for (let i = 0; i < FOCUS_QUERIES.length; i++) {
@@ -556,9 +674,14 @@ async function main() {
     added++;
   }
 
+  const reported = (await reportedPromise).filter(article => article && isUsableLiveArticle(article));
+  for (const article of reported) includeReportedArticle(news, article);
+  console.log(`Articoli segnalati recuperati: ${reported.length}`);
+
   // Secondo passaggio: classifica anche le news nuove dopo il merge.
   const finalNews = selectFocusNews(
-    news.map(applyFocusClassification)
+    news.map(applyFocusClassification),
+    new Set(reported.map(article => article.link))
   )
     .map(article => ({
       ...article,
