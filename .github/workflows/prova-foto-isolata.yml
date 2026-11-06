@@ -1,13 +1,13 @@
 name: Prova isolata foto e loghi
 on:
   pull_request:
-    paths: ['scripts/enrich-article-images.mjs', '.github/workflows/prova-foto-isolata.yml']
+    paths: ['scripts/enrich-article-images.mjs','scripts/generate-news.mjs','.github/workflows/prova-foto-isolata.yml']
 permissions:
   contents: read
 jobs:
   inspect:
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 6
     steps:
       - uses: actions/checkout@v4
         with:
@@ -15,17 +15,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Prova recupero foto
-        env:
-          IMAGE_DEBUG: '1'
+      - name: Prova feed senza pubblicarlo
         run: |
+          cp news.json .previous-news.json
+          node scripts/generate-news.mjs
+          node scripts/add-video-news.mjs
+          node scripts/enrich-focus-news.mjs
+          node scripts/enrich-article-images.mjs
           node --input-type=module <<'JS'
           import fs from 'node:fs';
-          import {enrichArticle} from './scripts/enrich-article-images.mjs';
           const j=JSON.parse(fs.readFileSync('news.json','utf8'));
-          const targets=['ANSA','il manifesto','Sky TG24','RomaToday','Il Messaggero','Tgcom24'];
-          for(const source of targets){
-            const a=j.news.find(x=>x.source===source&&!x.image);
-            if(a){const out=await enrichArticle(a);console.log('CHECK',JSON.stringify({source:a.source,title:a.title,image:out.image||'',logo:out.logoUrl||''}));}
-          }
+          const missing=j.news.filter(a=>!a.image&&!a.logoUrl);
+          const withHomepage=j.news.filter(a=>a.sources?.some(s=>s.sourceHomepage)).length;
+          console.log('RISULTATI',JSON.stringify({total:j.news.length,homepage:withHomepage,...j.imageEnrichment,missing:missing.slice(0,20).map(a=>({source:a.source,title:a.title}))}));
           JS
