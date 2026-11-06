@@ -91,7 +91,11 @@ async function inspect(article) {
         page = await getHtml(url);
       }
       const image = extractMetaImage(page.html, page.response.url);
-      if (!image || image === page.response.url) throw new Error('no article image metadata');
+      if (!image || image === page.response.url) {
+        result.pageHost = new URL(page.response.url).hostname;
+        result.imageTags = [...page.html.matchAll(/<img\b[^>]*>/gi)].slice(0, 8).map(m => m[0].slice(0, 450));
+        throw new Error('no article image metadata');
+      }
       result.image = image;
       result.status = candidate === candidates[0] ? 'image metadata' : 'alternate source metadata';
       break;
@@ -101,7 +105,7 @@ async function inspect(article) {
 }
 
 const feed = JSON.parse(await fs.readFile('news.json', 'utf8'));
-const items = feed.news.filter(a => !a.image);
+const items = feed.news.filter(a => !a.image && ['Opinione Agenzia Giornalistica', 'AGI'].includes(a.source)).slice(0, 12);
 const results = new Array(items.length);
 let position = 0;
 async function worker() {
