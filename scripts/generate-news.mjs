@@ -1,5 +1,5 @@
 import fs from "node:fs/promises";
-import { selectEditorialNews } from "./editorial-selection.mjs";
+import { LEGA_MINISTER_QUERIES, matchesLegaNews, selectEditorialNews } from "./editorial-selection.mjs";
 import { sanitizeFeedArticle } from "../source-policy.mjs";
 import { extractFeedImage } from "../feed-images.mjs";
 
@@ -34,6 +34,7 @@ const QUERIES = [
   ["Lega", '"Matteo Salvini" when:1h'],
   ["Lega", '"Matteo Salvini" when:1d'],
   ["Lega", '"Lega" politica when:2d -calcio -serie'],
+  ...LEGA_MINISTER_QUERIES,
 
   ["Immigrazione", "immigrazione migranti Italia when:1h"],
   ["Immigrazione", "immigrazione migranti sbarchi ONG rimpatri Italia when:1d"],
@@ -1356,14 +1357,7 @@ function finalClassify(article) {
       }
     };
 
-  const hasLega =
-    /\bsalvini\b/.test(text)
-    ||
-    (
-      /\blega\b/.test(text)
-      &&
-      /\b(partit|politic|fontana|zaia|fedriga|giorgetti|calderoli|molinar|romeo|borghi|rinaldi|vannacci)\w*/.test(text)
-    );
+  const hasLega = matchesLegaNews(article);
 
   const immigration =
     /\b(immigrat|migrant|stranier|irregolar|clandestin|extracomunitar|richiedent asil|profugh|sbarch|sbarco|rimpatr|cpr|accoglienz|lampedusa|ong|hotspot|barcone)\w*/.test(text);
