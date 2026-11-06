@@ -1,5 +1,5 @@
 import fs from "node:fs/promises";
-import { selectEditorialNews } from "./editorial-selection.mjs";
+import { matchesLegaNews, selectEditorialNews } from "./editorial-selection.mjs";
 import { extractArticlePhoto } from "./enrich-article-images.mjs";
 
 const OUT = "news.json";
@@ -491,6 +491,10 @@ function applyFocusClassification(article) {
   if ((isAnimalAssistedRescue(copy.title) || isMedicalAccessStory(copy.title, copy.summary))
     && isPositiveHumanStory(copy.title, copy.summary)) {
     addCategory(copy, "Storie umane");
+  }
+
+  if (matchesLegaNews(copy)) {
+    addCategory(copy, "Lega");
   }
 
   if (isLocalReceptionStory(copy)) {
