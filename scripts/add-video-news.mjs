@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import { selectEditorialNews } from "./editorial-selection.mjs";
 
 const OUT = "news.json";
 const MAX_ITEMS = 300;
@@ -336,28 +337,7 @@ async function main() {
     added++;
   }
 
-  const sortedNews = news.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
-  const selected = [];
-  const seen = new Set();
-  const keep = article => {
-    const key = `${normalize(article.title || "")}|${article.pubDate || ""}`;
-    if (selected.length < MAX_ITEMS && !seen.has(key)) {
-      selected.push(article);
-      seen.add(key);
-    }
-  };
-  for (const day of [...new Set(sortedNews
-    .filter(article => article.source === "il manifesto")
-    .map(article => new Date(article.pubDate).toISOString().slice(0, 10)))]) {
-    sortedNews
-      .filter(article => article.source === "il manifesto"
-        && new Date(article.pubDate).toISOString().startsWith(day))
-      .slice(0, 25)
-      .forEach(keep);
-  }
-  sortedNews.forEach(keep);
-  const finalNews = selected
-    .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
+  const finalNews = selectEditorialNews(news, { limit: MAX_ITEMS })
     .map(article => ({
       ...article,
       sourceCount: article.sources?.length || article.sourceCount || 1
