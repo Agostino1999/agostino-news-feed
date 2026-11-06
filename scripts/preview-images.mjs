@@ -80,19 +80,23 @@ function extractMetaImage(html, pageUrl) {
 
 async function inspect(article) {
   const result = { title: article.title, source: article.source, image: '', status: '' };
-  try {
-    let url = safeUrl(article.originalURL || article.link);
-    if (!url) throw new Error('invalid URL');
-    let page = await getHtml(url);
-    if (new URL(page.response.url).hostname === 'news.google.com') {
-      url = await resolveGoogle(article, page.html);
-      page = await getHtml(url);
-    }
-    const image = extractMetaImage(page.html, page.response.url);
-    if (!image || image === page.response.url) throw new Error('no article image metadata');
-    result.image = image;
-    result.status = 'image metadata';
-  } catch (e) { result.status = String(e.message || e).slice(0, 100); }
+  const candidates = [...new Set([article.originalURL || article.link, ...(article.sources || []).map(source => source.originalURL || source.link)].filter(Boolean))];
+  for (const candidate of candidates) {
+    try {
+      let url = safeUrl(candidate);
+      if (!url) throw new Error('invalid URL');
+      let page = await getHtml(url);
+      if (new URL(page.response.url).hostname === 'news.google.com') {
+        url = await resolveGoogle(article, page.html);
+        page = await getHtml(url);
+      }
+      const image = extractMetaImage(page.html, page.response.url);
+      if (!image || image === page.response.url) throw new Error('no article image metadata');
+      result.image = image;
+      result.status = candidate === candidates[0] ? 'image metadata' : 'alternate source metadata';
+      break;
+    } catch (e) { result.status = String(e.message || e).slice(0, 100); }
+  }
   return result;
 }
 
