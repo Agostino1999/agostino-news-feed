@@ -15,6 +15,29 @@ const MUSIC_OR_ART = /\b(concert[oi]|orchestr[ae]|discografic|nuovo live|album|j
 const LEISURE = /\b(sagr[ae]|mercatini|slow food|osterie d italia|tuttomele|roma chocolate|grande fratello vip|fratelli di crozza|aperitivo con delitto|assaggi gratuiti|laboratori per bambini|racing show|calendario storico|tour gastronomico|shopping|migliori quote|pronostici scommesse|ricetta del giorno)\w*/;
 const DIGEST = /^(accadeoggi|accade oggi|tg news|video tg5|ultime notizie|le notizie del giorno)\b|\b(prima pagina.*(?:edicola oggi|rassegna stampa|scarica gratis pdf)|titel.?seite zeitung|rassegna stampa in edicola oggi)\b/;
 
+// Ministri indicati da https://legaonline.it/governo/ (verifica: 7 novembre 2026).
+export const LEGA_MINISTER_QUERIES = [
+  ["Lega", 'Giorgetti when:2d'],
+  ["Lega", 'Calderoli when:2d'],
+  ["Lega", 'Valditara when:2d'],
+  ["Lega", '("Alessandra Locatelli" OR "ministro Locatelli" OR "Locatelli disabilità") when:2d']
+];
+
+const LEGA_MINISTER_SURNAME = /\b(salvini|giorgetti|calderoli|valditara)\b/;
+const LEGA_MINISTER_NAME = /\b(matteo salvini|giancarlo giorgetti|roberto calderoli|giuseppe valditara|alessandra locatelli|ministr[ao] locatelli)\b/;
+const LOCATELLI_PORTFOLIO = /\b(disabilit|accessibilit|inclusion|caregiver|progetto di vita|non autosufficien)\w*/;
+const PARTY_CONTEXT = /\b(partit[oi]|politic|carroccio|consiglio federal|congress|elezion|coalizion|salvini|fontana|zaia|fedriga|giorgetti|calderoli|molinar|romeo|borghi|rinaldi|vannacci|gruppo parlamentare)\w*/;
+const SPORTS_LEAGUE = /\blega (?:serie [a-d]|pro|calcio|pallavolo|basket|dilettant|nazionale dilettanti)\b/;
+
+export function matchesLegaNews({ title = "", summary = "" }) {
+  const headline = normalize(title);
+  const text = headline + " " + normalize(summary);
+  if (LEGA_MINISTER_SURNAME.test(headline) || LEGA_MINISTER_NAME.test(text)) return true;
+  if (/\blocatelli\b/.test(headline) && LOCATELLI_PORTFOLIO.test(text) && !/\bmanuel locatelli\b/.test(text)) return true;
+  if (/\b(lega nord|lega per salvini premier|lega salvini premier|leghist[aeio])\b/.test(text)) return true;
+  return /\blega\b/.test(text) && PARTY_CONTEXT.test(text) && !SPORTS_LEAGUE.test(headline);
+}
+
 function editorialRank(article) {
   const title = normalize(article.title);
   const summary = normalize(article.summary);
@@ -22,14 +45,15 @@ function editorialRank(article) {
   const categories = article.categories || [article.category];
 
   // A mention of Gaza or a politician inside a review does not make it news about that subject.
-  if (DIGEST.test(title)) return -1;
+  if (DIGEST.test(title) || /\bfratelli di crozza\b/.test(title)) return -1;
   if ((MUSIC_OR_ART.test(title) || LEISURE.test(title) || MUSIC_OR_ART.test(summary)) && !PUBLIC_ACTION.test(title)) return -1;
 
+  if (matchesLegaNews(article)) return 4;
   if ((PEOPLE.test(text) && HELP_OR_ACCESS.test(text))
     || (PUBLIC_HOUSING.test(text) && PUBLIC_BODY.test(text))) return 3;
   if (PUBLIC_ACTION.test(title)
     || (PUBLIC_BODY.test(title) && /\b(nomin|incaric|ritir|rinunci|approv|tassar|pension|tregua|dichiarazion|diritt)\w*/.test(title))
-    || /\b(salvini|meloni|giorgetti|calderoli|orban|vannacci|lega|palazzo chigi|ponte sullo stretto|codice della strada|anac)\b/.test(title)) return 2;
+    || /\b(meloni|orban|vannacci|palazzo chigi|ponte sullo stretto|codice della strada|anac)\b/.test(title)) return 2;
   if (categories.some(category => ["Storie umane", "Immigrazione", "Crimini & immigrazione", "Lega", "Governo", "Europa", "Esteri", "Trasporti", "Juventus", "Calciomercato", "Sport"].includes(category))
     || (PUBLIC_BODY.test(text) && PUBLIC_ACTION.test(text))
     || /\b(juventus|juve|serie a|coppa davis|champions league|formula 1|motogp)\b/.test(title)) return 1;
