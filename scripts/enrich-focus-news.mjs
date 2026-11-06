@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import { selectEditorialNews } from "./editorial-selection.mjs";
 import { extractArticlePhoto } from "./enrich-article-images.mjs";
 
 const OUT = "news.json";
@@ -75,9 +76,12 @@ const FOCUS_QUERIES = [
 
   // ACCOGLIENZA LOCALE / ALLOGGI PUBBLICI
   ["Immigrazione", '(migranti OR profughi OR "richiedenti asilo") (casa OR alloggio OR alloggi OR accoglienza) (comune OR sindaco OR provincia) when:3d'],
+  ["Immigrazione", '("alloggio offerto" OR "rifiuta la casa" OR "progetto di accoglienza" OR "accoglienza diffusa") (migranti OR profughi OR "richiedenti asilo") when:4d'],
 
   // STORIE UMANE — esiti positivi e accesso alle cure
   ["Storie umane", '("curarsi gratuitamente" OR "cure gratuite" OR "raccolta fondi" OR "accesso alle cure") (mamma OR padre OR bambino OR paziente) when:4d'],
+  ["Storie umane", '("farmaco salvavita" OR "terapia negata" OR "cure negate" OR "curarsi gratis") (paziente OR famiglia OR mamma OR bambino) when:4d'],
+  ["Storie umane", '("la comunità si mobilita" OR "raccolta fondi" OR "dona i soldi raccolti") (famiglia OR malattia OR bambino OR madre OR paziente) when:4d'],
   ["Storie umane", '("salvato" OR "salvata" OR "fuori pericolo" OR "salva la vita") (site:ansa.it OR site:repubblica.it OR site:corriere.it OR site:adnkronos.com OR site:agi.it OR site:ilgiornale.it OR site:quotidiano.net) when:4d'],
   ["Storie umane", '(cane OR gatto OR delfino OR bambino) (salvato OR adottato OR liberato OR guarito) (site:ansa.it OR site:repubblica.it OR site:corriere.it OR site:quotidiano.net) when:5d'],
   ["Storie umane", '("salvato" OR "salvata" OR "soccorso" OR "ritrovato") (site:napolitoday.it OR site:romatoday.it OR site:milanotoday.it OR site:salernotoday.it OR site:trentotoday.it) when:5d'],
@@ -507,44 +511,6 @@ function applyFocusClassification(article) {
   return copy;
 }
 
-function selectFocusNews(items, reportedLinks = new Set()) {
-  const now = Date.now();
-  const ordered = [...items]
-    .filter(article => isUsableLiveArticle(article, now))
-    .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
-  const selected = [];
-  const selectedKeys = new Set();
-  const keep = article => {
-    const key = `${normalize(article?.title || "")}|${article?.pubDate || ""}`;
-    if (selected.length >= MAX_ITEMS || selectedKeys.has(key)) return;
-    selected.push(article);
-    selectedKeys.add(key);
-  };
-
-  ordered.filter(article => reportedLinks.has(article.originalURL || article.link)).forEach(keep);
-  ordered.filter(isLocalReceptionStory).slice(0, 6).forEach(keep);
-
-  for (const [category, minimum] of [["Storie umane", 8], ["Crimini & immigrazione", 12]]) {
-    ordered
-      .filter(article => categoriesOf(article).includes(category))
-      .slice(0, minimum)
-      .forEach(keep);
-  }
-
-  for (const day of [...new Set(ordered
-    .filter(article => article.source === "il manifesto")
-    .map(article => new Date(article.pubDate).toISOString().slice(0, 10)))]) {
-    ordered
-      .filter(article => article.source === "il manifesto"
-        && new Date(article.pubDate).toISOString().startsWith(day))
-      .slice(0, 25)
-      .forEach(keep);
-  }
-
-  ordered.forEach(keep);
-  return selected.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
-}
-
 function articleMetadata(html) {
   const metadata = new Map();
   for (const [tag] of html.matchAll(/<meta\b[^>]*>/gi)) {
@@ -679,9 +645,9 @@ async function main() {
   console.log(`Articoli segnalati recuperati: ${reported.length}`);
 
   // Secondo passaggio: classifica anche le news nuove dopo il merge.
-  const finalNews = selectFocusNews(
-    news.map(applyFocusClassification),
-    new Set(reported.map(article => article.link))
+  const finalNews = selectEditorialNews(
+    news.map(applyFocusClassification).filter(article => isUsableLiveArticle(article)),
+    { limit: MAX_ITEMS, reportedLinks: new Set(reported.map(article => article.link)) }
   )
     .map(article => ({
       ...article,

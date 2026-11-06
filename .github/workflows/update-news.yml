@@ -12,6 +12,7 @@ on:
       - "scripts/enrich-article-images.mjs"
       - "scripts/add-video-news.mjs"
       - "scripts/enrich-focus-news.mjs"
+      - "scripts/editorial-selection.mjs"
       - "source-policy.mjs"
       - "feed-images.mjs"
       - ".github/workflows/update-news.yml"
