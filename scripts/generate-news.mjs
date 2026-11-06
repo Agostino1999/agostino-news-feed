@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import { selectEditorialNews } from "./editorial-selection.mjs";
 import { sanitizeFeedArticle } from "../source-policy.mjs";
 import { extractFeedImage } from "../feed-images.mjs";
 
@@ -114,12 +115,12 @@ const DIRECT_FEEDS = [
   },
   {
     source: "il manifesto",
-    category: "Politica",
+    category: "Cronaca",
     url: "https://ilmanifesto.it/feed/"
   },
   {
     source: "il manifesto",
-    category: "Politica",
+    category: "Cronaca",
     url: "https://ilmanifesto.it/feed/?paged=2"
   }
 ];
@@ -1583,55 +1584,6 @@ async function readPrevious() {
   }
 }
 
-function selectBalancedNews(items) {
-  const ordered = [...items].sort(
-    (a, b) => new Date(b.pubDate) - new Date(a.pubDate)
-  );
-  const selected = [];
-  const selectedKeys = new Set();
-  const keep = (article) => {
-    const key = `${normalize(article.title || "")}|${article.pubDate || ""}`;
-    if (selected.length >= MAX_ITEMS || selectedKeys.has(key)) return;
-    selected.push(article);
-    selectedKeys.add(key);
-  };
-  const now = Date.now();
-
-  for (const [category, minimum, maxAge] of [
-    ["Storie umane", 8, 5 * 86400000],
-    ["Crimini & immigrazione", 10, 4 * 86400000]
-  ]) {
-    ordered
-      .filter((article) => {
-        const age = now - new Date(article.pubDate).getTime();
-        return (article.categories || []).includes(category)
-          && Number.isFinite(age)
-          && age >= 0
-          && age <= maxAge;
-      })
-      .slice(0, minimum)
-      .forEach(keep);
-  }
-
-  // Keep a small daily sample from the second page of the manifesto RSS.
-  // Otherwise yesterday's political stories disappear behind today's 300-item cap.
-  for (const day of [...new Set(ordered
-    .filter(article => article.source === "il manifesto")
-    .map(article => new Date(article.pubDate).toISOString().slice(0, 10)))]) {
-    ordered
-      .filter(article => article.source === "il manifesto"
-        && new Date(article.pubDate).toISOString().startsWith(day)
-        && now - new Date(article.pubDate).getTime() <= 72 * 3600000)
-      .slice(0, 25)
-      .forEach(keep);
-  }
-
-  ordered.forEach(keep);
-  return selected.sort(
-    (a, b) => new Date(b.pubDate) - new Date(a.pubDate)
-  );
-}
-
 async function main() {
   console.log(
     `Starting ${VERSION}`
@@ -1778,7 +1730,7 @@ async function main() {
       );
 
   const news =
-    selectBalancedNews(classifiedNews)
+    selectEditorialNews(classifiedNews, { limit: MAX_ITEMS })
       .map(
         (
           article,
@@ -1808,10 +1760,10 @@ async function main() {
       `Keeping previous good feed (${previous.news.length}).`
     );
 
-    const previousNews = previous.news
-      .map(sanitizeFeedArticle)
-      .filter(Boolean)
-      .slice(0, MAX_ITEMS);
+    const previousNews = selectEditorialNews(
+      previous.news.map(sanitizeFeedArticle).filter(Boolean),
+      { limit: MAX_ITEMS }
+    );
 
     const payload = {
       ...previous,
