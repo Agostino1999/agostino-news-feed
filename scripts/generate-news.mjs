@@ -1332,6 +1332,18 @@ function moveCategoryFirst(categories, category) {
   categories.unshift(category);
 }
 
+function hasImmigrationContext(text) {
+  // Require a migration topic: "irregolarità", hospital reception and
+  // employment integration are unrelated even when a feed labels them otherwise.
+  const people = /\b(immigra\w*|migranti?|extracomunitari[oaie]?|profugh\w*|rifugiat\w*|richiedent\w* asil\w*)\b/.test(text);
+  const policy = /\b(sbarch\w*|sbarco|rimpatr\w*|cpr|lampedusa|barcon[ei]|ius soli|ius scholae|ius sanguinis|permess[oi] di soggiorno|asilo politic[oa]|protezione internazionale|decreto flussi|flussi migratori|centr[oi] di (?:accoglienza|permanenza|trattenimento)|centr[oi] per (?:il rimpatrio|i rimpatri))\b/.test(text);
+  const foreignPeople = /\b(stranier[oaie]|extracomunitari[oaie]?|immigrat[oaie]|migrant[ei]|richiedent[ei] asilo|profugh[ioa]|rifugiat[oaie]|\d+enn[ei])\b/.test(text);
+  const status = foreignPeople && /\b(irregolar[ei]|clandestin[oaie]|espuls[oaie]|espulsion[ei]|deportazion[ei])\b/.test(text);
+  const integration = /\b(second[ae] generazion[ei]|genitori stranieri|cittadinanza italiana|riforma (?:della )?cittadinanza|referendum (?:sulla )?cittadinanza)\b/.test(text);
+  const seaRescue = /\b(ong|hotspot)\b/.test(text) && /\b(migranti?|sbarch\w*|soccors\w*|mediterraneo|lampedusa)\b/.test(text);
+  return people || policy || status || integration || seaRescue;
+}
+
 function finalClassify(article) {
   const text =
     normalize(
@@ -1359,8 +1371,7 @@ function finalClassify(article) {
 
   const hasLega = matchesLegaNews(article);
 
-  const immigration =
-    /\b(immigrat|migrant|stranier|irregolar|clandestin|extracomunitar|richiedent asil|profugh|sbarch|sbarco|rimpatr|cpr|accoglienz|lampedusa|ong|hotspot|barcone)\w*/.test(text);
+  const immigration = hasImmigrationContext(normalize(article.title || ""));
 
   const crime =
     /\b(arrest|rapin|aggress|omicid|tentato omicidio|furto|violenz|stupro|stupr|molest|accoltell|coltell|pugni|picchi|rissa|spaccio|droga|evas|fuga|poliziott|carabinier|agente|denunciat|fermato|minacc|sequestr|scipp|borseggi)\w*/.test(text);
