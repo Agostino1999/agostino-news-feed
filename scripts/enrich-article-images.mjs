@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { normalizeNewsFreshness } from '../news-freshness.mjs';
 import dns from 'node:dns';
 import http from 'node:http';
 import https from 'node:https';
@@ -105,32 +106,72 @@ function favicon(value) {
   return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&sz=128`;
 }
 
-export async function enrichArticle(article) {
+export function extractArticlePublication(html, now = Date.now()) {
+  const candidates=[];
+  for(const tag of html.match(/<meta\b[^>]*>/gi)||[]){
+    const name=(attribute(tag,'property')||attribute(tag,'name')||attribute(tag,'itemprop')).toLowerCase();
+    if(['article:published_time','datepublished','pubdate','publishdate','parsely-pub-date'].includes(name)) candidates.push(attribute(tag,'content'));
+  }
+  for(const tag of html.match(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi)||[]){
+    try {
+      const parsed=JSON.parse(tag.replace(/^[\s\S]*?>/,'').replace(/<\/script>$/i,''));
+      const nodes=Array.isArray(parsed)?parsed:[parsed,...(parsed['@graph']||[])];
+      for(const node of nodes){
+        const types=[node?.['@type']].flat();
+        if(types.some(type=>/^(?:NewsArticle|Article|BlogPosting|ReportageNewsArticle|LiveBlogPosting)$/.test(type))) candidates.push(node.datePublished);
+      }
+    }catch{}
+  }
+  // Modification dates are deliberately excluded: edits do not republish a story.
+  for(const value of candidates){
+    if(typeof value!=='string'||!/(?:Z|[+-]\d{2}:?\d{2})$/i.test(value))continue;
+    const time=Date.parse(value);
+    if(Number.isFinite(time)&&time>0&&time<=now+10*60000)return new Date(time).toISOString();
+  }
+  return '';
+}
+
+function applyPublication(article,pubDate,pageUrl){
+  const primaryLink=article.originalURL||article.link;
+  return {...article,pubDate,originalPubDate:pubDate,dateSource:'original',originalURL:pageUrl,
+    publicationVerifiedKey:article.publicationVerifiedKey||primaryLink,
+    sources:(article.sources||[]).map(source=>source.source===article.source||source.link===primaryLink
+      ? {...source,pubDate,originalPubDate:pubDate,dateSource:'original',originalURL:pageUrl}:source)};
+}
+
+export async function enrichArticle(article, {loadPage=fetchPage}={}) {
   const sources=Array.isArray(article.sources)?article.sources:[];
   const candidates=[article.originalURL||article.link].filter(Boolean);
   const homepage=sources.find(s=>s.source===article.source)?.sourceHomepage || article.sourceHomepage || '';
-  let logo=article.logoUrl||favicon(homepage)||favicon(candidates[0]);
-  if(article.image) return {...article,logoUrl:logo};
+  let result={...article,logoUrl:article.logoUrl||favicon(homepage)||favicon(candidates[0])};
+  if(article.image && article.dateSource==='original') return result;
   for(const candidate of candidates.slice(0,2)){
     try{
-      let page=await fetchPage(candidate);
+      let page=await loadPage(candidate);
       if(new URL(page.url).hostname==='news.google.com'){
         const original=await resolveGoogle(page.html);
-        logo=logo||favicon(original);
-        page=await fetchPage(original);
+        result.logoUrl=result.logoUrl||favicon(original);
+        page=await loadPage(original);
       }
-      const image=extractArticlePhoto(page.html,page.url);
-      if(image)return {...article,image,imageVerifiedKey:article.originalURL||article.link,logoUrl:logo||favicon(page.url)};
+      const pubDate=extractArticlePublication(page.html);
+      if(pubDate)result=applyPublication(result,pubDate,page.url);
+      const image=article.image||extractArticlePhoto(page.html,page.url);
+      result={...result,image,imageVerifiedKey:result.originalURL||result.link,logoUrl:result.logoUrl||favicon(page.url)};
+      return result;
     }catch{}
   }
-  return {...article,logoUrl:logo};
+  return result;
 }
 
 export async function enrichFeed(feed,previous,{deadlineMs=45000,concurrency=6}={}) {
-  const cache=new Map((previous?.news||[]).map(a=>[a.originalURL||a.link,a]));
+  const cache=new Map();
+  for(const article of previous?.news||[]) for(const key of [article.link,article.originalURL,article.publicationVerifiedKey].filter(Boolean)) cache.set(key,article);
   const deadline=Date.now()+deadlineMs;
   const output=feed.news.map(a=>{
-    const old=cache.get(a.originalURL||a.link);
+    const old=cache.get(a.originalURL||a.link)||cache.get(a.link);
+    if(old?.dateSource==='original' && old.originalPubDate && old.publicationVerifiedKey){
+      a=applyPublication({...a,publicationVerifiedKey:old.publicationVerifiedKey},old.originalPubDate,old.originalURL);
+    }
     const homepage=a.sources?.find(s=>s.source===a.source)?.sourceHomepage||a.sourceHomepage||'';
     const key=a.originalURL||a.link;
     const cachedImage=old?.imageVerifiedKey===key?old.image:'';
@@ -139,8 +180,9 @@ export async function enrichFeed(feed,previous,{deadlineMs=45000,concurrency=6}=
   let index=0;
   async function run(){while(index<output.length && Date.now()<deadline){const i=index++;output[i]=await enrichArticle(output[i]);}}
   await Promise.all(Array.from({length:concurrency},run));
+  const news=output.map(article=>normalizeNewsFreshness(article)).filter(Boolean).sort((a,b)=>Date.parse(b.pubDate)-Date.parse(a.pubDate));
   const imageEnrichment={updatedAt:new Date().toISOString(),photos:output.filter(a=>a.image).length,logos:output.filter(a=>!a.image&&a.logoUrl).length,remaining:output.filter(a=>!a.image&&!a.logoUrl).length};
-  return {...feed,news:output,imageEnrichment};
+  return {...feed,news,total:news.length,imageEnrichment,freshnessVersion:'event-date-v1',freshnessEnrichment:{verifiedDates:news.filter(a=>a.dateSource==='original').length,excluded:output.length-news.length}};
 }
 
 if (process.argv[1] && new URL(import.meta.url).pathname===process.argv[1]) {
@@ -150,3 +192,4 @@ if (process.argv[1] && new URL(import.meta.url).pathname===process.argv[1]) {
   await fs.writeFile('news.json',JSON.stringify(enriched,null,2)+'\n');
   console.log(JSON.stringify(enriched.imageEnrichment));
 }
+

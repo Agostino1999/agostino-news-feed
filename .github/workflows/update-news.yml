@@ -13,6 +13,8 @@ on:
       - "scripts/add-video-news.mjs"
       - "scripts/enrich-focus-news.mjs"
       - "scripts/editorial-selection.mjs"
+      - "news-freshness.mjs"
+      - "test-news-freshness.mjs"
       - "source-policy.mjs"
       - "feed-images.mjs"
       - ".github/workflows/update-news.yml"
@@ -39,6 +41,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+
+      - name: Verify publication dates and expired announcements
+        run: node --test test-news-freshness.mjs
 
       - name: Preserve previous image cache
         run: cp news.json .previous-news.json
@@ -114,3 +119,4 @@ jobs:
 
           echo "Push failed after 3 attempts"
           exit 1
+
