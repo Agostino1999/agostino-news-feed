@@ -83,6 +83,8 @@ def validate(poll, today=None):
     try:
         day=date.fromisoformat(poll['date'])
         rows=poll['results']
+        context=norm(poll['source']['url']+' '+poll.get('title',''))
+        if re.search(r'giovanil|under[- _]?\d+|tifos|year[- _]?olds',context): return False
         ids=[row['party'] for row in rows]
         values=[row['value'] for row in rows]
         return (day<=today and len(rows)>=5 and len(ids)==len(set(ids))
@@ -139,6 +141,8 @@ def parse_wikipedia(html_text,today=None):
     soup=BeautifulSoup(html_text,'html.parser'); polls=[]
     for table in soup.select('table.wikitable'):
         if 'Fieldwork date' not in table.get_text(' ',strip=True)[:700]: continue
+        heading=table.find_previous('h2')
+        if not heading or heading.get_text(' ',strip=True)!='Party vote': continue
         columns=None
         for cells in expand_rows(table):
             text=[clean_cell(c) if c else '' for c in cells]

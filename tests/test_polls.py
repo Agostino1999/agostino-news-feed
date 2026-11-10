@@ -76,8 +76,14 @@ Non si esprime 29%
         head='<tr>'+''.join('<th rowspan="2">'+x+'</th>' for x in ['Fieldwork date','Polling firm','Sample size'])+''.join('<th>'+x+'</th>' for x in ['FdI','PD','M5S','FI','Lega','AVS','Others'])+'</tr>'
         colors='<tr>'+('<th></th>'*7)+'</tr>'
         row='<tr><td data-sort-value="2026-11-09">4–9 Nov</td><td><a href="https://example.com/poll">SWG</a></td><td>1,200</td>'+''.join('<td>'+str(x)+'</td>' for x in [29,21,13,8,6,7,16])+'</tr>'
-        parsed=m.parse_wikipedia('<table class="wikitable">'+head+colors+row*5+'</table>',TODAY)
+        html='<h2>Party vote</h2><table class="wikitable">'+head+colors+row*5+'</table>'
+        html+='<h2>Hypothetical polling</h2><h4>Polling among young people</h4><table class="wikitable">'+head+colors+row*5+'</table>'
+        parsed=m.parse_wikipedia(html,TODAY)
         self.assertEqual(len(parsed),5);self.assertEqual(parsed[0]['sampleSize'],1200)
         self.assertEqual(next(r['value'] for r in parsed[0]['results'] if r['party']=='fdi'),29)
+
+    def test_rejects_age_limited_poll_even_if_totals_are_valid(self):
+        p=poll();p['source']['url']='https://example.com/sondaggio-sul-voto-giovanile/'
+        self.assertFalse(m.validate(p,TODAY))
 
 if __name__=='__main__':unittest.main()
