@@ -1,0 +1,50 @@
+name: Update political polls
+
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update-polls.py"
+      - "scripts/polls-requirements.txt"
+      - "tests/test_polls.py"
+      - ".github/workflows/update-polls.yml"
+
+permissions:
+  contents: write
+
+# Share the existing news publisher's lock to prevent concurrent feed commits.
+concurrency:
+  group: update-news-feed
+  cancel-in-progress: false
+
+jobs:
+  update-polls:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install polling readers
+        run: python -m pip install -r scripts/polls-requirements.txt
+      - name: Verify parsing and archive safeguards
+        run: python -m unittest discover -s tests -p test_polls.py -v
+      - name: Collect published polls
+        run: python scripts/update-polls.py
+      - name: Publish polling archive
+        run: |
+          if git diff --quiet -- polls.json; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add polls.json
+          git commit -m "Update national voting intention polls"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 3
+          done
+          exit 1
