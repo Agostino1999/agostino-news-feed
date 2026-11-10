@@ -1,3 +1,5 @@
+import { isAllowedSportsSource } from "../source-policy.mjs";
+
 const DAY = 86400000;
 const FALLBACK_LIMIT = 45;
 
@@ -77,11 +79,18 @@ export function selectEditorialNews(articles, { limit = 300, reportedLinks = new
   };
 
   ordered.filter(item => item.reported).forEach(keep);
-  for (const [category, minimum] of [["Storie umane", 12], ["Immigrazione", 10], ["Crimini & immigrazione", 12]]) {
-    ordered.filter(({ article, time, rank }) =>
+  for (const [category, minimum] of [["Storie umane", 12], ["Immigrazione", 10], ["Crimini & immigrazione", 12], ["Juventus", 20]]) {
+    let candidates = ordered.filter(({ article, time, rank }) =>
       rank > 0 && now - time <= 4 * DAY && time <= now + 10 * 60000
       && (article.categories || [article.category]).includes(category)
-    ).slice(0, minimum).forEach(keep);
+    );
+    if (category === "Juventus") {
+      // Preserve news that survives the dashboard's existing sports-source policy.
+      candidates = candidates.filter(({ article }) =>
+        [article, ...(Array.isArray(article.sources) ? article.sources : [])].some(isAllowedSportsSource)
+      ).sort((a, b) => b.time - a.time);
+    }
+    candidates.slice(0, minimum).forEach(keep);
   }
   ordered.filter(item => item.rank > 0).forEach(keep);
   ordered.filter(item => item.rank === 0).slice(0, FALLBACK_LIMIT).forEach(keep);

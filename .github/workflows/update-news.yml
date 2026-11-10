@@ -13,6 +13,7 @@ on:
       - "scripts/add-video-news.mjs"
       - "scripts/enrich-focus-news.mjs"
       - "scripts/editorial-selection.mjs"
+      - "tests/test-editorial-coverage.mjs"
       - "news-freshness.mjs"
       - "test-news-freshness.mjs"
       - "source-policy.mjs"
@@ -41,6 +42,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+
+      - name: Verify Juventus editorial coverage
+        run: node --test tests/test-editorial-coverage.mjs
 
       - name: Verify publication dates and expired announcements
         run: node --test test-news-freshness.mjs
