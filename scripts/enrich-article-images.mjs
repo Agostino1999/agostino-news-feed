@@ -81,6 +81,18 @@ export function extractArticlePhoto(html, pageUrl) {
       const url=publicUrl(image,pageUrl);if(url)return url;
     }
   }
+  for(const script of html.match(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi)||[]){
+    try{
+      const value=JSON.parse(script.replace(/^[\s\S]*?>/,'').replace(/<\/script>$/i,''));
+      const nodes=Array.isArray(value)?value:[value,...(value['@graph']||[])];
+      for(const node of nodes){
+        if(![node?.['@type']].flat().some(type=>/^(?:NewsArticle|Article|VideoObject|BlogPosting|ReportageNewsArticle|LiveBlogPosting)$/.test(type)))continue;
+        const candidate=[node.image,node.thumbnailUrl].flat().find(Boolean);
+        const image=publicUrl(typeof candidate==='object'?candidate.url:candidate,pageUrl);
+        if(image&&!/(?:favicon|placeholder|avatar|\/logo[._/-])/i.test(image))return image;
+      }
+    }catch{}
+  }
   return '';
 }
 
@@ -163,7 +175,7 @@ export async function enrichArticle(article, {loadPage=fetchPage}={}) {
   return result;
 }
 
-export async function enrichFeed(feed,previous,{deadlineMs=45000,concurrency=6}={}) {
+export async function enrichFeed(feed,previous,{deadlineMs=45000,concurrency=12,loadPage=fetchPage}={}) {
   const cache=new Map();
   for(const article of previous?.news||[]) for(const key of [article.link,article.originalURL,article.publicationVerifiedKey].filter(Boolean)) cache.set(key,article);
   const deadline=Date.now()+deadlineMs;
@@ -177,8 +189,17 @@ export async function enrichFeed(feed,previous,{deadlineMs=45000,concurrency=6}=
     const cachedImage=old?.imageVerifiedKey===key?old.image:'';
     return {...a,image:a.image||cachedImage||'',imageVerifiedKey:a.image?undefined:(cachedImage?key:undefined),logoUrl:a.logoUrl||old?.logoUrl||favicon(homepage)||favicon(a.originalURL||a.link)||''};
   });
+  // Recover photos before spending the deadline on dates of already illustrated stories.
+  const queue=output.map((article,index)=>({article,index}))
+    .filter(({article})=>!article.image||article.dateSource!=='original')
+    .sort((a,b)=>Number(Boolean(a.article.image))-Number(Boolean(b.article.image)));
   let index=0;
-  async function run(){while(index<output.length && Date.now()<deadline){const i=index++;output[i]=await enrichArticle(output[i]);}}
+  async function run(){
+    while(index<queue.length && Date.now()<deadline){
+      const {index:i}=queue[index++];
+      output[i]=await enrichArticle(output[i],{loadPage});
+    }
+  }
   await Promise.all(Array.from({length:concurrency},run));
   const news=output.map(article=>normalizeNewsFreshness(article)).filter(Boolean).sort((a,b)=>Date.parse(b.pubDate)-Date.parse(a.pubDate));
   const imageEnrichment={updatedAt:new Date().toISOString(),photos:output.filter(a=>a.image).length,logos:output.filter(a=>!a.image&&a.logoUrl).length,remaining:output.filter(a=>!a.image&&!a.logoUrl).length};
@@ -192,4 +213,5 @@ if (process.argv[1] && new URL(import.meta.url).pathname===process.argv[1]) {
   await fs.writeFile('news.json',JSON.stringify(enriched,null,2)+'\n');
   console.log(JSON.stringify(enriched.imageEnrichment));
 }
+
 
