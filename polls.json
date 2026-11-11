@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-11T09:22:49.902935+00:00",
-  "checkedAt": "2026-11-11T09:22:49.902935+00:00",
+  "updatedAt": "2026-11-11T17:54:03.201297+00:00",
+  "checkedAt": "2026-11-11T17:54:03.201297+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-11T09:22:49.902935+00:00"
+      "checkedAt": "2026-11-11T17:54:03.201297+00:00"
     },
     {
       "id": "swg",
       "ok": true,
       "count": 1,
-      "checkedAt": "2026-11-11T09:22:49.902935+00:00"
+      "checkedAt": "2026-11-11T17:54:03.201297+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
-      "count": 147,
-      "checkedAt": "2026-11-11T09:22:49.902935+00:00"
+      "count": 149,
+      "checkedAt": "2026-11-11T17:54:03.201297+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
@@ -117,6 +117,150 @@
         }
       ],
       "id": "82815185cff65de261fa"
+    },
+    {
+      "pollster": "Quorum",
+      "date": "2026-11-09",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-11-07",
+      "fieldworkEnd": "2026-11-09",
+      "fieldworkLabel": "7– 9 Nov",
+      "sampleSize": 810,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://tg24.sky.it/politica/2026/11/11/sondaggio-youtrend-intenzioni-voto-partiti-misure-manovra#13",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 27.4
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.3
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 13.2
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 7.2
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 6.8,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 6.7
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.3
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 5.5
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.6,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.9,
+          "basis": "wiki:iv"
+        }
+      ],
+      "id": "34a21553b0f7707bf60b"
+    },
+    {
+      "pollster": "Ixè",
+      "date": "2026-11-09",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-11-02",
+      "fieldworkEnd": "2026-11-09",
+      "fieldworkLabel": "2– 9 Nov",
+      "sampleSize": null,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.sardegnagol.eu/sondaggio-ixe-fratelli-ditalia-al-265-e-campo-largo-avanti-sul-centrodestra-senza-vannacci-il-69-degli-italiani-il-paese-e-peggiorato/13",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 26.5
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.9
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 13.9
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 8.0,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 7.5
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 7.2
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.3
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 5.1
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 2.6,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.0,
+          "basis": "wiki:iv"
+        }
+      ],
+      "id": "236475745dbac8bd41d2"
     },
     {
       "pollster": "Only Numbers",
