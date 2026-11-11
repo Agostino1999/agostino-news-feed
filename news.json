@@ -2,21 +2,20 @@
   "success": true,
   "version": "V12-FRESH-HUMAN-BALANCE",
   "engine": "github-actions-v9-google-plus-direct-newsrooms",
-  "updatedAt": "2026-11-11T17:16:41.988Z",
-  "lastAttempt": "2026-11-11T17:16:41.988Z",
+  "updatedAt": "2026-11-11T17:21:36.239Z",
+  "lastAttempt": "2026-11-11T17:21:36.239Z",
   "refreshOk": true,
-  "successfulQueries": 41,
+  "successfulQueries": 42,
   "totalQueries": 48,
   "successfulDirectFeeds": 10,
   "totalDirectFeeds": 10,
   "directTotal": 338,
   "errors": {
-    "200": 6,
-    "404": 1
+    "200": 6
   },
   "servedPreviousGood": false,
   "rawTotal": 831,
-  "deduplicatedTotal": 697,
+  "deduplicatedTotal": 698,
   "total": 300,
   "news": [
     {
@@ -29,13 +28,14 @@
       "categories": [
         "Sicurezza",
         "Governo",
-        "Politica"
+        "Politica",
+        "Lega"
       ],
       "pubDate": "Wed, 11 Nov 2026 18:14:33 +0100",
       "googlePubDate": null,
       "originalPubDate": "Wed, 11 Nov 2026 18:14:33 +0100",
       "dateSource": "original",
-      "isVideo": false,
+      "isVideo": true,
       "sources": [
         {
           "source": "Corriere della Sera",
@@ -44,12 +44,17 @@
           "pubDate": "Wed, 11 Nov 2026 18:14:33 +0100",
           "originalPubDate": "Wed, 11 Nov 2026 18:14:33 +0100",
           "dateSource": "original"
+        },
+        {
+          "source": "VIDEOPIEMONTE",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOR3RhUDg2SUpsSXVxLXFmYTA0dXRHMHNhUkNUVTk0X2RNRVVQTzF0RWQ3bUtxUlpQdkpZTjlpcm8yQ0M2dS1XUmpRV0VwUURsbjd6TWdzM2xHQmJubGdFZVU0anNqTkRhbHcxZ3J5ZmpfbjYxdzBNY0VBM2RrU2ZxQTVQazVPRk1kQVBtWW9OcDRURDZFQkV1VHFsc09HbExwdENhQUJEMERvMGx4UUZUWFhGQ1RZazg?oc=5",
+          "pubDate": "Wed, 11 Nov 2026 13:03:33 GMT"
         }
       ],
       "originalURL": "https://roma.corriere.it/cronaca/diretta-live/26_novembre_11/allarme-bomba-scuole-italia-oggi.shtml",
-      "sourceCount": 1,
+      "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "allarmi bomba in 6mila scuole in tutta italia mail di minacce e evacua-1794417273000-0",
+      "id": "allarmi bomba in 6mila scuole in tutta italia mail di minacce e evacua-1794417273000-1",
       "logoUrl": "https://www.google.com/s2/favicons?domain=roma.corriere.it&sz=128"
     },
     {
@@ -92,9 +97,9 @@
       "sourceCount": 2,
       "sourcePriority": 55,
       "id": "allarmi bomba la meloni alle opposizioni questione di sicurezza nazion-1794414077000-31",
+      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQOHdrakZsX0hmU0ozQ3ZNNGVHck54TGFhbHIyb0ZzVzlQV3BCbGo5bHU3dkxPZzlxekktbnBxLUlFNGZGc1ViZkJSdFYwOXJod3RQQkcwWlNtc1RNOE5GVnJJdHFVRmNadVJtQk40Uk9iREhFVUlXWUNoR29kX3pPQ1BQbU96Y21jZ2FqQ2wybktmUkdhUEstNHlVNzNlanlDdFRjMWFiZlo1X3lJRjIzRUdWSkZYWndsSXhReGVkUHhQSE9qYkx0UlZLaHNMRGJHSzBzbElwZmh6MjkwMHdsNTFOWDFMdw?oc=5",
       "imageVerifiedKey": "https://www.ilgiornale.it/news/nazionale/allarmi-bomba-la-meloni-alle-opposizioni-questione-di-sicurezza-nazionale-da-schlein-a-calenda-si-allincontro/",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=www.ilgiornale.it&sz=128",
-      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQOHdrakZsX0hmU0ozQ3ZNNGVHck54TGFhbHIyb0ZzVzlQV3BCbGo5bHU3dkxPZzlxekktbnBxLUlFNGZGc1ViZkJSdFYwOXJod3RQQkcwWlNtc1RNOE5GVnJJdHFVRmNadVJtQk40Uk9iREhFVUlXWUNoR29kX3pPQ1BQbU96Y21jZ2FqQ2wybktmUkdhUEstNHlVNzNlanlDdFRjMWFiZlo1X3lJRjIzRUdWSkZYWndsSXhReGVkUHhQSE9qYkx0UlZLaHNMRGJHSzBzbElwZmh6MjkwMHdsNTFOWDFMdw?oc=5"
+      "logoUrl": "https://www.google.com/s2/favicons?domain=www.ilgiornale.it&sz=128"
     },
     {
       "title": "Tombe profanate e saccheggiate di arredi funerari e decori in rame e ottone: denunciato i razziatore dei cimiteri",
@@ -124,7 +129,7 @@
       "originalURL": "https://www.ilgiorno.it/cremona/cronaca/furti-tombe-cimiteri-4854e0a5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "tombe profanate e saccheggiate di arredi funerari e decori in rame e o-1794416528000-15",
+      "id": "tombe profanate e saccheggiate di arredi funerari e decori in rame e o-1794416528000-16",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ilgiorno.it&sz=128"
     },
     {
@@ -212,9 +217,9 @@
       "sourceCount": 4,
       "sourcePriority": 55,
       "id": "allarmi bomba in seimila scuole il punto del governo in una riunione a-1794417011000-4",
+      "publicationVerifiedKey": "https://www.ansa.it/sito/notizie/cronaca/2026/11/11/allarmi-bomba-in-seimila-scuole.-il-punto-del-governo-in-una-riunione-a-palazzo_870b0024-72d2-4b15-bab5-0c74dcc1d653.html",
       "imageVerifiedKey": "https://www.ansa.it/sito/notizie/cronaca/2026/11/11/allarmi-bomba-in-seimila-scuole.-il-punto-del-governo-in-una-riunione-a-palazzo_870b0024-72d2-4b15-bab5-0c74dcc1d653.html",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128",
-      "publicationVerifiedKey": "https://www.ansa.it/sito/notizie/cronaca/2026/11/11/allarmi-bomba-in-seimila-scuole.-il-punto-del-governo-in-una-riunione-a-palazzo_870b0024-72d2-4b15-bab5-0c74dcc1d653.html"
+      "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
     },
     {
       "title": "Fumetto sui migranti a scuola, il caso arriva in Parlamento. Il Pd: «Piombino ha altre urgenze",
@@ -246,7 +251,7 @@
       "originalURL": "https://www.maremmaoggi.net/valdicornia-piombino-fumetto-immigrazione-scuola-scontro-fdi-avs/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "fumetto sui migranti a scuola il caso arriva in parlamento il pd piomb-1794416230000-17",
+      "id": "fumetto sui migranti a scuola il caso arriva in parlamento il pd piomb-1794416230000-18",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSFdlVUY5Q1ZMQUZPOUdhWUlSSkVzbEFFSnMtRE5PYkhBckNWYTVtZ254akMxbkYxWVdDRzJTRnRwQWpBZnRnMHJJS3g4UjhGVlpSS0VMRVZRSFJGXy11ZGxPTnBXVDV0S1RteERJNmZLWkVQTk5hbmZ0SVhzbFRmaUU4Nmw2OHpPQVQ0blkxSEdkdndWUVRZcQ?oc=5",
       "imageVerifiedKey": "https://www.maremmaoggi.net/valdicornia-piombino-fumetto-immigrazione-scuola-scontro-fdi-avs/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.maremmaoggi.net&sz=128"
@@ -302,6 +307,41 @@
       "logoUrl": "https://www.google.com/s2/favicons?domain=tg24.sky.it&sz=128"
     },
     {
+      "title": "Serie A, già sei cambi in panchina, ora sotto osservazione restano Spalletti, Allegri e Juric",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxOWHFqY3Q3eHQ1Q05wc1Vjd0dNSUtkcDNiSkE0aVF6N01XNUVtWV91X2x6MG00OTVaRFdwazJWT21iYVlSZmlERVRldm5iSU9GMUhzY2VXVTFNQVllendQNXBoek1zU1l0ekQtc1hjdnFuOEJ0VkF5SEdUU1BDakZpb1hqOVVDZXlVeEI5NExjejFLUFdHRjhQLXFfbjhCd1llc1lQZV9ycng4MmhKRzVxSXJRT3Q?oc=5\" target=\"_blank\">Serie A, già sei cambi in panchina, ora sotto osservazione restano Spalletti, Allegri e Juric</a> <font color=\"#6f6f6f\">Tutto Juve</font>",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWHFqY3Q3eHQ1Q05wc1Vjd0dNSUtkcDNiSkE0aVF6N01XNUVtWV91X2x6MG00OTVaRFdwazJWT21iYVlSZmlERVRldm5iSU9GMUhzY2VXVTFNQVllendQNXBoek1zU1l0ekQtc1hjdnFuOEJ0VkF5SEdUU1BDakZpb1hqOVVDZXlVeEI5NExjejFLUFdHRjhQLXFfbjhCd1llc1lQZV9ycng4MmhKRzVxSXJRT3Q?oc=5",
+      "image": "https://net-storage-auto.tcccdn.com/storage/tuttojuve.com/img_notizie/thumb3/6c/6c3c72710ccd7704144ea9048b9088ea-67937-oooz0000.jpeg",
+      "source": "Tutto Juve",
+      "category": "Juventus",
+      "categories": [
+        "Juventus",
+        "Sport"
+      ],
+      "pubDate": "2026-11-11T16:50:03.000Z",
+      "googlePubDate": "Wed, 11 Nov 2026 16:50:03 GMT",
+      "originalPubDate": "2026-11-11T16:50:03.000Z",
+      "dateSource": "original",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "Tutto Juve",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWHFqY3Q3eHQ1Q05wc1Vjd0dNSUtkcDNiSkE0aVF6N01XNUVtWV91X2x6MG00OTVaRFdwazJWT21iYVlSZmlERVRldm5iSU9GMUhzY2VXVTFNQVllendQNXBoek1zU1l0ekQtc1hjdnFuOEJ0VkF5SEdUU1BDakZpb1hqOVVDZXlVeEI5NExjejFLUFdHRjhQLXFfbjhCd1llc1lQZV9ycng4MmhKRzVxSXJRT3Q?oc=5",
+          "sourceHomepage": "https://www.tuttojuve.com",
+          "pubDate": "2026-11-11T16:50:03.000Z",
+          "originalPubDate": "2026-11-11T16:50:03.000Z",
+          "dateSource": "original",
+          "originalURL": "https://www.tuttojuve.com/altre-notizie/serie-a-cambi-panchina-osservazione-restano-spalletti-allegri-juric-800236"
+        }
+      ],
+      "originalURL": "https://www.tuttojuve.com/altre-notizie/serie-a-cambi-panchina-osservazione-restano-spalletti-allegri-juric-800236",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "serie a gia sei cambi in panchina ora sotto osservazione restano spall-1794415803000-22",
+      "imageVerifiedKey": "https://www.tuttojuve.com/altre-notizie/serie-a-cambi-panchina-osservazione-restano-spalletti-allegri-juric-800236",
+      "logoUrl": "https://www.google.com/s2/favicons?domain=www.tuttojuve.com&sz=128",
+      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWHFqY3Q3eHQ1Q05wc1Vjd0dNSUtkcDNiSkE0aVF6N01XNUVtWV91X2x6MG00OTVaRFdwazJWT21iYVlSZmlERVRldm5iSU9GMUhzY2VXVTFNQVllendQNXBoek1zU1l0ekQtc1hjdnFuOEJ0VkF5SEdUU1BDakZpb1hqOVVDZXlVeEI5NExjejFLUFdHRjhQLXFfbjhCd1llc1lQZV9ycng4MmhKRzVxSXJRT3Q?oc=5"
+    },
+    {
       "title": "Allarmi bomba nelle scuole: Meloni fa il punto a Palazzo Chigi. Domani gli incontri con le opposizioni",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxQSlVORlE2S01YZS1HQldFR0tGbHlzeUluWDhuQUVYeDdsUFVsb01LWWJDWXFCQWN2Nm10bzRFSlc1bE9pRWQ0bmVRdlpFdS11X29XMGItOTZOQUw1aXdFdWdkRklwVl9tMk9tdGlwdDd0OHRvN3JwaGJ2U1I1c1BQaHZWUTNBQQ?oc=5\" target=\"_blank\">Allarmi bomba nelle scuole: Meloni fa il punto a Palazzo Chigi. Domani gli incontri con le opposizioni</a> <font color=\"#6f6f6f\">Open</font>",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSlVORlE2S01YZS1HQldFR0tGbHlzeUluWDhuQUVYeDdsUFVsb01LWWJDWXFCQWN2Nm10bzRFSlc1bE9pRWQ0bmVRdlpFdS11X29XMGItOTZOQUw1aXdFdWdkRklwVl9tMk9tdGlwdDd0OHRvN3JwaGJ2U1I1c1BQaHZWUTNBQQ?oc=5",
@@ -331,10 +371,43 @@
       "originalURL": "https://www.open.online/2026/11/11/allarmi-bomba-scuole-meloni-vertice-governo/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "allarmi bomba nelle scuole meloni fa il punto a palazzo chigi domani g-1794415750000-23",
+      "id": "allarmi bomba nelle scuole meloni fa il punto a palazzo chigi domani g-1794415750000-24",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSlVORlE2S01YZS1HQldFR0tGbHlzeUluWDhuQUVYeDdsUFVsb01LWWJDWXFCQWN2Nm10bzRFSlc1bE9pRWQ0bmVRdlpFdS11X29XMGItOTZOQUw1aXdFdWdkRklwVl9tMk9tdGlwdDd0OHRvN3JwaGJ2U1I1c1BQaHZWUTNBQQ?oc=5",
       "imageVerifiedKey": "https://www.open.online/2026/11/11/allarmi-bomba-scuole-meloni-vertice-governo/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.open.online&sz=128"
+    },
+    {
+      "title": "ANSA Newsroom | La notte americana: le elezioni di Midterm al centro della nuova puntata",
+      "summary": "Domani alle 15, con l'analisi del professore Francesco Clementi",
+      "link": "https://www.ansa.it/sito/notizie/mondo/speciali/usa-midterm-2026/2026/11/11/ansa-newsroom-la-notte-americana-le-elezioni-di-midterm-al-centro-della-nuova-puntata_1d689574-cc56-421f-9174-695e21936d05.html",
+      "image": "https://www.ansa.it/webimages/img_1280x720/2026/11/11/48762f180a6509e4fe3273424798a098.jpeg",
+      "source": "ANSA",
+      "category": "Politica",
+      "categories": [
+        "Politica"
+      ],
+      "pubDate": "2026-11-11T16:43:26.000Z",
+      "googlePubDate": null,
+      "originalPubDate": "2026-11-11T16:43:26.000Z",
+      "dateSource": "original",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "ANSA",
+          "link": "https://www.ansa.it/sito/notizie/mondo/speciali/usa-midterm-2026/2026/11/11/ansa-newsroom-la-notte-americana-le-elezioni-di-midterm-al-centro-della-nuova-puntata_1d689574-cc56-421f-9174-695e21936d05.html",
+          "originalURL": "https://www.ansa.it/sito/notizie/mondo/speciali/usa-midterm-2026/2026/11/11/ansa-newsroom-la-notte-americana-le-elezioni-di-midterm-al-centro-della-nuova-puntata_1d689574-cc56-421f-9174-695e21936d05.html",
+          "pubDate": "2026-11-11T16:43:26.000Z",
+          "originalPubDate": "2026-11-11T16:43:26.000Z",
+          "dateSource": "original"
+        }
+      ],
+      "originalURL": "https://www.ansa.it/sito/notizie/mondo/speciali/usa-midterm-2026/2026/11/11/ansa-newsroom-la-notte-americana-le-elezioni-di-midterm-al-centro-della-nuova-puntata_1d689574-cc56-421f-9174-695e21936d05.html",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "ansa newsroom la notte americana le elezioni di midterm al centro dell-1794416924000-7",
+      "imageVerifiedKey": "https://www.ansa.it/sito/notizie/mondo/speciali/usa-midterm-2026/2026/11/11/ansa-newsroom-la-notte-americana-le-elezioni-di-midterm-al-centro-della-nuova-puntata_1d689574-cc56-421f-9174-695e21936d05.html",
+      "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128",
+      "publicationVerifiedKey": "https://www.ansa.it/sito/notizie/mondo/speciali/usa-midterm-2026/2026/11/11/ansa-newsroom-la-notte-americana-le-elezioni-di-midterm-al-centro-della-nuova-puntata_1d689574-cc56-421f-9174-695e21936d05.html"
     },
     {
       "title": "Guerra Ucraina-Russia, nuovi colloqui ad Abu Dhabi. Droni nei Paesi baltici, decollano i caccia Nato",
@@ -361,40 +434,6 @@
       "sourceCount": 1,
       "image": "",
       "logoUrl": "https://www.google.com/s2/favicons?domain=mam-e.it&sz=128"
-    },
-    {
-      "title": "Allarme bomba in oltre 6000 scuole. Le opposizioni: 'Versioni dei ministri discordanti, Meloni chiarisca in Aula'",
-      "summary": "La segnalazione da una mail da profilo compromesso taiwanese: 'Vi annienteremo'",
-      "link": "https://www.ansa.it/sito/notizie/cronaca/2026/11/11/allarme-bomba-in-oltre-6000-scuole.-le-opposizioni-versioni-dei-ministri-discordanti_870b0024-72d2-4b15-bab5-0c74dcc1d653.html",
-      "image": "https://www.ansa.it/webimages/img_1280x720/2026/11/11/cf058fbf5b212b8282599ad33e553bf9.jpg",
-      "source": "ANSA",
-      "category": "Governo",
-      "categories": [
-        "Governo",
-        "Politica"
-      ],
-      "pubDate": "2026-11-11T16:40:07.000Z",
-      "googlePubDate": null,
-      "originalPubDate": "2026-11-11T16:40:07.000Z",
-      "dateSource": "original",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "ANSA",
-          "link": "https://www.ansa.it/sito/notizie/cronaca/2026/11/11/allarme-bomba-in-oltre-6000-scuole.-le-opposizioni-versioni-dei-ministri-discordanti_870b0024-72d2-4b15-bab5-0c74dcc1d653.html",
-          "originalURL": "https://www.ansa.it/sito/notizie/cronaca/2026/11/11/allarme-bomba-in-oltre-6000-scuole.-le-opposizioni-versioni-dei-ministri-discordanti_870b0024-72d2-4b15-bab5-0c74dcc1d653.html",
-          "pubDate": "2026-11-11T16:40:07.000Z",
-          "originalPubDate": "2026-11-11T16:40:07.000Z",
-          "dateSource": "original"
-        }
-      ],
-      "originalURL": "https://www.ansa.it/sito/notizie/cronaca/2026/11/11/allarme-bomba-in-oltre-6000-scuole.-le-opposizioni-versioni-dei-ministri-discordanti_870b0024-72d2-4b15-bab5-0c74dcc1d653.html",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "allarme bomba in oltre 6000 scuole le opposizioni versioni dei ministr-1794416166000-20",
-      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNSXNnSWl4RV9aXzZxU25FaWdVcGxSTnpBb0pYS09Ia19zZmxFell2Mmt0Mm1uTTMyYkR1cFRHQU1BaGdUbFV4UEkya19qTGdZWlJrZHQ2ai1LT1UzN3Jvb3lkTHJNSXJ6Ti1fRm41Q3l2ellsU3JET1ljN3pLNzdGb1RMV3ZjRHJPUnFyOFFJcURMRklGU082YVNmYWpHNUxfWXFJWjlabUdPX09vZnFGTGdhaEcydTk0ak5KRHM5RnRPbEhVS2tBb21aRHdOVHk0bndtREpTeldmVGdtSV9xUmZwb0tWMTJVc092elV2Z05ZU2RsTHN2ckdIcFFJUlNsQnRKWUpmMEzSAY4CQVVfeXFMTTRSZnlBYlhJNm03TzQzeExqbzNCUFA4VWZmd3RtWTdWOElqcnoxMldzX2R5YTMyVTFXSV9xaXZuZ05aWVRFVHVfY00wUzUzRVZ3MDJXUlJXVEtZMHl1VzlvbE1OZUZPSDJIOV84RWtqTkxOLTBoZVpaM1M2ZEpQQklmZjl5aTZldXM0cm5WUUNfMm5DclNEanM2OFBEU2VjYS1yQXBVUkxKUFotTGRxS25KSjZqTkhSMVRpMXU0WEtmQ09MTjBxSW1XYjMzUGpqY3E1eDFBem9tVEp3YVluTXVfY1RnYkhZUWRSRGRqWlRuS2RFZHdkMnJ3bHB3NGd6VndCWU1mVGpmREVLTm9n?oc=5",
-      "imageVerifiedKey": "https://www.ansa.it/sito/notizie/cronaca/2026/11/11/allarme-bomba-in-oltre-6000-scuole.-le-opposizioni-versioni-dei-ministri-discordanti_870b0024-72d2-4b15-bab5-0c74dcc1d653.html",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
     },
     {
       "title": "Allarme bomba in oltre 6000 scuole in Italia, evacuazioni e controlli. Meloni: 'Grande attenzione, ma non ci sono pericoli concreti'",
@@ -458,7 +497,7 @@
       "originalURL": "https://www.tuttojuve.com/juventus-femminile/women-stasera-sfida-lione-vedere-partita-tv-800235",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "women stasera la sfida al lione ecco dove vedere la partita in tv-1794415200000-25",
+      "id": "women stasera la sfida al lione ecco dove vedere la partita in tv-1794415200000-26",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTVdwNTdTRnZYTDQtV243Y2I5UlZCdUlNUkYzU0lGYmVPRS1BSHNJMl90a3NHb3Bacjl1Rzd5ZFVvU0ZOWkE3cHUteGdzX012Qkc3QlBUNkxXdERuRkJMZVl3UVl5WjlXXzRVdlBaek9VUWFrQWZMUUt1U205MWRWYjZhUnRZSGdFTjRNUTFRbm5Cdmd2S0FYRUczOA?oc=5",
       "imageVerifiedKey": "https://www.tuttojuve.com/juventus-femminile/women-stasera-sfida-lione-vedere-partita-tv-800235",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.tuttojuve.com&sz=128"
@@ -492,7 +531,7 @@
       "originalURL": "https://tg24.sky.it/mondo/video/2026/11/11/generazione-europa-i-negoziati-per-lucraina-ad-abu-dhabi-e-la-guerra-ibrida-in-ue-1139287",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "generazione europa i negoziati per l ucraina ad abu dhabi e la guerra -1794413957000-35",
+      "id": "generazione europa i negoziati per l ucraina ad abu dhabi e la guerra -1794413957000-33",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNdnFYLWZOb2ktQTVvNVQ1YmJ1TzE5QmhLV2pSUXlPZlQ3S3dPbzFzNmNJVEVnS3VmZjNuaGcyemg0SnBBcEJncnphRjltNkNtdEFwTkdWY3ZUWTFnLVdpNHF0UXRqb0l6QUlLYmhLel9tNFMzeDV2REpMcWVwa3Z4ZkhsT2QyOU5YZzFFczhIMi05WWdDRU5ic0l2NnBzaUhhMGUzQnRsQkcxODZod2lFNm85RElBVFdjYVNNWFoxeXMxWnNIZG5nVi02N08?oc=5",
       "imageVerifiedKey": "https://tg24.sky.it/mondo/video/2026/11/11/generazione-europa-i-negoziati-per-lucraina-ad-abu-dhabi-e-la-guerra-ibrida-in-ue-1139287",
       "logoUrl": "https://www.google.com/s2/favicons?domain=tg24.sky.it&sz=128"
@@ -527,9 +566,9 @@
       "sourceCount": 1,
       "sourcePriority": 55,
       "id": "new year s pack inizia l anno nuovo con la famiglia bianconera-1794414610000-28",
+      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcHB5UlI4OVR4VDZ5U2hIUTNZR3FzYlJGZmd6RzlZa0F3dlNEOTR5a0tfazFCY1FqNUc1Y1ZXdGNrSjl1bXlLZkd3OWlpellHUFVSYURRa1lFc1EzSXpSN29ZcW9ENEotU05CNzF6a2pxSkVVZm5PY2d5RnhfcExOdFJXVGxIOWlvZDJWNmJwMTVLdHM?oc=5",
       "imageVerifiedKey": "https://www.tuttojuve.com/altre-notizie/new-year-s-pack-inizia-famiglia-bianconera-800234",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=www.tuttojuve.com&sz=128",
-      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcHB5UlI4OVR4VDZ5U2hIUTNZR3FzYlJGZmd6RzlZa0F3dlNEOTR5a0tfazFCY1FqNUc1Y1ZXdGNrSjl1bXlLZkd3OWlpellHUFVSYURRa1lFc1EzSXpSN29ZcW9ENEotU05CNzF6a2pxSkVVZm5PY2d5RnhfcExOdFJXVGxIOWlvZDJWNmJwMTVLdHM?oc=5"
+      "logoUrl": "https://www.google.com/s2/favicons?domain=www.tuttojuve.com&sz=128"
     },
     {
       "title": "Allarme bomba nelle scuole, Valditara: “Strategia di destabilizzazione”",
@@ -556,10 +595,19 @@
           "originalPubDate": "2026-11-11T16:25:14.000Z",
           "dateSource": "original",
           "originalURL": "https://www.eunews.it/2026/11/11/allarmi-bomba-in-oltre-300-scuole-italiane-valditara-piu-verosimile-una-strategia-che-un-mitomane/"
+        },
+        {
+          "source": "Eunews",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE91UVFnMmw5eU1YT0lSWHIzaHluQnNEWndQeVRscWVtaFdwWUlMUTFSYWtOdU9kRTVDQVc4Tk9XRmRJWmpjV2Q0dkZaSDNWUUhaWW1kSmd0X1FaMG1MUmtQYU11RkZfOW5fS25sWkotbVZ2bExSZ2RvdTZGOV9zX1E?oc=5",
+          "sourceHomepage": "https://www.eunews.it",
+          "pubDate": "2026-11-11T16:25:14.000Z",
+          "originalPubDate": "2026-11-11T16:25:14.000Z",
+          "dateSource": "original",
+          "originalURL": "https://www.eunews.it/2026/11/11/allarmi-bomba-in-oltre-300-scuole-italiane-valditara-piu-verosimile-una-strategia-che-un-mitomane/"
         }
       ],
       "originalURL": "https://www.eunews.it/2026/11/11/allarmi-bomba-in-oltre-300-scuole-italiane-valditara-piu-verosimile-una-strategia-che-un-mitomane/",
-      "sourceCount": 1,
+      "sourceCount": 2,
       "sourcePriority": 55,
       "id": "allarme bomba nelle scuole valditara strategia di destabilizzazione-1794414314000-29",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbHJzbjczUS1ZclZ4TUc0Y0N6dmRTamxHT3ZGaTM2TVk5UEJ1anFjRTh4Mndxa1F4YkpSalFlYlZzYW15SzhVbUNjc3E5XzN0WlpBb2xpeEJhQ3ZXazFEZkFqSEVkMktSUXZHNmNsOGM3cEx3UmZKenkzd0txU3dwQWdxb1cwRmVfLVFEeVZOMF9CVlB1MVlBVHNpSjBZb3c0Mlc3ckpseFNVZnFlUWJlTGduZFNZdTEzTjg0anRKT0QxVm9rUjZFdjBXWQ?oc=5",
@@ -595,75 +643,6 @@
       "sourcePriority": 55,
       "id": "compiti la sera sul registro elettronico valditara ribadisce lo stop e-1794414180000-30",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.scuolainforma.news&sz=128"
-    },
-    {
-      "title": "Sicurezza, Molinari (Lega): \"Previdenza dedicata e giuste retribuzioni per chi garantisce l’incolumità dei cittadini\"",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi7wFBVV95cUxPUFBBbDE0VDRYSjBzOUltNWxFS1daWDR3ZWJkVHV3b0czT2ZoTWk3N2FpNlVvSFR5Wm5ydk9yZ1VaVXFObHhielcxNWc0bklEUXNoVWFYVy1iamZrSXhXTmVlamg3RXNVb3ExU24yS01KV1NIX2MtMWRobW4yclRMOEo5Mks0VFZ0U012NmhrbHZTM3pGUXU1NlBPSTlzSXFvQlFVOWRWUURsUHdkaXkydVJ2b0toM19lcGlyQ3Vhb3gtMEE4c0J5QThVUWwtcURwdEtHa1h1eWxVa0pHa2I0WUpiaEdIZDA0cURMQU12cw?oc=5\" target=\"_blank\">Sicurezza, Molinari (Lega): \"Previdenza dedicata e giuste retribuzioni per chi garantisce l’incolumità dei cittadini\"</a> <font color=\"#6f6f6f\">Telecity News 24</font>",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPUFBBbDE0VDRYSjBzOUltNWxFS1daWDR3ZWJkVHV3b0czT2ZoTWk3N2FpNlVvSFR5Wm5ydk9yZ1VaVXFObHhielcxNWc0bklEUXNoVWFYVy1iamZrSXhXTmVlamg3RXNVb3ExU24yS01KV1NIX2MtMWRobW4yclRMOEo5Mks0VFZ0U012NmhrbHZTM3pGUXU1NlBPSTlzSXFvQlFVOWRWUURsUHdkaXkydVJ2b0toM19lcGlyQ3Vhb3gtMEE4c0J5QThVUWwtcURwdEtHa1h1eWxVa0pHa2I0WUpiaEdIZDA0cURMQU12cw?oc=5",
-      "image": "https://alessandrianetweek.it/media/2026/09/Riccardo-Molinari-1200x675.jpg",
-      "source": "Telecity News 24",
-      "category": "Lega",
-      "categories": [
-        "Lega",
-        "Politica"
-      ],
-      "pubDate": "2026-11-11T16:20:39.000Z",
-      "googlePubDate": "Wed, 11 Nov 2026 16:20:39 GMT",
-      "originalPubDate": "2026-11-11T16:20:39.000Z",
-      "dateSource": "original",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Telecity News 24",
-          "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPUFBBbDE0VDRYSjBzOUltNWxFS1daWDR3ZWJkVHV3b0czT2ZoTWk3N2FpNlVvSFR5Wm5ydk9yZ1VaVXFObHhielcxNWc0bklEUXNoVWFYVy1iamZrSXhXTmVlamg3RXNVb3ExU24yS01KV1NIX2MtMWRobW4yclRMOEo5Mks0VFZ0U012NmhrbHZTM3pGUXU1NlBPSTlzSXFvQlFVOWRWUURsUHdkaXkydVJ2b0toM19lcGlyQ3Vhb3gtMEE4c0J5QThVUWwtcURwdEtHa1h1eWxVa0pHa2I0WUpiaEdIZDA0cURMQU12cw?oc=5",
-          "sourceHomepage": "https://alessandrianetweek.it",
-          "pubDate": "2026-11-11T16:20:39.000Z",
-          "originalPubDate": "2026-11-11T16:20:39.000Z",
-          "dateSource": "original",
-          "originalURL": "https://alessandrianetweek.it/sezioni/politica/sicurezza-molinari-lega-previdenza-dedicata-e-giuste-retribuzioni-per-chi-garantisce-lincolumita-dei-cittadini/"
-        }
-      ],
-      "originalURL": "https://alessandrianetweek.it/sezioni/politica/sicurezza-molinari-lega-previdenza-dedicata-e-giuste-retribuzioni-per-chi-garantisce-lincolumita-dei-cittadini/",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "sicurezza molinari lega previdenza dedicata e giuste retribuzioni per -1794414039000-32",
-      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPUFBBbDE0VDRYSjBzOUltNWxFS1daWDR3ZWJkVHV3b0czT2ZoTWk3N2FpNlVvSFR5Wm5ydk9yZ1VaVXFObHhielcxNWc0bklEUXNoVWFYVy1iamZrSXhXTmVlamg3RXNVb3ExU24yS01KV1NIX2MtMWRobW4yclRMOEo5Mks0VFZ0U012NmhrbHZTM3pGUXU1NlBPSTlzSXFvQlFVOWRWUURsUHdkaXkydVJ2b0toM19lcGlyQ3Vhb3gtMEE4c0J5QThVUWwtcURwdEtHa1h1eWxVa0pHa2I0WUpiaEdIZDA0cURMQU12cw?oc=5",
-      "imageVerifiedKey": "https://alessandrianetweek.it/sezioni/politica/sicurezza-molinari-lega-previdenza-dedicata-e-giuste-retribuzioni-per-chi-garantisce-lincolumita-dei-cittadini/",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=alessandrianetweek.it&sz=128"
-    },
-    {
-      "title": "Next Gen, avvio da incubo ma Brambilla non fa drammi",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxPLVlEbkg0MFhwVHZfcDMtOURVQ2h6aWIweHZ4V1hJU05UOXdVWVRqQ0xtTVMzZmxDZS1HQ1c4SXFFQ25XWE1QbTZkVFVLX1VwYllVSkxHeHdNRzJBOTkzX0VWX1lkODRMUHY4QjdSZmtoYXRKN054ek5rY2NoRlNGejlma18tQ0ZMd2FHZA?oc=5\" target=\"_blank\">Next Gen, avvio da incubo ma Brambilla non fa drammi</a> <font color=\"#6f6f6f\">Tutto Juve</font>",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPLVlEbkg0MFhwVHZfcDMtOURVQ2h6aWIweHZ4V1hJU05UOXdVWVRqQ0xtTVMzZmxDZS1HQ1c4SXFFQ25XWE1QbTZkVFVLX1VwYllVSkxHeHdNRzJBOTkzX0VWX1lkODRMUHY4QjdSZmtoYXRKN054ek5rY2NoRlNGejlma18tQ0ZMd2FHZA?oc=5",
-      "image": "https://net-storage-auto.tcccdn.com/storage/tuttojuve.com/img_notizie/thumb3/2f/2f8b5a38a803b89eecc85e64fe9e10ca-63200-oooz0000.jpeg",
-      "source": "Tutto Juve",
-      "category": "Juventus",
-      "categories": [
-        "Juventus"
-      ],
-      "pubDate": "2026-11-11T16:20:34.000Z",
-      "googlePubDate": "Wed, 11 Nov 2026 16:20:34 GMT",
-      "originalPubDate": "2026-11-11T16:20:34.000Z",
-      "dateSource": "original",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Tutto Juve",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPLVlEbkg0MFhwVHZfcDMtOURVQ2h6aWIweHZ4V1hJU05UOXdVWVRqQ0xtTVMzZmxDZS1HQ1c4SXFFQ25XWE1QbTZkVFVLX1VwYllVSkxHeHdNRzJBOTkzX0VWX1lkODRMUHY4QjdSZmtoYXRKN054ek5rY2NoRlNGejlma18tQ0ZMd2FHZA?oc=5",
-          "sourceHomepage": "https://www.tuttojuve.com",
-          "pubDate": "2026-11-11T16:20:34.000Z",
-          "originalPubDate": "2026-11-11T16:20:34.000Z",
-          "dateSource": "original",
-          "originalURL": "https://www.tuttojuve.com/juventus-u23/next-gen-avvio-incubo-brambilla-drammi-800233"
-        }
-      ],
-      "originalURL": "https://www.tuttojuve.com/juventus-u23/next-gen-avvio-incubo-brambilla-drammi-800233",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "next gen avvio da incubo ma brambilla non fa drammi-1794414034000-33",
-      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPLVlEbkg0MFhwVHZfcDMtOURVQ2h6aWIweHZ4V1hJU05UOXdVWVRqQ0xtTVMzZmxDZS1HQ1c4SXFFQ25XWE1QbTZkVFVLX1VwYllVSkxHeHdNRzJBOTkzX0VWX1lkODRMUHY4QjdSZmtoYXRKN054ek5rY2NoRlNGejlma18tQ0ZMd2FHZA?oc=5",
-      "imageVerifiedKey": "https://www.tuttojuve.com/juventus-u23/next-gen-avvio-incubo-brambilla-drammi-800233",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=www.tuttojuve.com&sz=128"
     },
     {
       "title": "Femminicidio Martina Scialdone, Costantino Bonaiuti condannato all'ergastolo in Appello bis",
@@ -726,7 +705,7 @@
       "originalURL": "https://www.romatoday.it/cronaca/femminicidio-martina-scialdone-costantino-bonaiuti-ergasto.html",
       "sourceCount": 6,
       "sourcePriority": 55,
-      "id": "femminicidio martina scialdone costantino bonaiuti condannato all erga-1794414000000-34",
+      "id": "femminicidio martina scialdone costantino bonaiuti condannato all erga-1794414000000-32",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONUtvelRGT3p0RlM3akQ3c1EzTzZEVlVmNWZZaU1ZcXRQS012dVF4cEZoSHY5NHdCRWRQZUpNNmx6Y3pRU1Exd1VUN2ZQcGZ5cUFFNE41NnFUTVRwcGt6Q1l4NVFWYWswem5KSlQxMWU3d1lIdjVOVW0tUHE5eHVCbVNfbnN2bkpCaEh5SWNvNjF1RGwxeFVXaXpDbmw?oc=5",
       "imageVerifiedKey": "https://www.romatoday.it/cronaca/femminicidio-martina-scialdone-costantino-bonaiuti-ergasto.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.romatoday.it&sz=128"
@@ -780,7 +759,7 @@
       "originalURL": "https://imperiapost.it/836253/ventimiglia-trasportava-migranti-in-francia-passeur-arrestato-dopo-inseguimento-transfrontaliero",
       "sourceCount": 4,
       "sourcePriority": 55,
-      "id": "ventimiglia trasportava migranti in francia passeur arrestato dopo ins-1794413940000-36",
+      "id": "ventimiglia trasportava migranti in francia passeur arrestato dopo ins-1794413940000-34",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUEVGSEh1Y0ZxM3dGOGlhSk96LWt6LV9wNkVlM1NqTHFrR0tmYWhKdlNzSHlWUDVkb2NseUlROEFDak5ieFp3d3NpOVR0bUFEczlnTUZGZUlwb0RZUV9iWGJubjZOaVA0V0k1UFU3YW1PaktrZkFWRTJKMW9FTU5MbWx6NEN2cnMtb0tFWENkd0lxa2JwUTZDZlBlQWIyQmIzMy1kMU9xYVIzOEl0YjBQMHZLcEktb3k5NFE1aDc0TEJNVmJM?oc=5",
       "imageVerifiedKey": "https://imperiapost.it/836253/ventimiglia-trasportava-migranti-in-francia-passeur-arrestato-dopo-inseguimento-transfrontaliero",
       "logoUrl": "https://www.google.com/s2/favicons?domain=imperiapost.it&sz=128"
@@ -816,7 +795,7 @@
       "originalURL": "https://www.corriere.it/economia/innovazione/26_novembre_11/its-academy-la-vetrina-europea-al-parlamento-di-bruxelles-valditara-interesse-della-ue-per-la-riforma-dell-istruzione-tecnologica-21830d70-81c3-45b7-a654-70d1d96daxlk.shtml",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "its academy la vetrina europea al parlamento di bruxelles valditara in-1794413880000-37",
+      "id": "its academy la vetrina europea al parlamento di bruxelles valditara in-1794413880000-35",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxPRFZnd05BbFVUQmlYQ3JjeEZrOUdrelVrd3ZhTURoaTVMSkdhbGJ5Wjdjc3dWdWRydmIzV2pKdGVfeVQ5VzdWcmhnNGdHTm1zLXhNbzM1Q0VmQW9SckRjeHpaVHphLW1PVUZVLTNPbzd5eXhLNnNnRHBtSWhIdkNlOTZjOFZiaDI3SlowdEFnNmxjaXdVcVE2WXA4UTJMR0ZYZHlEblJ3TFM3aG5oNEZiTWtlLU9FOWFyQ21RTEZqcUkteXprZXJjbnQ1cnVDNkZYS1dLbnlQM2JpVDJVc0FqNkNSY05KNWhRZkxFU3R0YWc5cW9VSG15TThxOXFGMDJrb0YweVpLbzFkbVJfUnc3MkdfVERQNnN6Y3JfUzZfYjV0Tl83Yk43elhfRE1QOHdoUWxTSUs1allZUEh6UG92MnN0RmFPVnN2ZEVzNWh2NmJTQdIB1wJBVV95cUxOb2I0dm1HcGZYQncwOHdIemNhWjlZbjBNWDByNnlJQUVjVE1YcmFYZGVYOU1SQU5uOUgyNXdTQmNTUk12d3RmVjlsbzJiblBRLVozYjZyNTd2anczUGp0bE55UzJOeEtFZVJ6bXI2cHBiVlB5Y01IVmR1ajdmR3pmSmtGcUlKTFpQS09FbEV0VFVFNEtxN29hRXg1UENqenFuRkhNbHdUN243cTFXUTl5bTV0X3dLd2xrWmtycWdiQWhJRngxNHo2NG5YMm9MRXl0NlNnWEVXNGlNYjdicm9ENjJvbGdfbWRXbWdYaU1pMjltTWctV21MWEZVYjQwenplcVNyWnFMMkpOX1hMTm5xRXk2N19GbUU0T015MUFxRzlYdUU0ek1EZUd1NGp5SEF0SnN2TTFmbnA1dXlVZG8wY2hoVkl1OERXX3F4WHFWaFkxYWEzcXhj?oc=5",
       "imageVerifiedKey": "https://www.corriere.it/economia/innovazione/26_novembre_11/its-academy-la-vetrina-europea-al-parlamento-di-bruxelles-valditara-interesse-della-ue-per-la-riforma-dell-istruzione-tecnologica-21830d70-81c3-45b7-a654-70d1d96daxlk.shtml",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.corriere.it&sz=128"
@@ -849,7 +828,7 @@
       "originalURL": "https://www.corriere.it/economia/finanza/26_novembre_11/manovra-da-taglio-irpef-450-euro-in-piu-ma-510-euro-in-meno-per-3-5-milioni-di-pensionati-chi-guadagna-e-chi-ci-rimette-secondo-171a102e-a5cd-4e65-b3d8-d5e5134caxlk.shtml",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "manovra da taglio irpef 450 euro in piu ma 510 euro in meno per 3 5 mi-1794413763000-38",
+      "id": "manovra da taglio irpef 450 euro in piu ma 510 euro in meno per 3 5 mi-1794413763000-36",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.corriere.it&sz=128"
     },
     {
@@ -880,7 +859,7 @@
       "originalURL": "https://www.ilgiorno.it/cronaca/pneumatici-invernali-catene-lombardia-mzlsxfa9",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "pneumatici invernali o catene a bordo il 15 novembre scatta l obbligo -1794413733000-39",
+      "id": "pneumatici invernali o catene a bordo il 15 novembre scatta l obbligo -1794413733000-37",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ilgiorno.it&sz=128"
     },
     {
@@ -913,7 +892,7 @@
       "originalURL": "https://www.ilriformista.it/presidenza-anac-il-diktat-del-campo-largo-veto-a-chi-ha-lavorato-con-salvini-537904/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "presidenza anac il diktat del campo largo veto a chi ha lavorato con s-1794413700000-40",
+      "id": "presidenza anac il diktat del campo largo veto a chi ha lavorato con s-1794413700000-38",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSUxEZkZOWTNsVkt2Tjh2VEJPaXByMUJzTDVTb3Q4QnNlRmRxR0s1d1g1WlFUaWU1YTRsMlJNV0ZkbzhxRFd4NFVqdDQxNk9KZmhZYUdadnhrempkbHZoek9IMm13cmhlSUR2VlFPbUVIMy1iVGNMU1Fib3ZnVFZ5d0lMLXVRQ3RGYm9sVDF1cmE2VkpVajVqaS1tRnVldm9SYnJJM3hfU2ZrLUJJNEw0bk1n?oc=5",
       "imageVerifiedKey": "https://www.ilriformista.it/presidenza-anac-il-diktat-del-campo-largo-veto-a-chi-ha-lavorato-con-salvini-537904/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ilriformista.it&sz=128"
@@ -948,7 +927,7 @@
       "originalURL": "https://tg24.sky.it/mondo/video/2026/11/11/sky-cube-guerra-ucraina-quale-ruolo-ha-lue-ad-abu-dhabi-1139276",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "sky cube guerra ucraina quale ruolo ha l ue ad abu dhabi-1794412390000-51",
+      "id": "sky cube guerra ucraina quale ruolo ha l ue ad abu dhabi-1794412390000-49",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOblNIT19ydGkwRnpQSVVuR2NJWDNLOHlVMHRhdm5RZzVSTGNfN0tVWHpkUzlndkh2ZHpYYURIQzY1bVpDam1nRmVmOWUtQy1HMVFDYXp6eFQ2X0t1RGF6dHhjWXVBX3B0UmZMTVRrMkhLMnlmREFJZUJYeUdNY0RZRzVQUExsOUt1ejlCcjBJOVpLSllsQ1lnVi05VDFRVF9QVENvTFdENXFTQQ?oc=5",
       "imageVerifiedKey": "https://tg24.sky.it/mondo/video/2026/11/11/sky-cube-guerra-ucraina-quale-ruolo-ha-lue-ad-abu-dhabi-1139276",
       "logoUrl": "https://www.google.com/s2/favicons?domain=tg24.sky.it&sz=128"
@@ -1012,7 +991,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZzdpQkNDZ3c4b0FEbjRPV2JZNkNQNVlhbTJEeUNVTXRwM2xMQVVsOFNHWFVCWW9sR0hDajhNWjdxdGk0Vm5scV9NYmZ2U0dpcy1vSVBzS0JielZkZnhGMFRmbHZOcFJlbTFESHJzMTVzSEZWXzc2d25ycVlKaEJVMVZR?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "il fact checking di vannacci a filorosso-1794413383000-42",
+      "id": "il fact checking di vannacci a filorosso-1794413383000-40",
       "imageVerifiedKey": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZzdpQkNDZ3c4b0FEbjRPV2JZNkNQNVlhbTJEeUNVTXRwM2xMQVVsOFNHWFVCWW9sR0hDajhNWjdxdGk0Vm5scV9NYmZ2U0dpcy1vSVBzS0JielZkZnhGMFRmbHZOcFJlbTFESHJzMTVzSEZWXzc2d25ycVlKaEJVMVZR?oc=5",
       "logoUrl": "https://www.google.com/s2/favicons?domain=pagellapolitica.it&sz=128"
     },
@@ -1072,7 +1051,7 @@
       "originalURL": "https://tg24.sky.it/mondo/2026/11/11/sciopero-spagna",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "sciopero generale in spagna e il primo dopo 14 anni oltre 40 fermi-1794412921000-44",
+      "id": "sciopero generale in spagna e il primo dopo 14 anni oltre 40 fermi-1794412921000-42",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9nVGVTbXJsbTk2VVp0eVRyMnJFSTNsSjlWMFh3SjF0V3g4Q0NrZnZVeHNNN1Ffdzc0WlRQRHVOZE5MMW5KblRxSEdqaXBBNklhc25EeUg1OENaVDJSY3ZSYjFB?oc=5",
       "imageVerifiedKey": "https://tg24.sky.it/mondo/2026/11/11/sciopero-spagna",
       "logoUrl": "https://www.google.com/s2/favicons?domain=tg24.sky.it&sz=128"
@@ -1106,7 +1085,7 @@
       "originalURL": "https://tg24.sky.it/mondo/video/2026/11/11/sciopero-generale-spagna-timeline-1139271",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "sciopero generale in spagna milioni di cittadini in piazza-1794411433000-57",
+      "id": "sciopero generale in spagna milioni di cittadini in piazza-1794411433000-55",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdkNqcElBbXFvWmpVRXJzT1F0U3VsXzdKSjZGYTdpWGVyWFhKeXpmZWNWVHFuSnIyV0VEanR6dGRYSWQydnFNX2ZLNmNNd1pkS3BnLWhsUGlIOS1jZ19RUGdUc1VMS3BzdW11UWZsN3dWX001S3YyN3I5WUgtRUpxTEZKYTNCcndOeFItOA?oc=5",
       "imageVerifiedKey": "https://tg24.sky.it/mondo/video/2026/11/11/sciopero-generale-spagna-timeline-1139271",
       "logoUrl": "https://www.google.com/s2/favicons?domain=tg24.sky.it&sz=128"
@@ -1139,7 +1118,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQb3I3Wmg2QmhjX3BPcF9UN3owSFlwUTlXTzUxV3lodExCOVdXUm4zeVluNnAzM0d1WWNObUhEZVl1d3QwZzM5eTZWZTJsM1RKVHNPWmMycm9hZzJwNW1sQ0ZMQmJFVko2VHRCeXl2aUVrWWRpWHU0ZzhEdWpLSHZ2N0txTDQtbUduQUVraG45SWlvd3lJMG1DZk1yMkhaTHpXUVgxWnVHdlFMaFJCWFNrSHBfOXNwQzFEXzJCR0FOdy1mY1ZR0gHIAUFVX3lxTE5KU0dwNTc5ckFoV25wcWFEOWJ2dThlMUhnR3RhXzgwcFhEQU53X3laOGZ3WDFUd3FFLUp6S3R0aE9zRkprTDlUeXVHd3FCcElJQmIxbkswclE1S3g1XzZsTDY4cy0wQlZvcmd3bzVRYXJzRHlTOXdQR1F3UkZEWEsteVFoMEViOTFrUzBiZlAyZldneGMxTzY1bS1MYWNZQXFwTm1ZNVg3WEF2SXNOcE5ZZEpoRFVMeVpoOWdtenNrR3VabDVPQVh0?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "laura di terlizzi sindaca leghista di nibionno porta le donne arabe a -1794412685000-45",
+      "id": "laura di terlizzi sindaca leghista di nibionno porta le donne arabe a -1794412685000-43",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.liberoquotidiano.it&sz=128"
     },
     {
@@ -1175,7 +1154,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSmxtWXA3VmxtakFjUXc4OXd5YVpZM0tWWUxucHAyOWQ1M3VBMFZKMklXcGYtQlVQSGNyUEVJMG41dGxFeFBDM2o3M0VkSnNueG91czhaQXVCV2E3d3YxSUZHM0J0ZnhmdkNuYlhWelhTZ0FjR3BDb2hDTDNodWY3RkN2SkVzYmhNU3RFQUxjaFNzbWFLVnQzclVQVVVHWF9qa2pULVBlSkRINnhncFplTVpn?oc=5",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "manuale di storia scontro valditara laterza interviene la flc cgil ina-1794412683000-46",
+      "id": "manuale di storia scontro valditara laterza interviene la flc cgil ina-1794412683000-44",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.scuolainforma.news&sz=128"
     },
     {
@@ -1205,7 +1184,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNS2lVbDRYVHVlTXE1aUI0cC1IbXdic2QxWjdZd1BmOWNHMWxqNmpmcVNaOXBuSWlJN2pHUFd4MVg0d2lWMzN0MWYyQzh5SUJjdkxqN0NzZ001U1c5bFRuRENOLXduZEhJUHJUQ2VaOUpGbHBuYkxYMmNMWEtieE5QZ3dITWVaTzN2dEVxRVlmNXF1Z2JHQnFPX0o4TjhDYkNaZHlIUlZER3MycWNEZUJFSTlQSFZtWklISkFFLU9JQ0MyLUHSAccBQVVfeXFMT3loZEdSZW1URmJpckZjVlBtYWdySG95RW5NVm15bnhXb29xWHVpMC1CMjBhRFlXaVJ6XzZyV2xNVHRWUU5tSDRnanU0Mkc2X2lDeFRQdjNsYnhuT3ZjOTFfNm9oYlFqemFuVDN4a0NLNkJmTUt6eWhNNWdicl9SYjJEWS1uS2VMeFprQW9tNThweFdocE55dzR5UTBoRU1jX3pTX0Y0aGptYko5c0ZnMVRwejMybFlCdFNvQWc2eWxKMUQ4TG5TWQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "allarmi bomba giorgia meloni convoca i leader delle opposizioni a pala-1794412587000-49",
+      "id": "allarmi bomba giorgia meloni convoca i leader delle opposizioni a pala-1794412587000-47",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.liberoquotidiano.it&sz=128"
     },
     {
@@ -1236,31 +1215,31 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOb3diUGRWcGJNS3VzVnlITEt3NjhRTlUyb09kUHFVR3VuWWppMnA1Rl90cFQ1bFluOG1WTVE0SDVjYTJkd0xkczFVU1ZJZ2p4eGNsTzJaYUV0dDJFNFg5eWVxdHBEdE9wamlvNGhxRVZyRm12MUlZQWtLS0ZfeE00MlJKVkhXeXhfMWc2cWxBeENlTmhpWDctMU5ZcW53SzU0dUxvR0hEUEtjRDRRSEZPVG9wNDFyTC1lTVFRbmI4TmoyZXhZdW55OWhhUEdDMkNiN2NnSjBfNUoxcE9XNTg5R2hMN0hheFFRNUZzZw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "dalla scuola il futuro dell italia ampio sostegno al ministro valditar-1794412507000-50",
+      "id": "dalla scuola il futuro dell italia ampio sostegno al ministro valditar-1794412507000-48",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.scuolainforma.news&sz=128"
     },
     {
       "title": "Ramona Rinaldi, il marito confessa l'omicidio dopo due anni: \"L'ho abbracciata forte\" | Libero Quotidiano.it",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxOejhPUlZCQTM2VXpJRWJuNWtROEZSZzNGSUxvWS1hclluSXF2azJDLU1UTWdub3hYQWhZeE13aFpiU3lqUElZLUpySjlsbnBPc0NDM3MxUzZGTUpUQWxlQWdieFR1Z0JoT2FmV2hRcjdSZ1JhbjVvQ1ptSkVDY3duUVRhQUVhcFByOURTZi1Qb3pCWENqVE82c3ZOUnl4Ykl5UUd0NGhkdmFtTEViemVJSjR6MkdJd2I4bDQ4WVBEZUhGTVVKcks40gHHAUFVX3lxTE56OE9SVkJBMzZVeklFYm41a1E4RlJnM0ZJTG9ZLWFyWW5JcXZrMkMtTVRNZ25veFhBaFl4TXdoWmJTeWpQSVktSnJKOWxucE9zQ0MzczFTNkZNSlRBbGVBZ2J4VHVnQmhPYWZXaFFyN1JnUmFuNW9DWm1KRUNjd25RVGFBRWFwUHI5RFNmLVBvekJYQ2pUTzZzdk5SeXhiSXlRR3Q0aGR2YW1MRWJ6ZUlKNHoyR0l3YjhsNDhZUERlSEZNVUpySzg?oc=5\" target=\"_blank\">Ramona Rinaldi, il marito confessa l'omicidio dopo due anni: \"L'ho abbracciata forte\" | Libero Quotidiano.it</a> <font color=\"#6f6f6f\">Libero Quotidiano</font>",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOejhPUlZCQTM2VXpJRWJuNWtROEZSZzNGSUxvWS1hclluSXF2azJDLU1UTWdub3hYQWhZeE13aFpiU3lqUElZLUpySjlsbnBPc0NDM3MxUzZGTUpUQWxlQWdieFR1Z0JoT2FmV2hRcjdSZ1JhbjVvQ1ptSkVDY3duUVRhQUVhcFByOURTZi1Qb3pCWENqVE82c3ZOUnl4Ykl5UUd0NGhkdmFtTEViemVJSjR6MkdJd2I4bDQ4WVBEZUhGTVVKcks40gHHAUFVX3lxTE56OE9SVkJBMzZVeklFYm41a1E4RlJnM0ZJTG9ZLWFyWW5JcXZrMkMtTVRNZ25veFhBaFl4TXdoWmJTeWpQSVktSnJKOWxucE9zQ0MzczFTNkZNSlRBbGVBZ2J4VHVnQmhPYWZXaFFyN1JnUmFuNW9DWm1KRUNjd25RVGFBRWFwUHI5RFNmLVBvekJYQ2pUTzZzdk5SeXhiSXlRR3Q0aGR2YW1MRWJ6ZUlKNHoyR0l3YjhsNDhZUERlSEZNVUpySzg?oc=5",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwwFBVV95cUxOOEpMUFBHU29OOVBrN05GNVZvRVRBaVdUT01JbXVsNVVaS09aNU5TN241ejJkNzYzWHl5bEdfMGtpQ2wyajc1Y1VmX0d3c1lKYVlGbW9nZ2RDSTU5TGpxNHZXMnhSWDV4MW0yZmpLaUpERHpGbWJBcWdKX2hKRWhxS0FEdndtYlJwc2tCdS0wdG1qOE0xcGdhRVBPSzhDUnUtcERHSmNTdlRCU2Jvb2hXSWs1UFdmZU1SUzJtbGlIMUN3bXfSAccBQVVfeXFMTno4T1JWQkEzNlV6SUVibjVrUThGUmczRklMb1ktYXJZbklxdmsyQy1NVE1nbm94WEFoWXhNd2haYlN5alBJWS1Kcko5bG5wT3NDQzNzMVM2Rk1KVEFsZUFnYnhUdWdCaE9hZldoUXI3UmdSYW41b0NabUpFQ2N3blFUYUFFYXBQcjlEU2YtUG96QlhDalRPNnN2TlJ5eGJJeVFHdDRoZHZhbUxFYnplSUo0ejJHSXdiOGw0OFlQRGVIRk1VSnJLOA?oc=5\" target=\"_blank\">Ramona Rinaldi, il marito confessa l'omicidio dopo due anni: \"L'ho abbracciata forte\" | Libero Quotidiano.it</a> <font color=\"#6f6f6f\">Libero Quotidiano</font>",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOOEpMUFBHU29OOVBrN05GNVZvRVRBaVdUT01JbXVsNVVaS09aNU5TN241ejJkNzYzWHl5bEdfMGtpQ2wyajc1Y1VmX0d3c1lKYVlGbW9nZ2RDSTU5TGpxNHZXMnhSWDV4MW0yZmpLaUpERHpGbWJBcWdKX2hKRWhxS0FEdndtYlJwc2tCdS0wdG1qOE0xcGdhRVBPSzhDUnUtcERHSmNTdlRCU2Jvb2hXSWs1UFdmZU1SUzJtbGlIMUN3bXfSAccBQVVfeXFMTno4T1JWQkEzNlV6SUVibjVrUThGUmczRklMb1ktYXJZbklxdmsyQy1NVE1nbm94WEFoWXhNd2haYlN5alBJWS1Kcko5bG5wT3NDQzNzMVM2Rk1KVEFsZUFnYnhUdWdCaE9hZldoUXI3UmdSYW41b0NabUpFQ2N3blFUYUFFYXBQcjlEU2YtUG96QlhDalRPNnN2TlJ5eGJJeVFHdDRoZHZhbUxFYnplSUo0ejJHSXdiOGw0OFlQRGVIRk1VSnJLOA?oc=5",
       "source": "Libero Quotidiano",
       "category": "Cronaca",
       "categories": [
         "Cronaca"
       ],
-      "pubDate": "Wed, 11 Nov 2026 15:47:58 GMT",
-      "googlePubDate": "Wed, 11 Nov 2026 15:47:58 GMT",
+      "pubDate": "Wed, 11 Nov 2026 15:51:36 GMT",
+      "googlePubDate": "Wed, 11 Nov 2026 15:51:36 GMT",
       "originalPubDate": null,
       "dateSource": "google",
       "isVideo": false,
       "sources": [
         {
           "source": "Libero Quotidiano",
-          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOejhPUlZCQTM2VXpJRWJuNWtROEZSZzNGSUxvWS1hclluSXF2azJDLU1UTWdub3hYQWhZeE13aFpiU3lqUElZLUpySjlsbnBPc0NDM3MxUzZGTUpUQWxlQWdieFR1Z0JoT2FmV2hRcjdSZ1JhbjVvQ1ptSkVDY3duUVRhQUVhcFByOURTZi1Qb3pCWENqVE82c3ZOUnl4Ykl5UUd0NGhkdmFtTEViemVJSjR6MkdJd2I4bDQ4WVBEZUhGTVVKcks40gHHAUFVX3lxTE56OE9SVkJBMzZVeklFYm41a1E4RlJnM0ZJTG9ZLWFyWW5JcXZrMkMtTVRNZ25veFhBaFl4TXdoWmJTeWpQSVktSnJKOWxucE9zQ0MzczFTNkZNSlRBbGVBZ2J4VHVnQmhPYWZXaFFyN1JnUmFuNW9DWm1KRUNjd25RVGFBRWFwUHI5RFNmLVBvekJYQ2pUTzZzdk5SeXhiSXlRR3Q0aGR2YW1MRWJ6ZUlKNHoyR0l3YjhsNDhZUERlSEZNVUpySzg?oc=5",
-          "pubDate": "Wed, 11 Nov 2026 15:47:58 GMT"
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOOEpMUFBHU29OOVBrN05GNVZvRVRBaVdUT01JbXVsNVVaS09aNU5TN241ejJkNzYzWHl5bEdfMGtpQ2wyajc1Y1VmX0d3c1lKYVlGbW9nZ2RDSTU5TGpxNHZXMnhSWDV4MW0yZmpLaUpERHpGbWJBcWdKX2hKRWhxS0FEdndtYlJwc2tCdS0wdG1qOE0xcGdhRVBPSzhDUnUtcERHSmNTdlRCU2Jvb2hXSWs1UFdmZU1SUzJtbGlIMUN3bXfSAccBQVVfeXFMTno4T1JWQkEzNlV6SUVibjVrUThGUmczRklMb1ktYXJZbklxdmsyQy1NVE1nbm94WEFoWXhNd2haYlN5alBJWS1Kcko5bG5wT3NDQzNzMVM2Rk1KVEFsZUFnYnhUdWdCaE9hZldoUXI3UmdSYW41b0NabUpFQ2N3blFUYUFFYXBQcjlEU2YtUG96QlhDalRPNnN2TlJ5eGJJeVFHdDRoZHZhbUxFYnplSUo0ejJHSXdiOGw0OFlQRGVIRk1VSnJLOA?oc=5",
+          "pubDate": "Wed, 11 Nov 2026 15:51:36 GMT"
         }
       ],
-      "id": "focus-ramona rinaldi il marito confessa l omicidio dopo due anni l ho abbrac-1794412078000",
+      "id": "focus-ramona rinaldi il marito confessa l omicidio dopo due anni l ho abbrac-1794412296000",
       "sourceCount": 1,
       "image": "",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.liberoquotidiano.it&sz=128"
@@ -1326,7 +1305,7 @@
       "originalURL": "https://www.tgcom24.mediaset.it/mondo/usa-neonato-sepolto-vivo-salvo_118864274-202602k.shtml",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "usa bimbo di 11 mesi sparisce con il padre e viene trovato sepolto viv-1794411570000-56",
+      "id": "usa bimbo di 11 mesi sparisce con il padre e viene trovato sepolto viv-1794411570000-54",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRnVfNjJENWJCRDBUc2ZzMEotZkI2b2RiZlM1ZERjU2pnSElPeGFkNmp3ZVJITWdsNTkzVzVKN29oWHRXTXJiS1hibkl1VlpISElOeldpNU9sWFlBVDZmeF90MnZQQlZYN3ZDaVhKQVJuc2poS2xrTDh0eThnRnVZdEMzMEJEXzdhX0c3dE42MUYxNGs0alpN0gFoQVVfeXFMUDZvaTdaS0FobXF3SGN2TF9hMGlVZ1NyZXJCUTZ2dVUyNld6SDZWWXNuelBJdUotYmhnVFdhSzdpVG55Qmw5TnEzRFdqdkFKcGgwa1JKTmlseUlnQ29ZQUZaTmpNU0pPN3U?oc=5",
       "imageVerifiedKey": "https://www.tgcom24.mediaset.it/mondo/usa-neonato-sepolto-vivo-salvo_118864274-202602k.shtml",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.tgcom24.mediaset.it&sz=128"
@@ -1366,7 +1345,7 @@
       "originalURL": "https://napoli.corriere.it/notizie/cronaca/26_novembre_10/appalti-truccati-per-favorire-il-clan-veneruso-13-arresti-c-e-l-ex-senatore-e-attuale-presidente-di-soresa-tommaso-casillo-0014a2d8-6d4e-4c58-b90c-a715a4391xlk.shtml",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "appalti e tangenti in campania l inchiesta che scuote pd e m5s arresta-1794411170000-58",
+      "id": "appalti e tangenti in campania l inchiesta che scuote pd e m5s arresta-1794411170000-56",
       "logoUrl": "https://www.google.com/s2/favicons?domain=napoli.corriere.it&sz=128"
     },
     {
@@ -1398,7 +1377,7 @@
       "originalURL": "https://www.radioradicale.it/scheda/803717/intervista-a-federico-anghele-sul-finanziamento-della-politica-in-italia",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "intervista a federico anghele sul finanziamento della politica in ital-1794410878000-60",
+      "id": "intervista a federico anghele sul finanziamento della politica in ital-1794410878000-58",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbVp3UkhRTG05TThhNWNTME5xRFlwMVMyZl9wcktOTGdkb1I0T243cVpaQkoydnJvb1hHdER6Z3VzblExUmtKY2xpelFSU2lvY3BVUlRVTlBQYy1JY0owem5HR18yTGo0VW5xQ3E5eWR0MlVIQWNzSnBuUVVjQkFuMTB3NlFKbTBuYWgzRFFBeWxBZkg4aXlZNXpJRTF1Umk4Zk1GT3VxbTdneHVuUG8tZ0d5TXhDUQ?oc=5",
       "imageVerifiedKey": "https://www.radioradicale.it/scheda/803717/intervista-a-federico-anghele-sul-finanziamento-della-politica-in-italia",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.radioradicale.it&sz=128"
@@ -1432,7 +1411,7 @@
       "originalURL": "https://www.ilmessaggero.it/animali/gallo_canta_forte_alba_ucciso_treviso_processo-9883700.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "canta troppo forte all alba a processo per aver sparato e ucciso il ga-1794410795000-61",
+      "id": "canta troppo forte all alba a processo per aver sparato e ucciso il ga-1794410795000-59",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQT2l5SlhKS0tsbUlHTjlLWlR3b3d0d3I1Q3EzT2xtNmpMcDFnVGZSMW9yREh2eGRYMm5JTE03TGZvNmpHSGJzZ0xHeVh2MVZGeTMzZzVfUlFRQ2FYNEFQc2F5d0drWEZfMUl1cVNhMVJuVDVGdHl4dkwwZTJSTGc3SUZ6eXdteHRreHRTQTc5c1hNemFhNkI2cVRrZ9IBoAFBVV95cUxQNjlVSDdIQm9nSm4zYTl3dnNTaXJDN2FTVVNKdmQ0WGVGel9iY1JJbnpfbkQwTW16ZkNCNjR2Q0hFZVVXTk1aLXNmWkZULTMwSF9KNldjbG40Ums3Z1ZGSmxFQlVaWHRpU0FJekRmUUFWbGFwd1pjcUNsWmxJZ1dZNkNfTEVFMlZjQ05hS1B6ZW81b1gzMzR5UWxFbFpZT3JI?oc=5",
       "imageVerifiedKey": "https://www.ilmessaggero.it/animali/gallo_canta_forte_alba_ucciso_treviso_processo-9883700.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ilmessaggero.it&sz=128"
@@ -1466,7 +1445,7 @@
       "originalURL": "https://www.sportmediaset.mediaset.it/calcio/juventus/juventus-buone-nuove-dallinfermeria-col-venezia-tornano-in-tre-kalulu-punta-il-como_118864282-202602k.shtml",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "juventus buone nuove dall infermeria col venezia tornano in tre kalulu-1794410520000-62",
+      "id": "juventus buone nuove dall infermeria col venezia tornano in tre kalulu-1794410520000-60",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQYWsxWWI1UktHZ0hfM0poVXFOTkZocEFfT3BsSzc1T2prZHBPYk10dDl4LUpkT01MOHFtakUwQS04TjJkcHRBTmZnbTI5bkFtZzNGV1luMkpFMkNxNVhQT3JyOXlxbUxxdEZkS0UzdFFwbUpPV3dld1dZeGlFX1BUREFCcjJ5eEVuZlBld1NoYy12SkV2elFZNDg4TXFxOG5oVVJhV1dsRE01SGlfZmg2NWgyMnl6M2lIdVpoNlc2RS13QW5lNWRDM2paSzNXQWlscmd5YXZTalhTMXhNY0gtUDVpLS1xY0JhZFlIakdDdU4xZkU?oc=5",
       "imageVerifiedKey": "https://www.sportmediaset.mediaset.it/calcio/juventus/juventus-buone-nuove-dallinfermeria-col-venezia-tornano-in-tre-kalulu-punta-il-como_118864282-202602k.shtml",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.sportmediaset.mediaset.it&sz=128"
@@ -1541,7 +1520,7 @@
       "originalURL": "https://www.ilgiorno.it/video/omicidio-ramona-rinaldi--jz1aqesn",
       "sourceCount": 3,
       "sourcePriority": 55,
-      "id": "omicidio di ramona rinaldi confessa il compagno daniele re spiazzata l-1794410105000-63",
+      "id": "omicidio di ramona rinaldi confessa il compagno daniele re spiazzata l-1794410105000-61",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ilgiorno.it&sz=128"
     },
     {
@@ -1613,7 +1592,7 @@
       "originalURL": "https://www.ilfattoquotidiano.it/2026/11/11/valditara-ritiro-libro-laterza-notizie/8568259/",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "valditara chiede il ritiro del libro di storia che critica meloni-1794409768000-65",
+      "id": "valditara chiede il ritiro del libro di storia che critica meloni-1794409768000-63",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNLTJRWEVRZnZWYm9pZThOOXBMUGxwZzZHWkh3TDg0blo4cVo5Q1pmdEFHQldiNkpjd2hNS3JOc3JOdzZnWUM1Vm1KVFA2YV8zSHRUWFRHdExLZF9Nd2FfRWVPX0FCYU5WUWxhNDVYVkg0VHY0YzQzQ0hLSXJVZlhiUGpVNzdSNFc2RWt1MmRpR3V0SUlEaXc?oc=5",
       "imageVerifiedKey": "https://www.ilfattoquotidiano.it/2026/11/11/valditara-ritiro-libro-laterza-notizie/8568259/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ilfattoquotidiano.it&sz=128"
@@ -1647,7 +1626,7 @@
       "originalURL": "https://www.milanotoday.it/cronaca/bancarotta-manager-commercialista-palermo-arrestati.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "milano palermo truffa e bancarotta da centinaia di migliaia di euro ar-1794409349000-66",
+      "id": "milano palermo truffa e bancarotta da centinaia di migliaia di euro ar-1794409349000-64",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYmVFNjNGTWJWVEw1YXp6RnhOMEhRbTk1NV83LWtjYk1ZWi1MSktVdDhIRFBWNHdEOWZ3cEFVcVRwXy1fLURTU2FkYUNJdnJ0VHVmdFJsSUxHazVkWmRaaGRpWE9ZTU1XRFRZRjBmRHFyTXo3TXlGeHhpbDJyYUIyRFk3dUxYMzA4cDlYMl9BMktNNm5yX2c?oc=5",
       "imageVerifiedKey": "https://www.milanotoday.it/cronaca/bancarotta-manager-commercialista-palermo-arrestati.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.milanotoday.it&sz=128"
@@ -1715,7 +1694,7 @@
       "originalURL": "https://corrieredelveneto.corriere.it/notizie/verona/cronaca/26_novembre_11/enologo-tassista-di-migranti-irregolari-a-sua-insaputa-arrestato-al-valico-e-poi-rilasciato-639d9d16-f4e3-48ab-aebc-c2debdc1bxlk.shtml",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "enologo tassista di migranti irregolari a sua insaputa arrestato al va-1794409093000-68",
+      "id": "enologo tassista di migranti irregolari a sua insaputa arrestato al va-1794409093000-66",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMitAJBVV95cUxOcFpkRVdMR2EtbkxZdjk3OTYzTjZCRzdMdnZ3TU5JdWk1NmhSZ3NoTWg3UUc5RVJRSTFPZXdYZDZJTjlaaDFvdnM5LUJvcWJWTzhESHEtdHh6VGJnaHlsVmg0ZTlnNGNWZndCcnp6MmJDZm5KdjdDQmdPOEFBeTNTT2NCSlVCdkJIWlFWOVU4Qm9HYjY2eXhPOXlVZkNjSEE0bjhPdDdaMUltUzl3ei05RDdLTno5V28tNnRia3ljMU9haW13TmF1clJCWFhVMnliQ2twRjRWMXdVRTI2Nmg2Sk1fSzNBWHVnRE84UE9WUjdqVzBFOXY2bERsM0Z6WjVjNURTZTNZczJ4V29UQkJTTWk5RXNiMXd1VWt4OExyR0dYQzE5NFVadnBHR05GLWowLTBsQ9IBugJBVV95cUxPQl9TblBJZlgtUWxkQ2k4U0RkZkE1X2VkNVBwWk1iTFI4cUFNQV8zWlVIWWFFeUo3ODl4c2JqWm5IQW4yQk03WVMzekNCX0hoMDE4YmQzeFU3T0FLemJXaDFsVC10NlZjamZtenpaQUNrbHJwS0VZVlE0Rl9CamhnQnlQSVp6UXRRZkVEYW8yU0loQTIwWll5bDF4WFlvT3dOU0ctTk5WdTZBdlVFMTdZaklFdHdXMG9CYnc0M0FVajUxNjZFTTI3YVpPRGFEU2t1S3ZCNXFOdGdLSVgtQ3N6SUZBbnM3VHhGZlQxU19MalhhM0N2c21yMVJqYVVGYnBBd1VSZlVTY1N4ZUpUMXpZSS1tWXplcGl3eDBsNElwYTAyU01CRU1WVGh0X0YwczNCWFBzeTlRbWd4UQ?oc=5",
       "imageVerifiedKey": "https://corrieredelveneto.corriere.it/notizie/verona/cronaca/26_novembre_11/enologo-tassista-di-migranti-irregolari-a-sua-insaputa-arrestato-al-valico-e-poi-rilasciato-639d9d16-f4e3-48ab-aebc-c2debdc1bxlk.shtml",
       "logoUrl": "https://www.google.com/s2/favicons?domain=corrieredelveneto.corriere.it&sz=128"
@@ -1729,8 +1708,8 @@
       "category": "Lega",
       "categories": [
         "Lega",
-        "Politica",
-        "Governo"
+        "Governo",
+        "Politica"
       ],
       "pubDate": "Wed, 11 Nov 2026 14:46:48 GMT",
       "googlePubDate": "Wed, 11 Nov 2026 14:46:48 GMT",
@@ -1746,23 +1725,15 @@
         },
         {
           "source": "ANSA",
-          "link": "https://www.ansa.it/sito/notizie/politica/2026/11/11/riunione-con-meloni-crosetto-e-giorgetti-a-palazzo-chigi_64424a18-35dc-40ab-9e3a-9d7b0a2f6661.html",
-          "originalURL": "https://www.ansa.it/sito/notizie/politica/2026/11/11/riunione-con-meloni-crosetto-e-giorgetti-a-palazzo-chigi_64424a18-35dc-40ab-9e3a-9d7b0a2f6661.html",
-          "pubDate": "Wed, 11 Nov 2026 15:37:13 +0100",
-          "originalPubDate": "Wed, 11 Nov 2026 15:37:13 +0100",
-          "dateSource": "original"
-        },
-        {
-          "source": "ANSA",
           "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQMEpvR1RjUVg2T3ExV1NxcE9kdU5oMGU5WkRPalF2bjlOdGU0NjgyXzh5cEZlQzd0b0RscXd0YkxEYlJPeVZoWWMzMnlFRm5PdGNsRXVuRHBNckJVZTZaSjFlSXI2NFV5MHFjeTI0ZldFRFRXY1JuWlItY1lIZ1ZlTlZGbjB2Uy11ZHlzeFdyNGcyVUV6MkpKRHV5eGpnR25VTndXclZxWmQ2MlZDUmNqRlBCcGg3SDlOUHBRUjhZUU1SdmNxSlAtSjZrRVZpLVV2UW5lOVJYeTE4ZDJJTmdfTE1HbmYwd9IB6wFBVV95cUxNaDVneW9iMXJVUzhVQXlQZkoxRW1USmVENUFQNGVwLXhUUHBnaEV2RjFEek9wcEpaZkFRUnd3MWpSX2lDaWdwY2tXMDNkUS1jSV9pQ0xvVU1kSUtBNFJGR3o0WFdVRG1wWUQ4TlhuSVQ2bjg4THR6NTVlRnNFQzJ0MkJXTTBKN1ZhVVBqaC1vT3NoRmVZRE9XRVJFVVlQSHY5NXhRMmx3OUZIMVgxQ2JmQ0ZiZVkyYXhyZThLR3NoV2hqNFZ6ZDdyNnNNRXhkaV8ybXB3WmhLRE5oR1lpa1lTLUtJNmo0MXEzM3JB?oc=5",
           "sourceHomepage": "https://www.ansa.it",
           "pubDate": "Wed, 11 Nov 2026 14:37:00 GMT"
         }
       ],
       "originalURL": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNaDVneW9iMXJVUzhVQXlQZkoxRW1USmVENUFQNGVwLXhUUHBnaEV2RjFEek9wcEpaZkFRUnd3MWpSX2lDaWdwY2tXMDNkUS1jSV9pQ0xvVU1kSUtBNFJGR3o0WFdVRG1wWUQ4TlhuSVQ2bjg4THR6NTVlRnNFQzJ0MkJXTTBKN1ZhVVBqaC1vT3NoRmVZRE9XRVJFVVlQSHY5NXhRMmx3OUZIMVgxQ2JmQ0ZiZVkyYXhyZThLR3NoV2hqNFZ6ZDdyNnNNRXhkaV8ybXB3WmhLRE5oR1lpa1lTLUtJNmo0MXEzM3JB0gHrAUFVX3lxTE1oNWd5b2IxclVTOFVBeVBmSjFFbVRKZUQ1QVA0ZXAteFRQcGdoRXZGMUR6T3BwSlpmQVFSd3cxalJfaUNpZ3Bja1cwM2RRLWNJX2lDTG9VTWRJS0E0UkZHejRYV1VEbXBZRDhOWG5JVDZuODhMdHo1NWVGc0VDMnQyQldNMEo3VmFVUGpoLW9Pc2hGZVlET1dFUkVVWVBIdjk1eFEybHc5RkgxWDFDYmZDRmJlWTJheHJlOEtHc2hXaGo0VnpkN3I2c01FeGRpXzJtcHdaaEtETmhHWWlrWVMtS0k2ajQxcTMzckE?oc=5",
-      "sourceCount": 3,
+      "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "riunione con meloni crosetto e giorgetti a palazzo chigi-1794408408000-69",
+      "id": "riunione con meloni crosetto e giorgetti a palazzo chigi-1794408408000-67",
       "imageVerifiedKey": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNaDVneW9iMXJVUzhVQXlQZkoxRW1USmVENUFQNGVwLXhUUHBnaEV2RjFEek9wcEpaZkFRUnd3MWpSX2lDaWdwY2tXMDNkUS1jSV9pQ0xvVU1kSUtBNFJGR3o0WFdVRG1wWUQ4TlhuSVQ2bjg4THR6NTVlRnNFQzJ0MkJXTTBKN1ZhVVBqaC1vT3NoRmVZRE9XRVJFVVlQSHY5NXhRMmx3OUZIMVgxQ2JmQ0ZiZVkyYXhyZThLR3NoV2hqNFZ6ZDdyNnNNRXhkaV8ybXB3WmhLRE5oR1lpa1lTLUtJNmo0MXEzM3JB0gHrAUFVX3lxTE1oNWd5b2IxclVTOFVBeVBmSjFFbVRKZUQ1QVA0ZXAteFRQcGdoRXZGMUR6T3BwSlpmQVFSd3cxalJfaUNpZ3Bja1cwM2RRLWNJX2lDTG9VTWRJS0E0UkZHejRYV1VEbXBZRDhOWG5JVDZuODhMdHo1NWVGc0VDMnQyQldNMEo3VmFVUGpoLW9Pc2hGZVlET1dFUkVVWVBIdjk1eFEybHc5RkgxWDFDYmZDRmJlWTJheHJlOEtHc2hXaGo0VnpkN3I2c01FeGRpXzJtcHdaaEtETmhHWWlrWVMtS0k2ajQxcTMzckE?oc=5",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
     },
@@ -1827,7 +1798,7 @@
       "originalURL": "https://www.salernotoday.it/cronaca/tentato-omicidio-pontecagnano-due-arresti.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "pontecagnano giovane ferito a colpi d arma da fuoco due arresti per te-1794408081000-70",
+      "id": "pontecagnano giovane ferito a colpi d arma da fuoco due arresti per te-1794408081000-68",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZElvRXBETWpyeXFjOXltc3lZN3o5WDF5VUtFWjctMjd0ZUQydkVVOVNPaDNDVzFSNE9tOTBCOGJjNmdKaW4wX0Y2cEdnaFVtWVhRUmNhS0k4WGxqeExITnRzODdnU3JwQjh1d2tsSzlqRDBCU0dzQ1pVWVJkWk1wMHJhWkROTXZsZ0E?oc=5",
       "imageVerifiedKey": "https://www.salernotoday.it/cronaca/tentato-omicidio-pontecagnano-due-arresti.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.salernotoday.it&sz=128"
@@ -1861,10 +1832,44 @@
       "originalURL": "https://www.milanotoday.it/attualita/violenza-sulle-donne-campagna-mezzi-pubblici-2026.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "violenza sulle donne la prevenzione arriva in metropolitana se c e un -1794408077000-71",
+      "id": "violenza sulle donne la prevenzione arriva in metropolitana se c e un -1794408077000-69",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMjdZU3lMczVCaU94bDdHUUxKa3ROeEU0U05VU1NicTFKekoxZFdpWkdTTlNaZ0VKbjNmaXBNV3NRV1NCY3loV3Z0dkMtWkItWGNhOFVTWlYybmhLLWJ0R0E1STZsUDI3ZURxNWoxeU1WS0x1ZGlha2lfbHg2Ni1PRjNVZTBCVW93aFV1ZHJ4QmJ1ZXNqWkE?oc=5",
       "imageVerifiedKey": "https://www.milanotoday.it/attualita/violenza-sulle-donne-campagna-mezzi-pubblici-2026.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.milanotoday.it&sz=128"
+    },
+    {
+      "title": "Atteso il vertice di maggioranza sulla manovra",
+      "summary": "Oltre ai leader dovrebbe partecipare anche il ministro Giorgetti",
+      "link": "https://www.ansa.it/sito/notizie/politica/2026/11/11/riunione-con-meloni-crosetto-e-giorgetti-a-palazzo-chigi_64424a18-35dc-40ab-9e3a-9d7b0a2f6661.html",
+      "image": "https://www.ansa.it/webimages/img_1280x720/2025/3/26/14e9f27b2a374974d67bffdcf49523da.jpg",
+      "source": "ANSA",
+      "category": "Politica",
+      "categories": [
+        "Politica",
+        "Governo"
+      ],
+      "pubDate": "2026-11-11T14:37:13.000Z",
+      "googlePubDate": null,
+      "originalPubDate": "2026-11-11T14:37:13.000Z",
+      "dateSource": "original",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "ANSA",
+          "link": "https://www.ansa.it/sito/notizie/politica/2026/11/11/riunione-con-meloni-crosetto-e-giorgetti-a-palazzo-chigi_64424a18-35dc-40ab-9e3a-9d7b0a2f6661.html",
+          "originalURL": "https://www.ansa.it/sito/notizie/politica/2026/11/11/riunione-con-meloni-crosetto-e-giorgetti-a-palazzo-chigi_64424a18-35dc-40ab-9e3a-9d7b0a2f6661.html",
+          "pubDate": "2026-11-11T14:37:13.000Z",
+          "originalPubDate": "2026-11-11T14:37:13.000Z",
+          "dateSource": "original"
+        }
+      ],
+      "originalURL": "https://www.ansa.it/sito/notizie/politica/2026/11/11/riunione-con-meloni-crosetto-e-giorgetti-a-palazzo-chigi_64424a18-35dc-40ab-9e3a-9d7b0a2f6661.html",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "atteso il vertice di maggioranza sulla manovra-1794416526000-17",
+      "imageVerifiedKey": "https://www.ansa.it/sito/notizie/politica/2026/11/11/riunione-con-meloni-crosetto-e-giorgetti-a-palazzo-chigi_64424a18-35dc-40ab-9e3a-9d7b0a2f6661.html",
+      "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128",
+      "publicationVerifiedKey": "https://www.ansa.it/sito/notizie/politica/2026/11/11/riunione-con-meloni-crosetto-e-giorgetti-a-palazzo-chigi_64424a18-35dc-40ab-9e3a-9d7b0a2f6661.html"
     },
     {
       "title": "Manovra, Istat: \"A 3,5 milioni di pensionati nel 2027 in media 510 euro lordi in meno\"",
@@ -1895,7 +1900,7 @@
       "originalURL": "https://www.tgcom24.mediaset.it/economia/manovra-istat-pensionati-irpef-2027_118861489-202602k.shtml",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "manovra istat a 3 5 milioni di pensionati nel 2027 in media 510 euro l-1794407040000-77",
+      "id": "manovra istat a 3 5 milioni di pensionati nel 2027 in media 510 euro l-1794407040000-75",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSkQwZjJLeEw3ZS1PYjBJYnhWbnJOQkJBclNURDZYei1vRnJGWVU2ZllZN3NqN2lXdEQ4V1U2ZEJIRzBmdTF0dFA5NktJNlkzNkRmdkRoS1Vsdl9lQTBIaGxWT1dEeHpFUVlIZ2VITWNHYkNjRmQ3cmo0WnpMdkFNM2lEMDFCeEY0V09LQmNLaEdYSFVDV21ndVY0OUQ3TnNxc1HSAWhBVV95cUxPWlFxV2hNOGp4VjVBbXdwaFJUM2R4N2VQNjIxN2hqUFVjUnNva09mN283NlYwQk9HdjMwMGN2Ul9hUzBVV0ZqWWIyVlZiM09acjFqTUxHNE9fNVU1VHhTSUQtUWM5dWI3bQ?oc=5",
       "imageVerifiedKey": "https://www.tgcom24.mediaset.it/economia/manovra-istat-pensionati-irpef-2027_118861489-202602k.shtml",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.tgcom24.mediaset.it&sz=128"
@@ -1929,7 +1934,7 @@
       "originalURL": "https://lasesia.vercelli.it/italia/2026/11/11/news/aci-siti-web-utilizzano-il-nostro-marchio-per-falsi-soccorso-stradali-130695/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "aci siti web utilizzano il nostro marchio per falsi soccorso stradali-1794407071000-75",
+      "id": "aci siti web utilizzano il nostro marchio per falsi soccorso stradali-1794407071000-73",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNWl2WmdBemNTUkExQW9TUkJZVDZUa2VEOFNYNXJjdFhocVhicHFzNVJMUlEyOTd3TnpIcUF6NVY0U0RtYmxKdnpWT2pVWHppX2dyX0d1T3dGZ2JVS0pwd0xMcFItZjJnajBnMm51T0tOQVgwZEZSNHdzbW96ZkhQcUFqWWJXTXE2ajVhSHZ3aUwzMG4yODdnRERRdWNBZG1TWlVxVENBckYtVy0yczVINjAwT0ZFY1pOS05DRkhsVzhuQTNQU01V?oc=5",
       "imageVerifiedKey": "https://lasesia.vercelli.it/italia/2026/11/11/news/aci-siti-web-utilizzano-il-nostro-marchio-per-falsi-soccorso-stradali-130695/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=lasesia.vercelli.it&sz=128"
@@ -1963,7 +1968,7 @@
       "originalURL": "https://www.napolitoday.it/attualita/dispositivi-traffico-cantieri-manifestazioni-strade-interessate.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "traffico via libera ai dispositivi per cantieri ed eventi tutte le str-1794406929000-79",
+      "id": "traffico via libera ai dispositivi per cantieri ed eventi tutte le str-1794406929000-77",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZE9GRFd5NjJzSUZTYk95cHllTzZzeGhuUFRGdGpGTnN1Zi1HMXBxOUFWNjF2emlmTkQ0TTUtdWNmZzFOY0VXc1plUXZQanZDbl91cHRETUtHbVl1SUs0Yll4aEFfclkySjU4c0toZm5tYUZjdFFFUU1kVmFJYWpLdE8tODJ2TUd4YzdSVzNmc05BODNOZ0d3VGZLMjY1RENKcVpTX0Z3QnM?oc=5",
       "imageVerifiedKey": "https://www.napolitoday.it/attualita/dispositivi-traffico-cantieri-manifestazioni-strade-interessate.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.napolitoday.it&sz=128"
@@ -2029,42 +2034,10 @@
       "originalURL": "https://www.ilgiornale.it/news/cronaca-internazionale/spagna-sciopero-generale-a-poche-settimane-dalle-elezioni-scontro-sanchez-feijoo/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "spagna sciopero generale a poche settimane dalle elezioni scontro sanc-1794406643000-82",
+      "id": "spagna sciopero generale a poche settimane dalle elezioni scontro sanc-1794406643000-80",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNb0QyUVpzZGt4akhyQUI5aGdtMGczX2lhRzRmbHVZUVNMQWxBYUdpZzFWeGhoOEpWU0wzSGJ3R09vMnRINVROazR3cjRTUnUyY0hveUhKVUFOb212RnZyLXRyTW1DblNUN1Nkd1Nsd3ZNTE1zUHpvWEhzeDVMel9YamhaRDFJQk1DYnlSRW4tdmZ1LXRPbkNiTnZtSlpTQ05hOVVKdDQwQ0xySUZUSXhDc1pVcS1qRVlPQzlTNXE2QjFyb0tWMU1IcDhhRmZ5MllF?oc=5",
       "imageVerifiedKey": "https://www.ilgiornale.it/news/cronaca-internazionale/spagna-sciopero-generale-a-poche-settimane-dalle-elezioni-scontro-sanchez-feijoo/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ilgiornale.it&sz=128"
-    },
-    {
-      "title": "Violenza di genere, con Lara Magoni al Parlamento Europeo la testimonianza di Valentina Pitzalis",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxPeW5sejZkR1JoeWdHSUdZTFZrd0lrbEZLSXdzV2N6VjBPUGZkbnZjcG0zRVl0TC1ZS1hvY1RKM3JCeEpfUWI4eU1ZRHU3TGlma1hiTFhiNy04OGE3RWRSUkptV21oVlNVMlBZZjVELUEtV2g2OTc1dGxxb1JLNXpWemhaWWRDYl9VS3Jub2cwcldnaWVQUTExc2lyRUlwSjU5UWNGYXBfbFBVbHFtczExaEVLWkxqeVgxclhWa1ZYV3VlMzZDQUUxd0NCNUc5bFBQcVBR?oc=5\" target=\"_blank\">Violenza di genere, con Lara Magoni al Parlamento Europeo la testimonianza di Valentina Pitzalis</a> <font color=\"#6f6f6f\">Valseriana News</font>",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPeW5sejZkR1JoeWdHSUdZTFZrd0lrbEZLSXdzV2N6VjBPUGZkbnZjcG0zRVl0TC1ZS1hvY1RKM3JCeEpfUWI4eU1ZRHU3TGlma1hiTFhiNy04OGE3RWRSUkptV21oVlNVMlBZZjVELUEtV2g2OTc1dGxxb1JLNXpWemhaWWRDYl9VS3Jub2cwcldnaWVQUTExc2lyRUlwSjU5UWNGYXBfbFBVbHFtczExaEVLWkxqeVgxclhWa1ZYV3VlMzZDQUUxd0NCNUc5bFBQcVBR?oc=5",
-      "source": "Valseriana News",
-      "category": "Europa",
-      "categories": [
-        "Europa"
-      ],
-      "pubDate": "2026-11-11T14:16:10.000Z",
-      "googlePubDate": "Wed, 11 Nov 2026 14:16:56 GMT",
-      "originalPubDate": "2026-11-11T14:16:10.000Z",
-      "dateSource": "original",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Valseriana News",
-          "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPeW5sejZkR1JoeWdHSUdZTFZrd0lrbEZLSXdzV2N6VjBPUGZkbnZjcG0zRVl0TC1ZS1hvY1RKM3JCeEpfUWI4eU1ZRHU3TGlma1hiTFhiNy04OGE3RWRSUkptV21oVlNVMlBZZjVELUEtV2g2OTc1dGxxb1JLNXpWemhaWWRDYl9VS3Jub2cwcldnaWVQUTExc2lyRUlwSjU5UWNGYXBfbFBVbHFtczExaEVLWkxqeVgxclhWa1ZYV3VlMzZDQUUxd0NCNUc5bFBQcVBR?oc=5",
-          "pubDate": "2026-11-11T14:16:10.000Z",
-          "originalPubDate": "2026-11-11T14:16:10.000Z",
-          "dateSource": "original",
-          "originalURL": "https://www.valseriananews.it/2026/11/11/violenza-di-genere-con-lara-magoni-al-parlamento-europeo-la-testimonianza-di-valentina-pitzalis/"
-        }
-      ],
-      "id": "focus-violenza di genere con lara magoni al parlamento europeo la testimonia-1794406616000",
-      "sourceCount": 1,
-      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPeW5sejZkR1JoeWdHSUdZTFZrd0lrbEZLSXdzV2N6VjBPUGZkbnZjcG0zRVl0TC1ZS1hvY1RKM3JCeEpfUWI4eU1ZRHU3TGlma1hiTFhiNy04OGE3RWRSUkptV21oVlNVMlBZZjVELUEtV2g2OTc1dGxxb1JLNXpWemhaWWRDYl9VS3Jub2cwcldnaWVQUTExc2lyRUlwSjU5UWNGYXBfbFBVbHFtczExaEVLWkxqeVgxclhWa1ZYV3VlMzZDQUUxd0NCNUc5bFBQcVBR?oc=5",
-      "originalURL": "https://www.valseriananews.it/2026/11/11/violenza-di-genere-con-lara-magoni-al-parlamento-europeo-la-testimonianza-di-valentina-pitzalis/",
-      "image": "https://www.valseriananews.it/wp-content/uploads/2026/11/convegno-lara-magoni-parlamento-europeo-valentina-pitzalis.jpeg",
-      "imageVerifiedKey": "https://www.valseriananews.it/2026/11/11/violenza-di-genere-con-lara-magoni-al-parlamento-europeo-la-testimonianza-di-valentina-pitzalis/",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=www.valseriananews.it&sz=128"
     },
     {
       "title": "Attacchi hacker, domani Meloni incontra i leader di opposizione",
@@ -2112,7 +2085,7 @@
       "originalURL": "https://www.ansa.it/sito/notizie/politica/2026/11/11/attacchi-hacker-domani-meloni-incontra-i-leader-di-opposizione_2492f661-96c0-4c90-97f0-08306021eb13.html",
       "sourceCount": 3,
       "sourcePriority": 55,
-      "id": "attacchi hacker domani meloni incontra i leader di opposizione-1794406583000-83",
+      "id": "attacchi hacker domani meloni incontra i leader di opposizione-1794406583000-81",
       "publicationVerifiedKey": "https://www.ansa.it/sito/notizie/politica/2026/11/11/attacchi-hacker-domani-meloni-incontra-i-leader-di-opposizione_2492f661-96c0-4c90-97f0-08306021eb13.html",
       "imageVerifiedKey": "https://www.ansa.it/sito/notizie/politica/2026/11/11/attacchi-hacker-domani-meloni-incontra-i-leader-di-opposizione_2492f661-96c0-4c90-97f0-08306021eb13.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
@@ -2146,7 +2119,7 @@
       "originalURL": "https://www.salernotoday.it/cronaca/museo-provinciale-slitta-riapertura-14-novembre-2026.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "museo archeologico di salerno cantiere ancora aperto slitta la riapert-1794406152000-86",
+      "id": "museo archeologico di salerno cantiere ancora aperto slitta la riapert-1794406152000-85",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM295MmJ2UFE3Nm9PWGN4bDRaTkR3VUJMOUg3cG1mMXNkWFBxSG1zOGFLSnd3WVBvdzBlQ084WU9tRnp1YlBXV1JacWxPUHZyZlJNcS1LcXRqRlhXVEk4RjExU0oxSnBKS2xXV0xyTm9oVzRxc1liLWtISXdOQUsydHYtTXV6NmFQX0gydGZnRXFBZmtkang0Tw?oc=5",
       "imageVerifiedKey": "https://www.salernotoday.it/cronaca/museo-provinciale-slitta-riapertura-14-novembre-2026.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.salernotoday.it&sz=128"
@@ -2181,7 +2154,7 @@
       "originalURL": "https://www.ravennanotizie.it/2026/11/11/croatti-del-m5s-su-balneari-basta-con-le-farse-grottesche-salvini-smetta-di-prendere-in-giro-gli-operatori/628631/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "croatti del m5s su balneari basta con le farse grottesche salvini smet-1794406140000-87",
+      "id": "croatti del m5s su balneari basta con le farse grottesche salvini smet-1794406140000-86",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcHdNMU01ZmJLZjVaWkhJYTN5UTJCRWozM2ZUVFJGcnhLVW9aREhlQXE2ajFUNVBUSENuM0hEcF9XaWpRUERTWFIwLTN5cmVETk8xMjBnVlZkM2l4WVg3dXBtTVhJZ3I4THZGRTF3blc5SVpWNTMwZDQ4YTRfYWdldjhsRXdDWWphVE9rcHVJejg2b2ktLUhEa29TWDVFQVRRckZSMGFYQTRBOHBfbXlsWjFfZTNvNDBkNmhUQkctdTNqbU5mREdkNHhuSENkSENvV0lGU2YzVTl1YUt0SEQ0dEFyeWtvUXNYVEdz?oc=5",
       "imageVerifiedKey": "https://www.ravennanotizie.it/2026/11/11/croatti-del-m5s-su-balneari-basta-con-le-farse-grottesche-salvini-smetta-di-prendere-in-giro-gli-operatori/628631/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ravennanotizie.it&sz=128"
@@ -2218,10 +2191,44 @@
       "originalURL": "https://www.varesenews.it/2026/11/ferrovia-milano-luino-cadenazzo-azione-varese-chiede-certezze-sui-lavori-interrogazione-al-ministro-salvini/2735863/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "ferrovia milano luino cadenazzo azione varese chiede certezze sui lavo-1794405506000-89",
+      "id": "ferrovia milano luino cadenazzo azione varese chiede certezze sui lavo-1794405506000-88",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOTTNObERCVFY3NDhIUEtqUmhxcDNWd1ZYYmlaeW96a1I3X3gzQXlzSkNlQUdlV09fRWo4NXE2cWFHcm50Mko0MUdLR2ZIdlkyVnVCU1FzWExCYjk1T2pFY3BEdEJTLWhtWWYtVzgyem92Q21Ud1dXVlJ2YkJMcmdsNmFzeVRtVkRuV1dsNjFZc05mZFNpOTBDaUV6bmVZNlUxejRLVlZPV2E4WFo5TWlZeTBpRlo2U3JBeEY3ZkhaTXo5Y29xdVp6ZjktTFZsWnV4Vjl6a0tXQlRVa1BSRGZfQTVHSHY?oc=5",
       "imageVerifiedKey": "https://www.varesenews.it/2026/11/ferrovia-milano-luino-cadenazzo-azione-varese-chiede-certezze-sui-lavori-interrogazione-al-ministro-salvini/2735863/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.varesenews.it&sz=128"
+    },
+    {
+      "title": "Soccorsa su una panchina in stato di incoscienza: scoperta una storia di violenze, arrestato il convivente",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE5PSVg0eVpNMEw2ZlhtMEc2TDhfWk1vZDNFRDl4SmVGc21ySXBSRUNmRndrUlVGd2lqMUFncHUzSWlJVVBOWHJRVG5RVGFYRUhjeFZGNmw0REhwbnZETk9XOUxtbGJhMGUyV29qODFkLVh6Y0RIaXBVLXVfZVU?oc=5\" target=\"_blank\">Soccorsa su una panchina in stato di incoscienza: scoperta una storia di violenze, arrestato il convivente</a> <font color=\"#6f6f6f\">RomaToday</font>",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5PSVg0eVpNMEw2ZlhtMEc2TDhfWk1vZDNFRDl4SmVGc21ySXBSRUNmRndrUlVGd2lqMUFncHUzSWlJVVBOWHJRVG5RVGFYRUhjeFZGNmw0REhwbnZETk9XOUxtbGJhMGUyV29qODFkLVh6Y0RIaXBVLXVfZVU?oc=5",
+      "image": "https://www.romatoday.it/~media/horizontal-hi/69223516188598/violenza-donne-2-3.jpg",
+      "source": "RomaToday",
+      "category": "Sicurezza",
+      "categories": [
+        "Sicurezza"
+      ],
+      "pubDate": "2026-11-11T13:54:00.000Z",
+      "googlePubDate": "Wed, 11 Nov 2026 13:54:00 GMT",
+      "originalPubDate": "2026-11-11T13:54:00.000Z",
+      "dateSource": "original",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "RomaToday",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5PSVg0eVpNMEw2ZlhtMEc2TDhfWk1vZDNFRDl4SmVGc21ySXBSRUNmRndrUlVGd2lqMUFncHUzSWlJVVBOWHJRVG5RVGFYRUhjeFZGNmw0REhwbnZETk9XOUxtbGJhMGUyV29qODFkLVh6Y0RIaXBVLXVfZVU?oc=5",
+          "sourceHomepage": "https://www.romatoday.it",
+          "pubDate": "2026-11-11T13:54:00.000Z",
+          "originalPubDate": "2026-11-11T13:54:00.000Z",
+          "dateSource": "original",
+          "originalURL": "https://www.romatoday.it/cronaca/maltrattamenti-donna-compagno-roma.html"
+        }
+      ],
+      "originalURL": "https://www.romatoday.it/cronaca/maltrattamenti-donna-compagno-roma.html",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "soccorsa su una panchina in stato di incoscienza scoperta una storia d-1794405240000-90",
+      "imageVerifiedKey": "https://www.romatoday.it/cronaca/maltrattamenti-donna-compagno-roma.html",
+      "logoUrl": "https://www.google.com/s2/favicons?domain=www.romatoday.it&sz=128",
+      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5PSVg0eVpNMEw2ZlhtMEc2TDhfWk1vZDNFRDl4SmVGc21ySXBSRUNmRndrUlVGd2lqMUFncHUzSWlJVVBOWHJRVG5RVGFYRUhjeFZGNmw0REhwbnZETk9XOUxtbGJhMGUyV29qODFkLVh6Y0RIaXBVLXVfZVU?oc=5"
     },
     {
       "title": "Allarme degrado al parcheggio Centro Europa: “Spaccio e rapporti sessuali nei sotterranei”",
@@ -2388,9 +2395,8 @@
       "sourceCount": 1,
       "sourcePriority": 55,
       "id": "allarmi bomba nelle scuole meloni convoca riunione a palazzo chigi-1794404340000-97",
-      "imageVerifiedKey": "https://www.gazzettadireggio.it/speciale/2026/11/11/news/allarmi-bomba-nelle-scuole-meloni-convoca-riunione-a-palazzo-chigi-1.100941337",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=www.gazzettadireggio.it&sz=128",
-      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcElCejdXZzBMNW95b1BFbXZ3Q0JFaGFMU1NMYjdabjJkaUZ0VHdTaTlaQlF2ZWI4UmJDWEphVlV5V2hscXVOWmp6MVRPb2dRSlY0Q3VIMmUtQlJFZTU3TVV1cEpfTWpURmVFSThMeG5jRHo3UTBUNVdGbGkxX3E2U2sxSWVyS1RfV0JWTVVSdW1ZOEdtWUpyeU9ZakdaaV94Nk5rcmYxcHFBZkx0V0lvdEZmOW5ldjJjckpMeW80Y2tqeGxjX1lSaFliTzAwcHZi?oc=5"
+      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcElCejdXZzBMNW95b1BFbXZ3Q0JFaGFMU1NMYjdabjJkaUZ0VHdTaTlaQlF2ZWI4UmJDWEphVlV5V2hscXVOWmp6MVRPb2dRSlY0Q3VIMmUtQlJFZTU3TVV1cEpfTWpURmVFSThMeG5jRHo3UTBUNVdGbGkxX3E2U2sxSWVyS1RfV0JWTVVSdW1ZOEdtWUpyeU9ZakdaaV94Nk5rcmYxcHFBZkx0V0lvdEZmOW5ldjJjckpMeW80Y2tqeGxjX1lSaFliTzAwcHZi?oc=5",
+      "logoUrl": "https://www.google.com/s2/favicons?domain=www.gazzettadireggio.it&sz=128"
     },
     {
       "title": "Chi sono gli 11 deputati dem assenti che avrebbero potuto far passare la richiesta di impeachment per Hegseth | Trump esulta: «È un patriota»",
@@ -3338,7 +3344,7 @@
       "originalURL": "https://www.ansa.it/sito/notizie/cronaca/2026/11/11/processo-grillo-jr-domani-a-sassari-lappello-con-rischio-rinvio_537a0752-3371-4245-ab47-5338dd86c891.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "processo grillo jr giovedi a sassari l appello con il rischio di rinvi-1794412314000-52",
+      "id": "processo grillo jr giovedi a sassari l appello con il rischio di rinvi-1794412314000-50",
       "publicationVerifiedKey": "https://www.ansa.it/sito/notizie/cronaca/2026/11/11/processo-grillo-jr-domani-a-sassari-lappello-con-rischio-rinvio_537a0752-3371-4245-ab47-5338dd86c891.html",
       "imageVerifiedKey": "https://www.ansa.it/sito/notizie/cronaca/2026/11/11/processo-grillo-jr-domani-a-sassari-lappello-con-rischio-rinvio_537a0752-3371-4245-ab47-5338dd86c891.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
@@ -3594,7 +3600,8 @@
       "source": "Libero Quotidiano",
       "category": "Politica",
       "categories": [
-        "Politica"
+        "Politica",
+        "Cronaca"
       ],
       "pubDate": "Wed, 11 Nov 2026 11:39:07 GMT",
       "googlePubDate": "Wed, 11 Nov 2026 11:39:07 GMT",
@@ -4092,7 +4099,7 @@
       "originalURL": "https://www.ansa.it/sito/notizie/economia/pmi/2026/11/11/istat-frena-la-crescita-delloccupazione-nel-2026-2027-giu-la-disoccupazione_c6c2b0c5-93d2-4ea9-99a9-84315413c5b2.html",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "confindustria dalle imprese il 43 delle coperture della manovra-1794411983000-55",
+      "id": "confindustria dalle imprese il 43 delle coperture della manovra-1794411983000-53",
       "publicationVerifiedKey": "https://www.ansa.it/sito/notizie/economia/pmi/2026/11/11/istat-frena-la-crescita-delloccupazione-nel-2026-2027-giu-la-disoccupazione_c6c2b0c5-93d2-4ea9-99a9-84315413c5b2.html",
       "imageVerifiedKey": "https://www.ansa.it/sito/notizie/economia/pmi/2026/11/11/istat-frena-la-crescita-delloccupazione-nel-2026-2027-giu-la-disoccupazione_c6c2b0c5-93d2-4ea9-99a9-84315413c5b2.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
@@ -5548,7 +5555,7 @@
       "originalURL": "https://www.ilsole24ore.com/art/giorgetti-con-questi-pezzi-dell-energia-impossibile-competere-livello-internazionale-AJxD6SCC",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "giorgetti con questi prezzi dell energia impossibile competere a livel-1794411107000-59",
+      "id": "giorgetti con questi prezzi dell energia impossibile competere a livel-1794411107000-57",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQ2hVdGFfempuWGRzYldDSGtHaVNsSzRSMUFZeDl4TzFlV1BsUFNNZXRyMVhTT0NuZkNkZlVfZ3Z5bTNlM090ZEk3T2lQek00a2JZSXRFNDhtWWJyWEoyR3gtaVpDX2QyV2NRSFF6MkFnMjBkTTBpODdTZVBfSHdadEdyLVZwalpIUW1NV2lRYTMxLUo3dXBjZmFkWkpCekUtYmVqUnJmNTByWkc1bHR0a3pLSXAxeWtNMl9YSTdkMENuREk?oc=5",
       "imageVerifiedKey": "https://www.ilsole24ore.com/art/giorgetti-con-questi-pezzi-dell-energia-impossibile-competere-livello-internazionale-AJxD6SCC",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ilsole24ore.com&sz=128"
@@ -7298,7 +7305,7 @@
       "originalURL": "https://www.ilgiornaleditalia.it/news/politica/836754/ucraina-scontro-meloni-salvini-sul-decreto-armi-per-kiev-ipotesi-rinvio-a-marzo-giorgetti-pronto-a-firmare.html",
       "sourceCount": 1,
       "sourcePriority": 25,
-      "id": "ucraina scontro meloni salvini sul decreto armi a kiev possibile rinvi-1794371841000-200",
+      "id": "ucraina scontro meloni salvini sul decreto armi a kiev possibile rinvi-1794371841000-201",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOWFJMc3lsZ09uUDJmalZ0SEVTSU1jbWtIbFM4OTdJTG83VThBSW1kRk9rLTVGUzBubjZVS1UtMGN0UEdjV3Q4RTR0cU5ZVlVwZW9YaVU2dGplNzNqSnIweE1EWUk3Tk9xSzVEUXhEamdVSUxjdFpuSVc1NTVUb0JMbmNGSk16X0NEZklsTHBJYm1XNkRqXzBBQ3BTblF1RXcxM3Ffc1RMYTFVbjJHZ1FCa2xTeUt0VXJJa1h0Z0VvQURlU2o0NTRYNU93RGtZVWFBQkYxN2FkQVhzTVJwT3VfalZtUjdLb1MwaHlvdVZXQ3NJRWoxWGlONg?oc=5",
       "imageVerifiedKey": "https://www.ilgiornaleditalia.it/news/politica/836754/ucraina-scontro-meloni-salvini-sul-decreto-armi-per-kiev-ipotesi-rinvio-a-marzo-giorgetti-pronto-a-firmare.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ilgiornaleditalia.it&sz=128"
@@ -7334,7 +7341,7 @@
       "originalURL": "https://www.lastampa.it/economia/2026/11/11/news/balneari_salvini_aggirare_ue_gare-15794314/amp/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "balneari salvini riprova ad aggirare la ue parte un tavolo per rallent-1794369600000-202",
+      "id": "balneari salvini riprova ad aggirare la ue parte un tavolo per rallent-1794369600000-203",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeEZKVDdqSTBicUtSRW1pTTRYRXJualprS3ZJbzhxTldEWmkxM0otekd1Mlp4WnpLVE1hNUhGeHBITGxTT19qTVZTU0dsVVZhUkpRblRYLVp4M1ZWdTU1dTVMQkZwWURvUDNGQVJjYmttZXhLc0ZEZjNlMWlMSHRyZ2xyMzhxMFFkZUt4YWljQTAyR3c3bkpaSG8zalDSAZwBQVVfeXFMTnhGSlQ3akkwYnFLUkVtaU00WEVybmpaa0t2SW84cU5XRFppMTNKLXpHdTJaeFp6S1RNYTVIRnhwSExsU09fak1WU1NHbFVWYVJKUW5UWC1aeDNWVnU1NXU1TEJGcFlEb1AzRkFSY2JrbWV4S3NGRGYzZTFpTEh0cmdscjM4cTBRZGVLeGFpY0EwMkd3N25KWkhvM2pQ?oc=5",
       "imageVerifiedKey": "https://www.lastampa.it/economia/2026/11/11/news/balneari_salvini_aggirare_ue_gare-15794314/amp/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.lastampa.it&sz=128"
@@ -7370,7 +7377,7 @@
       "originalURL": "https://livornopress.it/spaccio-e-immigrazione-irregolare-tre-interventi-della-polizia-a-livorno-e-provincia",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "spaccio e immigrazione irregolare tre interventi della polizia a livor-1794369679000-201",
+      "id": "spaccio e immigrazione irregolare tre interventi della polizia a livor-1794369679000-202",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSnZBdHhIYUZGLXQwZFRXUGZEU1NyT0xIenVMdkNlMDluQU9qMWp5QjJ3dVBWakpsUllLQUhuQ2RFU2d3akpDNHpXMVc1eTFfOUd5a3Noa1ozaGp5WmlXRWh0OUF1WXo1QlpIT2xTSmt6SVJod3FrcjlTdUZiTE1ESG50V1hBTE5EZGF3TkZpVS1wYlM0cWhFVVd3UUlEaU4yM1dXVC12WG1jUUR0?oc=5",
       "imageVerifiedKey": "https://livornopress.it/spaccio-e-immigrazione-irregolare-tre-interventi-della-polizia-a-livorno-e-provincia",
       "logoUrl": "https://www.google.com/s2/favicons?domain=livornopress.it&sz=128"
@@ -7436,7 +7443,7 @@
       "originalURL": "https://messina.gazzettadelsud.it/articoli/ponte-sullo-stretto/2026/11/11/ponte-sullo-stretto-slitta-ancora-la-seduta-del-cipess-e-infuria-la-polemica-sullanac-d724a5ad-c02c-4b56-a178-260f37d77b8e/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "ponte sullo stretto slitta ancora la seduta del cipess e infuria la po-1794364534000-204",
+      "id": "ponte sullo stretto slitta ancora la seduta del cipess e infuria la po-1794364534000-205",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiowJBVV95cUxOVks2YXI3Zm5VYkt3cmFnZFBGdHlDbUFfOHlETUNEVFBJLUZObkl5X25KVm04Rmx3Vnk0T01tUkZhYzNsRWlBUHQxbWY2NllWU0JkeWd0dFBOZWs2TTNXUXFSYkFRclFNa0NWQ3U2cW83VlBnR3VnLXMySng5V0gzdmFiLUREcElCRnBYUFJZRkRxd29MaVdWbEcybHlyRmpRM2RZWC1qMzZKWV9CZzRiLTBYTTZMS1U0YnUzUVA5b0M5R0stUDRBbnJ4NW54anUzTWs4TThpMmd2TEg3U1c3MVByaFdFbV92SU56VnY4WGpFRXdOdUMyc1pRRUgzTzk5OFpLQXdjdmRXcVBlYzlsVkpsOUFhQ1VRbWlkcUIxdGM0LUE?oc=5",
       "imageVerifiedKey": "https://messina.gazzettadelsud.it/articoli/ponte-sullo-stretto/2026/11/11/ponte-sullo-stretto-slitta-ancora-la-seduta-del-cipess-e-infuria-la-polemica-sullanac-d724a5ad-c02c-4b56-a178-260f37d77b8e/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=messina.gazzettadelsud.it&sz=128"
@@ -7470,7 +7477,7 @@
       "originalURL": "https://www.prealpina.it/news/cronaca/575129/dopo-il-pestaggio-la-visita-in-ospedale.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "tentato omicidio a beata giuliana arrestato il 29enne incastrato dal r-1794360600000-205",
+      "id": "tentato omicidio a beata giuliana arrestato il 29enne incastrato dal r-1794360600000-206",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbWFRb3ZGRkc0T1hQVlBWZGxydVZRdHIyNVcwVFhwTVB2Qi13Q2NqeHpDYjRaLTBfZ0dHbS1pcGNwdTJlUnVvMXVaVXc0RVVxdWstd2YwbXZkX20wUmowZWMySEpGMzdPZy1jc3hFQ1Y0eFg5ZzNtYXFjN3lucGx2WEhqaDUyQWZWdEY3WEZEcS1JNHc?oc=5",
       "imageVerifiedKey": "https://www.prealpina.it/news/cronaca/575129/dopo-il-pestaggio-la-visita-in-ospedale.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.prealpina.it&sz=128"
@@ -7669,7 +7676,7 @@
       "originalURL": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/11/11/la-camera-usa-boccia-la-procedura-di-impeachment-per-hegseth_2979584a-b939-48f3-bb33-2ca237fbebf5.html",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "la camera usa boccia la procedura di impeachment per hegseth-1794412288000-53",
+      "id": "la camera usa boccia la procedura di impeachment per hegseth-1794412288000-51",
       "publicationVerifiedKey": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/11/11/la-camera-usa-boccia-la-procedura-di-impeachment-per-hegseth_2979584a-b939-48f3-bb33-2ca237fbebf5.html",
       "imageVerifiedKey": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/11/11/la-camera-usa-boccia-la-procedura-di-impeachment-per-hegseth_2979584a-b939-48f3-bb33-2ca237fbebf5.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
@@ -7704,7 +7711,7 @@
       "originalURL": "https://www.ottopagine.it/ce/cronaca/443695/condanna-definitiva-per-reati-in-materia-di-immigrazione-arrestato-un-uomo.shtml",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "condanna definitiva per reati in materia di immigrazione arrestato un -1794348660000-219",
+      "id": "condanna definitiva per reati in materia di immigrazione arrestato un -1794348660000-220",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZENCenlGT3pFQVdVUDdxMnpTVEp0RWd5czVzbDd0OTNqVnlXTDhhbXFzYTVpbHlEeHFEbW1FNnhnaVczb0M3eWFob2FuOWctNEZneDExTUJWMHE4aWNxQXFBVmE4alBUTHJibUhpckdsSURjVEQ5YUNnOUdCbkQ5YjJETDdHTUx3MHc3NlNTNGRtOUZHM2xlZ0dBVU82dEpCWmVrU2tpd1BEQ2cwMlVnWTdfWlY5MVVILXJvSVYwbmJNZ9IBuAFBVV95cUxORkdPUElUUC02eFZpcUtVdzZoem5tSk9JRzBKNk5WNFI4aG5mbnk0N0w0ZEFYWGI0aE5DQ3AxY3BYQklfOWRmdU82MDM4WGNSaWdBdGVpNFAzMmpaa095OWxZSFcxYXZ5RzdLRTlEZUU4M3JqN2VSN1dweDVTZTFNdGluTUFMZjV6UGd4UWdfTlNqbFY0TDgyVDMwbmQ5UktacjJzUG9taC1xSDVubE05QnZ3alJQaFFH?oc=5",
       "imageVerifiedKey": "https://www.ottopagine.it/ce/cronaca/443695/condanna-definitiva-per-reati-in-materia-di-immigrazione-arrestato-un-uomo.shtml",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ottopagine.it&sz=128"
@@ -7738,7 +7745,7 @@
       "originalURL": "https://ilmanifesto.it/da-banche-e-sindacati-no-alla-manovra-di-meloni",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "da banche e sindacati no alla manovra di meloni-1794351878000-209",
+      "id": "da banche e sindacati no alla manovra di meloni-1794351878000-210",
       "publicationVerifiedKey": "https://ilmanifesto.it/da-banche-e-sindacati-no-alla-manovra-di-meloni",
       "imageVerifiedKey": "https://ilmanifesto.it/da-banche-e-sindacati-no-alla-manovra-di-meloni",
       "logoUrl": "https://www.google.com/s2/favicons?domain=ilmanifesto.it&sz=128"
@@ -7772,7 +7779,7 @@
       "originalURL": "https://ilmanifesto.it/la-svolta-di-londra-e-durata-due-mesi-appalti-a-societa-coinvolte-nella-colonizzazione-di-israele",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "la svolta di londra e durata due mesi appalti a societa coinvolte nell-1794351686000-213",
+      "id": "la svolta di londra e durata due mesi appalti a societa coinvolte nell-1794351686000-214",
       "publicationVerifiedKey": "https://ilmanifesto.it/la-svolta-di-londra-e-durata-due-mesi-appalti-a-societa-coinvolte-nella-colonizzazione-di-israele",
       "imageVerifiedKey": "https://ilmanifesto.it/la-svolta-di-londra-e-durata-due-mesi-appalti-a-societa-coinvolte-nella-colonizzazione-di-israele",
       "logoUrl": "https://www.google.com/s2/favicons?domain=ilmanifesto.it&sz=128"
@@ -7805,7 +7812,7 @@
       "originalURL": "https://ilmanifesto.it/ponte-sullo-stretto-la-placca-calabria-sicilia-si-sta-frantumando",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "ponte sullo stretto la placca calabria sicilia si sta frantumando-1794351666000-215",
+      "id": "ponte sullo stretto la placca calabria sicilia si sta frantumando-1794351666000-216",
       "publicationVerifiedKey": "https://ilmanifesto.it/ponte-sullo-stretto-la-placca-calabria-sicilia-si-sta-frantumando",
       "imageVerifiedKey": "https://ilmanifesto.it/ponte-sullo-stretto-la-placca-calabria-sicilia-si-sta-frantumando",
       "logoUrl": "https://www.google.com/s2/favicons?domain=ilmanifesto.it&sz=128"
@@ -7846,7 +7853,7 @@
       "originalURL": "https://ilmanifesto.it/la-corte-dei-conti-europea-lancia-lallarme-sulle-sanzioni-a-mosca",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "la corte dei conti europea lancia l allarme sulle sanzioni a mosca-1794351619000-216",
+      "id": "la corte dei conti europea lancia l allarme sulle sanzioni a mosca-1794351619000-217",
       "publicationVerifiedKey": "https://ilmanifesto.it/la-corte-dei-conti-europea-lancia-lallarme-sulle-sanzioni-a-mosca",
       "imageVerifiedKey": "https://ilmanifesto.it/la-corte-dei-conti-europea-lancia-lallarme-sulle-sanzioni-a-mosca",
       "logoUrl": "https://www.google.com/s2/favicons?domain=ilmanifesto.it&sz=128"
@@ -8228,7 +8235,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNeG5qVjhJcmxUZUpWa1BKZlhCOXVXQ1FHSHJNYzdJT2dtODNnbi1SYTlVdWJvZTM2TUNmUXdzRjhLdVlYMVlJOVlYSHZkU3RRU2FjalQ5ZEtZZ1lzY19xYlBSamxsbUM0QXhPS0hPR1RJMnpQRC1KMHd2ajNibUNCN3hLYnhsOXJ5cUFxOG1vMUpnRzVv?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "politica zinzi da il benvenuto a francesco silvestro in lega-1794340502000-222",
+      "id": "politica zinzi da il benvenuto a francesco silvestro in lega-1794340502000-223",
       "imageVerifiedKey": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNeG5qVjhJcmxUZUpWa1BKZlhCOXVXQ1FHSHJNYzdJT2dtODNnbi1SYTlVdWJvZTM2TUNmUXdzRjhLdVlYMVlJOVlYSHZkU3RRU2FjalQ5ZEtZZ1lzY19xYlBSamxsbUM0QXhPS0hPR1RJMnpQRC1KMHd2ajNibUNCN3hLYnhsOXJ5cUFxOG1vMUpnRzVv?oc=5",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.goldwebtv.it&sz=128"
     },
@@ -8294,7 +8301,7 @@
       "originalURL": "https://www.soldionline.it/notizie/economia-politica/manovra-salvini-guarda-alle-banche-perche-puo-arrivare-un-nuovo-contributo",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "manovra salvini guarda alle banche perche puo arrivare un nuovo contri-1794340020000-225",
+      "id": "manovra salvini guarda alle banche perche puo arrivare un nuovo contri-1794340020000-226",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONHlqLUswa3lHTGE5c3dHQmRORnNjQVo2eXQ3WTVITUhrUlEtejE5VmdXSjhfTnNEaVRENFB2MXU1ZWhoN1AtWlVtQjFjR0tTbzNJMXRWdFg5Zk5LeVhDeFgxZ2pQVXd3UTQ0NW1xM3pCQVI5YS0xT05Wd2lRM3AyTEJHWHRfQ1dPQVF2XzhRanliRXVvWjhXNnBLWmxNSXZETmZldklXajlxWTE5aHBUaDB4Q3F2TlhIVFVDTlpQQXZUbDBpVXc?oc=5",
       "imageVerifiedKey": "https://www.soldionline.it/notizie/economia-politica/manovra-salvini-guarda-alle-banche-perche-puo-arrivare-un-nuovo-contributo",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.soldionline.it&sz=128"
@@ -8329,7 +8336,7 @@
       "originalURL": "https://www.agendapolitica.it/gianpiero-zinzi-lega-benvenuto-nel-partito-al-senatore-franco-silvestro/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "gianpiero zinzi lega benvenuto nel partito al senatore franco silvestr-1794339449000-229",
+      "id": "gianpiero zinzi lega benvenuto nel partito al senatore franco silvestr-1794339449000-230",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNzdYQkpIa2t3SGFIVFd0dzJITU1SdnNJaXI3WEY0YVVicW1PQVZlaG9oOWUtMEEyZ0xkcksxNUpLRWZKTnExeXduRVZNb1RoSm1XTHZ0MTNXN3RPNlFObHcyeTRlS0ZBWmkwUmx6aGtyaXBhWDBRYndGOGRjcHBqVENIdmgwMHRWTmd1dXI5NXFqbEJGWl9pdDNUOXl5ZkJfLUliZA?oc=5",
       "imageVerifiedKey": "https://www.agendapolitica.it/gianpiero-zinzi-lega-benvenuto-nel-partito-al-senatore-franco-silvestro/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.agendapolitica.it&sz=128"
@@ -8377,7 +8384,7 @@
       "originalURL": "https://www.ansa.it/sito/notizie/politica/2026/11/10/fonti-lega-stupore-di-salvini-per-le-banche-possibile-ulteriore-contributo_37c40699-6e19-4dc4-b056-78342fe0f0ca.html",
       "sourceCount": 3,
       "sourcePriority": 55,
-      "id": "fonti lega stupore di salvini per le banche possibile ulteriore contri-1794339518000-227",
+      "id": "fonti lega stupore di salvini per le banche possibile ulteriore contri-1794339518000-228",
       "publicationVerifiedKey": "https://www.ansa.it/sito/notizie/politica/2026/11/10/fonti-lega-stupore-di-salvini-per-le-banche-possibile-ulteriore-contributo_37c40699-6e19-4dc4-b056-78342fe0f0ca.html",
       "imageVerifiedKey": "https://www.ansa.it/sito/notizie/politica/2026/11/10/fonti-lega-stupore-di-salvini-per-le-banche-possibile-ulteriore-contributo_37c40699-6e19-4dc4-b056-78342fe0f0ca.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
@@ -8417,7 +8424,7 @@
       "originalURL": "https://www.ansa.it/sito/notizie/politica/2026/11/10/verso-un-nuovo-vertice-maggioranza-sulla-manovra-per-fare-il-punto-sulle_5a86a332-6d2c-420b-aeb5-6bd2eb586258.html",
       "sourceCount": 2,
       "sourcePriority": 55,
-      "id": "verso un nuovo vertice maggioranza sulla manovra per fare il punto sul-1794339472000-228",
+      "id": "verso un nuovo vertice maggioranza sulla manovra per fare il punto sul-1794339472000-229",
       "publicationVerifiedKey": "https://www.ansa.it/sito/notizie/politica/2026/11/10/verso-un-nuovo-vertice-maggioranza-sulla-manovra-per-fare-il-punto-sulle_5a86a332-6d2c-420b-aeb5-6bd2eb586258.html",
       "imageVerifiedKey": "https://www.ansa.it/sito/notizie/politica/2026/11/10/verso-un-nuovo-vertice-maggioranza-sulla-manovra-per-fare-il-punto-sulle_5a86a332-6d2c-420b-aeb5-6bd2eb586258.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
@@ -8450,7 +8457,7 @@
       "originalURL": "https://www.ansa.it/sito/notizie/cronaca/2026/11/10/eternit-disposto-nuovo-processo-di-appello-per-schmidheiny_9dfd62e0-995f-4129-9cf1-3a6a6a33ce01.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "eternit disposto nuovo processo di appello per schmidheiny-1794340113000-223",
+      "id": "eternit disposto nuovo processo di appello per schmidheiny-1794340113000-224",
       "publicationVerifiedKey": "https://www.ansa.it/sito/notizie/cronaca/2026/11/10/eternit-disposto-nuovo-processo-di-appello-per-schmidheiny_9dfd62e0-995f-4129-9cf1-3a6a6a33ce01.html",
       "imageVerifiedKey": "https://www.ansa.it/sito/notizie/cronaca/2026/11/10/eternit-disposto-nuovo-processo-di-appello-per-schmidheiny_9dfd62e0-995f-4129-9cf1-3a6a6a33ce01.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
@@ -8484,7 +8491,7 @@
       "originalURL": "https://www.infooggi.it/articolo/arrestato-a-terni-per-violazione-del-divieto-di-avvicinamento-all-ex-moglie/158121/amp",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "arrestato a terni per violazione del divieto di avvicinamento all ex m-1794337860000-232",
+      "id": "arrestato a terni per violazione del divieto di avvicinamento all ex m-1794337860000-233",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQnNkWlU2NXhHMG83UkszSnVmWm82b2NnenEzNEZOa3hDaHNDSm9kZXgtRkRvdlVJdElydzVOUnNZeDJGRXlVeDNtYVpDamJ3bFF4YkdPSXRhT1pxZ01CTUdwV1ZZUlRraXpyNUJET2ZBd0ZfalJ0Z0lJRVNhZlFVeTdLc2pfSTA3cF9JMU16ajZaVmhFd1FUZmNGQUpRNEFzQWxXdjRjUzg5SjFONms4RGNBci1kS2Z3YVln0gG7AUFVX3lxTE9Cc2RaVTY1eEcwbzdSSzNKdWZabzZvY2d6cTM0Rk5reENoc0NKb2RleC1GRG92VUl0SXJ3NU5Sc1l4MkZFeVV4M21hWkNqYndsUXhiR09JdGFPWnFnTUJNR3BXVllSVGtpenI1QkRPZkF3Rl9qUnRnSUlFU2FmUVV5N0tzal9JMDdwX0kxTXpqNlpWaEV3UVRmY0ZBSlE0QXNBbFd2NGNTODlKMU42azhEY0FyLWRLZndhWWc?oc=5",
       "imageVerifiedKey": "https://www.infooggi.it/articolo/arrestato-a-terni-per-violazione-del-divieto-di-avvicinamento-all-ex-moglie/158121/amp",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.infooggi.it&sz=128"
@@ -8519,7 +8526,7 @@
       "originalURL": "https://www.lasicilia.it/news/politica/3089208/la-sicilia-spaccata-dalle-mance-sindaci-in-rivolta-per-i-milioni-distribuiti-all-ars-calderoli-impugni-la-legge.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "la sicilia spaccata dalle mancette sindaci in rivolta per i milioni di-1794337680000-234",
+      "id": "la sicilia spaccata dalle mancette sindaci in rivolta per i milioni di-1794337680000-235",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOYzBwWWQwRGhzRFRtMTVoYWZrQW9NMlA4cWx3Qzd5ZTdwRGtxaHpJQ1g3QlJJRHRIb3dVbUEweG5femRrb3NsNUNnRW1CbVR3aV8xZVNJTzRyRGQxYUhBRHN1d3lWZ0E0UVhaX0hMNzF0bzFRd1dPQ0hNNnpDZmtaUmkxMGFwaXdnNVZfWWJWNUZfRU1pamJJZ2prMEcwWGVnblFlSUNlX1NwOEIzM3Rac083N3JtaUNVUnozc3FLRkhfUHREYkpXOHE0TFFqb2F3cnl4TjlUMExRRzRLLTZmM1pxVS1HSUdZNmR3cVhKQ1pBdkZtenc?oc=5",
       "imageVerifiedKey": "https://www.lasicilia.it/news/politica/3089208/la-sicilia-spaccata-dalle-mance-sindaci-in-rivolta-per-i-milioni-distribuiti-all-ars-calderoli-impugni-la-legge.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.lasicilia.it&sz=128"
@@ -8550,7 +8557,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSTFZTnNuQ1JrTEtMaEpPeEViT0I1Y05pT21BQXJIeTZBSjhuV203Qy1EOG1nUm1EbFpWMDc1Ui1nbU1KdnZkVUpUZUxsZGNfbnVERzNsTl83bk1JUnNxeDNFaXpLay1fdU55aWlEUjU1Mm8tMjM5N2ZJV2NpSkVKQmZlSGtFUFRxc1liSXNRY3JOd0JydlVDV3p4RHdxdmxNcTNJWEVYckgtR19TVFAxVGhidnZ1bV9sVHVjTjVhRk9hWVhvcEJLTFJEeFhRcHFQYmthQ255WVlPWk5QUnlfNQ?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "palpeggiata e bloccata contro una ringhiera in centro agenti fuori ser-1794337502000-235",
+      "id": "palpeggiata e bloccata contro una ringhiera in centro agenti fuori ser-1794337502000-236",
       "imageVerifiedKey": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSTFZTnNuQ1JrTEtMaEpPeEViT0I1Y05pT21BQXJIeTZBSjhuV203Qy1EOG1nUm1EbFpWMDc1Ui1nbU1KdnZkVUpUZUxsZGNfbnVERzNsTl83bk1JUnNxeDNFaXpLay1fdU55aWlEUjU1Mm8tMjM5N2ZJV2NpSkVKQmZlSGtFUFRxc1liSXNRY3JOd0JydlVDV3p4RHdxdmxNcTNJWEVYckgtR19TVFAxVGhidnZ1bV9sVHVjTjVhRk9hWVhvcEJLTFJEeFhRcHFQYmthQ255WVlPWk5QUnlfNQ?oc=5",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.abruzzoindependent.it&sz=128"
     },
@@ -8585,7 +8592,7 @@
       "originalURL": "https://www.tv2000.it/tg2000/video/pacchetto-aiuti-italiani-all-ucraina-giallo-su-firma-giorgetti-ma-meloni-rassicura/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "pacchetto aiuti italiani all ucraina giallo su firma giorgetti ma melo-1794338536000-231",
+      "id": "pacchetto aiuti italiani all ucraina giallo su firma giorgetti ma melo-1794338536000-232",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSHFtZEt2SlNGQkJIRUdqZDYxampwR0p5Z3BXR3R2NTRzVHBPMnBhbWVWVFZOVWd1NThxbVdiX2U5Qk9YalN3SWxKMGg1eEh5dDEyQzR4YnRrUUYzMDF1SF9nYTl6QXBsWl84LVZzQklSMGdxa0VuQ0RRT09fV0RTQXUzNzhoTlVvYmJORExyQktxeWZKcnBSaXlDTmN5a3I3YXdXcWVGN0RzSV9WMTZTUkcyOURzc0s0MEE?oc=5",
       "imageVerifiedKey": "https://www.tv2000.it/tg2000/video/pacchetto-aiuti-italiani-all-ucraina-giallo-su-firma-giorgetti-ma-meloni-rassicura/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.tv2000.it&sz=128"
@@ -8618,7 +8625,7 @@
       "originalURL": "https://www.ansa.it/sito/notizie/cronaca/2026/11/10/litalia-come-la-germania-rebus-missili-nel-pacchetto-per-kiev_3aa014b2-89af-47bb-b705-cbdcf6f637df.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "l italia come la germania rebus missili nel pacchetto per kiev-1794339033000-230",
+      "id": "l italia come la germania rebus missili nel pacchetto per kiev-1794339033000-231",
       "publicationVerifiedKey": "https://www.ansa.it/sito/notizie/cronaca/2026/11/10/litalia-come-la-germania-rebus-missili-nel-pacchetto-per-kiev_3aa014b2-89af-47bb-b705-cbdcf6f637df.html",
       "imageVerifiedKey": "https://www.ansa.it/sito/notizie/cronaca/2026/11/10/litalia-come-la-germania-rebus-missili-nel-pacchetto-per-kiev_3aa014b2-89af-47bb-b705-cbdcf6f637df.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
@@ -8748,7 +8755,7 @@
       "originalURL": "https://www.rainews.it/articoli/2026/11/ecco-lapp-che-in-pronto-soccorso-informa-pazienti-e-caregiver-su-cure-ed-esami-83d74cad-c07c-4a66-854f-aa07bd269104.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "ecco l app che in pronto soccorso informa pazienti e caregiver su cure-1794333960000-238",
+      "id": "ecco l app che in pronto soccorso informa pazienti e caregiver su cure-1794333960000-239",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQcDRUOEo3bDVOTmVoa3pIbVZrNlZsSWQ0Si1oVV9uREs1Um9aN20wMTlMbEF4QzA0UG9aSFpXMGJuQUJfUkdoS3YtMGU1RUFuLTlRMGNjUVFOaERGSzRkVGVHM2JQdFQwNm93RndCUVpyU2NERW9lVC0tc3NtT0h6eXBKU3FKNVRGcWxRS3VzenpYY2QwSG10VFhMbDRiNk03QzRwTURJQkxQREprYkhvN3ZRVFVGT1FmT0tpR2txRHFYMXg2bkV1TGZ1cml6TmMwZllSNEVubkNxQ25WS2FCZ3RkMnMzR2dieVNKc0RNVlFVUdIB9wFBVV95cUxPMnFFbHloOTBfZnlhektTNWpOWjU4aHB1OEVURTlWVzRjamI5anQ4ejB4ai1VQTY5RWltcnBpbjg1WGhsek1xT21IbldhNjZSam9DZ2thdmtVN2tpTFJscS1JNzU3eGFrc2dEbVRPVlIwTHVqNGRaWnZQcXZXcGRKMm5Xc2U0NHBmZGpvQ05oM0paOWRienVFWjc1d3dhaEwyelZiUC1yQUJiNmFZLUo1cmxwN2JlcDdVRjV1Um9HZHN2TXJYNTByVDZhbTBJRTJYQjdyZTB4cnpVTWlsTDBPeU5zWm9FczJpalh5VUpvSXU0RHVmUEQ0?oc=5",
       "imageVerifiedKey": "https://www.rainews.it/articoli/2026/11/ecco-lapp-che-in-pronto-soccorso-informa-pazienti-e-caregiver-su-cure-ed-esami-83d74cad-c07c-4a66-854f-aa07bd269104.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.rainews.it&sz=128"
@@ -8814,7 +8821,7 @@
       "originalURL": "https://www.maremmaoggi.net/vivarelli-colonna-dimissioni-candidatura-camera-forza-italia/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "vivarelli colonna verso la camera dimissioni entro marzo ma c e l inco-1794333099000-240",
+      "id": "vivarelli colonna verso la camera dimissioni entro marzo ma c e l inco-1794333099000-241",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOT25xemdoZnViN3R1LWlxZXNoV28yOG0wOG81QjlaMW9BbzNaT3MzWFlTQTZvbFMxWklhaGJFUTdNX2RNT29PeFFPUGtzckdOTjlnV1l5a0xYekstWUJ1b25JSFludmUtY3gwQ015SjhfcW5fVTMtZW9EcUpUZHd4REwzWTVfTEs0bHB2cjNpb3lIQnM?oc=5",
       "imageVerifiedKey": "https://www.maremmaoggi.net/vivarelli-colonna-dimissioni-candidatura-camera-forza-italia/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.maremmaoggi.net&sz=128"
@@ -8848,7 +8855,7 @@
       "originalURL": "https://napoli.corriere.it/notizie/politica/26_novembre_10/il-senatore-franco-silvestro-lascia-forza-italia-e-va-con-la-lega-d3b8ff0c-8620-44e2-87d3-707ff510dxlk.shtml",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "il senatore franco silvestro lascia forza italia e va con la lega lasc-1794339922000-226",
+      "id": "il senatore franco silvestro lascia forza italia e va con la lega lasc-1794339922000-227",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOSHZmaXN5WUpMTGVQVkd6ZldFR3VQbGhFY3dQcmNQYmlKWUlYby10aFNCOEdZamNHNzJPR2NwRDh0T3FwNXcxMUdiOFRZcXkydjZ3d1cxd2J6TEMyNzlqUVhMNjl4SU5QeF9aeGhSeG43Mmt1MGFYNXUtdm1tYzVDS0oyOWE4bTctQ1RRTzlRY3RMdGRIak1SN3hQVTJVRlJGdWtQOUlRbUQxMEJrdGFNaW1oY1RJTmRGdzFXVFRMR2VjNGpaREdNOTRDSjVOYVZJWkkyUEdoTVBheU1nV25iQjlleTFKMkotc2x2VnpsTEk3YnY3WXo2clo3ONIBgAJBVV95cUxQclNuZ0hsODhxbWhwTjEzaThPdEt0aG5Vb2hEZFlJb1JmaXBZNVB0ck1nZkpnOV9PcG1oWTRVWUdFR04wNFJCS3pncHBHSEpKcTBvS0puUDd1RU1lRUFlMDByczNtaUJ0SEZid012RlQ5UTUxdGNzU1o0NHNSRVl0blN2Z1RpakRDUFBFYkdESjlMOGtLVlpOVW9sUUZVekp0ajZmNEN4aTd1VUZGNE1ZUlN0Nldncm9iTmlWUmh0TXk0QkJrZUN6cF84YmQyNWNoS3Zma0FVUHM3N1Mtcml3eEc0M2hBNzhTU3A5OVU1QUpSdktEaWFObVF1MTlqZzhQ?oc=5",
       "imageVerifiedKey": "https://napoli.corriere.it/notizie/politica/26_novembre_10/il-senatore-franco-silvestro-lascia-forza-italia-e-va-con-la-lega-d3b8ff0c-8620-44e2-87d3-707ff510dxlk.shtml",
       "logoUrl": "https://www.google.com/s2/favicons?domain=napoli.corriere.it&sz=128"
@@ -8882,7 +8889,7 @@
       "originalURL": "https://ildomaniditalia.eu/g7-accelera-la-guerra-ibrida-legata-ai-conflitti-di-iran-e-ucraina/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "g7 accelera la guerra ibrida legata ai conflitti di iran e ucraina-1794331740000-241",
+      "id": "g7 accelera la guerra ibrida legata ai conflitti di iran e ucraina-1794331740000-242",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTFlHWnVNck94cURwaE9pWGRoSWkwSXZJYTRCeFp4TndlODlQTnFreXJVV2FBdWViNXQ3RW1MTlVqUkVTTHhONm5VeEE1UFNMNUJTT0FXcmRRbGN2S0hWWk1PZlA1X25LbEx6WHdGWG40cTVrSjB4V0RTTkNlSzIxR01hUmZQUjZnRUttWVBiZVZpYW1vb0NHd05R?oc=5",
       "imageVerifiedKey": "https://ildomaniditalia.eu/g7-accelera-la-guerra-ibrida-legata-ai-conflitti-di-iran-e-ucraina/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=ildomaniditalia.eu&sz=128"
@@ -8981,36 +8988,10 @@
       "originalURL": "https://www.unionesarda.it/multimedia/province-passo-avanti-verso-l-elezione-diretta-dei-presidenti-il-consiglio-regionale-segue-calderoli-urgaqt6z",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "province passo avanti verso l elezione diretta dei presidenti il consi-1794331107000-242",
+      "id": "province passo avanti verso l elezione diretta dei presidenti il consi-1794331107000-243",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPZVk3QUZCd3U4b0UyYWFNSE5ZYU1wemVPMUZ2NVFDZlREMm8yWkVBTVFRN0JaNGlKR0tQVG5YclpnRHNudkpSWE96YWhWMTl1UnBDOXZoVEpkTmt1Ti1MYy1OTmc0alJhVXlpZ1FrYzgyaWozbUFUVmRHOVBjMjZTTkdHT1pIVFl3bmo4SEx0elRhc0VlZDRuakp3b3lwWEx3anBmQUphSnFldkdRaEZncXBIbnJzZHhFTWNkdFNiU040YWQzNFN4OVZsVmJZenI3dDJYY05pZnYzcDc1LTZZcA?oc=5",
       "imageVerifiedKey": "https://www.unionesarda.it/multimedia/province-passo-avanti-verso-l-elezione-diretta-dei-presidenti-il-consiglio-regionale-segue-calderoli-urgaqt6z",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.unionesarda.it&sz=128"
-    },
-    {
-      "title": "Bologna Pd e i corsi in arabo, si finisce in tribunale | Libero Quotidiano.it",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOZDNhdDV3ekUxMXdFX2RMaEQyT25mbUJzU2JDOXdVUjZVd2FVeXZfZVdDR18zbVZydjh4MURDSWdCVzN2RExYLVM3VUtwTWVpOU9jaFFWQ2NncWFWZ1RMbTdRcXNTX0Y5eXR3dkU1OUZuVjU2cld4b3dDVXlmdURfOVkybWV0VXpvcVpMNVkzeTRsMWpGNHpKY1Y4MjdITEJJ0gGkAUFVX3lxTE1LX3JIcVRWbzlhTWQtekJWdW1ESUxUaVlacVJXQ2pCOVBkM0hxdTI3ZnBpWkFuRjhUTE10NGZnUzVjMEpxSkljX0d6MnVYMHFVYldhaGpWaHZreHpyZWN3T3N0eFpNZzRjR2Z1bUN0eDFkMTVQZG1rdU90ek5YcTdTVnBNYmd1TUpvTHVweU1veEpaaWtvT05QTHFjcTBabjhKNUds?oc=5\" target=\"_blank\">Bologna Pd e i corsi in arabo, si finisce in tribunale | Libero Quotidiano.it</a> <font color=\"#6f6f6f\">Libero Quotidiano</font>",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZDNhdDV3ekUxMXdFX2RMaEQyT25mbUJzU2JDOXdVUjZVd2FVeXZfZVdDR18zbVZydjh4MURDSWdCVzN2RExYLVM3VUtwTWVpOU9jaFFWQ2NncWFWZ1RMbTdRcXNTX0Y5eXR3dkU1OUZuVjU2cld4b3dDVXlmdURfOVkybWV0VXpvcVpMNVkzeTRsMWpGNHpKY1Y4MjdITEJJ0gGkAUFVX3lxTE1LX3JIcVRWbzlhTWQtekJWdW1ESUxUaVlacVJXQ2pCOVBkM0hxdTI3ZnBpWkFuRjhUTE10NGZnUzVjMEpxSkljX0d6MnVYMHFVYldhaGpWaHZreHpyZWN3T3N0eFpNZzRjR2Z1bUN0eDFkMTVQZG1rdU90ek5YcTdTVnBNYmd1TUpvTHVweU1veEpaaWtvT05QTHFjcTBabjhKNUds?oc=5",
-      "source": "Libero Quotidiano",
-      "category": "Cronaca",
-      "categories": [
-        "Cronaca"
-      ],
-      "pubDate": "Tue, 10 Nov 2026 17:17:28 GMT",
-      "googlePubDate": "Tue, 10 Nov 2026 17:17:28 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "Libero Quotidiano",
-          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZDNhdDV3ekUxMXdFX2RMaEQyT25mbUJzU2JDOXdVUjZVd2FVeXZfZVdDR18zbVZydjh4MURDSWdCVzN2RExYLVM3VUtwTWVpOU9jaFFWQ2NncWFWZ1RMbTdRcXNTX0Y5eXR3dkU1OUZuVjU2cld4b3dDVXlmdURfOVkybWV0VXpvcVpMNVkzeTRsMWpGNHpKY1Y4MjdITEJJ0gGkAUFVX3lxTE1LX3JIcVRWbzlhTWQtekJWdW1ESUxUaVlacVJXQ2pCOVBkM0hxdTI3ZnBpWkFuRjhUTE10NGZnUzVjMEpxSkljX0d6MnVYMHFVYldhaGpWaHZreHpyZWN3T3N0eFpNZzRjR2Z1bUN0eDFkMTVQZG1rdU90ek5YcTdTVnBNYmd1TUpvTHVweU1veEpaaWtvT05QTHFjcTBabjhKNUds?oc=5",
-          "pubDate": "Tue, 10 Nov 2026 17:17:28 GMT"
-        }
-      ],
-      "id": "focus-bologna pd e i corsi in arabo si finisce in tribunale libero quotidian-1794331048000",
-      "sourceCount": 1,
-      "image": "",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=www.liberoquotidiano.it&sz=128"
     },
     {
       "title": "Dramma sulla Bovesana: on line una raccolta fondi per sostenere la famiglia di Saverio Giordano",
@@ -9074,7 +9055,7 @@
       "originalURL": "https://www.ilgiornale.it/news/cronaca-internazionale/sparatoria-di-cracovia-il-racconto-di-un-italiano-ho-tamponato-il-poliziotto-solo-con-le-dita-litalia-era-in-prima-fila/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "ho tamponato la ferita solo con le dita l eroe italiano che ha salvato-1794324544000-244",
+      "id": "ho tamponato la ferita solo con le dita l eroe italiano che ha salvato-1794324544000-245",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPeXIxcXpoUU9uc1RLbjdkZmFDamplNlNONU9IUm1zMnNQMjh6QURBNGlOemRwdmppaEtTSDZiRUI0V1UySUtDS3lGQXpNa1RqZGRiRGxEaUYtTTRhODlTY0Y0Rm1ubkRmY0M0QWlQb1BnbGNqbE5pRzNlaXZqVmpxZWpUZ2F3dmpYVk9mTFBjakNLd205RkxLdFFBMXlhSXNXdTRjdEV6RHhhRU1yVWZiV1l2NnFaWjlUVEZnTFFYaG5rWno2c2J5LURzbTktNlZDWW9tV0Y3M2hGWlY1a3A5SUFjdEduLVNpVUsxSzBNTVQ1ckxzLUNGRkFreW1ZdUZjWldidQ?oc=5",
       "imageVerifiedKey": "https://www.ilgiornale.it/news/cronaca-internazionale/sparatoria-di-cracovia-il-racconto-di-un-italiano-ho-tamponato-il-poliziotto-solo-con-le-dita-litalia-era-in-prima-fila/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ilgiornale.it&sz=128"
@@ -9109,7 +9090,7 @@
       "originalURL": "https://www.lasicilia.it/news/cronaca/3089103/paesanitudine-politica-la-lega-incorona-di-mare-e-il-potere-si-allontana-da-siracusa.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "paesanitudine politica la lega incorona di mare e il potere si allonta-1794322783000-245",
+      "id": "paesanitudine politica la lega incorona di mare e il potere si allonta-1794322783000-246",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQLVIzcGNaV2RNc3VOZDllYmdnazVVMk53aGM3andHWFh6NC13Yk51MVlQOVBncFVtQlo1UUFyVHJfaC1GYVJOTFBFeVFndFVmMnpmMm5mSFFmUmoyaGsyd2R2alpDMGxXSDl0cWJDRTVNS0dObGpKa3BCNGRFcVNOeXB6TndOUmVLMDZEMWVFc0NHLTdPRkV2ZGgwbUJybjRLNXhFTXFEb3Q2MDJoa05uNEM1TGs5MXNoMThGQ0F6S2UwcTlSdDFLN1dlOTZYenVV?oc=5",
       "imageVerifiedKey": "https://www.lasicilia.it/news/cronaca/3089103/paesanitudine-politica-la-lega-incorona-di-mare-e-il-potere-si-allontana-da-siracusa.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.lasicilia.it&sz=128"
@@ -9181,7 +9162,7 @@
       "originalURL": "https://www.mattinopadova.it/italia/borghi-su-decreto-legge-aiuti-a-kiev-per-2027-ce-contrarieta-politica-lega-p6rlnqop",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "borghi su decreto legge aiuti a kiev per 2027 c e contrarieta politica-1794321225000-246",
+      "id": "borghi su decreto legge aiuti a kiev per 2027 c e contrarieta politica-1794321225000-247",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVnEzckJ2eWxSTnBvdlgzaXZrclZuaDc0UlFvbzkxZGlRVy1XN19HVW5CN2FCcXFqYndkVmtxbUdEM01lRmpqWGVGeXc0d2t4ZjRJQ1d6N1hsbFI5M0E2TU5NUVJ0SFVmLXQwVmNaTGxxa3FIM3VXRlF2eEt6ZnkwZ05tSktLWHI3VjR3blpuRWhvT2Zkak9SUDM4ZVBMSHlUU1FXSnM4eDBXNUxHb0hMeVdkdEJKM2JkMUZj?oc=5",
       "imageVerifiedKey": "https://www.mattinopadova.it/italia/borghi-su-decreto-legge-aiuti-a-kiev-per-2027-ce-contrarieta-politica-lega-p6rlnqop",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.mattinopadova.it&sz=128"
@@ -9215,7 +9196,7 @@
       "originalURL": "https://trcgiornale.it/marinai-ditalia-un-messaggio-di-onofrio-brancato-in-una-lettera-ritrovata/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "marinai d italia un messaggio di onofrio brancato in una lettera ritro-1794321147000-247",
+      "id": "marinai d italia un messaggio di onofrio brancato in una lettera ritro-1794321147000-248",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQjBOdDBGdmd0ZVV3MU1USGpWMU1lYzNoZHlSdVVidU5fV1hfSU42OVVlb2tzaU9CbXNiUkQxZVV6VHNUWlpRNmtLRHFDclBXY1RWbDBlSVh0Q3NtdFI3MEVrcjJrOFROdFhYd2V5WktEd2doYkp0dUc5RlNxVFVtSVF0QUZzODd0dk10VEVzMnd4ZVgzWWplS25pUUVZQQ?oc=5",
       "imageVerifiedKey": "https://trcgiornale.it/marinai-ditalia-un-messaggio-di-onofrio-brancato-in-una-lettera-ritrovata/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=trcgiornale.it&sz=128"
@@ -9249,7 +9230,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMiywJBVV95cUxQVlJBLUpkTDRfYVVPYVRFbWwybE1SM2RSRE5zbXloU1IwdzBwamdsMWRhNjFGVzR1cHFfcm03ZnlOZWNXZjM4ZjZ2bzNVQVJsdGJCQ3dYcnFRQ3JaVDctN1hvblBOVWlmN1ZqTnAycHVOUmo2eWdvNHFYUFpmdHRRSHAxZ2I1VUhMbURST05BWFl1TzdfVUQ1VVFuQk42LWlzbnFuaVFGRndKOUJDdUVYTndDNFJJWWhhSnpHU2VyM2pMTFlWcWRJMGw4WEVZQjhycjZUQm9Zb2JIUHcxNzg4WDBpSi1UMWZtSS1VRlpiNGZULXI5QTdTU2VzU0tORnpGOVNtc0VhbnUyOXZxTnNJYzdoSGtrRVplbU9XRTJFTVRXTVFlN2tuSXFnUVFIdkFYMG9XbVUxTGhfZl9McnFBWUlQN2IxOF9TRGdF?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "bonelli avs il mit faccia chiarezza sugli incarichi dell ing pellegrin-1794319030000-248",
+      "id": "bonelli avs il mit faccia chiarezza sugli incarichi dell ing pellegrin-1794319030000-249",
       "logoUrl": "https://www.google.com/s2/favicons?domain=europaverde.it&sz=128"
     },
     {
@@ -9281,10 +9262,10 @@
       "originalURL": "https://opinione.it/politica/2026/11/10/fabrizio-federici-senato-italianita-ritrovata-storie-italiane-adriatico-africa-rodi-dodecanneso/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "senato un convegno sull italianita ritrovata-1794314818000-252",
+      "id": "senato un convegno sull italianita ritrovata-1794314818000-253",
+      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPR1ppSXFGMDZfajBnRVJzeUljWXZaTXNZa1pIWlNHTjVRNDRwQ1JVQ1FaUVJVcmN2R2Q2b1VhZUNNZjB1cWJXOVBOZDdrUkdqVWpHaFBjUFM3WC1VR0txb0xGNHpzOEctX2Z5NzRmVG9TVjByR3BZOHpqSGtiOGkxdG1xT3lHcVJqajNxMlRYbGRPMHlvYmI5MC1TWXNZdE83RkRxUFFTRnRfNE41M2RCNU9sVkp0bDdFdl9RRjNuYUJfcWtUai1WdXFBYVBHdHBtNGc?oc=5",
       "imageVerifiedKey": "https://opinione.it/politica/2026/11/10/fabrizio-federici-senato-italianita-ritrovata-storie-italiane-adriatico-africa-rodi-dodecanneso/",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=opinione.it&sz=128",
-      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPR1ppSXFGMDZfajBnRVJzeUljWXZaTXNZa1pIWlNHTjVRNDRwQ1JVQ1FaUVJVcmN2R2Q2b1VhZUNNZjB1cWJXOVBOZDdrUkdqVWpHaFBjUFM3WC1VR0txb0xGNHpzOEctX2Z5NzRmVG9TVjByR3BZOHpqSGtiOGkxdG1xT3lHcVJqajNxMlRYbGRPMHlvYmI5MC1TWXNZdE83RkRxUFFTRnRfNE41M2RCNU9sVkp0bDdFdl9RRjNuYUJfcWtUai1WdXFBYVBHdHBtNGc?oc=5"
+      "logoUrl": "https://www.google.com/s2/favicons?domain=opinione.it&sz=128"
     },
     {
       "title": "ENAV riceve Il Ministro Locatelli alla Torre di controllo di Fiumicino con Lucia Sabrina Papa",
@@ -9314,7 +9295,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNblVEd0NmU1ZWYXVDOWNsSkItRHBCVHpIN1NPVGtXSHRCOXdUcDJMZVg0cVpCOUZJNjlpb0F3S2xrbWpndnRzZ0dEMHdLQjgtaVU2MGU2Tlc3d0FTM2xsQmVUSTdhd29TRUItSTE3TGFIV1JxOVJGMmMwOURrSG94clcyZ0MwUDZaMHZucVRJWjZNVlZKamNUcXR4amIwQnRTWlUzQW9VTWYyWXBhVndNQkJqNUZIT2lod285Ykd5QTM3SWN4dzNlNFc3VnFva2JDeXBNdXZZbWV2bUtENHM1RTlublVQZw?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "enav riceve il ministro locatelli alla torre di controllo di fiumicino-1794318000000-249",
+      "id": "enav riceve il ministro locatelli alla torre di controllo di fiumicino-1794318000000-250",
       "imageVerifiedKey": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNblVEd0NmU1ZWYXVDOWNsSkItRHBCVHpIN1NPVGtXSHRCOXdUcDJMZVg0cVpCOUZJNjlpb0F3S2xrbWpndnRzZ0dEMHdLQjgtaVU2MGU2Tlc3d0FTM2xsQmVUSTdhd29TRUItSTE3TGFIV1JxOVJGMmMwOURrSG94clcyZ0MwUDZaMHZucVRJWjZNVlZKamNUcXR4amIwQnRTWlUzQW9VTWYyWXBhVndNQkJqNUZIT2lod285Ykd5QTM3SWN4dzNlNFc3VnFva2JDeXBNdXZZbWV2bUtENHM1RTlublVQZw?oc=5",
       "logoUrl": "https://www.google.com/s2/favicons?domain=finanza.repubblica.it&sz=128"
     },
@@ -9347,7 +9328,7 @@
       "originalURL": "https://www.genovatoday.it/cronaca/marassi-anziano-soccorso-casa-decisivo-intervento-polizia-vigili-del-fuoco.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "marassi anziano urla e chiede aiuto in piena notte salvato da polizia -1794317983000-250",
+      "id": "marassi anziano urla e chiede aiuto in piena notte salvato da polizia -1794317983000-251",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPT2dnX2hydWZENjJMaEtldWF6aERnR0lVM055MkVxV3ctakZueTZoNXR0M1A1cDl6ek9YeWxsdDdDejZSeXhWRFlIQWd5Ym1FNTVmYXZFN192M1pJbDlDUzNNY3R2LUF2UUJEbldJRDd2OUcyYVd3SVRjZGdPbUxYYWxYcG54VmNrQlpud043VDdoNGxESVRKZDFxRENwQ2R5Z2hrdTMwX3VpVTdHYUJENEJ5VDE?oc=5",
       "imageVerifiedKey": "https://www.genovatoday.it/cronaca/marassi-anziano-soccorso-casa-decisivo-intervento-polizia-vigili-del-fuoco.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.genovatoday.it&sz=128"
@@ -9381,7 +9362,7 @@
       "originalURL": "https://ildispaccio.it/calabria/reggio-calabria/2026/11/10/due-soli-in-tutta-italia-i-donatori-compatibili-un-militare-del-5-reggimento-aosta-in-soccorso-di-una-bimba-di-reggio-calabria/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "due soli in tutta italia i donatori compatibili un militare del 5 regg-1794317105000-251",
+      "id": "due soli in tutta italia i donatori compatibili un militare del 5 regg-1794317105000-252",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPTVBBN21zUVVDXzlmMVVVbWdYXzlxMGNFdm5pYzRQU1JtZ2ZoUjdTakNGNElQQm83UU11Q2lEQVFUUkhvWFpCcDkxY3hQM1dUR2NDcHlsd0hxcFJuZE52N2tLWHQ5Zm54eklQdlg5RDZKdmRDTFlsZmxrcE5lQm1kVWdadXRldTN1S0FZclBXbklueGNwUjZNSzVhWnIwbW44NjNEcXo0c0M5TFRaMUxQTkxhWS1fSDRTcURQX1FLb2x2M0ZVbXhWT0NoX3NYSG5aa0owZmMzY3M1SVlVSERUXzhOeXBMM2pLZXV2ZDhhb293eFpZWENyZy1Fc3dpSExOaWlFcjh3Mm9Rb1gxWWxjalRSZ2g?oc=5",
       "imageVerifiedKey": "https://ildispaccio.it/calabria/reggio-calabria/2026/11/10/due-soli-in-tutta-italia-i-donatori-compatibili-un-militare-del-5-reggimento-aosta-in-soccorso-di-una-bimba-di-reggio-calabria/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=ildispaccio.it&sz=128"
@@ -9412,11 +9393,11 @@
       ],
       "id": "focus-rubano 20mila euro di carte pokemon arrestati due ventenni e altri due-1794316826000",
       "sourceCount": 1,
+      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxQUzBrWU9pMEVnS3h0dk9Zb2ttckFlSDhiUy1hVFJsQlcyaVp2Uzd4N3R5dXNUMldmcWQ5RFRPUmpPclRHT3RCSjI3NktzLVBSS3lFMnI5cnpkaXJKYkJfMWxVMGw3QkJZZnp0cEtuSVVGYUtPUG5CUUhKWS1CVk9ka0w0aW1VdVRrVGlybmZweXdhY2R2bFBteTRHMDIyeWI3YTA0UEdiOEp4YjZQWkZsWDQyU29IN0VwMXYxMzlRek9xb3BrRlNWejVINlp4SWFTX3pieGtLQ3V3SzZjNXh2N05KOUdJUWNBWjZPV1M2Vmd6QWpBeFNrWGc5cmxJenVMek85QjMyMk1YQ1JiMXhaY2x1QU0wT3RsWS1ndXVYaloyUDdoT0ZFUURtNEdPMEVWNUQtVUlCM0lOaTdHSXd2WWdQY0E0d0ZIaDBGNzFRVUVVZmRIRjRhVzRrTW3SAeICQVVfeXFMUGhqVWt4Qm5XdDJDNmZpT0JjU0luRFo3cTdrajBvWVVvYXlBcl81bWY4TUpvNDdHS3lmZ1NIellhMjB3UHRlS29TaUJ0QmtoSTBtVnlkSEI2WWxIeEJxVXpYeDdHamNJOVpHaGtKd2sxQ1hZUVdmUDJUQVRUc1ZpeVZCSW1tVkhUOVhwZTk1TXBNSF9aSEpRTEt1MldLc0h1U1FBa2FyMWV6ZGRONDhfaThWSXBxQlhiX0lXYWEwendWQzV6RnJOLXFDbXlKQ3NhLWNwTlR2LWt3X2ltazBxcHM2cXN6MGV0a1IwX1JRb3VfbXpfNkNxVlBZZDNzUkhFVHRmOEJoN2g5cGxTbWUzeklYNk9SYjNVNE1scVNBczlKa05IWFMxQTlCMVViN0pHdS01U0RVWTdGY0ZGVUtxbzdocjhMeXRtbjVLdnhwYS1JeU93WUZTVUx2dXB4dGdyWUF3?oc=5",
+      "originalURL": "https://corrieredellaltoadige.corriere.it/notizie/cronaca/26_novembre_10/rubano-20mila-euro-di-carte-pokemon-arrestati-due-ventenni-e-altri-due-in-fuga-ma-il-valore-delle-figurine-attrae-sempre-piu-c2a165e7-bd66-45ef-b7b2-54774a5a2xlk.shtml",
       "image": "https://dimages2.corriereobjects.it/files/og_thumbnail/uploads/2026/11/09/6af1c596cd1da.jpeg",
       "imageVerifiedKey": "https://corrieredellaltoadige.corriere.it/notizie/cronaca/26_novembre_10/rubano-20mila-euro-di-carte-pokemon-arrestati-due-ventenni-e-altri-due-in-fuga-ma-il-valore-delle-figurine-attrae-sempre-piu-c2a165e7-bd66-45ef-b7b2-54774a5a2xlk.shtml",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=corrieredellaltoadige.corriere.it&sz=128",
-      "originalURL": "https://corrieredellaltoadige.corriere.it/notizie/cronaca/26_novembre_10/rubano-20mila-euro-di-carte-pokemon-arrestati-due-ventenni-e-altri-due-in-fuga-ma-il-valore-delle-figurine-attrae-sempre-piu-c2a165e7-bd66-45ef-b7b2-54774a5a2xlk.shtml",
-      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxQUzBrWU9pMEVnS3h0dk9Zb2ttckFlSDhiUy1hVFJsQlcyaVp2Uzd4N3R5dXNUMldmcWQ5RFRPUmpPclRHT3RCSjI3NktzLVBSS3lFMnI5cnpkaXJKYkJfMWxVMGw3QkJZZnp0cEtuSVVGYUtPUG5CUUhKWS1CVk9ka0w0aW1VdVRrVGlybmZweXdhY2R2bFBteTRHMDIyeWI3YTA0UEdiOEp4YjZQWkZsWDQyU29IN0VwMXYxMzlRek9xb3BrRlNWejVINlp4SWFTX3pieGtLQ3V3SzZjNXh2N05KOUdJUWNBWjZPV1M2Vmd6QWpBeFNrWGc5cmxJenVMek85QjMyMk1YQ1JiMXhaY2x1QU0wT3RsWS1ndXVYaloyUDdoT0ZFUURtNEdPMEVWNUQtVUlCM0lOaTdHSXd2WWdQY0E0d0ZIaDBGNzFRVUVVZmRIRjRhVzRrTW3SAeICQVVfeXFMUGhqVWt4Qm5XdDJDNmZpT0JjU0luRFo3cTdrajBvWVVvYXlBcl81bWY4TUpvNDdHS3lmZ1NIellhMjB3UHRlS29TaUJ0QmtoSTBtVnlkSEI2WWxIeEJxVXpYeDdHamNJOVpHaGtKd2sxQ1hZUVdmUDJUQVRUc1ZpeVZCSW1tVkhUOVhwZTk1TXBNSF9aSEpRTEt1MldLc0h1U1FBa2FyMWV6ZGRONDhfaThWSXBxQlhiX0lXYWEwendWQzV6RnJOLXFDbXlKQ3NhLWNwTlR2LWt3X2ltazBxcHM2cXN6MGV0a1IwX1JRb3VfbXpfNkNxVlBZZDNzUkhFVHRmOEJoN2g5cGxTbWUzeklYNk9SYjNVNE1scVNBczlKa05IWFMxQTlCMVViN0pHdS01U0RVWTdGY0ZGVUtxbzdocjhMeXRtbjVLdnhwYS1JeU93WUZTVUx2dXB4dGdyWUF3?oc=5"
+      "logoUrl": "https://www.google.com/s2/favicons?domain=corrieredellaltoadige.corriere.it&sz=128"
     },
     {
       "title": "Passo decisivo per l'elezione diretta delle Province: ora la palla ripassa a Roma",
@@ -9447,10 +9428,10 @@
       "originalURL": "https://www.cagliaritoday.it/politica/province-sardegna-elezione-diretta-modifiche-calderoli-storia.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "passo decisivo per l elezione diretta delle province ora la palla ripa-1794314628000-253",
+      "id": "passo decisivo per l elezione diretta delle province ora la palla ripa-1794314628000-254",
+      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUjVHUFRJZXB2RnJveWFRdm9zdmRqLTJTeHFodnY1Ujd3d2VpZFYzb015M095VnJJcldoNDV1QzI4UnRfZkJOMkdNemsyVmQ2NWRoV2R3MnpDY2FOMG15TmZILUduNE94UE9PZUtmNFpHZGRFSFRQYzZmeloxWExxUWlvVFIzNURmNE9GdW9scWxyeWlpa2NxOXh3S2VKY0VWVk4zcU4tdw?oc=5",
       "imageVerifiedKey": "https://www.cagliaritoday.it/politica/province-sardegna-elezione-diretta-modifiche-calderoli-storia.html",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=www.cagliaritoday.it&sz=128",
-      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUjVHUFRJZXB2RnJveWFRdm9zdmRqLTJTeHFodnY1Ujd3d2VpZFYzb015M095VnJJcldoNDV1QzI4UnRfZkJOMkdNemsyVmQ2NWRoV2R3MnpDY2FOMG15TmZILUduNE94UE9PZUtmNFpHZGRFSFRQYzZmeloxWExxUWlvVFIzNURmNE9GdW9scWxyeWlpa2NxOXh3S2VKY0VWVk4zcU4tdw?oc=5"
+      "logoUrl": "https://www.google.com/s2/favicons?domain=www.cagliaritoday.it&sz=128"
     },
     {
       "title": "Autostrada A4, scontro sui fondi per la Valdastico: «Esposto all’Anac contro la decisione del Mit». Bonelli va da Meloni",
@@ -9483,10 +9464,10 @@
       "originalURL": "https://www.milanofinanza.it/news/a4-pasquale-russo-conftrasporto-presentato-esposto-all-anac-contro-decisione-del-mit-202611101337436103",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "autostrada a4 scontro sui fondi per la valdastico esposto all anac con-1794314220000-254",
+      "id": "autostrada a4 scontro sui fondi per la valdastico esposto all anac con-1794314220000-255",
+      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOdzVHREVoSWdQUGFXaXozQjhzWFJZUVM2SE9SZ29fLXNrYVUwNE9LM3QtVUVhci01QzNiMHRfREw0ajNuVWZUa1h4aGMyaDRRc0FMRllhOF8xQlYza3VXeE0wSTFFeVJhcWJtMVlTVmpydHNiNXd3OG9PdkJ0Y19ZdDg1UFNPdWNZVXRuamlCUENwWko0dmVvSktlcXBXMXZRSkNGWGN3LW5iejQxUjZzYkY3ZDFUTTJURlBTZjF2bzhNZzRIc09sa1RzWnBQR0k5enk0?oc=5",
       "imageVerifiedKey": "https://www.milanofinanza.it/news/a4-pasquale-russo-conftrasporto-presentato-esposto-all-anac-contro-decisione-del-mit-202611101337436103",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=www.milanofinanza.it&sz=128",
-      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOdzVHREVoSWdQUGFXaXozQjhzWFJZUVM2SE9SZ29fLXNrYVUwNE9LM3QtVUVhci01QzNiMHRfREw0ajNuVWZUa1h4aGMyaDRRc0FMRllhOF8xQlYza3VXeE0wSTFFeVJhcWJtMVlTVmpydHNiNXd3OG9PdkJ0Y19ZdDg1UFNPdWNZVXRuamlCUENwWko0dmVvSktlcXBXMXZRSkNGWGN3LW5iejQxUjZzYkY3ZDFUTTJURlBTZjF2bzhNZzRIc09sa1RzWnBQR0k5enk0?oc=5"
+      "logoUrl": "https://www.google.com/s2/favicons?domain=www.milanofinanza.it&sz=128"
     },
     {
       "title": "Alto Calore, Lega Avellino: «Il Pd pratica la politica della doppia morale. Agli irpini deve chiedere scusa",
@@ -9515,7 +9496,7 @@
       "originalURL": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYjJYcTZfSkdWSWZ0cWptNVAxanlZYlVNbWtMVEhHOUQ1OFRMT1BzcDFaaWJyVzcxTlNmWUVpYXRsZkk4NHZzQ2Zka2lrYWoyTFpCd21Zb1I0SjRKUDZNMS0xcHpJTk1oYnBadldnU0hCc2wxRnAtZW9TZWFYRGFhWkM2Y3VaTk9NaThyODRwQm81OS1DUEtoN2VsUzlPTDZpWFVKSV9HTnB3aTl3N3N0U2Z4ZFRtMlUxZl96T1U2MUJKd2psOXZz?oc=5",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "alto calore lega avellino il pd pratica la politica della doppia moral-1794311932000-255",
+      "id": "alto calore lega avellino il pd pratica la politica della doppia moral-1794311932000-256",
       "imageVerifiedKey": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYjJYcTZfSkdWSWZ0cWptNVAxanlZYlVNbWtMVEhHOUQ1OFRMT1BzcDFaaWJyVzcxTlNmWUVpYXRsZkk4NHZzQ2Zka2lrYWoyTFpCd21Zb1I0SjRKUDZNMS0xcHpJTk1oYnBadldnU0hCc2wxRnAtZW9TZWFYRGFhWkM2Y3VaTk9NaThyODRwQm81OS1DUEtoN2VsUzlPTDZpWFVKSV9HTnB3aTl3N3N0U2Z4ZFRtMlUxZl96T1U2MUJKd2psOXZz?oc=5",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.orticalab.it&sz=128"
     },
@@ -9553,6 +9534,35 @@
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYlVlX2tXRXBsYnJDNW1pbG9tUWJocjVoSUFnTDJMNmtFY1FyTVNsSUcwU2VqT250OTFKUVAyWEZNYnQ0R2sxUXQwSTlqa2MzR1ZPdXVHcHlEMmxoWHZNRGpheGpwdE5yYjdYRndaOC1jWGlLVXZVZ3RkNlZFQ1BmTWZZWWVwNWRJRnIxWFh4S2d1Y2tIME5Nc2VDRlo5RVJSLUZ5Uld2LWY?oc=5",
       "imageVerifiedKey": "https://www.ilsole24ore.com/art/valditara-manuale-storia-laterza-indottrina-studenti-va-ritirato-AJDNhOBC",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ilsole24ore.com&sz=128"
+    },
+    {
+      "title": "Dl Bollette. Russo (FdI): Dimostra ritrovata autorevolezza Italia in Europa",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVEJDVVZwVzNsY29FS1R5N0VrNEFacXFaQWl6cEZwb2hpTktiV25TalBrWkloc2VvRHBWOVZCSXVWZHNUem9iektiY1JVaWI2U2F0aVpHbXBmV2pmYThzTkk2UDc4SkxCbVJqQk5kQjBoUG05cDU0Ry1KRmJCOS1VRlg1RXBVeE1tVHNCbU9xWmxtVkVmSGJMNlI1TkIzd2VYeXpPaHlsQ3g?oc=5\" target=\"_blank\">Dl Bollette. Russo (FdI): Dimostra ritrovata autorevolezza Italia in Europa</a> <font color=\"#6f6f6f\">La Voce del Patriota</font>",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVEJDVVZwVzNsY29FS1R5N0VrNEFacXFaQWl6cEZwb2hpTktiV25TalBrWkloc2VvRHBWOVZCSXVWZHNUem9iektiY1JVaWI2U2F0aVpHbXBmV2pmYThzTkk2UDc4SkxCbVJqQk5kQjBoUG05cDU0Ry1KRmJCOS1VRlg1RXBVeE1tVHNCbU9xWmxtVkVmSGJMNlI1TkIzd2VYeXpPaHlsQ3g?oc=5",
+      "image": "",
+      "source": "La Voce del Patriota",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "Tue, 10 Nov 2026 11:38:41 GMT",
+      "googlePubDate": "Tue, 10 Nov 2026 11:38:41 GMT",
+      "originalPubDate": null,
+      "dateSource": "google",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "La Voce del Patriota",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVEJDVVZwVzNsY29FS1R5N0VrNEFacXFaQWl6cEZwb2hpTktiV25TalBrWkloc2VvRHBWOVZCSXVWZHNUem9iektiY1JVaWI2U2F0aVpHbXBmV2pmYThzTkk2UDc4SkxCbVJqQk5kQjBoUG05cDU0Ry1KRmJCOS1VRlg1RXBVeE1tVHNCbU9xWmxtVkVmSGJMNlI1TkIzd2VYeXpPaHlsQ3g?oc=5",
+          "sourceHomepage": "https://www.lavocedelpatriota.it",
+          "pubDate": "Tue, 10 Nov 2026 11:38:41 GMT"
+        }
+      ],
+      "originalURL": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVEJDVVZwVzNsY29FS1R5N0VrNEFacXFaQWl6cEZwb2hpTktiV25TalBrWkloc2VvRHBWOVZCSXVWZHNUem9iektiY1JVaWI2U2F0aVpHbXBmV2pmYThzTkk2UDc4SkxCbVJqQk5kQjBoUG05cDU0Ry1KRmJCOS1VRlg1RXBVeE1tVHNCbU9xWmxtVkVmSGJMNlI1TkIzd2VYeXpPaHlsQ3g?oc=5",
+      "sourceCount": 1,
+      "sourcePriority": 55,
+      "id": "dl bollette russo fdi dimostra ritrovata autorevolezza italia in europ-1794310721000-258",
+      "logoUrl": "https://www.google.com/s2/favicons?domain=www.lavocedelpatriota.it&sz=128"
     },
     {
       "title": "«Un aiuto per la famiglia di Marco», prosegue la raccolta fondi degli amici di Bonadiman",
@@ -9595,6 +9605,38 @@
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.larena.it&sz=128"
     },
     {
+      "title": "Aggressione allo Stadium, sette Daspo a tifosi della Juventus",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxQMHZEVWo5SEZaS1J2LUNGUW5sWWZhcEFJSGRUVG1xeXRPeV8xLW1uS2xoTW1LV1pGQU1YQWpIWFMzVGVEUlY3VG83ZWRLQnBuelZGU1hLSDdKQngzWWY2TVFBQXZHQmloU2VQZmM5Y0gyWVhvMkJaT3d3UEVESG1Bc0U4OUxCUEUtaVdFeUJXNkplbmk1dE0wb0NQcXlFZENhRld1MnpLbjlqN0RWWExQOFQ4MkY3dldVREcxc3c5dE5QSkNVaFJrQjBEYzVWcHI5dHk1YV9ENzVqd0F3cjktMF9IdlJZLTBvVkHSAe8BQVVfeXFMUElXYXNtU2g2UFF6LTRvRWp1SkdSRUozbUdyVl9pNGhfT1dSNDVCbENvZ1l2aXZlbGhXamtZTG1jYjBuSWstZzF3eWdCRUpjWjBlMWVkODkzdzJyMWZObUM0cWVLZUZwUUwyQlQ0UDQ1aFJ4Zk4xR1Jyc2tMcWVIeFg0MXhiNUlUVkFFeE5fMGk0WjdSRmxfa1FNcFQ0WENBbXIzWFAtVkpZclFiWnpZZnFlamhKdzE4Y1dFeDZZM1hBQi1QU292VUtmel9YdGZzYTg1UmRoYloycWl2U2M4QUZFNklKVGZKUERJOV81NjA?oc=5\" target=\"_blank\">Aggressione allo Stadium, sette Daspo a tifosi della Juventus</a> <font color=\"#6f6f6f\">ANSA</font>",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQMHZEVWo5SEZaS1J2LUNGUW5sWWZhcEFJSGRUVG1xeXRPeV8xLW1uS2xoTW1LV1pGQU1YQWpIWFMzVGVEUlY3VG83ZWRLQnBuelZGU1hLSDdKQngzWWY2TVFBQXZHQmloU2VQZmM5Y0gyWVhvMkJaT3d3UEVESG1Bc0U4OUxCUEUtaVdFeUJXNkplbmk1dE0wb0NQcXlFZENhRld1MnpLbjlqN0RWWExQOFQ4MkY3dldVREcxc3c5dE5QSkNVaFJrQjBEYzVWcHI5dHk1YV9ENzVqd0F3cjktMF9IdlJZLTBvVkHSAe8BQVVfeXFMUElXYXNtU2g2UFF6LTRvRWp1SkdSRUozbUdyVl9pNGhfT1dSNDVCbENvZ1l2aXZlbGhXamtZTG1jYjBuSWstZzF3eWdCRUpjWjBlMWVkODkzdzJyMWZObUM0cWVLZUZwUUwyQlQ0UDQ1aFJ4Zk4xR1Jyc2tMcWVIeFg0MXhiNUlUVkFFeE5fMGk0WjdSRmxfa1FNcFQ0WENBbXIzWFAtVkpZclFiWnpZZnFlamhKdzE4Y1dFeDZZM1hBQi1QU292VUtmel9YdGZzYTg1UmRoYloycWl2U2M4QUZFNklKVGZKUERJOV81NjA?oc=5",
+      "source": "ANSA",
+      "category": "Cronaca",
+      "categories": [
+        "Cronaca"
+      ],
+      "pubDate": "2026-11-10T11:30:00.000Z",
+      "googlePubDate": "Tue, 10 Nov 2026 11:30:00 GMT",
+      "originalPubDate": "2026-11-10T11:30:00.000Z",
+      "dateSource": "original",
+      "isVideo": false,
+      "sources": [
+        {
+          "source": "ANSA",
+          "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQMHZEVWo5SEZaS1J2LUNGUW5sWWZhcEFJSGRUVG1xeXRPeV8xLW1uS2xoTW1LV1pGQU1YQWpIWFMzVGVEUlY3VG83ZWRLQnBuelZGU1hLSDdKQngzWWY2TVFBQXZHQmloU2VQZmM5Y0gyWVhvMkJaT3d3UEVESG1Bc0U4OUxCUEUtaVdFeUJXNkplbmk1dE0wb0NQcXlFZENhRld1MnpLbjlqN0RWWExQOFQ4MkY3dldVREcxc3c5dE5QSkNVaFJrQjBEYzVWcHI5dHk1YV9ENzVqd0F3cjktMF9IdlJZLTBvVkHSAe8BQVVfeXFMUElXYXNtU2g2UFF6LTRvRWp1SkdSRUozbUdyVl9pNGhfT1dSNDVCbENvZ1l2aXZlbGhXamtZTG1jYjBuSWstZzF3eWdCRUpjWjBlMWVkODkzdzJyMWZObUM0cWVLZUZwUUwyQlQ0UDQ1aFJ4Zk4xR1Jyc2tMcWVIeFg0MXhiNUlUVkFFeE5fMGk0WjdSRmxfa1FNcFQ0WENBbXIzWFAtVkpZclFiWnpZZnFlamhKdzE4Y1dFeDZZM1hBQi1QU292VUtmel9YdGZzYTg1UmRoYloycWl2U2M4QUZFNklKVGZKUERJOV81NjA?oc=5",
+          "pubDate": "2026-11-10T11:30:00.000Z",
+          "originalPubDate": "2026-11-10T11:30:00.000Z",
+          "dateSource": "original",
+          "originalURL": "https://www.ansa.it/sito/notizie/cronaca/2026/11/10/aggressione-allo-stadium-sette-daspo-a-tifosi-della-juventus_8a0fca05-4ae0-465e-9b53-d7c527072b5e.html"
+        }
+      ],
+      "id": "focus-aggressione allo stadium sette daspo a tifosi della juventus-1794310200000",
+      "sourceCount": 1,
+      "image": "https://www.ansa.it/webimages/img_1280x720/2026/11/10/00e574a1ceca61a896a5ab7df29c32ee.jpg",
+      "imageVerifiedKey": "https://www.ansa.it/sito/notizie/cronaca/2026/11/10/aggressione-allo-stadium-sette-daspo-a-tifosi-della-juventus_8a0fca05-4ae0-465e-9b53-d7c527072b5e.html",
+      "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128",
+      "originalURL": "https://www.ansa.it/sito/notizie/cronaca/2026/11/10/aggressione-allo-stadium-sette-daspo-a-tifosi-della-juventus_8a0fca05-4ae0-465e-9b53-d7c527072b5e.html",
+      "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQMHZEVWo5SEZaS1J2LUNGUW5sWWZhcEFJSGRUVG1xeXRPeV8xLW1uS2xoTW1LV1pGQU1YQWpIWFMzVGVEUlY3VG83ZWRLQnBuelZGU1hLSDdKQngzWWY2TVFBQXZHQmloU2VQZmM5Y0gyWVhvMkJaT3d3UEVESG1Bc0U4OUxCUEUtaVdFeUJXNkplbmk1dE0wb0NQcXlFZENhRld1MnpLbjlqN0RWWExQOFQ4MkY3dldVREcxc3c5dE5QSkNVaFJrQjBEYzVWcHI5dHk1YV9ENzVqd0F3cjktMF9IdlJZLTBvVkHSAe8BQVVfeXFMUElXYXNtU2g2UFF6LTRvRWp1SkdSRUozbUdyVl9pNGhfT1dSNDVCbENvZ1l2aXZlbGhXamtZTG1jYjBuSWstZzF3eWdCRUpjWjBlMWVkODkzdzJyMWZObUM0cWVLZUZwUUwyQlQ0UDQ1aFJ4Zk4xR1Jyc2tMcWVIeFg0MXhiNUlUVkFFeE5fMGk0WjdSRmxfa1FNcFQ0WENBbXIzWFAtVkpZclFiWnpZZnFlamhKdzE4Y1dFeDZZM1hBQi1QU292VUtmel9YdGZzYTg1UmRoYloycWl2U2M4QUZFNklKVGZKUERJOV81NjA?oc=5"
+    },
+    {
       "title": "Sicurezza, le password salvate sul computer finiscono sui siti pubblici",
       "summary": "Una svista nella gestione di Claude Code porta alla condivisione di dati sensibili",
       "link": "https://www.ansa.it/canale_tecnologia/notizie/cybersecurity/2026/11/10/sicurezza-le-password-salvate-sul-computer-finiscono-sui-siti-pubblici_e31540bc-14de-4b69-9e34-e99ebd60bb25.html",
@@ -9622,7 +9664,7 @@
       "originalURL": "https://www.ansa.it/canale_tecnologia/notizie/cybersecurity/2026/11/10/sicurezza-le-password-salvate-sul-computer-finiscono-sui-siti-pubblici_e31540bc-14de-4b69-9e34-e99ebd60bb25.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "sicurezza le password salvate sul computer finiscono sui siti pubblici-1794324612000-243",
+      "id": "sicurezza le password salvate sul computer finiscono sui siti pubblici-1794324612000-244",
       "publicationVerifiedKey": "https://www.ansa.it/canale_tecnologia/notizie/cybersecurity/2026/11/10/sicurezza-le-password-salvate-sul-computer-finiscono-sui-siti-pubblici_e31540bc-14de-4b69-9e34-e99ebd60bb25.html",
       "imageVerifiedKey": "https://www.ansa.it/canale_tecnologia/notizie/cybersecurity/2026/11/10/sicurezza-le-password-salvate-sul-computer-finiscono-sui-siti-pubblici_e31540bc-14de-4b69-9e34-e99ebd60bb25.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
@@ -9659,7 +9701,7 @@
       "originalURL": "https://www.quotidiano.net/politica/tajani-aiuti-in-ucraina-malumori-lega-meloni-telefona-a-giorgetti-mwuh7164",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "ucraina malumori nella lega sui nuovi aiuti fuga in avanti di tajani t-1794309997000-258",
+      "id": "ucraina malumori nella lega sui nuovi aiuti fuga in avanti di tajani t-1794309997000-259",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNaVFCaVRGX2txX3lHbFM3YXdRSU9mRXBqalBPSGFWQ2FQX0JSS1NXRDFleVpDM19oVDkyVmU3RlpVYTctTmRuWkg4TEhzZ3NNUmhTQlJza084cm5HSFY1VjhCRE13b0JOQXNFMElkcEtNdjhILUtJdjBQOThEODJlVFRXNGpwem14WFMwU2pCR3NiWjE0MHltajBYNU9Dc2Z0M0xCcC1lM2RCdEsxOUlB?oc=5",
       "imageVerifiedKey": "https://www.quotidiano.net/politica/tajani-aiuti-in-ucraina-malumori-lega-meloni-telefona-a-giorgetti-mwuh7164",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.quotidiano.net&sz=128"
@@ -9753,7 +9795,7 @@
       "originalURL": "https://www.laverita.info/governo/presidenza-anac-nuovo-presidente-nomina",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "presidenza anac fumata nera salvini studia la lista-1794293989000-266",
+      "id": "presidenza anac fumata nera salvini studia la lista-1794293989000-267",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1xNnYzVl9lLU9JalRoQVFnejN5NV83eXdNNFRYZm5yZjBHUW16YWxLUXh6YktKTl9fSlZTVzRpTHBWREFwZGFEREdNVzZ4S0g3Z3dnbUpuNVAxVTQ1eWhONlpkOGw5Q05TZVJCU3dLZkxQVXZZWGFwOXVPRk5OQQ?oc=5",
       "imageVerifiedKey": "https://www.laverita.info/governo/presidenza-anac-nuovo-presidente-nomina",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.laverita.info&sz=128"
@@ -9788,7 +9830,7 @@
       "originalURL": "https://www.tribunatreviso.it/cronaca/tentato-femminicio-castelfranco-condizioni-donna-coltello-rclnj7bt",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "tentato femminicio la donna aggredita e fuori pericolo accoltellata pe-1794289890000-267",
+      "id": "tentato femminicio la donna aggredita e fuori pericolo accoltellata pe-1794289890000-268",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONVcyMjg0b1hEcFhHN0ZfSWc1bUZ0ZnUyQzcyNi1KZjZteFB2TTJnbkdBNnZHQkt2NFN6YVkxdExyd2R4d3B3YUlSTkEtbzgyRDZQdS05SVM3bVVmTXpnaU94Wlpia3hPZzBRbFJ5Z2drTFZHUTBOczcxSGVnaDdZdTVrTVNWNzFPNFk0X19BbjkzMjItcW5YMnB1aHdQX3BMT2wzeHZ6bw?oc=5",
       "imageVerifiedKey": "https://www.tribunatreviso.it/cronaca/tentato-femminicio-castelfranco-condizioni-donna-coltello-rclnj7bt",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.tribunatreviso.it&sz=128"
@@ -9835,7 +9877,7 @@
       "originalURL": "https://www.ansa.it/sito/notizie/politica/2026/11/10/lira-della-lega-sul-decreto-armi-giorgetti-non-lo-firma_bd84e8d5-bb54-4f9e-ab20-c050f5ae3632.html",
       "sourceCount": 3,
       "sourcePriority": 55,
-      "id": "l ira della lega sul decreto armi giorgetti non lo firma-1794300840000-264",
+      "id": "l ira della lega sul decreto armi giorgetti non lo firma-1794300840000-265",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOekRFZEdzbk42MFVjck4za2sxc0kzQnZ4ckNvUTFBVTJMekcyb0xKS2Y2VmlhZTZFYU1lNzV3Q21VeGh3VUxadEwzMktya3gxVUhYUEt4c0dzMDBGN1d4eE5MYmUwSV9CWHBNa0FyVm9PcDRwXzBkb1E3M3B2NTkteWE3X2FxR2JCLXF3d2NTWG1iYW9TN1RQUVhyTHdVbkpNN0xkQVFYMzdKQnNnT3gwLWpYTkdTZXE2SnpBUjRDVkFKcnpSaGEwajlpX2pSOHJyR3dHdDdnamlyUEk1eFJvNVpvS2TSAeoBQVVfeXFMT1lvOWJRSTBXVURFekt6a2JxSy0wVW11Qk85dDc5bFM2ZUtMdkExU1F5NmdEdm9Gek5heDh6MUhVQVdfNHgtTVh6ZVVYcmFlSV9VRm1GeFQtYkhiV2loYUtjb1QzQ2MyVUNrdmVMZjR5aU5wbzEtOGE4Y1FjUjRjVVVYSkIwQ0dpOF9GWWllMm5WTHlLRG04dzExNk44OFZFNkxHUUxHTF9VNGJnMnN3NDVCVVEzMWVYbkpKcVpZaEJxYlBVMFZnZHpndEY3RmtCYkpDek03THZoSDVkSnFwZEl2djBOY2d4bV9B?oc=5",
       "imageVerifiedKey": "https://www.ansa.it/sito/notizie/politica/2026/11/10/lira-della-lega-sul-decreto-armi-giorgetti-non-lo-firma_bd84e8d5-bb54-4f9e-ab20-c050f5ae3632.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
@@ -9869,41 +9911,10 @@
       "originalURL": "https://www.lostrillone.tv/news/cronaca/526425/donna-rischia-di-soffocare-per-una-caramella-comandante-della-polizia-municipale-le-salva-la-vita.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "donna rischia di soffocare per una caramella comandante della polizia -1794262991000-286",
+      "id": "donna rischia di soffocare per una caramella comandante della polizia -1794262991000-287",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPMUd1RU1nTHZTNzNYakZQdWw5RFFyWEpwamhER3pIZ1RUeHBsMTlaUWtlSjBnRW8xRExkUUprcHVqMjQxTmdERGthQWVTY0JoM0dZd3BDdVdHWmZwQndkZHBqRHY0NTBxeFllMmxFZnZlVm5GY19IaVREZExPckh6ZFcxUHB2b2NPQkRJODlMaHYwSkx2MXBac2FtYTRFNWNHZlB1d2lFM0p2c1lRVURwWGcxSVlrSWpiNUdXVDNwYkROTUVUUW1iR0NRekpZSFIzSWdZa0dTX0lzaDBHaXRoUVk4WQ?oc=5",
       "imageVerifiedKey": "https://www.lostrillone.tv/news/cronaca/526425/donna-rischia-di-soffocare-per-una-caramella-comandante-della-polizia-municipale-le-salva-la-vita.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.lostrillone.tv&sz=128"
-    },
-    {
-      "title": "Lega: Salvini e il nodo Romeo, dal Nord appello a non sfiduciarlo",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi9AFBVV95cUxObEY0WWtEeEd2QlVINTVTcHBnMHpQa1NtaWhlVl9MX1FEVEQwMXZIYnhOaU1GUDdwdUFFMzl1WnJtekNqR3ViM3Z6eVA1UXRUbFh6RHRYSnVyMFBmLVJaS2QxM1NDd0tJQy1jaHJyLWtIZ05rX1ZHTlJMYnpPNWxEdHEzQW5BLTZWTnZxYURqWDNvNlF0UlltQ3VhczlOOUdRSFlkcFJwZEJPel8zVFBiaTlZdHgtNktGeloxa1BrT3pCRnVEbWcxeVRpRU1aR1dCWHZLU3FaTE5XOWVRRmVNY2p0X1Y5NnNLYkx1dEdPX3pUeTJK0gH0AUFVX3lxTE5sRjRZa0R4R3ZCVUg1NVNwcGcwelBrU21paGVWX0xfUURURDAxdkhieE5pTUZQN3B1QUUzOXVacm16Q2pHdWIzdnp5UDVRdFRsWHpEdFhKdXIwUGYtUlpLZDEzU0N3S0lDLWNocnIta0hnTmtfVkdOUkxiek81bER0cTNBbkEtNlZOdnFhRGpYM282UXRSWW1DdWFzOU45R1FIWWRwUnBkQk96XzNUUGJpOVl0eC02S0Z6WjFrUGtPekJGdURtZzF5VGlFTVpHV0JYdktTcVpMTlc5ZVFGZU1janRfVjk2c0tiTHV0R09felR5Mko?oc=5\" target=\"_blank\">Lega: Salvini e il nodo Romeo, dal Nord appello a non sfiduciarlo</a> <font color=\"#6f6f6f\">ANSA</font>",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxObEY0WWtEeEd2QlVINTVTcHBnMHpQa1NtaWhlVl9MX1FEVEQwMXZIYnhOaU1GUDdwdUFFMzl1WnJtekNqR3ViM3Z6eVA1UXRUbFh6RHRYSnVyMFBmLVJaS2QxM1NDd0tJQy1jaHJyLWtIZ05rX1ZHTlJMYnpPNWxEdHEzQW5BLTZWTnZxYURqWDNvNlF0UlltQ3VhczlOOUdRSFlkcFJwZEJPel8zVFBiaTlZdHgtNktGeloxa1BrT3pCRnVEbWcxeVRpRU1aR1dCWHZLU3FaTE5XOWVRRmVNY2p0X1Y5NnNLYkx1dEdPX3pUeTJK0gH0AUFVX3lxTE5sRjRZa0R4R3ZCVUg1NVNwcGcwelBrU21paGVWX0xfUURURDAxdkhieE5pTUZQN3B1QUUzOXVacm16Q2pHdWIzdnp5UDVRdFRsWHpEdFhKdXIwUGYtUlpLZDEzU0N3S0lDLWNocnIta0hnTmtfVkdOUkxiek81bER0cTNBbkEtNlZOdnFhRGpYM282UXRSWW1DdWFzOU45R1FIWWRwUnBkQk96XzNUUGJpOVl0eC02S0Z6WjFrUGtPekJGdURtZzF5VGlFTVpHV0JYdktTcVpMTlc5ZVFGZU1janRfVjk2c0tiTHV0R09felR5Mko?oc=5",
-      "image": "",
-      "source": "ANSA",
-      "category": "Lega",
-      "categories": [
-        "Lega",
-        "Politica"
-      ],
-      "pubDate": "Mon, 09 Nov 2026 21:13:23 GMT",
-      "googlePubDate": "Mon, 09 Nov 2026 21:13:23 GMT",
-      "originalPubDate": null,
-      "dateSource": "google",
-      "isVideo": false,
-      "sources": [
-        {
-          "source": "ANSA",
-          "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxObEY0WWtEeEd2QlVINTVTcHBnMHpQa1NtaWhlVl9MX1FEVEQwMXZIYnhOaU1GUDdwdUFFMzl1WnJtekNqR3ViM3Z6eVA1UXRUbFh6RHRYSnVyMFBmLVJaS2QxM1NDd0tJQy1jaHJyLWtIZ05rX1ZHTlJMYnpPNWxEdHEzQW5BLTZWTnZxYURqWDNvNlF0UlltQ3VhczlOOUdRSFlkcFJwZEJPel8zVFBiaTlZdHgtNktGeloxa1BrT3pCRnVEbWcxeVRpRU1aR1dCWHZLU3FaTE5XOWVRRmVNY2p0X1Y5NnNLYkx1dEdPX3pUeTJK0gH0AUFVX3lxTE5sRjRZa0R4R3ZCVUg1NVNwcGcwelBrU21paGVWX0xfUURURDAxdkhieE5pTUZQN3B1QUUzOXVacm16Q2pHdWIzdnp5UDVRdFRsWHpEdFhKdXIwUGYtUlpLZDEzU0N3S0lDLWNocnIta0hnTmtfVkdOUkxiek81bER0cTNBbkEtNlZOdnFhRGpYM282UXRSWW1DdWFzOU45R1FIWWRwUnBkQk96XzNUUGJpOVl0eC02S0Z6WjFrUGtPekJGdURtZzF5VGlFTVpHV0JYdktTcVpMTlc5ZVFGZU1janRfVjk2c0tiTHV0R09felR5Mko?oc=5",
-          "sourceHomepage": "https://www.ansa.it",
-          "pubDate": "Mon, 09 Nov 2026 21:13:23 GMT"
-        }
-      ],
-      "originalURL": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxObEY0WWtEeEd2QlVINTVTcHBnMHpQa1NtaWhlVl9MX1FEVEQwMXZIYnhOaU1GUDdwdUFFMzl1WnJtekNqR3ViM3Z6eVA1UXRUbFh6RHRYSnVyMFBmLVJaS2QxM1NDd0tJQy1jaHJyLWtIZ05rX1ZHTlJMYnpPNWxEdHEzQW5BLTZWTnZxYURqWDNvNlF0UlltQ3VhczlOOUdRSFlkcFJwZEJPel8zVFBiaTlZdHgtNktGeloxa1BrT3pCRnVEbWcxeVRpRU1aR1dCWHZLU3FaTE5XOWVRRmVNY2p0X1Y5NnNLYkx1dEdPX3pUeTJK0gH0AUFVX3lxTE5sRjRZa0R4R3ZCVUg1NVNwcGcwelBrU21paGVWX0xfUURURDAxdkhieE5pTUZQN3B1QUUzOXVacm16Q2pHdWIzdnp5UDVRdFRsWHpEdFhKdXIwUGYtUlpLZDEzU0N3S0lDLWNocnIta0hnTmtfVkdOUkxiek81bER0cTNBbkEtNlZOdnFhRGpYM282UXRSWW1DdWFzOU45R1FIWWRwUnBkQk96XzNUUGJpOVl0eC02S0Z6WjFrUGtPekJGdURtZzF5VGlFTVpHV0JYdktTcVpMTlc5ZVFGZU1janRfVjk2c0tiTHV0R09felR5Mko?oc=5",
-      "sourceCount": 1,
-      "sourcePriority": 55,
-      "id": "lega salvini e il nodo romeo dal nord appello a non sfiduciarlo-1794258803000-287",
-      "imageVerifiedKey": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxObEY0WWtEeEd2QlVINTVTcHBnMHpQa1NtaWhlVl9MX1FEVEQwMXZIYnhOaU1GUDdwdUFFMzl1WnJtekNqR3ViM3Z6eVA1UXRUbFh6RHRYSnVyMFBmLVJaS2QxM1NDd0tJQy1jaHJyLWtIZ05rX1ZHTlJMYnpPNWxEdHEzQW5BLTZWTnZxYURqWDNvNlF0UlltQ3VhczlOOUdRSFlkcFJwZEJPel8zVFBiaTlZdHgtNktGeloxa1BrT3pCRnVEbWcxeVRpRU1aR1dCWHZLU3FaTE5XOWVRRmVNY2p0X1Y5NnNLYkx1dEdPX3pUeTJK0gH0AUFVX3lxTE5sRjRZa0R4R3ZCVUg1NVNwcGcwelBrU21paGVWX0xfUURURDAxdkhieE5pTUZQN3B1QUUzOXVacm16Q2pHdWIzdnp5UDVRdFRsWHpEdFhKdXIwUGYtUlpLZDEzU0N3S0lDLWNocnIta0hnTmtfVkdOUkxiek81bER0cTNBbkEtNlZOdnFhRGpYM282UXRSWW1DdWFzOU45R1FIWWRwUnBkQk96XzNUUGJpOVl0eC02S0Z6WjFrUGtPekJGdURtZzF5VGlFTVpHV0JYdktTcVpMTlc5ZVFGZU1janRfVjk2c0tiTHV0R09felR5Mko?oc=5",
-      "logoUrl": "https://www.google.com/s2/favicons?domain=www.ansa.it&sz=128"
     },
     {
       "title": "Manovra: Calderoli rilancia richieste delle Regioni sulla sanità",
@@ -10212,7 +10223,7 @@
         "Cronaca"
       ],
       "pubDate": "2026-11-08T06:54:57.000Z",
-      "googlePubDate": "Wed, 11 Nov 2026 17:12:57 GMT",
+      "googlePubDate": "Wed, 11 Nov 2026 14:10:19 GMT",
       "originalPubDate": "2026-11-08T06:54:57.000Z",
       "dateSource": "original",
       "isVideo": false,
@@ -10230,7 +10241,7 @@
       "originalURL": "https://www.milanotoday.it/cronaca/sciopero/orario-metro-atm-taxi-treni-9-11-13-novembre-2026.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "sciopero atm metro tram e bus taxi in piazza e treni la settimana da i-1794417177000-2",
+      "id": "sciopero atm metro tram e bus taxi in piazza e treni la settimana da i-1794406219000-84",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZ1pXZUg2Qlk5Q2ZEdU9fSTVwNXBFZVlxYnVaYlUweHcxSUVBTGlYTXlQR2hxcHRkMm9mcVhWSU42eXFMYWFMM3V3dDJkMElYbmc0eEtqbEZBblBOcHdIRG1RTDV6ZzhaakJhWWhRRVVNRVZOQ2gtZGRwSWdYWmJYM29zbzJtd3pYNkY4SmlXQkxIWUx2M2R5N0F2Rk9yV28?oc=5",
       "imageVerifiedKey": "https://www.milanotoday.it/cronaca/sciopero/orario-metro-atm-taxi-treni-9-11-13-novembre-2026.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.milanotoday.it&sz=128"
@@ -10291,7 +10302,7 @@
       "originalURL": "https://www.milanotoday.it/cronaca/sciopero/orario-metro-atm-13-novembre-2026-.html",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "sciopero del personale atm a milano gli orari di metro bus e tram e i -1794416199000-19",
+      "id": "sciopero del personale atm a milano gli orari di metro bus e tram e i -1794416199000-20",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeUk3SFY4RnJSTXRlTEVLeHRwWnpKRmtnQXVKZGZDUUxGWXV3ZXZDNGxSNS0tVUFvM3ZTMjdjM0Y0RGllM0Q1YUNsQTUyNVhOZ296emNSNkY4WVhlTnhIeHVuNVhtMjB4am9pVUs2ZGRJQ1hva09kWGpqaHdxMTR4Slh1bGl2a3RFRDA4?oc=5",
       "imageVerifiedKey": "https://www.milanotoday.it/cronaca/sciopero/orario-metro-atm-13-novembre-2026-.html",
       "logoUrl": "https://www.google.com/s2/favicons?domain=www.milanotoday.it&sz=128"
@@ -10358,42 +10369,42 @@
       "originalURL": "https://giornaleradio.fm/l-apertura/la-lega-conferma-salvini-segretario-che-lancia-la-nuova-linea-basta-soldi-e-armi-allucraina/",
       "sourceCount": 1,
       "sourcePriority": 55,
-      "id": "la lega conferma salvini segretario che lancia la nuova linea basta so-1794365194000-203",
+      "id": "la lega conferma salvini segretario che lancia la nuova linea basta so-1794365194000-204",
       "publicationVerifiedKey": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNc1pnOHkwUmVfWk1BbU1wUThzRlNEYXJTQkY3VXBVTFJZOW1QVXBfdlNOcGlBTG8xVHpZNXFMMFB3RS1oaVRWcGdocU9qSnMwSlRIMXJtQ21mNU9ScEdHOXFuQXVpa1h4M3czd0FrZ253THhqZ3IwcE5KbjRpcm5nYWZWOVRMMEhaWmUtNlJqa0F0cHd4ekQ2YnBuZnhZWXhTU0VYNWlzY3hFc1dTVUExekp6ZG5kTXkxbmNITHdUVTJCd0JQN2ZB?oc=5",
       "imageVerifiedKey": "https://giornaleradio.fm/l-apertura/la-lega-conferma-salvini-segretario-che-lancia-la-nuova-linea-basta-soldi-e-armi-allucraina/",
       "logoUrl": "https://www.google.com/s2/favicons?domain=giornaleradio.fm&sz=128"
     }
   ],
   "videoEnrichment": {
-    "updatedAt": "2026-11-11T17:16:45.004Z",
+    "updatedAt": "2026-11-11T17:21:39.391Z",
     "successfulQueries": 3,
     "totalQueries": 4,
-    "added": 51,
-    "markedExisting": 8,
-    "totalVideos": 25
+    "added": 49,
+    "markedExisting": 9,
+    "totalVideos": 26
   },
   "focusEnrichment": {
-    "updatedAt": "2026-11-11T17:17:20.697Z",
+    "updatedAt": "2026-11-11T17:22:13.183Z",
     "successfulQueries": 34,
     "totalQueries": 37,
     "added": 430,
     "mergedExisting": 98,
     "counts": {
       "crimeImmigration": 13,
-      "europe": 16,
+      "europe": 15,
       "foreign": 24,
       "transport": 7
     }
   },
   "imageEnrichment": {
-    "updatedAt": "2026-11-11T17:17:27.002Z",
-    "photos": 266,
-    "logos": 34,
+    "updatedAt": "2026-11-11T17:22:18.632Z",
+    "photos": 267,
+    "logos": 33,
     "remaining": 0
   },
   "freshnessVersion": "event-date-v1",
   "freshnessEnrichment": {
-    "verifiedDates": 252,
+    "verifiedDates": 253,
     "excluded": 0
   }
 }
