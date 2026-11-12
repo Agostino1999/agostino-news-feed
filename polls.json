@@ -1,31 +1,123 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-12T09:49:18.516062+00:00",
-  "checkedAt": "2026-11-12T09:49:18.516062+00:00",
+  "updatedAt": "2026-11-12T16:09:10.470518+00:00",
+  "checkedAt": "2026-11-12T16:09:10.470518+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-12T09:49:18.516062+00:00"
+      "checkedAt": "2026-11-12T16:09:10.470518+00:00"
     },
     {
       "id": "swg",
       "ok": true,
       "count": 1,
-      "checkedAt": "2026-11-12T09:49:18.516062+00:00"
+      "checkedAt": "2026-11-12T16:09:10.470518+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
-      "count": 149,
-      "checkedAt": "2026-11-12T09:49:18.516062+00:00"
+      "count": 151,
+      "checkedAt": "2026-11-12T16:09:10.470518+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
   "polls": [
+    {
+      "pollster": "BiDiMedia",
+      "date": "2026-11-11",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-11-10",
+      "fieldworkEnd": "2026-11-11",
+      "fieldworkLabel": "10– 11 Nov",
+      "sampleSize": 1000,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://sondaggibidimedia.it/2026/11/12/sondaggio-bidimedia-11-novembre-2026/",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 26.3
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.5
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 12.0
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 7.3
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 6.8,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.5
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.0
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 5.6
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 2.8,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.0,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 1.4
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 1.1
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 0.9
+        },
+        {
+          "party": "pld",
+          "name": "Partito Liberaldemocratico",
+          "value": 0.8
+        }
+      ],
+      "id": "24a656ae7c2fe1405ce6"
+    },
     {
       "pollster": "SWG",
       "date": "2026-11-09",
@@ -197,7 +289,7 @@
       "fieldworkStart": "2026-11-02",
       "fieldworkEnd": "2026-11-09",
       "fieldworkLabel": "2– 9 Nov",
-      "sampleSize": null,
+      "sampleSize": 1000,
       "publishedAt": null,
       "source": {
         "name": "Fonte originale, indicizzata da Wikipedia",
@@ -261,102 +353,6 @@
         }
       ],
       "id": "236475745dbac8bd41d2"
-    },
-    {
-      "pollster": "Only Numbers",
-      "date": "2026-11-09",
-      "dateType": "deposit",
-      "depositedAt": "2026-11-09",
-      "fieldworkStart": null,
-      "fieldworkEnd": null,
-      "sampleSize": null,
-      "publishedAt": null,
-      "title": "Su intenzioni di voto e elezioni di midterm",
-      "commissioner": "RTI-Reti Televisive Italiane S.p.A.",
-      "source": {
-        "name": "Archivio del registro ufficiale · ruggsea / onData (CC BY 4.0)",
-        "url": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx",
-        "kind": "archive",
-        "indexUrl": "https://github.com/ruggsea/llm_italian_poll_scraper"
-      },
-      "results": [
-        {
-          "party": "fdi",
-          "name": "Fratelli d’Italia",
-          "value": 27.6
-        },
-        {
-          "party": "pd",
-          "name": "Partito Democratico",
-          "value": 20.4
-        },
-        {
-          "party": "m5s",
-          "name": "Movimento 5 Stelle",
-          "value": 12.0
-        },
-        {
-          "party": "fi",
-          "name": "Forza Italia",
-          "value": 7.5
-        },
-        {
-          "party": "fn",
-          "name": "Futuro Nazionale",
-          "value": 6.5
-        },
-        {
-          "party": "avs",
-          "name": "Alleanza Verdi e Sinistra",
-          "value": 6.2
-        },
-        {
-          "party": "lega",
-          "name": "Lega",
-          "value": 6.1
-        },
-        {
-          "party": "altri",
-          "name": "Altri partiti",
-          "value": 3.8
-        },
-        {
-          "party": "azione",
-          "name": "Azione",
-          "value": 3.0
-        },
-        {
-          "party": "iv",
-          "name": "Italia Viva / Casa Riformista",
-          "value": 2.2
-        },
-        {
-          "party": "europa",
-          "name": "+Europa",
-          "value": 1.2
-        },
-        {
-          "party": "progetto-civico",
-          "name": "Progetto Civico",
-          "value": 1.2
-        },
-        {
-          "party": "nm",
-          "name": "Noi Moderati",
-          "value": 1.0
-        },
-        {
-          "party": "scn",
-          "name": "Sud Chiama Nord",
-          "value": 0.8
-        },
-        {
-          "party": "piu-uno",
-          "name": "Più Uno",
-          "value": 0.5
-        }
-      ],
-      "id": "e7ee1492f6dedf46d90e"
     },
     {
       "pollster": "Termometro Politico",
@@ -439,6 +435,93 @@
         }
       ],
       "id": "600ce123d0f892373a9b"
+    },
+    {
+      "pollster": "Only Numbers",
+      "date": "2026-11-05",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-11-04",
+      "fieldworkEnd": "2026-11-05",
+      "fieldworkLabel": "4– 5 Nov",
+      "sampleSize": 800,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.liberoquotidiano.it/news/politica/49544781/il-sondaggio-ghisleri-e-una-bomba-dove-precipita-vannacci-e-chi-mette-il-turbo.amp",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 27.6
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.4
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 12.0
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 7.5
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.5
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.2
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 6.1
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 5.5,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.0,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.2,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.2
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 1.0
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 0.8
+        }
+      ],
+      "id": "d0b49b0016227db08123"
     },
     {
       "pollster": "Istituto Piepoli",
