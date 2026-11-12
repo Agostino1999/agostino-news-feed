@@ -8,7 +8,7 @@ function normalize(value = "") {
     .replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
 }
 
-const PUBLIC_ACTION = /\b(arrestat|omicid|aggress|violenz|rapin|spacci|denunciat|indagat|inquest|sequestr|espuls|condann|scarcer|abbandonat|maltratt|soccors|salvat|ritrovat|guarit|scioper|attentat|ordignan|sparator|processo|procura|tribunal|decret|manovra|disegno di legge|mozione|elezion|votazion|consiglio dei ministri|fondi pubblici|finanziament|stanziament|inaugurazion|commissariament|dimission|appalt|infrastruttur|riapertur|cantier|protest|manifestazion|impeachment|sanzion|guerra|missil)\w*/;
+const PUBLIC_ACTION = /\b(arrestat|omicid|aggress|violenz|rapin|spacci|denunciat|indagat|inquest|sequestr|espuls|condann|scarcer|abbandonat|maltratt|soccors|salvat|ritrovat|guarit|scioper|attentat|ordignan|sparator|processo|procura|tribunal|decret|manovra|disegno di legge|mozione|elezion|votazion|consiglio dei ministri|fondi pubblici|finanziament|stanziament|inaugurazion|commissariament|dimission|dimess|dimett|appalt|infrastruttur|riapertur|cantier|protest|manifestazion|impeachment|sanzion|guerra|missil)\w*/;
 const PEOPLE = /\b(mamma|madre|papa|padre|bambin|figli|famigli|pazient|anzian|disabil|malat|student|lavorator|volontar|donna|uomo|ragazz)\w*/;
 const HELP_OR_ACCESS = /\b(raccolta fondi|curarsi|cure gratuite|farmaco salvavita|terapia negata|accesso alle cure|aiuto|aiutati|solidariet|lieto fine|riabbraccia|salva la vita|soccors|fuori pericolo|donazione|donero|donera)\w*/;
 const PUBLIC_HOUSING = /\b(migrant|profugh|richiedent asil)\w*.*\b(casa|abitazion|alloggi|appartament|accoglienz)\w*|\b(casa|abitazion|alloggi|appartament|accoglienz)\w*.*\b(migrant|profugh|richiedent asil)\w*/;

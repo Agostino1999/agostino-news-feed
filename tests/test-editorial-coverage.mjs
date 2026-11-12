@@ -58,3 +58,15 @@ test("i collegamenti segnalati mantengono la precedenza anche con un limite rido
   assert.equal(selected.length, 40);
   assert.ok(selected.some(item => item.id === reported.id));
 });
+
+test("le notizie principali sulle dimissioni non vengono scartate mentre resta solo il profilo del successore", () => {
+  const headlines = [
+    ["huang-ansa", "Nvidia: Jensen Huang si è dimesso da ceo, Colette Kress nominata ad interim. Trump candida Cook"],
+    ["huang-corriere", "Nvidia, Huang si dimette dopo gli scandali: crollano le azioni, trema il mondo dell'AI"]
+  ].map(([id, title]) => ({ ...article(id, "Cronaca", 80), title }));
+  const profile = { ...article("profilo-kress", "Cronaca", 120),
+    title: "Colette Kress, chi è la nuova ceo di Nvidia dopo le dimissioni di Jensen Huang" };
+  const selected = selectEditorialNews([...politics(), ...headlines, profile], { now, limit: 300 });
+  for (const headline of headlines) assert.ok(selected.some(item => item.id === headline.id), headline.title);
+  assert.equal(selected.length, 300);
+});
