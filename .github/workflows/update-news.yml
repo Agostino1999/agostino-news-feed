@@ -18,6 +18,8 @@ on:
       - "test-news-freshness.mjs"
       - "source-policy.mjs"
       - "feed-images.mjs"
+      - "scripts/polls-refresh-due.mjs"
+      - "tests/test-polls-refresh-due.mjs"
       - ".github/workflows/update-news.yml"
 
 permissions:
@@ -30,7 +32,7 @@ concurrency:
 jobs:
   update-feed:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
 
     steps:
       - name: Checkout repository
@@ -123,4 +125,40 @@ jobs:
 
           echo "Push failed after 3 attempts"
           exit 1
+
+      # Cloudflare dispatches this workflow every five minutes. Use that reliable
+      # trigger to recover polling checks missed by GitHub's separate schedule.
+      # News is already published before any polling work starts.
+      - name: Check polling archive freshness
+        id: polls
+        run: |
+          node --test tests/test-polls-refresh-due.mjs
+          node scripts/polls-refresh-due.mjs >> "$GITHUB_OUTPUT"
+
+      - name: Setup Python for polling recovery
+        if: steps.polls.outputs.due == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Recover overdue political polls
+        if: steps.polls.outputs.due == 'true'
+        continue-on-error: true
+        timeout-minutes: 3
+        run: |
+          python -m pip install -r scripts/polls-requirements.txt
+          python -m unittest discover -s tests -p test_polls.py -v
+          python scripts/update-polls.py
+          if git diff --quiet -- polls.json; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add polls.json
+          git commit -m "Recover overdue national polling archive"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 3
+          done
+          exit 1
+
 
