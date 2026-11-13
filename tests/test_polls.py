@@ -1,6 +1,7 @@
 import importlib.util
 import json
 import unittest
+from copy import deepcopy
 from datetime import date
 from pathlib import Path
 
@@ -31,6 +32,37 @@ class PollTests(unittest.TestCase):
 
     def test_deposit_is_not_a_second_poll(self):
         self.assertEqual(len(m.merge_polls([poll('2026-11-07')],[poll(kind='deposit',source='archive')],TODAY)),1)
+
+    def test_corrected_date_replaces_stale_survey_and_figures(self):
+        old=poll('2026-11-09');old['sampleSize']=800
+        current=deepcopy(old);current['date']='2026-11-08'
+        current['results'][0]['value']=28.6;m.finish(current)
+        merged=m.merge_polls([old],[current],TODAY)
+        self.assertEqual(merged,[current])
+        # The repaired archive remains stable at subsequent refreshes.
+        self.assertEqual(m.merge_polls(merged,[current],TODAY),merged)
+
+    def test_distinct_surveys_are_preserved(self):
+        old=poll('2026-11-09');old['sampleSize']=800
+        current=deepcopy(old);current['date']='2026-11-08';m.finish(current)
+        # If both records are present in the current snapshot, retain both.
+        self.assertEqual(len(m.merge_polls([old],[old,current],TODAY)),2)
+        for change in ('url','sample','figures','date','source'):
+            with self.subTest(change=change):
+                other=deepcopy(current)
+                if change=='url': other['source']['url']='https://example.com/another-poll'
+                if change=='sample': other['sampleSize']=1000
+                if change=='figures':
+                    other['results'][0]['value']-=0.1
+                    other['results'][1]['value']+=0.1
+                if change=='date': other['date']='2026-11-05';m.finish(other)
+                if change=='source': other['source']['kind']='primary'
+                self.assertEqual(len(m.merge_polls([old],[other],TODAY)),2)
+
+    def test_failed_refresh_keeps_last_good_survey(self):
+        old=poll();old['sampleSize']=800
+        broken=deepcopy(old);broken['date']='2026-11-08';broken['results'].pop();m.finish(broken)
+        self.assertEqual(m.merge_polls([old],[broken],TODAY),[old])
 
     def test_deposit_date_not_invented_as_fieldwork(self):
         raw={'Data Inserimento':'09/11/2026','Realizzatore':'Only Numbers','national_poll':1,
@@ -87,3 +119,4 @@ Non si esprime 29%
         self.assertFalse(m.validate(p,TODAY))
 
 if __name__=='__main__':unittest.main()
+

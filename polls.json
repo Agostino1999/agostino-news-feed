@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-13T19:47:28.935244+00:00",
+  "updatedAt": "2026-11-13T21:29:59.027Z",
   "checkedAt": "2026-11-13T19:47:28.935244+00:00",
   "refreshHours": 2,
   "sources": [
@@ -86,7 +86,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -107,93 +107,6 @@
         }
       ],
       "id": "7ef12ab5325018baf82e"
-    },
-    {
-      "pollster": "Only Numbers",
-      "date": "2026-11-12",
-      "dateType": "fieldwork",
-      "fieldworkStart": null,
-      "fieldworkEnd": "2026-11-12",
-      "fieldworkLabel": "12 Nov",
-      "sampleSize": 800,
-      "publishedAt": null,
-      "source": {
-        "name": "Fonte originale, indicizzata da Wikipedia",
-        "url": "https://www.open.online/2026/11/13/sondaggi-meloni-conte-schlein-intenzioni-di-voto-ghisleri/",
-        "kind": "index",
-        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
-      },
-      "results": [
-        {
-          "party": "fdi",
-          "name": "Fratelli d’Italia",
-          "value": 28.6
-        },
-        {
-          "party": "pd",
-          "name": "Partito Democratico",
-          "value": 20.4
-        },
-        {
-          "party": "m5s",
-          "name": "Movimento 5 Stelle",
-          "value": 11.6
-        },
-        {
-          "party": "fi",
-          "name": "Forza Italia",
-          "value": 7.6
-        },
-        {
-          "party": "fn",
-          "name": "Futuro Nazionale",
-          "value": 6.5
-        },
-        {
-          "party": "avs",
-          "name": "Alleanza Verdi e Sinistra",
-          "value": 6.0
-        },
-        {
-          "party": "lega",
-          "name": "Lega",
-          "value": 6.0
-        },
-        {
-          "party": "altri",
-          "name": "Altri partiti",
-          "value": 5.2,
-          "basis": "wiki:altri"
-        },
-        {
-          "party": "azione",
-          "name": "Azione",
-          "value": 3.3,
-          "basis": "wiki:azione"
-        },
-        {
-          "party": "iv",
-          "name": "Italia Viva / Casa Riformista",
-          "value": 2.2,
-          "basis": "wiki:iv"
-        },
-        {
-          "party": "europa",
-          "name": "+Europa",
-          "value": 1.1
-        },
-        {
-          "party": "nm",
-          "name": "Noi Moderati",
-          "value": 1.1
-        },
-        {
-          "party": "scn",
-          "name": "Sud Chiama Nord",
-          "value": 0.8
-        }
-      ],
-      "id": "7779c8b092202ee3dcbd"
     },
     {
       "pollster": "Only Numbers",
@@ -239,12 +152,12 @@
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "lega",
           "name": "Lega",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "altri",
@@ -311,7 +224,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 12.0
+          "value": 12
         },
         {
           "party": "fi",
@@ -332,7 +245,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "lega",
@@ -348,7 +261,7 @@
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:iv"
         },
         {
@@ -461,7 +374,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "82815185cff65de261fa"
@@ -572,7 +485,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 8.0,
+          "value": 8,
           "basis": "wiki:altri"
         },
         {
@@ -604,7 +517,7 @@
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:iv"
         }
       ],
@@ -687,7 +600,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "600ce123d0f892373a9b"
@@ -721,7 +634,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 12.0
+          "value": 12
         },
         {
           "party": "fi",
@@ -752,7 +665,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -769,7 +682,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "scn",
@@ -800,17 +713,17 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 20.0
+          "value": 20
         },
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 13.0
+          "value": 13
         },
         {
           "party": "fi",
@@ -830,12 +743,12 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 5.0
+          "value": 5
         },
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0
+          "value": 3
         },
         {
           "party": "iv",
@@ -845,7 +758,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 2.0
+          "value": 2
         },
         {
           "party": "europa",
@@ -899,7 +812,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 12.0
+          "value": 12
         },
         {
           "party": "fi",
@@ -978,7 +891,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
@@ -993,7 +906,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "fi",
@@ -1038,7 +951,7 @@
         {
           "party": "pld",
           "name": "Partito Liberaldemocratico",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "nm",
@@ -1255,7 +1168,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 29.0
+          "value": 29
         },
         {
           "party": "pd",
@@ -1318,7 +1231,7 @@
         {
           "party": "scn",
           "name": "Sud Chiama Nord",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "ed470b20f3fa0953b259"
@@ -1342,17 +1255,17 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 20.0
+          "value": 20
         },
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 13.0
+          "value": 13
         },
         {
           "party": "fi",
@@ -1367,7 +1280,7 @@
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "lega",
@@ -1377,7 +1290,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -1389,7 +1302,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:altri"
         },
         {
@@ -1451,12 +1364,12 @@
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -1466,7 +1379,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 5.0
+          "value": 5
         },
         {
           "party": "azione",
@@ -1496,7 +1409,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "scn",
@@ -1535,7 +1448,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 12.0
+          "value": 12
         },
         {
           "party": "fi",
@@ -1566,7 +1479,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -1583,7 +1496,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "europa",
@@ -1654,7 +1567,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 4.0
+          "value": 4
         },
         {
           "party": "azione",
@@ -1771,7 +1684,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "b152e241225ce7607b81"
@@ -1836,13 +1749,13 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:iv"
         },
         {
@@ -1892,12 +1805,12 @@
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -1913,7 +1826,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 5.0
+          "value": 5
         },
         {
           "party": "azione",
@@ -1930,7 +1843,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "scn",
@@ -2017,12 +1930,12 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "scn",
           "name": "Sud Chiama Nord",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "1753d6be46cb6a9fc4dc"
@@ -2104,12 +2017,12 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "scn",
           "name": "Sud Chiama Nord",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "f6e1811f0fd7d0f894e2"
@@ -2191,7 +2104,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "8279f7bf9b871f3c7128"
@@ -2215,12 +2128,12 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 20.0
+          "value": 20
         },
         {
           "party": "m5s",
@@ -2273,7 +2186,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "scn",
@@ -2307,7 +2220,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 20.0
+          "value": 20
         },
         {
           "party": "m5s",
@@ -2343,7 +2256,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -2360,7 +2273,7 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "nm",
@@ -2394,7 +2307,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 20.0
+          "value": 20
         },
         {
           "party": "m5s",
@@ -2558,7 +2471,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 26.0
+          "value": 26
         },
         {
           "party": "pd",
@@ -2713,12 +2626,12 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "scn",
           "name": "Sud Chiama Nord",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "907b51881cb23a473ac0"
@@ -2742,7 +2655,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
@@ -2752,12 +2665,12 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 13.0
+          "value": 13
         },
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -2772,12 +2685,12 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 5.0
+          "value": 5
         },
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -2789,7 +2702,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:altri"
         },
         {
@@ -2844,7 +2757,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 12.0
+          "value": 12
         },
         {
           "party": "fn",
@@ -2875,13 +2788,13 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:iv"
         },
         {
@@ -2897,7 +2810,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "pld",
@@ -2967,7 +2880,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -3013,7 +2926,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 20.0
+          "value": 20
         },
         {
           "party": "m5s",
@@ -3038,7 +2951,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "altri",
@@ -3066,7 +2979,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "scn",
@@ -3095,12 +3008,12 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 20.0
+          "value": 20
         },
         {
           "party": "m5s",
@@ -3115,7 +3028,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -3125,12 +3038,12 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 5.0
+          "value": 5
         },
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -3142,7 +3055,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:altri"
         },
         {
@@ -3250,7 +3163,7 @@
         {
           "party": "scn",
           "name": "Sud Chiama Nord",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "dc0ddcea5fb9b15968fa"
@@ -3332,12 +3245,12 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "scn",
           "name": "Sud Chiama Nord",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "fd37ffc03850f7f0aaf5"
@@ -3366,7 +3279,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 20.0
+          "value": 20
         },
         {
           "party": "m5s",
@@ -3381,7 +3294,7 @@
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -3445,7 +3358,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 27.0
+          "value": 27
         },
         {
           "party": "pd",
@@ -3510,7 +3423,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "b43bd3caa0c5ea29b5b8"
@@ -3592,7 +3505,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "ef6bcdf2c114b78cc47b"
@@ -3621,7 +3534,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 21.0
+          "value": 21
         },
         {
           "party": "m5s",
@@ -3718,7 +3631,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -3733,7 +3646,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 5.0,
+          "value": 5,
           "basis": "wiki:altri"
         },
         {
@@ -3751,7 +3664,7 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 2.0
+          "value": 2
         },
         {
           "party": "nm",
@@ -3862,7 +3775,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 27.0
+          "value": 27
         },
         {
           "party": "pd",
@@ -3925,7 +3838,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "0ed0d0ed9d410d762181"
@@ -4094,7 +4007,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "81cb3fdd4018f0c37ad0"
@@ -4123,7 +4036,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 20.0
+          "value": 20
         },
         {
           "party": "m5s",
@@ -4138,12 +4051,12 @@
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "lega",
@@ -4153,13 +4066,13 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:altri"
         },
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -4307,7 +4220,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -4345,7 +4258,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "a7430853b2532688906e"
@@ -4384,7 +4297,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "fi",
@@ -4427,7 +4340,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "58d25feaf879e0bc65d4"
@@ -4466,7 +4379,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "fi",
@@ -4509,7 +4422,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "aa09f3e6764d83c74b5b"
@@ -4538,7 +4451,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 20.0
+          "value": 20
         },
         {
           "party": "m5s",
@@ -4553,7 +4466,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -4591,7 +4504,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "c8829b204f1f45986926"
@@ -4682,7 +4595,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "b3709fec533fc31f0181"
@@ -4747,7 +4660,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -4793,7 +4706,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 20.0
+          "value": 20
         },
         {
           "party": "m5s",
@@ -4808,7 +4721,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -4846,7 +4759,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "3fbfd6be458f8882010e"
@@ -4911,7 +4824,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -4928,7 +4841,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "530c87b6c0a5ec1236c6"
@@ -4977,7 +4890,7 @@
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "azione",
@@ -4999,12 +4912,12 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 2.0
+          "value": 2
         },
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:iv"
         },
         {
@@ -5092,7 +5005,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "9e3c5ec7405dcb771387"
@@ -5179,7 +5092,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "c4079584ff7984bc3abd"
@@ -5218,7 +5131,7 @@
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "lega",
@@ -5233,7 +5146,7 @@
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "altri",
@@ -5256,7 +5169,7 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 2.0
+          "value": 2
         },
         {
           "party": "nm",
@@ -5297,17 +5210,17 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 20.0
+          "value": 20
         },
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 12.0
+          "value": 12
         },
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "avs",
@@ -5327,12 +5240,12 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0
+          "value": 3
         },
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 2.0
+          "value": 2
         },
         {
           "party": "europa",
@@ -5357,7 +5270,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "ora",
@@ -5401,12 +5314,12 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -5444,7 +5357,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "d53ae045b39bb1c1aace"
@@ -5685,12 +5598,12 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 2.0
+          "value": 2
         },
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "1d9125f4fb158a2d664b"
@@ -5719,7 +5632,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 21.0
+          "value": 21
         },
         {
           "party": "m5s",
@@ -5878,7 +5791,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 27.0
+          "value": 27
         },
         {
           "party": "pd",
@@ -5936,7 +5849,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "7db09c44ad257a194df0"
@@ -5995,7 +5908,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 5.0,
+          "value": 5,
           "basis": "wiki:altri"
         },
         {
@@ -6013,12 +5926,12 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 2.0
+          "value": 2
         },
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "9fb4887a00766b778830"
@@ -6119,7 +6032,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 27.0
+          "value": 27
         },
         {
           "party": "pd",
@@ -6254,12 +6167,12 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 2.0
+          "value": 2
         },
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "2a5480c3263d110ad895"
@@ -6288,7 +6201,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 22.0
+          "value": 22
         },
         {
           "party": "m5s",
@@ -6318,7 +6231,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -6341,7 +6254,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "3e1eb54a3e2a4e19c652"
@@ -6365,7 +6278,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
@@ -6390,7 +6303,7 @@
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "lega",
@@ -6423,7 +6336,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "bf5bbf3e4a0fdf33f09e"
@@ -6447,7 +6360,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 25.0
+          "value": 25
         },
         {
           "party": "pd",
@@ -6457,7 +6370,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 12.0
+          "value": 12
         },
         {
           "party": "fi",
@@ -6477,7 +6390,7 @@
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "altri",
@@ -6592,7 +6505,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "0f3f45f08bcf88f49790"
@@ -6616,12 +6529,12 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 20.0
+          "value": 20
         },
         {
           "party": "m5s",
@@ -6641,7 +6554,7 @@
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "lega",
@@ -6651,7 +6564,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -6663,7 +6576,7 @@
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:iv"
         },
         {
@@ -6739,7 +6652,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 5.0
+          "value": 5
         },
         {
           "party": "azione",
@@ -6761,7 +6674,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "pld",
@@ -6831,7 +6744,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -6969,7 +6882,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 11.0
+          "value": 11
         },
         {
           "party": "fi",
@@ -7017,7 +6930,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "5c02e3681da60a9134b2"
@@ -7041,7 +6954,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 25.0
+          "value": 25
         },
         {
           "party": "pd",
@@ -7071,7 +6984,7 @@
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "altri",
@@ -7215,7 +7128,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 22.0
+          "value": 22
         },
         {
           "party": "m5s",
@@ -7317,7 +7230,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "altri",
@@ -7369,7 +7282,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
@@ -7399,12 +7312,12 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -7432,7 +7345,7 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "5b0f063988c0c07eebc8"
@@ -7461,7 +7374,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 21.0
+          "value": 21
         },
         {
           "party": "m5s",
@@ -7471,7 +7384,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "fi",
@@ -7503,23 +7416,23 @@
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:iv"
         },
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "pld",
           "name": "Partito Liberaldemocratico",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "0ecc04759b96f32f2073"
@@ -7553,7 +7466,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 12.0
+          "value": 12
         },
         {
           "party": "fi",
@@ -7584,7 +7497,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -7707,7 +7620,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 27.0
+          "value": 27
         },
         {
           "party": "pd",
@@ -7717,7 +7630,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 13.0
+          "value": 13
         },
         {
           "party": "fi",
@@ -7765,7 +7678,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "862087584eb7e3d648b3"
@@ -7824,13 +7737,13 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 4.0,
+          "value": 4,
           "basis": "wiki:altri"
         },
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -7847,7 +7760,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "57b31a11d0aadc94c79f"
@@ -7876,7 +7789,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 21.0
+          "value": 21
         },
         {
           "party": "m5s",
@@ -7896,7 +7809,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -7958,7 +7871,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 27.0
+          "value": 27
         },
         {
           "party": "pd",
@@ -8016,7 +7929,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "3c451f367b52e9afa912"
@@ -8262,7 +8175,7 @@
         {
           "party": "pld",
           "name": "Partito Liberaldemocratico",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "nm",
@@ -8296,12 +8209,12 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 21.0
+          "value": 21
         },
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 13.0
+          "value": 13
         },
         {
           "party": "fi",
@@ -8321,12 +8234,12 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -8354,7 +8267,7 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "e10435a46638daa83892"
@@ -8523,7 +8436,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "a17ce91a8eadbc3f67a4"
@@ -8659,7 +8572,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "altri",
@@ -8687,7 +8600,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "18265d2ce07da974b3f0"
@@ -8741,7 +8654,7 @@
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "azione",
@@ -8933,7 +8846,7 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "nm",
@@ -9131,12 +9044,12 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 25.0
+          "value": 25
         },
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 21.0
+          "value": 21
         },
         {
           "party": "m5s",
@@ -9161,7 +9074,7 @@
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "azione",
@@ -9243,7 +9156,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "lega",
@@ -9353,7 +9266,7 @@
         {
           "party": "pld",
           "name": "Partito Liberaldemocratico",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "europa",
@@ -9387,7 +9300,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 29.0
+          "value": 29
         },
         {
           "party": "pd",
@@ -9412,7 +9325,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "fn",
@@ -9556,12 +9469,12 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 22.0
+          "value": 22
         },
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 12.0
+          "value": 12
         },
         {
           "party": "fi",
@@ -9586,7 +9499,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 4.0,
+          "value": 4,
           "basis": "wiki:altri"
         },
         {
@@ -9638,54 +9551,54 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 21.0
+          "value": 21
         },
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 13.0
+          "value": 13
         },
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "lega",
           "name": "Lega",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 5.0
+          "value": 5
         },
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:altri"
         },
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:iv"
         },
         {
@@ -9701,7 +9614,7 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "7e378b0415184c606997"
@@ -9735,7 +9648,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 13.0
+          "value": 13
         },
         {
           "party": "fi",
@@ -9755,7 +9668,7 @@
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "azione",
@@ -9991,7 +9904,7 @@
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "lega",
@@ -10011,7 +9924,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:altri"
         },
         {
@@ -10034,7 +9947,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "1b3ff6467a85bff9f9ba"
@@ -10058,7 +9971,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 27.0
+          "value": 27
         },
         {
           "party": "pd",
@@ -10083,7 +9996,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "lega",
@@ -10099,13 +10012,13 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:iv"
         },
         {
@@ -10140,7 +10053,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 26.0
+          "value": 26
         },
         {
           "party": "pd",
@@ -10187,7 +10100,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:altri"
         },
         {
@@ -10285,7 +10198,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "f32c0432a11af5a9f65b"
@@ -10344,7 +10257,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -10367,7 +10280,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "fe9b6e34f2a1c162216d"
@@ -10391,7 +10304,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 26.0
+          "value": 26
         },
         {
           "party": "pd",
@@ -10401,7 +10314,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 13.0
+          "value": 13
         },
         {
           "party": "fi",
@@ -10426,7 +10339,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 4.0,
+          "value": 4,
           "basis": "wiki:altri"
         },
         {
@@ -10483,7 +10396,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 12.0
+          "value": 12
         },
         {
           "party": "fi",
@@ -10498,7 +10411,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "fn",
@@ -10526,12 +10439,12 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "pld",
@@ -10560,7 +10473,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
@@ -10618,7 +10531,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "afc738a3abd2a983d202"
@@ -10700,7 +10613,7 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "nm",
@@ -10759,7 +10672,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 5.0
+          "value": 5
         },
         {
           "party": "altri",
@@ -11010,7 +10923,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 4.0
+          "value": 4
         },
         {
           "party": "altri",
@@ -11062,7 +10975,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
@@ -11103,7 +11016,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -11144,7 +11057,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
@@ -11164,7 +11077,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -11179,13 +11092,13 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 4.0,
+          "value": 4,
           "basis": "wiki:altri"
         },
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -11256,7 +11169,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 5.0
+          "value": 5
         },
         {
           "party": "azione",
@@ -11288,7 +11201,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 1.0,
+          "value": 1,
           "basis": "wiki:altri"
         }
       ],
@@ -11318,7 +11231,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 22.0
+          "value": 22
         },
         {
           "party": "m5s",
@@ -11328,7 +11241,7 @@
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -11348,7 +11261,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 4.0,
+          "value": 4,
           "basis": "wiki:altri"
         },
         {
@@ -11430,7 +11343,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:altri"
         },
         {
@@ -11453,7 +11366,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "fffc33df4a21be01e3fb"
@@ -11535,7 +11448,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "0e85e02527422da15526"
@@ -11564,7 +11477,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 21.0
+          "value": 21
         },
         {
           "party": "m5s",
@@ -11579,12 +11492,12 @@
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "lega",
           "name": "Lega",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "fn",
@@ -11594,7 +11507,7 @@
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:iv"
         },
         {
@@ -11606,7 +11519,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:altri"
         },
         {
@@ -11661,7 +11574,7 @@
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "avs",
@@ -11825,7 +11738,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 13.0
+          "value": 13
         },
         {
           "party": "fi",
@@ -11927,7 +11840,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 6.0,
+          "value": 6,
           "basis": "wiki:altri"
         },
         {
@@ -12032,7 +11945,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "164da91d1e745a0d898a"
@@ -12076,7 +11989,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -12143,7 +12056,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 22.0
+          "value": 22
         },
         {
           "party": "m5s",
@@ -12163,12 +12076,12 @@
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 4.0
+          "value": 4
         },
         {
           "party": "altri",
@@ -12267,7 +12180,7 @@
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:iv"
         },
         {
@@ -12365,7 +12278,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "173874864b03dbad87d6"
@@ -12389,7 +12302,7 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 28.0
+          "value": 28
         },
         {
           "party": "pd",
@@ -12436,13 +12349,13 @@
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 2.0,
+          "value": 2,
           "basis": "wiki:iv"
         },
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 1.0
+          "value": 1
         },
         {
           "party": "pld",
@@ -12534,7 +12447,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "1ac14f122828e495e579"
@@ -12568,12 +12481,12 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 13.0
+          "value": 13
         },
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 9.0
+          "value": 9
         },
         {
           "party": "lega",
@@ -12620,7 +12533,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 1.0,
+          "value": 1,
           "basis": "wiki:altri"
         }
       ],
@@ -12655,7 +12568,7 @@
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 14.0
+          "value": 14
         },
         {
           "party": "fi",
@@ -12686,7 +12599,7 @@
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:iv"
         },
         {
@@ -12703,7 +12616,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "17bf580c76cf9eb7b91c"
@@ -12752,7 +12665,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "fn",
@@ -12814,7 +12727,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 22.0
+          "value": 22
         },
         {
           "party": "m5s",
@@ -12844,7 +12757,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:altri"
         },
         {
@@ -12867,7 +12780,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "edf149fa64a4e3f4eccb"
@@ -12949,7 +12862,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "c3d65157ad073706333c"
@@ -13085,7 +12998,7 @@
         {
           "party": "fn",
           "name": "Futuro Nazionale",
-          "value": 4.0
+          "value": 4
         },
         {
           "party": "azione",
@@ -13157,7 +13070,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "avs",
@@ -13199,7 +13112,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 1.0,
+          "value": 1,
           "basis": "wiki:altri"
         }
       ],
@@ -13249,7 +13162,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 6.0
+          "value": 6
         },
         {
           "party": "fn",
@@ -13306,27 +13219,27 @@
         {
           "party": "fdi",
           "name": "Fratelli d’Italia",
-          "value": 29.0
+          "value": 29
         },
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 21.0
+          "value": 21
         },
         {
           "party": "m5s",
           "name": "Movimento 5 Stelle",
-          "value": 13.0
+          "value": 13
         },
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "avs",
           "name": "Alleanza Verdi e Sinistra",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "lega",
@@ -13341,7 +13254,7 @@
         {
           "party": "iv",
           "name": "Italia Viva / Casa Riformista",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:iv"
         },
         {
@@ -13369,7 +13282,7 @@
         {
           "party": "europa",
           "name": "+Europa",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "92ec55170d644896714e"
@@ -13428,13 +13341,13 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:altri"
         },
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -13451,7 +13364,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "c3c0bc9cc5a122aae7b0"
@@ -13490,12 +13403,12 @@
         {
           "party": "fi",
           "name": "Forza Italia",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "lega",
           "name": "Lega",
-          "value": 7.0
+          "value": 7
         },
         {
           "party": "avs",
@@ -13510,7 +13423,7 @@
         {
           "party": "azione",
           "name": "Azione",
-          "value": 3.0,
+          "value": 3,
           "basis": "wiki:azione"
         },
         {
@@ -13533,7 +13446,7 @@
         {
           "party": "nm",
           "name": "Noi Moderati",
-          "value": 1.0
+          "value": 1
         }
       ],
       "id": "b0380d9b74f5cd704f97"
@@ -13577,7 +13490,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "avs",
@@ -13659,7 +13572,7 @@
         {
           "party": "lega",
           "name": "Lega",
-          "value": 8.0
+          "value": 8
         },
         {
           "party": "avs",
@@ -13731,7 +13644,7 @@
         {
           "party": "pd",
           "name": "Partito Democratico",
-          "value": 22.0
+          "value": 22
         },
         {
           "party": "m5s",
@@ -13756,7 +13669,7 @@
         {
           "party": "altri",
           "name": "Altri partiti",
-          "value": 4.0,
+          "value": 4,
           "basis": "wiki:altri"
         },
         {
