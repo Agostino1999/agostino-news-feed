@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-13T13:37:18.723977+00:00",
-  "checkedAt": "2026-11-13T13:37:18.723977+00:00",
+  "updatedAt": "2026-11-13T15:37:38.133425+00:00",
+  "checkedAt": "2026-11-13T15:37:38.133425+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-13T13:37:18.723977+00:00"
+      "checkedAt": "2026-11-13T15:37:38.133425+00:00"
     },
     {
       "id": "swg",
       "ok": true,
       "count": 1,
-      "checkedAt": "2026-11-13T13:37:18.723977+00:00"
+      "checkedAt": "2026-11-13T15:37:38.133425+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
-      "count": 151,
-      "checkedAt": "2026-11-13T13:37:18.723977+00:00"
+      "count": 152,
+      "checkedAt": "2026-11-13T15:37:38.133425+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
@@ -107,6 +107,93 @@
         }
       ],
       "id": "7ef12ab5325018baf82e"
+    },
+    {
+      "pollster": "Only Numbers",
+      "date": "2026-11-12",
+      "dateType": "fieldwork",
+      "fieldworkStart": null,
+      "fieldworkEnd": "2026-11-12",
+      "fieldworkLabel": "12 Nov",
+      "sampleSize": 800,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.open.online/2026/11/13/sondaggi-meloni-conte-schlein-intenzioni-di-voto-ghisleri/",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 28.6
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.4
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 11.6
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 7.6
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.5
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.0
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 6.0
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 5.2,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.3,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.2,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.1
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 1.1
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 0.8
+        }
+      ],
+      "id": "7779c8b092202ee3dcbd"
     },
     {
       "pollster": "BiDiMedia",
@@ -529,7 +616,7 @@
       "publishedAt": null,
       "source": {
         "name": "Fonte originale, indicizzata da Wikipedia",
-        "url": "https://www.liberoquotidiano.it/news/politica/49544781/il-sondaggio-ghisleri-e-una-bomba-dove-precipita-vannacci-e-chi-mette-il-turbo.amp",
+        "url": "https://www.liberoquotidiano.it/news/politica/49544781/il-sondaggio-ghisleri-e-una-bomba-dove-precipita-vannacci-e-chi-mette-il-turbo",
         "kind": "index",
         "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
       },
@@ -885,7 +972,7 @@
       "publishedAt": null,
       "source": {
         "name": "Fonte originale, indicizzata da Wikipedia",
-        "url": "https://www.liberoquotidiano.it/news/politica/49543516/sondaggio-tg3-come-finirebbe-se-si-votasse-oggi-cifre-clamorose.amp",
+        "url": "https://www.liberoquotidiano.it/news/politica/49543516/sondaggio-tg3-come-finirebbe-se-si-votasse-oggi-cifre-clamorose",
         "kind": "index",
         "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
       },
