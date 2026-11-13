@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-13T17:43:56.724029+00:00",
-  "checkedAt": "2026-11-13T17:43:56.724029+00:00",
+  "updatedAt": "2026-11-13T19:47:28.935244+00:00",
+  "checkedAt": "2026-11-13T19:47:28.935244+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-13T17:43:56.724029+00:00"
+      "checkedAt": "2026-11-13T19:47:28.935244+00:00"
     },
     {
       "id": "swg",
       "ok": true,
       "count": 1,
-      "checkedAt": "2026-11-13T17:43:56.724029+00:00"
+      "checkedAt": "2026-11-13T19:47:28.935244+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
-      "count": 152,
-      "checkedAt": "2026-11-13T17:43:56.724029+00:00"
+      "count": 153,
+      "checkedAt": "2026-11-13T19:47:28.935244+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
@@ -194,6 +194,93 @@
         }
       ],
       "id": "7779c8b092202ee3dcbd"
+    },
+    {
+      "pollster": "Only Numbers",
+      "date": "2026-11-11",
+      "dateType": "fieldwork",
+      "fieldworkStart": null,
+      "fieldworkEnd": "2026-11-11",
+      "fieldworkLabel": "11 Nov",
+      "sampleSize": 800,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.open.online/2026/11/13/sondaggi-meloni-conte-schlein-intenzioni-di-voto-ghisleri/",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 28.2
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.4
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 11.6
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 7.6
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.5
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.0
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 6.0
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 5.2,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.3,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.2,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.1
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 1.1
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 0.8
+        }
+      ],
+      "id": "d91367d4bf72d66230f1"
     },
     {
       "pollster": "BiDiMedia",
@@ -1235,6 +1322,98 @@
         }
       ],
       "id": "ed470b20f3fa0953b259"
+    },
+    {
+      "pollster": "Istituto Piepoli",
+      "date": "2026-11-02",
+      "dateType": "fieldwork",
+      "fieldworkStart": null,
+      "fieldworkEnd": "2026-11-02",
+      "fieldworkLabel": "2 Nov",
+      "sampleSize": 500,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://sondaggibidimedia.com/sondaggio-piepoli-6-novembre-2026/",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 28.0
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.0
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 13.0
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 7.5
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.5
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.0
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 5.5
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.0,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.5,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 2.0,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.5
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 1.5
+        },
+        {
+          "party": "pld",
+          "name": "Partito Liberaldemocratico",
+          "value": 1.5
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 1.5
+        }
+      ],
+      "id": "42d1d6c8f7b426826dd6"
     },
     {
       "pollster": "Youtrend",
