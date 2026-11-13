@@ -297,9 +297,32 @@ def signature(poll):
     """Use major-party figures to match deposits to their already indexed poll."""
     return tuple(sorted((r['party'],r['value']) for r in poll['results'] if r['party'] in {'fdi','pd','m5s','fi','lega','avs','fn'}))
 
+def same_indexed_survey(old, current):
+    """Recognize a date/figure correction in the current discovery snapshot.
+
+    A shared article alone is insufficient: roundups may cite several surveys.
+    Require the same known sample, adjacent fieldwork dates and almost identical
+    major-party figures. Only supersede an old record absent from this snapshot.
+    """
+    if not all(p.get('dateType')=='fieldwork' and p['source'].get('kind')=='index'
+               for p in (old,current)): return False
+    if canonical_pollster(old['pollster'])!=canonical_pollster(current['pollster']): return False
+    if not old.get('sampleSize') or old['sampleSize']!=current.get('sampleSize'): return False
+    urls=[urllib.parse.urldefrag(p['source']['url'])[0].rstrip('/') for p in (old,current)]
+    if urls[0]!=urls[1]: return False
+    if abs((date.fromisoformat(old['date'])-date.fromisoformat(current['date'])).days)>2: return False
+    a=dict(signature(old)); b=dict(signature(current))
+    if a.keys()!=b.keys() or len(a)<6: return False
+    changes=[abs(a[key]-b[key]) for key in a if a[key]!=b[key]]
+    return len(changes)<=1 and all(delta<=1 for delta in changes)
+
 def merge_polls(previous,incoming,today=None):
     today=today or date.today(); by_id={}
     rank={'primary':3,'index':2,'archive':1}
+    incoming=[p for p in incoming if validate(p,today)]
+    incoming_ids={p['id'] for p in incoming}
+    previous=[p for p in previous if validate(p,today) and not (
+        p['id'] not in incoming_ids and any(same_indexed_survey(p,current) for current in incoming))]
     for poll in previous+incoming:
         if not validate(poll,today): continue
         if date.fromisoformat(poll['date'])<today-timedelta(days=370): continue
@@ -343,3 +366,4 @@ def main():
     print(f'{len(polls)} valid polls, {len(incoming)} collected; latest {polls[0]["pollster"]} {polls[0]["date"]}')
 
 if __name__=='__main__': main()
+

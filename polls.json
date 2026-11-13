@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-13T21:52:20.986330+00:00",
+  "updatedAt": "2026-11-13T22:21:37.189Z",
   "checkedAt": "2026-11-13T21:52:20.986330+00:00",
   "refreshHours": 2,
   "sources": [
@@ -107,93 +107,6 @@
         }
       ],
       "id": "7ef12ab5325018baf82e"
-    },
-    {
-      "pollster": "Only Numbers",
-      "date": "2026-11-12",
-      "dateType": "fieldwork",
-      "fieldworkStart": null,
-      "fieldworkEnd": "2026-11-12",
-      "fieldworkLabel": "12 Nov",
-      "sampleSize": 800,
-      "publishedAt": null,
-      "source": {
-        "name": "Fonte originale, indicizzata da Wikipedia",
-        "url": "https://www.open.online/2026/11/13/sondaggi-meloni-conte-schlein-intenzioni-di-voto-ghisleri/",
-        "kind": "index",
-        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
-      },
-      "results": [
-        {
-          "party": "fdi",
-          "name": "Fratelli d’Italia",
-          "value": 28.6
-        },
-        {
-          "party": "pd",
-          "name": "Partito Democratico",
-          "value": 20.4
-        },
-        {
-          "party": "m5s",
-          "name": "Movimento 5 Stelle",
-          "value": 11.6
-        },
-        {
-          "party": "fi",
-          "name": "Forza Italia",
-          "value": 7.6
-        },
-        {
-          "party": "fn",
-          "name": "Futuro Nazionale",
-          "value": 6.5
-        },
-        {
-          "party": "avs",
-          "name": "Alleanza Verdi e Sinistra",
-          "value": 6.0
-        },
-        {
-          "party": "lega",
-          "name": "Lega",
-          "value": 6.0
-        },
-        {
-          "party": "altri",
-          "name": "Altri partiti",
-          "value": 5.2,
-          "basis": "wiki:altri"
-        },
-        {
-          "party": "azione",
-          "name": "Azione",
-          "value": 3.3,
-          "basis": "wiki:azione"
-        },
-        {
-          "party": "iv",
-          "name": "Italia Viva / Casa Riformista",
-          "value": 2.2,
-          "basis": "wiki:iv"
-        },
-        {
-          "party": "europa",
-          "name": "+Europa",
-          "value": 1.1
-        },
-        {
-          "party": "nm",
-          "name": "Noi Moderati",
-          "value": 1.1
-        },
-        {
-          "party": "scn",
-          "name": "Sud Chiama Nord",
-          "value": 0.8
-        }
-      ],
-      "id": "7779c8b092202ee3dcbd"
     },
     {
       "pollster": "Only Numbers",
