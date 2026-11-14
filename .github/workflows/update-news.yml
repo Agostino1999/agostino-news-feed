@@ -13,6 +13,9 @@ on:
       - "scripts/add-video-news.mjs"
       - "scripts/enrich-focus-news.mjs"
       - "scripts/editorial-selection.mjs"
+      - "scripts/story-clusters.mjs"
+      - "scripts/cluster-news.mjs"
+      - "tests/test-story-clusters.mjs"
       - "tests/test-editorial-coverage.mjs"
       - "news-freshness.mjs"
       - "test-news-freshness.mjs"
@@ -51,6 +54,9 @@ jobs:
       - name: Verify publication dates and expired announcements
         run: node --test test-news-freshness.mjs
 
+      - name: Verify story clustering
+        run: node --test tests/test-story-clusters.mjs
+
       - name: Preserve previous image cache
         run: cp news.json .previous-news.json
 
@@ -65,6 +71,9 @@ jobs:
 
       - name: Recover article photos and logos
         run: node scripts/enrich-article-images.mjs || echo "Image enrichment failed; publishing the normal feed"
+
+      - name: Group related stories after all enrichment
+        run: node scripts/cluster-news.mjs
 
       - name: Commit updated feed
         run: |
@@ -160,5 +169,6 @@ jobs:
             sleep 3
           done
           exit 1
+
 
 
