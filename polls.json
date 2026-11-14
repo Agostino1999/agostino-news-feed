@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-14T14:31:43.135377+00:00",
-  "checkedAt": "2026-11-14T14:31:43.135377+00:00",
+  "updatedAt": "2026-11-14T15:03:25.416986+00:00",
+  "checkedAt": "2026-11-14T15:03:25.416986+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-14T14:31:43.135377+00:00"
+      "checkedAt": "2026-11-14T15:03:25.416986+00:00"
     },
     {
       "id": "swg",
       "ok": true,
       "count": 1,
-      "checkedAt": "2026-11-14T14:31:43.135377+00:00"
+      "checkedAt": "2026-11-14T15:03:25.416986+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
-      "count": 151,
-      "checkedAt": "2026-11-14T14:31:43.135377+00:00"
+      "count": 152,
+      "checkedAt": "2026-11-14T15:03:25.416986+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
@@ -194,6 +194,93 @@
         }
       ],
       "id": "d91367d4bf72d66230f1"
+    },
+    {
+      "pollster": "Eumetra",
+      "date": "2026-11-11",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-11-10",
+      "fieldworkEnd": "2026-11-11",
+      "fieldworkLabel": "10– 11 Nov",
+      "sampleSize": 800,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.pollingforecast.com/it/polls/1001433",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 28.2
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.6
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 12.1
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 7.2
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 6.2
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.1
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.1
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 3.8,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.2,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.5,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.3
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 1.2
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 1.2
+        }
+      ],
+      "id": "53beb63ad4d7c27ee803"
     },
     {
       "pollster": "BiDiMedia",
