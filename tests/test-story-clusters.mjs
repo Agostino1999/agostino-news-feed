@@ -6,7 +6,8 @@ const titles = [
   'Commenti identici sotto i post di Salvini, Fidanza e Nardella. La Lega: Eserciti di bot inquinano il confronto',
   'Commenti uguali sotto i post di Salvini e altri politici: è la rivolta dei bot. C’entra il down di Microsoft?',
   'Bot contro politici italiani sui social: attacchi a Lega, Fdi e Pd',
-  'Bot intasano i post di Salvini, Nardella e Fidanza, la Lega: Vogliamo sapere chi c’è dietro'
+  'Bot intasano i post di Salvini, Nardella e Fidanza, la Lega: Vogliamo sapere chi c’è dietro',
+  'Non posso insultare un partito: commenti misteriosi sui social di Salvini'
 ];
 const article = (title, i=0, extra={}) => ({title, source: `Testata ${i}`, link: `https://testata${i}.it/articolo`,
   pubDate: new Date(Date.UTC(2026,10,14,17,40)-i*60000).toISOString(),dateSource:'original',
@@ -16,7 +17,7 @@ test('headlines about the same political bot incident become one card with all p
   const input=titles.map((title,i)=>article(title,i));
   const before=JSON.stringify(input),result=clusterRelatedNews(input);
   assert.equal(result.length,1);
-  assert.equal(result[0].sourceCount,4);
+  assert.equal(result[0].sourceCount,5);
   assert.equal(result[0].title,input[0].title);
   assert.equal(result[0].pubDate,input[0].pubDate);
   assert.equal(result[0].image,input[0].image);

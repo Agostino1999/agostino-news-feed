@@ -45,7 +45,7 @@ export function clusterRelatedNews(items) {
     }
     return [...distinct.values()];
   };
-  const politicalBots = title => /\bbots?\b/.test(title)
+  const politicalBots = title => (/\bbots?\b/.test(title) || /\bnon posso\b.{0,50}\binsultar\w*\b/.test(title))
     && /\b(salvini|fidanza|nardella|lega|fdi|pd|politic\w*)\b/.test(title)
     && /\b(social|post|comment\w*|account|partit\w*|politic\w*|lega)\b/.test(title);
   const metadata = new WeakMap();
@@ -81,11 +81,12 @@ export function clusterRelatedNews(items) {
     const group = groups.find(group => group.members.some(member => sameStory(member, article)));
     if (!group) {
       const sources = cleanSources(articleSources(article));
-      groups.push({members: [article], article: {...article, sources, sourceCount: Math.max(1, sources.length)}});
+      groups.push({members: [article], article: {...article, storyTitles: [...new Set([article.title, ...(article.storyTitles || [])])], sources, sourceCount: Math.max(1, sources.length)}});
       continue;
     }
     group.members.push(article);
     const primary = group.article;
+    primary.storyTitles = [...new Set([...primary.storyTitles, article.title, ...(article.storyTitles || [])])];
     primary.sources = cleanSources([...primary.sources, ...articleSources(article)]);
     primary.sourceCount = primary.sources.length;
     primary.categories = [...new Set([...(primary.categories || [primary.category]), ...(article.categories || [article.category])].filter(Boolean))];
