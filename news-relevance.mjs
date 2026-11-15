@@ -20,13 +20,13 @@ export function isOffTopicEditorialContent(article) {
   // Explicit opinion labels and publisher sections identify the article's genre,
   // before political names or words such as "guerra" can make it look like news.
   const headline = String(article.title).replace(/<[^>]*>/g, " ").trim();
-  const opinionHeading = /^(?:(?:l['’ʼ]\s*|(?:il|lo|la|le|gli)\s+)?(?:editorial[ei]|opinioni?|comment[oi]|analisi|corsiv[oi]|punto(?:\s+di\s+vista)?|rubrica)|lettere?\s+al\s+direttore)\s*(?:[/:|–—-]|$)/i.test(headline)
+  const opinionHeading = /^(?:(?:l['’ʼ]\s*|(?:il|lo|la|le|gli)\s+)?(?:editorial[ei]|opinion[ei]|comment[oi]|analisi|corsiv[oi]|punto(?:\s+di\s+vista)?|rubric(?:a|he))|lettere?\s+al\s+direttore)\s*(?:[/:|–—-]|$)/i.test(headline)
     || /^(?:(?:l|il|la|lo) )?(?:editorial[ei]|corsiv[oi]) di\b/.test(title);
   let opinionSection = false;
   for (const link of [article.originalURL, article.link]) {
     try {
       const path = new URL(link).pathname;
-      if (/\/(?:editorial[ei]|opinioni?|commenti|corsivi|analisi|rubriche|lettere-al-direttore|editorials|opinions|commentary|columns)(?:\/|$)/i.test(path)) opinionSection = true;
+      if (/\/(?:editorial[ei]|opinion[ei]?|commenti|corsiv[oi]|analisi|rubrica|rubriche|lettere-al-direttore|editorials|opinions|commentary|columns)(?:\/|$)/i.test(path)) opinionSection = true;
     } catch {}
   }
   if (opinionHeading || opinionSection) return true;

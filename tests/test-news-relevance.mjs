@@ -37,6 +37,8 @@ const excluded = [
   "L'analisi/ Scongiurare una nuova Yalta",
   "L'editoriale/ L’orologio della Storia e l’Europa",
   'Opinioni | Un’altra AI è possibile',
+  'L’opinione/ La guerra e il nuovo governo',
+  'Rubriche | Uno sguardo sulla politica',
   'Il commento: Salvini, la manovra e la guerra',
   'L’editoriale di Mario Rossi: il nuovo decreto'
 ];
