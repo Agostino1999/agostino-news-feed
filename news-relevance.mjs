@@ -4,6 +4,19 @@ export function isOffTopicEditorialContent(article) {
   const title = String(article.title).replace(/<[^>]*>/g, " ")
     .toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, " ").trim();
+  // Service listings are not news, even when a film title contains a news keyword.
+  // Keep reports about television and political interviews eligible below.
+  const tvListing = /\bprogrammi tv e palinsest[oi]\b|\bpalinsest[oi] e programmi tv\b/.test(title)
+    || /^(?:guida tv|tv guide|programmi tv|programmi televisivi)\b/.test(title)
+    || /^(?:stasera|oggi|domani|ora|cosa vedere|cosa guardare|che cosa vedere) in tv\b/.test(title)
+    || /^(?:film|serie(?: tv)?) (?:di )?(?:stasera|oggi|domani)\b/.test(title);
+  let tvListingURL = false;
+  try {
+    const url = new URL(article.originalURL || article.link || "");
+    tvListingURL = /^(?:guida-?tv|tvguide)\./i.test(url.hostname)
+      || /\/(?:guida[-_]tv|programmi[-_]tv|palinsesto)(?:\/|\.html?$|$)/i.test(url.pathname);
+  } catch {}
+  if (tvListing || tvListingURL) return true;
   // Only the actual headline can establish newsworthiness. Feed categories,
   // timestamps and unrelated text in a summary cannot rescue a lifestyle item.
   const priorityPolitics = /\b(salvini|giorgetti|calderoli|valditara|alessandra locatelli|ministro locatelli|ministra locatelli|lega nord|lega per salvini premier)\b/.test(title)
@@ -26,3 +39,4 @@ export function isOffTopicEditorialContent(article) {
   const lifestyleSection = /\/(?:spettacoli|gossip|people|moda|beauty|cucina|ricette|benessere|tempo-libero|tempo_libero)(?:\/|[._-])/.test(path);
   return parenting || advice && wellness || entertainment || culturePromotion || digest || lifestyleSection;
 }
+

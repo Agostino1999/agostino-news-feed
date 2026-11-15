@@ -26,7 +26,14 @@ const excluded = [
   'Taormina Food Expo chiude con migliaia di visitatori',
   'Milano Music Week, i grandi artisti dal centro alle periferie',
   'Corrado Formigli a Napoli per presentare il suo nuovo libro',
-  'Motori Magazine - 15/11/2026 · Video'
+  'Motori Magazine - 15/11/2026 · Video',
+  'Raisport Hd : Programmi TV e Palinsesto',
+  'Italia 1 : Programmi TV e Palinsesto',
+  'Sky Atlantic : Programmi TV e Palinsesto',
+  'Stasera in TV lunedì 16 novembre 2026, cosa vedere, guida tv',
+  'Guida TV - Quotidiano Nazionale',
+  'Rai 1: Programmi TV e Palinsesto, La guerra dei mondi',
+  'Film stasera: La legge dei più forti'
 ];
 const retained = [
   'Salvini: nuove norme per i cani sugli aerei',
@@ -48,7 +55,10 @@ const retained = [
   'Ucraina, negoziati e nuove sanzioni',
   'Aggressione durante il festival: arrestato un uomo',
   'Cantante morto dopo un incidente, il cordoglio dei colleghi',
-  'Juventus, le novità prima della prossima partita'
+  'Juventus, le novità prima della prossima partita',
+  'Salvini ospite a Porta a Porta: l’intervista',
+  'Rai, sciopero dei giornalisti: cambia il palinsesto',
+  'Juventus-Torino: dove vedere la partita in TV e streaming'
 ];
 
 test('rubriche, benessere, gossip ed eventi promozionali restano esclusi anche se recenti', () => {
@@ -64,6 +74,14 @@ test('categoria, fonte e parole nel sommario non rendono pertinente una rubrica'
     summary: 'Con il ministro Salvini. Polizia, arresti e un nuovo decreto del governo.' });
   assert.equal(isOffTopicEditorialContent(item), true);
   assert.equal(selectEditorialNews([item], { now }).length, 0);
+});
+
+test('le guide TV sono escluse anche da URL e quando contengono parole riservate alle notizie', () => {
+  const item = article('La legge dei più forti', {originalURL:'https://guidatv.quotidiano.net/rai-1/'});
+  assert.equal(isOffTopicEditorialContent(item),true);
+  assert.equal(selectEditorialNews([item],{now}).length,0);
+  assert.equal(isOffTopicEditorialContent(article('Rai Sport HD',
+    {link:'https://example.com/programmi-tv/raisport.html'})),true);
 });
 
 test('la sezione spettacoli esclude un contenuto generico ma conserva la cronaca reale', () => {
