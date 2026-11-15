@@ -33,7 +33,12 @@ const excluded = [
   'Stasera in TV lunedì 16 novembre 2026, cosa vedere, guida tv',
   'Guida TV - Quotidiano Nazionale',
   'Rai 1: Programmi TV e Palinsesto, La guerra dei mondi',
-  'Film stasera: La legge dei più forti'
+  'Film stasera: La legge dei più forti',
+  "L'analisi/ Scongiurare una nuova Yalta",
+  "L'editoriale/ L’orologio della Storia e l’Europa",
+  'Opinioni | Un’altra AI è possibile',
+  'Il commento: Salvini, la manovra e la guerra',
+  'L’editoriale di Mario Rossi: il nuovo decreto'
 ];
 const retained = [
   'Salvini: nuove norme per i cani sugli aerei',
@@ -58,7 +63,12 @@ const retained = [
   'Juventus, le novità prima della prossima partita',
   'Salvini ospite a Porta a Porta: l’intervista',
   'Rai, sciopero dei giornalisti: cambia il palinsesto',
-  'Juventus-Torino: dove vedere la partita in TV e streaming'
+  'Juventus-Torino: dove vedere la partita in TV e streaming',
+  'Le analisi del sangue salvano un bambino',
+  'Salvini commenta il nuovo decreto sulla sicurezza',
+  'Il commento di Salvini dopo il voto in Parlamento',
+  'Analisi del DNA, arrestato il sospetto',
+  'Editoriale Domani, sciopero dei giornalisti'
 ];
 
 test('rubriche, benessere, gossip ed eventi promozionali restano esclusi anche se recenti', () => {
@@ -88,6 +98,18 @@ test('la sezione spettacoli esclude un contenuto generico ma conserva la cronaca
   const link = 'https://www.corriere.it/spettacoli/notizia.shtml';
   assert.equal(isOffTopicEditorialContent(article('Una serata con i protagonisti della televisione', {link})), true);
   assert.equal(isOffTopicEditorialContent(article('Aggressione in studio: arrestato un uomo', {link})), false);
+});
+
+test('le sezioni opinioni ed editoriali escludono anche i titoli generici o con ministri e decreti', () => {
+  for (const [title,originalURL] of [
+    ['La proposta indecente','https://www.corriere.it/opinioni/26_novembre_15/notizia.shtml'],
+    ['Salvini, nuove regole e prospettive','https://www.ilmessaggero.it/editoriali/politica/notizia.html'],
+    ['Un titolo generico','https://www.example.com/rubriche/il-punto/notizia']
+  ]) {
+    const item=article(title,{originalURL,categories:['Politica','Lega'],summary:'Salvini presenta un decreto'});
+    assert.equal(isOffTopicEditorialContent(item),true,title);
+    assert.equal(selectEditorialNews([item],{now}).length,0,title);
+  }
 });
 
 test('selezione prima del limite: nessuno spazio sprecato e ordine cronologico preservato', () => {

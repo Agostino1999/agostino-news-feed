@@ -17,6 +17,19 @@ export function isOffTopicEditorialContent(article) {
       || /\/(?:guida[-_]tv|programmi[-_]tv|palinsesto)(?:\/|\.html?$|$)/i.test(url.pathname);
   } catch {}
   if (tvListing || tvListingURL) return true;
+  // Explicit opinion labels and publisher sections identify the article's genre,
+  // before political names or words such as "guerra" can make it look like news.
+  const headline = String(article.title).replace(/<[^>]*>/g, " ").trim();
+  const opinionHeading = /^(?:(?:l['’ʼ]\s*|(?:il|lo|la|le|gli)\s+)?(?:editorial[ei]|opinioni?|comment[oi]|analisi|corsiv[oi]|punto(?:\s+di\s+vista)?|rubrica)|lettere?\s+al\s+direttore)\s*(?:[/:|–—-]|$)/i.test(headline)
+    || /^(?:(?:l|il|la|lo) )?(?:editorial[ei]|corsiv[oi]) di\b/.test(title);
+  let opinionSection = false;
+  for (const link of [article.originalURL, article.link]) {
+    try {
+      const path = new URL(link).pathname;
+      if (/\/(?:editorial[ei]|opinioni?|commenti|corsivi|analisi|rubriche|lettere-al-direttore|editorials|opinions|commentary|columns)(?:\/|$)/i.test(path)) opinionSection = true;
+    } catch {}
+  }
+  if (opinionHeading || opinionSection) return true;
   // Only the actual headline can establish newsworthiness. Feed categories,
   // timestamps and unrelated text in a summary cannot rescue a lifestyle item.
   const priorityPolitics = /\b(salvini|giorgetti|calderoli|valditara|alessandra locatelli|ministro locatelli|ministra locatelli|lega nord|lega per salvini premier)\b/.test(title)
@@ -39,4 +52,3 @@ export function isOffTopicEditorialContent(article) {
   const lifestyleSection = /\/(?:spettacoli|gossip|people|moda|beauty|cucina|ricette|benessere|tempo-libero|tempo_libero)(?:\/|[._-])/.test(path);
   return parenting || advice && wellness || entertainment || culturePromotion || digest || lifestyleSection;
 }
-
