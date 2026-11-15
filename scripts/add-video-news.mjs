@@ -164,7 +164,6 @@ function parseGoogle(xml, category) {
   const items = String(xml).match(/<item>[\s\S]*?<\/item>/gi) || [];
 
   return items
-    .slice(0, 25)
     .map(item => {
       const rawTitle = tag(item, "title");
       const rssSource = tag(item, "source");
@@ -203,7 +202,8 @@ function parseGoogle(xml, category) {
         ]
       };
     })
-    .filter(Boolean);
+    .filter(Boolean)
+    .sort((a, b) => Date.parse(b.pubDate) - Date.parse(a.pubDate));
 }
 
 async function fetchVideoQuery(category, query) {
@@ -278,6 +278,8 @@ function addUniqueSource(article, source) {
 async function main() {
   const raw = await fs.readFile(OUT, "utf8");
   const payload = JSON.parse(raw);
+  const previousNews = await fs.readFile(".previous-news.json", "utf8")
+    .then(text => JSON.parse(text).news || []).catch(() => []);
 
   if (!payload || !Array.isArray(payload.news)) {
     throw new Error("news.json non valido");
@@ -337,7 +339,7 @@ async function main() {
     added++;
   }
 
-  const finalNews = selectEditorialNews(news, { limit: MAX_ITEMS })
+  const finalNews = selectEditorialNews(news, { limit: MAX_ITEMS, previousNews })
     .map(article => ({
       ...article,
       sourceCount: article.sources?.length || article.sourceCount || 1
@@ -375,3 +377,4 @@ main().catch(error => {
   console.error(error);
   process.exit(1);
 });
+

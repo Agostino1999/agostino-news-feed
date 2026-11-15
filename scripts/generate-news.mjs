@@ -3,7 +3,7 @@ import { LEGA_MINISTER_QUERIES, matchesLegaNews, selectEditorialNews } from "./e
 import { sanitizeFeedArticle } from "../source-policy.mjs";
 import { extractFeedImage } from "../feed-images.mjs";
 
-const VERSION = "V12-FRESH-HUMAN-BALANCE";
+const VERSION = "V13-CHRONOLOGICAL-LIVE";
 const OUT = "news.json";
 const MAX_ITEMS = 300;
 const MIN_GOOD_ITEMS = 100;
@@ -12,6 +12,8 @@ const MAX_RETRIES = 3;
 
 // Query sequenziali con copertura dedicata a sport e mercato generale.
 const QUERIES = [
+  ["Politica", "politica Italia when:1h"],
+  ["Governo", "governo Meloni when:1h"],
   ["Politica", "politica italiana parlamento maggioranza opposizione when:1d"],
   ["Politica", "partiti italiani parlamento politica when:1d"],
   ["Governo", "governo Meloni consiglio ministri decreto ministeri when:1d"],
@@ -31,9 +33,11 @@ const QUERIES = [
   ["Cronaca", '"TrentoToday" when:1d', "trentotoday"],
   ["Sicurezza", "polizia carabinieri arrestato sicurezza Italia when:1d"],
 
-  ["Lega", '"Matteo Salvini" when:1h'],
+  ["Lega", 'Salvini when:1h'],
+  ["Lega", 'Salvini when:6h'],
   ["Lega", '"Matteo Salvini" when:1d'],
   ["Lega", '"Lega" politica when:2d -calcio -serie'],
+  ["Lega", 'Lega politica when:6h -calcio -serie'],
   ...LEGA_MINISTER_QUERIES,
 
   ["Immigrazione", "immigrazione migranti Italia when:1h"],
@@ -62,6 +66,7 @@ const QUERIES = [
   ["Trasporti", '"Ponte sullo Stretto" Salvini MIT when:2d'],
   ["Europa", '"Unione Europea" Italia Commissione Parlamento Europeo when:1d'],
   ["Esteri", "esteri Europa USA guerra diplomazia when:1d"],
+  ["Esteri", "Ucraina Russia USA Europa when:1h"],
 
   ["Juventus", "Juventus when:1h"],
   ["Juventus", "Juventus when:1d"],
@@ -656,7 +661,6 @@ function parseGoogle(xml, category) {
     [];
 
   return items
-    .slice(0, 25)
     .map((item) => {
       const rawTitle =
         tag(item, "title");
@@ -737,7 +741,8 @@ function parseGoogle(xml, category) {
         ]
       };
     })
-    .filter(Boolean);
+    .filter(Boolean)
+    .sort((a, b) => Date.parse(b.pubDate) - Date.parse(a.pubDate));
 }
 
 
@@ -1735,7 +1740,7 @@ async function main() {
       );
 
   const news =
-    selectEditorialNews(classifiedNews, { limit: MAX_ITEMS })
+    selectEditorialNews(classifiedNews, { limit: MAX_ITEMS, previousNews: previous?.news || [] })
       .map(
         (
           article,
@@ -1897,3 +1902,4 @@ main()
     console.error(error);
     process.exit(1);
   });
+

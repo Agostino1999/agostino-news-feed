@@ -292,7 +292,6 @@ function parseGoogle(xml, category) {
   const items = String(xml).match(/<item>[\s\S]*?<\/item>/gi) || [];
 
   return items
-    .slice(0, 25)
     .map(item => {
       const rawTitle = tag(item, "title");
       const rssSource = tag(item, "source");
@@ -333,7 +332,8 @@ function parseGoogle(xml, category) {
         ]
       };
     })
-    .filter(Boolean);
+    .filter(Boolean)
+    .sort((a, b) => Date.parse(b.pubDate) - Date.parse(a.pubDate));
 }
 
 async function fetchQuery(category, query) {
@@ -587,6 +587,8 @@ function includeReportedArticle(news, report) {
 async function main() {
   const raw = await fs.readFile(OUT, "utf8");
   const payload = JSON.parse(raw);
+  const previousNews = await fs.readFile(".previous-news.json", "utf8")
+    .then(text => JSON.parse(text).news || []).catch(() => []);
 
   if (!payload || !Array.isArray(payload.news)) {
     throw new Error("news.json non valido");
@@ -651,7 +653,7 @@ async function main() {
   // Secondo passaggio: classifica anche le news nuove dopo il merge.
   const finalNews = selectEditorialNews(
     news.map(applyFocusClassification).filter(article => isUsableLiveArticle(article)),
-    { limit: MAX_ITEMS, reportedLinks: new Set(reported.map(article => article.link)) }
+    { limit: MAX_ITEMS, previousNews, reportedLinks: new Set(reported.map(article => article.link)) }
   )
     .map(article => ({
       ...article,
@@ -704,3 +706,4 @@ main().catch(error => {
   console.error(error);
   process.exit(1);
 });
+

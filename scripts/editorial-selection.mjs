@@ -1,7 +1,7 @@
 import { isAllowedSportsSource } from "../source-policy.mjs";
+import { normalizeNewsFreshness } from "../news-freshness.mjs";
 
 const DAY = 86400000;
-const FALLBACK_LIMIT = 45;
 
 function normalize(value = "") {
   return String(value).replace(/<[^>]*>/g, " ").toLowerCase().normalize("NFD")
@@ -62,15 +62,43 @@ function editorialRank(article) {
   return 0;
 }
 
-// Keep space for relevant developments and a small discovery buffer for atypical titles.
-export function selectEditorialNews(articles, { limit = 300, reportedLinks = new Set(), now = Date.now() } = {}) {
-  const ranked = articles.map(article => ({
+// Restore known publication dates before applying the cap, rather than letting
+// a recycled Google timestamp occupy a slot until the final enrichment step.
+export function restoreVerifiedDates(articles, previousNews = []) {
+  const cache = new Map();
+  for (const article of previousNews) {
+    if (article.dateSource !== "original" || !Number.isFinite(Date.parse(article.originalPubDate))) continue;
+    for (const key of [article.link, article.originalURL, article.publicationVerifiedKey].filter(Boolean)) cache.set(key, article);
+  }
+  return articles.map(article => {
+    if (article.dateSource === "original") return article;
+    const old = cache.get(article.originalURL || article.link) || cache.get(article.link);
+    if (!old) return article;
+    return {
+      ...article,
+      pubDate: old.originalPubDate,
+      originalPubDate: old.originalPubDate,
+      dateSource: "original",
+      originalURL: old.originalURL || article.originalURL,
+      publicationVerifiedKey: old.publicationVerifiedKey || article.link,
+      sources: (article.sources || []).map(source => source.link === article.link || source.source === article.source
+        ? {...source, pubDate: old.originalPubDate, originalPubDate: old.originalPubDate, dateSource: "original", originalURL: old.originalURL || source.originalURL}
+        : source)
+    };
+  });
+}
+
+// Reserve focused coverage, then fill the live feed by publication time.
+// An older high-ranking story must not crowd a new report out of the feed.
+export function selectEditorialNews(articles, { limit = 300, reportedLinks = new Set(), previousNews = [], now = Date.now() } = {}) {
+  const ranked = restoreVerifiedDates(articles, previousNews)
+    .map(article => normalizeNewsFreshness(article, now)).filter(Boolean).map(article => ({
     article,
     time: Date.parse(article.pubDate),
     rank: editorialRank(article),
     reported: reportedLinks.has(article.originalURL || article.link)
-  })).filter(item => Number.isFinite(item.time) && (item.reported || item.rank >= 0));
-  const ordered = ranked.sort((a, b) => b.rank - a.rank || b.time - a.time);
+  })).filter(item => Number.isFinite(item.time) && now - item.time <= 4 * DAY && (item.reported || item.rank >= 0));
+  const ordered = ranked.sort((a, b) => b.time - a.time || b.rank - a.rank);
   const selected = new Map();
   const keep = item => {
     if (selected.size >= limit) return;
@@ -79,6 +107,14 @@ export function selectEditorialNews(articles, { limit = 300, reportedLinks = new
   };
 
   ordered.filter(item => item.reported).forEach(keep);
+  // Keep at least the freshest Salvini and Lega reports even on a busy news day.
+  for (const predicate of [
+    article => /\bsalvini\b/.test(normalize(article.title + " " + article.summary)),
+    matchesLegaNews
+  ]) {
+    const latest = ordered.find(item => item.rank > 0 && predicate(item.article));
+    if (latest) keep(latest);
+  }
   for (const [category, minimum] of [["Storie umane", 12], ["Immigrazione", 10], ["Crimini & immigrazione", 12], ["Juventus", 20]]) {
     let candidates = ordered.filter(({ article, time, rank }) =>
       rank > 0 && now - time <= 4 * DAY && time <= now + 10 * 60000
@@ -92,7 +128,9 @@ export function selectEditorialNews(articles, { limit = 300, reportedLinks = new
     }
     candidates.slice(0, minimum).forEach(keep);
   }
+  ordered.filter(item => now - item.time <= DAY).forEach(keep);
   ordered.filter(item => item.rank > 0).forEach(keep);
-  ordered.filter(item => item.rank === 0).slice(0, FALLBACK_LIMIT).forEach(keep);
+  ordered.filter(item => item.rank === 0).forEach(keep);
   return [...selected.values()].sort((a, b) => b.time - a.time).map(item => item.article);
 }
+

@@ -17,6 +17,7 @@ on:
       - "scripts/cluster-news.mjs"
       - "tests/test-story-clusters.mjs"
       - "tests/test-editorial-coverage.mjs"
+      - "tests/test-google-news-coverage.mjs"
       - "news-freshness.mjs"
       - "test-news-freshness.mjs"
       - "source-policy.mjs"
@@ -49,7 +50,7 @@ jobs:
           node-version: "22"
 
       - name: Verify Juventus editorial coverage
-        run: node --test tests/test-editorial-coverage.mjs
+        run: node --test tests/test-editorial-coverage.mjs tests/test-google-news-coverage.mjs
 
       - name: Verify publication dates and expired announcements
         run: node --test test-news-freshness.mjs
@@ -169,6 +170,7 @@ jobs:
             sleep 3
           done
           exit 1
+
 
 
 

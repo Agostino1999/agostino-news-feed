@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { selectEditorialNews } from "../scripts/editorial-selection.mjs";
+import { restoreVerifiedDates, selectEditorialNews } from "../scripts/editorial-selection.mjs";
 
 const now = Date.parse("2026-11-10T16:00:00Z");
 const article = (id, category, minutes = 10, source = "ANSA") => ({
@@ -19,7 +19,7 @@ const juventus = (count = 25) => Array.from({ length: count }, (_, i) => article
 test("un feed pieno di politica conserva venti notizie Juventus delle fonti ammesse", () => {
   const selected = selectEditorialNews([...politics(), ...juventus()], { now, limit: 300 });
   assert.equal(selected.length, 300);
-  assert.equal(selected.filter(item => item.category === "Juventus").length, 20);
+  assert.ok(selected.filter(item => item.category === "Juventus").length >= 20);
   assert.equal(new Set(selected.map(item => item.id)).size, selected.length);
   for (let i = 0; i < 20; i++) assert.ok(selected.some(item => item.id === `juve-${i}`));
   assert.ok(selected.every((item, i) => !i || Date.parse(selected[i - 1].pubDate) >= Date.parse(item.pubDate)));
@@ -28,7 +28,7 @@ test("un feed pieno di politica conserva venti notizie Juventus delle fonti amme
 test("fonti escluse non consumano lo spazio riservato alle notizie Juve visibili", () => {
   const excluded = Array.from({ length: 30 }, (_, i) => article(`esclusa-${i}`, "Juventus", 0, "JuventusNews24"));
   const selected = selectEditorialNews([...politics(), ...excluded, ...juventus()], { now });
-  assert.equal(selected.filter(item => item.category === "Juventus" && item.source === "Sky Sport").length, 20);
+  assert.ok(selected.filter(item => item.category === "Juventus" && item.source === "Sky Sport").length >= 20);
 });
 
 test("notizie troppo vecchie o future non entrano nella quota Juventus", () => {
@@ -47,7 +47,7 @@ test("le coperture già previste e il limite complessivo restano rispettati", ()
   const selected = selectEditorialNews([...politics(), ...candidates, ...juventus()], { now });
   assert.equal(selected.length, 300);
   for (const [category, count] of coverage) assert.equal(selected.filter(item => item.category === category).length, count);
-  assert.equal(selected.filter(item => item.category === "Juventus").length, 20);
+  assert.ok(selected.filter(item => item.category === "Juventus").length >= 20);
 });
 
 test("i collegamenti segnalati mantengono la precedenza anche con un limite ridotto", () => {
@@ -70,3 +70,49 @@ test("le notizie principali sulle dimissioni non vengono scartate mentre resta s
   for (const headline of headlines) assert.ok(selected.some(item => item.id === headline.id), headline.title);
   assert.equal(selected.length, 300);
 });
+
+test("le ultime notizie di cronaca non sono scartate da centinaia di articoli politici vecchi", () => {
+  const old = politics().map(item => ({...item, pubDate: new Date(now - 2 * 86400000).toISOString()}));
+  const recent = Array.from({length: 60}, (_, i) => article(`ultima-${i}`, "Cronaca", i));
+  const selected = selectEditorialNews([...old, ...recent], {now});
+  for (const item of recent) assert.ok(selected.some(kept => kept.id === item.id), item.id);
+  assert.equal(selected[0].id, "ultima-0");
+  assert.equal(selected.length, 300);
+});
+
+test("ogni quota tematica conserva gli sviluppi più recenti prima degli articoli di rango maggiore", () => {
+  const old = Array.from({length: 30}, (_, i) => ({...article(`vecchia-storia-${i}`, "Storie umane", 1800), title: `Una mamma riceve aiuto per le cure ${i}`}));
+  const latest = article("ultima-storia", "Storie umane", 2);
+  const selected = selectEditorialNews([...politics(), ...old, latest], {now});
+  assert.ok(selected.some(item => item.id === latest.id));
+});
+
+test("date originali e cache sono applicate prima del limite e non riciclano vecchi articoli", () => {
+  const recycled = article("riciclata", "Lega", 1);
+  const old = {...recycled, dateSource: "original", originalPubDate: new Date(now - 10 * 86400000).toISOString(),
+    publicationVerifiedKey: recycled.link, originalURL: "https://example.com/riciclata-originale"};
+  const latest = article("appena-pubblicata", "Cronaca", 2);
+  const before = JSON.stringify([recycled, old]);
+  const selected = selectEditorialNews([recycled, latest], {now, limit: 1, previousNews: [old]});
+  assert.equal(selected[0].id, latest.id);
+  const restored = restoreVerifiedDates([recycled], [old])[0];
+  assert.equal(restored.pubDate, old.originalPubDate);
+  assert.equal(restored.sources[0].pubDate, old.originalPubDate);
+  assert.equal(JSON.stringify([recycled, old]), before);
+});
+
+test("notizie future, annunci scaduti e pubblicazioni oltre quattro giorni non occupano posti", () => {
+  const future = article("futuro", "Lega", -30);
+  const old = article("vecchio", "Lega", 5 * 1440);
+  const expired = {...article("scaduto", "Lega"), title: "Confermata l'inaugurazione del 9 novembre"};
+  assert.equal(selectEditorialNews([future, old, expired], {now}).length, 0);
+});
+
+test("il feed pieno conserva il più recente aggiornamento Salvini e quello della Lega", () => {
+  const salvini = {...article("salvini", "Lega", 90), title: "Salvini annuncia nuovi interventi"};
+  const lega = {...article("lega", "Lega", 80), title: "Giorgetti presenta la proposta"};
+  const selected = selectEditorialNews([...politics(), salvini, lega], {now, limit: 50});
+  assert.ok(selected.some(item => item.id === salvini.id));
+  assert.ok(selected.some(item => item.id === lega.id));
+});
+
