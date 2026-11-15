@@ -1,5 +1,6 @@
 import { isAllowedSportsSource, isBlockedSource, isLowPrioritySource } from "../source-policy.mjs";
 import { normalizeNewsFreshness } from "../news-freshness.mjs";
+import { isOffTopicEditorialContent } from "../news-relevance.mjs";
 
 const DAY = 86400000;
 
@@ -45,6 +46,8 @@ function editorialRank(article) {
   const summary = normalize(article.summary);
   const text = title + " " + summary;
   const categories = article.categories || [article.category];
+
+  if (isOffTopicEditorialContent(article)) return -1;
 
   // A mention of Gaza or a politician inside a review does not make it news about that subject.
   if (DIGEST.test(title) || /\bfratelli di crozza\b/.test(title)) return -1;
@@ -134,4 +137,5 @@ export function selectEditorialNews(articles, { limit = 300, reportedLinks = new
   ordered.filter(item => item.rank === 0).forEach(keep);
   return [...selected.values()].sort((a, b) => b.time - a.time).map(item => item.article);
 }
+
 

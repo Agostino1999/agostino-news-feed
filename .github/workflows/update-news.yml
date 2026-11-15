@@ -13,6 +13,8 @@ on:
       - "scripts/add-video-news.mjs"
       - "scripts/enrich-focus-news.mjs"
       - "scripts/editorial-selection.mjs"
+      - "news-relevance.mjs"
+      - "tests/test-news-relevance.mjs"
       - "scripts/story-clusters.mjs"
       - "scripts/cluster-news.mjs"
       - "tests/test-story-clusters.mjs"
@@ -51,6 +53,9 @@ jobs:
 
       - name: Verify Juventus editorial coverage
         run: node --test tests/test-editorial-coverage.mjs tests/test-google-news-coverage.mjs
+
+      - name: Verify news relevance and protected coverage
+        run: node --test tests/test-news-relevance.mjs
 
       - name: Verify publication dates and expired announcements
         run: node --test test-news-freshness.mjs
@@ -170,6 +175,7 @@ jobs:
             sleep 3
           done
           exit 1
+
 
 
 
