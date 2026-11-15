@@ -1,4 +1,4 @@
-import { isAllowedSportsSource } from "../source-policy.mjs";
+import { isAllowedSportsSource, isBlockedSource, isLowPrioritySource } from "../source-policy.mjs";
 import { normalizeNewsFreshness } from "../news-freshness.mjs";
 
 const DAY = 86400000;
@@ -112,7 +112,8 @@ export function selectEditorialNews(articles, { limit = 300, reportedLinks = new
     article => /\bsalvini\b/.test(normalize(article.title + " " + article.summary)),
     matchesLegaNews
   ]) {
-    const latest = ordered.find(item => item.rank > 0 && predicate(item.article));
+    const latest = ordered.find(item => item.rank > 0 && predicate(item.article)
+      && !isBlockedSource(item.article) && !isLowPrioritySource(item.article));
     if (latest) keep(latest);
   }
   for (const [category, minimum] of [["Storie umane", 12], ["Immigrazione", 10], ["Crimini & immigrazione", 12], ["Juventus", 20]]) {

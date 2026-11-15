@@ -116,3 +116,10 @@ test("il feed pieno conserva il più recente aggiornamento Salvini e quello dell
   assert.ok(selected.some(item => item.id === lega.id));
 });
 
+test("una fonte secondaria recente non fa scomparire l'ultimo aggiornamento Salvini ammesso nei riquadri", () => {
+  const secondary = {...article("salvini-secondaria", "Lega", 2, "IlSussidiario.net"), title: "Salvini-Zaia: le novità"};
+  const national = {...article("salvini-nazionale", "Lega", 240, "ANSA"), title: "Salvini interviene sui bot"};
+  const selected = selectEditorialNews([...politics(), secondary, national], {now, limit: 50});
+  assert.ok(selected.some(item => item.id === national.id));
+});
+
