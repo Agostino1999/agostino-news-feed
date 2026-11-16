@@ -158,6 +158,10 @@ const actualNoise = [
   'Gubbio, Salvini sempre più vicino: l’ex Frosinone verso la nomina a ds',
   'Gianluca Veneziani',
   'Nell’interesse generale',
+  'Xiaomi presenta il nuovo telefono',
+  'Contenuti e creatività: cinque idee per un weekend',
+  'I migliori libri da leggere in inverno',
+  'Il nuovo processore per i computer',
   'Moto acrobatiche trenino e i sogni verticali di Angelika'
 ];
 const actualWorkNews = [
