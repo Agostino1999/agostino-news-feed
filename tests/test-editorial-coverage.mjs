@@ -5,7 +5,12 @@ import { restoreVerifiedDates, selectEditorialNews } from "../scripts/editorial-
 const now = Date.parse("2026-11-10T16:00:00Z");
 const article = (id, category, minutes = 10, source = "ANSA") => ({
   id,
-  title: category === "Governo" ? `Meloni annuncia il decreto ${id}` : `${category}: aggiornamento ${id}`,
+  title: ({
+    Governo: `Meloni annuncia il decreto ${id}`,
+    Cronaca: `Operazione contro lo spaccio: arrestato un uomo ${id}`,
+    "Storie umane": `Poliziotto salva la vita a un bambino ${id}`,
+    "Crimini & immigrazione": `Straniero arrestato per rapina ${id}`
+  })[category] || `${category}: aggiornamento ${id}`,
   category,
   categories: [category],
   source,

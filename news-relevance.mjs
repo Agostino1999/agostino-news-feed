@@ -1,6 +1,6 @@
 // Deliberately self-contained: the dashboard embeds this same rule for local caches.
 export function isOffTopicEditorialContent(article) {
-  if (!article || !article.title) return false;
+  if (!article || !article.title) return true;
   const title = String(article.title).replace(/<[^>]*>/g, " ")
     .toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, " ").trim();
@@ -36,7 +36,12 @@ export function isOffTopicEditorialContent(article) {
     || /\blega\b/.test(title) && /\b(partito|politic|leghist|carroccio|sede|congress|elezion|govern|ministr)\w*/.test(title);
   const publicNews = /\b(arrest|omicid|uccis|muor|morto|morta|morti|morte|decedut|aggress|rapin|stupr|accoltell|sparator|sequestr|indagat|condannat|processo|procura|tribunal|truff|maltratt|abbandonat|dispers|feriti|ferito|sfruttat|attentat|evacuat|alluvion|terremot|incendio|fran[ae]|allagament|scioper|licenziament|decreto|legge|manovra|elezion|referendum|stanziament|finanziament|fondi pubblici|appalt|pensioni|tasse|irpef|assegno unico|bonus figli|guerra|missil|bombardament|sanzion|cure negate|nega le cure|terapia negata|farmaco salvavita|malasanita|raccolta fondi|cure gratuite|dona gli organi|trapiant|soccors|salvat[oaie]|salvati|riabbraccia|lieto fine)\w*/.test(title)
     || /\b(accesso|diritto) alle cure\b|\b(?:negat|rifiut)\w*\b.*\b(cure|farmac|terapi|casa|alloggi)\w*|\b(cure|farmac|terapi|casa|alloggi)\w*\b.*\b(?:negat|rifiut)\w*|\b(?:poliziott|carabinier|vigili del fuoco|medic|infermier|cane|gatto)\w*\b.*\bsalva\b/.test(title);
-  if (priorityPolitics || publicNews) return false;
+  // A football director named Salvini is not Matteo Salvini.
+  const sportsNamesake = /\bsalvini\b/.test(title)
+    && /\b(gubbio|frosinone|direttore sportivo|nomina a ds)\b/.test(title)
+    && !/\b(matteo salvini|ministr|politic|lega|governo)\w*/.test(title);
+  if (sportsNamesake) return true;
+  if (priorityPolitics) return false;
 
   const parenting = /\b(genitorialita|educazione emotiva|intelligenza emotiva)\b/.test(title)
     || /\b(riconoscere|comprendere|capire|gestire|educare|ascoltare|crescere|aiutare)\b.*\b(emozioni|nostri figli|propri figli|bambini|adolescenti)\b/.test(title)
@@ -50,5 +55,31 @@ export function isOffTopicEditorialContent(article) {
   let path = "";
   try { path = new URL(article.originalURL || article.link || "").pathname.toLowerCase(); } catch {}
   const lifestyleSection = /\/(?:spettacoli|gossip|people|moda|beauty|cucina|ricette|benessere|tempo-libero|tempo_libero)(?:\/|[._-])/.test(path);
-  return parenting || advice && wellness || entertainment || culturePromotion || digest || lifestyleSection;
+  const servicePage = /\b(tutte le (?:ultime )?notizie in tempo reale|notizie correlate|profilo e statistiche|calendario e risultati|statistiche fantacampionato)\b/.test(title)
+    || /^(?:rassegna stampa|prime pagine)\b/.test(title);
+  if (servicePage || digest) return true;
+
+  // Promotions and celebrity interviews cannot be rescued by a generic word
+  // such as "morta", "politica" or a stray reference to war in a film title.
+  const concreteEvent = /\b(arrest|omicid|uccis|aggress|rapin|stupr|accoltell|sparator|sequestr|indagat|condannat|truff|maltratt|incident|incendio|terremot|alluvion|scioper|licenziament|cure negate|terapia negata|farmaco salvavita|raccolta fondi|trapiant|soccors|salvat)\w*/.test(title)
+    || /\b(poliziott|carabinier|vigili del fuoco|medic|infermier)\w*/.test(title) && /\bsalva la vita\b/.test(title);
+  const promotion = culturePromotion || /\b(parata di natale|mercatino|mercatini|fiera|fiere|mostra|musei|museo|archeologia|arte racconta|arte raccontano|canta per|premio ciampi|ospite a stories|contestato lo spettacolo|ricordo dello scampato terremoto|nuovo locale|fine dining|formaggio italiano|burrata|campus|iscrizioni|settimana dedicata|stella michelin|rewriters fest|hall of fame|nuova serie|serie futurista|star wars|blade runner)\b/.test(title);
+  const personalMoneyAdvice = /\b(stipendi ecco i lavori|guadagno \d+\w* euro|come risparmiare|come risparmiano)\b/.test(title);
+  const celebrity = /\b(william e kate|kate middleton|principessa|ambra angiolini|angelina mango|massimiliano rosolino|phil collins)\b/.test(title);
+  if ((parenting || advice && wellness || personalMoneyAdvice || entertainment || promotion || celebrity || lifestyleSection) && !concreteEvent) return true;
+
+  // Admission requires an actual subject in the headline. A recent timestamp,
+  // a feed's category or unrelated summary text never establish relevance.
+  const politics = /\b(meloni|tajani|piantedosi|crosetto|nordio|schlein|conte|vannacci|zaia|fedriga|giulia bongiorno|palazzo chigi|camera dei deputati|consiglio dei ministri|governo|parlament|senato|europarlament|eurodeputat|elezion|referendum|partit[oi]|coalizion|centrodestra|centrosinistra|campo largo|forza italia|fratelli d italia|movimento 5 stelle|m5s|partito democratico|consiglio comunale|ministro|ministra|ministero|pd|salis|de luca|progetto civico italia|agora per l italia)\w*/.test(title);
+  const immigration = /\b(migrant|immigra|profugh|rifugiat|sbarch|rimpatr|espuls|cpr|lampedusa|barcon|ius soli|ius scholae|permesso di soggiorno|cittadinanza italiana|accoglienza migranti|pakistan|islamofob|islamism)\w*/.test(title);
+  const publicAffairs = /\b(codice della strada|ponte sullo stretto|anas|ferrovi|trasport|autostrad|aeroport|monopattini|semafori|sicurezza stradale|caos nei cieli|voli|treni\b|treno\b|eurocity|metropolitan|mobilita|infrastruttur|statale|piano casa|emergenza affitti|alloggi|affitti|caregiver|non autosufficien|disabil|sanita|malasanita|vaccin|epidemi|poverta|povert|inflazion|carovita|occupazion|disoccupazion|stipendi|salari|welfare|pnrr|riforma pac|dimission|si dimette|si e dimesso|credito per le spese|qualita della vita|famiglie svantaggiate|nuovo rapporto sulla scuola|scuole occupate|protest|manifestazion|solidarieta|centri di assistenza|irpef|patrimoniale|truff|droga|ladri|ladro|armi|estorsion|furti|furto|risse|rissa|baby gang|babygang|criminalita|degrado|denunc|licenza sospesa|multa|narcosub|minorenne partorisce|neonata trovata senza vita|sentenza|controinterrogatorio|colpi d arma|sparo|spari|agguato|feriti|gravissimo|machete)\w*/.test(title);
+  const foreign = /\b(unione europea|commissione europea|parlamento europeo|consiglio europeo|bruxelles|nato|ucrain|russ|cremlin|londra|mosca|kiev|zelensky|putin|trump|xi|kallas|biden|orban|gaza|hamas|israele|iran|teheran|hormuz|casa bianca|diplomazi|negoziat|cessate il fuoco|tregua|vertice|pace mondiale)\w*/.test(title);
+  const humanStory = /\b(salva la vita|salvano la vita|vite salvate|gesto eroico|lieto fine|riabbraccia|sopravvissut|torna a camminare|torna a casa|cure gratuite|accesso alle cure|dona gli organi|donazion|solidariet|aiuto per mangiare|soccorritori|salvano)\w*/.test(title)
+    || /\b(poliziott|carabinier|vigili del fuoco|infermier|medic)\w*/.test(title) && /\b(figli[oa]|padre|madre|mamma|papa)\b/.test(title) && /\b(pensione|ultimo turno|fianco a fianco|passaggio di testimone)\b/.test(title);
+  // Keep national/international sports coverage; local score snippets and
+  // fantasy-game advice do not become public affairs through a wrong category.
+  const nationalSport = /\b(juventus|juve|bianconer|calciomercato|spalletti|continassa|amorim|leao|pagelle italia|belgio italia|ancelotti|serie a|champions league|europa league|conference league|nations league|euro 20\d\d|mondiali|olimpiad|paralimpiad|formula 1|formula uno|motogp|gran premio|atp|wta|wimbledon|roland garros|us open|coppa davis|sinner|alcaraz|djokovic|musetti|berrettini|sabalenka|verstappen|leclerc|hamilton|antonelli|figc|uefa|fifa|nazionale|azzurri|azzurro|donnarumma|heysel)\w*/.test(title)
+    || /\b(milan|inter|napoli|atalanta|roma|lazio|fiorentina|bologna|torino|como|palermo)\b/.test(title) && /\b(portier|attaccant|difensor|centrocampist|maignan|zaccagni|frattesi|tavares|allenator|calciator|spalletti|derby|mercato|trattativ|trasferisc|ufficiale|rosanero|affare|accordo|club|prestito|riscatto|acquist|cession|infortun|assalto|obiettivo|recuper|campionat|serie a|scudetto|champions)\w*/.test(title);
+  const emergency = /\b(maltempo|allerta|bombe d acqua|allagament|fran[ae]|evacuat|dispers|incidente|muore|morto|morta|morti|decedut)\w*/.test(title);
+  return !(publicNews || politics || immigration || publicAffairs || foreign || humanStory || nationalSport || emergency);
 }

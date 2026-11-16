@@ -62,7 +62,8 @@ function editorialRank(article) {
   if (categories.some(category => ["Storie umane", "Immigrazione", "Crimini & immigrazione", "Lega", "Governo", "Europa", "Esteri", "Trasporti", "Juventus", "Calciomercato", "Sport"].includes(category))
     || (PUBLIC_BODY.test(text) && PUBLIC_ACTION.test(text))
     || /\b(juventus|juve|serie a|coppa davis|champions league|formula 1|motogp)\b/.test(title)) return 1;
-  return 0;
+  // The shared gate already proved headline relevance; preserve recent reports.
+  return 1;
 }
 
 // Restore known publication dates before applying the cap, rather than letting
@@ -100,7 +101,7 @@ export function selectEditorialNews(articles, { limit = 300, reportedLinks = new
     time: Date.parse(article.pubDate),
     rank: editorialRank(article),
     reported: reportedLinks.has(article.originalURL || article.link)
-  })).filter(item => Number.isFinite(item.time) && now - item.time <= 4 * DAY && (item.reported || item.rank >= 0));
+  })).filter(item => Number.isFinite(item.time) && now - item.time <= 4 * DAY && item.rank > 0);
   const ordered = ranked.sort((a, b) => b.time - a.time || b.rank - a.rank);
   const selected = new Map();
   const keep = item => {
@@ -134,7 +135,6 @@ export function selectEditorialNews(articles, { limit = 300, reportedLinks = new
   }
   ordered.filter(item => now - item.time <= DAY).forEach(keep);
   ordered.filter(item => item.rank > 0).forEach(keep);
-  ordered.filter(item => item.rank === 0).forEach(keep);
   return [...selected.values()].sort((a, b) => b.time - a.time).map(item => item.article);
 }
 

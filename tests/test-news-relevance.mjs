@@ -127,7 +127,7 @@ test('il controllo finale elimina anche contenuti reintrodotti dagli arricchimen
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'news-relevance-'));
   t.after(() => fs.rmSync(dir, {recursive:true, force:true}));
   fs.mkdirSync(path.join(dir, 'scripts'));
-  for (const file of ['news-relevance.mjs', 'scripts/cluster-news.mjs', 'scripts/story-clusters.mjs']) {
+  for (const file of ['news-relevance.mjs', 'source-policy.mjs', 'scripts/cluster-news.mjs', 'scripts/story-clusters.mjs']) {
     fs.copyFileSync(new URL('../' + file, import.meta.url), path.join(dir, file));
   }
   fs.writeFileSync(path.join(dir, 'news.json'), JSON.stringify({success:true,
@@ -137,4 +137,79 @@ test('il controllo finale elimina anche contenuti reintrodotti dagli arricchimen
   assert.equal(data.total, 1);
   assert.equal(data.news[0].title, retained[0]);
   assert.equal(data.editorialRelevance.excluded, 1);
+});
+
+const actualNoise = [
+  'Quando il cibo smette di essere soltanto cibo: cinque secoli di arte raccontano ciò che mettiamo a tavola',
+  'Christmas Parade, parata di Natale al centro di Roma',
+  'Nella Roma dei Barberini: Bernini, Rubens e Gentileschi in mostra a Cuneo',
+  'Al Pac la rivoluzione tessile di Sheila Hicks che ha conquistato i musei',
+  'WIN&, mostra della cultura del vino italiano',
+  'Remira Market, il mercatino vintage a ingresso gratuito che conquista Milano',
+  'William e Kate in India, la principessa torna in missione all’estero: sfida a cricket con Tendulkar',
+  'Fiera di Codogno, sono 235 edizioni. Sempre fra tradizione e futuro',
+  'La Burrata pugliese è il formaggio italiano del 2026',
+  'Il segreto del successo?: Incontro che rafforza il senso di comunità',
+  'Prezzo fissato a cinque euro. In prevendita si risparmia',
+  'Mauro Roca: profilo e statistiche del giocatore',
+  'Notizie Correlate - Sky Sport',
+  'Statistiche Fantacampionato: i portieri con più clean sheet in Serie A',
+  'Regione lombardia: Tutte le ultime notizie in tempo reale su Regione lombardia - Pagina 220',
+  'Gubbio, Salvini sempre più vicino: l’ex Frosinone verso la nomina a ds',
+  'Gianluca Veneziani',
+  'Nell’interesse generale',
+  'Moto acrobatiche trenino e i sogni verticali di Angelika'
+];
+const actualWorkNews = [
+  'Roma: 27 arresti e sequestrata oltre una tonnellata di stupefacenti',
+  'Schlein sfida Salvini: se andremo al governo, il Ponte sullo Stretto sarà cancellato',
+  'Migranti, Salvini: stop a sussidi con Isee o immigrati fanno incetta',
+  'Elezioni suppletive alla Camera: crolla l’affluenza, Chieti sopra la media',
+  'Piano Casa sull’emergenza affitti. In diciotto mesi pronti 130 alloggi',
+  'Scuole occupate a Milano: le ragioni della protesta',
+  'Il caos nei cieli Usa causato dal malfunzionamento di un router',
+  'Il portierino fair play ospite dell’Italia. Edoardo in campo insieme a Donnarumma',
+  'Bombe d’acqua nel Salernitano, frane e alberi caduti: salvata una famiglia con bambini',
+  'Spalletti riparte alla Continassa: domenica arriva il Venezia, due recuperi probabili',
+  'Milan, assalto a Inacio: Amorim lo aspetta per gennaio',
+  'Sinner in finale al torneo di tennis',
+  'Formula 1, Antonelli vince il Gran Premio',
+  'Le analisi del sangue salvano un bambino',
+  'Minorenne partorisce da sola in bagno, la neonata trovata senza vita',
+  'Intercettato un narcosub dalla Marina francese: il video dell’operazione'
+];
+
+test('i contenuti estranei osservati nel feed del 16 novembre sono respinti anche con categorie false e sommari politici', () => {
+  for (const title of actualNoise) {
+    const item=article(title,{categories:['Politica','Lega','Storie umane','Sport'],summary:'Salvini, governo, arresti e migranti'});
+    assert.equal(isOffTopicEditorialContent(item),true,title);
+    assert.equal(selectEditorialNews([item],{now,reportedLinks:new Set([item.link])}).length,0,title);
+  }
+});
+
+test('le notizie reali utili restano ammesse senza bisogno di categorie o testo aggiuntivo', () => {
+  for (const title of actualWorkNews) assert.equal(isOffTopicEditorialContent(article(title,{categories:[],summary:''})),false,title);
+});
+
+test('il limite non viene riempito con articoli privi di pertinenza', () => {
+  const input=[...actualNoise,...actualWorkNews].map(title=>article(title));
+  const selected=selectEditorialNews(input,{now,limit:300});
+  assert.equal(selected.length,actualWorkNews.length);
+  assert.ok(selected.every(item=>actualWorkNews.includes(item.title)));
+});
+
+test('il controllo dopo gli arricchimenti applica anche le esclusioni delle fonti', t => {
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'news-final-relevance-'));
+  t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));
+  fs.mkdirSync(path.join(dir,'scripts'));
+  for(const file of ['news-relevance.mjs','source-policy.mjs','scripts/cluster-news.mjs','scripts/story-clusters.mjs'])
+    fs.copyFileSync(new URL('../'+file,import.meta.url),path.join(dir,file));
+  const good=article(actualWorkNews[0]);
+  const blocked=article('Migranti: nuovi sbarchi a Lampedusa',{source:'Cronachedi',link:'https://cronachedi.it/notizia'});
+  fs.writeFileSync(path.join(dir,'news.json'),JSON.stringify({success:true,news:[good,blocked,...actualNoise.map(title=>article(title))]}));
+  execFileSync(process.execPath,[path.join(dir,'scripts/cluster-news.mjs')]);
+  const data=JSON.parse(fs.readFileSync(path.join(dir,'news.json')));
+  assert.equal(data.total,1);
+  assert.equal(data.news[0].title,good.title);
+  assert.equal(data.editorialRelevance.version,'focused-news-v2');
 });
