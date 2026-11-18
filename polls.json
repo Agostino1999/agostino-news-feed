@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-18T13:47:47.957714+00:00",
-  "checkedAt": "2026-11-18T13:47:47.957714+00:00",
+  "updatedAt": "2026-11-18T14:17:52.165389+00:00",
+  "checkedAt": "2026-11-18T14:17:52.165389+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-18T13:47:47.957714+00:00"
+      "checkedAt": "2026-11-18T14:17:52.165389+00:00"
     },
     {
       "id": "swg",
       "ok": false,
       "count": 0,
-      "checkedAt": "2026-11-18T13:47:47.957714+00:00"
+      "checkedAt": "2026-11-18T14:17:52.165389+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
       "count": 157,
-      "checkedAt": "2026-11-18T13:47:47.957714+00:00"
+      "checkedAt": "2026-11-18T14:17:52.165389+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
@@ -368,6 +368,88 @@
         }
       ],
       "id": "82a9420389727c95047e"
+    },
+    {
+      "pollster": "Sigma Piave",
+      "date": "2026-11-13",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-11-09",
+      "fieldworkEnd": "2026-11-13",
+      "fieldworkLabel": "9– 13 Nov",
+      "sampleSize": 800,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.fanpage.it/politica/sondaggi-politici-schlein-sorpassa-conte-alle-primarie-campo-largo-ancora-in-vantaggio-sul-centrodestra/",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 26.6
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.4
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 14.4
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 7.1
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.7
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 6.6
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 5.3
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 5.2,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 2.9,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.4,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.6
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 0.8
+        }
+      ],
+      "id": "e58d36c975476312f779"
     },
     {
       "pollster": "Excellera Advisory Group",
