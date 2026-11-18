@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-18T12:37:51.180928+00:00",
-  "checkedAt": "2026-11-18T12:37:51.180928+00:00",
+  "updatedAt": "2026-11-18T13:13:19.386362+00:00",
+  "checkedAt": "2026-11-18T13:13:19.386362+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-18T12:37:51.180928+00:00"
+      "checkedAt": "2026-11-18T13:13:19.386362+00:00"
     },
     {
       "id": "swg",
       "ok": false,
       "count": 0,
-      "checkedAt": "2026-11-18T12:37:51.180928+00:00"
+      "checkedAt": "2026-11-18T13:13:19.386362+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
-      "count": 154,
-      "checkedAt": "2026-11-18T12:37:51.180928+00:00"
+      "count": 156,
+      "checkedAt": "2026-11-18T13:13:19.386362+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
@@ -944,6 +944,98 @@
       "id": "236475745dbac8bd41d2"
     },
     {
+      "pollster": "Lab21",
+      "date": "2026-11-07",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-11-01",
+      "fieldworkEnd": "2026-11-07",
+      "fieldworkLabel": "1– 7 Nov",
+      "sampleSize": 1402,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.ilriformista.it/politicometro-lab21-per-il-riformista-intenzioni-di-voto-dopo-scossone-midterm-il-campo-largo-accorcia-537993/",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 28.1
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.3
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 13.0
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 6.8
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.8
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 5.8
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 5.6
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 3.4,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.1,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.4,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 1.6
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.2
+        },
+        {
+          "party": "pld",
+          "name": "Partito Liberaldemocratico",
+          "value": 1.0
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 0.9
+        }
+      ],
+      "id": "d07fed3cd5a4948fff26"
+    },
+    {
       "pollster": "Termometro Politico",
       "date": "2026-11-05",
       "dateType": "fieldwork",
@@ -1289,97 +1381,6 @@
         }
       ],
       "id": "8a4ae574db611699b390"
-    },
-    {
-      "pollster": "Lab21",
-      "date": "2026-11-04",
-      "dateType": "deposit",
-      "depositedAt": "2026-11-04",
-      "fieldworkStart": null,
-      "fieldworkEnd": null,
-      "sampleSize": null,
-      "publishedAt": null,
-      "title": "intenzioni di voto e comunicazione efficace",
-      "commissioner": "Riformista",
-      "source": {
-        "name": "Archivio del registro ufficiale · ruggsea / onData (CC BY 4.0)",
-        "url": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx",
-        "kind": "archive",
-        "indexUrl": "https://github.com/ruggsea/llm_italian_poll_scraper"
-      },
-      "results": [
-        {
-          "party": "fdi",
-          "name": "Fratelli d’Italia",
-          "value": 28.0
-        },
-        {
-          "party": "pd",
-          "name": "Partito Democratico",
-          "value": 20.1
-        },
-        {
-          "party": "m5s",
-          "name": "Movimento 5 Stelle",
-          "value": 12.9
-        },
-        {
-          "party": "fn",
-          "name": "Futuro Nazionale",
-          "value": 7.0
-        },
-        {
-          "party": "fi",
-          "name": "Forza Italia",
-          "value": 6.8
-        },
-        {
-          "party": "avs",
-          "name": "Alleanza Verdi e Sinistra",
-          "value": 5.7
-        },
-        {
-          "party": "lega",
-          "name": "Lega",
-          "value": 5.6
-        },
-        {
-          "party": "azione",
-          "name": "Azione",
-          "value": 3.1
-        },
-        {
-          "party": "altri",
-          "name": "Altri partiti",
-          "value": 2.5
-        },
-        {
-          "party": "iv",
-          "name": "Italia Viva / Casa Riformista",
-          "value": 2.5
-        },
-        {
-          "party": "scn",
-          "name": "Sud Chiama Nord",
-          "value": 1.6
-        },
-        {
-          "party": "progetto-civico",
-          "name": "Progetto Civico",
-          "value": 1.2
-        },
-        {
-          "party": "pld",
-          "name": "Partito Liberaldemocratico",
-          "value": 1.0
-        },
-        {
-          "party": "nm",
-          "name": "Noi Moderati",
-          "value": 0.9
-        }
-      ],
-      "id": "df2123d975a99258c4be"
     },
     {
       "pollster": "EMG",
@@ -1838,6 +1839,98 @@
         }
       ],
       "id": "1fdede8ee7c52c71917a"
+    },
+    {
+      "pollster": "Lab21",
+      "date": "2026-10-31",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-10-26",
+      "fieldworkEnd": "2026-10-31",
+      "fieldworkLabel": "26– 31 Oct",
+      "sampleSize": 1000,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.ilriformista.it/politicometro-lab21-per-il-riformista-centrodestra-supera-centrosinistra-meloni-in-testa-nellindice-di-efficacia-comunicativa-536921/",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 28.0
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.1
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 12.9
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 7.0
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 6.8
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 5.7
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 5.6
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 3.7,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.1,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.5,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 1.6
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.1
+        },
+        {
+          "party": "pld",
+          "name": "Partito Liberaldemocratico",
+          "value": 1.0
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 0.9
+        }
+      ],
+      "id": "051f10ca22bb044bd4ea"
     },
     {
       "pollster": "BiDiMedia",
