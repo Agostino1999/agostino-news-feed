@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-18T12:02:57.400690+00:00",
-  "checkedAt": "2026-11-18T12:02:57.400690+00:00",
+  "updatedAt": "2026-11-18T12:37:51.180928+00:00",
+  "checkedAt": "2026-11-18T12:37:51.180928+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-18T12:02:57.400690+00:00"
+      "checkedAt": "2026-11-18T12:37:51.180928+00:00"
     },
     {
       "id": "swg",
       "ok": false,
       "count": 0,
-      "checkedAt": "2026-11-18T12:02:57.400690+00:00"
+      "checkedAt": "2026-11-18T12:37:51.180928+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
-      "count": 152,
-      "checkedAt": "2026-11-18T12:02:57.400690+00:00"
+      "count": 154,
+      "checkedAt": "2026-11-18T12:37:51.180928+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
@@ -184,6 +184,180 @@
         }
       ],
       "id": "51b6719e68b3e11e3ee8"
+    },
+    {
+      "pollster": "Istituto Piepoli",
+      "date": "2026-11-16",
+      "dateType": "fieldwork",
+      "fieldworkStart": null,
+      "fieldworkEnd": "2026-11-16",
+      "fieldworkLabel": "16 Nov",
+      "sampleSize": 500,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.liberoquotidiano.it/news/politica/sondaggio-piepoli-meloni-trionfa-anche-senza-vannacci-sinistra-ko-in-entrambi-gli-scenari/",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 28.0
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.5
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 12.5
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 7.0
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.5
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.0
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 5.5
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.0,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 3.0,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 2.5,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 1.5
+        },
+        {
+          "party": "pld",
+          "name": "Partito Liberaldemocratico",
+          "value": 1.5
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 1.5
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.0
+        }
+      ],
+      "id": "82a9420389727c95047e"
+    },
+    {
+      "pollster": "Excellera Advisory Group",
+      "date": "2026-11-13",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-11-09",
+      "fieldworkEnd": "2026-11-13",
+      "fieldworkLabel": "9– 13 Nov",
+      "sampleSize": 800,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.fanpage.it/politica/sondaggi-politici-schlein-sorpassa-conte-alle-primarie-campo-largo-ancora-in-vantaggio-sul-centrodestra/",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 26.6
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.4
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 14.4
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 7.1
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.7
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 6.6
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 5.3
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 5.2,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 2.9,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.4,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.6
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 0.8
+        }
+      ],
+      "id": "5ad77b16c1c491accf9c"
     },
     {
       "pollster": "Termometro Politico",
