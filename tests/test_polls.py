@@ -114,6 +114,24 @@ Non si esprime 29%
         self.assertEqual(len(parsed),5);self.assertEqual(parsed[0]['sampleSize'],1200)
         self.assertEqual(next(r['value'] for r in parsed[0]['results'] if r['party']=='fdi'),29)
 
+    def test_swg_current_chart_with_inline_changes_and_renamed_azione(self):
+        page=(Path(__file__).parent/'fixtures/swg-2026-11-16.txt').read_text(encoding='utf8')
+        parsed=m.parse_swg_page(page,'https://www.swg.it/poll.pdf')[0]
+        self.assertEqual(parsed['fieldworkStart'],'2026-11-11')
+        self.assertEqual(parsed['date'],'2026-11-16')
+        self.assertEqual(parsed['publishedAt'],'2026-11-16')
+        self.assertEqual(parsed['sampleSize'],1200)
+        self.assertEqual({r['party']:r['value'] for r in parsed['results']},
+                         {'fdi':28.6,'pd':20.7,'m5s':12.5,'fi':7.1,'lega':5.7,'avs':6.2,
+                          'fn':5.8,'azione':3.1,'iv':2.4,'europa':1.3,'nm':1.1,'scn':1.1,
+                          'altri-csx':1.8,'altri':2.6})
+        # PDF minus glyphs and decimal separators may differ by export.
+        alternate=page.replace('  -0,1','  \u22120.1').replace('  +0,2','  +0.2')
+        self.assertEqual(m.parse_swg_page(alternate,'https://www.swg.it/poll.pdf'),[parsed])
+        # A missing label must still reject the chart, even if shares total 100.
+        with self.assertRaises(ValueError):
+            m.parse_swg_page(page.replace('Il Centro - Azione','Unknown party'),'https://www.swg.it/poll.pdf')
+
     def test_rejects_age_limited_poll_even_if_totals_are_valid(self):
         p=poll();p['source']['url']='https://example.com/sondaggio-sul-voto-giovanile/'
         self.assertFalse(m.validate(p,TODAY))

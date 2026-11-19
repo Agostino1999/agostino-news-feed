@@ -43,7 +43,7 @@ PATTERNS = [
  ('fdi',r'fratelli|^fdi\b'), ('pd',r'partito democratico|^pd\b'),
  ('m5s',r'movimento (?:5|cinque) stelle|^m5s\b'), ('fi',r'forza italia'),
  ('avs',r'alleanza verdi|verdi[ -]+sinistra|^avs\b'), ('lega',r'^lega\b'),
- ('azione',r'^azione\b'), ('iv',r'italia viva|casa riformista'), ('europa',r'^[+]?\s*europa\b'),
+ ('azione',r'^(?:il centro\s*[-–]\s*)?azione\b'), ('iv',r'italia viva|casa riformista'), ('europa',r'^[+]?\s*europa\b'),
  ('nm',r'noi moderati'), ('scn',r'sud chiama nord|cateno.*de luca'),
  ('pld',r'liberaldemocratic'), ('fn',r'futuro nazionale'),
  ('altri-csx',r'altr[ioe].*centro.?sinistra'), ('altri',r'^altr[ioe]\b|^altro partito'),
@@ -229,9 +229,12 @@ def parse_swg_page(page,url):
         if line.startswith('Centrosinistra') and 'Centrodestra' in line: capture=True; continue
         if not capture: continue
         if re.search(r'Non\s*si',line): flush(); break
-        if re.fullmatch(r'\d{1,2}[,.]\d',line):
+        # Newer charts put the weekly change beside the voting share. Keep
+        # only the first figure; the change is not another party percentage.
+        share=re.fullmatch(r'(\d{1,2}[,.]\d)(?:\s*(?:=|[+−–-]\s*\d{1,2}[,.]\d))?',line)
+        if share:
             if labels: flush()
-            values.append(number(line)); continue
+            values.append(number(share.group(1))); continue
         identifier=party_id(line)
         if identifier: labels.append((identifier,line))
     if not groups: raise ValueError('SWG chart could not be parsed')
