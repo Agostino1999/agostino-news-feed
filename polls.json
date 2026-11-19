@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-19T13:37:36.217284+00:00",
-  "checkedAt": "2026-11-19T13:37:36.217284+00:00",
+  "updatedAt": "2026-11-19T14:05:10.066348+00:00",
+  "checkedAt": "2026-11-19T14:05:10.066348+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-19T13:37:36.217284+00:00"
+      "checkedAt": "2026-11-19T14:05:10.066348+00:00"
     },
     {
       "id": "swg",
-      "ok": false,
-      "count": 0,
-      "checkedAt": "2026-11-19T13:37:36.217284+00:00"
+      "ok": true,
+      "count": 1,
+      "checkedAt": "2026-11-19T14:05:10.066348+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
       "count": 157,
-      "checkedAt": "2026-11-19T13:37:36.217284+00:00"
+      "checkedAt": "2026-11-19T14:05:10.066348+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
@@ -124,14 +124,14 @@
       "dateType": "fieldwork",
       "fieldworkStart": "2026-11-11",
       "fieldworkEnd": "2026-11-16",
-      "fieldworkLabel": "11– 16 Nov",
       "sampleSize": 1200,
-      "publishedAt": null,
+      "publishedAt": "2026-11-16",
+      "method": "CATI-CAMI-CAWI",
       "source": {
-        "name": "Fonte originale, indicizzata da Wikipedia",
-        "url": "https://tg.la7.it/sondaggi/sondaggiopolitico-16-novembre-voto-16-11-2026-266081",
-        "kind": "index",
-        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+        "name": "SWG · PDF originale",
+        "url": "https://www.swg.it/pa/attachment/6afc160d212ff/Radar_Radar SWG, 9 - 15 novembre 2026.pdf",
+        "kind": "primary",
+        "indexUrl": "https://www.swg.it/osservatorio"
       },
       "results": [
         {
@@ -170,22 +170,27 @@
           "value": 5.7
         },
         {
-          "party": "altri",
-          "name": "Altri partiti",
-          "value": 4.4,
-          "basis": "wiki:altri"
+          "party": "azione",
+          "name": "Il Centro - Azione",
+          "value": 3.1,
+          "basis": "il centro - azione"
         },
         {
-          "party": "azione",
-          "name": "Azione",
-          "value": 3.1,
-          "basis": "wiki:azione"
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 2.6,
+          "basis": "swg-chart:altri"
         },
         {
           "party": "iv",
-          "name": "Italia Viva / Casa Riformista",
+          "name": "Italia Viva - Casa Rif.",
           "value": 2.4,
-          "basis": "wiki:iv"
+          "basis": "italia viva - casa rif."
+        },
+        {
+          "party": "altri-csx",
+          "name": "Altri centrosinistra",
+          "value": 1.8
         },
         {
           "party": "europa",
