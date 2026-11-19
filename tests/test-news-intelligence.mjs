@@ -25,6 +25,7 @@ const cases=[
   ['Il ministro russo presenta il piano del governo russo',['Esteri'],['Governo']],
   ['Europa League, i risultati delle partite',['Sport'],['Europa']],
   ['Commissione europea, approvato il nuovo piano',['Europa'],[]],
+  ['Ddl antisemitismo, vignetta sui palestinesi a Gaza e sulla legge italiana',['Politica','Esteri'],[]],
   ['Putin furioso per gli attacchi al ponte in Crimea',['Esteri'],['Trasporti']],
   ['Putin apre agli europei: li invita a Mosca a dire cosa portano al tavolo',['Esteri'],['Trasporti']],
   ['Perché il centrodestra si sfilaccia sui libri scolastici digitali',['Politica'],[]],
