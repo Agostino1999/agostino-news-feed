@@ -127,7 +127,7 @@ test('il controllo finale elimina anche contenuti reintrodotti dagli arricchimen
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'news-relevance-'));
   t.after(() => fs.rmSync(dir, {recursive:true, force:true}));
   fs.mkdirSync(path.join(dir, 'scripts'));
-  for (const file of ['news-relevance.mjs', 'source-policy.mjs', 'scripts/cluster-news.mjs', 'scripts/story-clusters.mjs']) {
+  for (const file of ['news-intelligence.js','news-relevance.mjs', 'source-policy.mjs', 'scripts/cluster-news.mjs', 'scripts/story-clusters.mjs']) {
     fs.copyFileSync(new URL('../' + file, import.meta.url), path.join(dir, file));
   }
   fs.writeFileSync(path.join(dir, 'news.json'), JSON.stringify({success:true,
@@ -206,7 +206,7 @@ test('il controllo dopo gli arricchimenti applica anche le esclusioni delle font
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'news-final-relevance-'));
   t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));
   fs.mkdirSync(path.join(dir,'scripts'));
-  for(const file of ['news-relevance.mjs','source-policy.mjs','scripts/cluster-news.mjs','scripts/story-clusters.mjs'])
+  for(const file of ['news-intelligence.js','news-relevance.mjs','source-policy.mjs','scripts/cluster-news.mjs','scripts/story-clusters.mjs'])
     fs.copyFileSync(new URL('../'+file,import.meta.url),path.join(dir,file));
   const good=article(actualWorkNews[0]);
   const blocked=article('Migranti: nuovi sbarchi a Lampedusa',{source:'Cronachedi',link:'https://cronachedi.it/notizia'});
@@ -217,3 +217,4 @@ test('il controllo dopo gli arricchimenti applica anche le esclusioni delle font
   assert.equal(data.news[0].title,good.title);
   assert.equal(data.editorialRelevance.version,'focused-news-v2');
 });
+

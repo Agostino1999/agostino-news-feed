@@ -17,6 +17,8 @@ on:
       - "tests/test-news-relevance.mjs"
       - "scripts/story-clusters.mjs"
       - "scripts/cluster-news.mjs"
+      - "news-intelligence.js"
+      - "tests/test-news-intelligence.mjs"
       - "tests/test-story-clusters.mjs"
       - "tests/test-editorial-coverage.mjs"
       - "tests/test-google-news-coverage.mjs"
@@ -59,6 +61,9 @@ jobs:
 
       - name: Verify publication dates and expired announcements
         run: node --test test-news-freshness.mjs
+
+      - name: Verify categories and topic trends
+        run: node --test tests/test-news-intelligence.mjs
 
       - name: Verify story clustering
         run: node --test tests/test-story-clusters.mjs
@@ -175,6 +180,7 @@ jobs:
             sleep 3
           done
           exit 1
+
 
 
 
