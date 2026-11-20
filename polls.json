@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-20T21:03:25.581792+00:00",
-  "checkedAt": "2026-11-20T21:03:25.581792+00:00",
+  "updatedAt": "2026-11-20T21:48:58.245847+00:00",
+  "checkedAt": "2026-11-20T21:48:58.245847+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-20T21:03:25.581792+00:00"
+      "checkedAt": "2026-11-20T21:48:58.245847+00:00"
     },
     {
       "id": "swg",
       "ok": true,
       "count": 1,
-      "checkedAt": "2026-11-20T21:03:25.581792+00:00"
+      "checkedAt": "2026-11-20T21:48:58.245847+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
-      "count": 158,
-      "checkedAt": "2026-11-20T21:03:25.581792+00:00"
+      "count": 159,
+      "checkedAt": "2026-11-20T21:48:58.245847+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
@@ -107,6 +107,93 @@
         }
       ],
       "id": "7b31055efa06c82d467e"
+    },
+    {
+      "pollster": "Eumetra",
+      "date": "2026-11-18",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-11-17",
+      "fieldworkEnd": "2026-11-18",
+      "fieldworkLabel": "17– 18 Nov",
+      "sampleSize": 800,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.termometropolitico.it/1635240_sondaggi-elettorali-centrodestra-eumetra.html/",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 27.9
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.8
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 12.0
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 7.3
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.3
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.1
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 5.9
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 4.9,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.0,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.4,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.4
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 1.0
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 1.0
+        }
+      ],
+      "id": "a14b738f4b678082cd7f"
     },
     {
       "pollster": "Lab21",
