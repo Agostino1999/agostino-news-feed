@@ -1,31 +1,118 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-23T17:52:42.159390+00:00",
-  "checkedAt": "2026-11-23T17:52:42.159390+00:00",
+  "updatedAt": "2026-11-23T19:57:37.550553+00:00",
+  "checkedAt": "2026-11-23T19:57:37.550553+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-23T17:52:42.159390+00:00"
+      "checkedAt": "2026-11-23T19:57:37.550553+00:00"
     },
     {
       "id": "swg",
       "ok": true,
       "count": 1,
-      "checkedAt": "2026-11-23T17:52:42.159390+00:00"
+      "checkedAt": "2026-11-23T19:57:37.550553+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
-      "count": 155,
-      "checkedAt": "2026-11-23T17:52:42.159390+00:00"
+      "count": 156,
+      "checkedAt": "2026-11-23T19:57:37.550553+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
   "polls": [
+    {
+      "pollster": "SWG",
+      "date": "2026-11-23",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-11-18",
+      "fieldworkEnd": "2026-11-23",
+      "fieldworkLabel": "18– 23 Nov",
+      "sampleSize": 1200,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://tg.la7.it/sondaggi/sondaggio-politico-23-novembre-voto-23-11-2026-266412",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 28.4
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.5
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 12.8
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 7.0
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.3
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 5.9
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 5.9
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 4.3,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.3,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.2,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.3
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 1.1
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 1.0
+        }
+      ],
+      "id": "867180569f3112abf914"
+    },
     {
       "pollster": "Termometro Politico",
       "date": "2026-11-19",
