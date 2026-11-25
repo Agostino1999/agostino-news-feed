@@ -48,6 +48,7 @@ export function clusterRelatedNews(items) {
   const politicalBots = title => (/\bbots?\b/.test(title) || /\bnon posso\b.{0,50}\binsultar\w*\b/.test(title))
     && /\b(salvini|fidanza|nardella|lega|fdi|pd|politic\w*)\b/.test(title)
     && /\b(social|post|comment\w*|account|partit\w*|politic\w*|lega)\b/.test(title);
+  const asylumProposals = title => /\btavolo asilo\b/.test(title) && /\b(?:10|dieci) proposte\b/.test(title);
   const metadata = new WeakMap();
   const meta = article => {
     if (!metadata.has(article)) {
@@ -55,7 +56,7 @@ export function clusterRelatedNews(items) {
       metadata.set(article, {title, time: time(article), tokens: tokens(title),
         urls: new Set(articleSources(article).map(source => urlKey(source.originalURL || source.link)).filter(Boolean)),
         numbers: new Set((title.match(/\b\d+\b/g) || []).filter(n => Number(n) < 1900 || Number(n) > 2100)),
-        bots: politicalBots(title)});
+        bots: politicalBots(title), asylumProposals: asylumProposals(title)});
     }
     return metadata.get(article);
   };
@@ -71,6 +72,7 @@ export function clusterRelatedNews(items) {
     if (age <= 12 * 3600000 && am.bots && bm.bots) return true;
     const leftNumbers = am.numbers, rightNumbers = bm.numbers;
     if (leftNumbers.size && rightNumbers.size && !overlap(leftNumbers, rightNumbers)) return false;
+    if (am.asylumProposals && bm.asylumProposals) return true;
     const l = am.tokens, r = bm.tokens, common = overlap(l, r);
     return common >= 4 && common / Math.min(l.size, r.size) >= .7 && common / (l.size + r.size - common) >= .48;
   };

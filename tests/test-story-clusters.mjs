@@ -55,3 +55,17 @@ test('recent Google dates keep their provenance, timestamps and image when sourc
   assert.equal(result.pubDate,a.pubDate);
   assert.equal(result.sources.length,2);
 });
+
+test('the Tavolo Asilo proposal announcement groups different titles and keeps both links', () => {
+  const a=article('Per una nuova stagione di diritti: presentato a Roma il documento del Tavolo Asilo e Immigrazione con le 10 proposte alle forze politiche per la gestione del fenomeno migratorio in vista delle prossime elezioni',0,
+    {source:'Centro Astalli',link:'https://www.centroastalli.it/10-proposte-tavolo-asilo-immigrazione/',pubDate:'2026-11-25T10:32:52Z',categories:['Immigrazione']});
+  const b=article('Immigrazione, le dieci proposte del Tavolo Asilo ai partiti',1,
+    {source:'DiariodelWeb.it',link:'https://diariodelweb.it/politica/tavolo-asilo-proposte-immigrazione-parlamento/',pubDate:'2026-11-24T18:02:58Z',categories:['Politica']});
+  const unrelated=article('Accoglienza, il Tavolo Asilo chiede chiarimenti sui centri di rimpatrio',2,
+    {pubDate:'2026-11-25T09:00:00Z',categories:['Immigrazione']});
+  const cards=clusterRelatedNews([b,unrelated,a]);
+  assert.equal(cards.length,2);
+  assert.deepEqual(cards[0].sources.map(source=>source.link),[a.link,b.link]);
+  assert.deepEqual(cards[0].categories,['Immigrazione','Politica']);
+  assert.equal(cards[1].title,unrelated.title);
+});
