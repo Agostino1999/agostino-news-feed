@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-25T08:37:56.768129+00:00",
-  "checkedAt": "2026-11-25T08:37:56.768129+00:00",
+  "updatedAt": "2026-11-25T10:42:54.077769+00:00",
+  "checkedAt": "2026-11-25T10:42:54.077769+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-25T08:37:56.768129+00:00"
+      "checkedAt": "2026-11-25T10:42:54.077769+00:00"
     },
     {
       "id": "swg",
       "ok": true,
       "count": 1,
-      "checkedAt": "2026-11-25T08:37:56.768129+00:00"
+      "checkedAt": "2026-11-25T10:42:54.077769+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
-      "count": 155,
-      "checkedAt": "2026-11-25T08:37:56.768129+00:00"
+      "count": 156,
+      "checkedAt": "2026-11-25T10:42:54.077769+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
@@ -117,6 +117,78 @@
         }
       ],
       "id": "867180569f3112abf914"
+    },
+    {
+      "pollster": "Quorum",
+      "date": "2026-11-23",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-11-20",
+      "fieldworkEnd": "2026-11-23",
+      "fieldworkLabel": "20– 23 Nov",
+      "sampleSize": 806,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://tg24.sky.it/mondo/2026/11/25/violenza-contro-donne-italia-sondaggio-youtrend#17",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 27.2
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.6
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 13.8
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 7.2,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 6.8
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.7
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.5
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 5.1
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.2,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.9,
+          "basis": "wiki:iv"
+        }
+      ],
+      "id": "5d3f346b1cc2efe85538"
     },
     {
       "pollster": "Termometro Politico",
