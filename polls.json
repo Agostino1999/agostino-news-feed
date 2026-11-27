@@ -1,31 +1,215 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-27T12:27:59.434312+00:00",
-  "checkedAt": "2026-11-27T12:27:59.434312+00:00",
+  "updatedAt": "2026-11-27T13:53:02.724562+00:00",
+  "checkedAt": "2026-11-27T13:53:02.724562+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-27T12:27:59.434312+00:00"
+      "checkedAt": "2026-11-27T13:53:02.724562+00:00"
     },
     {
       "id": "swg",
       "ok": true,
       "count": 1,
-      "checkedAt": "2026-11-27T12:27:59.434312+00:00"
+      "checkedAt": "2026-11-27T13:53:02.724562+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
-      "count": 154,
-      "checkedAt": "2026-11-27T12:27:59.434312+00:00"
+      "count": 156,
+      "checkedAt": "2026-11-27T13:53:02.724562+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
   "polls": [
+    {
+      "pollster": "Istituto Piepoli",
+      "date": "2026-11-25",
+      "dateType": "fieldwork",
+      "fieldworkStart": null,
+      "fieldworkEnd": "2026-11-25",
+      "fieldworkLabel": "25 Nov",
+      "sampleSize": 500,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.udc-italia.it/sondaggi-de-poli-udc-centrodestra-al-446-udc-al-lavoro-per-rafforzare-la-coalizione/",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 28.5
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.0
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 12.5
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 7.0
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.5
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.0
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 5.0
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 3.5,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.0,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.5,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 1.5
+        },
+        {
+          "party": "pld",
+          "name": "Partito Liberaldemocratico",
+          "value": 1.5
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 1.5
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.0
+        }
+      ],
+      "id": "ccc966a1f9ac549244ca"
+    },
+    {
+      "pollster": "Lab21",
+      "date": "2026-11-24",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-11-18",
+      "fieldworkEnd": "2026-11-24",
+      "fieldworkLabel": "18– 24 Nov",
+      "sampleSize": 1009,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.ilriformista.it/sondaggi-elezioni-politiche-premiati-calenda-e-il-centro-le-piazze-fanno-crescere-i-populisti-ma-le-due-coalizioni-sono-separate-da-pochi-decimi-539991/",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 28.1
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 20.0
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 13.2
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 6.4
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 6.3
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 6.0
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 5.9
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 4.3,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 2.4,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.4,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 1.6
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 1.3
+        },
+        {
+          "party": "pld",
+          "name": "Partito Liberaldemocratico",
+          "value": 1.1
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 1.0
+        }
+      ],
+      "id": "162c1ff754d35018011e"
+    },
     {
       "pollster": "SWG",
       "date": "2026-11-23",
