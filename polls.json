@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
   "success": true,
-  "updatedAt": "2026-11-28T07:45:31.972858+00:00",
-  "checkedAt": "2026-11-28T07:45:31.972858+00:00",
+  "updatedAt": "2026-11-28T09:47:48.879137+00:00",
+  "checkedAt": "2026-11-28T09:47:48.879137+00:00",
   "refreshHours": 2,
   "sources": [
     {
       "id": "registry_archive",
       "ok": true,
       "count": 21,
-      "checkedAt": "2026-11-28T07:45:31.972858+00:00"
+      "checkedAt": "2026-11-28T09:47:48.879137+00:00"
     },
     {
       "id": "swg",
       "ok": true,
       "count": 1,
-      "checkedAt": "2026-11-28T07:45:31.972858+00:00"
+      "checkedAt": "2026-11-28T09:47:48.879137+00:00"
     },
     {
       "id": "wikipedia",
       "ok": true,
-      "count": 155,
-      "checkedAt": "2026-11-28T07:45:31.972858+00:00"
+      "count": 156,
+      "checkedAt": "2026-11-28T09:47:48.879137+00:00"
     }
   ],
   "coverage": "Sondaggi nazionali pubblicati: SWG diretto, indice Wikipedia con fonti originali e archivio dei depositi del registro.",
@@ -117,6 +117,93 @@
         }
       ],
       "id": "ccc966a1f9ac549244ca"
+    },
+    {
+      "pollster": "Ipsos",
+      "date": "2026-11-25",
+      "dateType": "fieldwork",
+      "fieldworkStart": "2026-11-18",
+      "fieldworkEnd": "2026-11-25",
+      "fieldworkLabel": "18– 25 Nov",
+      "sampleSize": 1000,
+      "publishedAt": null,
+      "source": {
+        "name": "Fonte originale, indicizzata da Wikipedia",
+        "url": "https://www.corriere.it/politica/26_novembre_28/sondaggio-pagnoncelli-fdi-scende-eb69044b-e303-4b71-a414-05cd0f36exlk_amp.shtml",
+        "kind": "index",
+        "indexUrl": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_Italian_general_election"
+      },
+      "results": [
+        {
+          "party": "fdi",
+          "name": "Fratelli d’Italia",
+          "value": 26.0
+        },
+        {
+          "party": "pd",
+          "name": "Partito Democratico",
+          "value": 19.5
+        },
+        {
+          "party": "m5s",
+          "name": "Movimento 5 Stelle",
+          "value": 15.9
+        },
+        {
+          "party": "fn",
+          "name": "Futuro Nazionale",
+          "value": 8.0
+        },
+        {
+          "party": "fi",
+          "name": "Forza Italia",
+          "value": 6.5
+        },
+        {
+          "party": "avs",
+          "name": "Alleanza Verdi e Sinistra",
+          "value": 5.8
+        },
+        {
+          "party": "lega",
+          "name": "Lega",
+          "value": 5.0
+        },
+        {
+          "party": "altri",
+          "name": "Altri partiti",
+          "value": 4.0,
+          "basis": "wiki:altri"
+        },
+        {
+          "party": "azione",
+          "name": "Azione",
+          "value": 3.5,
+          "basis": "wiki:azione"
+        },
+        {
+          "party": "europa",
+          "name": "+Europa",
+          "value": 2.0
+        },
+        {
+          "party": "iv",
+          "name": "Italia Viva / Casa Riformista",
+          "value": 2.0,
+          "basis": "wiki:iv"
+        },
+        {
+          "party": "nm",
+          "name": "Noi Moderati",
+          "value": 1.0
+        },
+        {
+          "party": "scn",
+          "name": "Sud Chiama Nord",
+          "value": 0.8
+        }
+      ],
+      "id": "82fe1d2f80f25aa8c34b"
     },
     {
       "pollster": "Eumetra",
